@@ -1,0 +1,9 @@
+cache/
+data/
+modules/
+node_modules/
+resources/_vehicles
+AltV.Net.Host.dll
+AltV.Net.Host.runtimeconfig.json
+altv-server.exe
+server.log
