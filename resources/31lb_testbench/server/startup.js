@@ -1,7 +1,7 @@
 /// <reference types="@altv/types-natives" />
 /// <reference types="@altv/types-server" />
 import * as alt from 'alt-server';
-import SQL from '../../postgres-wrapper/database.mjs';
+import SQL from '../../altV-Postgres-Wrapper/database.mjs';
 import { PlayerEntity } from '../entities/entities.js';
 import { getOnlinePlayer } from './playerHandler'
 import { loginCompleted, playerConnect, playerDamage, playerDeath, playerDisconnect } from './eventHandlers';
