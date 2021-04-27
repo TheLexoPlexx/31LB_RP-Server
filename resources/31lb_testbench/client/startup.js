@@ -34,7 +34,7 @@ alt.onServer('a_damage', (attacker, damage, weaponHash) => {
   }
   gettingdamage = alt.setTimeout(() => {
     native.setTimecycleModifier("DEFAULT");
-    native.setTimecycleModifierStrength(1);
+    native.setTimecycleModifierStrength(1.5);
   }, 550);
 });
 
@@ -75,3 +75,5 @@ alt.on("consoleCommand", (name, ...args) => {
     alt.logError("Not a valid command");
   }
 });
+
+//TODO native switchOutPlayer on successfull connect

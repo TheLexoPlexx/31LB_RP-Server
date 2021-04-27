@@ -1,5 +1,4 @@
 import orm from 'typeorm';
-import sha256 from 'js-sha256';
 
 export const PlayerEntity = new orm.EntitySchema({
     name: 'player',
@@ -10,13 +9,15 @@ export const PlayerEntity = new orm.EntitySchema({
             generated: true
         },
         name: {
-            type: 'varchar'
+            type: 'varchar',
+            nullable: true
         },
         socialclub: {
             type: 'varchar'
         },
         mail: {
-            type: 'varchar'
+            type: 'varchar',
+            nullable: true
         },
         password: { //TODO: Encryption
             type: 'varchar'
@@ -33,26 +34,17 @@ export const PlayerEntity = new orm.EntitySchema({
         armour: {
             type: "int"
         },
-        posX: {
-            type: "float"
+        pos: { 
+            type: "varchar",
+            nullable: true
         },
-        posY: {
-            type: "float"
-        },
-        posZ: {
-            type: "float"
-        },
-        rotX: {
-            type: "float"
-        },
-        rotY: {
-            type: "float"
-        },
-        rotZ: {
-            type: "float"
+        rot: { 
+            type: "varchar",
+            nullable: true
         },
         discord: {
-            type: "varchar"
+            type: "varchar",
+            nullable: true
         },
         firstjoin: {
             type: "varchar"
@@ -61,24 +53,40 @@ export const PlayerEntity = new orm.EntitySchema({
             type: "int"
         },
         character: {
-            type: "varchar"
+            type: "varchar",
+            nullable: true
         },
         sessionid: {
-            type: "int"
-        }
-        /*,
-        dead: {
-            type: "boolean"
+            type: "int",
+            nullable: true
         },
-        incar: {
-            type: "varchar"
-        }*/
+        incar: { //player.seat
+            type: "varchar",
+            nullable: true
+        },
+        inventaar: {
+            type: "varchar",
+            nullable: true
+        },
+        fahrzeuge: {
+            type: "varchar",
+            nullable: true
+        },
+        lizenzen: {
+            type: "varchar",
+            nullable: true
+        },
+        personalausweis: {
+            type: "varchar",
+            nullable: true
+        },
+        weapons: {
+            type: "varchar",
+            nullable: true
+        },
+        job: {
+            type: "varchar",
+            nullable: true
+        }
     }
 });
-
-//inventaar
-//fahrzeuge
-//lizenzen
-//perso
-//gunz
-//player.seat

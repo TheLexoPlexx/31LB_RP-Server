@@ -16,9 +16,9 @@
 		"@altv/types-webview": "^1.0.2"
 	},
 	"dependencies": {
-		"js-sha256": "^0.9.0",
 		"mysql": "^2.18.1",
 		"pg": "^8.6.0",
-		"typeorm": "^0.2.32"
+		"typeorm": "^0.2.32",
+		"js-sha256": "^0.9.0"
 	}
 }
