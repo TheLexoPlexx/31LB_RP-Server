@@ -35,21 +35,11 @@ alt.onClient("a_login", (player, name, pw) => {
 });
 
 alt.onClient("a_teleport", (player) => {
-  /*
-  player.spawn(-763.245, 328.597, 199.486);
-  player.rot = new alt.Vector3(0, 0, 3.1415);
+  player.spawn(-763.245, 328.597, 198.486);
+  player.rot = new alt.Vector3(0, 0, Math.PI);
   alt.emit('character:Edit', player);
-  */
 
   //player.spawn(229.9559, -981.7928, -99.66071); 10-car-Garage
-
-  /*
-  player.vehicle.setWheelDetached(0, true);
-  player.vehicle.setWheelDetached(1, true);
-  player.vehicle.setWheelDetached(2, true);
-  player.vehicle.setWheelDetached(3, true);
-  */
-
 });
 
 alt.on('character:Done', (player, data) => {

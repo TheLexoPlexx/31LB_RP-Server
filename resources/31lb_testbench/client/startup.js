@@ -50,16 +50,17 @@ alt.on("keyup", (key) => {
   if (key == 115) {
     alt.emitServer("a_teleport", alt.player);
 
-    /*
     game.requestIpl("apa_v_mp_h_01_b");
-    alt.player.rot = new alt.Vector3(0, 3.1415, 0);
-    */
   }
 });
 
 alt.on("disconnect", () => {
   console.log("[Event]: a_disconnect");
   alt.emitServer("a_disconnect", alt.player);
+});
+
+alt.on("character:Done", () => {
+  game.requestIpl("apa_v_mp_h_01_b");
 });
 
 alt.on("consoleCommand", (name, ...args) => {

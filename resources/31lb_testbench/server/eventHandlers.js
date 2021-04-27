@@ -28,7 +28,7 @@ export function loginCompleted(player, result_player, password) {
     }
     database.upsertData(new_player, "player", (res) => {
       alt.log("Neuer Spieler: " + JSON.stringify(res));
-      player.spawn(-69.551, -855.909, 40.571, 1000);
+      player.spawn(-69.551, -855.909, 40.571);
     });
   } else {
     player.model = 'mp_m_freemode_01'; //TODO: Ändern
@@ -36,10 +36,8 @@ export function loginCompleted(player, result_player, password) {
     var pos = JSON.parse(result_player.pos);
     var rot = JSON.parse(result_player.rot);
     
-    player.spawn(pos.x, pos.y, pos.z, 250);
-    alt.setTimeout(() => {
-      player.rot = rot;
-    }, 500);
+    player.spawn(pos.x, pos.y, pos.z);
+    player.rot = rot;
 
     player.health = result_player.healthpoints;
     player.armour = result_player.armour;
