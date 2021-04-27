@@ -7,6 +7,8 @@ export function getOnlinePlayer(player) {
   return new SQLPlayer(player.id);
 }
 
+//TODO: Constructor raus und callbacks rein.
+
 export class SQLPlayer {
   result_json;
 

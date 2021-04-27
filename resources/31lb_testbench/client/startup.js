@@ -75,7 +75,3 @@ alt.on("consoleCommand", (name, ...args) => {
     alt.logError("Not a valid command");
   }
 });
-
-alt.onServer("a_consoleMessage", (message) => {
-  alt.logError(message);
-});
