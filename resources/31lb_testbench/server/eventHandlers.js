@@ -51,7 +51,7 @@ export function loginCompleted(player, result_player, password) {
 
     result_player.sessionid = player.id;
     database.upsertData(result_player, "player", (res) => {
-      alt.log("Spieler " + res.name + " [" + res.socialId + "] logged in with SessionID " + res.sessionid + " at [" + res.posX + ", " + res.posY + ", " + res.posZ + "]");
+      alt.log("Player " + res.name + " [" + res.socialclub + "] logged in with SessionID " + res.sessionid + " at [" + res.posX + ", " + res.posY + ", " + res.posZ + "]");
     });
   }
 }
@@ -69,10 +69,11 @@ export function playerDisconnect(player) {
     result.rotY = rot.y;
     result.rotz = rot.z;
     result.sessionid = -1;
-    alt.log(JSON.stringify(result));
+    //alt.log(JSON.stringify(result));
 
     database.upsertData(result, "player", (res_upsert) => {
-      alt.log("upsert: " + JSON.stringify(res_upsert));
+      alt.log("Player " + res_upsert.name + " [" + res_upsert.socialclub + "] left");
+      //alt.log("upsert: " + JSON.stringify(res_upsert));
     });
   });
 }

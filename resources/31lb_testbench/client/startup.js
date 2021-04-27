@@ -13,11 +13,9 @@ var url = "http://resource/client/pages/wasted.html";
 game.setPedDefaultComponentVariation(game.playerPedId());
 
 alt.onServer("a_connect", () => {
-  alt.log("[Event]: a_connect");
 });
 
 alt.onServer('a_death', () => {
-  alt.log("[Event]: a_death");
   if (gettingdamage != null) {
     alt.clearTimeout(gettingdamage);
   }
@@ -28,7 +26,6 @@ alt.onServer('a_death', () => {
 });
 
 alt.onServer('a_damage', (attacker, damage, weaponHash) => {
-  alt.log("[Event]: a_damage");
   native.setTimecycleModifier("DAMAGE");
   native.setTimecycleModifierStrength(0.6);
 
@@ -42,7 +39,6 @@ alt.onServer('a_damage', (attacker, damage, weaponHash) => {
 });
 
 alt.onServer('a_alive', () => {
-  alt.log("[Event]: a_alive");
   native.setTimecycleModifier("DEFAULT");
   dead = false;
   if (wasted != null) {
@@ -78,4 +74,8 @@ alt.on("consoleCommand", (name, ...args) => {
   } else {
     alt.logError("Not a valid command");
   }
+});
+
+alt.onServer("a_consoleMessage", (message) => {
+  alt.logError(message);
 });
