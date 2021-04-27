@@ -34,22 +34,22 @@ export const PlayerEntity = new orm.EntitySchema({
             type: "int"
         },
         posX: {
-            type: "int"
+            type: "float"
         },
         posY: {
-            type: "int"
+            type: "float"
         },
         posZ: {
-            type: "int"
+            type: "float"
         },
         rotX: {
-            type: "int"
+            type: "float"
         },
         rotY: {
-            type: "int"
+            type: "float"
         },
         rotZ: {
-            type: "int"
+            type: "float"
         },
         discord: {
             type: "varchar"
@@ -63,6 +63,13 @@ export const PlayerEntity = new orm.EntitySchema({
         character: {
             type: "varchar"
         }
+        /*,
+        dead: {
+            type: "boolean"
+        },
+        incar: {
+            type: "varchar"
+        }*/
     }
 });
 

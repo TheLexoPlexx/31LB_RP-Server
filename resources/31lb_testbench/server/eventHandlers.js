@@ -10,6 +10,10 @@ const respawnTime = 10 * 1000;//In millis
 export function playerConnect(player) {
   alt.emitClient(player, "a_connect");
 
+  player.spawn(229.9559, -981.7928, -99.66071);
+}
+
+export function loginCompleted(player) {
   database.selectData("player", ["socialclub"], res => {
     if (res == null) {
       var d = new Date();
@@ -36,6 +40,7 @@ export function playerConnect(player) {
       }
       database.upsertData(new_player, "player", (res) => {
         alt.log("Neuer Spieler: " + JSON.stringify(res));
+        player.spawn(-69.551, -855.909, 40.571, 1000);
       });
     } else {
       database.fetchData("socialclub", player.socialId, "player", (result) => {
@@ -52,10 +57,21 @@ export function playerConnect(player) {
 }
 
 export function playerDisconnect(player) {
-  database.fetchData("socialclub", player.socialId, "player", (result) => {
-    alt.log(JSON.stringify(player.socialId));
+  let pos = player.pos;
+  let rot = player.rot;
+  let socialclub = player.socialId;
+  database.fetchData("socialclub", socialclub, "player", (result) => {
+    //alt.log(JSON.stringify(result));
+    result.posX = pos.x;
+    result.posY = pos.y;
+    result.posZ = pos.z;
+    result.rotX = rot.x;
+    result.rotY = rot.y;
+    result.rotz = rot.z;
+    //alt.log(JSON.stringify(result));
+
     database.upsertData(result, "player", (res_upsert) => {
-      //alt.log(JSON.stringify(res_upsert));
+      alt.log("upsert: " + JSON.stringify(res_upsert));
     });
     //var pos = JSON.stringify(result.pos).split(",");
   });

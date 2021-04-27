@@ -14,7 +14,6 @@ game.setPedDefaultComponentVariation(game.playerPedId());
 
 alt.onServer("a_connect", () => {
   alt.log("[Event]: a_connect");
-
 });
 
 alt.onServer('a_death', () => {
@@ -65,4 +64,18 @@ alt.on("keyup", (key) => {
 alt.on("disconnect", () => {
   console.log("[Event]: a_disconnect");
   alt.emitServer("a_disconnect", alt.player);
+});
+
+alt.on("consoleCommand", (name, ...args) => {
+  if (name == "login") {
+    if (args.length < 1) {
+      alt.logError("Password missing");
+    } else if (args.length == 1) {
+      alt.emitServer("a_login", alt.player, args[0]);
+    } else {
+      alt.logError("Too many Args");
+    }
+  } else {
+    alt.logError("Not a valid command");
+  }
 });
