@@ -28,13 +28,13 @@ export default class ConnectionInfo {
                 cache: true
             };
 
-            console.log(`---> Starting Database Connection`);
+            alt.log(`[PostgreSQL] Starting Database Connection`);
             orm.createConnection(config)
                 .then(conn => {
                     this.connection = conn;
                     conn.synchronize().then(res => {
                         currentConnection = this;
-                        console.log('---> Database Connected Successfully');
+                        alt.log('[PostgreSQL] Database Connected Successfully');
                         alt.emit('ConnectionComplete');
                         return currentConnection;
                     });

@@ -3,7 +3,7 @@
 import * as alt from 'alt-server';
 import SQL from '../../postgres-wrapper/database.mjs';
 import { PlayerEntity } from '../entities/entities.js';
-import { loginCompleted, playerConnect, playerDamage, playerDeath, playerDisconnect } from './eventHandlers';
+import { loginCompleted, playerConnect, playerDamage, playerDeath, playerDisconnect, resourceStop } from './eventHandlers';
 
 const dbType = 'postgres';
 const dbHost = 'localhost';
@@ -24,10 +24,14 @@ alt.on("playerConnect", playerConnect);
 alt.on('playerDeath', playerDeath);
 alt.on("playerDamage", playerDamage);
 alt.on("playerDisconnect", playerDisconnect);
+
 alt.onClient("a_login", (player, name, pw) => {
   database.fetchData("password", pw, "player", (result) => {
-    //alt.log(JSON.stringify(result));
-    loginCompleted(player);
+    if (result == undefined) {
+      loginCompleted(player, null, pw);
+    } else {
+      loginCompleted(player, result, null);
+    }
   });
 });
 
@@ -37,8 +41,6 @@ alt.onClient("a_teleport", (player) => {
   player.rot = new alt.Vector3(0, 0, 3.1415);
   alt.emit('character:Edit', player);
   */
-
-  alt.log("id: " + player.id);
 
   //player.spawn(229.9559, -981.7928, -99.66071); 10-car-Garage
 });

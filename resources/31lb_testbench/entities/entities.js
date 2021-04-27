@@ -62,6 +62,9 @@ export const PlayerEntity = new orm.EntitySchema({
         },
         character: {
             type: "varchar"
+        },
+        sessionid: {
+            type: "int"
         }
         /*,
         dead: {
