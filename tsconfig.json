@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "jsx": "preserve",
+    "sourceMap": true
+  },
+  "compileOnSave": true,
+  "exclude": [
+    "node_modules",
+    "**/node_modules/*",
+    "resources/clothes-menu"
+  ]
+}
+
+/*
+    "strictFunctionTypes": true,
+*/

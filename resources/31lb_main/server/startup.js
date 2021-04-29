@@ -5,7 +5,6 @@ import orm from 'typeorm';
 import SQL from '../../altV-Postgres-Wrapper/database.mjs';
 import { PlayerEntity } from '../entities/entities.js';
 import { loginCompleted, playerConnect, playerDamage, playerDeath, playerDisconnect } from './eventHandlers';
-import { getPlayer, setValue } from './playerHandler';
 import { dbHost, dbName, dbPassword, dbPort, dbType, dbUsername } from './postgresql_login';
 
 export var database = new SQL(dbType, dbHost, dbPort, dbUsername, dbPassword, dbName, [
@@ -35,9 +34,11 @@ alt.onClient("a_login", (player, name, pw) => {
 });
 
 alt.onClient("a_teleport", (player) => {
+  /*
   player.spawn(-763.245, 328.597, 198.486);
   player.rot = new alt.Vector3(0, 0, Math.PI);
   alt.emit('character:Edit', player);
+  */
 
   //player.spawn(229.9559, -981.7928, -99.66071); 10-car-Garage
 });
