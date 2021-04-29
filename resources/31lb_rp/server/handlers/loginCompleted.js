@@ -1,15 +1,6 @@
 /// <reference types="@altv/types-server" />
 import * as alt from 'alt-server';
-import { database } from './startup';
-
-export const deadPlayers = {};
-const respawnTime = 10 * 1000;//In millis
-
-export function playerConnect(player) {
-  alt.emitClient(player, "a_connect");
-
-  player.spawn(229.9559, -981.7928, -99.66071);
-}
+import { database } from './../startup';
 
 export function loginCompleted(player, result_player, password) {
   if (result_player == null) {
@@ -67,57 +58,15 @@ export function loginCompleted(player, result_player, password) {
   }
 }
 
-export function playerDisconnect(player) {
-  let pos = player.pos;
-  let rot = player.rot;
-  let id = player.id;
-  let hp = player.health;
-  let armour = player.armour;
-  let incar = player.seat;
-
-  database.fetchData("sessionid", id, "player", (result) => {
-    if (result != null) {
-      //alt.log(JSON.stringify(result));
-      result.pos = JSON.stringify(pos);
-      result.rot = JSON.stringify(rot);
-      result.healthpoints = hp;
-      result.armour = armour;
-      result.incar = incar;
-      result.sessionid = -1;
-
-      database.upsertData(result, "player", (res_upsert) => {
-        alt.log("Player " + res_upsert.name + "[" + res_upsert.socialclub + "] left");
-        //alt.log("upsert: " + JSON.stringify(res_upsert));
-      });
+export function login(player, name, pw) {
+  database.fetchData("password", pw, "player", (result) => {
+    if (result == undefined) {
+      loginCompleted(player, null, pw);
+    } else {
+      if (result.sessionid >= 0) {
+        alt.logWarning("Player replaced sessionid " + result.sessionid);
+      }
+      loginCompleted(player, result, null);
     }
   });
-}
-
-export function playerDeath(player, killer, weaponhash) {
-  if (deadPlayers[player.id]) {
-    return;
-  }
-
-  alt.emitClient(player, "a_death");
-
-  deadPlayers[player.id] = alt.setTimeout(() => {
-    if (deadPlayers[player.id]) {
-      delete deadPlayers[player.id];
-    }
-    
-    if(!player || !player.valid) {
-      return;
-    }
-
-    player.spawn(-601.9, -396.3, 69.98, 0);
-    alt.emitClient(player, "a_alive");
-    player.model = `mp_m_freemode_01`;
-
-  }, respawnTime);
-  
-  alt.log(player.id + " died.");
-}
-
-export function playerDamage(victim, attacker, damage, weaponHash) {
-  alt.emitClient(victim, "a_damage", [attacker, damage, weaponHash]);
 }

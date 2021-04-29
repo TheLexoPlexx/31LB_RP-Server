@@ -2,83 +2,6 @@
 /// <reference types="@altv/types-natives" />
 import * as alt from 'alt-client';
 import * as native from 'natives';
-import game from 'natives';
-import * as com from "./commands"; //Stehen lassen, wird gebraucht
-
-var dead = false;
-var gettingdamage;
-var wasted;
-var url = "http://resource/client/pages/wasted.html";
-
-//Keine Ahnung wofür das gut ist, ist aus Freeroam-Resource geklaut
-game.setPedDefaultComponentVariation(game.playerPedId());
-
-alt.onServer("a_connect", () => {
-});
-
-alt.onServer('a_death', () => {
-  //TODO: drawText statt HTML, Bildschirm-Shake und Drehung, Audio hinzufügen
-  if (gettingdamage != null) {
-    alt.clearTimeout(gettingdamage);
-  }
-  wasted = new alt.WebView(url);
-  native.setTimecycleModifier("MP_DEATH_GRADE_BLEND01");
-  dead = true;
-  wasted.focus();
-});
-
-alt.onServer('a_damage', (attacker, damage, weaponHash) => {
-  native.setTimecycleModifier("DAMAGE");
-  native.setTimecycleModifierStrength(0.6);
-
-  if (gettingdamage != null || dead) {
-    alt.clearTimeout(gettingdamage);
-  }
-  gettingdamage = alt.setTimeout(() => {
-    native.setTimecycleModifier("DEFAULT");
-    native.setTimecycleModifierStrength(1.5);
-  }, 550);
-});
-
-alt.onServer('a_alive', () => {
-  native.setTimecycleModifier("DEFAULT");
-  dead = false;
-  if (wasted != null) {
-    wasted.destroy();
-  }
-});
-
-alt.on("keyup", (key) => {
-  if (key == 115) { //F4
-    alt.emitServer("a_teleport", alt.player);
-
-    //game.requestIpl("apa_v_mp_h_01_b");
-  }
-});
-
-alt.on("disconnect", () => {
-  console.log("[Event]: a_disconnect");
-  alt.emitServer("a_disconnect", alt.player);
-});
-
-alt.on("character:Done", () => {
-  game.requestIpl("apa_v_mp_h_01_b");
-});
-
-//TODO native switchOutPlayer on successfull connect
-
-
-
-
-
-
-//TODO: Die folgenden Zeilen Code verschieben in externe Datei.
-
-alt.onServer("drawSubtitle", drawSubtitle);
-alt.onServer("displayNotification", displayNotification);
-alt.onServer("displayAdvancedNotification", displayAdvancedNotification);
-alt.onServer("drawRect", drawRect);
-alt.onServer("drawText", drawText);
 
 /**
  * Erzeugt einen Untertitel wie aus Heists am unteren Rand des Bildschirmes
@@ -86,7 +9,7 @@ alt.onServer("drawText", drawText);
  * @param text Text
  * @param duration Zeit in Millisekunden
  */
- function drawSubtitle(text, duration) {
+export function drawSubtitle(text, duration) {
   native.beginTextCommandPrint('STRING');
   native.addTextComponentSubstringPlayerName(text);
   native.endTextCommandPrint(duration, true);
@@ -97,7 +20,7 @@ alt.onServer("drawText", drawText);
  * 
  * @param text Text
  */
- function displayNotification(text) {
+export function displayNotification(text) {
   native.beginTextCommandThefeedPost('STRING');
   native.addTextComponentSubstringPlayerName(text);
   native.endTextCommandThefeedPostTicker(false, true);
@@ -115,7 +38,7 @@ alt.onServer("drawText", drawText);
  * @param backgroundColor Hintergrundfarbe, default = null
  * @param durationMult Zeitmultiplikator, default = 1
  */
- function displayAdvancedNotification(message, title = "Title", subtitle = "subtitle", notifImage = null, iconType = 0, backgroundColor = null, durationMult = 1) {
+export function displayAdvancedNotification(message, title = "Title", subtitle = "subtitle", notifImage = null, iconType = 0, backgroundColor = null, durationMult = 1) {
   native.beginTextCommandThefeedPost('STRING')
   native.addTextComponentSubstringPlayerName(message)
   if (backgroundColor != null) native.thefeedSetNextPostBackgroundColor(backgroundColor)
@@ -136,7 +59,7 @@ alt.onServer("drawText", drawText);
  * @param b Blau
  * @param a Alpha, default = 255
  */
-function drawRect(xPos, yPos, width, height, r, g, b, a = 255) {
+export function drawRect(xPos, yPos, width, height, r, g, b, a = 255) {
   const [_, screenWidth, screenHeight] = native.getActiveScreenResolution();
   const w = width / screenWidth;
   const h = height / screenHeight;
@@ -150,9 +73,9 @@ function drawRect(xPos, yPos, width, height, r, g, b, a = 255) {
  * Ein enum für util.drawTextOnScreen
  */
 
-const gtafonts = {
+export const gtafonts = {
   ChaletLondon: 0,
-  HouseScript : 1,
+  HouseScript: 1,
   Monospace: 2,
   CharletComprimeColonge: 4,
   Pricedown: 7
@@ -177,8 +100,8 @@ const gtafonts = {
  * @param useOutline Umrandung verwenden, default = true
  * @param useDropShadow Schlagschatten verwenden, default = true
  * @param center Text an der Mitte ausrichten, default = false
-*/
-function drawText(text, time, x, y, scale, fontType = 7, r = 155, g = 155, b = 155, a = 255, useOutline = true, useDropShadow = true, center = false) {
+ */
+export function drawText(text, time, x, y, scale, fontType = 7, r = 155, g = 155, b = 155, a = 255, useOutline = true, useDropShadow = true, center = false) {
   let gameTextInterval = undefined;
   gameTextInterval = alt.everyTick(() => {
     native.setTextFont(fontType);
@@ -186,18 +109,18 @@ function drawText(text, time, x, y, scale, fontType = 7, r = 155, g = 155, b = 1
     native.setTextScale(scale, scale);
     native.setTextColour(r, g, b, a);
     native.setTextEdge(2, 0, 0, 0, 150);
-  
-    if(useOutline) { 
+
+    if (useOutline) {
       native.setTextOutline();
     }
-    if(useDropShadow) {
+    if (useDropShadow) {
       native.setTextDropshadow(0, 0, 0, 0, 255);
       native.setTextDropShadow();
     }
-  
+
     native.setTextCentre(center);
     native.beginTextCommandDisplayText("CELL_EMAIL_BCON");
-  
+
     text.match(/.{1,99}/g).forEach(textBlock => {
       native.addTextComponentSubstringPlayerName(textBlock);
     });
