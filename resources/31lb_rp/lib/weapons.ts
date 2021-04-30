@@ -12,14 +12,14 @@ export interface Weapon {
         range ? : number;
     };
     overall ? : number;
-    components ? : WeaponComponent[];
-}
-
-export interface WeaponComponent {
-    name: string;
-    hash_key : string;
-    hash: number;
-    type ?: WeaponComponentType;
+    components ? : {
+        [dynamic:string]: {
+            name: string;
+            hash_key : string;
+            hash: number;
+            type ?: WeaponComponentType;
+        }
+    };
 }
 
 export enum WeaponComponentType {
@@ -32,9 +32,7 @@ export enum WeaponComponentType {
     grip
 }
 
-const WeaponList: {
-    [key: string]: Weapon
-} = {
+const WeaponList: { [key: string]: Weapon } = {
     advancedrifle: {
         hash: 0xaf113f99,
         name: 'Advanced Rifle',
@@ -49,6 +47,14 @@ const WeaponList: {
             range: 45,
         },
         overall: 47.8,
+        components: {
+            defaultclip: {
+                name: "Default Clip",
+                hash_key: "COMPONENT_ADVANCEDRIFLE_CLIP_01",
+                hash: 0xFA8FA10F,
+                type: WeaponComponentType.magazine
+            }
+        }
     },
     appistol: {
         hash: 0x22d8fe39,
@@ -718,6 +724,68 @@ const WeaponList: {
             range: 1,
         },
         overall: 1,
+        components: {
+            theballas: {
+                name: "The Ballas ",
+                hash_key: "COMPONENT_KNUCKLE_VARMOD_BALLAS ",
+                hash: 0xEED9FD63,
+                type: WeaponComponentType.finish
+              },
+              basemodel: {
+                name: "Base Model ",
+                hash_key: "COMPONENT_KNUCKLE_VARMOD_BASE ",
+                hash: 0xF3462F33,
+                type: WeaponComponentType.finish
+              },
+              therock: {
+                name: "The Rock ",
+                hash_key: "COMPONENT_KNUCKLE_VARMOD_DIAMOND ",
+                hash: 0x9761D9DC,
+                type: WeaponComponentType.finish
+              },
+              thehustler: {
+                name: "The Hustler ",
+                hash_key: "COMPONENT_KNUCKLE_VARMOD_DOLLAR ",
+                hash: 0x50910C31,
+                type: WeaponComponentType.finish
+              },
+              thehater: {
+                name: "The Hater ",
+                hash_key: "COMPONENT_KNUCKLE_VARMOD_HATE ",
+                hash: 0x7DECFE30,
+                type: WeaponComponentType.finish
+              },
+              theking: {
+                name: "The King ",
+                hash_key: "COMPONENT_KNUCKLE_VARMOD_KING ",
+                hash: 0xE28BABEF,
+                type: WeaponComponentType.finish
+              },
+              thelover: {
+                name: "The Lover ",
+                hash_key: "COMPONENT_KNUCKLE_VARMOD_LOVE ",
+                hash: 0x3F4E8AA6,
+                type: WeaponComponentType.finish
+              },
+              thepimp: {
+                name: "The Pimp ",
+                hash_key: "COMPONENT_KNUCKLE_VARMOD_PIMP ",
+                hash: 0xC613F685,
+                type: WeaponComponentType.finish
+              },
+              theplayer: {
+                name: "The Player ",
+                hash_key: "COMPONENT_KNUCKLE_VARMOD_PLAYER ",
+                hash: 0x8B808BB,
+                type: WeaponComponentType.finish
+              },
+              thevagos: {
+                name: "The Vagos ",
+                hash_key: "COMPONENT_KNUCKLE_VARMOD_VAGOS ",
+                hash: 0x7AF3F785,
+                type: WeaponComponentType.finish
+              },
+        }
     },
     machete: {
         hash: 0xdd5df8d9,
