@@ -3,11 +3,15 @@
 import * as alt from 'alt-client';
 import * as native from 'natives';
 import {
-  WeaponList
+  WeaponList, getWeaponByName
 } from './../lib/weapons';
 import * as NativeUI from "./lib/nativeui/nativeui"
 
 export function openWeaponShop() {
+
+  getPlayerWeapons();
+
+  /*
   native.setPlayerSimulateAiming(alt.Player, true);
 
   var et = alt.everyTick(() => {
@@ -58,14 +62,10 @@ export function openWeaponShop() {
   });
 
   ui.Open();
-
+  */
 }
 
 /*
-
-
-
-
   ui.ListChange.on((item, index) => {
       alt.log("[AutoListChange] " + itemcol.getListItems()[index].DisplayText, item.Text);
       alt.log("item: " + JSON.stringify(item));
@@ -79,7 +79,6 @@ export function openWeaponShop() {
   var utility = WeaponList.fireextinguisher.type;
   var melee = WeaponList.flashlight.type;
   var thrown = WeaponList.flare.type;
-  alt.log(WeaponList.advancedrifle.type);
   Object.values(WeaponList).forEach(element => {
     var type = element["type"];
     if (!types.includes(type)) {
@@ -105,3 +104,14 @@ export function openWeaponShop() {
     }
   });
 */
+
+function getPlayerWeapons() {
+  var weapons = {};
+  Object.values(WeaponList).forEach(value => {
+    if (native.hasPedGotWeapon(alt.Player.local.scriptID, value.hash, false)) {
+      if (value.hash != 0xa2719263) {
+        alt.log(JSON.stringify(value.name));
+      }
+    }
+  });
+}

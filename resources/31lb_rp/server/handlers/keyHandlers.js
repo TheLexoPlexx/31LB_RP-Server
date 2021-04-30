@@ -7,10 +7,8 @@ var menuopen = false;
 export function keyPressF9(player) {
   alt.log("F9 pressed");
 
-  player.
-
   if (!menuopen) {
-    //alt.emitClient(player, "a_weaponselect_s");
+    alt.emitClient(player, "a_weaponselect_s");
 
     //Sieht nutzlos aus, ist aber wichtig, stehen lassen!
     let pos = player.pos;
@@ -19,6 +17,7 @@ export function keyPressF9(player) {
     player.rot = new alt.Vector3(0, 90, player.rot.z);
 
     player.giveWeapon(getWeaponByName("advancedrifle").hash, 20, true);
+    player.giveWeapon(getWeaponByName("revolvermk2").hash, 40, true);
 
     menuopen = true;
   } else {

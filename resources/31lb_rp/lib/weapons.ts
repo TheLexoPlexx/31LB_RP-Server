@@ -12,6 +12,24 @@ export interface Weapon {
         range ? : number;
     };
     overall ? : number;
+    components ? : WeaponComponent[];
+}
+
+export interface WeaponComponent {
+    name: string;
+    hash_key : string;
+    hash: number;
+    type ?: WeaponComponentType;
+}
+
+export enum WeaponComponentType {
+    magazine,
+    finish,
+    suppressor,
+    flashlight,
+    scope,
+    mk2paint,
+    grip
 }
 
 const WeaponList: {

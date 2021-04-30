@@ -1,0 +1,2832 @@
+[
+ {
+   "Name": "The Ballas",
+   "Hash Key": "COMPONENT_KNUCKLE_VARMOD_BALLAS",
+   "Hash": "0xEED9FD63"
+ },
+ {
+   "Name": "Base Model",
+   "Hash Key": "COMPONENT_KNUCKLE_VARMOD_BASE",
+   "Hash": "0xF3462F33"
+ },
+ {
+   "Name": "The Rock",
+   "Hash Key": "COMPONENT_KNUCKLE_VARMOD_DIAMOND",
+   "Hash": "0x9761D9DC"
+ },
+ {
+   "Name": "The Hustler",
+   "Hash Key": "COMPONENT_KNUCKLE_VARMOD_DOLLAR",
+   "Hash": "0x50910C31"
+ },
+ {
+   "Name": "The Hater",
+   "Hash Key": "COMPONENT_KNUCKLE_VARMOD_HATE",
+   "Hash": "0x7DECFE30"
+ },
+ {
+   "Name": "The King",
+   "Hash Key": "COMPONENT_KNUCKLE_VARMOD_KING",
+   "Hash": "0xE28BABEF"
+ },
+ {
+   "Name": "The Lover",
+   "Hash Key": "COMPONENT_KNUCKLE_VARMOD_LOVE",
+   "Hash": "0x3F4E8AA6"
+ },
+ {
+   "Name": "The Pimp",
+   "Hash Key": "COMPONENT_KNUCKLE_VARMOD_PIMP",
+   "Hash": "0xC613F685"
+ },
+ {
+   "Name": "The Player",
+   "Hash Key": "COMPONENT_KNUCKLE_VARMOD_PLAYER",
+   "Hash": "0x8B808BB"
+ },
+ {
+   "Name": "The Vagos",
+   "Hash Key": "COMPONENT_KNUCKLE_VARMOD_VAGOS",
+   "Hash": "0x7AF3F785"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Handle",
+   "Hash Key": "COMPONENT_SWITCHBLADE_VARMOD_BASE",
+   "Hash": "0x9137A500"
+ },
+ {
+   "Name": "VIP Variant",
+   "Hash Key": "COMPONENT_SWITCHBLADE_VARMOD_VAR1",
+   "Hash": "0x5B3E7DB6"
+ },
+ {
+   "Name": "Bodyguard Variant",
+   "Hash Key": "COMPONENT_SWITCHBLADE_VARMOD_VAR2",
+   "Hash": "0xE7939662"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_PISTOL_CLIP_01",
+   "Hash": "0xFED0FD71"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_PISTOL_CLIP_02",
+   "Hash": "0xED265A1C"
+ },
+ {
+   "Name": "Flashlight",
+   "Hash Key": "COMPONENT_AT_PI_FLSH",
+   "Hash": "0x359B7AAE"
+ },
+ {
+   "Name": "Suppressor",
+   "Hash Key": "COMPONENT_AT_PI_SUPP_02",
+   "Hash": "0x65EA7EBB"
+ },
+ {
+   "Name": "Yusuf Amir Luxury Finish",
+   "Hash Key": "COMPONENT_PISTOL_VARMOD_LUXE",
+   "Hash": "0xD7391086"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_COMBATPISTOL_CLIP_01",
+   "Hash": "0x721B079"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_COMBATPISTOL_CLIP_02",
+   "Hash": "0xD67B4F2D"
+ },
+ {
+   "Name": "Flashlight",
+   "Hash Key": "COMPONENT_AT_PI_FLSH",
+   "Hash": "0x359B7AAE"
+ },
+ {
+   "Name": "Suppressor",
+   "Hash Key": "COMPONENT_AT_PI_SUPP",
+   "Hash": "0xC304849A"
+ },
+ {
+   "Name": "Yusuf Amir Luxury Finish",
+   "Hash Key": "COMPONENT_COMBATPISTOL_VARMOD_LOWRIDER",
+   "Hash": "0xC6654D72"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_APPISTOL_CLIP_01",
+   "Hash": "0x31C4B22A"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_APPISTOL_CLIP_02",
+   "Hash": "0x249A17D5"
+ },
+ {
+   "Name": "Flashlight",
+   "Hash Key": "COMPONENT_AT_PI_FLSH",
+   "Hash": "0x359B7AAE"
+ },
+ {
+   "Name": "Suppressor",
+   "Hash Key": "COMPONENT_AT_PI_SUPP",
+   "Hash": "0xC304849A"
+ },
+ {
+   "Name": "Gilded Gun Metal Finish",
+   "Hash Key": "COMPONENT_APPISTOL_VARMOD_LUXE",
+   "Hash": "0x9B76C72C"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_PISTOL50_CLIP_01",
+   "Hash": "0x2297BE19"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_PISTOL50_CLIP_02",
+   "Hash": "0xD9D3AC92"
+ },
+ {
+   "Name": "Flashlight",
+   "Hash Key": "COMPONENT_AT_PI_FLSH",
+   "Hash": "0x359B7AAE"
+ },
+ {
+   "Name": "Suppressor",
+   "Hash Key": "COMPONENT_AT_AR_SUPP_02",
+   "Hash": "0xA73D4664"
+ },
+ {
+   "Name": "Platinum Pearl Deluxe Finish",
+   "Hash Key": "COMPONENT_PISTOL50_VARMOD_LUXE",
+   "Hash": "0x77B8AB2F"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "VIP Variant",
+   "Hash Key": "COMPONENT_REVOLVER_VARMOD_BOSS",
+   "Hash": "0x16EE3040"
+ },
+ {
+   "Name": "Bodyguard Variant",
+   "Hash Key": "COMPONENT_REVOLVER_VARMOD_GOON",
+   "Hash": "0x9493B80D"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_REVOLVER_CLIP_01",
+   "Hash": "0xE9867CE3"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_SNSPISTOL_CLIP_01",
+   "Hash": "0xF8802ED9"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_SNSPISTOL_CLIP_02",
+   "Hash": "0x7B0033B3"
+ },
+ {
+   "Name": "Etched Wood Grip Finish",
+   "Hash Key": "COMPONENT_SNSPISTOL_VARMOD_LOWRIDER",
+   "Hash": "0x8033ECAF"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_HEAVYPISTOL_CLIP_01",
+   "Hash": "0xD4A969A"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_HEAVYPISTOL_CLIP_02",
+   "Hash": "0x64F9C62B"
+ },
+ {
+   "Name": "Flashlight",
+   "Hash Key": "COMPONENT_AT_PI_FLSH",
+   "Hash": "0x359B7AAE"
+ },
+ {
+   "Name": "Suppressor",
+   "Hash Key": "COMPONENT_AT_PI_SUPP",
+   "Hash": "0xC304849A"
+ },
+ {
+   "Name": "Etched Wood Grip Finish",
+   "Hash Key": "COMPONENT_HEAVYPISTOL_VARMOD_LUXE",
+   "Hash": "0x7A6A7B7B"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Rounds",
+   "Hash Key": "COMPONENT_REVOLVER_MK2_CLIP_01",
+   "Hash": "0xBA23D8BE"
+ },
+ {
+   "Name": "Tracer Rounds",
+   "Hash Key": "COMPONENT_REVOLVER_MK2_CLIP_TRACER",
+   "Hash": "0xC6D8E476"
+ },
+ {
+   "Name": "Incendiary Rounds",
+   "Hash Key": "COMPONENT_REVOLVER_MK2_CLIP_INCENDIARY",
+   "Hash": "0xEFBF25"
+ },
+ {
+   "Name": "Hollow Point Rounds",
+   "Hash Key": "COMPONENT_REVOLVER_MK2_CLIP_HOLLOWPOINT",
+   "Hash": "0x10F42E8F"
+ },
+ {
+   "Name": "Full Metal Jacket Rounds",
+   "Hash Key": "COMPONENT_REVOLVER_MK2_CLIP_FMJ",
+   "Hash": "0xDC8BA3F"
+ },
+ {
+   "Name": "Holographic Sight",
+   "Hash Key": "COMPONENT_AT_SIGHTS",
+   "Hash": "0x420FD713"
+ },
+ {
+   "Name": "Small Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_MACRO_MK2",
+   "Hash": "0x49B2945"
+ },
+ {
+   "Name": "Flashlight",
+   "Hash Key": "COMPONENT_AT_PI_FLSH",
+   "Hash": "0x359B7AAE"
+ },
+ {
+   "Name": "Compensator",
+   "Hash Key": "COMPONENT_AT_PI_COMP_03",
+   "Hash": "0x27077CCB"
+ },
+ {
+   "Name": "Digital Camo",
+   "Hash Key": "COMPONENT_REVOLVER_MK2_CAMO",
+   "Hash": "0xC03FED9F"
+ },
+ {
+   "Name": "Brushstroke Camo",
+   "Hash Key": "COMPONENT_REVOLVER_MK2_CAMO_02",
+   "Hash": "0xB5DE24"
+ },
+ {
+   "Name": "Woodland Camo",
+   "Hash Key": "COMPONENT_REVOLVER_MK2_CAMO_03",
+   "Hash": "0xA7FF1B8"
+ },
+ {
+   "Name": "Skull",
+   "Hash Key": "COMPONENT_REVOLVER_MK2_CAMO_04",
+   "Hash": "0xF2E24289"
+ },
+ {
+   "Name": "Sessanta Nove",
+   "Hash Key": "COMPONENT_REVOLVER_MK2_CAMO_05",
+   "Hash": "0x11317F27"
+ },
+ {
+   "Name": "Perseus",
+   "Hash Key": "COMPONENT_REVOLVER_MK2_CAMO_06",
+   "Hash": "0x17C30C42"
+ },
+ {
+   "Name": "Leopard",
+   "Hash Key": "COMPONENT_REVOLVER_MK2_CAMO_07",
+   "Hash": "0x257927AE"
+ },
+ {
+   "Name": "Zebra",
+   "Hash Key": "COMPONENT_REVOLVER_MK2_CAMO_08",
+   "Hash": "0x37304B1C"
+ },
+ {
+   "Name": "Geometric",
+   "Hash Key": "COMPONENT_REVOLVER_MK2_CAMO_09",
+   "Hash": "0x48DAEE71"
+ },
+ {
+   "Name": "Boom!",
+   "Hash Key": "COMPONENT_REVOLVER_MK2_CAMO_10",
+   "Hash": "0x20ED9B5B"
+ },
+ {
+   "Name": "Patriotic",
+   "Hash Key": "COMPONENT_REVOLVER_MK2_CAMO_IND_01",
+   "Hash": "0xD951E867"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_SNSPISTOL_MK2_CLIP_01",
+   "Hash": "0x1466CE6"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_SNSPISTOL_MK2_CLIP_02",
+   "Hash": "0xCE8C0772"
+ },
+ {
+   "Name": "Tracer Rounds",
+   "Hash Key": "COMPONENT_SNSPISTOL_MK2_CLIP_TRACER",
+   "Hash": "0x902DA26E"
+ },
+ {
+   "Name": "Incendiary Rounds",
+   "Hash Key": "COMPONENT_SNSPISTOL_MK2_CLIP_INCENDIARY",
+   "Hash": "0xE6AD5F79"
+ },
+ {
+   "Name": "Hollow Point Rounds",
+   "Hash Key": "COMPONENT_SNSPISTOL_MK2_CLIP_HOLLOWPOINT",
+   "Hash": "0x8D107402"
+ },
+ {
+   "Name": "Full Metal Jacket Rounds",
+   "Hash Key": "COMPONENT_SNSPISTOL_MK2_CLIP_FMJ",
+   "Hash": "0xC111EB26"
+ },
+ {
+   "Name": "Flashlight",
+   "Hash Key": "COMPONENT_AT_PI_FLSH_03",
+   "Hash": "0x4A4965F3"
+ },
+ {
+   "Name": "Mounted Scope",
+   "Hash Key": "COMPONENT_AT_PI_RAIL_02",
+   "Hash": "0x47DE9258"
+ },
+ {
+   "Name": "Suppressor",
+   "Hash Key": "COMPONENT_AT_PI_SUPP_02",
+   "Hash": "0x65EA7EBB"
+ },
+ {
+   "Name": "Compensator",
+   "Hash Key": "COMPONENT_AT_PI_COMP_02",
+   "Hash": "0xAA8283BF"
+ },
+ {
+   "Name": "Digital Camo",
+   "Hash Key": "COMPONENT_SNSPISTOL_MK2_CAMO",
+   "Hash": "0xF7BEEDD"
+ },
+ {
+   "Name": "Brushstroke Camo",
+   "Hash Key": "COMPONENT_SNSPISTOL_MK2_CAMO_02",
+   "Hash": "0x8A612EF6"
+ },
+ {
+   "Name": "Woodland Camo",
+   "Hash Key": "COMPONENT_SNSPISTOL_MK2_CAMO_03",
+   "Hash": "0x76FA8829"
+ },
+ {
+   "Name": "Skull",
+   "Hash Key": "COMPONENT_SNSPISTOL_MK2_CAMO_04",
+   "Hash": "0xA93C6CAC"
+ },
+ {
+   "Name": "Sessanta Nove",
+   "Hash Key": "COMPONENT_SNSPISTOL_MK2_CAMO_05",
+   "Hash": "0x9C905354"
+ },
+ {
+   "Name": "Perseus",
+   "Hash Key": "COMPONENT_SNSPISTOL_MK2_CAMO_06",
+   "Hash": "0x4DFA3621"
+ },
+ {
+   "Name": "Leopard",
+   "Hash Key": "COMPONENT_SNSPISTOL_MK2_CAMO_07",
+   "Hash": "0x42E91FFF"
+ },
+ {
+   "Name": "Zebra",
+   "Hash Key": "COMPONENT_SNSPISTOL_MK2_CAMO_08",
+   "Hash": "0x54A8437D"
+ },
+ {
+   "Name": "Geometric",
+   "Hash Key": "COMPONENT_SNSPISTOL_MK2_CAMO_09",
+   "Hash": "0x68C2746"
+ },
+ {
+   "Name": "Boom!",
+   "Hash Key": "COMPONENT_SNSPISTOL_MK2_CAMO_10",
+   "Hash": "0x2366E467"
+ },
+ {
+   "Name": "Boom!",
+   "Hash Key": "COMPONENT_SNSPISTOL_MK2_CAMO_IND_01",
+   "Hash": "0x441882E6"
+ },
+ {
+   "Name": "Digital Camo",
+   "Hash Key": "COMPONENT_SNSPISTOL_MK2_CAMO_SLIDE",
+   "Hash": "0xE7EE68EA"
+ },
+ {
+   "Name": "Brushstroke Camo",
+   "Hash Key": "COMPONENT_SNSPISTOL_MK2_CAMO_02_SLIDE",
+   "Hash": "0x29366D21"
+ },
+ {
+   "Name": "Woodland Camo",
+   "Hash Key": "COMPONENT_SNSPISTOL_MK2_CAMO_03_SLIDE",
+   "Hash": "0x3ADE514B"
+ },
+ {
+   "Name": "Skull",
+   "Hash Key": "COMPONENT_SNSPISTOL_MK2_CAMO_04_SLIDE",
+   "Hash": "0xE64513E9"
+ },
+ {
+   "Name": "Sessanta Nove",
+   "Hash Key": "COMPONENT_SNSPISTOL_MK2_CAMO_05_SLIDE",
+   "Hash": "0xCD7AEB9A"
+ },
+ {
+   "Name": "Perseus",
+   "Hash Key": "COMPONENT_SNSPISTOL_MK2_CAMO_06_SLIDE",
+   "Hash": "0xFA7B27A6"
+ },
+ {
+   "Name": "Leopard",
+   "Hash Key": "COMPONENT_SNSPISTOL_MK2_CAMO_07_SLIDE",
+   "Hash": "0xE285CA9A"
+ },
+ {
+   "Name": "Zebra",
+   "Hash Key": "COMPONENT_SNSPISTOL_MK2_CAMO_08_SLIDE",
+   "Hash": "0x2B904B19"
+ },
+ {
+   "Name": "Geometric",
+   "Hash Key": "COMPONENT_SNSPISTOL_MK2_CAMO_09_SLIDE",
+   "Hash": "0x22C24F9C"
+ },
+ {
+   "Name": "Boom!",
+   "Hash Key": "COMPONENT_SNSPISTOL_MK2_CAMO_10_SLIDE",
+   "Hash": "0x8D0D5ECD"
+ },
+ {
+   "Name": "Patriotic",
+   "Hash Key": "COMPONENT_SNSPISTOL_MK2_CAMO_IND_01_SLIDE",
+   "Hash": "0x1F07150A"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_PISTOL_MK2_CLIP_01",
+   "Hash": "0x94F42D62"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_PISTOL_MK2_CLIP_02",
+   "Hash": "0x5ED6C128"
+ },
+ {
+   "Name": "Tracer Rounds",
+   "Hash Key": "COMPONENT_PISTOL_MK2_CLIP_TRACER",
+   "Hash": "0x25CAAEAF"
+ },
+ {
+   "Name": "Incendiary Rounds",
+   "Hash Key": "COMPONENT_PISTOL_MK2_CLIP_INCENDIARY",
+   "Hash": "0x2BBD7A3A"
+ },
+ {
+   "Name": "Hollow Point Rounds",
+   "Hash Key": "COMPONENT_PISTOL_MK2_CLIP_HOLLOWPOINT",
+   "Hash": "0x85FEA109"
+ },
+ {
+   "Name": "Full Metal Jacket Rounds",
+   "Hash Key": "COMPONENT_PISTOL_MK2_CLIP_FMJ",
+   "Hash": "0x4F37DF2A"
+ },
+ {
+   "Name": "Mounted Scope",
+   "Hash Key": "COMPONENT_AT_PI_RAIL",
+   "Hash": "0x8ED4BB70"
+ },
+ {
+   "Name": "Flashlight",
+   "Hash Key": "COMPONENT_AT_PI_FLSH_02",
+   "Hash": "0x43FD595B"
+ },
+ {
+   "Name": "Suppressor",
+   "Hash Key": "COMPONENT_AT_PI_SUPP_02",
+   "Hash": "0x65EA7EBB"
+ },
+ {
+   "Name": "Compensator",
+   "Hash Key": "COMPONENT_AT_PI_COMP",
+   "Hash": "0x21E34793"
+ },
+ {
+   "Name": "Digital Camo",
+   "Hash Key": "COMPONENT_PISTOL_MK2_CAMO",
+   "Hash": "0x5C6C749C"
+ },
+ {
+   "Name": "Brushstroke Camo",
+   "Hash Key": "COMPONENT_PISTOL_MK2_CAMO_02",
+   "Hash": "0x15F7A390"
+ },
+ {
+   "Name": "Woodland Camo",
+   "Hash Key": "COMPONENT_PISTOL_MK2_CAMO_03",
+   "Hash": "0x968E24DB"
+ },
+ {
+   "Name": "Skull",
+   "Hash Key": "COMPONENT_PISTOL_MK2_CAMO_04",
+   "Hash": "0x17BFA99"
+ },
+ {
+   "Name": "Sessanta Nove",
+   "Hash Key": "COMPONENT_PISTOL_MK2_CAMO_05",
+   "Hash": "0xF2685C72"
+ },
+ {
+   "Name": "Perseus",
+   "Hash Key": "COMPONENT_PISTOL_MK2_CAMO_06",
+   "Hash": "0xDD2231E6"
+ },
+ {
+   "Name": "Leopard",
+   "Hash Key": "COMPONENT_PISTOL_MK2_CAMO_07",
+   "Hash": "0xBB43EE76"
+ },
+ {
+   "Name": "Zebra",
+   "Hash Key": "COMPONENT_PISTOL_MK2_CAMO_08",
+   "Hash": "0x4D901310"
+ },
+ {
+   "Name": "Geometric",
+   "Hash Key": "COMPONENT_PISTOL_MK2_CAMO_09",
+   "Hash": "0x5F31B653"
+ },
+ {
+   "Name": "Boom!",
+   "Hash Key": "COMPONENT_PISTOL_MK2_CAMO_10",
+   "Hash": "0x697E19A0"
+ },
+ {
+   "Name": "Patriotic",
+   "Hash Key": "COMPONENT_PISTOL_MK2_CAMO_IND_01",
+   "Hash": "0x930CB951"
+ },
+ {
+   "Name": "Digital Camo",
+   "Hash Key": "COMPONENT_PISTOL_MK2_CAMO_SLIDE",
+   "Hash": "0xB4FC92B0"
+ },
+ {
+   "Name": "Digital Camo",
+   "Hash Key": "COMPONENT_PISTOL_MK2_CAMO_02_SLIDE",
+   "Hash": "0x1A1F1260"
+ },
+ {
+   "Name": "Digital Camo",
+   "Hash Key": "COMPONENT_PISTOL_MK2_CAMO_03_SLIDE",
+   "Hash": "0xE4E00B70"
+ },
+ {
+   "Name": "Digital Camo",
+   "Hash Key": "COMPONENT_PISTOL_MK2_CAMO_04_SLIDE",
+   "Hash": "0x2C298B2B"
+ },
+ {
+   "Name": "Digital Camo",
+   "Hash Key": "COMPONENT_PISTOL_MK2_CAMO_05_SLIDE",
+   "Hash": "0xDFB79725"
+ },
+ {
+   "Name": "Digital Camo",
+   "Hash Key": "COMPONENT_PISTOL_MK2_CAMO_06_SLIDE",
+   "Hash": "0x6BD7228C"
+ },
+ {
+   "Name": "Digital Camo",
+   "Hash Key": "COMPONENT_PISTOL_MK2_CAMO_07_SLIDE",
+   "Hash": "0x9DDBCF8C"
+ },
+ {
+   "Name": "Digital Camo",
+   "Hash Key": "COMPONENT_PISTOL_MK2_CAMO_08_SLIDE",
+   "Hash": "0xB319A52C"
+ },
+ {
+   "Name": "Digital Camo",
+   "Hash Key": "COMPONENT_PISTOL_MK2_CAMO_09_SLIDE",
+   "Hash": "0xC6836E12"
+ },
+ {
+   "Name": "Digital Camo",
+   "Hash Key": "COMPONENT_PISTOL_MK2_CAMO_10_SLIDE",
+   "Hash": "0x43B1B173"
+ },
+ {
+   "Name": "Patriotic",
+   "Hash Key": "COMPONENT_PISTOL_MK2_CAMO_IND_01_SLIDE",
+   "Hash": "0x4ABDA3FA"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_VINTAGEPISTOL_CLIP_01",
+   "Hash": "0x45A3B6BB"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_VINTAGEPISTOL_CLIP_02",
+   "Hash": "0x33BA12E8"
+ },
+ {
+   "Name": "Suppressor",
+   "Hash Key": "COMPONENT_AT_PI_SUPP",
+   "Hash": "0xC304849A"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Festive tint",
+   "Hash Key": "COMPONENT_RAYPISTOL_VARMOD_XMAS18",
+   "Hash": "0xD7DBF707"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_MICROSMG_CLIP_01",
+   "Hash": "0xCB48AEF0"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_MICROSMG_CLIP_02",
+   "Hash": "0x10E6BA2B"
+ },
+ {
+   "Name": "Flashlight",
+   "Hash Key": "COMPONENT_AT_PI_FLSH",
+   "Hash": "0x359B7AAE"
+ },
+ {
+   "Name": "Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_MACRO",
+   "Hash": "0x9D2FBF29"
+ },
+ {
+   "Name": "Suppressor",
+   "Hash Key": "COMPONENT_AT_AR_SUPP_02",
+   "Hash": "0xA73D4664"
+ },
+ {
+   "Name": "Yusuf Amir Luxury Finish",
+   "Hash Key": "COMPONENT_MICROSMG_VARMOD_LUXE",
+   "Hash": "0x487AAE09"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_SMG_CLIP_01",
+   "Hash": "0x26574997"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_SMG_CLIP_02",
+   "Hash": "0x350966FB"
+ },
+ {
+   "Name": "Drum Magazine",
+   "Hash Key": "COMPONENT_SMG_CLIP_03",
+   "Hash": "0x79C77076"
+ },
+ {
+   "Name": "Flashlight",
+   "Hash Key": "COMPONENT_AT_AR_FLSH",
+   "Hash": "0x7BC4CDDC"
+ },
+ {
+   "Name": "Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_MACRO_02",
+   "Hash": "0x3CC6BA57"
+ },
+ {
+   "Name": "Suppressor",
+   "Hash Key": "COMPONENT_AT_PI_SUPP",
+   "Hash": "0xC304849A"
+ },
+ {
+   "Name": "Yusuf Amir Luxury Finish",
+   "Hash Key": "COMPONENT_SMG_VARMOD_LUXE",
+   "Hash": "0x27872C90"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_ASSAULTSMG_CLIP_01",
+   "Hash": "0x8D1307B0"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_ASSAULTSMG_CLIP_02",
+   "Hash": "0xBB46E417"
+ },
+ {
+   "Name": "Flashlight",
+   "Hash Key": "COMPONENT_AT_AR_FLSH",
+   "Hash": "0x7BC4CDDC"
+ },
+ {
+   "Name": "Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_MACRO",
+   "Hash": "0x9D2FBF29"
+ },
+ {
+   "Name": "Suppressor",
+   "Hash Key": "COMPONENT_AT_AR_SUPP_02",
+   "Hash": "0xA73D4664"
+ },
+ {
+   "Name": "Yusuf Amir Luxury Finish",
+   "Hash Key": "COMPONENT_ASSAULTSMG_VARMOD_LOWRIDER",
+   "Hash": "0x278C78AF"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_MINISMG_CLIP_01",
+   "Hash": "0x84C8B2D3"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_MINISMG_CLIP_02",
+   "Hash": "0x937ED0B7"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_SMG_MK2_CLIP_01",
+   "Hash": "0x4C24806E"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_SMG_MK2_CLIP_02",
+   "Hash": "0xB9835B2E"
+ },
+ {
+   "Name": "Tracer Rounds",
+   "Hash Key": "COMPONENT_SMG_MK2_CLIP_TRACER",
+   "Hash": "0x7FEA36EC"
+ },
+ {
+   "Name": "Incendiary Rounds",
+   "Hash Key": "COMPONENT_SMG_MK2_CLIP_INCENDIARY",
+   "Hash": "0xD99222E5"
+ },
+ {
+   "Name": "Hollow Point Rounds",
+   "Hash Key": "COMPONENT_SMG_MK2_CLIP_HOLLOWPOINT",
+   "Hash": "0x3A1BD6FA"
+ },
+ {
+   "Name": "Full Metal Jacket Rounds",
+   "Hash Key": "COMPONENT_SMG_MK2_CLIP_FMJ",
+   "Hash": "0xB5A715F"
+ },
+ {
+   "Name": "Flashlight",
+   "Hash Key": "COMPONENT_AT_AR_FLSH",
+   "Hash": "0x7BC4CDDC"
+ },
+ {
+   "Name": "Holographic Sight",
+   "Hash Key": "COMPONENT_AT_SIGHTS_SMG",
+   "Hash": "0x9FDB5652"
+ },
+ {
+   "Name": "Small Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_MACRO_02_SMG_MK2",
+   "Hash": "0xE502AB6B"
+ },
+ {
+   "Name": "Medium Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_SMALL_SMG_MK2",
+   "Hash": "0x3DECC7DA"
+ },
+ {
+   "Name": "Suppressor",
+   "Hash Key": "COMPONENT_AT_PI_SUPP",
+   "Hash": "0xC304849A"
+ },
+ {
+   "Name": "Flat Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_01",
+   "Hash": "0xB99402D4"
+ },
+ {
+   "Name": "Tactical Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_02",
+   "Hash": "0xC867A07B"
+ },
+ {
+   "Name": "Fat-End Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_03",
+   "Hash": "0xDE11CBCF"
+ },
+ {
+   "Name": "Precision Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_04",
+   "Hash": "0xEC9068CC"
+ },
+ {
+   "Name": "Heavy Duty Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_05",
+   "Hash": "0x2E7957A"
+ },
+ {
+   "Name": "Slanted Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_06",
+   "Hash": "0x347EF8AC"
+ },
+ {
+   "Name": "Split-End Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_07",
+   "Hash": "0x4DB62ABE"
+ },
+ {
+   "Name": "Default Barrel",
+   "Hash Key": "COMPONENT_AT_SB_BARREL_01",
+   "Hash": "0xD9103EE1"
+ },
+ {
+   "Name": "Heavy Barrel",
+   "Hash Key": "COMPONENT_AT_SB_BARREL_02",
+   "Hash": "0xA564D78B"
+ },
+ {
+   "Name": "Digital Camo",
+   "Hash Key": "COMPONENT_SMG_MK2_CAMO",
+   "Hash": "0xC4979067"
+ },
+ {
+   "Name": "Brushstroke Camo",
+   "Hash Key": "COMPONENT_SMG_MK2_CAMO_02",
+   "Hash": "0x3815A945"
+ },
+ {
+   "Name": "Woodland Camo",
+   "Hash Key": "COMPONENT_SMG_MK2_CAMO_03",
+   "Hash": "0x4B4B4FB0"
+ },
+ {
+   "Name": "Skull",
+   "Hash Key": "COMPONENT_SMG_MK2_CAMO_04",
+   "Hash": "0xEC729200"
+ },
+ {
+   "Name": "Sessanta Nove",
+   "Hash Key": "COMPONENT_SMG_MK2_CAMO_05",
+   "Hash": "0x48F64B22"
+ },
+ {
+   "Name": "Perseus",
+   "Hash Key": "COMPONENT_SMG_MK2_CAMO_06",
+   "Hash": "0x35992468"
+ },
+ {
+   "Name": "Leopard",
+   "Hash Key": "COMPONENT_SMG_MK2_CAMO_07",
+   "Hash": "0x24B782A5"
+ },
+ {
+   "Name": "Zebra",
+   "Hash Key": "COMPONENT_SMG_MK2_CAMO_08",
+   "Hash": "0xA2E67F01"
+ },
+ {
+   "Name": "Geometric",
+   "Hash Key": "COMPONENT_SMG_MK2_CAMO_09",
+   "Hash": "0x2218FD68"
+ },
+ {
+   "Name": "Boom!",
+   "Hash Key": "COMPONENT_SMG_MK2_CAMO_10",
+   "Hash": "0x45C5C3C5"
+ },
+ {
+   "Name": "Patriotic",
+   "Hash Key": "COMPONENT_SMG_MK2_CAMO_IND_01",
+   "Hash": "0x399D558F"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_MACHINEPISTOL_CLIP_01",
+   "Hash": "0x476E85FF"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_MACHINEPISTOL_CLIP_02",
+   "Hash": "0xB92C6979"
+ },
+ {
+   "Name": "Drum Magazine",
+   "Hash Key": "COMPONENT_MACHINEPISTOL_CLIP_03",
+   "Hash": "0xA9E9CAF4"
+ },
+ {
+   "Name": "Suppressor",
+   "Hash Key": "COMPONENT_AT_PI_SUPP",
+   "Hash": "0xC304849A"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_COMBATPDW_CLIP_01",
+   "Hash": "0x4317F19E"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_COMBATPDW_CLIP_02",
+   "Hash": "0x334A5203"
+ },
+ {
+   "Name": "Drum Magazine",
+   "Hash Key": "COMPONENT_COMBATPDW_CLIP_03",
+   "Hash": "0x6EB8C8DB"
+ },
+ {
+   "Name": "Flashlight",
+   "Hash Key": "COMPONENT_AT_AR_FLSH",
+   "Hash": "0x7BC4CDDC"
+ },
+ {
+   "Name": "Grip",
+   "Hash Key": "COMPONENT_AT_AR_AFGRIP",
+   "Hash": "0xC164F53"
+ },
+ {
+   "Name": "Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_SMALL",
+   "Hash": "0xAA2C45B4"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Flashlight",
+   "Hash Key": "COMPONENT_AT_AR_FLSH",
+   "Hash": "0x7BC4CDDC"
+ },
+ {
+   "Name": "Suppressor",
+   "Hash Key": "COMPONENT_AT_SR_SUPP",
+   "Hash": "0xE608B35E"
+ },
+ {
+   "Name": "Yusuf Amir Luxury Finish",
+   "Hash Key": "COMPONENT_PUMPSHOTGUN_VARMOD_LOWRIDER",
+   "Hash": "0xA2D79DDB"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Gilded Gun Metal Finish",
+   "Hash Key": "COMPONENT_SAWNOFFSHOTGUN_VARMOD_LUXE",
+   "Hash": "0x85A64DF9"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_ASSAULTSHOTGUN_CLIP_01",
+   "Hash": "0x94E81BC7"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_ASSAULTSHOTGUN_CLIP_02",
+   "Hash": "0x86BD7F72"
+ },
+ {
+   "Name": "Flashlight",
+   "Hash Key": "COMPONENT_AT_AR_FLSH",
+   "Hash": "0x7BC4CDDC"
+ },
+ {
+   "Name": "Suppressor",
+   "Hash Key": "COMPONENT_AT_AR_SUPP",
+   "Hash": "0x837445AA"
+ },
+ {
+   "Name": "Grip",
+   "Hash Key": "COMPONENT_AT_AR_AFGRIP",
+   "Hash": "0xC164F53"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Flashlight",
+   "Hash Key": "COMPONENT_AT_AR_FLSH",
+   "Hash": "0x7BC4CDDC"
+ },
+ {
+   "Name": "Suppressor",
+   "Hash Key": "COMPONENT_AT_AR_SUPP_02",
+   "Hash": "0xA73D4664"
+ },
+ {
+   "Name": "Grip",
+   "Hash Key": "COMPONENT_AT_AR_AFGRIP",
+   "Hash": "0xC164F53"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Shells",
+   "Hash Key": "COMPONENT_PUMPSHOTGUN_MK2_CLIP_01",
+   "Hash": "0xCD940141"
+ },
+ {
+   "Name": "Dragon's Breath Shells",
+   "Hash Key": "COMPONENT_PUMPSHOTGUN_MK2_CLIP_INCENDIARY",
+   "Hash": "0x9F8A1BF5"
+ },
+ {
+   "Name": "Steel Buckshot Shells",
+   "Hash Key": "COMPONENT_PUMPSHOTGUN_MK2_CLIP_ARMORPIERCING",
+   "Hash": "0x4E65B425"
+ },
+ {
+   "Name": "Flechette Shells",
+   "Hash Key": "COMPONENT_PUMPSHOTGUN_MK2_CLIP_HOLLOWPOINT",
+   "Hash": "0xE9582927"
+ },
+ {
+   "Name": "Explosive Slugs",
+   "Hash Key": "COMPONENT_PUMPSHOTGUN_MK2_CLIP_EXPLOSIVE",
+   "Hash": "0x3BE4465D"
+ },
+ {
+   "Name": "Holographic Sight",
+   "Hash Key": "COMPONENT_AT_SIGHTS",
+   "Hash": "0x420FD713"
+ },
+ {
+   "Name": "Small Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_MACRO_MK2",
+   "Hash": "0x49B2945"
+ },
+ {
+   "Name": "Medium Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_SMALL_MK2",
+   "Hash": "0x3F3C8181"
+ },
+ {
+   "Name": "Flashlight",
+   "Hash Key": "COMPONENT_AT_AR_FLSH",
+   "Hash": "0x7BC4CDDC"
+ },
+ {
+   "Name": "Suppressor",
+   "Hash Key": "COMPONENT_AT_SR_SUPP_03",
+   "Hash": "0xAC42DF71"
+ },
+ {
+   "Name": "Squared Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_08",
+   "Hash": "0x5F7DCE4D"
+ },
+ {
+   "Name": "Digital Camo",
+   "Hash Key": "COMPONENT_PUMPSHOTGUN_MK2_CAMO",
+   "Hash": "0xE3BD9E44"
+ },
+ {
+   "Name": "Brushstroke Camo",
+   "Hash Key": "COMPONENT_PUMPSHOTGUN_MK2_CAMO_02",
+   "Hash": "0x17148F9B"
+ },
+ {
+   "Name": "Woodland Camo",
+   "Hash Key": "COMPONENT_PUMPSHOTGUN_MK2_CAMO_03",
+   "Hash": "0x24D22B16"
+ },
+ {
+   "Name": "Skull",
+   "Hash Key": "COMPONENT_PUMPSHOTGUN_MK2_CAMO_04",
+   "Hash": "0xF2BEC6F0"
+ },
+ {
+   "Name": "Sessanta Nove",
+   "Hash Key": "COMPONENT_PUMPSHOTGUN_MK2_CAMO_05",
+   "Hash": "0x85627D"
+ },
+ {
+   "Name": "Perseus",
+   "Hash Key": "COMPONENT_PUMPSHOTGUN_MK2_CAMO_06",
+   "Hash": "0xDC2919C5"
+ },
+ {
+   "Name": "Leopard",
+   "Hash Key": "COMPONENT_PUMPSHOTGUN_MK2_CAMO_07",
+   "Hash": "0xE184247B"
+ },
+ {
+   "Name": "Zebra",
+   "Hash Key": "COMPONENT_PUMPSHOTGUN_MK2_CAMO_08",
+   "Hash": "0xD8EF9356"
+ },
+ {
+   "Name": "Geometric",
+   "Hash Key": "COMPONENT_PUMPSHOTGUN_MK2_CAMO_09",
+   "Hash": "0xEF29BFCA"
+ },
+ {
+   "Name": "Boom!",
+   "Hash Key": "COMPONENT_PUMPSHOTGUN_MK2_CAMO_10",
+   "Hash": "0x67AEB165"
+ },
+ {
+   "Name": "Patriotic",
+   "Hash Key": "COMPONENT_PUMPSHOTGUN_MK2_CAMO_IND_01",
+   "Hash": "0x46411A1D"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_HEAVYSHOTGUN_CLIP_01",
+   "Hash": "0x324F2D5F"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_HEAVYSHOTGUN_CLIP_02",
+   "Hash": "0x971CF6FD"
+ },
+ {
+   "Name": "Drum Magazine",
+   "Hash Key": "COMPONENT_HEAVYSHOTGUN_CLIP_03",
+   "Hash": "0x88C7DA53"
+ },
+ {
+   "Name": "Flashlight",
+   "Hash Key": "COMPONENT_AT_AR_FLSH",
+   "Hash": "0x7BC4CDDC"
+ },
+ {
+   "Name": "Suppressor",
+   "Hash Key": "COMPONENT_AT_AR_SUPP_02",
+   "Hash": "0xA73D4664"
+ },
+ {
+   "Name": "Grip",
+   "Hash Key": "COMPONENT_AT_AR_AFGRIP",
+   "Hash": "0xC164F53"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_ASSAULTRIFLE_CLIP_01",
+   "Hash": "0xBE5EEA16"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_ASSAULTRIFLE_CLIP_02",
+   "Hash": "0xB1214F9B"
+ },
+ {
+   "Name": "Drum Magazine",
+   "Hash Key": "COMPONENT_ASSAULTRIFLE_CLIP_03",
+   "Hash": "0xDBF0A53D"
+ },
+ {
+   "Name": "Flashlight",
+   "Hash Key": "COMPONENT_AT_AR_FLSH",
+   "Hash": "0x7BC4CDDC"
+ },
+ {
+   "Name": "Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_MACRO",
+   "Hash": "0x9D2FBF29"
+ },
+ {
+   "Name": "Suppressor",
+   "Hash Key": "COMPONENT_AT_AR_SUPP_02",
+   "Hash": "0xA73D4664"
+ },
+ {
+   "Name": "Grip",
+   "Hash Key": "COMPONENT_AT_AR_AFGRIP",
+   "Hash": "0xC164F53"
+ },
+ {
+   "Name": "Yusuf Amir Luxury Finish",
+   "Hash Key": "COMPONENT_ASSAULTRIFLE_VARMOD_LUXE",
+   "Hash": "0x4EAD7533"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_CARBINERIFLE_CLIP_01",
+   "Hash": "0x9FBE33EC"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_CARBINERIFLE_CLIP_02",
+   "Hash": "0x91109691"
+ },
+ {
+   "Name": "Box Magazine",
+   "Hash Key": "COMPONENT_CARBINERIFLE_CLIP_03",
+   "Hash": "0xBA62E935"
+ },
+ {
+   "Name": "Flashlight",
+   "Hash Key": "COMPONENT_AT_AR_FLSH",
+   "Hash": "0x7BC4CDDC"
+ },
+ {
+   "Name": "Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_MEDIUM",
+   "Hash": "0xA0D89C42"
+ },
+ {
+   "Name": "Suppressor",
+   "Hash Key": "COMPONENT_AT_AR_SUPP",
+   "Hash": "0x837445AA"
+ },
+ {
+   "Name": "Grip",
+   "Hash Key": "COMPONENT_AT_AR_AFGRIP",
+   "Hash": "0xC164F53"
+ },
+ {
+   "Name": "Yusuf Amir Luxury Finish",
+   "Hash Key": "COMPONENT_CARBINERIFLE_VARMOD_LUXE",
+   "Hash": "0xD89B9658"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_ADVANCEDRIFLE_CLIP_01",
+   "Hash": "0xFA8FA10F"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_ADVANCEDRIFLE_CLIP_02",
+   "Hash": "0x8EC1C979"
+ },
+ {
+   "Name": "Flashlight",
+   "Hash Key": "COMPONENT_AT_AR_FLSH",
+   "Hash": "0x7BC4CDDC"
+ },
+ {
+   "Name": "Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_SMALL",
+   "Hash": "0xAA2C45B4"
+ },
+ {
+   "Name": "Suppressor",
+   "Hash Key": "COMPONENT_AT_AR_SUPP",
+   "Hash": "0x837445AA"
+ },
+ {
+   "Name": "Gilded Gun Metal Finish",
+   "Hash Key": "COMPONENT_ADVANCEDRIFLE_VARMOD_LUXE",
+   "Hash": "0x377CD377"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_SPECIALCARBINE_CLIP_01",
+   "Hash": "0xC6C7E581"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_SPECIALCARBINE_CLIP_02",
+   "Hash": "0x7C8BD10E"
+ },
+ {
+   "Name": "Drum Magazine",
+   "Hash Key": "COMPONENT_SPECIALCARBINE_CLIP_03",
+   "Hash": "0x6B59AEAA"
+ },
+ {
+   "Name": "Flashlight",
+   "Hash Key": "COMPONENT_AT_AR_FLSH",
+   "Hash": "0x7BC4CDDC"
+ },
+ {
+   "Name": "Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_MEDIUM",
+   "Hash": "0xA0D89C42"
+ },
+ {
+   "Name": "Suppressor",
+   "Hash Key": "COMPONENT_AT_AR_SUPP_02",
+   "Hash": "0xA73D4664"
+ },
+ {
+   "Name": "Grip",
+   "Hash Key": "COMPONENT_AT_AR_AFGRIP",
+   "Hash": "0xC164F53"
+ },
+ {
+   "Name": "Etched Gun Metal Finish",
+   "Hash Key": "COMPONENT_SPECIALCARBINE_VARMOD_LOWRIDER",
+   "Hash": "0x730154F2"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_BULLPUPRIFLE_CLIP_01",
+   "Hash": "0xC5A12F80"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_BULLPUPRIFLE_CLIP_02",
+   "Hash": "0xB3688B0F"
+ },
+ {
+   "Name": "Flashlight",
+   "Hash Key": "COMPONENT_AT_AR_FLSH",
+   "Hash": "0x7BC4CDDC"
+ },
+ {
+   "Name": "Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_SMALL",
+   "Hash": "0xAA2C45B4"
+ },
+ {
+   "Name": "Suppressor",
+   "Hash Key": "COMPONENT_AT_AR_SUPP",
+   "Hash": "0x837445AA"
+ },
+ {
+   "Name": "Grip",
+   "Hash Key": "COMPONENT_AT_AR_AFGRIP",
+   "Hash": "0xC164F53"
+ },
+ {
+   "Name": "Gilded Gun Metal Finish",
+   "Hash Key": "COMPONENT_BULLPUPRIFLE_VARMOD_LOW",
+   "Hash": "0xA857BC78"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_BULLPUPRIFLE_MK2_CLIP_01",
+   "Hash": "0x18929DA"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_BULLPUPRIFLE_MK2_CLIP_02",
+   "Hash": "0xEFB00628"
+ },
+ {
+   "Name": "Tracer Rounds",
+   "Hash Key": "COMPONENT_BULLPUPRIFLE_MK2_CLIP_TRACER",
+   "Hash": "0x822060A9"
+ },
+ {
+   "Name": "Incendiary Rounds",
+   "Hash Key": "COMPONENT_BULLPUPRIFLE_MK2_CLIP_INCENDIARY",
+   "Hash": "0xA99CF95A"
+ },
+ {
+   "Name": "Armor Piercing Rounds",
+   "Hash Key": "COMPONENT_BULLPUPRIFLE_MK2_CLIP_ARMORPIERCING",
+   "Hash": "0xFAA7F5ED"
+ },
+ {
+   "Name": "Full Metal Jacket Rounds",
+   "Hash Key": "COMPONENT_BULLPUPRIFLE_MK2_CLIP_FMJ",
+   "Hash": "0x43621710"
+ },
+ {
+   "Name": "Flashlight",
+   "Hash Key": "COMPONENT_AT_AR_FLSH",
+   "Hash": "0x7BC4CDDC"
+ },
+ {
+   "Name": "Holographic Sight",
+   "Hash Key": "COMPONENT_AT_SIGHTS",
+   "Hash": "0x420FD713"
+ },
+ {
+   "Name": "Small Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_MACRO_02_MK2",
+   "Hash": "0xC7ADD105"
+ },
+ {
+   "Name": "Medium Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_SMALL_MK2",
+   "Hash": "0x3F3C8181"
+ },
+ {
+   "Name": "Default Barrel",
+   "Hash Key": "COMPONENT_AT_BP_BARREL_01",
+   "Hash": "0x659AC11B"
+ },
+ {
+   "Name": "Heavy Barrel",
+   "Hash Key": "COMPONENT_AT_BP_BARREL_02",
+   "Hash": "0x3BF26DC7"
+ },
+ {
+   "Name": "Suppressor",
+   "Hash Key": "COMPONENT_AT_AR_SUPP",
+   "Hash": "0x837445AA"
+ },
+ {
+   "Name": "Flat Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_01",
+   "Hash": "0xB99402D4"
+ },
+ {
+   "Name": "Tactical Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_02",
+   "Hash": "0xC867A07B"
+ },
+ {
+   "Name": "Fat-End Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_03",
+   "Hash": "0xDE11CBCF"
+ },
+ {
+   "Name": "Precision Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_04",
+   "Hash": "0xEC9068CC"
+ },
+ {
+   "Name": "Heavy Duty Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_05",
+   "Hash": "0x2E7957A"
+ },
+ {
+   "Name": "Slanted Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_06",
+   "Hash": "0x347EF8AC"
+ },
+ {
+   "Name": "Split-End Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_07",
+   "Hash": "0x4DB62ABE"
+ },
+ {
+   "Name": "Grip",
+   "Hash Key": "COMPONENT_AT_AR_AFGRIP_02",
+   "Hash": "0x9D65907A"
+ },
+ {
+   "Name": "Digital Camo",
+   "Hash Key": "COMPONENT_BULLPUPRIFLE_MK2_CAMO",
+   "Hash": "0xAE4055B7"
+ },
+ {
+   "Name": "Brushstroke Camo",
+   "Hash Key": "COMPONENT_BULLPUPRIFLE_MK2_CAMO_02",
+   "Hash": "0xB905ED6B"
+ },
+ {
+   "Name": "Woodland Camo",
+   "Hash Key": "COMPONENT_BULLPUPRIFLE_MK2_CAMO_03",
+   "Hash": "0xA6C448E8"
+ },
+ {
+   "Name": "Skull",
+   "Hash Key": "COMPONENT_BULLPUPRIFLE_MK2_CAMO_04",
+   "Hash": "0x9486246C"
+ },
+ {
+   "Name": "Sessanta Nove",
+   "Hash Key": "COMPONENT_BULLPUPRIFLE_MK2_CAMO_05",
+   "Hash": "0x8A390FD2"
+ },
+ {
+   "Name": "Perseus",
+   "Hash Key": "COMPONENT_BULLPUPRIFLE_MK2_CAMO_06",
+   "Hash": "0x2337FC5"
+ },
+ {
+   "Name": "Leopard",
+   "Hash Key": "COMPONENT_BULLPUPRIFLE_MK2_CAMO_07",
+   "Hash": "0xEFFFDB5E"
+ },
+ {
+   "Name": "Zebra",
+   "Hash Key": "COMPONENT_BULLPUPRIFLE_MK2_CAMO_08",
+   "Hash": "0xDDBDB6DA"
+ },
+ {
+   "Name": "Geometric",
+   "Hash Key": "COMPONENT_BULLPUPRIFLE_MK2_CAMO_09",
+   "Hash": "0xCB631225"
+ },
+ {
+   "Name": "Boom!",
+   "Hash Key": "COMPONENT_BULLPUPRIFLE_MK2_CAMO_10",
+   "Hash": "0xA87D541E"
+ },
+ {
+   "Name": "Patriotic",
+   "Hash Key": "COMPONENT_BULLPUPRIFLE_MK2_CAMO_IND_01",
+   "Hash": "0xC5E9AE52"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_SPECIALCARBINE_MK2_CLIP_01",
+   "Hash": "0x16C69281"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_SPECIALCARBINE_MK2_CLIP_02",
+   "Hash": "0xDE1FA12C"
+ },
+ {
+   "Name": "Tracer Rounds",
+   "Hash Key": "COMPONENT_SPECIALCARBINE_MK2_CLIP_TRACER",
+   "Hash": "0x8765C68A"
+ },
+ {
+   "Name": "Incendiary Rounds",
+   "Hash Key": "COMPONENT_SPECIALCARBINE_MK2_CLIP_INCENDIARY",
+   "Hash": "0xDE011286"
+ },
+ {
+   "Name": "Armor Piercing Rounds",
+   "Hash Key": "COMPONENT_SPECIALCARBINE_MK2_CLIP_ARMORPIERCING",
+   "Hash": "0x51351635"
+ },
+ {
+   "Name": "Full Metal Jacket Rounds",
+   "Hash Key": "COMPONENT_SPECIALCARBINE_MK2_CLIP_FMJ",
+   "Hash": "0x503DEA90"
+ },
+ {
+   "Name": "Flashlight",
+   "Hash Key": "COMPONENT_AT_AR_FLSH",
+   "Hash": "0x7BC4CDDC"
+ },
+ {
+   "Name": "Holographic Sight",
+   "Hash Key": "COMPONENT_AT_SIGHTS",
+   "Hash": "0x420FD713"
+ },
+ {
+   "Name": "Small Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_MACRO_MK2",
+   "Hash": "0x49B2945"
+ },
+ {
+   "Name": "Large Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_MEDIUM_MK2",
+   "Hash": "0xC66B6542"
+ },
+ {
+   "Name": "Suppressor",
+   "Hash Key": "COMPONENT_AT_AR_SUPP_02",
+   "Hash": "0xA73D4664"
+ },
+ {
+   "Name": "Flat Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_01",
+   "Hash": "0xB99402D4"
+ },
+ {
+   "Name": "Tactical Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_02",
+   "Hash": "0xC867A07B"
+ },
+ {
+   "Name": "Fat-End Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_03",
+   "Hash": "0xDE11CBCF"
+ },
+ {
+   "Name": "Precision Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_04",
+   "Hash": "0xEC9068CC"
+ },
+ {
+   "Name": "Heavy Duty Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_05",
+   "Hash": "0x2E7957A"
+ },
+ {
+   "Name": "Slanted Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_06",
+   "Hash": "0x347EF8AC"
+ },
+ {
+   "Name": "Split-End Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_07",
+   "Hash": "0x4DB62ABE"
+ },
+ {
+   "Name": "Grip",
+   "Hash Key": "COMPONENT_AT_AR_AFGRIP_02",
+   "Hash": "0x9D65907A"
+ },
+ {
+   "Name": "Default Barrel",
+   "Hash Key": "COMPONENT_AT_SC_BARREL_01",
+   "Hash": "0xE73653A9"
+ },
+ {
+   "Name": "Heavy Barrel",
+   "Hash Key": "COMPONENT_AT_SC_BARREL_02",
+   "Hash": "0xF97F783B"
+ },
+ {
+   "Name": "Digital Camo",
+   "Hash Key": "COMPONENT_SPECIALCARBINE_MK2_CAMO",
+   "Hash": "0xD40BB53B"
+ },
+ {
+   "Name": "Brushstroke Camo",
+   "Hash Key": "COMPONENT_SPECIALCARBINE_MK2_CAMO_02",
+   "Hash": "0x431B238B"
+ },
+ {
+   "Name": "Woodland Camo",
+   "Hash Key": "COMPONENT_SPECIALCARBINE_MK2_CAMO_03",
+   "Hash": "0x34CF86F4"
+ },
+ {
+   "Name": "Skull",
+   "Hash Key": "COMPONENT_SPECIALCARBINE_MK2_CAMO_04",
+   "Hash": "0xB4C306DD"
+ },
+ {
+   "Name": "Sessanta Nove",
+   "Hash Key": "COMPONENT_SPECIALCARBINE_MK2_CAMO_05",
+   "Hash": "0xEE677A25"
+ },
+ {
+   "Name": "Perseus",
+   "Hash Key": "COMPONENT_SPECIALCARBINE_MK2_CAMO_06",
+   "Hash": "0xDF90DC78"
+ },
+ {
+   "Name": "Leopard",
+   "Hash Key": "COMPONENT_SPECIALCARBINE_MK2_CAMO_07",
+   "Hash": "0xA4C31EE"
+ },
+ {
+   "Name": "Zebra",
+   "Hash Key": "COMPONENT_SPECIALCARBINE_MK2_CAMO_08",
+   "Hash": "0x89CFB0F7"
+ },
+ {
+   "Name": "Geometric",
+   "Hash Key": "COMPONENT_SPECIALCARBINE_MK2_CAMO_09",
+   "Hash": "0x7B82145C"
+ },
+ {
+   "Name": "Boom!",
+   "Hash Key": "COMPONENT_SPECIALCARBINE_MK2_CAMO_10",
+   "Hash": "0x899CAF75"
+ },
+ {
+   "Name": "Patriotic",
+   "Hash Key": "COMPONENT_SPECIALCARBINE_MK2_CAMO_IND_01",
+   "Hash": "0x5218C819"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_ASSAULTRIFLE_MK2_CLIP_01",
+   "Hash": "0x8610343F"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_ASSAULTRIFLE_MK2_CLIP_02",
+   "Hash": "0xD12ACA6F"
+ },
+ {
+   "Name": "Tracer Rounds",
+   "Hash Key": "COMPONENT_ASSAULTRIFLE_MK2_CLIP_TRACER",
+   "Hash": "0xEF2C78C1"
+ },
+ {
+   "Name": "Incendiary Rounds",
+   "Hash Key": "COMPONENT_ASSAULTRIFLE_MK2_CLIP_INCENDIARY",
+   "Hash": "0xFB70D853"
+ },
+ {
+   "Name": "Armor Piercing Rounds",
+   "Hash Key": "COMPONENT_ASSAULTRIFLE_MK2_CLIP_ARMORPIERCING",
+   "Hash": "0xA7DD1E58"
+ },
+ {
+   "Name": "Full Metal Jacket Rounds",
+   "Hash Key": "COMPONENT_ASSAULTRIFLE_MK2_CLIP_FMJ",
+   "Hash": "0x63E0A098"
+ },
+ {
+   "Name": "Grip",
+   "Hash Key": "COMPONENT_AT_AR_AFGRIP_02",
+   "Hash": "0x9D65907A"
+ },
+ {
+   "Name": "Flashlight",
+   "Hash Key": "COMPONENT_AT_AR_FLSH",
+   "Hash": "0x7BC4CDDC"
+ },
+ {
+   "Name": "Holographic Sight",
+   "Hash Key": "COMPONENT_AT_SIGHTS",
+   "Hash": "0x420FD713"
+ },
+ {
+   "Name": "Small Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_MACRO_MK2",
+   "Hash": "0x49B2945"
+ },
+ {
+   "Name": "Large Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_MEDIUM_MK2",
+   "Hash": "0xC66B6542"
+ },
+ {
+   "Name": "Suppressor",
+   "Hash Key": "COMPONENT_AT_AR_SUPP_02",
+   "Hash": "0xA73D4664"
+ },
+ {
+   "Name": "Flat Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_01",
+   "Hash": "0xB99402D4"
+ },
+ {
+   "Name": "Tactical Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_02",
+   "Hash": "0xC867A07B"
+ },
+ {
+   "Name": "Fat-End Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_03",
+   "Hash": "0xDE11CBCF"
+ },
+ {
+   "Name": "Precision Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_04",
+   "Hash": "0xEC9068CC"
+ },
+ {
+   "Name": "Heavy Duty Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_05",
+   "Hash": "0x2E7957A"
+ },
+ {
+   "Name": "Slanted Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_06",
+   "Hash": "0x347EF8AC"
+ },
+ {
+   "Name": "Split-End Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_07",
+   "Hash": "0x4DB62ABE"
+ },
+ {
+   "Name": "Default Barrel",
+   "Hash Key": "COMPONENT_AT_AR_BARREL_01",
+   "Hash": "0x43A49D26"
+ },
+ {
+   "Name": "Heavy Barrel",
+   "Hash Key": "COMPONENT_AT_AR_BARREL_02",
+   "Hash": "0x5646C26A"
+ },
+ {
+   "Name": "Digital Camo",
+   "Hash Key": "COMPONENT_ASSAULTRIFLE_MK2_CAMO",
+   "Hash": "0x911B24AF"
+ },
+ {
+   "Name": "Brushstroke Camo",
+   "Hash Key": "COMPONENT_ASSAULTRIFLE_MK2_CAMO_02",
+   "Hash": "0x37E5444B"
+ },
+ {
+   "Name": "Woodland Camo",
+   "Hash Key": "COMPONENT_ASSAULTRIFLE_MK2_CAMO_03",
+   "Hash": "0x538B7B97"
+ },
+ {
+   "Name": "Skull",
+   "Hash Key": "COMPONENT_ASSAULTRIFLE_MK2_CAMO_04",
+   "Hash": "0x25789F72"
+ },
+ {
+   "Name": "Sessanta Nove",
+   "Hash Key": "COMPONENT_ASSAULTRIFLE_MK2_CAMO_05",
+   "Hash": "0xC5495F2D"
+ },
+ {
+   "Name": "Perseus",
+   "Hash Key": "COMPONENT_ASSAULTRIFLE_MK2_CAMO_06",
+   "Hash": "0xCF8B73B1"
+ },
+ {
+   "Name": "Leopard",
+   "Hash Key": "COMPONENT_ASSAULTRIFLE_MK2_CAMO_07",
+   "Hash": "0xA9BB2811"
+ },
+ {
+   "Name": "Zebra",
+   "Hash Key": "COMPONENT_ASSAULTRIFLE_MK2_CAMO_08",
+   "Hash": "0xFC674D54"
+ },
+ {
+   "Name": "Geometric",
+   "Hash Key": "COMPONENT_ASSAULTRIFLE_MK2_CAMO_09",
+   "Hash": "0x7C7FCD9B"
+ },
+ {
+   "Name": "Boom!",
+   "Hash Key": "COMPONENT_ASSAULTRIFLE_MK2_CAMO_10",
+   "Hash": "0xA5C38392"
+ },
+ {
+   "Name": "Patriotic",
+   "Hash Key": "COMPONENT_ASSAULTRIFLE_MK2_CAMO_IND_01",
+   "Hash": "0xB9B15DB0"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_CARBINERIFLE_MK2_CLIP_01",
+   "Hash": "0x4C7A391E"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_CARBINERIFLE_MK2_CLIP_02",
+   "Hash": "0x5DD5DBD5"
+ },
+ {
+   "Name": "Tracer Rounds",
+   "Hash Key": "COMPONENT_CARBINERIFLE_MK2_CLIP_TRACER",
+   "Hash": "0x1757F566"
+ },
+ {
+   "Name": "Incendiary Rounds",
+   "Hash Key": "COMPONENT_CARBINERIFLE_MK2_CLIP_INCENDIARY",
+   "Hash": "0x3D25C2A7"
+ },
+ {
+   "Name": "Armor Piercing Rounds",
+   "Hash Key": "COMPONENT_CARBINERIFLE_MK2_CLIP_ARMORPIERCING",
+   "Hash": "0x255D5D57"
+ },
+ {
+   "Name": "Full Metal Jacket Rounds",
+   "Hash Key": "COMPONENT_CARBINERIFLE_MK2_CLIP_FMJ",
+   "Hash": "0x44032F11"
+ },
+ {
+   "Name": "Grip",
+   "Hash Key": "COMPONENT_AT_AR_AFGRIP_02",
+   "Hash": "0x9D65907A"
+ },
+ {
+   "Name": "Flashlight",
+   "Hash Key": "COMPONENT_AT_AR_FLSH",
+   "Hash": "0x7BC4CDDC"
+ },
+ {
+   "Name": "Holographic Sight",
+   "Hash Key": "COMPONENT_AT_SIGHTS",
+   "Hash": "0x420FD713"
+ },
+ {
+   "Name": "Small Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_MACRO_MK2",
+   "Hash": "0x49B2945"
+ },
+ {
+   "Name": "Large Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_MEDIUM_MK2",
+   "Hash": "0xC66B6542"
+ },
+ {
+   "Name": "Suppressor",
+   "Hash Key": "COMPONENT_AT_AR_SUPP",
+   "Hash": "0x837445AA"
+ },
+ {
+   "Name": "Flat Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_01",
+   "Hash": "0xB99402D4"
+ },
+ {
+   "Name": "Tactical Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_02",
+   "Hash": "0xC867A07B"
+ },
+ {
+   "Name": "Fat-End Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_03",
+   "Hash": "0xDE11CBCF"
+ },
+ {
+   "Name": "Precision Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_04",
+   "Hash": "0xEC9068CC"
+ },
+ {
+   "Name": "Heavy Duty Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_05",
+   "Hash": "0x2E7957A"
+ },
+ {
+   "Name": "Slanted Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_06",
+   "Hash": "0x347EF8AC"
+ },
+ {
+   "Name": "Split-End Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_07",
+   "Hash": "0x4DB62ABE"
+ },
+ {
+   "Name": "Default Barrel",
+   "Hash Key": "COMPONENT_AT_CR_BARREL_01",
+   "Hash": "0x833637FF"
+ },
+ {
+   "Name": "Heavy Barrel",
+   "Hash Key": "COMPONENT_AT_CR_BARREL_02",
+   "Hash": "0x8B3C480B"
+ },
+ {
+   "Name": "Digital Camo",
+   "Hash Key": "COMPONENT_CARBINERIFLE_MK2_CAMO",
+   "Hash": "0x4BDD6F16"
+ },
+ {
+   "Name": "Brushstroke Camo",
+   "Hash Key": "COMPONENT_CARBINERIFLE_MK2_CAMO_02",
+   "Hash": "0x406A7908"
+ },
+ {
+   "Name": "Woodland Camo",
+   "Hash Key": "COMPONENT_CARBINERIFLE_MK2_CAMO_03",
+   "Hash": "0x2F3856A4"
+ },
+ {
+   "Name": "Skull",
+   "Hash Key": "COMPONENT_CARBINERIFLE_MK2_CAMO_04",
+   "Hash": "0xE50C424D"
+ },
+ {
+   "Name": "Sessanta Nove",
+   "Hash Key": "COMPONENT_CARBINERIFLE_MK2_CAMO_05",
+   "Hash": "0xD37D1F2F"
+ },
+ {
+   "Name": "Perseus",
+   "Hash Key": "COMPONENT_CARBINERIFLE_MK2_CAMO_06",
+   "Hash": "0x86268483"
+ },
+ {
+   "Name": "Leopard",
+   "Hash Key": "COMPONENT_CARBINERIFLE_MK2_CAMO_07",
+   "Hash": "0xF420E076"
+ },
+ {
+   "Name": "Zebra",
+   "Hash Key": "COMPONENT_CARBINERIFLE_MK2_CAMO_08",
+   "Hash": "0xAAE14DF8"
+ },
+ {
+   "Name": "Geometric",
+   "Hash Key": "COMPONENT_CARBINERIFLE_MK2_CAMO_09",
+   "Hash": "0x9893A95D"
+ },
+ {
+   "Name": "Boom!",
+   "Hash Key": "COMPONENT_CARBINERIFLE_MK2_CAMO_10",
+   "Hash": "0x6B13CD3E"
+ },
+ {
+   "Name": "Patriotic",
+   "Hash Key": "COMPONENT_CARBINERIFLE_MK2_CAMO_IND_01",
+   "Hash": "0xDA55CD3F"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_COMPACTRIFLE_CLIP_01",
+   "Hash": "0x513F0A63"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_COMPACTRIFLE_CLIP_02",
+   "Hash": "0x59FF9BF8"
+ },
+ {
+   "Name": "Drum Magazine",
+   "Hash Key": "COMPONENT_COMPACTRIFLE_CLIP_03",
+   "Hash": "0xC607740E"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_MG_CLIP_01",
+   "Hash": "0xF434EF84"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_MG_CLIP_02",
+   "Hash": "0x82158B47"
+ },
+ {
+   "Name": "Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_SMALL_02",
+   "Hash": "0x3C00AFED"
+ },
+ {
+   "Name": "Yusuf Amir Luxury Finish",
+   "Hash Key": "COMPONENT_MG_VARMOD_LOWRIDER",
+   "Hash": "0xD6DABABE"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_COMBATMG_CLIP_01",
+   "Hash": "0xE1FFB34A"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_COMBATMG_CLIP_02",
+   "Hash": "0xD6C59CD6"
+ },
+ {
+   "Name": "Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_MEDIUM",
+   "Hash": "0xA0D89C42"
+ },
+ {
+   "Name": "Grip",
+   "Hash Key": "COMPONENT_AT_AR_AFGRIP",
+   "Hash": "0xC164F53"
+ },
+ {
+   "Name": "Etched Gun Metal Finish",
+   "Hash Key": "COMPONENT_COMBATMG_VARMOD_LOWRIDER",
+   "Hash": "0x92FECCDD"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_COMBATMG_MK2_CLIP_01",
+   "Hash": "0x492B257C"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_COMBATMG_MK2_CLIP_02",
+   "Hash": "0x17DF42E9"
+ },
+ {
+   "Name": "Tracer Rounds",
+   "Hash Key": "COMPONENT_COMBATMG_MK2_CLIP_TRACER",
+   "Hash": "0xF6649745"
+ },
+ {
+   "Name": "Incendiary Rounds",
+   "Hash Key": "COMPONENT_COMBATMG_MK2_CLIP_INCENDIARY",
+   "Hash": "0xC326BDBA"
+ },
+ {
+   "Name": "Armor Piercing Rounds",
+   "Hash Key": "COMPONENT_COMBATMG_MK2_CLIP_ARMORPIERCING",
+   "Hash": "0x29882423"
+ },
+ {
+   "Name": "Full Metal Jacket Rounds",
+   "Hash Key": "COMPONENT_COMBATMG_MK2_CLIP_FMJ",
+   "Hash": "0x57EF1CC8"
+ },
+ {
+   "Name": "Grip",
+   "Hash Key": "COMPONENT_AT_AR_AFGRIP_02",
+   "Hash": "0x9D65907A"
+ },
+ {
+   "Name": "Holographic Sight",
+   "Hash Key": "COMPONENT_AT_SIGHTS",
+   "Hash": "0x420FD713"
+ },
+ {
+   "Name": "Medium Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_SMALL_MK2",
+   "Hash": "0x3F3C8181"
+ },
+ {
+   "Name": "Large Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_MEDIUM_MK2",
+   "Hash": "0xC66B6542"
+ },
+ {
+   "Name": "Flat Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_01",
+   "Hash": "0xB99402D4"
+ },
+ {
+   "Name": "Tactical Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_02",
+   "Hash": "0xC867A07B"
+ },
+ {
+   "Name": "Fat-End Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_03",
+   "Hash": "0xDE11CBCF"
+ },
+ {
+   "Name": "Precision Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_04",
+   "Hash": "0xEC9068CC"
+ },
+ {
+   "Name": "Heavy Duty Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_05",
+   "Hash": "0x2E7957A"
+ },
+ {
+   "Name": "Slanted Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_06",
+   "Hash": "0x347EF8AC"
+ },
+ {
+   "Name": "Split-End Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_07",
+   "Hash": "0x4DB62ABE"
+ },
+ {
+   "Name": "Default Barrel",
+   "Hash Key": "COMPONENT_AT_MG_BARREL_01",
+   "Hash": "0xC34EF234"
+ },
+ {
+   "Name": "Heavy Barrel",
+   "Hash Key": "COMPONENT_AT_MG_BARREL_02",
+   "Hash": "0xB5E2575B"
+ },
+ {
+   "Name": "Digital Camo",
+   "Hash Key": "COMPONENT_COMBATMG_MK2_CAMO",
+   "Hash": "0x4A768CB5"
+ },
+ {
+   "Name": "Brushstroke Camo",
+   "Hash Key": "COMPONENT_COMBATMG_MK2_CAMO_02",
+   "Hash": "0xCCE06BBD"
+ },
+ {
+   "Name": "Woodland Camo",
+   "Hash Key": "COMPONENT_COMBATMG_MK2_CAMO_03",
+   "Hash": "0xBE94CF26"
+ },
+ {
+   "Name": "Skull",
+   "Hash Key": "COMPONENT_COMBATMG_MK2_CAMO_04",
+   "Hash": "0x7609BE11"
+ },
+ {
+   "Name": "Sessanta Nove",
+   "Hash Key": "COMPONENT_COMBATMG_MK2_CAMO_05",
+   "Hash": "0x48AF6351"
+ },
+ {
+   "Name": "Perseus",
+   "Hash Key": "COMPONENT_COMBATMG_MK2_CAMO_06",
+   "Hash": "0x9186750A"
+ },
+ {
+   "Name": "Leopard",
+   "Hash Key": "COMPONENT_COMBATMG_MK2_CAMO_07",
+   "Hash": "0x84555AA8"
+ },
+ {
+   "Name": "Zebra",
+   "Hash Key": "COMPONENT_COMBATMG_MK2_CAMO_08",
+   "Hash": "0x1B4C088B"
+ },
+ {
+   "Name": "Geometric",
+   "Hash Key": "COMPONENT_COMBATMG_MK2_CAMO_09",
+   "Hash": "0xE046DFC"
+ },
+ {
+   "Name": "Boom!",
+   "Hash Key": "COMPONENT_COMBATMG_MK2_CAMO_10",
+   "Hash": "0x28B536E"
+ },
+ {
+   "Name": "Patriotic",
+   "Hash Key": "COMPONENT_COMBATMG_MK2_CAMO_IND_01",
+   "Hash": "0xD703C94D"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_GUSENBERG_CLIP_01",
+   "Hash": "0x1CE5A6A5"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_GUSENBERG_CLIP_02",
+   "Hash": "0xEAC8C270"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_SNIPERRIFLE_CLIP_01",
+   "Hash": "0x9BC64089"
+ },
+ {
+   "Name": "Suppressor",
+   "Hash Key": "COMPONENT_AT_AR_SUPP_02",
+   "Hash": "0xA73D4664"
+ },
+ {
+   "Name": "Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_LARGE",
+   "Hash": "0xD2443DDC"
+ },
+ {
+   "Name": "Advanced Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_MAX",
+   "Hash": "0xBC54DA77"
+ },
+ {
+   "Name": "Etched Wood Grip Finish",
+   "Hash Key": "COMPONENT_SNIPERRIFLE_VARMOD_LUXE",
+   "Hash": "0x4032B5E7"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_HEAVYSNIPER_CLIP_01",
+   "Hash": "0x476F52F4"
+ },
+ {
+   "Name": "Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_LARGE",
+   "Hash": "0xD2443DDC"
+ },
+ {
+   "Name": "Advanced Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_MAX",
+   "Hash": "0xBC54DA77"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_MARKSMANRIFLE_MK2_CLIP_01",
+   "Hash": "0x94E12DCE"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_MARKSMANRIFLE_MK2_CLIP_02",
+   "Hash": "0xE6CFD1AA"
+ },
+ {
+   "Name": "Tracer Rounds",
+   "Hash Key": "COMPONENT_MARKSMANRIFLE_MK2_CLIP_TRACER",
+   "Hash": "0xD77A22D2"
+ },
+ {
+   "Name": "Incendiary Rounds",
+   "Hash Key": "COMPONENT_MARKSMANRIFLE_MK2_CLIP_INCENDIARY",
+   "Hash": "0x6DD7A86E"
+ },
+ {
+   "Name": "Armor Piercing Rounds",
+   "Hash Key": "COMPONENT_MARKSMANRIFLE_MK2_CLIP_ARMORPIERCING",
+   "Hash": "0xF46FD079"
+ },
+ {
+   "Name": "Full Metal Jacket Rounds",
+   "Hash Key": "COMPONENT_MARKSMANRIFLE_MK2_CLIP_FMJ",
+   "Hash": "0xE14A9ED3"
+ },
+ {
+   "Name": "Holographic Sight",
+   "Hash Key": "COMPONENT_AT_SIGHTS",
+   "Hash": "0x420FD713"
+ },
+ {
+   "Name": "Large Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_MEDIUM_MK2",
+   "Hash": "0xC66B6542"
+ },
+ {
+   "Name": "Zoom Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_LARGE_FIXED_ZOOM_MK2",
+   "Hash": "0x5B1C713C"
+ },
+ {
+   "Name": "Flashlight",
+   "Hash Key": "COMPONENT_AT_AR_FLSH",
+   "Hash": "0x7BC4CDDC"
+ },
+ {
+   "Name": "Suppressor",
+   "Hash Key": "COMPONENT_AT_AR_SUPP",
+   "Hash": "0x837445AA"
+ },
+ {
+   "Name": "Flat Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_01",
+   "Hash": "0xB99402D4"
+ },
+ {
+   "Name": "Tactical Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_02",
+   "Hash": "0xC867A07B"
+ },
+ {
+   "Name": "Fat-End Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_03",
+   "Hash": "0xDE11CBCF"
+ },
+ {
+   "Name": "Precision Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_04",
+   "Hash": "0xEC9068CC"
+ },
+ {
+   "Name": "Heavy Duty Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_05",
+   "Hash": "0x2E7957A"
+ },
+ {
+   "Name": "Slanted Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_06",
+   "Hash": "0x347EF8AC"
+ },
+ {
+   "Name": "Split-End Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_07",
+   "Hash": "0x4DB62ABE"
+ },
+ {
+   "Name": "Default Barrel",
+   "Hash Key": "COMPONENT_AT_MRFL_BARREL_01",
+   "Hash": "0x381B5D89"
+ },
+ {
+   "Name": "Heavy Barrel",
+   "Hash Key": "COMPONENT_AT_MRFL_BARREL_02",
+   "Hash": "0x68373DDC"
+ },
+ {
+   "Name": "Grip",
+   "Hash Key": "COMPONENT_AT_AR_AFGRIP_02",
+   "Hash": "0x9D65907A"
+ },
+ {
+   "Name": "Digital Camo",
+   "Hash Key": "COMPONENT_MARKSMANRIFLE_MK2_CAMO",
+   "Hash": "0x9094FBA0"
+ },
+ {
+   "Name": "Brushstroke Camo",
+   "Hash Key": "COMPONENT_MARKSMANRIFLE_MK2_CAMO_02",
+   "Hash": "0x7320F4B2"
+ },
+ {
+   "Name": "Woodland Camo",
+   "Hash Key": "COMPONENT_MARKSMANRIFLE_MK2_CAMO_03",
+   "Hash": "0x60CF500F"
+ },
+ {
+   "Name": "Skull",
+   "Hash Key": "COMPONENT_MARKSMANRIFLE_MK2_CAMO_04",
+   "Hash": "0xFE668B3F"
+ },
+ {
+   "Name": "Sessanta Nove",
+   "Hash Key": "COMPONENT_MARKSMANRIFLE_MK2_CAMO_05",
+   "Hash": "0xF3757559"
+ },
+ {
+   "Name": "Perseus",
+   "Hash Key": "COMPONENT_MARKSMANRIFLE_MK2_CAMO_06",
+   "Hash": "0x193B40E8"
+ },
+ {
+   "Name": "Leopard",
+   "Hash Key": "COMPONENT_MARKSMANRIFLE_MK2_CAMO_07",
+   "Hash": "0x107D2F6C"
+ },
+ {
+   "Name": "Zebra",
+   "Hash Key": "COMPONENT_MARKSMANRIFLE_MK2_CAMO_08",
+   "Hash": "0xC4E91841"
+ },
+ {
+   "Name": "Geometric",
+   "Hash Key": "COMPONENT_MARKSMANRIFLE_MK2_CAMO_09",
+   "Hash": "0x9BB1C5D3"
+ },
+ {
+   "Name": "Boom!",
+   "Hash Key": "COMPONENT_MARKSMANRIFLE_MK2_CAMO_10",
+   "Hash": "0x3B61040B"
+ },
+ {
+   "Name": "Boom!",
+   "Hash Key": "COMPONENT_MARKSMANRIFLE_MK2_CAMO_IND_01",
+   "Hash": "0xB7A316DA"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_HEAVYSNIPER_MK2_CLIP_01",
+   "Hash": "0xFA1E1A28"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_HEAVYSNIPER_MK2_CLIP_02",
+   "Hash": "0x2CD8FF9D"
+ },
+ {
+   "Name": "Incendiary Rounds",
+   "Hash Key": "COMPONENT_HEAVYSNIPER_MK2_CLIP_INCENDIARY",
+   "Hash": "0xEC0F617"
+ },
+ {
+   "Name": "Armor Piercing Rounds",
+   "Hash Key": "COMPONENT_HEAVYSNIPER_MK2_CLIP_ARMORPIERCING",
+   "Hash": "0xF835D6D4"
+ },
+ {
+   "Name": "Full Metal Jacket Rounds",
+   "Hash Key": "COMPONENT_HEAVYSNIPER_MK2_CLIP_FMJ",
+   "Hash": "0x3BE948F6"
+ },
+ {
+   "Name": "Explosive Rounds",
+   "Hash Key": "COMPONENT_HEAVYSNIPER_MK2_CLIP_EXPLOSIVE",
+   "Hash": "0x89EBDAA7"
+ },
+ {
+   "Name": "Zoom Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_LARGE_MK2",
+   "Hash": "0x82C10383"
+ },
+ {
+   "Name": "Advanced Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_MAX",
+   "Hash": "0xBC54DA77"
+ },
+ {
+   "Name": "Night Vision Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_NV",
+   "Hash": "0xB68010B0"
+ },
+ {
+   "Name": "Thermal Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_THERMAL",
+   "Hash": "0x2E43DA41"
+ },
+ {
+   "Name": "Suppressor",
+   "Hash Key": "COMPONENT_AT_SR_SUPP_03",
+   "Hash": "0xAC42DF71"
+ },
+ {
+   "Name": "Squared Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_08",
+   "Hash": "0x5F7DCE4D"
+ },
+ {
+   "Name": "Bell-End Muzzle Brake",
+   "Hash Key": "COMPONENT_AT_MUZZLE_09",
+   "Hash": "0x6927E1A1"
+ },
+ {
+   "Name": "Default Barrel",
+   "Hash Key": "COMPONENT_AT_SR_BARREL_01",
+   "Hash": "0x909630B7"
+ },
+ {
+   "Name": "Heavy Barrel",
+   "Hash Key": "COMPONENT_AT_SR_BARREL_02",
+   "Hash": "0x108AB09E"
+ },
+ {
+   "Name": "Digital Camo",
+   "Hash Key": "COMPONENT_HEAVYSNIPER_MK2_CAMO",
+   "Hash": "0xF8337D02"
+ },
+ {
+   "Name": "Brushstroke Camo",
+   "Hash Key": "COMPONENT_HEAVYSNIPER_MK2_CAMO_02",
+   "Hash": "0xC5BEDD65"
+ },
+ {
+   "Name": "Woodland Camo",
+   "Hash Key": "COMPONENT_HEAVYSNIPER_MK2_CAMO_03",
+   "Hash": "0xE9712475"
+ },
+ {
+   "Name": "Skull",
+   "Hash Key": "COMPONENT_HEAVYSNIPER_MK2_CAMO_04",
+   "Hash": "0x13AA78E7"
+ },
+ {
+   "Name": "Sessanta Nove",
+   "Hash Key": "COMPONENT_HEAVYSNIPER_MK2_CAMO_05",
+   "Hash": "0x26591E50"
+ },
+ {
+   "Name": "Perseus",
+   "Hash Key": "COMPONENT_HEAVYSNIPER_MK2_CAMO_06",
+   "Hash": "0x302731EC"
+ },
+ {
+   "Name": "Leopard",
+   "Hash Key": "COMPONENT_HEAVYSNIPER_MK2_CAMO_07",
+   "Hash": "0xAC722A78"
+ },
+ {
+   "Name": "Zebra",
+   "Hash Key": "COMPONENT_HEAVYSNIPER_MK2_CAMO_08",
+   "Hash": "0xBEA4CEDD"
+ },
+ {
+   "Name": "Geometric",
+   "Hash Key": "COMPONENT_HEAVYSNIPER_MK2_CAMO_09",
+   "Hash": "0xCD776C82"
+ },
+ {
+   "Name": "Boom!",
+   "Hash Key": "COMPONENT_HEAVYSNIPER_MK2_CAMO_10",
+   "Hash": "0xABC5ACC7"
+ },
+ {
+   "Name": "Patriotic",
+   "Hash Key": "COMPONENT_HEAVYSNIPER_MK2_CAMO_IND_01",
+   "Hash": "0x6C32D2EB"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_MARKSMANRIFLE_CLIP_01",
+   "Hash": "0xD83B4141"
+ },
+ {
+   "Name": "Extended Clip",
+   "Hash Key": "COMPONENT_MARKSMANRIFLE_CLIP_02",
+   "Hash": "0xCCFD2AC5"
+ },
+ {
+   "Name": "Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_LARGE_FIXED_ZOOM",
+   "Hash": "0x1C221B1A"
+ },
+ {
+   "Name": "Flashlight",
+   "Hash Key": "COMPONENT_AT_AR_FLSH",
+   "Hash": "0x7BC4CDDC"
+ },
+ {
+   "Name": "Suppressor",
+   "Hash Key": "COMPONENT_AT_AR_SUPP",
+   "Hash": "0x837445AA"
+ },
+ {
+   "Name": "Grip",
+   "Hash Key": "COMPONENT_AT_AR_AFGRIP",
+   "Hash": "0xC164F53"
+ },
+ {
+   "Name": "Yusuf Amir Luxury Finish",
+   "Hash Key": "COMPONENT_MARKSMANRIFLE_VARMOD_LUXE",
+   "Hash": "0x161E9241"
+ },
+ {
+   "Name": "Name",
+   "Hash Key": "Hash Key",
+   "Hash": "Hash"
+ },
+ {
+   "Name": "Default Clip",
+   "Hash Key": "COMPONENT_GRENADELAUNCHER_CLIP_01",
+   "Hash": "0x11AE5C97"
+ },
+ {
+   "Name": "Flashlight",
+   "Hash Key": "COMPONENT_AT_AR_FLSH",
+   "Hash": "0x7BC4CDDC"
+ },
+ {
+   "Name": "Grip",
+   "Hash Key": "COMPONENT_AT_AR_AFGRIP",
+   "Hash": "0xC164F53"
+ },
+ {
+   "Name": "Scope",
+   "Hash Key": "COMPONENT_AT_SCOPE_SMALL",
+   "Hash": "0xAA2C45B4"
+ }
+]
