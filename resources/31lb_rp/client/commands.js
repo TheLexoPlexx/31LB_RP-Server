@@ -18,7 +18,7 @@ export function consoleCommand(name, ...args) {
     drawText("Du Pimmock", 5000, 0.5, 0.5, 1, gtafonts.Pricedown);
     
   } else {
-    alt.logError("Not a valid command");
+    alt.logError("Not a valid command: " + name);
   }
 }
 

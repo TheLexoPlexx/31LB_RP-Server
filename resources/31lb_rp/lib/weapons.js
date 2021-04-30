@@ -1,4 +1,4 @@
-const WeaponList = {
+export const WeaponList = {
     advancedrifle: {
         hash: 0xaf113f99,
         name: 'Advanced Rifle',

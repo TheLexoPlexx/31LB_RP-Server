@@ -1,17 +1,31 @@
 /// <reference types="@altv/types-client" />
 /// <reference types="@altv/types-natives" />
 import * as alt from 'alt-client';
-import * as nat from 'natives';
+import * as native from 'natives';
+import {
+  WeaponList
+} from './../lib/weapons';
 import * as NativeUI from "./lib/nativeui/nativeui"
 
 export function openWeaponShop() {
-  nat.setPlayerSimulateAiming(alt.Player, true);
-  alt.toggleGameControls(false);
+  native.setPlayerSimulateAiming(alt.Player, true);
+
+  var et = alt.everyTick(() => {
+    native.disableAllControlActions(alt.Player.local.scriptID, true);
+    for (var i = 172; i <= 181; i++) {
+      native.enableControlAction(alt.Player.local.scriptID, i, true);
+    }
+  });
+
+  alt.setTimeout(() => {
+    alt.clearEveryTick(et);
+  }, 20000);
+
 
   var pt = alt.Player.local.pos;
   var rtz = alt.Player.local.rot.z;
 
-  var rot_neu = (rtz+Math.PI*0.5) * 180/Math.PI;
+  var rot_neu = (rtz + Math.PI * 0.5) * 180 / Math.PI;
   if (rot_neu < 0) {
     rot_neu += 360;
   }
@@ -19,47 +33,75 @@ export function openWeaponShop() {
   var b = -1;
   var c = 0.3;
 
-  var cam_x = pt.x + b * -Math.sin(rtz+Math.PI*0.5) + c * Math.cos(rtz+Math.PI*0.5);
-  var cam_y = pt.y + b * Math.cos(rtz+Math.PI*0.5) + c * Math.sin(rtz+Math.PI*0.5);
-  
-  var cam = nat.createCamWithParams("DEFAULT_SCRIPTED_CAMERA", cam_x, cam_y, pt.z + 0.5, 0, 0, rot_neu, 50, true, 2);
-  nat.setCamAffectsAiming(cam, false);
-  nat.renderScriptCams(true, true, 1250, true, true, cam);
+  var cam_x = pt.x + b * -Math.sin(rtz + Math.PI * 0.5) + c * Math.cos(rtz + Math.PI * 0.5);
+  var cam_y = pt.y + b * Math.cos(rtz + Math.PI * 0.5) + c * Math.sin(rtz + Math.PI * 0.5);
 
-  const ui = new NativeUI.Menu("NativeUI Test", "Test Subtitle", new NativeUI.Point(50, 50));
+  var cam = native.createCamWithParams("DEFAULT_SCRIPTED_CAMERA", cam_x, cam_y, pt.z + 0.5, 0, 0, rot_neu, 50, true, 2);
+  native.setCamAffectsAiming(cam, false);
+  native.renderScriptCams(true, true, 1250, true, true, cam);
+
+  //Menu
+  const ui = new NativeUI.Menu("", "Alle Waffen die du tragen kannst!", new NativeUI.Point(50, 50));
+  ui.SetSpriteBannerType(new NativeUI.Sprite("shopui_title_gunclub", "shopui_title_gunclub", new NativeUI.Point(0, 0), new NativeUI.Size()));
+
+  var inventorytitle = "Inventar";
   ui.AddItem(new NativeUI.UIMenuListItem(
-      "List Item",
-       "Description for List Item",
-       new NativeUI.ItemsCollection(["Item 1", "Item 2", "Item 3"])
+    inventorytitle,
+    "Wähle das Inventar aus.",
+    new NativeUI.ItemsCollection(["Eigenes Inventar", "Waffenladen"])
   ));
-  
-  ui.AddItem(new NativeUI.UIMenuSliderItem(
-      "Slider Item",
-       ["Fugiat", "pariatur", "consectetur", "ex", "duis", "magna", "nostrud", "et", "dolor", "laboris"],
-       5,
-       "Fugiat pariatur consectetur ex duis magna nostrud et dolor laboris est do pariatur amet sint.",
-       true
-  ));
-  
-  ui.AddItem(new NativeUI.UIMenuCheckboxItem(
-      "Checkbox Item",
-       false,
-       "Fugiat pariatur consectetur ex duis magna nostrud et dolor laboris est do pariatur amet sint."
-  ));
-  
-  ui.ItemSelect.on(item => {
-      if (item instanceof NativeUI.UIMenuListItem) {
-        alt.log(item.SelectedItem.DisplayText, item.SelectedItem.Data);
-       } else if (item instanceof NativeUI.UIMenuSliderItem) {
-         alt.log(item.Text, item.Index, item.IndexToItem(item.Index));
-       } else {
-         alt.log(item.Text);
-       }
+
+  ui.ListChange.on((item, newListItemIndex) => {
+    if (item.Text == inventorytitle) {
+      alt.log("[ListChange] " + newListItemIndex, item.Text);
+    }
   });
 
-  if (ui.Visible) {
-    ui.Close();
-  } else {
-    ui.Open();
-  }
+  ui.Open();
+
 }
+
+/*
+
+
+
+
+  ui.ListChange.on((item, index) => {
+      alt.log("[AutoListChange] " + itemcol.getListItems()[index].DisplayText, item.Text);
+      alt.log("item: " + JSON.stringify(item));
+      if (item == itemcol.getListItems()[0]) {
+          alt.log("[AutoListChange2] " + changeDirection + " " + item.Data.name + " " + item.Data.data);
+          alt.log(newListItemIndex);
+      }
+  });
+
+  var types = [];
+  var utility = WeaponList.fireextinguisher.type;
+  var melee = WeaponList.flashlight.type;
+  var thrown = WeaponList.flare.type;
+  alt.log(WeaponList.advancedrifle.type);
+  Object.values(WeaponList).forEach(element => {
+    var type = element["type"];
+    if (!types.includes(type)) {
+      if (type != utility || type != melee || type != thrown) {
+        types.push(element["type"]);
+      }
+    }
+  });
+
+  ui.AddItem(new NativeUI.UIMenuListItem(
+    "Waffenklasse",
+    "Description for List Item",
+    new NativeUI.ItemsCollection(types)
+  ));
+
+  ui.ItemSelect.on(item => {
+    if (item instanceof NativeUI.UIMenuListItem) {
+      alt.log(item.SelectedItem.DisplayText, item.SelectedItem.Data);
+    } else if (item instanceof NativeUI.UIMenuSliderItem) {
+      alt.log(item.Text, item.Index, item.IndexToItem(item.Index));
+    } else {
+      alt.log(item.Text);
+    }
+  });
+*/
