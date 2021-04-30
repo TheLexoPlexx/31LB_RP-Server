@@ -1,0 +1,11 @@
+[submodule "resources/altv-os-character-editor"]
+	path = resources/altv-os-character-editor
+	url = https://github.com/Stuyk/altv-os-character-editor
+[submodule "resources/altV-Postgres-Wrapper"]
+	path = resources/altV-Postgres-Wrapper
+	url = https://github.com/Stuyk/altV-Postgres-Wrapper
+[submodule "resources/altv-trainer"]
+	path = resources/altv-trainer
+	url = https://github.com/Jayreen58/altv-trainer
+[submodule "altV-os-character-editor"]
+	url = https://github.com/Stuyk/altv-os-character-editor

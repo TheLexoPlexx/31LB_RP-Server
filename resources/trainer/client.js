@@ -1529,7 +1529,8 @@ class C_ extends $t {
       t_.isCreatingVehicle = !0, h.local.vehicle && await this.delete(h.local.vehicle);
       let t = await qt.callback("vehicle:create", [e]);
       e_.register("vehicle:setPedInto", () => {
-        t ?.scriptID && (E(h.local.scriptID, t.scriptID, Zt.Driver), e_.clear("vehicle:setPedInto"), t_.isCreatingVehicle = !1)}, 50, 3e3, () => t_.isCreatingVehicle = !1)
+        t ?.scriptID && (E(h.local.scriptID, t.scriptID, Zt.Driver), e_.clear("vehicle:setPedInto"), t_.isCreatingVehicle = !1)
+      }, 50, 3e3, () => t_.isCreatingVehicle = !1)
     }
   }
   static async delete(e) {
