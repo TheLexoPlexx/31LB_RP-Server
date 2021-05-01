@@ -106,12 +106,19 @@ export function openWeaponShop() {
 */
 
 function getPlayerWeapons() {
-  var weapons = {};
+  var weapons = [[]];
   Object.values(WeaponList).forEach(value => {
     if (native.hasPedGotWeapon(alt.Player.local.scriptID, value.hash, false)) {
       if (value.hash != 0xa2719263) {
-        alt.log(JSON.stringify(value.name));
+        var components = [];
+        Object.values(getWeaponByName(value.name).components).forEach(comp => {
+          if (native.hasPedGotWeaponComponent(alt.Player.local.scriptID, value.hash, comp.hash)) {
+            components.push(comp.name);
+          }
+        });
+        weapons.push(value.hash[components]);
       }
     }
+    alt.log(JSON.stringify(weapons));
   });
 }

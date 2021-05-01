@@ -9,5 +9,9 @@ export function keyPress(key) {
     //game.requestIpl("apa_v_mp_h_01_b");
   } else if (key == 120) { //F9
     alt.emitServer("a_keyup_f9");
+
+  } else if (key == 89) { //y
+    toggleInfoHud();
+    alt.emitServer("a_keyup_y");
   }
 }

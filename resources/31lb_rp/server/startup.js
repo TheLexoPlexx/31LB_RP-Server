@@ -7,7 +7,7 @@ import { playerConnect } from './handlers/playerConnect';
 import { playerDamage } from './handlers/playerDamage';
 import { playerDeath } from './handlers/playerDeath';
 import { playerDisconnect } from './handlers/playerDisconnect';
-import { keyPressF9 } from './handlers/keyHandlers';
+import { keyPressF9, keyPressY } from './handlers/keyHandlers';
 import { login } from './handlers/loginCompleted';
 
 export const dbType = 'postgres';
@@ -38,6 +38,7 @@ alt.on("playerDamage", playerDamage);
 alt.on("playerDisconnect", playerDisconnect);
 
 alt.onClient("a_keyup_f9", keyPressF9);
+alt.onClient("a_keyup_y", keyPressY);
 alt.onClient("a_login", login);
 
 

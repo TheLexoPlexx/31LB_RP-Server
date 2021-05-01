@@ -27,3 +27,7 @@ export function keyPressF9(player) {
     menuopen = true;
   }
 }
+
+export function keyPressY(player) {
+  //placeholder, only used on client so far
+} 

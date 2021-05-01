@@ -15,6 +15,7 @@ alt.onServer('a_alive', revive);
 alt.onServer('a_damage', playerDamage);
 alt.onServer("a_weaponselect_s", openWeaponShop);
 
+
 alt.on("consoleCommand", consoleCommand)
 alt.on("keyup", keyPress);
 

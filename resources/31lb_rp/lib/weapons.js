@@ -1,4 +1,3 @@
-//TODO: Beautify
 export var WeaponComponentType;
 (function (WeaponComponentType) {
     WeaponComponentType[WeaponComponentType["magazine"] = 0] = "magazine";
