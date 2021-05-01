@@ -33,7 +33,7 @@ const WeaponTintList = {
     },
 };
 /**
- * Get a weapontint by its string name.
+ * Get a weapon tint by its string name.
  * @export
  * @param {string} name
  * @return {*}  {(number | null)}
