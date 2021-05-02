@@ -7,5 +7,3 @@
 [submodule "resources/altv-trainer"]
 	path = resources/altv-trainer
 	url = https://github.com/Jayreen58/altv-trainer
-[submodule "altV-os-character-editor"]
-	url = https://github.com/Stuyk/altv-os-character-editor
