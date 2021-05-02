@@ -103,11 +103,17 @@ export function openWeaponShop() {
 */
 
 function getPlayerWeapons() {
-  var weapons = {};
+  var weaponInv = [];
+  var componentInv = [];
+  var selector = 0;
   Object.values(WeaponList).forEach(value => {
     if (native.hasPedGotWeapon(alt.Player.local.scriptID, value.hash, false)) {
       if (value.hash != WeaponList.unarmed) { //unarmed
-        var compList = [];
+        alt.log(JSON.stringify(value.constructor.name));
+
+        weaponInv[selector] = Object.getOwnPropertyNames(value);
+
+        /*
         if (value.components != null) {
           Object.values(value.components).forEach(comp => {
             if (native.hasPedGotWeaponComponent(alt.Player.local.scriptID, value.hash, comp.hash)) {
@@ -125,8 +131,9 @@ function getPlayerWeapons() {
         } else {
           weapons.push(value.hash[null]);
         }
+        */
       }
     }
   });
-  alt.log(JSON.stringify(weapons));
+  //alt.log(JSON.stringify(weapons));
 }
