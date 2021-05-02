@@ -2,15 +2,12 @@
 /// <reference types="@altv/types-natives" />
 import * as alt from 'alt-client';
 import * as native from 'natives';
-import {
-  WeaponList, getWeaponByName
-} from './../lib/weapons';
+import { WeaponList, getWeaponByName } from './../lib/weapons';
 import * as NativeUI from "./lib/nativeui/nativeui"
 
 export function openWeaponShop() {
 
   getPlayerWeapons();
-
   /*
   native.setPlayerSimulateAiming(alt.Player, true);
 
@@ -106,19 +103,30 @@ export function openWeaponShop() {
 */
 
 function getPlayerWeapons() {
-  var weapons = [[]];
+  var weapons = {};
   Object.values(WeaponList).forEach(value => {
     if (native.hasPedGotWeapon(alt.Player.local.scriptID, value.hash, false)) {
-      if (value.hash != 0xa2719263) {
-        var components = [];
-        Object.values(getWeaponByName(value.name).components).forEach(comp => {
-          if (native.hasPedGotWeaponComponent(alt.Player.local.scriptID, value.hash, comp.hash)) {
-            components.push(comp.name);
+      if (value.hash != WeaponList.unarmed) { //unarmed
+        var compList = [];
+        if (value.components != null) {
+          Object.values(value.components).forEach(comp => {
+            if (native.hasPedGotWeaponComponent(alt.Player.local.scriptID, value.hash, comp.hash)) {
+              compList.push(comp.name);
+            }
+          });
+          //Doesn't work
+          alt.log(JSON.stringify(value.name + ": " + compList));
+          weapons[value.hash] = value.hash;
+
+          if (compList.length == 0) {
+          } else {
+            weapons.push(value.hash[compList]);
           }
-        });
-        weapons.push(value.hash[components]);
+        } else {
+          weapons.push(value.hash[null]);
+        }
       }
     }
-    alt.log(JSON.stringify(weapons));
   });
+  alt.log(JSON.stringify(weapons));
 }
