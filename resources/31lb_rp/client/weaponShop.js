@@ -102,7 +102,7 @@ export function openWeaponShop() {
   });
 */
 
-function getPlayerWeapons() {
+export function getPlayerWeapons() {
   var weaponInv = [];
   var componentInv = [];
   var selector = 0;

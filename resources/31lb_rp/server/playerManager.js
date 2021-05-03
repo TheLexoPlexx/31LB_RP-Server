@@ -17,3 +17,36 @@ export function setValue(result, callback) {
     }
   });
 }
+
+/* === WEAPONS
+*/
+
+/**
+ * 
+ * @param {String} weaponName 
+ * @param {Player} player 
+ * @param {boolean} inventory 
+ */
+export function addWeapon(player, weaponName, inventory) {
+
+}
+
+export function movePlayerWeapon(player, weaponName, toInventory) {
+
+}
+
+export function removePlayerWeapon(player, weaponName) {
+
+}
+
+export function addWeaponComponent(player, weaponName, componentName) {
+
+}
+
+export function moveWeaponComponent(player, weaponName, componentName, toInventory) {
+  
+}
+
+export function removeWeaponComponent(player, weaponName, componentName) {
+
+}

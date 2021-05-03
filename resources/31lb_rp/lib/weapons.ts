@@ -15,7 +15,7 @@ interface Weapon {
   };
   overall ? : number;
   components ? : {
-    [dynamic: string]: {
+    [key: string]: {
       name: string;
       hash_key: string;
       hash: number;
@@ -4616,4 +4616,16 @@ export const WeaponList: {
  */
 export function getWeaponByName(name: string): Weapon | null {
   return WeaponList[name];
+}
+
+export function getWeaponName(weapon: Weapon): String {
+  return weapon.name.replace(" ", "").toLowerCase().replace("II", "2");
+}
+
+export function getWeaponComponentByName(weapon: Weapon, name: string): Object | null {
+  return weapon.components[name];
+}
+
+export function getWeaponComponentName(component: Object): String {
+  return  component..replace(" ", "").toLowerCase().replace("II", "2");
 }
