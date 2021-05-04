@@ -1,7 +1,7 @@
 import orm from 'typeorm';
 
 export const PlayerEntity = new orm.EntitySchema({
-  name: 'player',
+  name: 'players',
   columns: {
     id: {
       primary: true,
@@ -23,10 +23,14 @@ export const PlayerEntity = new orm.EntitySchema({
       type: 'varchar'
     },
     money_hand: {
-      type: "money"
+      type: "numeric",
+      precision: 12,
+      scale: 2
     },
     money_bank: {
-      type: "money"
+      type: "numeric",
+      precision: 12,
+      scale: 2
     },
     healthpoints: {
       type: "int"
@@ -64,7 +68,7 @@ export const PlayerEntity = new orm.EntitySchema({
       type: "varchar",
       nullable: true
     },
-    inventaar: {
+    inventar: {
       type: "varchar",
       nullable: true
     },
@@ -104,7 +108,7 @@ export const PlaceEntity = new orm.EntitySchema({
     pos2 kann null sein, alpha ist von 0-255
     nat.createCheckpoint(46, -650, -1370, 9.9, -650, 1370, 9.9, 20, 255, 0, 0, 255, null);
     */
-  name: 'place',
+  name: 'places',
   columns: {
     id: {
       primary: true,
@@ -139,6 +143,23 @@ export const PlaceEntity = new orm.EntitySchema({
     pos_unlockcircle: {
       type: "varchar",
       nullable: true
+    },
+  }
+});
+
+export const WeaponEntity = new orm.EntitySchema({
+  name: 'weapons',
+  columns: {
+    serial: {
+      primary: true,
+      type: 'varchar'
+    },
+    weaponname: {
+      type: 'varchar'
+    },
+    owner: {
+      type: 'varchar',
+      nullable: true //Sollte er aber nicht
     },
   }
 });

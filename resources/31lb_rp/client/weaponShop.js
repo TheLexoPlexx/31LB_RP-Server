@@ -3,12 +3,12 @@
 import * as alt from 'alt-client';
 import * as native from 'natives';
 import { WeaponList, getWeaponByName } from './../lib/weapons';
-import * as NativeUI from "./lib/nativeui/nativeui"
+import * as NativeUI from "./lib/nativeui/nativeui";
 
 export function openWeaponShop() {
-
-  getPlayerWeapons();
   /*
+
+  //TODO Weiter machen
   native.setPlayerSimulateAiming(alt.Player, true);
 
   var et = alt.everyTick(() => {
@@ -101,39 +101,3 @@ export function openWeaponShop() {
     }
   });
 */
-
-export function getPlayerWeapons() {
-  var weaponInv = [];
-  var componentInv = [];
-  var selector = 0;
-  Object.values(WeaponList).forEach(value => {
-    if (native.hasPedGotWeapon(alt.Player.local.scriptID, value.hash, false)) {
-      if (value.hash != WeaponList.unarmed) { //unarmed
-        alt.log(JSON.stringify(value.constructor.name));
-
-        weaponInv[selector] = Object.getOwnPropertyNames(value);
-
-        /*
-        if (value.components != null) {
-          Object.values(value.components).forEach(comp => {
-            if (native.hasPedGotWeaponComponent(alt.Player.local.scriptID, value.hash, comp.hash)) {
-              compList.push(comp.name);
-            }
-          });
-          //Doesn't work
-          alt.log(JSON.stringify(value.name + ": " + compList));
-          weapons[value.hash] = value.hash;
-
-          if (compList.length == 0) {
-          } else {
-            weapons.push(value.hash[compList]);
-          }
-        } else {
-          weapons.push(value.hash[null]);
-        }
-        */
-      }
-    }
-  });
-  //alt.log(JSON.stringify(weapons));
-}

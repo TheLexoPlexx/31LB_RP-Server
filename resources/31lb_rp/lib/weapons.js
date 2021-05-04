@@ -4583,4 +4583,20 @@ export const WeaponList = {
 export function getWeaponByName(name) {
     return WeaponList[name];
 }
+export function getWeaponName(weapon) {
+    return weapon.name.replace(" ", "").toLowerCase().replace("II", "2");
+}
+export function getWeaponByHash(hash) {
+    Object.keys(WeaponList).forEach(element => {
+        console.log(JSON.stringify(element));
+    });
+}
+export function getWeaponComponentByName(weapon, name) {
+    return weapon.components[name];
+}
+/*
+export function getWeaponComponentName(component: Object): String {
+  return  component..replace(" ", "").toLowerCase().replace("II", "2");
+}
+*/ 
 //# sourceMappingURL=weapons.js.map

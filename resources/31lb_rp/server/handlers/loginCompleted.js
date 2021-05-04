@@ -2,6 +2,8 @@
 import * as alt from 'alt-server';
 import { database } from './../startup';
 
+import * as pm from "./../playerManager";
+
 export function loginCompleted(player, result_player, password) {
   if (result_player == null) {
     var d = new Date();
@@ -16,8 +18,10 @@ export function loginCompleted(player, result_player, password) {
       firstjoin: date,
       permissionsgroup: 1,
       sessionid: player.id,
+      activeWeapons: JSON.stringify({ a:null, b:null, h:null }),
     }
-    database.upsertData(new_player, "player", (res) => {
+
+    pm.setValue(new_player, (res) => {
       alt.log("Neuer Spieler: " + JSON.stringify(res));
       player.spawn(-69.551, -855.909, 40.571);
     });
@@ -52,14 +56,17 @@ export function loginCompleted(player, result_player, password) {
     //TODO: Zuordnen, blahblah
 
     result_player.sessionid = player.id;
-    database.upsertData(result_player, "player", (res) => {
+    pm.setValue(result_player, (res) => {
       alt.log("Player " + res.name + "[" + res.socialclub + "] logged in with SessionID " + res.sessionid);
+
+      alt.emitClient(player, "a_setMeta", "money_hand", res.money_hand)
     });
   }
 }
 
-export function login(player, name, pw) {
-  database.fetchData("password", pw, "player", (result) => {
+export function login(player, pw) {
+  //TODO: Mit Forum koppeln und sinnvoll machen
+  database.fetchData("password", pw, "players", (result) => {
     if (result == undefined) {
       loginCompleted(player, null, pw);
     } else {

@@ -10,7 +10,7 @@ export function playerDisconnect(player) {
   let armour = player.armour;
   let incar = player.seat;
 
-  database.fetchData("sessionid", id, "player", (result) => {
+  database.fetchData("sessionid", id, "players", (result) => {
     if (result != null) {
       //alt.log(JSON.stringify(result));
       result.pos = JSON.stringify(pos);
@@ -20,7 +20,7 @@ export function playerDisconnect(player) {
       result.incar = incar;
       result.sessionid = -1;
 
-      database.upsertData(result, "player", (res_upsert) => {
+      database.upsertData(result, "players", (res_upsert) => {
         alt.log("Player " + res_upsert.name + "[" + res_upsert.socialclub + "] left");
         //alt.log("upsert: " + JSON.stringify(res_upsert));
       });

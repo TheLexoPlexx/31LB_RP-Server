@@ -6,6 +6,7 @@ import { playerDamage, playerDeath, revive } from "./handlers/playerDeath";
 import { consoleCommand } from './commands';
 import { openWeaponShop } from './weaponShop';
 import { keyPress } from './keys';
+import { setMetaPlayer } from './handlers/meta';
 
 //Keine Ahnung wofür das gut ist, ist aus Freeroam-Resource geklaut
 game.setPedDefaultComponentVariation(game.playerPedId());
@@ -14,6 +15,8 @@ alt.onServer('a_death', playerDeath);
 alt.onServer('a_alive', revive);
 alt.onServer('a_damage', playerDamage);
 alt.onServer("a_weaponselect_s", openWeaponShop);
+
+alt.onServer("a_setMeta", setMetaPlayer);
 
 alt.on("consoleCommand", consoleCommand)
 alt.on("keyup", keyPress);

@@ -1,5 +1,6 @@
 /// <reference types="@altv/types-server" />
 import * as alt from 'alt-server';
+import { logPlayerDamage } from "./playerDamage";
 
 export const deadPlayers = {};
 const respawnTime = 10 * 1000;//In millis
@@ -26,5 +27,6 @@ export function playerDeath(player, killer, weaponhash) {
 
   }, respawnTime);
   
-  alt.log(player.id + " died.");
+  logPlayerDamage(true, player, killer, null, weaponhash);
+
 }

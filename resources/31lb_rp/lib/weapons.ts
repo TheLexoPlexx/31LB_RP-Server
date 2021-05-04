@@ -4626,6 +4626,8 @@ export function getWeaponComponentByName(weapon: Weapon, name: string): Object |
   return weapon.components[name];
 }
 
+/*
 export function getWeaponComponentName(component: Object): String {
   return  component..replace(" ", "").toLowerCase().replace("II", "2");
 }
+*/

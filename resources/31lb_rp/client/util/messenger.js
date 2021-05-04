@@ -99,9 +99,9 @@ export const gtafonts = {
  * @param a Alpha, 0-255, default = 255
  * @param useOutline Umrandung verwenden, default = true
  * @param useDropShadow Schlagschatten verwenden, default = true
- * @param center Text an der Mitte ausrichten, default = false
+ * @param textjustify Textausrichtung, default = 1, 0: center, 1: links, 2: rechts
  */
-export function drawText(text, time, x, y, scale, fontType = 7, r = 155, g = 155, b = 155, a = 255, useOutline = true, useDropShadow = true, center = false) {
+export function drawText(text, time, x, y, scale, fontType = 7, r = 155, g = 155, b = 155, a = 255, useOutline = true, useDropShadow = true, textjustify = 1, textwrap = { l: 0.0, r: 1.0 }) {
   let gameTextInterval = undefined;
   gameTextInterval = alt.everyTick(() => {
     native.setTextFont(fontType);
@@ -109,6 +109,8 @@ export function drawText(text, time, x, y, scale, fontType = 7, r = 155, g = 155
     native.setTextScale(scale, scale);
     native.setTextColour(r, g, b, a);
     native.setTextEdge(2, 0, 0, 0, 150);
+    native.setTextJustification(textjustify);
+    native.setTextWrap(textwrap.l, textwrap.r);
 
     if (useOutline) {
       native.setTextOutline();
@@ -118,7 +120,7 @@ export function drawText(text, time, x, y, scale, fontType = 7, r = 155, g = 155
       native.setTextDropShadow();
     }
 
-    native.setTextCentre(center);
+    //native.setTextCentre(center);
     native.beginTextCommandDisplayText("CELL_EMAIL_BCON");
 
     text.match(/.{1,99}/g).forEach(textBlock => {

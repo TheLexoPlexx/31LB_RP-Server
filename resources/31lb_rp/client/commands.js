@@ -9,7 +9,7 @@ export function consoleCommand(name, ...args) {
     if (args.length < 1) {
       alt.logError("Password missing");
     } else if (args.length == 1) {
-      alt.emitServer("a_login", alt.player, args[0]);
+      alt.emitServer("a_login", args[0]);
     } else {
       alt.logError("Too many Args");
     }
