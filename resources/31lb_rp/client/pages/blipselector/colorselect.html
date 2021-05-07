@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF8">
+  <link rel="stylesheet" href="stylesheet_colors.css">
+  <style>
+    * {
+      margin: 0px;
+    }
+
+    body {
+      min-height: 100vh;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    #blipcontainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+      margin: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="blipcontainer"></div>
+</body>
+<script type="text/javascript">
+  if (true) {
+  //if ('alt' in window) {
+    var container = document.getElementById("blipcontainer");
+    for (i = 1; i <= 85; i++) {
+      var itag = document.createElement("a");
+      itag.classList.add("color_sprite");
+      itag.classList.add("color_sprite-Color-id-" + i);
+      itag.setAttribute("href", "#");
+      itag.setAttribute("onclick", "select(" + i + ")");
+      container.appendChild(itag);
+    }
+    function select(arg) {
+      console.log(arg);
+      alt.emit("a_selectedcolor", arg);
+    }
+  }
+</script>
+
+</html>

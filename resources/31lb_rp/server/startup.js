@@ -2,14 +2,14 @@
 /// <reference types="@altv/types-server" />
 import * as alt from 'alt-server';
 import SQL from '../../altV-Postgres-Wrapper/database.mjs';
-import { PlayerEntity, WeaponEntity } from '../entities/entities.js';
+import { PlaceEntity, PlayerEntity, WeaponEntity } from '../entities/entities.js';
 import { playerConnect } from './handlers/playerConnect';
 import { playerDamage } from './handlers/playerDamage';
 import { playerDeath } from './handlers/playerDeath';
 import { playerDisconnect } from './handlers/playerDisconnect';
-import { keyPressF9, keyPressY } from './handlers/keyHandlers';
+import { keyPressF9, keyPressI, keyPressY } from './handlers/keyHandlers';
 import { login } from './handlers/loginCompleted';
-import * as wm from "./weaponManager";
+import { clearColshapes, enteredColshape, generate, savePlace, sortMarkers, updatePlacesForPlayer } from './handlers/placeHandler';
 
 export const dbType = 'postgres';
 export const dbHost = 'localhost';
@@ -19,7 +19,7 @@ export const dbPassword = '31lb_rpdb';
 export const dbName = '31lb_rpdb';
 
 export var database = new SQL(dbType, dbHost, dbPort, dbUsername, dbPassword, dbName, [
-  PlayerEntity, WeaponEntity
+  PlayerEntity, WeaponEntity, PlaceEntity
 ]);
 
 alt.on('ConnectionComplete', () => {
@@ -37,10 +37,21 @@ alt.on("playerConnect", playerConnect);
 alt.on('playerDeath', playerDeath);
 alt.on("playerDamage", playerDamage);
 alt.on("playerDisconnect", playerDisconnect);
+alt.on("resourceStop", clearColshapes);
+
+alt.on("ConnectionComplete", sortMarkers);
 
 alt.onClient("a_keyup_f9", keyPressF9);
 alt.onClient("a_keyup_y", keyPressY);
+alt.onClient("a_keyup_i", keyPressI);
+
 alt.onClient("a_login", login);
+alt.onClient("a_placegen", generate);
+alt.onClient("a_saveNewPlace", savePlace);
+alt.onClient("a_updatePlacesForPlayer", updatePlacesForPlayer);
+
+
+
 
 /* Character Stuff
 player.spawn(-763.245, 328.597, 198.486);

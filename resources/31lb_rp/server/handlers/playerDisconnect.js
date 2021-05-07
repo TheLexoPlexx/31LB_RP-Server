@@ -20,6 +20,9 @@ export function playerDisconnect(player) {
       result.incar = incar;
       result.sessionid = -1;
 
+      //FIXME: Doesn't do the thing
+      result.unlockedplaces = alt.getMeta("unlocked_places");
+
       database.upsertData(result, "players", (res_upsert) => {
         alt.log("Player " + res_upsert.name + "[" + res_upsert.socialclub + "] left");
         //alt.log("upsert: " + JSON.stringify(res_upsert));

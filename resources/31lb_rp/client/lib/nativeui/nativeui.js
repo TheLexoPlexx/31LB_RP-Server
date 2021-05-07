@@ -1,3 +1,5 @@
+/// <reference types="@altv/types-client" />
+/// <reference types="@altv/types-natives" />
 import { getCursorPos, setInterval, clearInterval, logWarning, emit, logError, clearTimeout, setTimeout, everyTick, getGxtText, showCursor } from 'alt-client';
 import game__default, { requestScaleformMovie, hasScaleformMovieLoaded, beginScaleformMovieMethod, scaleformMovieMethodAddParamBool, scaleformMovieMethodAddParamPlayerNameString, scaleformMovieMethodAddParamFloat, scaleformMovieMethodAddParamInt, endScaleformMovieMethod, endScaleformMovieMethodReturnValue, drawScaleformMovieFullscreen, setScaleformMovieAsNoLongerNeeded } from 'natives';
 

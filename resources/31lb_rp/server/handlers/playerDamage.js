@@ -25,7 +25,7 @@ export function logPlayerDamage(death, victim, attacker, damage, weaponHash) {
       cause = "fall damage";
       break;
     case 2741846334:
-      cause = "leftvehicle";
+      cause = "angefahren/leftvehicle";
       break;
     case 133987706:
       cause = "caraccident/leftvehicle"

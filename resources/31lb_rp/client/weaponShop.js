@@ -6,6 +6,27 @@ import { WeaponList, getWeaponByName } from './../lib/weapons';
 import * as NativeUI from "./lib/nativeui/nativeui";
 
 export function openWeaponShop() {
+}
+
+
+
+/*
+Serverseitig: 
+    alt.emitClient(player, "a_weaponselect_s");
+
+    //Sieht nutzlos aus, ist aber wichtig, stehen lassen!
+    let pos = player.pos;
+    player.pos = pos;
+    let rot = player.rot;
+    player.rot = new alt.Vector3(0, 90, player.rot.z);
+
+    playerManager.addWeapon(player, "advancedrifle", true);
+    playerManager.addWeaponComponent(player, "advancedrifle", "extendedclip");
+
+    player.giveWeapon(getWeaponByName("advancedrifle").hash, 20, true);
+    player.giveWeapon(getWeaponByName("revolvermk2").hash, 40, true);
+*/
+
   /*
 
   //TODO Weiter machen
@@ -59,7 +80,6 @@ export function openWeaponShop() {
   });
 
   ui.Open();
-  */
 }
 
 /*

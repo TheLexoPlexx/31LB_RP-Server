@@ -1,8 +1,6 @@
 /// <reference types="@altv/types-server" />
 import * as alt from 'alt-server';
-import {
-  database
-} from './startup';
+import { database } from './startup';
 import * as pm from "./playerManager";
 
 

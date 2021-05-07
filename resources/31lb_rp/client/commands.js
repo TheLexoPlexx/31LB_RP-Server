@@ -1,8 +1,6 @@
 /// <reference types="@altv/types-natives" />
-/// <reference types="@altv/types-natives" />
 /// <reference types="@altv/types-client" />
 import * as alt from 'alt-client';
-import { drawText, gtafonts } from './util/messenger';
 
 export function consoleCommand(name, ...args) {
   if (name == "login") {
@@ -13,7 +11,13 @@ export function consoleCommand(name, ...args) {
     } else {
       alt.logError("Too many Args");
     }
-    
+
+  } else if (name == "place") {
+    if (args.length > 1) {
+      alt.logError("Too many Args");
+    } else {
+      alt.emitServer("a_placegen");
+    }
   } else {
     alt.logError("Not a valid command: " + name);
   }

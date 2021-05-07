@@ -8,17 +8,27 @@ export const PlayerEntity = new orm.EntitySchema({
       type: 'int',
       generated: true
     },
-    name: {
-      type: 'varchar',
-      nullable: true
-    },
     socialclub: {
       type: 'varchar'
     },
+    /* //TODO: Für Später
     mail: {
       type: 'varchar',
       nullable: true
     },
+    surname: {
+      type: 'varchar',
+      nullable: true
+    },
+    name: {
+      type: 'varchar',
+      nullable: true
+    },
+    discord: {
+      type: "varchar",
+      nullable: true
+    },
+    */
     password: { //TODO: Encryption
       type: 'varchar'
     },
@@ -43,10 +53,6 @@ export const PlayerEntity = new orm.EntitySchema({
       nullable: true
     },
     rot: {
-      type: "varchar",
-      nullable: true
-    },
-    discord: {
       type: "varchar",
       nullable: true
     },
@@ -91,23 +97,16 @@ export const PlayerEntity = new orm.EntitySchema({
     job: {
       type: "varchar",
       nullable: true
+    },
+    unlockedplaces: {
+      type: 'varchar',
+      nullable: true,
+      default: "[]"
     }
   }
 });
 
 export const PlaceEntity = new orm.EntitySchema({
-  /*
-    var cc = new alt.ColshapeCircle(-971, -2991, 20);
-    cc.playersOnly = true;
-
-    alt.on("entityEnterColshape", (colshape, player) => {
-    alt.log(JSON.stringify(colshape.pos));
-    alt.log(JSON.stringify(player.id));
-    });
-
-    pos2 kann null sein, alpha ist von 0-255
-    nat.createCheckpoint(46, -650, -1370, 9.9, -650, 1370, 9.9, 20, 255, 0, 0, 255, null);
-    */
   name: 'places',
   columns: {
     id: {
@@ -117,33 +116,48 @@ export const PlaceEntity = new orm.EntitySchema({
     },
     displayname: {
       type: 'varchar',
-      nullable: true //Sollte er aber nicht
+      nullable: true
     },
     description: {
       type: "varchar",
       nullable: true
     },
-    unlockable: {
-      type: "boolean",
-      default: true,
-      nullable: true //Sollte er aber nicht
-    },
-    pos_marker: {
-      type: "varchar",
-      nullable: true //Sollte er aber nicht
-    },
-    dir_marker: {
-      type: "varchar",
-      nullable: true //Sollte er aber nicht
-    },
-    marker_icon: {
-      type: 'varchar',
-      nullable: true
-    },
-    pos_unlockcircle: {
+    blip_pos: {
       type: "varchar",
       nullable: true
     },
+    blip_icon: {
+      type: 'int',
+      nullable: true
+    },
+    blip_color: {
+      type: 'int',
+      nullable: true
+    },
+    unlock_pos: {
+      type: "varchar",
+      nullable: true
+    },
+    unlock_radius: {
+      type: "int",
+      nullable: true
+    },
+    interact_pos: {
+      type: "varchar",
+      nullable: true
+    },
+    interact_radius: {
+      type: "int",
+      nullable: true
+    },
+    function: {
+      type: "varchar",
+      nullable: true
+    },
+    creator: {
+      type: "varchar",
+      nullable: true
+    }
   }
 });
 

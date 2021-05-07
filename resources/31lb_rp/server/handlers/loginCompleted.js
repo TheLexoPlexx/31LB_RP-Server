@@ -1,10 +1,11 @@
 /// <reference types="@altv/types-server" />
 import * as alt from 'alt-server';
-import { database } from './../startup';
-
 import * as pm from "./../playerManager";
+import { database } from './../startup';
+import { globalMarkers, unlockableMarkers } from './placeHandler';
 
 export function loginCompleted(player, result_player, password) {
+  var playerJSON;
   if (result_player == null) {
     var d = new Date();
     var date = d.getDate().toString() + "." + (d.getMonth() + 1).toString() + "." + d.getFullYear().toString();
@@ -25,6 +26,8 @@ export function loginCompleted(player, result_player, password) {
       alt.log("Neuer Spieler: " + JSON.stringify(res));
       player.spawn(-69.551, -855.909, 40.571);
     });
+
+    playerJSON = new_player;
   } else {
     player.model = 'mp_m_freemode_01'; //TODO: Ändern
 
@@ -39,6 +42,7 @@ export function loginCompleted(player, result_player, password) {
 
     /*
     Herausfinden ob man Player in Fahrzeuge setzen kann
+    //native.setPedInto
 
     if (result_player.incar > 0) {
       alt.Vehicle.all.forEach((val, index, array) => {
@@ -55,17 +59,42 @@ export function loginCompleted(player, result_player, password) {
 
     //TODO: Zuordnen, blahblah
 
+    //TODO: Markers
+    alt.emitClient(player, "a_setMeta", "unlocked_places", result_player.unlockedplaces);
+
+    let unlocked_places;
+    if (result_player.unlockedplaces === "[]") {
+      unlocked_places = [];
+    } else {
+      unlocked_places = JSON.parse(result_player.unlockedplaces);
+    }
+
+    unlocked_places.forEach(element => {
+      unlockableMarkers.forEach(allM => {
+        if (allM.id == element) {
+          alt.emitClient(player, "a_createBlip", allM); //element is only id
+          //maybe remove element?
+        }
+      });
+
+    });
+    
+    globalMarkers.forEach(element => {
+      alt.emitClient(player, "a_createBlip", element);
+    });
+
     result_player.sessionid = player.id;
     pm.setValue(result_player, (res) => {
       alt.log("Player " + res.name + "[" + res.socialclub + "] logged in with SessionID " + res.sessionid);
-
-      alt.emitClient(player, "a_setMeta", "money_hand", res.money_hand)
     });
+    playerJSON = result_player;
   }
+  
+  alt.emitClient(player, "a_setMeta", "money_hand", playerJSON.money_hand);
 }
 
 export function login(player, pw) {
-  //TODO: Mit Forum koppeln und sinnvoll machen
+  //TODO: Mit Forum/Discord koppeln und sinnvoll machen
   database.fetchData("password", pw, "players", (result) => {
     if (result == undefined) {
       loginCompleted(player, null, pw);
