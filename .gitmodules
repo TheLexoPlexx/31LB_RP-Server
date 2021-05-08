@@ -7,3 +7,6 @@
 [submodule "resources/altv-trainer"]
 	path = resources/altv-trainer
 	url = https://github.com/Jayreen58/altv-trainer
+[submodule "resources/postgres-wrapper"]
+	path = resources/postgres-wrapper
+	url = https://github.com/Stuyk/altV-Postgres-Wrapper
