@@ -7,9 +7,9 @@ import * as msg from "./util/messenger";
 
 //TODO: Refactor, removeCheckpoint... etc. sind alle doppelt, auch updateCoords
 
-let menu;
+let menu: NativeUI.Menu;
 
-export function startPlaceGen() {
+export function startPlaceGen(): void {
   let new_place = {
     displayname: null,
     description: null,
@@ -108,9 +108,9 @@ export function startPlaceGen() {
     },
   }
 
-  let c, fix_c;
+  let c: number, fix_c: number;
 
-  function drawCheckpointUnlock(x, y, z) {
+  function drawCheckpointUnlock(x: number, y: number, z: number) {
     if (c != undefined) {
       native.deleteCheckpoint(c);
     }
@@ -531,7 +531,7 @@ export function startPlaceGen() {
   */
 }
 
-function callInput(title, callbackReturn) {
+function callInput(title: string, callbackReturn: CallableFunction): void {
   let v = new alt.WebView("http://resource/client/pages/input.html", true);
   alt.toggleGameControls(false);
   v.focus();
@@ -547,20 +547,20 @@ function callInput(title, callbackReturn) {
   });
 }
 
-function callBlipSelect(callback) {
+function callBlipSelect(callback: CallableFunction): void {
   openWebView("blipselector/blipselect.html", "a_selectedblip", callback);
 }
 
-function callBlipColorSelect(callback) {
+function callBlipColorSelect(callback: CallableFunction): void {
   openWebView("blipselector/colorselect.html", "a_selectedcolor", callback);
 }
 
-function openWebView(url, event, callback) {
+function openWebView(url: string, event: string, callback: CallableFunction): void {
   let v = new alt.WebView("http://resource/client/pages/" + url, true);
   alt.toggleGameControls(false);
   alt.showCursor(true);
   v.focus();
-  v.on(event, (arg) => {
+  v.on(event, (arg: CallableFunction) => {
     callback(arg);
     v.destroy();
     alt.setTimeout(() => {
@@ -581,7 +581,7 @@ command
 
 */
 
-function round(arg0) {
+function round(arg0: number) {
   let j = JSON.stringify(arg0);
   let a = j.split(".");
   return a[1] == undefined ? a[0] : a[0] + "." + a[1].substr(0, 2);
@@ -591,8 +591,8 @@ function randomFunction() {
   let alphabet = 'abcdefghijklmnopqrstuvwxyz',
     serialLengthAlphabet = 12,
     randomSerialAlphabet = "",
-    i,
-    randomNumber;
+    i: number,
+    randomNumber: number;
 
   for (i = 0; i < serialLengthAlphabet; i++) {
     randomNumber = Math.floor(Math.random() * alphabet.length);
@@ -602,7 +602,7 @@ function randomFunction() {
   return randomSerialAlphabet;
 }
 
-export function saveSuccess(result) {
+export function saveSuccess(result: JSON) {
   NativeUI.BigMessage.ShowMpMessageLarge("Gespeichert", JSON.stringify(result), 5000);
   menu.Close();
 }

@@ -5,7 +5,7 @@ import * as native from 'natives';
 import { toggleInfoHud } from './infohud';
 import * as NativeUI from './util/nativeui/NativeUi';
 
-export function keyPress(key) {
+export function keyPress(key: number): void {
   if (key == 115) { //F4
     alt.emitServer("a_keyup_f4");
 

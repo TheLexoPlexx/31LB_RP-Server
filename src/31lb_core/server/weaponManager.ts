@@ -4,7 +4,7 @@ import { database } from './startup';
 import * as pm from "./playerManager";
 
 
-export function getWeapon(serial, callback) {
+export function getWeapon(serial: string, callback: CallableFunction): void {
   database.fetchData("serial", serial, "weapons", (result) => {
     if (callback != null) {
       callback(result);
@@ -12,7 +12,7 @@ export function getWeapon(serial, callback) {
   });
 }
 
-export function setValue(result, callback) {
+export function setValue(result: JSON, callback: CallableFunction): void {
   database.upsertData(result, "weapons", (r) => {
     if (callback != null) {
       callback(r);
@@ -25,7 +25,7 @@ export function setValue(result, callback) {
  * @param {String} weapon Name aus WeaponList
  * @param {*} ownerId Besitzer-Id
  */
-export function newWeapon(weapon, ownerId) {
+export function newWeapon(weapon: string, ownerId: number): void {
   var serialNumber = generateSerial();
 
   database.fetchData("serial", serialNumber, "weapons", (result) => {
@@ -48,8 +48,8 @@ export function newWeapon(weapon, ownerId) {
  * @param {String} serial Die Seriennummer der Waffe
  * @param {int} newOwnerId Die Id des neuen Besitzers
  */
-export function changeWeaponOwner(serial, newOwnerId) {
-  database.fetchData("serial", serial, "weapons", (result) => {
+export function changeWeaponOwner(serial: string, newOwnerId: number): void {
+  database.fetchData("serial", serial, "weapons", (result: any) => {
     if (result == null) {
       alt.logError("Wrong serial: " + serial);
     } else {
@@ -64,18 +64,16 @@ export function changeWeaponOwner(serial, newOwnerId) {
   });
 }
 
-function generateSerial() {
-  'use strict';
-
+function generateSerial(): string {
   var numbers = '1234567890',
     alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
     serialLengthAlphabet = 4,
     serialLengthNumbers = 6,
     randomSerialAlphabet = "",
     randomSerialNumbers = "",
-    i,
-    j,
-    randomNumber;
+    i: number,
+    j: number,
+    randomNumber: number;
 
   for (i = 0; i < serialLengthAlphabet; i++) {
     randomNumber = Math.floor(Math.random() * alphabet.length);

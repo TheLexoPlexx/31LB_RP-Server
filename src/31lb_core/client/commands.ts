@@ -2,7 +2,7 @@
 /// <reference types="@altv/types-client" />
 import * as alt from 'alt-client';
 
-export function consoleCommand(name, ...args) {
+export function consoleCommand(name: string, ...args: string[]): void {
   if (name == "login") {
     if (args.length < 1) {
       alt.logError("Password missing");

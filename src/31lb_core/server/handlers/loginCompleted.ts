@@ -4,7 +4,8 @@ import * as pm from "../playerManager";
 import { database } from '../startup';
 import { globalMarkers, unlockableMarkers } from './placeHandler';
 
-export function loginCompleted(player: alt.Player, result_player, password: String) {
+//TODO: Change result_player to PlayerEntity
+export function loginCompleted(player: alt.Player, result_player: any, password: String) {
   var playerJSON;
   if (result_player == null) {
     var d = new Date();

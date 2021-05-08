@@ -3,6 +3,6 @@
 import * as alt from 'alt-client';
 import * as native from 'natives';
 
-export function setMetaPlayer(key, value) {
+export function setMetaPlayer(key: string, value: any) : void {
   alt.setMeta(key, value);
 }

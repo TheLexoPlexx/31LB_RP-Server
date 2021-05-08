@@ -8,7 +8,7 @@ var wasted;
 var gettingdamage;
 var url = "http://resource/client/pages/wasted.html";
 
-export function playerDeath() {
+export function playerDeath(): void {
     //TODO: drawText statt HTML, Bildschirm-Shake und Drehung, Audio hinzufügen
     if (gettingdamage != null) {
       alt.clearTimeout(gettingdamage);
@@ -27,7 +27,7 @@ export function revive() {
   }
 }
 
-export function playerDamage(attacker, damage, weaponHash) {
+export function playerDamage(attacker: alt.Player, damage: alt.Player, weaponHash: string): void {
   native.setTimecycleModifier("DAMAGE");
   native.setTimecycleModifierStrength(0.6);
 
