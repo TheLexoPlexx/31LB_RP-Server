@@ -4586,11 +4586,6 @@ export function getWeaponByName(name) {
 export function getWeaponName(weapon) {
     return weapon.name.replace(" ", "").toLowerCase().replace("II", "2");
 }
-export function getWeaponByHash(hash) {
-    Object.keys(WeaponList).forEach(element => {
-        console.log(JSON.stringify(element));
-    });
-}
 export function getWeaponComponentByName(weapon, name) {
     return weapon.components[name];
 }
