@@ -3,6 +3,4 @@ crashdumps/
 data/
 node_modules/
 resources/_vehicles
-AltV.Net.Host.dll
-AltV.Net.Host.runtimeconfig.json
 server.log
