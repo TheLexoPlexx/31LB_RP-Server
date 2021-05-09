@@ -58,6 +58,7 @@ export function loginCompleted(player, result_player, password) {
         playerJSON = result_player;
     }
     alt.emitClient(player, "a_setMeta", "money_hand", playerJSON.money_hand);
+    alt.emitClient(player, "a_setMeta", "allowKeyPress", true);
 }
 export function login(player, pw) {
     database.fetchData("password", pw, "players", (result) => {

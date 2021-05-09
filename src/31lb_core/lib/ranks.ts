@@ -32,10 +32,10 @@ const RankList: {
 };
 
 /**
- * Get a weapon tint by its string name.
+ * Get a Rank Name by number.
  * @export
- * @param {string} name
- * @return {*}  {(number | null)}
+ * @param {number} name
+ * @return {Rank}  {(Rank | null)}
  */
 export function getRank(number: number): Rank | null {
   return RankList[number];

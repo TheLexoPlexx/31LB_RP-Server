@@ -48,7 +48,6 @@ export function changeWeaponOwner(serial, newOwnerId) {
     });
 }
 function generateSerial() {
-    'use strict';
     var numbers = '1234567890', alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', serialLengthAlphabet = 4, serialLengthNumbers = 6, randomSerialAlphabet = "", randomSerialNumbers = "", i, j, randomNumber;
     for (i = 0; i < serialLengthAlphabet; i++) {
         randomNumber = Math.floor(Math.random() * alphabet.length);

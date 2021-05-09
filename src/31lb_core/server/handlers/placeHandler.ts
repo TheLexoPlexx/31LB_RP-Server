@@ -3,6 +3,16 @@ import * as alt from 'alt-server';
 import { database } from '../startup';
 import * as playerManager from "../playerManager";
 
+export function generate(player) {
+  playerManager.getPlayer(player, (r) => {
+    if (r.permissionsgroup >= 100) {
+      alt.emitClient(player, "a_startplacegen");
+    } else {
+      alt.emitClient(player, "a_nopermission");
+    }
+  });
+} 
+
 export let unlockableMarkers = [];
 export let globalMarkers = [];
 
@@ -29,7 +39,7 @@ export function sortMarkers() {
       element.type = "unlock";
       cc.setMeta("a_placeMeta", element);
       unlockableColshapes.push(cc);
-      alt.log("[31LB] Unlock colshape created: " + JSON.stringify(cc.pos));
+      //alt.log("[31LB] Unlock colshape created: " + JSON.stringify(cc.pos));
     });
 
     //Interactions
@@ -40,14 +50,15 @@ export function sortMarkers() {
       element.type = "interaction";
       cc.setMeta("a_placeMeta", element);
       interactionColshapes.push(cc);
-      alt.log("[31LB] Interact colshape created: " + JSON.stringify(cc.pos));
+      //alt.log("[31LB] Interact colshape created: " + JSON.stringify(cc.pos));
     });
   });
 
   //FIXME: Called on playerDisconnect?
   alt.setTimeout(() => {
     alt.on("entityEnterColshape", enteredColshape);
-  }, 4000);
+    alt.on("entityLeaveColshape", leaveColshape);
+  }, 2000);
 }
 
 export function clearColshapes() {
@@ -60,19 +71,14 @@ export function clearColshapes() {
 }
 
 export function enteredColshape(colshape, player) {
-  alt.log("enteredColshape: " + player.id + " " + JSON.stringify(colshape.getMeta("a_placeMeta").displayname));
+  //alt.log("enteredColshape: " + player.id + " " + JSON.stringify(colshape.getMeta("a_placeMeta").displayname));
   alt.emitClient(player, "a_enteredColshape", colshape.getMeta("a_placeMeta"));
 }
 
-export function generate(player) {
-  playerManager.getPlayer(player, (r) => {
-    if (r.permissionsgroup >= 100) {
-      alt.emitClient(player, "a_startplacegen");
-    } else {
-      alt.emitClient(player, "a_nopermission");
-    }
-  });
-} 
+export function leaveColshape(colshape, player) {
+  //alt.log("leaveColshape: " + player.id + " " + JSON.stringify(colshape.getMeta("a_placeMeta").displayname));
+  alt.emitClient(player, "a_leaveColshape", colshape.getMeta("a_placeMeta"));
+}
 
 export function savePlace(p, new_place) {
   playerManager.getPlayer(p, (r) => {

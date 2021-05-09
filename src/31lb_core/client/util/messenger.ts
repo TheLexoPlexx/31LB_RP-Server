@@ -9,7 +9,7 @@ import * as native from 'natives';
  * @param text Text
  * @param duration Zeit in Millisekunden
  */
-export function drawSubtitle(text, duration) {
+export function drawSubtitle(text: string, duration: number) {
   native.beginTextCommandPrint('STRING');
   native.addTextComponentSubstringPlayerName(text);
   native.endTextCommandPrint(duration, true);
@@ -20,7 +20,7 @@ export function drawSubtitle(text, duration) {
  * 
  * @param text Text
  */
-export function displayNotification(text) {
+export function displayNotification(text: string) {
   native.beginTextCommandThefeedPost('STRING');
   native.addTextComponentSubstringPlayerName(text);
   native.endTextCommandThefeedPostTicker(false, true);

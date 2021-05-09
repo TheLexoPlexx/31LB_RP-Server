@@ -21,6 +21,11 @@ export var database = new SQL(dbType, dbHost, dbPort, dbUsername, dbPassword, db
   entities.PlayerEntity, entities.WeaponEntity, entities.PlaceEntity
 ]);
 
+export declare interface InteractFunction<K extends PropertyKey, V> {
+  key: K;
+  value: V;
+}
+
 alt.on('ConnectionComplete', () => {
   alt.log("[31LB] Connected to Database");
 });
@@ -49,8 +54,24 @@ alt.onClient("a_placegen", generate);
 alt.onClient("a_saveNewPlace", savePlace);
 alt.onClient("a_updatePlacesForPlayer", updatePlacesForPlayer);
 
+let if_list: InteractFunction<string, CallableFunction>[] = [
+  //Beispiel:
+  //{ key: "globalAutobahnFn", value: globalAutobahnFn },
+];
 
-
+alt.onClient("event_interact_function", (player, interact_function) => {
+  let exec = false;
+  if_list.forEach((element) => {
+    if (element.key == interact_function) {
+      element.value(player);
+      exec = true;
+      return;
+    }
+  });
+  if (!exec) {
+    alt.logWarning("Unregistered function: " + interact_function);
+  }
+});
 
 /* Character Stuff
 player.spawn(-763.245, 328.597, 198.486);

@@ -20,7 +20,7 @@ export function startPlaceGen(): void {
     unlock_radius: 4,
     interact_pos: null,
     interact_radius: 2,
-    function: null,
+    interact_function: null,
   };
 
   let title = "Standort erstellen";
@@ -423,7 +423,7 @@ export function startPlaceGen(): void {
   menu_interaction.ItemSelect.on((selectedItem, selectedItemIndex) => {
     if (selectedItem.Text == interact_fn.Text) {
       callInput("Funktion", (arg) => {
-        new_place.function = arg;
+        new_place.interact_function = arg;
         interact_fn.Description = arg;
       });
     }
@@ -493,8 +493,8 @@ export function startPlaceGen(): void {
         verifyContinue();
       });
     } else if (selectedItem.Text == saveNewPlace_item.Text) {
-      if (new_place.function == null) {
-        new_place.function = randomFunction();
+      if (new_place.interact_function == null) {
+        new_place.interact_function = randomFunction();
       }
       alt.emitServer("a_saveNewPlace", new_place);
     }
@@ -607,14 +607,18 @@ export function saveSuccess(result: JSON) {
   menu.Close();
 }
 
+let subtitleenabled: boolean = false;
+
 export function enteredColshape(colshapeMeta) {
   if (colshapeMeta != null) {
 
     if (colshapeMeta.type == "interaction") {
-      NativeUI.BigMessage.ShowMissionPassedMessage("INTERAKTION", "Drück E blyat");
+      native.beginTextCommandPrint('STRING');
+      native.addTextComponentSubstringPlayerName("Drücke ~y~E ~w~zum Interagieren");
+      native.endTextCommandPrint(24 * 60 * 60 * 1000, true);
+      subtitleenabled = true;
 
-      //TODO: Add Button Message
-
+      alt.setMeta("interaction_function", colshapeMeta.interact_function)
 
     } else if (colshapeMeta.type = "unlock") {
       let unlocked_places;
@@ -656,6 +660,17 @@ export function enteredColshape(colshapeMeta) {
     }
   } else {
     alt.logError("Entered null-colshape");
+  }
+}
+
+export function leaveColshape() {
+  if (subtitleenabled) {
+    native.beginTextCommandPrint('STRING');
+    native.addTextComponentSubstringPlayerName("");
+    native.endTextCommandPrint(250, true);
+    subtitleenabled = false;
+
+    alt.setMeta("interaction_function", null);
   }
 }
 

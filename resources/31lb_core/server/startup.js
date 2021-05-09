@@ -38,6 +38,20 @@ alt.onClient("a_login", login);
 alt.onClient("a_placegen", generate);
 alt.onClient("a_saveNewPlace", savePlace);
 alt.onClient("a_updatePlacesForPlayer", updatePlacesForPlayer);
+let if_list = [];
+alt.onClient("event_interact_function", (player, interact_function) => {
+    let exec = false;
+    if_list.forEach((element) => {
+        if (element.key == interact_function) {
+            element.value(player);
+            exec = true;
+            return;
+        }
+    });
+    if (!exec) {
+        alt.logWarning("Unregistered function: " + interact_function);
+    }
+});
 alt.on('character:Done', (player, data) => {
     alt.emit("character:Sync", player, data);
     player.pos = player.pos;

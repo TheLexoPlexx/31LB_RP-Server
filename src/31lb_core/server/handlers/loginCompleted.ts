@@ -80,6 +80,7 @@ export function loginCompleted(player: alt.Player, result_player: any, password:
 
     });
     
+    //Erstellen der Blips auf der Karte
     globalMarkers.forEach(element => {
       alt.emitClient(player, "a_createBlip", element);
     });
@@ -92,6 +93,7 @@ export function loginCompleted(player: alt.Player, result_player: any, password:
   }
   
   alt.emitClient(player, "a_setMeta", "money_hand", playerJSON.money_hand);
+  alt.emitClient(player, "a_setMeta", "allowKeyPress", true);
 }
 
 export function login(player, pw) {

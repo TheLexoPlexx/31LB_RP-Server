@@ -130,7 +130,7 @@ export const PlaceEntity = new orm.EntitySchema({
             type: "int",
             nullable: true
         },
-        function: {
+        interact_function: {
             type: "varchar",
             nullable: true
         },
