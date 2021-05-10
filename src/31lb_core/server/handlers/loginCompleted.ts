@@ -94,6 +94,7 @@ export function loginCompleted(player: alt.Player, result_player: any, password:
   
   alt.emitClient(player, "a_setMeta", "money_hand", playerJSON.money_hand);
   alt.emitClient(player, "a_setMeta", "allowKeyPress", true);
+  alt.emitClient(player, "a_initializeInventory");
 }
 
 export function login(player, pw) {

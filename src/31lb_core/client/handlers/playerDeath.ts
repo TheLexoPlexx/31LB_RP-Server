@@ -3,10 +3,10 @@
 import * as alt from 'alt-client';
 import * as native from 'natives';
 
-var dead = false;
-var wasted;
-var gettingdamage;
-var url = "http://resource/client/pages/wasted.html";
+let dead = false;
+let wasted;
+let gettingdamage;
+let url = "http://resource/client/pages/wasted.html";
 
 export function playerDeath(): void {
     //TODO: drawText statt HTML, Bildschirm-Shake und Drehung, Audio hinzufügen

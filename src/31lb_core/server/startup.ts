@@ -9,6 +9,7 @@ import { playerDisconnect } from './handlers/playerDisconnect';
 import { keyPressF9, keyPressI, keyPressY } from './handlers/keyHandlers';
 import { login } from './handlers/loginCompleted';
 import { clearColshapes, generate, savePlace, sortMarkers, updatePlacesForPlayer } from './handlers/placeHandler';
+import { openedInventory } from './handlers/inventoryHandler';
 
 export const dbType = 'postgres';
 export const dbHost = 'localhost';
@@ -53,6 +54,7 @@ alt.onClient("a_login", login);
 alt.onClient("a_placegen", generate);
 alt.onClient("a_saveNewPlace", savePlace);
 alt.onClient("a_updatePlacesForPlayer", updatePlacesForPlayer);
+alt.onClient("a_openinventory", openedInventory);
 
 let if_list: InteractFunction<string, CallableFunction>[] = [
   //Beispiel:

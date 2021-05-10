@@ -30,8 +30,10 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@types/sortablejs": "^1.10.6",
 		"mysql": "^2.18.1",
 		"pg": "^8.6.0",
+		"sortablejs": "^1.13.0",
 		"typeorm": "^0.2.32"
 	}
 }

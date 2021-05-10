@@ -3,6 +3,7 @@
 import * as alt from 'alt-client';
 import * as native from 'natives';
 import { toggleInfoHud } from './infohud';
+import { toggleInventory } from './inventory';
 import { drawSubtitle } from './util/messenger';
 
 export function enableKeys() {
@@ -14,7 +15,7 @@ export function disableKeys() {
 }
 
 export function keyPress(key: number): void {
-  if (alt.getMeta("allowKeyPress")) {
+  if (alt.getMeta("allowKeyPress") && !alt.isConsoleOpen()) {
     if (key == 115) { //F4
       alt.emitServer("a_keyup_f4");
   
@@ -29,13 +30,15 @@ export function keyPress(key: number): void {
     } else if (key == 73) { //i
       alt.emitServer("a_keyup_i");
       alt.log("Open Inventory");
-      //open inventory
+
+      toggleInventory();
+
+      alt.emitServer("a_openinventory");
+      
     } else if (key == 69) { //e
       if (alt.getMeta("interaction_function") != (null || undefined )) {
         alt.emit("event_interact_function", alt.getMeta("interaction_function"));
         alt.emitServer("event_interact_function", alt.getMeta("interaction_function"));
-      } else {
-        alt.logError("Keine Funktion, das dürfte eigentlich niemals eintreten.");
       }
     }
   }

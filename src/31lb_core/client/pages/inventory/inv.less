@@ -1,0 +1,70 @@
+@background: rgba(0, 0, 0, 0.4);
+@windowMargin: 20px;
+
+* {
+  margin: 0px;
+}
+
+body {
+  overflow: hidden;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 70% 2fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+
+  .header {
+    grid-area: header;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 0.9fr 0.9fr 1.5fr 0.8fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "otherinventories charspace inventory giveitemsaway";
+    grid-area: main;
+
+    .reserved-otherinventories {
+      grid-area: otherinventories;
+      background: @background;
+      margin: @windowMargin;
+    }
+
+    .reserved-charspace {
+      grid-area: charspace;
+    }
+
+    .inventory {
+      grid-area: inventory;
+      background: @background;
+      margin: @windowMargin;
+    }
+
+    .giveitemsaway {
+      grid-area: giveitemsaway;
+      background: @background;
+      margin: @windowMargin;
+    }
+  }
+
+  .footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .dropitemstoground {
+      margin: @windowMargin;
+      width: 60%;
+      height: 80%;
+      &:hover {
+        background: @background;
+      }
+    }
+  }
+}

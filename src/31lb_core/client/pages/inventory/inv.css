@@ -1,0 +1,55 @@
+* {
+  margin: 0px;
+}
+body {
+  overflow: hidden;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 70% 2fr;
+  gap: 0px 0px;
+  grid-template-areas: "header" "main" "footer";
+}
+body .header {
+  grid-area: header;
+}
+body .main {
+  display: grid;
+  grid-template-columns: 0.9fr 0.9fr 1.5fr 0.8fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "otherinventories charspace inventory giveitemsaway";
+  grid-area: main;
+}
+body .main .reserved-otherinventories {
+  grid-area: otherinventories;
+  background: rgba(0, 0, 0, 0.4);
+  margin: 20px;
+}
+body .main .reserved-charspace {
+  grid-area: charspace;
+}
+body .main .inventory {
+  grid-area: inventory;
+  background: rgba(0, 0, 0, 0.4);
+  margin: 20px;
+}
+body .main .giveitemsaway {
+  grid-area: giveitemsaway;
+  background: rgba(0, 0, 0, 0.4);
+  margin: 20px;
+}
+body .footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .footer .dropitemstoground {
+  margin: 20px;
+  width: 60%;
+  height: 80%;
+}
+body .footer .dropitemstoground:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
