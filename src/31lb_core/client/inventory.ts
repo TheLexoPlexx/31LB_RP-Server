@@ -7,14 +7,14 @@ import Sortable from "sortablejs";
 
 //npm sortablejs als package an client bundlen?#
 
-interface Item {
+class Item {
   displayname: string;
   sizeHeight: number;
   sizeWidth: number;
   maxStacksize: number;
 }
 
-interface ItemHolder {
+class ItemHolder {
   displayname: string;
   sizeHeight: number;
   sizeWidth: number;
@@ -27,8 +27,13 @@ interface ItemHolder {
   ];
 }
 
-function genDummyInv() {
+let invData = {
+  intInv: null,
+  extInv: null,
+}
 
+function genDummyInv() {
+  invData.extInv = new ItemHolder() //usw
 }
 
 let open: boolean = false,
@@ -81,10 +86,10 @@ function openInventory() {
   //Inventar anzeigen
   inventoryview = new alt.WebView("http://resource/client/pages/inventory/inv.html", true);
 
+  //TODO: Get Clothes and pass to player
   inventoryview.on("load", () => {
     inventoryview.emit("makeVisible");
-    inventoryview.emit("interntext", "blyat");
-    inventoryview.emit("externtext", "external blyat");
+    inventoryview.emit("inventorydata", invData);
   });
 }
 

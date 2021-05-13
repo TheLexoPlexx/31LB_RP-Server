@@ -19,6 +19,14 @@ export function consoleCommand(name, ...args) {
             alt.emitServer("a_placegen");
         }
     }
+    else if (name == "cloth") {
+        if (args.length > 1) {
+            alt.logError("Too many Args");
+        }
+        else {
+            alt.emitServer("a_clothselect");
+        }
+    }
     else {
         alt.logError("Not a valid command: " + name);
     }

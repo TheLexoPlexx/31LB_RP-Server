@@ -1,6 +1,15 @@
 import * as alt from 'alt-client';
 import * as native from 'natives';
+class Item {
+}
+class ItemHolder {
+}
+let invData = {
+    intInv: null,
+    extInv: null,
+};
 function genDummyInv() {
+    invData.extInv = new ItemHolder();
 }
 let open = false, viewmode, cam, disableControlLoop, inventoryview;
 let transitiontime = 500;
@@ -36,8 +45,7 @@ function openInventory() {
     inventoryview = new alt.WebView("http://resource/client/pages/inventory/inv.html", true);
     inventoryview.on("load", () => {
         inventoryview.emit("makeVisible");
-        inventoryview.emit("interntext", "blyat");
-        inventoryview.emit("externtext", "external blyat");
+        inventoryview.emit("inventorydata", invData);
     });
 }
 function closeInventory() {

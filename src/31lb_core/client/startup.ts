@@ -8,6 +8,7 @@ import { openWeaponShop } from './weaponShop';
 import { keyPress } from './keys';
 import { setMetaPlayer } from './handlers/meta';
 import { createGlobalBlip, enteredColshape, leaveColshape, saveSuccess, startPlaceGen } from './placeGenerator';
+import { clothSelector } from './clothSelector';
 
 //Keine Ahnung wofür das gut ist, ist aus Freeroam-Resource geklaut
 natives.setPedDefaultComponentVariation(natives.playerPedId());
@@ -25,6 +26,8 @@ alt.onServer("a_newPlaceSaveSuccess", saveSuccess);
 alt.onServer("a_enteredColshape", enteredColshape);
 alt.onServer("a_leaveColshape", leaveColshape);
 alt.onServer("a_createBlip", createGlobalBlip);
+
+alt.onServer("a_clothselector", clothSelector);
 
 alt.on("consoleCommand", consoleCommand)
 alt.on("keyup", keyPress);

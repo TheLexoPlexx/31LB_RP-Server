@@ -29,7 +29,7 @@ export function keyPress(key: number): void {
   
     } else if (key == 73) { //i
       alt.emitServer("a_keyup_i");
-      alt.log("Open Inventory");
+      alt.log("Toggle Inventory");
 
       toggleInventory();
 
