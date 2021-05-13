@@ -185,15 +185,27 @@ export function clothSelector(pedComponentVariations, whitelist) {
                 const subMenu = new NativeUI.Menu(title, "", new NativeUI.Point(50, 50));
                 subMenu.GetTitle().DropShadow = true;
                 menu.AddSubMenu(subMenu, item);
+                let drawableKey;
+                let textureList = [];
                 element.array.forEach((el) => {
-                    let item = new NativeUI.UIMenuItem(el.TranslatedLabel.German, el.NameHash + "/" + el.RestrictionTags);
-                    if (whitelist.includes(el.NameHash)) {
-                        item.SetLeftBadge(NativeUI.BadgeStyle.Tick);
+                    if (drawableKey == undefined || drawableKey != el.DrawableId) {
+                        let sub2MenuMain = new NativeUI.UIMenuItem(el.TranslatedLabel.German, el.NameHash + "/" + el.RestrictionTags);
+                        subMenu.AddItem(sub2MenuMain);
+                        const subTwoMenu = new NativeUI.Menu(el.NameHash, "", new NativeUI.Point(50, 50));
+                        subTwoMenu.GetTitle().DropShadow = true;
+                        subMenu.AddSubMenu(subTwoMenu, sub2MenuMain);
+                        textureList.forEach(el => {
+                            let sub2Item = new NativeUI.UIMenuItem(el.NameHash);
+                            sub2Item.SetRightBadge(NativeUI.BadgeStyle.ArrowRight);
+                            subTwoMenu.AddItem(sub2Item);
+                        });
+                        textureList = [];
+                        textureList.push(el);
                     }
                     else {
-                        item.SetLeftBadge(NativeUI.BadgeStyle.Lock);
+                        textureList.push(el);
                     }
-                    subMenu.AddItem(item);
+                    drawableKey = el.DrawableId;
                 });
                 subMenu.DisableInstructionalButtons(true);
                 subMenu.MenuOpen.on(() => { indexed(0); });
