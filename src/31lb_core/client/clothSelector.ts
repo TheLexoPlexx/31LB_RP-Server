@@ -4,6 +4,8 @@ import * as alt from 'alt-client';
 import * as native from 'natives';
 import * as NativeUI from "./util/nativeui/NativeUi"
 
+//TODO: Andere Admins davon abhalten clothes gleichzeitig zu bearbeiten
+
 interface comp {
   id: number,
   name: string;
@@ -75,7 +77,9 @@ const compIds: {
   }
 };
 
-const propIds = {
+const propIds: {
+  [key: number]: comp
+} = {
   0: {
     id: 0,
     name: "Hats",
@@ -111,9 +115,21 @@ function getComp(props: boolean, index: number): comp {
   }
 }
 
+export function isObjectEmpty(object: Record<string, unknown>): boolean {
+  for (const property in object) {
+    return false;
+  }
+  return true;
+}
+
+
 //FIXME: Char-Abfrage wird nur einmal abgefragt und dann gespeichert, das NativeUI wird daher nicht neu generiert.
 //clothesFile, whitelistClothesFile
-export function clothSelector(pedComponentVariations, whitelist) {
+export function clothSelector(pedComponentVariations: any[], whitelist) {
+  if (isObjectEmpty(whitelist)) {
+    whitelist = [];
+  }
+  alt.log(whitelist);
   let model: string;
   if (native.getEntityModel(alt.Player.local.scriptID) == 1885233650) {
     model = "mp_m_freemode_01";
@@ -135,6 +151,8 @@ export function clothSelector(pedComponentVariations, whitelist) {
         native.clearAllPedProps(alt.Player.local.scriptID);
         native.setPedDefaultComponentVariation(alt.Player.local.scriptID);
       }
+    } else if (key === 81 && menu.Visible) {
+
     }
   });
 
@@ -198,8 +216,12 @@ export function clothSelector(pedComponentVariations, whitelist) {
   
         element.array.forEach((el) => {
           //let item = new NativeUI.UIMenuItem(el.NameHash + " / " + el.TranslatedLabel.German);
-          let item = new NativeUI.UIMenuCheckboxItem(el.TranslatedLabel.German, false, el.NameHash);
-          //item.Description = JSON.stringify(element);
+          let item = new NativeUI.UIMenuItem(el.TranslatedLabel.German, el.NameHash + "/" + el.RestrictionTags);
+          if (whitelist.includes(el.NameHash)) {
+            item.SetLeftBadge(NativeUI.BadgeStyle.Tick);
+          } else {
+            item.SetLeftBadge(NativeUI.BadgeStyle.Lock);
+          }
           subMenu.AddItem(item);
         });
         subMenu.DisableInstructionalButtons(true);
@@ -224,9 +246,18 @@ export function clothSelector(pedComponentVariations, whitelist) {
           }
         }
 
-        subMenu.CheckboxChange.on((item, checked) => {
-          alt.log("checked: " + item.Text);0
-          //TODO: Whitelist speichern und abrufen
+        subMenu.ItemSelect.on((item, checked) => {
+          if (item.LeftBadge == NativeUI.BadgeStyle.Tick) {
+            whitelist.push(item.Description);
+            alt.log("checked: " + item.Text);
+          } else {
+            const index = whitelist.indexOf(5);
+            if (index > -1) {
+              whitelist.splice(index, 1);
+            }
+            alt.log("unchecked: " + item.Text);
+          }
+
         });
       } else {
         alt.logWarning("Empty Array: " + element.name);
@@ -235,4 +266,17 @@ export function clothSelector(pedComponentVariations, whitelist) {
 
   }
   menu.Open();
+
+  menu.MenuClose.on(() => {
+    alt.emitServer("a_saveclothwhitelist", whitelist);
+  });
+}
+
+
+export function setClothesComp(comonent: number, drawable: number, texture: number, inventoryspace: number) {
+  
+}
+
+export function setClothesProp() {
+  
 }

@@ -1,17 +1,20 @@
 import * as alt from 'alt-server';
 import * as fs from "fs";
-export function loadFile(name, callback) {
-    fs.readFile(name, "utf-8", (err, data) => {
-        alt.logError(err);
-        alt.log("Reading file: " + name);
-        callback(data);
-    });
+export function loadFile(name) {
+    alt.log("Reading " + name + "...");
+    return fs.readFileSync(name, "utf-8");
 }
-export function loadFileJSON(name, callback) {
-    callback(loadFile(name + ".JSON", (data) => { JSON.parse(data); }));
+export function loadFileJSON(name) {
+    return JSON.parse(loadFile(name + ".json"));
 }
 export function saveFile(name, data) {
+    alt.log("Saving " + name + "...");
     fs.writeFile(name, data, "utf-8", (err) => {
-        alt.logError(err);
+        if (err != null) {
+            alt.logError(err);
+        }
     });
+}
+export function saveFileJSON(name, data) {
+    saveFile(name + ".json", JSON.stringify(data));
 }

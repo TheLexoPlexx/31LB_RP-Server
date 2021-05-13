@@ -21,6 +21,7 @@ export function playerDisconnect(player) {
       result.sessionid = -1;
 
       //FIXME: Doesn't do the thing
+      //oder doch? Hab jetzt keine Probleme bemerkt.
       result.unlockedplaces = alt.getMeta("unlocked_places");
 
       database.upsertData(result, "players", (res_upsert) => {

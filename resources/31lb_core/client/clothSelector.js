@@ -98,7 +98,17 @@ function getComp(props, index) {
         return compIds[index];
     }
 }
+export function isObjectEmpty(object) {
+    for (const property in object) {
+        return false;
+    }
+    return true;
+}
 export function clothSelector(pedComponentVariations, whitelist) {
+    if (isObjectEmpty(whitelist)) {
+        whitelist = [];
+    }
+    alt.log(whitelist);
     let model;
     if (native.getEntityModel(alt.Player.local.scriptID) == 1885233650) {
         model = "mp_m_freemode_01";
@@ -119,6 +129,8 @@ export function clothSelector(pedComponentVariations, whitelist) {
                 native.clearAllPedProps(alt.Player.local.scriptID);
                 native.setPedDefaultComponentVariation(alt.Player.local.scriptID);
             }
+        }
+        else if (key === 81 && menu.Visible) {
         }
     });
     pedComponentVariations.forEach(element => {
@@ -174,7 +186,13 @@ export function clothSelector(pedComponentVariations, whitelist) {
                 subMenu.GetTitle().DropShadow = true;
                 menu.AddSubMenu(subMenu, item);
                 element.array.forEach((el) => {
-                    let item = new NativeUI.UIMenuCheckboxItem(el.TranslatedLabel.German, false, el.NameHash);
+                    let item = new NativeUI.UIMenuItem(el.TranslatedLabel.German, el.NameHash + "/" + el.RestrictionTags);
+                    if (whitelist.includes(el.NameHash)) {
+                        item.SetLeftBadge(NativeUI.BadgeStyle.Tick);
+                    }
+                    else {
+                        item.SetLeftBadge(NativeUI.BadgeStyle.Lock);
+                    }
                     subMenu.AddItem(item);
                 });
                 subMenu.DisableInstructionalButtons(true);
@@ -195,9 +213,18 @@ export function clothSelector(pedComponentVariations, whitelist) {
                         alt.logError("wat");
                     }
                 }
-                subMenu.CheckboxChange.on((item, checked) => {
-                    alt.log("checked: " + item.Text);
-                    0;
+                subMenu.ItemSelect.on((item, checked) => {
+                    if (item.LeftBadge == NativeUI.BadgeStyle.Tick) {
+                        whitelist.push(item.Description);
+                        alt.log("checked: " + item.Text);
+                    }
+                    else {
+                        const index = whitelist.indexOf(5);
+                        if (index > -1) {
+                            whitelist.splice(index, 1);
+                        }
+                        alt.log("unchecked: " + item.Text);
+                    }
                 });
             }
             else {
@@ -206,4 +233,11 @@ export function clothSelector(pedComponentVariations, whitelist) {
         });
     }
     menu.Open();
+    menu.MenuClose.on(() => {
+        alt.emitServer("a_saveclothwhitelist", whitelist);
+    });
+}
+export function setClothesComp(comonent, drawable, texture, inventoryspace) {
+}
+export function setClothesProp() {
 }

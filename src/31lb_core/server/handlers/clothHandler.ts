@@ -11,4 +11,4 @@ export function clothSelect(player) {
       alt.emitClient(player, "a_nopermission");
     }
   });
-} 
+}

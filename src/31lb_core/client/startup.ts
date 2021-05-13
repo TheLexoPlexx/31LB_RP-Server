@@ -11,6 +11,7 @@ import { createGlobalBlip, enteredColshape, leaveColshape, saveSuccess, startPla
 import { clothSelector } from './clothSelector';
 
 //Keine Ahnung wofür das gut ist, ist aus Freeroam-Resource geklaut
+//Ich weiß mittlerweile wofür das gut ist, weiß aber nicht warum es im client steht und traue mich noch nicht es zu entfernen.
 natives.setPedDefaultComponentVariation(natives.playerPedId());
 
 alt.onServer('a_death', playerDeath);
