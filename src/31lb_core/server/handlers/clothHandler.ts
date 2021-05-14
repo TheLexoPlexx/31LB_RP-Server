@@ -1,8 +1,10 @@
 /// <reference types="@altv/types-server" />
 import * as alt from 'alt-server';
+import { loadFileJSON } from '../fileManager';
 import * as playerManager from "../playerManager";
-import { clothesFile, whitelistClothesFile } from '../startup';
+//import { clothesFile, whitelistClothesFile } from '../startup';
 
+/*
 export function clothSelect(player) {
   playerManager.getPlayer(player, (r) => {
     if (r.permissionsgroup >= 100) {
@@ -11,6 +13,11 @@ export function clothSelect(player) {
       alt.emitClient(player, "a_nopermission");
     }
   });
+}
+*/
+
+export function sortClothes() {
+  var clothFile = loadFileJSON("pedComponentVariations");
 }
 
 /*
