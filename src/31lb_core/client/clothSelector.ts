@@ -151,8 +151,6 @@ export function clothSelector(pedComponentVariations: any[], whitelist) {
         native.clearAllPedProps(alt.Player.local.scriptID);
         native.setPedDefaultComponentVariation(alt.Player.local.scriptID);
       }
-    } else if (key === 81 && menu.Visible) {
-
     }
   });
 
@@ -175,7 +173,7 @@ export function clothSelector(pedComponentVariations: any[], whitelist) {
 
         dataArray.forEach(element => {
           if (element.TranslatedLabel != null) {
-            if (element.TranslatedLabel.English != "soon") {
+            if (element.TextureId == 0) {
               getComp(propbool, element.ComponentId).array.push(element);
             }
           }
@@ -213,35 +211,12 @@ export function clothSelector(pedComponentVariations: any[], whitelist) {
         subMenu.GetTitle().DropShadow = true;
   
         menu.AddSubMenu(subMenu, item);
-
-        let drawableKey;
-        let textureList = [];
   
         element.array.forEach((el) => {
-          if (drawableKey == undefined || drawableKey != el.DrawableId) {
-            let sub2MenuMain = new NativeUI.UIMenuItem(el.TranslatedLabel.German, el.NameHash + "/" + el.RestrictionTags);
-            subMenu.AddItem(sub2MenuMain);
-
-            const subTwoMenu = new NativeUI.Menu(el.NameHash, "", new NativeUI.Point(50, 50));
-            subTwoMenu.GetTitle().DropShadow = true;
-
-            subMenu.AddSubMenu(subTwoMenu, sub2MenuMain);
-      
-            textureList.forEach(el => {
-              let sub2Item = new NativeUI.UIMenuItem(el.NameHash);
-              sub2Item.SetRightBadge(NativeUI.BadgeStyle.ArrowRight);
-              subTwoMenu.AddItem(sub2Item);
-            });
-
-            //TODO: Vervollständigen
-
-            textureList = [];
-            textureList.push(el);
-          } else {
-            textureList.push(el);
+          if (el.TextureId == 0) {
+            let subItem = new NativeUI.UIMenuCheckboxItem(el.TranslatedLabel.German, whitelist.includes(el.NameHash), el.NameHash);
+            subMenu.AddItem(subItem);
           }
-          drawableKey = el.DrawableId;
-          
 
           //let item = new NativeUI.UIMenuItem(el.NameHash + " / " + el.TranslatedLabel.German);
 
@@ -268,8 +243,8 @@ export function clothSelector(pedComponentVariations: any[], whitelist) {
           }
         }
 
-        subMenu.ItemSelect.on((item, checked) => {
-          if (item.LeftBadge == NativeUI.BadgeStyle.Tick) {
+        subMenu.CheckboxChange.on((item, checked) => {
+          if (checked) {
             whitelist.push(item.Description);
             alt.log("checked: " + item.Text);
           } else {

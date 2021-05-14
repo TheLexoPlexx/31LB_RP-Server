@@ -130,8 +130,6 @@ export function clothSelector(pedComponentVariations, whitelist) {
                 native.setPedDefaultComponentVariation(alt.Player.local.scriptID);
             }
         }
-        else if (key === 81 && menu.Visible) {
-        }
     });
     pedComponentVariations.forEach(element => {
         if (element.PedName == model) {
@@ -151,7 +149,7 @@ export function clothSelector(pedComponentVariations, whitelist) {
                 }
                 dataArray.forEach(element => {
                     if (element.TranslatedLabel != null) {
-                        if (element.TranslatedLabel.English != "soon") {
+                        if (element.TextureId == 0) {
                             getComp(propbool, element.ComponentId).array.push(element);
                         }
                     }
@@ -185,27 +183,11 @@ export function clothSelector(pedComponentVariations, whitelist) {
                 const subMenu = new NativeUI.Menu(title, "", new NativeUI.Point(50, 50));
                 subMenu.GetTitle().DropShadow = true;
                 menu.AddSubMenu(subMenu, item);
-                let drawableKey;
-                let textureList = [];
                 element.array.forEach((el) => {
-                    if (drawableKey == undefined || drawableKey != el.DrawableId) {
-                        let sub2MenuMain = new NativeUI.UIMenuItem(el.TranslatedLabel.German, el.NameHash + "/" + el.RestrictionTags);
-                        subMenu.AddItem(sub2MenuMain);
-                        const subTwoMenu = new NativeUI.Menu(el.NameHash, "", new NativeUI.Point(50, 50));
-                        subTwoMenu.GetTitle().DropShadow = true;
-                        subMenu.AddSubMenu(subTwoMenu, sub2MenuMain);
-                        textureList.forEach(el => {
-                            let sub2Item = new NativeUI.UIMenuItem(el.NameHash);
-                            sub2Item.SetRightBadge(NativeUI.BadgeStyle.ArrowRight);
-                            subTwoMenu.AddItem(sub2Item);
-                        });
-                        textureList = [];
-                        textureList.push(el);
+                    if (el.TextureId == 0) {
+                        let subItem = new NativeUI.UIMenuCheckboxItem(el.TranslatedLabel.German, whitelist.includes(el.NameHash), el.NameHash);
+                        subMenu.AddItem(subItem);
                     }
-                    else {
-                        textureList.push(el);
-                    }
-                    drawableKey = el.DrawableId;
                 });
                 subMenu.DisableInstructionalButtons(true);
                 subMenu.MenuOpen.on(() => { indexed(0); });
@@ -225,8 +207,8 @@ export function clothSelector(pedComponentVariations, whitelist) {
                         alt.logError("wat");
                     }
                 }
-                subMenu.ItemSelect.on((item, checked) => {
-                    if (item.LeftBadge == NativeUI.BadgeStyle.Tick) {
+                subMenu.CheckboxChange.on((item, checked) => {
+                    if (checked) {
                         whitelist.push(item.Description);
                         alt.log("checked: " + item.Text);
                     }
