@@ -12,3 +12,9 @@ export function clothSelect(player) {
     }
   });
 }
+
+/*
+
+F/M -> componentId -> drawableId -> Hash/textureid/label/price/invspacex-y/RestrictionTags/ComponentType
+
+*/
