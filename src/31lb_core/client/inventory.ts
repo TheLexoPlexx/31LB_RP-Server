@@ -5,7 +5,8 @@ import * as alt from 'alt-client';
 import * as native from 'natives';
 import Sortable from "sortablejs";
 
-//npm sortablejs als package an client bundlen?#
+//npm sortablejs als package an client bundlen?
+//TODO: Check if Player is incar and block movement of clothes
 
 class Item {
   displayname: string;
@@ -32,10 +33,6 @@ let invData = {
   extInv: null,
 }
 
-function genDummyInv() {
-  invData.extInv = new ItemHolder() //usw
-}
-
 let open: boolean = false,
   viewmode: number,
   cam: number,
@@ -53,9 +50,6 @@ export function toggleInventory() {
 }
 
 function openInventory() {
-
-  //TODO: Remove, debug:
-  genDummyInv();
 
   open = true;
   viewmode = native.getFollowPedCamViewMode();

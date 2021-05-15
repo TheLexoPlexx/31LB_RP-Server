@@ -1,5 +1,6 @@
 /// <reference types="@altv/types-server" />
 import * as alt from 'alt-server';
+import { cloth_blacklist } from '../../lib/cloth_blacklist';
 import { loadFileJSON, saveFileJSON } from '../fileManager';
 import * as playerManager from "../playerManager";
 //import { clothesFile, whitelistClothesFile } from '../startup';
@@ -96,14 +97,15 @@ const propIds: {
 
 const filePath: string = "pedComponentVariations";
 let customClothCache = {
-  m: undefined,
-  f: undefined
+  m: {
+    clothes: [],
+    props: []
+  },
+  f: {
+    clothes: [],
+    props: []
+  }
 };
-
-const t_sort = {
-  clothes: [],
-  props: []
-}
 
 export function sortClothes() {
   let clothFile: PedComponentVariationDLC[] = loadFileJSON("pedComponentVariations");
@@ -131,18 +133,7 @@ export function sortClothes() {
   };
   let tempCompId: number;
 
-  //TODO: Refactor, m&f, comp&props
   clothFile.forEach(dlc => {
-    if (dlc.PedName == "mp_m_freemode_01") {
-
-
-    } else if (dlc.PedName == "mp_f_freemode_01") {
-
-
-    } else {
-      alt.logWarning("Ped not handled: " + dlc.DlcName + " / " + dlc.PedName);
-    }
-
     dlc.ComponentVariations.forEach(comp => {
       let currentHash = comp.NameHash.split("_");
       currentHash.pop();
@@ -150,19 +141,40 @@ export function sortClothes() {
 
       if (tempCloth.cHash == null) {
         tempCloth.cHash = tempHash;
-        tempCompId = comp.TextureId;
+        tempCompId = comp.ComponentId;
       }
 
       if (tempCloth.cHash == tempHash) {
         tempCloth.texture[comp.TextureId] = (comp.TranslatedLabel == (undefined || null)) ? "no_translation" : JSON.parse(JSON.stringify(comp.TranslatedLabel)).German;
       } else {
-        if (t_sort.clothes[tempCompId] == undefined) {
-          t_sort.clothes[tempCompId] = [];
-        }
         tempCloth.drawable = comp.DrawableId;
         tempCloth.restrictionTags = comp.RestrictionTags;
         tempCloth.componentType = comp.ComponentType;
-        t_sort.clothes[tempCompId].push(tempCloth);
+
+        var skip = false;
+        if (cloth_blacklist[tempCompId] != null) {
+          if (!cloth_blacklist[tempCompId].isProp) {
+            if (tempCloth.cHash.split("_").includes("M")) {
+              if (cloth_blacklist[tempCompId].male.includes(comp.DrawableId) || cloth_blacklist[tempCompId].female.includes(comp.DrawableId)) {
+                skip = true;
+              }
+            }
+          }
+        }
+
+        if (!skip) {
+          if (tempCloth.cHash.split("_").includes("M")) { //TODO: Ändern von includes zu dlc.PedName und zwar so, dass die Zuordnung stimmt.
+            if (customClothCache.m.clothes[tempCompId] == undefined) {
+              customClothCache.m.clothes[tempCompId] = [];
+            }
+            customClothCache.m.clothes[tempCompId].push(tempCloth);
+          } else {
+            if (customClothCache.f.clothes[tempCompId] == undefined) {
+              customClothCache.f.clothes[tempCompId] = [];
+            }
+            customClothCache.f.clothes[tempCompId].push(tempCloth);
+          }
+        }
 
         tempCompId = comp.ComponentId;
         tempCloth = {
@@ -178,14 +190,6 @@ export function sortClothes() {
           componentType: null
         };
       }
-
-      if (dlc.PedName == "mp_m_freemode_01") {
-        customClothCache.m = t_sort;
-      } else if (dlc.PedName == "mp_f_freemode_01") {
-        customClothCache.f = t_sort;
-      } else {
-        alt.logWarning("Ped not handled: " + dlc.DlcName + " / " + dlc.PedName);
-      }
     });
     dlc.Props.forEach(prop => {
       let currentHash = prop.NameHash.split("_");
@@ -200,12 +204,33 @@ export function sortClothes() {
       if (tempProp.cHash == tempHash) {
         tempProp.texture[prop.TextureId] = (prop.TranslatedLabel == (undefined || null)) ? "no_translation" : JSON.parse(JSON.stringify(prop.TranslatedLabel)).German;
       } else {
-        if (t_sort.props[tempCompId] == undefined) {
-          t_sort.props[tempCompId] = [];
-        }
         tempProp.drawable = prop.DrawableId;
         tempProp.restrictionTags = prop.RestrictionTags;
-        t_sort.props[tempCompId].push(tempProp);
+
+        var skip = false;
+        if (cloth_blacklist[tempCompId] != null) {
+          if (cloth_blacklist[tempCompId].isProp) {
+            if (tempCloth.cHash.split("_").includes("M")) {
+              if (cloth_blacklist[tempCompId].male.includes(prop.DrawableId) || cloth_blacklist[tempCompId].female.includes(prop.DrawableId)) {
+                skip = true;
+              }
+            }
+          }
+        }
+
+        if (!skip) {
+          if (tempCloth.cHash.split("_").includes("M")) {
+            if (customClothCache.m.props[tempCompId] == undefined) {
+              customClothCache.m.props[tempCompId] = [];
+            }
+            customClothCache.m.props[tempCompId].push(tempCloth);
+          } else {
+            if (customClothCache.f.props[tempCompId] == undefined) {
+              customClothCache.f.props[tempCompId] = [];
+            }
+            customClothCache.f.props[tempCompId].push(tempCloth);
+          }
+        }
 
         tempCompId = prop.ComponentId;
         tempProp = {
@@ -216,14 +241,6 @@ export function sortClothes() {
           restrictionTags: null,
           componentType: null
         };
-      }
-
-      if (dlc.PedName == "mp_m_freemode_01") {
-        customClothCache.m = t_sort;
-      } else if (dlc.PedName == "mp_f_freemode_01") {
-        customClothCache.f = t_sort;
-      } else {
-        alt.logWarning("Ped not handled: " + dlc.DlcName + " / " + dlc.PedName);
       }
     });
   });

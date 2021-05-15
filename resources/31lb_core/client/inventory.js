@@ -8,9 +8,6 @@ let invData = {
     intInv: null,
     extInv: null,
 };
-function genDummyInv() {
-    invData.extInv = new ItemHolder();
-}
 let open = false, viewmode, cam, disableControlLoop, inventoryview;
 let transitiontime = 500;
 export function toggleInventory() {
@@ -22,7 +19,6 @@ export function toggleInventory() {
     }
 }
 function openInventory() {
-    genDummyInv();
     open = true;
     viewmode = native.getFollowPedCamViewMode();
     disableControlLoop = alt.everyTick(() => {
