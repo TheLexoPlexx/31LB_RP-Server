@@ -22,6 +22,9 @@ export let interactionColshapes = [];
 export function sortMarkers() {
   alt.log("[31LB] Sorting Markers...");
   database.fetchAllData("places", (result) => {
+    if (result == null) {
+      result = [];
+    }
     result.forEach(element => {
       if (element.unlock_pos == null) {
         globalMarkers.push(element);
