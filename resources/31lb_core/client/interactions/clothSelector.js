@@ -1,6 +1,6 @@
 import * as alt from 'alt-client';
 import * as native from 'natives';
-import * as NativeUI from "./util/nativeui/NativeUi";
+import * as NativeUI from "../util/nativeui/NativeUi";
 const CompIds = {
     0: "Head",
     1: "Masks",

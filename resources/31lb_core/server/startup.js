@@ -1,16 +1,15 @@
 import * as alt from 'alt-server';
 import SQL from './util/database';
 import * as entities from './entities/entities.js';
-import { playerConnect } from './handlers/playerConnect';
-import { playerDamage } from './handlers/playerDamage';
-import { playerDeath } from './handlers/playerDeath';
-import { playerDisconnect } from './handlers/playerDisconnect';
-import { keyPressF9, keyPressI, keyPressY } from './handlers/keyHandlers';
-import { login } from './handlers/loginCompleted';
-import { clearColshapes, generate, savePlace, sortMarkers, updatePlacesForPlayer } from './handlers/placeHandler';
-import { openedInventory } from './handlers/inventoryHandler';
-import { sortClothes } from './handlers/clothHandler';
-import { saveFileJSON } from './fileManager';
+import { playerConnect } from './eventHandlers/playerConnect';
+import { playerDamage } from './eventHandlers/playerDamage';
+import { playerDeath } from './eventHandlers/playerDeath';
+import { playerDisconnect } from './eventHandlers/playerDisconnect';
+import { keyPressF9, keyPressI, keyPressY } from './eventHandlers/keyHandlers';
+import { login } from './eventHandlers/loginCompleted';
+import { clearColshapes, generate, savePlace, sortMarkers, updatePlacesForPlayer } from './eventHandlers/placeHandler';
+import { openedInventory } from './eventHandlers/inventoryHandler';
+import { consoleCommandServer } from './consoleCommandServer';
 export const dbType = 'postgres';
 export const dbHost = 'localhost';
 export const dbPort = '5433';
@@ -28,7 +27,7 @@ alt.on("resourceStart", (errored) => {
         player.setDateTime(11, 3, 2021, 8, 0, 0);
     });
 });
-sortClothes();
+alt.on("consoleCommand", consoleCommandServer);
 alt.on("playerConnect", playerConnect);
 alt.on('playerDeath', playerDeath);
 alt.on("playerDamage", playerDamage);
@@ -43,9 +42,6 @@ alt.onClient("a_placegen", generate);
 alt.onClient("a_saveNewPlace", savePlace);
 alt.onClient("a_updatePlacesForPlayer", updatePlacesForPlayer);
 alt.onClient("a_openinventory", openedInventory);
-alt.onClient("a_saveclothwhitelist", (player, data) => {
-    saveFileJSON("pedComponentVariations_whitelist", data);
-});
 let if_list = [];
 alt.onClient("event_interact_function", (player, interact_function) => {
     let exec = false;

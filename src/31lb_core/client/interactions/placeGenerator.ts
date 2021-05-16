@@ -2,8 +2,8 @@
 /// <reference types="@altv/types-natives" />
 import * as alt from 'alt-client';
 import * as native from 'natives';
-import * as NativeUI from "./util/nativeui/NativeUi"
-import * as msg from "./util/messenger";
+import * as NativeUI from "../util/nativeui/NativeUi"
+import * as msg from "../util/messenger";
 
 //TODO: Refactor, removeCheckpoint... etc. sind alle doppelt, auch updateCoords
 

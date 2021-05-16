@@ -2,16 +2,16 @@
 import * as alt from 'alt-server';
 import SQL from './util/database';
 import * as entities from './entities/entities.js';
-import { playerConnect } from './handlers/playerConnect';
-import { playerDamage } from './handlers/playerDamage';
-import { playerDeath } from './handlers/playerDeath';
-import { playerDisconnect } from './handlers/playerDisconnect';
-import { keyPressF9, keyPressI, keyPressY } from './handlers/keyHandlers';
-import { login } from './handlers/loginCompleted';
-import { clearColshapes, generate, savePlace, sortMarkers, updatePlacesForPlayer } from './handlers/placeHandler';
-import { openedInventory } from './handlers/inventoryHandler';
-import { sortClothes } from './handlers/clothHandler';
-import { loadFileJSON, saveFileJSON } from './fileManager';
+import { playerConnect } from './eventHandlers/playerConnect';
+import { playerDamage } from './eventHandlers/playerDamage';
+import { playerDeath } from './eventHandlers/playerDeath';
+import { playerDisconnect } from './eventHandlers/playerDisconnect';
+import { keyPressF9, keyPressI, keyPressY } from './eventHandlers/keyHandlers';
+import { login } from './eventHandlers/loginCompleted';
+import { clearColshapes, generate, savePlace, sortMarkers, updatePlacesForPlayer } from './eventHandlers/placeHandler';
+import { openedInventory } from './eventHandlers/inventoryHandler';
+import { loadFileJSON, saveFileJSON } from './managers/fileManager';
+import { consoleCommandServer } from './consoleCommandServer';
 
 export const dbType = 'postgres';
 export const dbHost = 'localhost';
@@ -40,12 +40,7 @@ alt.on("resourceStart", (errored) => {
   });
 });
 
-/*
-export let clothesFile = loadFileJSON("pedComponentVariations");
-export let whitelistClothesFile = loadFileJSON("pedComponentVariations_whitelist");
-*/
-
-sortClothes();
+alt.on("consoleCommand", consoleCommandServer)
 
 alt.on("playerConnect", playerConnect);
 alt.on('playerDeath', playerDeath);
@@ -64,12 +59,6 @@ alt.onClient("a_placegen", generate);
 alt.onClient("a_saveNewPlace", savePlace);
 alt.onClient("a_updatePlacesForPlayer", updatePlacesForPlayer);
 alt.onClient("a_openinventory", openedInventory);
-//alt.onClient("a_clothselect", clothSelect);
-
-alt.onClient("a_saveclothwhitelist", (player, data) => {
-  saveFileJSON("pedComponentVariations_whitelist", data);
-  //whitelistClothesFile = data;
-});
 
 let if_list: InteractFunction<string, CallableFunction>[] = [
   //Beispiel: Key als String aus der Datenbank und vlaue ist eine Funktion

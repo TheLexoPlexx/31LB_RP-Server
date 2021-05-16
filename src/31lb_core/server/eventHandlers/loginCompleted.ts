@@ -1,6 +1,6 @@
 /// <reference types="@altv/types-server" />
 import * as alt from 'alt-server';
-import * as pm from "../playerManager";
+import * as pm from "./../managers/playerManager";
 import { database } from '../startup';
 import { globalMarkers, unlockableMarkers } from './placeHandler';
 

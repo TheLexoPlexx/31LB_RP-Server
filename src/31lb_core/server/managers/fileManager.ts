@@ -22,5 +22,5 @@ export function saveFile(name: string, data: any) {
 }
 
 export function saveFileJSON(name: string, data: JSON | any) {
-  saveFile(name + ".json", JSON.stringify(data));
+  saveFile(name + ".json", JSON.stringify(data, null, 2));
 }

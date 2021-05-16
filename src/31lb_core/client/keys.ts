@@ -2,8 +2,8 @@
 /// <reference types="@altv/types-natives" />
 import * as alt from 'alt-client';
 import * as native from 'natives';
-import { toggleInfoHud } from './infohud';
-import { toggleInventory } from './inventory';
+import { toggleInfoHud } from './interactions/infohud';
+import { toggleInventory } from './interactions/inventory';
 import { drawSubtitle } from './util/messenger';
 
 export function enableKeys() {

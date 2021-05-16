@@ -1,7 +1,7 @@
 /// <reference types="@altv/types-server" />
 import * as alt from 'alt-server';
 import { database } from '../startup';
-import * as playerManager from "../playerManager";
+import * as playerManager from "./../managers/playerManager";
 
 export function generate(player) {
   playerManager.getPlayer(player, (r) => {

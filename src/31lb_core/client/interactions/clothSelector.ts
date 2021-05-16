@@ -2,118 +2,32 @@
 /// <reference types="@altv/types-natives" />
 import * as alt from 'alt-client';
 import * as native from 'natives';
-import * as NativeUI from "./util/nativeui/NativeUi"
+import * as NativeUI from "../util/nativeui/NativeUi"
 
-//TODO: Andere Admins davon abhalten clothes gleichzeitig zu bearbeiten
-
-interface comp {
-  id: number,
-  name: string;
-  array: any[];
-}
-
-const compIds: {
-  [key: number]: comp
-} = {
-  0: {
-    id: 0,
-    name: "Head",
-    array: []
-  },
-  1: {
-    id: 1,
-    name: "Masks",
-    array: []
-  },
-  2: {
-    id: 2,
-    name: "Hair Styles",
-    array: []
-  },
-  3: {
-    id: 3,
-    name: "Torsos",
-    array: []
-  },
-  4: {
-    id: 4,
-    name: "Legs",
-    array: []
-  },
-  5: {
-    id: 5,
-    name: "Bags and Parachutes",
-    array: []
-  },
-  6: {
-    id: 6,
-    name: "Shoes",
-    array: []
-  },
-  7: {
-    id: 7,
-    name: "Accessories",
-    array: []
-  },
-  8: {
-    id: 8,
-    name: "Undershirts",
-    array: []
-  },
-  9: {
-    id: 9,
-    name: "Body Armors",
-    array: []
-  },
-  10: {
-    id: 10,
-    name: "Decals",
-    array: []
-  },
-  11: {
-    id: 11,
-    name: "Tops",
-    array: []
-  }
+const CompIds: {
+  [key: number]: string } = {
+  0: "Head",
+  1: "Masks",
+  2: "Hair Styles",
+  3: "Torsos",
+  4: "Legs",
+  5: "Bags and Parachutes",
+  6: "Shoes",
+  7: "Accessories",
+  8: "Undershirts",
+  9: "Body Armors",
+  10: "Decals",
+  11: "Tops",
 };
 
 const propIds: {
-  [key: number]: comp
-} = {
-  0: {
-    id: 0,
-    name: "Hats",
-    array: []
-  },
-  1: {
-    id: 1,
-    name: "Glasses",
-    array: []
-  },
-  2: {
-    id: 2,
-    name: "Ears",
-    array: []
-  },
-  6: {
-    id: 6,
-    name: "Watches",
-    array: []
-  },
-  7: {
-    id: 7,
-    name: "Bracelets",
-    array: []
-  },
-}
-
-function getComp(props: boolean, index: number): comp {
-  if (props) {
-    return propIds[index];
-  } else {
-    return compIds[index];
-  }
-}
+  [key: number]: string } = {
+  0: "Hats",
+  1: "Glasses",
+  2: "Ears",
+  6: "Watches",
+  7: "Bracelets",
+};
 
 export function isObjectEmpty(object: Record<string, unknown>): boolean {
   for (const property in object) {
@@ -122,14 +36,10 @@ export function isObjectEmpty(object: Record<string, unknown>): boolean {
   return true;
 }
 
+//TODO: Rework clothSelector for new Cloth-System
+export function clothSelector(pedComponentVariations: any[]) {
 
-//FIXME: Char-Abfrage wird nur einmal abgefragt und dann gespeichert, das NativeUI wird daher nicht neu generiert.
-//clothesFile, whitelistClothesFile
-export function clothSelector(pedComponentVariations: any[], whitelist) {
-  if (isObjectEmpty(whitelist)) {
-    whitelist = [];
-  }
-  alt.log(whitelist);
+
   let model: string;
   if (native.getEntityModel(alt.Player.local.scriptID) == 1885233650) {
     model = "mp_m_freemode_01";

@@ -1,8 +1,8 @@
 /// <reference types="@altv/types-server" />
 import * as alt from 'alt-server';
 import { getWeaponByName } from "../../lib/weapons";
-import * as playerManager from "../playerManager";
-import * as wm from "../weaponManager";
+import * as playerManager from "./../managers/playerManager";
+import * as wm from "./../managers/weaponManager";
 import { generate } from './placeHandler';
 
 var menuopen = false;

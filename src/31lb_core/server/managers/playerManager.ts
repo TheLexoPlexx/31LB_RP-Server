@@ -1,6 +1,6 @@
 /// <reference types="@altv/types-server" />
 import * as alt from 'alt-server';
-import { database } from './startup';
+import { database } from './../startup';
 
 export function getPlayer(player, callback) {
   database.fetchData("sessionid", player.id, "players", (result) => {

@@ -1,6 +1,6 @@
 import * as alt from 'alt-client';
-import { toggleInfoHud } from './infohud';
-import { toggleInventory } from './inventory';
+import { toggleInfoHud } from './interactions/infohud';
+import { toggleInventory } from './interactions/inventory';
 export function enableKeys() {
     alt.setMeta("allowKeyPress", true);
 }

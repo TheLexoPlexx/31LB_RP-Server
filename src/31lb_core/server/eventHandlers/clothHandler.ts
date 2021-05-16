@@ -1,8 +1,8 @@
 /// <reference types="@altv/types-server" />
 import * as alt from 'alt-server';
 import { cloth_blacklist } from '../../lib/cloth_blacklist';
-import { loadFileJSON, saveFileJSON } from '../fileManager';
-import * as playerManager from "../playerManager";
+import { loadFileJSON, saveFileJSON } from './../managers/fileManager';
+import * as playerManager from "./../managers/playerManager";
 //import { clothesFile, whitelistClothesFile } from '../startup';
 
 /*
@@ -70,32 +70,9 @@ interface InventorySpace {
   y: number;
 }
 
-const CompIds: {
-  [key: number]: string } = {
-  0: "Head",
-  1: "Masks",
-  2: "Hair Styles",
-  3: "Torsos",
-  4: "Legs",
-  5: "Bags and Parachutes",
-  6: "Shoes",
-  7: "Accessories",
-  8: "Undershirts",
-  9: "Body Armors",
-  10: "Decals",
-  11: "Tops",
-};
+const filePath: string = "./resources/31lb_core/data_dumps/pedComponentVariations";
+const filePathExport: string = "./resources/31lb_core/client/bin/clothlist";
 
-const propIds: {
-  [key: number]: string } = {
-  0: "Hats",
-  1: "Glasses",
-  2: "Ears",
-  6: "Watches",
-  7: "Bracelets",
-};
-
-const filePath: string = "pedComponentVariations";
 let customClothCache = {
   m: {
     clothes: [],
@@ -107,8 +84,10 @@ let customClothCache = {
   }
 };
 
+//TODO: As of now: Replaces the entire file and recreates it, check if file already exist and load that, blacklist not entirely tested and refactoring is also needed.
+
 export function sortClothes() {
-  let clothFile: PedComponentVariationDLC[] = loadFileJSON("pedComponentVariations");
+  let clothFile: PedComponentVariationDLC[] = loadFileJSON(filePath);
 
   let tempCloth = {
     cHash: null,
@@ -245,5 +224,5 @@ export function sortClothes() {
     });
   });
   
-  saveFileJSON("_clothTest", customClothCache);
+  saveFileJSON(filePathExport, customClothCache);
 }

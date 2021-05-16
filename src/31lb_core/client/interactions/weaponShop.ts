@@ -2,8 +2,8 @@
 /// <reference types="@altv/types-natives" />
 import * as alt from 'alt-client';
 import * as native from 'natives';
-import { WeaponList, getWeaponByName } from '../lib/weapons';
-import * as NativeUI from "./util/nativeui/NativeUi";
+import { WeaponList, getWeaponByName } from '../../lib/weapons';
+import * as NativeUI from "../util/nativeui/NativeUi";
 
 export function openWeaponShop() {
 }

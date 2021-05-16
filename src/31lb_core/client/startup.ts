@@ -4,11 +4,11 @@ import * as alt from 'alt-client';
 import * as natives from 'natives';
 import { playerDamage, playerDeath, revive } from "./handlers/playerDeath";
 import { consoleCommand } from './commands';
-import { openWeaponShop } from './weaponShop';
+import { openWeaponShop } from './interactions/weaponShop';
 import { keyPress } from './keys';
 import { setMetaPlayer } from './handlers/meta';
-import { createGlobalBlip, enteredColshape, leaveColshape, saveSuccess, startPlaceGen } from './placeGenerator';
-import { clothSelector } from './clothSelector';
+import { createGlobalBlip, enteredColshape, leaveColshape, saveSuccess, startPlaceGen } from './interactions/placeGenerator';
+import { clothSelector } from './interactions/clothSelector';
 
 //Keine Ahnung wofür das gut ist, ist aus Freeroam-Resource geklaut
 //Ich weiß mittlerweile wofür das gut ist, weiß aber nicht warum es im client steht und traue mich noch nicht es zu entfernen.
