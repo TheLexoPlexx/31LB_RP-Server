@@ -4,6 +4,7 @@ import * as alt from 'alt-client';
 import * as native from 'natives';
 import { toggleInfoHud } from './interactions/infohud';
 import { toggleInventory } from './interactions/inventory';
+import { togglePlayerMenu } from './interactions/playerMenu';
 import { drawSubtitle } from './util/messenger';
 
 export function enableKeys() {
@@ -40,6 +41,11 @@ export function keyPress(key: number): void {
         alt.emit("event_interact_function", alt.getMeta("interaction_function"));
         alt.emitServer("event_interact_function", alt.getMeta("interaction_function"));
       }
+      
+    } else if (key == 77) { //M
+      alt.emitServer("a_keyup_m");
+
+      togglePlayerMenu();
     }
   }
 }

@@ -7,9 +7,6 @@ export const PlayerEntity = new orm.EntitySchema({
             type: 'int',
             generated: true
         },
-        socialclub: {
-            type: 'varchar'
-        },
         password: {
             type: 'varchar'
         },
@@ -40,7 +37,7 @@ export const PlayerEntity = new orm.EntitySchema({
         firstjoin: {
             type: "varchar"
         },
-        permissionsgroup: {
+        permissions: {
             type: "int"
         },
         character: {

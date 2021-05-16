@@ -1,6 +1,7 @@
 import * as alt from 'alt-client';
 import { toggleInfoHud } from './interactions/infohud';
 import { toggleInventory } from './interactions/inventory';
+import { togglePlayerMenu } from './interactions/playerMenu';
 export function enableKeys() {
     alt.setMeta("allowKeyPress", true);
 }
@@ -30,6 +31,10 @@ export function keyPress(key) {
                 alt.emit("event_interact_function", alt.getMeta("interaction_function"));
                 alt.emitServer("event_interact_function", alt.getMeta("interaction_function"));
             }
+        }
+        else if (key == 77) {
+            alt.emitServer("a_keyup_m");
+            togglePlayerMenu();
         }
     }
 }

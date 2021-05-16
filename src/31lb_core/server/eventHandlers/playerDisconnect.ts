@@ -12,7 +12,6 @@ export function playerDisconnect(player) {
 
   database.fetchData("sessionid", id, "players", (result) => {
     if (result != null) {
-      //alt.log(JSON.stringify(result));
       result.pos = JSON.stringify(pos);
       result.rot = JSON.stringify(rot);
       result.healthpoints = hp;
@@ -22,7 +21,7 @@ export function playerDisconnect(player) {
 
       //FIXME: Doesn't do the thing
       //oder doch? Hab jetzt keine Probleme bemerkt.
-      result.unlockedplaces = alt.getMeta("unlocked_places");
+      result.unlockedplaces = alt.getSyncedMeta("unlocked_places");
 
       database.upsertData(result, "players", (res_upsert) => {
         alt.log("Player " + res_upsert.name + "[" + res_upsert.socialclub + "] left");

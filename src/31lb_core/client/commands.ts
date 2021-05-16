@@ -25,6 +25,7 @@ export function consoleCommand(name: string, ...args: string[]): void {
     } else {
       alt.emitServer("a_clothselect");
     }
+    
   } else {
     alt.logError("Not a valid command: " + name);
   }

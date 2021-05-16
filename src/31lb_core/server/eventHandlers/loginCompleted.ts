@@ -11,7 +11,6 @@ export function loginCompleted(player: alt.Player, result_player: any, password:
     var d = new Date();
     var date = d.getDate().toString() + "." + (d.getMonth() + 1).toString() + "." + d.getFullYear().toString();
     var new_player = {
-      socialclub: player.socialId,
       password: password,
       money_hand: 400,
       money_bank: 0,
@@ -42,7 +41,7 @@ export function loginCompleted(player: alt.Player, result_player: any, password:
     player.armour = result_player.armour;
 
     /*
-    Herausfinden ob man Player in Fahrzeuge setzen kann
+    TODO: Herausfinden ob man Player in Fahrzeuge setzen kann
     //native.setPedInto
 
     if (result_player.incar > 0) {
@@ -61,7 +60,7 @@ export function loginCompleted(player: alt.Player, result_player: any, password:
     //TODO: Zuordnen, blahblah
 
     //TODO: Markers
-    alt.emitClient(player, "a_setMeta", "unlocked_places", result_player.unlockedplaces);
+    player.setSyncedMeta("unlocked_places", result_player.unlockedplaces);
 
     let unlocked_places;
     if (result_player.unlockedplaces === "[]") {
@@ -91,9 +90,15 @@ export function loginCompleted(player: alt.Player, result_player: any, password:
     });
     playerJSON = result_player;
   }
-  
-  alt.emitClient(player, "a_setMeta", "money_hand", playerJSON.money_hand);
-  alt.emitClient(player, "a_setMeta", "allowKeyPress", true);
+
+
+  player.setSyncedMeta("money_hand", playerJSON.money_hand);
+  player.setSyncedMeta("permissions", playerJSON.permissions);
+  player.setSyncedMeta("inventar", playerJSON.inventar);
+  player.setSyncedMeta("personalausweis", playerJSON.personalausweis);
+  player.setSyncedMeta("allowKeyPress", true);
+  //TODO: Add more synced Metas
+
   alt.emitClient(player, "a_initializeInventory");
 }
 

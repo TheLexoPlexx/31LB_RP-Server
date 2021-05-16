@@ -1,0 +1,2 @@
+export function teamLogin(player) {
+}

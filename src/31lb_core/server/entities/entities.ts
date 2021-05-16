@@ -8,9 +8,6 @@ export const PlayerEntity = new orm.EntitySchema({
       type: 'int',
       generated: true
     },
-    socialclub: {
-      type: 'varchar'
-    },
     /* //TODO: Für Später
     mail: {
       type: 'varchar',
@@ -59,7 +56,7 @@ export const PlayerEntity = new orm.EntitySchema({
     firstjoin: {
       type: "varchar"
     },
-    permissionsgroup: {
+    permissions: {
       type: "int"
     },
     character: {

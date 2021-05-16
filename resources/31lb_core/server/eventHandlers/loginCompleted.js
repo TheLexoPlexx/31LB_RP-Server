@@ -8,7 +8,6 @@ export function loginCompleted(player, result_player, password) {
         var d = new Date();
         var date = d.getDate().toString() + "." + (d.getMonth() + 1).toString() + "." + d.getFullYear().toString();
         var new_player = {
-            socialclub: player.socialId,
             password: password,
             money_hand: 400,
             money_bank: 0,
@@ -33,7 +32,7 @@ export function loginCompleted(player, result_player, password) {
         player.rot = rot;
         player.health = result_player.healthpoints;
         player.armour = result_player.armour;
-        alt.emitClient(player, "a_setMeta", "unlocked_places", result_player.unlockedplaces);
+        player.setSyncedMeta("unlocked_places", result_player.unlockedplaces);
         let unlocked_places;
         if (result_player.unlockedplaces === "[]") {
             unlocked_places = [];
@@ -57,8 +56,11 @@ export function loginCompleted(player, result_player, password) {
         });
         playerJSON = result_player;
     }
-    alt.emitClient(player, "a_setMeta", "money_hand", playerJSON.money_hand);
-    alt.emitClient(player, "a_setMeta", "allowKeyPress", true);
+    player.setSyncedMeta("money_hand", playerJSON.money_hand);
+    player.setSyncedMeta("permissions", playerJSON.permissions);
+    player.setSyncedMeta("inventar", playerJSON.inventar);
+    player.setSyncedMeta("personalausweis", playerJSON.personalausweis);
+    player.setSyncedMeta("allowKeyPress", true);
     alt.emitClient(player, "a_initializeInventory");
 }
 export function login(player, pw) {

@@ -6,12 +6,12 @@ import { playerConnect } from './eventHandlers/playerConnect';
 import { playerDamage } from './eventHandlers/playerDamage';
 import { playerDeath } from './eventHandlers/playerDeath';
 import { playerDisconnect } from './eventHandlers/playerDisconnect';
-import { keyPressF9, keyPressI, keyPressY } from './eventHandlers/keyHandlers';
+import { keyPressF9, keyPressI, keyPressM, keyPressY } from './eventHandlers/keyHandlers';
 import { login } from './eventHandlers/loginCompleted';
 import { clearColshapes, generate, savePlace, sortMarkers, updatePlacesForPlayer } from './eventHandlers/placeHandler';
 import { openedInventory } from './eventHandlers/inventoryHandler';
-import { loadFileJSON, saveFileJSON } from './managers/fileManager';
 import { consoleCommandServer } from './consoleCommandServer';
+import { teamLogin } from './eventHandlers/teamLoginHandler';
 
 export const dbType = 'postgres';
 export const dbHost = 'localhost';
@@ -53,12 +53,14 @@ alt.on("ConnectionComplete", sortMarkers);
 alt.onClient("a_keyup_f9", keyPressF9);
 alt.onClient("a_keyup_y", keyPressY);
 alt.onClient("a_keyup_i", keyPressI);
+alt.onClient("a_keyup_m", keyPressM);
 
 alt.onClient("a_login", login);
 alt.onClient("a_placegen", generate);
 alt.onClient("a_saveNewPlace", savePlace);
 alt.onClient("a_updatePlacesForPlayer", updatePlacesForPlayer);
 alt.onClient("a_openinventory", openedInventory);
+alt.onClient("a_teamlogin", teamLogin);
 
 let if_list: InteractFunction<string, CallableFunction>[] = [
   //Beispiel: Key als String aus der Datenbank und vlaue ist eine Funktion

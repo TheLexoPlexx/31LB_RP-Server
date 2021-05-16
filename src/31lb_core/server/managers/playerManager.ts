@@ -1,6 +1,7 @@
 /// <reference types="@altv/types-server" />
 import * as alt from 'alt-server';
 import { database } from './../startup';
+import * as entities from "./../entities/entities";
 
 export function getPlayer(player, callback) {
   database.fetchData("sessionid", player.id, "players", (result) => {
@@ -54,4 +55,3 @@ export function addWeapon(player, weaponName, inventory) {
     setValue(result, null);
   });
 }
-

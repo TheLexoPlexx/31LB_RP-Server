@@ -15,7 +15,7 @@ export function playerDisconnect(player) {
             result.armour = armour;
             result.incar = incar;
             result.sessionid = -1;
-            result.unlockedplaces = alt.getMeta("unlocked_places");
+            result.unlockedplaces = alt.getSyncedMeta("unlocked_places");
             database.upsertData(result, "players", (res_upsert) => {
                 alt.log("Player " + res_upsert.name + "[" + res_upsert.socialclub + "] left");
             });

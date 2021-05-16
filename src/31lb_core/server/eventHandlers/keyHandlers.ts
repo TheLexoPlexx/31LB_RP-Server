@@ -21,3 +21,7 @@ export function keyPressY(player: alt.Player) {
 export function keyPressI(player: alt.Player) {
   //placeholder, only used on client so far
 } 
+
+export function keyPressM(player: alt.Player) {
+  //placeholder, only used on client so far
+} 
