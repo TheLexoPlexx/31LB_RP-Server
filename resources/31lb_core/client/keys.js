@@ -2,7 +2,7 @@ import * as alt from 'alt-client';
 import { toggleInfoHud } from './interactions/infohud';
 import { toggleInventory } from './interactions/inventory';
 import { togglePlayerMenu } from './interactions/playerMenu';
-export function keyPress(key) {
+export function keyUp(key) {
     if (alt.Player.local.getSyncedMeta("allowKeyPress") && !alt.isConsoleOpen()) {
         if (key == 89) {
             alt.emitServer("a_keyup_y");

@@ -48,6 +48,7 @@ export function sortMarkers() {
   });
 
   //FIXME: Called on playerDisconnect?
+  //Scheinbar doch nicht mehr, beobachten.
   alt.setTimeout(() => {
     alt.on("entityEnterColshape", enteredColshape);
     alt.on("entityLeaveColshape", leaveColshape);
@@ -75,7 +76,7 @@ export function leaveColshape(colshape, player) {
 }
 
 export function savePlace(p: alt.Player, new_place) {
-  if (p.getSyncedMeta("permissionsgroup") >= 100) {
+  if (p.getSyncedMeta("permissions") >= 100) {
     database.insertData(new_place, "places", r => {
       alt.log("Neuer Ort gespeichert: " + JSON.stringify(r));
       alt.emitClient(p, "a_newPlaceSaveSuccess", r);

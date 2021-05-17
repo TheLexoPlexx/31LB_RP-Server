@@ -6,7 +6,7 @@ export function playerDisconnect(player) {
     let id = player.id;
     let hp = player.health;
     let armour = player.armour;
-    let incar = player.seat;
+    let incar = player.vehicle.id;
     let places = player.getSyncedMeta("unlocked_places");
     database.fetchData("sessionid", id, "players", (result) => {
         if (result != null) {

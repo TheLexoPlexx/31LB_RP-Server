@@ -47,7 +47,6 @@ export function loginCompleted(player, result_player, password) {
         unlocked_places = JSON.parse(result_player.unlockedplaces);
     }
     player.setSyncedMeta("unlocked_places", unlocked_places);
-    alt.log(JSON.stringify(unlocked_places));
     if (unlocked_places.length > 0) {
         unlocked_places.forEach(element => {
             unlockableMarkers.forEach(allM => {

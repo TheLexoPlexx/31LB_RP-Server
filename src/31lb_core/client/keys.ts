@@ -6,7 +6,7 @@ import { toggleInfoHud } from './interactions/infohud';
 import { toggleInventory } from './interactions/inventory';
 import { togglePlayerMenu } from './interactions/playerMenu';
 
-export function keyPress(key: number): void {
+export function keyUp(key: number): void {
   if (alt.Player.local.getSyncedMeta("allowKeyPress") && !alt.isConsoleOpen()) {
     if (key == 89) { //y
       alt.emitServer("a_keyup_y");
@@ -31,6 +31,7 @@ export function keyPress(key: number): void {
       alt.emitServer("a_keyup_f4");
 
       togglePlayerMenu();
+      
     }
   }
 }

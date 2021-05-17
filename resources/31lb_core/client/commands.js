@@ -18,11 +18,20 @@ export function consoleCommand(name, ...args) {
                 alt.logError("Too many Args");
             }
             else if (args.length == 1) {
-                if (PresetList[args[0]] == null) {
-                    alt.logError("Preset unbekannt: " + args[0]);
+                if (args[0] == "help") {
+                    alt.log("==={ Bekannte Presets:");
+                    Object.keys(PresetList).forEach(element => {
+                        alt.log("-> ~g~" + element + "~w~ - " + PresetList[element].title);
+                    });
+                    alt.log("=====================");
                 }
                 else {
-                    startPlaceGen(PresetList[args[0]]);
+                    if (PresetList[args[0]] == null) {
+                        alt.logError("Preset unbekannt: " + args[0]);
+                    }
+                    else {
+                        startPlaceGen(PresetList[args[0]]);
+                    }
                 }
             }
             else {

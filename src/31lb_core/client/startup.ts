@@ -5,9 +5,10 @@ import * as natives from 'natives';
 import { playerDamage, playerDeath, revive } from "./handlers/playerDeath";
 import { consoleCommand } from './commands';
 import { openWeaponShop } from './interactions/weaponShop';
-import { keyPress } from './keys';
+import { keyUp } from './keys';
 import { createGlobalBlip, enteredColshape, leaveColshape, saveSuccess, startPlaceGen } from './interactions/placeGenerator';
 import { clothSelector } from './interactions/clothSelector';
+import { setPlayerInVehicle } from './handlers/playerVehicles';
 
 //Keine Ahnung wofür das gut ist, ist aus Freeroam-Resource geklaut
 //Ich weiß mittlerweile wofür das gut ist, weiß aber nicht warum es im client steht und traue mich noch nicht es zu entfernen.
@@ -25,11 +26,12 @@ alt.onServer("a_newPlaceSaveSuccess", saveSuccess);
 alt.onServer("a_enteredColshape", enteredColshape);
 alt.onServer("a_leaveColshape", leaveColshape);
 alt.onServer("a_createBlip", createGlobalBlip);
+alt.onServer("a_setplayerinvehicle", setPlayerInVehicle);
 
 alt.onServer("a_clothselector", clothSelector);
 
 alt.on("consoleCommand", consoleCommand)
-alt.on("keyup", keyPress);
+alt.on("keyup", keyUp);
 
 alt.on("character:Done", () => {
   natives.requestIpl("apa_v_mp_h_01_b");

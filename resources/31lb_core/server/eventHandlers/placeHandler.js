@@ -57,7 +57,7 @@ export function leaveColshape(colshape, player) {
     alt.emitClient(player, "a_leaveColshape", colshape.getMeta("a_placeMeta"));
 }
 export function savePlace(p, new_place) {
-    if (p.getSyncedMeta("permissionsgroup") >= 100) {
+    if (p.getSyncedMeta("permissions") >= 100) {
         database.insertData(new_place, "places", r => {
             alt.log("Neuer Ort gespeichert: " + JSON.stringify(r));
             alt.emitClient(p, "a_newPlaceSaveSuccess", r);

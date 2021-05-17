@@ -42,22 +42,7 @@ export function loginCompleted(player: alt.Player, result_player: any, password:
     player.health = result_player.healthpoints;
     player.armour = result_player.armour;
 
-    /*
-    TODO: Herausfinden ob man Player in Fahrzeuge setzen kann
-    //native.setPedInto
-
-    if (result_player.incar > 0) {
-      alt.Vehicle.all.forEach((val, index, array) => {
-        if (index.pos.x - result_player.pos.x <= 3) {
-          if (index.pos.y - result_player.pos.y <= 3) {
-            if (index.pos.z - result_player.pos.z <= 3) {
-
-            }
-          }
-        }
-      });
-    }
-    */
+    //TODO: Set Players into cars if they logged off there
 
     result_player.sessionid = player.id;
     pm.setValue(result_player, (res) => {
@@ -75,8 +60,6 @@ export function loginCompleted(player: alt.Player, result_player: any, password:
   }
 
   player.setSyncedMeta("unlocked_places", unlocked_places);
-  
-  alt.log(JSON.stringify(unlocked_places));
 
   if (unlocked_places.length > 0) {
     unlocked_places.forEach(element => {

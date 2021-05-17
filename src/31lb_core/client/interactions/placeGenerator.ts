@@ -21,16 +21,16 @@ export interface PlacePreset {
 //https://wiki.altv.mp/wiki/GTA:Blips
 export const PresetList: {
   [key: string]: PlacePreset } = {
-    lsc: { title: "Los Santos Customs", blip_icon: 72, banner: "shopui_title_carmod" }, //Oder shopui_title_carmod2
+    lsc: { title: "Los Santos Customs", blip_icon: 72, banner: "shopui_title_carmod" }, //carmod2 ist beekers garage
     ammunation: { title: "Ammunation", blip_icon: 110, banner: "shopui_title_gunclub" },
-    clothing1: { title: "Binco Kleidung", blip_icon: 73, banner: "shopui_title_lowendfashion" },
+    clothing1: { title: "Binco Kleidung", blip_icon: 73, banner: "shopui_title_lowendfashion2" },
     clothing2: { title: "Sub Urban", blip_icon: 73, banner: "shopui_title_midfashion" },
     clothing3: { title: "Ponsonbys", blip_icon: 73, banner: "shopui_title_highendfashion" },
     atm: { title: "ATM", blip_icon: 500 },
-    market: { title: "Supermarkt", blip_icon: 52, banner: "shopui_title_conveniencestore"},
+    superm: { title: "Supermarkt", blip_icon: 52, banner: "shopui_title_conveniencestore"},
     gas: { title: "Tankstelle", blip_icon: 648, banner: "shopui_title_gasstation" },
     barber: { title: "Friseur", blip_icon: 71, banner: "shopui_title_barber" }, //Oder 2, 3, 4
-    tattoo: { title: "Tattostudio", blip_icon: 75, banner: "shopui_title_tattoos" }, //Oder 2, 3, 4, 5
+    tattoo: { title: "Tattostudio", blip_icon: 75, banner: "shopui_title_tattoos5" }, //Oder 2, 3, 4, 5
 };
 
 export function startPlaceGen(preset: PlacePreset): void {
@@ -45,7 +45,9 @@ export function startPlaceGen(preset: PlacePreset): void {
     interact_pos: null,
     interact_radius: 2,
     interact_function: null,
-    banner: null
+    banner: null,
+    carreq: false,
+    shopwhitelist: null
   };
 
   let title = "Standort erstellen";
@@ -84,10 +86,6 @@ export function startPlaceGen(preset: PlacePreset): void {
   let menu_blip_item = new NativeUI.UIMenuItem("Blip", "Einen Blip festlegen");
   menu_blip_item.SetRightBadge(NativeUI.BadgeStyle.ArrowRight);
   menu.AddItem(menu_blip_item);
-  if (preset != null) {
-    new_place.blip_icon = preset.blip_icon;
-    menu_blip_item.Enabled = false;
-  }
 
   let menu_unlock_item = new NativeUI.UIMenuItem("Entsperren", "Festlegen wie der Ort entsperrt werden soll");
   menu_unlock_item.SetRightBadge(NativeUI.BadgeStyle.ArrowRight);
@@ -306,6 +304,8 @@ export function startPlaceGen(preset: PlacePreset): void {
   });
 
   // ==== BLIP
+  let t;
+  let temporary_blip;
   const menu_blip = new NativeUI.Menu(title, "Blip-Optionen", new NativeUI.Point(50, 50));
   menu_blip.GetTitle().DropShadow = true;
   menu_blip.DisableInstructionalButtons(true);
@@ -330,8 +330,23 @@ export function startPlaceGen(preset: PlacePreset): void {
   blipcoloritem.SetRightBadge(NativeUI.BadgeStyle.ArrowRight);
   menu_blip.AddItem(blipcoloritem);
 
-  let t;
-  let temporary_blip;
+  if (preset != null) {
+    new_place.blip_icon = preset.blip_icon;
+    blipiconitem.Enabled = false;
+    blipcoloritem.Enabled = false;
+
+    let p = new_place.blip_pos == null ? alt.Player.local.pos : new_place.blip_pos;
+    if (temporary_blip == undefined) {
+      temporary_blip = native.addBlipForCoord(p.x, p.y, p.z);
+    } else {
+      native.setBlipCoords(temporary_blip, p.x, p.y, p.z);
+    }
+    native.setBlipSprite(temporary_blip, new_place.blip_icon);
+    if (new_place.blip_color != undefined) {
+      native.setBlipColour(temporary_blip, new_place.blip_color);
+    }
+  }
+
   function updateCoords() {
     t = alt.everyTick(() => {
       blip_x.SetRightLabel(round(alt.Player.local.pos.x));
@@ -453,16 +468,22 @@ export function startPlaceGen(preset: PlacePreset): void {
   let interact_save = new NativeUI.UIMenuCheckboxItem("Interaktionsposition festsetzen", false, "");
   menu_interaction.AddItem(interact_save);
 
+  let interact_fn_name = preset.title.toLowerCase().replaceAll(" ", "") + "_" + native.getStreetNameFromHashKey(native.getStreetNameAtCoord(alt.Player.local.pos.x, alt.Player.local.pos.y, alt.Player.local.pos.z)[1]).toLowerCase().replaceAll(" ", "");
+
   let interact_fn = new NativeUI.UIMenuItem("Funktion", "Funktion benennen, die gespeichert werden soll. Kann leer bleiben, dann wird ein zufälliger Name vergeben.");
   interact_fn.SetRightBadge(NativeUI.BadgeStyle.ArrowRight);
   menu_interaction.AddItem(interact_fn);
   if (preset != null) {
-    let fn = preset.title.toLowerCase().replaceAll(" ", "") + "_" + native.getStreetNameFromHashKey(native.getStreetNameAtCoord(alt.Player.local.pos.x, alt.Player.local.pos.y, alt.Player.local.pos.z)[1]).toLowerCase().replaceAll(" ", "");
-    alt.logWarning(fn);
-    interact_fn.Description = fn;
-    new_place.interact_function = fn;
+    interact_fn.Description = interact_fn_name;
+    new_place.interact_function = interact_fn_name;
     interact_fn.Enabled = false;
   }
+
+  let interact_carRequired = new NativeUI.UIMenuCheckboxItem("Fahrzeug benötigt", false, "Wird ein Fahrzeug benötigt um diese Interaktion zu aktivieren?");
+  menu_interaction.AddItem(interact_carRequired);
+
+  let interact_shopwhitelist = new NativeUI.UIMenuCheckboxItem("Shop Whitelist", false, "Wird diese Interaktion sein mit Whitelist?");
+  menu_interaction.AddItem(interact_shopwhitelist);
 
   let interact_xyz;
   function updateCoordsInteraction() {
@@ -510,6 +531,18 @@ export function startPlaceGen(preset: PlacePreset): void {
         new_place.interact_pos = null;
         updateCoordsInteraction();
         fixCheckpointToPlayerInteract();
+      }
+    } else if (selectedItem.Text == interact_carRequired.Text) {
+      if (selectedItem.Checked) {
+        new_place.carreq = true;
+      } else {
+        new_place.carreq = false;
+      }
+    } else if (selectedItem.Text == interact_shopwhitelist.Text) {
+      if (selectedItem.Checked) {
+        new_place.shopwhitelist = interact_fn_name;
+      } else {
+        new_place.shopwhitelist = null;
       }
     }
   });
