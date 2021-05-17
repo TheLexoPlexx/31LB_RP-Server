@@ -8,10 +8,10 @@ import { playerDeath } from './eventHandlers/playerDeath';
 import { playerDisconnect } from './eventHandlers/playerDisconnect';
 import { keyPressF9, keyPressI, keyPressM, keyPressY } from './eventHandlers/keyHandlers';
 import { login } from './eventHandlers/loginCompleted';
-import { clearColshapes, generate, savePlace, sortMarkers, updatePlacesForPlayer } from './eventHandlers/placeHandler';
+import { clearColshapes, savePlace, sortMarkers, updatePlacesForPlayer } from './eventHandlers/placeHandler';
 import { openedInventory } from './eventHandlers/inventoryHandler';
 import { consoleCommandServer } from './consoleCommandServer';
-import { teamLogin } from './eventHandlers/teamLoginHandler';
+import { teamLogin, teamLogoff } from './eventHandlers/teamLoginHandler';
 
 export const dbType = 'postgres';
 export const dbHost = 'localhost';
@@ -56,11 +56,11 @@ alt.onClient("a_keyup_i", keyPressI);
 alt.onClient("a_keyup_m", keyPressM);
 
 alt.onClient("a_login", login);
-alt.onClient("a_placegen", generate);
 alt.onClient("a_saveNewPlace", savePlace);
 alt.onClient("a_updatePlacesForPlayer", updatePlacesForPlayer);
 alt.onClient("a_openinventory", openedInventory);
 alt.onClient("a_teamlogin", teamLogin);
+alt.onClient("a_teamlogoff", teamLogoff);
 
 let if_list: InteractFunction<string, CallableFunction>[] = [
   //Beispiel: Key als String aus der Datenbank und vlaue ist eine Funktion

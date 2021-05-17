@@ -1,6 +1,7 @@
 /// <reference types="@altv/types-natives" />
 /// <reference types="@altv/types-client" />
 import * as alt from 'alt-client';
+import { PlacePreset, PresetList, startPlaceGen } from './interactions/placeGenerator';
 
 export function consoleCommand(name: string, ...args: string[]): void {
   if (name == "login") {
@@ -13,10 +14,20 @@ export function consoleCommand(name: string, ...args: string[]): void {
     }
 
   } else if (name == "place") {
-    if (args.length > 1) {
-      alt.logError("Too many Args");
+    if (alt.Player.local.getSyncedMeta("permissions") >= 100) {
+      if (args.length >= 2) {
+        alt.logError("Too many Args");
+      } else if (args.length == 1) {
+        if (PresetList[args[0]] == null) {
+          alt.logError("Preset unbekannt: " + args[0]);
+        } else {
+          startPlaceGen(PresetList[args[0]]);
+        }
+      } else {
+        startPlaceGen(null);
+      }
     } else {
-      alt.emitServer("a_placegen");
+      alt.logError("No Permissions");
     }
 
   } else if (name == "cloth") {

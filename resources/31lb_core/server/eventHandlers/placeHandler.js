@@ -1,16 +1,5 @@
 import * as alt from 'alt-server';
 import { database } from '../startup';
-import * as playerManager from "./../managers/playerManager";
-export function generate(player) {
-    playerManager.getPlayer(player, (r) => {
-        if (r.permissionsgroup >= 100) {
-            alt.emitClient(player, "a_startplacegen");
-        }
-        else {
-            alt.emitClient(player, "a_nopermission");
-        }
-    });
-}
 export let unlockableMarkers = [];
 export let globalMarkers = [];
 export let unlockableColshapes = [];
@@ -51,6 +40,7 @@ export function sortMarkers() {
         alt.on("entityEnterColshape", enteredColshape);
         alt.on("entityLeaveColshape", leaveColshape);
     }, 2000);
+    alt.log("[31LB] ColShapes created.");
 }
 export function clearColshapes() {
     unlockableColshapes.forEach(element => {
@@ -67,25 +57,16 @@ export function leaveColshape(colshape, player) {
     alt.emitClient(player, "a_leaveColshape", colshape.getMeta("a_placeMeta"));
 }
 export function savePlace(p, new_place) {
-    playerManager.getPlayer(p, (r) => {
-        if (r.permissionsgroup >= 100) {
-            database.insertData(new_place, "places", r => {
-                alt.log("Neuer Ort gespeichert: " + JSON.stringify(r));
-                alt.emitClient(p, "a_newPlaceSaveSuccess", r);
-            });
-        }
-        else {
-            alt.emitClient(p, "a_nopermission");
-        }
-    });
+    if (p.getSyncedMeta("permissionsgroup") >= 100) {
+        database.insertData(new_place, "places", r => {
+            alt.log("Neuer Ort gespeichert: " + JSON.stringify(r));
+            alt.emitClient(p, "a_newPlaceSaveSuccess", r);
+        });
+    }
+    else {
+        alt.emitClient(p, "a_nopermission");
+    }
 }
 export function updatePlacesForPlayer(p, places) {
-    database.fetchData("sessionid", p.id, "players", (result) => {
-        if (result != null) {
-            result.unlockedplaces = JSON.stringify(places);
-            database.upsertData(result, "players", (res_upsert) => {
-                alt.logWarning("Found new place update complete");
-            });
-        }
-    });
+    p.setSyncedMeta("unlocked_places", places);
 }

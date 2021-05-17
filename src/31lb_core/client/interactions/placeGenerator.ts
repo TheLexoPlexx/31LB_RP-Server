@@ -9,7 +9,31 @@ import * as msg from "../util/messenger";
 
 let menu: NativeUI.Menu;
 
-export function startPlaceGen(): void {
+// -> add presets, add name to preset-shops as unique identifier, save shop-whitelist to database
+
+export interface PlacePreset {
+  title: string,
+  description?: string,
+  blip_icon: number,
+  banner?: string
+}
+
+//https://wiki.altv.mp/wiki/GTA:Blips
+export const PresetList: {
+  [key: string]: PlacePreset } = {
+    lsc: { title: "Los Santos Customs", blip_icon: 72, banner: "shopui_title_carmod" }, //Oder shopui_title_carmod2
+    ammunation: { title: "Ammunation", blip_icon: 110, banner: "shopui_title_gunclub" },
+    clothing1: { title: "Binco Kleidung", blip_icon: 73, banner: "shopui_title_lowendfashion" },
+    clothing2: { title: "Sub Urban", blip_icon: 73, banner: "shopui_title_midfashion" },
+    clothing3: { title: "Ponsonbys", blip_icon: 73, banner: "shopui_title_highendfashion" },
+    atm: { title: "ATM", blip_icon: 500 },
+    market: { title: "Supermarkt", blip_icon: 52, banner: "shopui_title_conveniencestore"},
+    gas: { title: "Tankstelle", blip_icon: 648, banner: "shopui_title_gasstation" },
+    barber: { title: "Friseur", blip_icon: 71, banner: "shopui_title_barber" }, //Oder 2, 3, 4
+    tattoo: { title: "Tattostudio", blip_icon: 75, banner: "shopui_title_tattoos" }, //Oder 2, 3, 4, 5
+};
+
+export function startPlaceGen(preset: PlacePreset): void {
   let new_place = {
     displayname: null,
     description: null,
@@ -21,6 +45,7 @@ export function startPlaceGen(): void {
     interact_pos: null,
     interact_radius: 2,
     interact_function: null,
+    banner: null
   };
 
   let title = "Standort erstellen";
@@ -29,18 +54,40 @@ export function startPlaceGen(): void {
   menu = new NativeUI.Menu(title, "Hauptmenü", new NativeUI.Point(50, 50));
   menu.GetTitle().DropShadow = true;
   menu.DisableInstructionalButtons(true);
+  if (preset != null) {
+    if (preset.banner != null) {
+      menu.SetSpriteBannerType(new NativeUI.Sprite(preset.banner, preset.banner, new NativeUI.Point(0, 0), new NativeUI.Size()))
+      menu.Title = "";
+    }
+  }
 
   let titleitem = new NativeUI.UIMenuItem("Titel", "Titel festlegen");
   titleitem.SetRightBadge(NativeUI.BadgeStyle.ArrowRight);
   menu.AddItem(titleitem);
+  if (preset != null) {
+    new_place.displayname = preset.title;
+    titleitem.Description = preset.title;
+    titleitem.Enabled = false;
+  }
 
   let subtitleitem = new NativeUI.UIMenuItem("Beschreibung", "Beschreibung festlegen");
   subtitleitem.SetRightBadge(NativeUI.BadgeStyle.ArrowRight);
   menu.AddItem(subtitleitem);
+  if (preset != null) {
+    if (preset.description != null) {
+      new_place.description = preset.description;
+      subtitleitem.Description = preset.description;
+    }
+    subtitleitem.Enabled = false;
+  }
 
   let menu_blip_item = new NativeUI.UIMenuItem("Blip", "Einen Blip festlegen");
   menu_blip_item.SetRightBadge(NativeUI.BadgeStyle.ArrowRight);
   menu.AddItem(menu_blip_item);
+  if (preset != null) {
+    new_place.blip_icon = preset.blip_icon;
+    menu_blip_item.Enabled = false;
+  }
 
   let menu_unlock_item = new NativeUI.UIMenuItem("Entsperren", "Festlegen wie der Ort entsperrt werden soll");
   menu_unlock_item.SetRightBadge(NativeUI.BadgeStyle.ArrowRight);
@@ -409,6 +456,13 @@ export function startPlaceGen(): void {
   let interact_fn = new NativeUI.UIMenuItem("Funktion", "Funktion benennen, die gespeichert werden soll. Kann leer bleiben, dann wird ein zufälliger Name vergeben.");
   interact_fn.SetRightBadge(NativeUI.BadgeStyle.ArrowRight);
   menu_interaction.AddItem(interact_fn);
+  if (preset != null) {
+    let fn = preset.title.toLowerCase().replaceAll(" ", "") + "_" + native.getStreetNameFromHashKey(native.getStreetNameAtCoord(alt.Player.local.pos.x, alt.Player.local.pos.y, alt.Player.local.pos.z)[1]).toLowerCase().replaceAll(" ", "");
+    alt.logWarning(fn);
+    interact_fn.Description = fn;
+    new_place.interact_function = fn;
+    interact_fn.Enabled = false;
+  }
 
   let interact_xyz;
   function updateCoordsInteraction() {
@@ -611,30 +665,33 @@ let subtitleenabled: boolean = false;
 
 export function enteredColshape(colshapeMeta) {
   if (colshapeMeta != null) {
-
     if (colshapeMeta.type == "interaction") {
-      native.beginTextCommandPrint('STRING');
-      native.addTextComponentSubstringPlayerName("Drücke ~y~E ~w~zum Interagieren");
-      native.endTextCommandPrint(24 * 60 * 60 * 1000, true);
-      subtitleenabled = true;
-
-      alt.setMeta("interaction_function", colshapeMeta.interact_function)
+      if (alt.Player.local.getSyncedMeta("unlocked_places").includes(colshapeMeta.id)) {
+        native.beginTextCommandPrint('STRING');
+        native.addTextComponentSubstringPlayerName("Drücke ~y~E ~w~zum Interagieren");
+        native.endTextCommandPrint(24 * 60 * 60 * 1000, true);
+        subtitleenabled = true;
+  
+        alt.setMeta("interaction_function", colshapeMeta.interact_function)
+      }
 
     } else if (colshapeMeta.type = "unlock") {
       let unlocked_places;
-      if (alt.getMeta("unlocked_places") === "[]") {
+      if (alt.Player.local.getSyncedMeta("unlocked_places") == "[]") {
         unlocked_places = [];
       } else {
-        unlocked_places = JSON.parse(alt.getMeta("unlocked_places"));
+        unlocked_places = alt.Player.local.getSyncedMeta("unlocked_places");
       }
-      //alt.log("unlocked_places" + alt.getMeta("unlocked_places"));
+
       if (unlocked_places.includes(colshapeMeta.id)) {
-        alt.logWarning("Contains");
+        alt.log("Colshape already found: " + colshapeMeta.id);
       } else {
         unlocked_places.push(colshapeMeta.id);
-        alt.setMeta("unlocked_places", JSON.stringify(unlocked_places));
-        alt.log("places: " + alt.getMeta("unlocked_places"));
-        alt.log("placesJSON: " + JSON.stringify(alt.getMeta("unlocked_places")));
+
+        alt.emitServer("updatePlacesForPlayer", unlocked_places);
+
+        alt.log("places: " + alt.Player.local.getSyncedMeta("unlocked_places"));
+        alt.log("placesJSON: " + JSON.stringify(alt.Player.local.getSyncedMeta("unlocked_places")));
   
         let bpos = JSON.parse(colshapeMeta.blip_pos);
   
@@ -654,12 +711,11 @@ export function enteredColshape(colshapeMeta) {
         alt.emitServer("a_updatePlacesForPlayer", unlocked_places);
         alt.log(unlocked_places);
       }
-      //alt.log("entered colshape: " + JSON.stringify(colshapeMeta));
     } else {
       alt.logError("[31LB] Type not found");
     }
   } else {
-    alt.logError("Entered null-colshape");
+    alt.logError("[31LB] Entered null-colshape");
   }
 }
 

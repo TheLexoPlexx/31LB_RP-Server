@@ -3,7 +3,19 @@ import * as native from 'natives';
 import * as NativeUI from "../util/nativeui/NativeUi";
 import * as msg from "../util/messenger";
 let menu;
-export function startPlaceGen() {
+export const PresetList = {
+    lsc: { title: "Los Santos Customs", blip_icon: 72, banner: "shopui_title_carmod" },
+    ammunation: { title: "Ammunation", blip_icon: 110, banner: "shopui_title_gunclub" },
+    clothing1: { title: "Binco Kleidung", blip_icon: 73, banner: "shopui_title_lowendfashion" },
+    clothing2: { title: "Sub Urban", blip_icon: 73, banner: "shopui_title_midfashion" },
+    clothing3: { title: "Ponsonbys", blip_icon: 73, banner: "shopui_title_highendfashion" },
+    atm: { title: "ATM", blip_icon: 500 },
+    market: { title: "Supermarkt", blip_icon: 52, banner: "shopui_title_conveniencestore" },
+    gas: { title: "Tankstelle", blip_icon: 648, banner: "shopui_title_gasstation" },
+    barber: { title: "Friseur", blip_icon: 71, banner: "shopui_title_barber" },
+    tattoo: { title: "Tattostudio", blip_icon: 75, banner: "shopui_title_tattoos" },
+};
+export function startPlaceGen(preset) {
     let new_place = {
         displayname: null,
         description: null,
@@ -15,20 +27,43 @@ export function startPlaceGen() {
         interact_pos: null,
         interact_radius: 2,
         interact_function: null,
+        banner: null
     };
     let title = "Standort erstellen";
     menu = new NativeUI.Menu(title, "Hauptmenü", new NativeUI.Point(50, 50));
     menu.GetTitle().DropShadow = true;
     menu.DisableInstructionalButtons(true);
+    if (preset != null) {
+        if (preset.banner != null) {
+            menu.SetSpriteBannerType(new NativeUI.Sprite(preset.banner, preset.banner, new NativeUI.Point(0, 0), new NativeUI.Size()));
+            menu.Title = "";
+        }
+    }
     let titleitem = new NativeUI.UIMenuItem("Titel", "Titel festlegen");
     titleitem.SetRightBadge(NativeUI.BadgeStyle.ArrowRight);
     menu.AddItem(titleitem);
+    if (preset != null) {
+        new_place.displayname = preset.title;
+        titleitem.Description = preset.title;
+        titleitem.Enabled = false;
+    }
     let subtitleitem = new NativeUI.UIMenuItem("Beschreibung", "Beschreibung festlegen");
     subtitleitem.SetRightBadge(NativeUI.BadgeStyle.ArrowRight);
     menu.AddItem(subtitleitem);
+    if (preset != null) {
+        if (preset.description != null) {
+            new_place.description = preset.description;
+            subtitleitem.Description = preset.description;
+        }
+        subtitleitem.Enabled = false;
+    }
     let menu_blip_item = new NativeUI.UIMenuItem("Blip", "Einen Blip festlegen");
     menu_blip_item.SetRightBadge(NativeUI.BadgeStyle.ArrowRight);
     menu.AddItem(menu_blip_item);
+    if (preset != null) {
+        new_place.blip_icon = preset.blip_icon;
+        menu_blip_item.Enabled = false;
+    }
     let menu_unlock_item = new NativeUI.UIMenuItem("Entsperren", "Festlegen wie der Ort entsperrt werden soll");
     menu_unlock_item.SetRightBadge(NativeUI.BadgeStyle.ArrowRight);
     menu.AddItem(menu_unlock_item);
@@ -361,6 +396,13 @@ export function startPlaceGen() {
     let interact_fn = new NativeUI.UIMenuItem("Funktion", "Funktion benennen, die gespeichert werden soll. Kann leer bleiben, dann wird ein zufälliger Name vergeben.");
     interact_fn.SetRightBadge(NativeUI.BadgeStyle.ArrowRight);
     menu_interaction.AddItem(interact_fn);
+    if (preset != null) {
+        let fn = preset.title.toLowerCase().replaceAll(" ", "") + "_" + native.getStreetNameFromHashKey(native.getStreetNameAtCoord(alt.Player.local.pos.x, alt.Player.local.pos.y, alt.Player.local.pos.z)[1]).toLowerCase().replaceAll(" ", "");
+        alt.logWarning(fn);
+        interact_fn.Description = fn;
+        new_place.interact_function = fn;
+        interact_fn.Enabled = false;
+    }
     let interact_xyz;
     function updateCoordsInteraction() {
         interact_xyz = alt.everyTick(() => {
@@ -524,28 +566,30 @@ let subtitleenabled = false;
 export function enteredColshape(colshapeMeta) {
     if (colshapeMeta != null) {
         if (colshapeMeta.type == "interaction") {
-            native.beginTextCommandPrint('STRING');
-            native.addTextComponentSubstringPlayerName("Drücke ~y~E ~w~zum Interagieren");
-            native.endTextCommandPrint(24 * 60 * 60 * 1000, true);
-            subtitleenabled = true;
-            alt.setMeta("interaction_function", colshapeMeta.interact_function);
+            if (alt.Player.local.getSyncedMeta("unlocked_places").includes(colshapeMeta.id)) {
+                native.beginTextCommandPrint('STRING');
+                native.addTextComponentSubstringPlayerName("Drücke ~y~E ~w~zum Interagieren");
+                native.endTextCommandPrint(24 * 60 * 60 * 1000, true);
+                subtitleenabled = true;
+                alt.setMeta("interaction_function", colshapeMeta.interact_function);
+            }
         }
         else if (colshapeMeta.type = "unlock") {
             let unlocked_places;
-            if (alt.getMeta("unlocked_places") === "[]") {
+            if (alt.Player.local.getSyncedMeta("unlocked_places") == "[]") {
                 unlocked_places = [];
             }
             else {
-                unlocked_places = JSON.parse(alt.getMeta("unlocked_places"));
+                unlocked_places = alt.Player.local.getSyncedMeta("unlocked_places");
             }
             if (unlocked_places.includes(colshapeMeta.id)) {
-                alt.logWarning("Contains");
+                alt.log("Colshape already found: " + colshapeMeta.id);
             }
             else {
                 unlocked_places.push(colshapeMeta.id);
-                alt.setMeta("unlocked_places", JSON.stringify(unlocked_places));
-                alt.log("places: " + alt.getMeta("unlocked_places"));
-                alt.log("placesJSON: " + JSON.stringify(alt.getMeta("unlocked_places")));
+                alt.emitServer("updatePlacesForPlayer", unlocked_places);
+                alt.log("places: " + alt.Player.local.getSyncedMeta("unlocked_places"));
+                alt.log("placesJSON: " + JSON.stringify(alt.Player.local.getSyncedMeta("unlocked_places")));
                 let bpos = JSON.parse(colshapeMeta.blip_pos);
                 var b = native.addBlipForCoord(bpos.x, bpos.y, bpos.z);
                 native.setBlipSprite(b, colshapeMeta.blip_icon);
@@ -567,7 +611,7 @@ export function enteredColshape(colshapeMeta) {
         }
     }
     else {
-        alt.logError("Entered null-colshape");
+        alt.logError("[31LB] Entered null-colshape");
     }
 }
 export function leaveColshape() {

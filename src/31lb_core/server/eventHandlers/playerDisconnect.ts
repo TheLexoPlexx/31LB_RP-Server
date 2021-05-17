@@ -2,13 +2,14 @@
 import * as alt from 'alt-server';
 import { database } from '../startup';
 
-export function playerDisconnect(player) {
+export function playerDisconnect(player: alt.Player) {
   let pos = player.pos;
   let rot = player.rot;
   let id = player.id;
   let hp = player.health;
   let armour = player.armour;
   let incar = player.seat;
+  let places = player.getSyncedMeta("unlocked_places");
 
   database.fetchData("sessionid", id, "players", (result) => {
     if (result != null) {
@@ -18,13 +19,10 @@ export function playerDisconnect(player) {
       result.armour = armour;
       result.incar = incar;
       result.sessionid = -1;
-
-      //FIXME: Doesn't do the thing
-      //oder doch? Hab jetzt keine Probleme bemerkt.
-      result.unlockedplaces = alt.getSyncedMeta("unlocked_places");
+      result.unlockedplaces = JSON.stringify(places);
 
       database.upsertData(result, "players", (res_upsert) => {
-        alt.log("Player " + res_upsert.name + "[" + res_upsert.socialclub + "] left");
+        alt.log("Player " + res_upsert.name + " left");
         //alt.log("upsert: " + JSON.stringify(res_upsert));
       });
     }

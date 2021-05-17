@@ -5,6 +5,7 @@ import { database } from '../startup';
 import { globalMarkers, unlockableMarkers } from './placeHandler';
 
 //TODO: Change result_player to PlayerEntity
+//FIXME: Neue Spieler bekommen keine globalen blips und können keine aufdecken
 export function loginCompleted(player: alt.Player, result_player: any, password: String) {
   var playerJSON;
   if (result_player == null) {
@@ -17,9 +18,10 @@ export function loginCompleted(player: alt.Player, result_player: any, password:
       healthpoints: player.maxHealth,
       armour: player.maxArmour,
       firstjoin: date,
-      permissionsgroup: 1,
+      permissions: 1,
       sessionid: player.id,
       activeWeapons: JSON.stringify({ a:null, b:null, h:null }),
+      unlockedplaces: "[]",
     }
 
     pm.setValue(new_player, (res) => {
@@ -57,18 +59,26 @@ export function loginCompleted(player: alt.Player, result_player: any, password:
     }
     */
 
-    //TODO: Zuordnen, blahblah
+    result_player.sessionid = player.id;
+    pm.setValue(result_player, (res) => {
+      alt.log("Player " + res.name + " logged in with SessionID " + res.sessionid);
+    });
+    playerJSON = result_player;
+  }
 
-    //TODO: Markers
-    player.setSyncedMeta("unlocked_places", result_player.unlockedplaces);
 
-    let unlocked_places;
-    if (result_player.unlockedplaces === "[]") {
-      unlocked_places = [];
-    } else {
-      unlocked_places = JSON.parse(result_player.unlockedplaces);
-    }
+  let unlocked_places;
+  if (playerJSON.unlockedplaces == "[]" || playerJSON.unlockedplaces == null) {
+    unlocked_places = [];
+  } else {
+    unlocked_places = JSON.parse(result_player.unlockedplaces);
+  }
 
+  player.setSyncedMeta("unlocked_places", unlocked_places);
+  
+  alt.log(JSON.stringify(unlocked_places));
+
+  if (unlocked_places.length > 0) {
     unlocked_places.forEach(element => {
       unlockableMarkers.forEach(allM => {
         if (allM.id == element) {
@@ -76,33 +86,23 @@ export function loginCompleted(player: alt.Player, result_player: any, password:
           //maybe remove element?
         }
       });
-
     });
-    
-    //Erstellen der Blips auf der Karte
-    globalMarkers.forEach(element => {
-      alt.emitClient(player, "a_createBlip", element);
-    });
-
-    result_player.sessionid = player.id;
-    pm.setValue(result_player, (res) => {
-      alt.log("Player " + res.name + "[" + res.socialclub + "] logged in with SessionID " + res.sessionid);
-    });
-    playerJSON = result_player;
   }
-
+  
+  //Erstellen der Blips auf der Karte
+  globalMarkers.forEach(element => {
+    alt.emitClient(player, "a_createBlip", element);
+  });
 
   player.setSyncedMeta("money_hand", playerJSON.money_hand);
   player.setSyncedMeta("permissions", playerJSON.permissions);
   player.setSyncedMeta("inventar", playerJSON.inventar);
   player.setSyncedMeta("personalausweis", playerJSON.personalausweis);
   player.setSyncedMeta("allowKeyPress", true);
-  //TODO: Add more synced Metas
-
-  alt.emitClient(player, "a_initializeInventory");
+  player.setSyncedMeta("name", "unbenannt"); //TODO: Fill with Name
 }
 
-export function login(player, pw) {
+export function login(player: alt.Player, pw) {
   //TODO: Mit Forum/Discord koppeln und sinnvoll machen
   database.fetchData("password", pw, "players", (result) => {
     if (result == undefined) {

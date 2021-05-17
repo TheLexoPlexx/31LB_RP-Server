@@ -7,6 +7,7 @@ export function playerDisconnect(player) {
     let hp = player.health;
     let armour = player.armour;
     let incar = player.seat;
+    let places = player.getSyncedMeta("unlocked_places");
     database.fetchData("sessionid", id, "players", (result) => {
         if (result != null) {
             result.pos = JSON.stringify(pos);
@@ -15,9 +16,9 @@ export function playerDisconnect(player) {
             result.armour = armour;
             result.incar = incar;
             result.sessionid = -1;
-            result.unlockedplaces = alt.getSyncedMeta("unlocked_places");
+            result.unlockedplaces = JSON.stringify(places);
             database.upsertData(result, "players", (res_upsert) => {
-                alt.log("Player " + res_upsert.name + "[" + res_upsert.socialclub + "] left");
+                alt.log("Player " + res_upsert.name + " left");
             });
         }
     });

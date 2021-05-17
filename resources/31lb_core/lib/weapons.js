@@ -4577,7 +4577,7 @@ export function getWeaponByName(name) {
     return WeaponList[name];
 }
 export function getWeaponName(weapon) {
-    return weapon.name.replace(" ", "").toLowerCase().replace("II", "2");
+    return weapon.name.replaceAll(" ", "").toLowerCase().replaceAll("II", "2");
 }
 export function getWeaponComponentByName(weapon, name) {
     return weapon.components[name];

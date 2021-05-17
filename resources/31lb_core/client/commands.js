@@ -1,4 +1,5 @@
 import * as alt from 'alt-client';
+import { PresetList, startPlaceGen } from './interactions/placeGenerator';
 export function consoleCommand(name, ...args) {
     if (name == "login") {
         if (args.length < 1) {
@@ -12,11 +13,24 @@ export function consoleCommand(name, ...args) {
         }
     }
     else if (name == "place") {
-        if (args.length > 1) {
-            alt.logError("Too many Args");
+        if (alt.Player.local.getSyncedMeta("permissions") >= 100) {
+            if (args.length >= 2) {
+                alt.logError("Too many Args");
+            }
+            else if (args.length == 1) {
+                if (PresetList[args[0]] == null) {
+                    alt.logError("Preset unbekannt: " + args[0]);
+                }
+                else {
+                    startPlaceGen(PresetList[args[0]]);
+                }
+            }
+            else {
+                startPlaceGen(null);
+            }
         }
         else {
-            alt.emitServer("a_placegen");
+            alt.logError("No Permissions");
         }
     }
     else if (name == "cloth") {

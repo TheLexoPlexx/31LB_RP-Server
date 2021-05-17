@@ -24,7 +24,7 @@ export function toggleInfoHud() {
             native.setTextWrap(0.5, 0.975);
             native.setTextOutline();
             native.beginTextCommandDisplayText("CELL_EMAIL_BCON");
-            native.addTextComponentSubstringPlayerName("$" + alt.getSyncedMeta("money_hand"));
+            native.addTextComponentSubstringPlayerName("$" + alt.Player.local.getSyncedMeta("money_hand"));
             native.endTextCommandDisplayText(0.8, 0.015, 0.0);
         });
         timeout = alt.setTimeout(() => {

@@ -3,15 +3,9 @@ import * as alt from 'alt-server';
 import { getWeaponByName } from "../../lib/weapons";
 import * as playerManager from "./../managers/playerManager";
 import * as wm from "./../managers/weaponManager";
-import { generate } from './placeHandler';
-
-var menuopen = false;
 
 export function keyPressF9(player: alt.Player) {
-  alt.log("F9 pressed");
-  
-  alt.emitClient(player, "a_weaponselect_s");
-  //generate(player);
+  //placeholder
 }
 
 export function keyPressY(player: alt.Player) {

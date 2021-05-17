@@ -2,23 +2,11 @@ import * as alt from 'alt-client';
 import { toggleInfoHud } from './interactions/infohud';
 import { toggleInventory } from './interactions/inventory';
 import { togglePlayerMenu } from './interactions/playerMenu';
-export function enableKeys() {
-    alt.setMeta("allowKeyPress", true);
-}
-export function disableKeys() {
-    alt.setMeta("allowKeyPress", false);
-}
 export function keyPress(key) {
-    if (alt.getMeta("allowKeyPress") && !alt.isConsoleOpen()) {
-        if (key == 115) {
-            alt.emitServer("a_keyup_f4");
-        }
-        else if (key == 120) {
-            alt.emitServer("a_keyup_f9");
-        }
-        else if (key == 89) {
-            toggleInfoHud();
+    if (alt.Player.local.getSyncedMeta("allowKeyPress") && !alt.isConsoleOpen()) {
+        if (key == 89) {
             alt.emitServer("a_keyup_y");
+            toggleInfoHud();
         }
         else if (key == 73) {
             alt.emitServer("a_keyup_i");
@@ -27,13 +15,13 @@ export function keyPress(key) {
             alt.emitServer("a_openinventory");
         }
         else if (key == 69) {
-            if (alt.getMeta("interaction_function") != (null || undefined)) {
+            if (alt.getSyncedMeta("interaction_function") != (null || undefined)) {
                 alt.emit("event_interact_function", alt.getMeta("interaction_function"));
                 alt.emitServer("event_interact_function", alt.getMeta("interaction_function"));
             }
         }
-        else if (key == 77) {
-            alt.emitServer("a_keyup_m");
+        else if (key == 115) {
+            alt.emitServer("a_keyup_f4");
             togglePlayerMenu();
         }
     }

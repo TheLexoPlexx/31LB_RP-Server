@@ -38,7 +38,7 @@ export function isObjectEmpty(object: Record<string, unknown>): boolean {
 
 //TODO: Rework clothSelector for new Cloth-System
 export function clothSelector(pedComponentVariations: any[]) {
-
+  /*
 
   let model: string;
   if (native.getEntityModel(alt.Player.local.scriptID) == 1885233650) {
@@ -138,7 +138,7 @@ export function clothSelector(pedComponentVariations: any[]) {
 
         function indexed(index: number) {
           //TODO: Store all important Information in "Text" and retrieve here
-          let id = parseInt(subMenu.Title.split("/")[0].replace("[", ""));
+          let id = parseInt(subMenu.Title.split("/")[0].replaceAll("[", ""));
           let category = subMenu.Title.split("/")[1].substr(0, 1);
           if (category == "P") {
             let el = propIds[id].array[index];
@@ -176,13 +176,6 @@ export function clothSelector(pedComponentVariations: any[]) {
   menu.MenuClose.on(() => {
     alt.emitServer("a_saveclothwhitelist", whitelist);
   });
-}
 
-
-export function setClothesComp(comonent: number, drawable: number, texture: number, inventoryspace: number) {
-  
-}
-
-export function setClothesProp() {
-  
+  */
 }

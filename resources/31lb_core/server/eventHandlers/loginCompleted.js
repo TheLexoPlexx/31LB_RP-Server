@@ -14,9 +14,10 @@ export function loginCompleted(player, result_player, password) {
             healthpoints: player.maxHealth,
             armour: player.maxArmour,
             firstjoin: date,
-            permissionsgroup: 1,
+            permissions: 1,
             sessionid: player.id,
             activeWeapons: JSON.stringify({ a: null, b: null, h: null }),
+            unlockedplaces: "[]",
         };
         pm.setValue(new_player, (res) => {
             alt.log("Neuer Spieler: " + JSON.stringify(res));
@@ -32,14 +33,22 @@ export function loginCompleted(player, result_player, password) {
         player.rot = rot;
         player.health = result_player.healthpoints;
         player.armour = result_player.armour;
-        player.setSyncedMeta("unlocked_places", result_player.unlockedplaces);
-        let unlocked_places;
-        if (result_player.unlockedplaces === "[]") {
-            unlocked_places = [];
-        }
-        else {
-            unlocked_places = JSON.parse(result_player.unlockedplaces);
-        }
+        result_player.sessionid = player.id;
+        pm.setValue(result_player, (res) => {
+            alt.log("Player " + res.name + " logged in with SessionID " + res.sessionid);
+        });
+        playerJSON = result_player;
+    }
+    let unlocked_places;
+    if (playerJSON.unlockedplaces == "[]" || playerJSON.unlockedplaces == null) {
+        unlocked_places = [];
+    }
+    else {
+        unlocked_places = JSON.parse(result_player.unlockedplaces);
+    }
+    player.setSyncedMeta("unlocked_places", unlocked_places);
+    alt.log(JSON.stringify(unlocked_places));
+    if (unlocked_places.length > 0) {
         unlocked_places.forEach(element => {
             unlockableMarkers.forEach(allM => {
                 if (allM.id == element) {
@@ -47,21 +56,16 @@ export function loginCompleted(player, result_player, password) {
                 }
             });
         });
-        globalMarkers.forEach(element => {
-            alt.emitClient(player, "a_createBlip", element);
-        });
-        result_player.sessionid = player.id;
-        pm.setValue(result_player, (res) => {
-            alt.log("Player " + res.name + "[" + res.socialclub + "] logged in with SessionID " + res.sessionid);
-        });
-        playerJSON = result_player;
     }
+    globalMarkers.forEach(element => {
+        alt.emitClient(player, "a_createBlip", element);
+    });
     player.setSyncedMeta("money_hand", playerJSON.money_hand);
     player.setSyncedMeta("permissions", playerJSON.permissions);
     player.setSyncedMeta("inventar", playerJSON.inventar);
     player.setSyncedMeta("personalausweis", playerJSON.personalausweis);
     player.setSyncedMeta("allowKeyPress", true);
-    alt.emitClient(player, "a_initializeInventory");
+    player.setSyncedMeta("name", "unbenannt");
 }
 export function login(player, pw) {
     database.fetchData("password", pw, "players", (result) => {
