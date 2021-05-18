@@ -8,7 +8,10 @@ export function playerDisconnect(player: alt.Player) {
   let id = player.id;
   let hp = player.health;
   let armour = player.armour;
-  let incar = player.vehicle.id;
+  let incar;
+  if (player.vehicle.id != null) {
+    incar = player.vehicle.id;
+  }
   let places = player.getSyncedMeta("unlocked_places");
 
   database.fetchData("sessionid", id, "players", (result) => {

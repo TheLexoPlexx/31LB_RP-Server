@@ -5,11 +5,13 @@ import * as native from 'natives';
 import * as NativeUI from '../util/nativeui/NativeUi';
 import { colshapeMeta } from './placeGenerator';
 
-let mainmenu;
+let mainmenu: NativeUI.Menu;
 
 export function openShopInteraction(cm: colshapeMeta) {
   mainmenu = new NativeUI.Menu("", cm.description, new NativeUI.Point(50, 50));
   mainmenu.GetTitle().DropShadow = true;
+
+  alt.log(JSON.stringify(cm));
 
 
   //Inventar
@@ -18,4 +20,5 @@ export function openShopInteraction(cm: colshapeMeta) {
   //Kamera-Veränderungen
   //Individuelle
   //Menu erstellung
+  mainmenu.Open();
 }
