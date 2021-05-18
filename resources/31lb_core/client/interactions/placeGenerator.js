@@ -28,8 +28,8 @@ export function startPlaceGen(preset) {
         interact_radius: 2,
         interact_function: null,
         banner: null,
-        carreq: false,
-        shopwhitelist: null
+        carstatus: 0,
+        shop: null
     };
     let title = "Standort erstellen";
     menu = new NativeUI.Menu(title, "Hauptmenü", new NativeUI.Point(50, 50));
@@ -407,7 +407,7 @@ export function startPlaceGen(preset) {
     menu_interaction.AddItem(interact_z);
     let interact_save = new NativeUI.UIMenuCheckboxItem("Interaktionsposition festsetzen", false, "");
     menu_interaction.AddItem(interact_save);
-    let interact_fn_name = preset.title.toLowerCase().replaceAll(" ", "") + "_" + native.getStreetNameFromHashKey(native.getStreetNameAtCoord(alt.Player.local.pos.x, alt.Player.local.pos.y, alt.Player.local.pos.z)[1]).toLowerCase().replaceAll(" ", "");
+    let interact_fn_name = "shop_" + preset.title.toLowerCase().replaceAll(" ", "") + "_" + native.getStreetNameFromHashKey(native.getStreetNameAtCoord(alt.Player.local.pos.x, alt.Player.local.pos.y, alt.Player.local.pos.z)[1]).toLowerCase().replaceAll(" ", "");
     let interact_fn = new NativeUI.UIMenuItem("Funktion", "Funktion benennen, die gespeichert werden soll. Kann leer bleiben, dann wird ein zufälliger Name vergeben.");
     interact_fn.SetRightBadge(NativeUI.BadgeStyle.ArrowRight);
     menu_interaction.AddItem(interact_fn);
@@ -416,7 +416,7 @@ export function startPlaceGen(preset) {
         new_place.interact_function = interact_fn_name;
         interact_fn.Enabled = false;
     }
-    let interact_carRequired = new NativeUI.UIMenuCheckboxItem("Fahrzeug benötigt", false, "Wird ein Fahrzeug benötigt um diese Interaktion zu aktivieren?");
+    let interact_carRequired = new NativeUI.UIMenuListItem("Fahrzeug benötigt", "Wird ein Fahrzeug benötigt um diese Interaktion zu aktivieren?", new NativeUI.ItemsCollection(["Egal", "Erforderlich", "Verboten"]));
     menu_interaction.AddItem(interact_carRequired);
     let interact_shopwhitelist = new NativeUI.UIMenuCheckboxItem("Shop Whitelist", false, "Wird diese Interaktion sein mit Whitelist?");
     menu_interaction.AddItem(interact_shopwhitelist);
@@ -467,21 +467,18 @@ export function startPlaceGen(preset) {
                 fixCheckpointToPlayerInteract();
             }
         }
-        else if (selectedItem.Text == interact_carRequired.Text) {
-            if (selectedItem.Checked) {
-                new_place.carreq = true;
-            }
-            else {
-                new_place.carreq = false;
-            }
-        }
         else if (selectedItem.Text == interact_shopwhitelist.Text) {
             if (selectedItem.Checked) {
-                new_place.shopwhitelist = interact_fn_name;
+                new_place.shop = interact_fn_name;
             }
             else {
-                new_place.shopwhitelist = null;
+                new_place.shop = null;
             }
+        }
+    });
+    menu_interaction.ListChange.on((selectedItem, newIndex) => {
+        if (selectedItem.Text == interact_carRequired.Text) {
+            new_place.carstatus = newIndex;
         }
     });
     menu_interaction.AutoListChange.on((item, newListItemIndex, changeDirection) => {
@@ -600,11 +597,13 @@ export function enteredColshape(colshapeMeta) {
     if (colshapeMeta != null) {
         if (colshapeMeta.type == "interaction") {
             if (alt.Player.local.getSyncedMeta("unlocked_places").includes(colshapeMeta.id)) {
-                native.beginTextCommandPrint('STRING');
-                native.addTextComponentSubstringPlayerName("Drücke ~y~E ~w~zum Interagieren");
-                native.endTextCommandPrint(24 * 60 * 60 * 1000, true);
-                subtitleenabled = true;
-                alt.setMeta("interaction_function", colshapeMeta.interact_function);
+                if ((alt.Player.local.seat >= 0 && colshapeMeta.carstatus != 2) || (alt.Player.local.seat <= 0 && colshapeMeta.carstatus != 1)) {
+                    native.beginTextCommandPrint('STRING');
+                    native.addTextComponentSubstringPlayerName("Drücke ~y~E ~w~zum Interagieren");
+                    native.endTextCommandPrint(24 * 60 * 60 * 1000, true);
+                    subtitleenabled = true;
+                    alt.setMeta("interaction_meta", colshapeMeta);
+                }
             }
         }
         else if (colshapeMeta.type = "unlock") {
@@ -653,7 +652,7 @@ export function leaveColshape() {
         native.addTextComponentSubstringPlayerName("");
         native.endTextCommandPrint(250, true);
         subtitleenabled = false;
-        alt.setMeta("interaction_function", null);
+        alt.setMeta("interaction_meta", null);
     }
 }
 export function createGlobalBlip(element) {

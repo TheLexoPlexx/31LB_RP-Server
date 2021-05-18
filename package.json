@@ -9,7 +9,8 @@
 		"clean": "rimraf resources",
 		"update": "altv-pkg d release",
 		"windows": "npm run build && altv-server.exe",
-		"linux": "npm run build && ./start.sh"
+		"linux": "npm run build && ./start.sh",
+		"sortclothes": "node resources/31lb_core/scripts/clothHandler.js"
 	},
 	"author": "TheLexoPlexx",
 	"license": "ISC",

@@ -1,7 +1,7 @@
 import { cloth_blacklist } from '../../lib/cloth_blacklist';
 import { loadFileJSON, saveFileJSON } from './../managers/fileManager';
 const filePath = "./resources/31lb_core/data_dumps/pedComponentVariations";
-const filePathExport = "./resources/31lb_core/client/bin/clothlist";
+const filePathExport = "./resources/31lb_core/client/shops/inventories/clothing";
 let customClothCache = {
     m: {
         clothes: [],

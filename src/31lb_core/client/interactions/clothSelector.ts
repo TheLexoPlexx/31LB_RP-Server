@@ -4,30 +4,7 @@ import * as alt from 'alt-client';
 import * as native from 'natives';
 import * as NativeUI from "../util/nativeui/NativeUi"
 
-const CompIds: {
-  [key: number]: string } = {
-  0: "Head",
-  1: "Masks",
-  2: "Hair Styles",
-  3: "Torsos",
-  4: "Legs",
-  5: "Bags and Parachutes",
-  6: "Shoes",
-  7: "Accessories",
-  8: "Undershirts",
-  9: "Body Armors",
-  10: "Decals",
-  11: "Tops",
-};
 
-const propIds: {
-  [key: number]: string } = {
-  0: "Hats",
-  1: "Glasses",
-  2: "Ears",
-  6: "Watches",
-  7: "Bracelets",
-};
 
 export function isObjectEmpty(object: Record<string, unknown>): boolean {
   for (const property in object) {
@@ -36,10 +13,10 @@ export function isObjectEmpty(object: Record<string, unknown>): boolean {
   return true;
 }
 
+/*
+
 //TODO: Rework clothSelector for new Cloth-System
 export function clothSelector(pedComponentVariations: any[]) {
-  /*
-
   let model: string;
   if (native.getEntityModel(alt.Player.local.scriptID) == 1885233650) {
     model = "mp_m_freemode_01";
@@ -176,6 +153,6 @@ export function clothSelector(pedComponentVariations: any[]) {
   menu.MenuClose.on(() => {
     alt.emitServer("a_saveclothwhitelist", whitelist);
   });
-
-  */
 }
+
+*/

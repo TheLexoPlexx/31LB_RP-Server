@@ -5,7 +5,6 @@ import { consoleCommand } from './commands';
 import { openWeaponShop } from './interactions/weaponShop';
 import { keyUp } from './keys';
 import { createGlobalBlip, enteredColshape, leaveColshape, saveSuccess, startPlaceGen } from './interactions/placeGenerator';
-import { clothSelector } from './interactions/clothSelector';
 import { setPlayerInVehicle } from './handlers/playerVehicles';
 natives.setPedDefaultComponentVariation(natives.playerPedId());
 alt.onServer('a_death', playerDeath);
@@ -19,7 +18,6 @@ alt.onServer("a_enteredColshape", enteredColshape);
 alt.onServer("a_leaveColshape", leaveColshape);
 alt.onServer("a_createBlip", createGlobalBlip);
 alt.onServer("a_setplayerinvehicle", setPlayerInVehicle);
-alt.onServer("a_clothselector", clothSelector);
 alt.on("consoleCommand", consoleCommand);
 alt.on("keyup", keyUp);
 alt.on("character:Done", () => {

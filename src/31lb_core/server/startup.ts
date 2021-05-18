@@ -10,8 +10,8 @@ import { keyPressF9, keyPressI, keyPressM, keyPressY } from './eventHandlers/key
 import { login } from './eventHandlers/loginCompleted';
 import { clearColshapes, savePlace, sortMarkers, updatePlacesForPlayer } from './eventHandlers/placeHandler';
 import { openedInventory } from './eventHandlers/inventoryHandler';
-import { consoleCommandServer } from './consoleCommandServer';
 import { teamLogin, teamLogoff } from './eventHandlers/teamLoginHandler';
+import { colshapeMeta } from '../client/interactions/placeGenerator';
 
 export const dbType = 'postgres';
 export const dbHost = 'localhost';
@@ -40,8 +40,6 @@ alt.on("resourceStart", (errored) => {
   });
 });
 
-alt.on("consoleCommand", consoleCommandServer)
-
 alt.on("playerConnect", playerConnect);
 alt.on('playerDeath', playerDeath);
 alt.on("playerDamage", playerDamage);
@@ -67,17 +65,17 @@ let if_list: InteractFunction<string, CallableFunction>[] = [
   //{ key: "globalAutobahnFn", value: globalAutobahnFn },
 ];
 
-alt.onClient("event_interact_function", (player, interact_function) => {
+alt.onClient("event_interact_function", (player: alt.Player, colShapeMeta: colshapeMeta) => {
   let exec = false;
   if_list.forEach((element) => {
-    if (element.key == interact_function) {
+    if (element.key == colShapeMeta.interact_function) {
       element.value(player);
       exec = true;
       return;
     }
   });
   if (!exec) {
-    alt.logWarning("Unregistered function: " + interact_function);
+    alt.logWarning("Unregistered function: " + colShapeMeta.interact_function);
   }
 });
 

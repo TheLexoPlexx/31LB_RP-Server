@@ -134,7 +134,19 @@ export const PlaceEntity = new orm.EntitySchema({
         creator: {
             type: "varchar",
             nullable: true
-        }
+        },
+        banner: {
+            type: "varchar",
+            nullable: true
+        },
+        carstatus: {
+            type: "int",
+            nullable: true
+        },
+        shop: {
+            type: "varchar",
+            nullable: true
+        },
     }
 });
 export const WeaponEntity = new orm.EntitySchema({
