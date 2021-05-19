@@ -9,7 +9,7 @@ jobs:
         uses: "jamminroot/todo-2-gh-issue@master"
         with:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TODO_PATTERN: "(?<=\\/\\/ ?TODO[ :]).+"
+          TODO_PATTERN: "(?<=\\/\\/?TODO[ :]).+"
           GH_LABEL: "TODO"
           TRIM: ",: \""
           TIMEOUT: 1000
