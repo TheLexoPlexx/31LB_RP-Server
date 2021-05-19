@@ -78,6 +78,9 @@ export function loginCompleted(player: alt.Player, result_player: any, password:
   });
 
   player.setSyncedMeta("money_hand", playerJSON.money_hand);
+  if (playerJSON.faction != null) {
+    player.setSyncedMeta("faction", playerJSON.faction);
+  }
   player.setSyncedMeta("permissions", playerJSON.permissions);
   player.setSyncedMeta("inventar", playerJSON.inventar);
   player.setSyncedMeta("personalausweis", playerJSON.personalausweis);

@@ -95,6 +95,10 @@ export const PlayerEntity = new orm.EntitySchema({
       type: "varchar",
       nullable: true
     },
+    faction: {
+      type: "varchar",
+      nullable: true
+    },
     unlockedplaces: {
       type: 'varchar',
       nullable: true,
