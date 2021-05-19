@@ -1,24 +1,22 @@
-name: "Todos"
-on: ["push"]
+name: TDG
+on: [push, pull_request]
 jobs:
   build:
-    runs-on: "ubuntu-latest"
+    runs-on: ubuntu-latest
     steps:
-      - uses: "actions/checkout@master"
-      - name: "TODO-2-GH-Issue"
-        uses: "jamminroot/todo-2-gh-issue@master"
-        with:
-          TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TODO_PATTERN: "(?<=\\/\\/?TODO[ :]).+"
-          GH_LABEL: "TODO"
-          TRIM: ",: \""
-          TIMEOUT: 1000
-          LINES_BEFORE: 2
-          LINES_AFTER: 5
-          LABELS_PATTERN: "(?<=\\[).+?(?=\\])"
-          LABELS_REPLACE_PATTERN: "\\[(.+?)\\]"
-          IGNORED_LINES_LENGTH: 255
-          EXCLUDED_PATHS: /FilePath/ToExclude/1|/FilePath/ToExclude/2
-          INCLUDED_PATHS: /FilePath/ToExclude/1/Exception|/FilePath/ToExclude/2/Exception
-          FILE_PATTERN: ".*cs"
-        id: "todo"
+    - uses: actions/checkout@master
+    - name: Run tdg-github-action
+      uses: ribtoks/tdg-github-action@master
+      with:
+        TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        REPO: ${{ github.repository }}
+        SHA: ${{ github.sha }}
+        REF: ${{ github.ref }}
+        LABEL: "my label"
+        MIN_WORDS: 3
+        MIN_CHARACTERS: 40
+        ADD_LIMIT: 1
+        CLOSE_LIMIT: 1
+        ROOT: "src"
+        PROJECT_COLUMN_ID: 824533
+        INCLUDE_PATTERN: "\\.(cpp|h)$"
