@@ -33,6 +33,7 @@ alt.on('ConnectionComplete', () => {
   alt.log("[31LB] Connected to Database");
 });
 
+//TODO: Remove, Debug reasons
 alt.on("resourceStart", (errored) => {
   alt.Player.all.forEach((player, index, array) => {
     player.setDateTime(11, 3, 2021, 8, 0, 0);
