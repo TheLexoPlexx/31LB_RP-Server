@@ -4,16 +4,16 @@ import * as NativeUI from "../util/nativeui/NativeUi";
 import * as msg from "../util/messenger";
 let menu;
 export const PresetList = {
-    lsc: { title: "Los Santos Customs", blip_icon: 72, banner: "shopui_title_carmod" },
-    ammunation: { title: "Ammunation", blip_icon: 110, banner: "shopui_title_gunclub" },
-    clothing1: { title: "Binco Kleidung", blip_icon: 73, banner: "shopui_title_lowendfashion2" },
-    clothing2: { title: "Sub Urban", blip_icon: 73, banner: "shopui_title_midfashion" },
-    clothing3: { title: "Ponsonbys", blip_icon: 73, banner: "shopui_title_highendfashion" },
+    lsc: { title: "Los Santos Customs", blip_icon: 72, shop: "lossantoscustoms", banner: "shopui_title_carmod" },
+    ammunation: { title: "Ammunation", blip_icon: 110, shop: "ammunation", banner: "shopui_title_gunclub" },
+    clothing1: { title: "Binco Kleidung", blip_icon: 73, shop: "clothing", banner: "shopui_title_lowendfashion2" },
+    clothing2: { title: "Sub Urban", blip_icon: 73, shop: "clothing", banner: "shopui_title_midfashion" },
+    clothing3: { title: "Ponsonbys", blip_icon: 73, shop: "clothing", banner: "shopui_title_highendfashion" },
     atm: { title: "ATM", blip_icon: 500 },
-    superm: { title: "Supermarkt", blip_icon: 52, banner: "shopui_title_conveniencestore" },
+    superm: { title: "Supermarkt", blip_icon: 52, shop: "supermarket", banner: "shopui_title_conveniencestore" },
     gas: { title: "Tankstelle", blip_icon: 648, banner: "shopui_title_gasstation" },
-    barber: { title: "Friseur", blip_icon: 71, banner: "shopui_title_barber" },
-    tattoo: { title: "Tattostudio", blip_icon: 75, banner: "shopui_title_tattoos5" },
+    barber: { title: "Friseur", blip_icon: 71, shop: "barber", banner: "shopui_title_barber" },
+    tattoo: { title: "Tattostudio", blip_icon: 75, shop: "tattoo", banner: "shopui_title_tattoos5" },
 };
 export function startPlaceGen(preset) {
     let new_place = {
@@ -39,6 +39,7 @@ export function startPlaceGen(preset) {
         if (preset.banner != null) {
             menu.SetSpriteBannerType(new NativeUI.Sprite(preset.banner, preset.banner, new NativeUI.Point(0, 0), new NativeUI.Size()));
             menu.Title = "";
+            new_place.banner = preset.banner;
         }
     }
     let titleitem = new NativeUI.UIMenuItem("Titel", "Titel festlegen");
@@ -418,8 +419,6 @@ export function startPlaceGen(preset) {
     }
     let interact_carRequired = new NativeUI.UIMenuListItem("Fahrzeug benötigt", "Wird ein Fahrzeug benötigt um diese Interaktion zu aktivieren?", new NativeUI.ItemsCollection(["Egal", "Erforderlich", "Verboten"]));
     menu_interaction.AddItem(interact_carRequired);
-    let interact_shopwhitelist = new NativeUI.UIMenuCheckboxItem("Shop Whitelist", false, "Wird diese Interaktion sein mit Whitelist?");
-    menu_interaction.AddItem(interact_shopwhitelist);
     let interact_xyz;
     function updateCoordsInteraction() {
         interact_xyz = alt.everyTick(() => {
@@ -467,14 +466,6 @@ export function startPlaceGen(preset) {
                 fixCheckpointToPlayerInteract();
             }
         }
-        else if (selectedItem.Text == interact_shopwhitelist.Text) {
-            if (selectedItem.Checked) {
-                new_place.shop = interact_fn_name;
-            }
-            else {
-                new_place.shop = null;
-            }
-        }
     });
     menu_interaction.ListChange.on((selectedItem, newIndex) => {
         if (selectedItem.Text == interact_carRequired.Text) {
@@ -516,6 +507,11 @@ export function startPlaceGen(preset) {
         else if (selectedItem.Text == saveNewPlace_item.Text) {
             if (new_place.interact_function == null) {
                 new_place.interact_function = randomFunction();
+            }
+            if (preset != null) {
+                if (preset.shop != null) {
+                    new_place.shop = preset.shop;
+                }
             }
             alt.emitServer("a_saveNewPlace", new_place);
         }

@@ -17,14 +17,6 @@ export function isObjectEmpty(object: Record<string, unknown>): boolean {
 
 //TODO: Rework clothSelector for new Cloth-System
 export function clothSelector(pedComponentVariations: any[]) {
-  let model: string;
-  if (native.getEntityModel(alt.Player.local.scriptID) == 1885233650) {
-    model = "mp_m_freemode_01";
-  } else if (native.getEntityModel(alt.Player.local.scriptID) == 2627665880) {
-    model = "mp_f_freemode_01";
-  } else {
-    alt.logError("Wrong Model");
-  }
 
   let menu = new NativeUI.Menu("Kleidung", model.toString(), new NativeUI.Point(50, 50));
   menu.GetTitle().DropShadow = true;

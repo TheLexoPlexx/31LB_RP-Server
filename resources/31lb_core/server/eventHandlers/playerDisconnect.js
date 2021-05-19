@@ -7,7 +7,7 @@ export function playerDisconnect(player) {
     let hp = player.health;
     let armour = player.armour;
     let incar;
-    if (player.vehicle.id != null) {
+    if (player.vehicle != null) {
         incar = player.vehicle.id;
     }
     let places = player.getSyncedMeta("unlocked_places");

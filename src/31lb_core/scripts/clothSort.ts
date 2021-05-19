@@ -104,10 +104,11 @@ export function sortClothes() {
       if (tempCloth.cHash == null) {
         tempCloth.cHash = tempHash;
         tempCompId = comp.ComponentId;
+        tempCloth.texture[comp.TextureId] = (comp.TranslatedLabel == (undefined || null)) ? null : JSON.parse(JSON.stringify(comp.TranslatedLabel)).German;
       }
 
       if (tempCloth.cHash == tempHash) {
-        tempCloth.texture[comp.TextureId] = (comp.TranslatedLabel == (undefined || null)) ? "no_translation" : JSON.parse(JSON.stringify(comp.TranslatedLabel)).German;
+        tempCloth.texture[comp.TextureId] = (comp.TranslatedLabel == (undefined || null)) ? null : JSON.parse(JSON.stringify(comp.TranslatedLabel)).German;
       } else {
         tempCloth.drawable = comp.DrawableId;
         tempCloth.restrictionTags = comp.RestrictionTags;
@@ -151,6 +152,7 @@ export function sortClothes() {
           restrictionTags: null,
           componentType: null
         };
+        tempCloth.texture[comp.TextureId] = (comp.TranslatedLabel == (undefined || null)) ? null : JSON.parse(JSON.stringify(comp.TranslatedLabel)).German;
       }
     });
     dlc.Props.forEach(prop => {
@@ -161,6 +163,7 @@ export function sortClothes() {
       if (tempProp.cHash == null) {
         tempProp.cHash = tempHash;
         tempCompId = prop.ComponentId;
+        tempProp.texture[prop.TextureId] = (prop.TranslatedLabel == (undefined || null)) ? "no_translation" : JSON.parse(JSON.stringify(prop.TranslatedLabel)).German;
       }
 
       if (tempProp.cHash == tempHash) {
@@ -203,6 +206,7 @@ export function sortClothes() {
           restrictionTags: null,
           componentType: null
         };
+        tempProp.texture[prop.TextureId] = (prop.TranslatedLabel == (undefined || null)) ? "no_translation" : JSON.parse(JSON.stringify(prop.TranslatedLabel)).German;
       }
     });
   });
@@ -221,187 +225,49 @@ export function sortClothes() {
       }
     });
   }
-  fs.writeFile(filePathExport + ".ts", "let obj = " + JSON.stringify(customClothCache, null, 2) + ";", "utf-8", (err) => {
+  fs.writeFile(filePathExport + "_m.ts", "export var clothing_inventory_m = " + JSON.stringify(customClothCache.m, null, 2) + ";", "utf-8", (err) => {
     if (err != null) {
       console.log(err);
     }
   });
+  fs.writeFile(filePathExport + "_f.ts", "export var clothing_inventory_f = " + JSON.stringify(customClothCache.f, null, 2) + ";", "utf-8", (err) => {
+    if (err != null) {
+      console.log(err);
+    }
+  });
+  console.log("Success");
 }
 
 export const cloth_blacklist = {
-  // Hats
   0: {
-      isProp: true,
-      male: [
-          1,
-          38,
-          46,
-          47,
-          57,
-          111,
-          112,
-          113,
-          115,
-          116,
-          117,
-          118,
-          119,
-          123,
-          124,
-          125,
-          126,
-          129,
-          133,
-          134,
-          137,
-          138,
-          144,
-          147,
-          148,
-          149
-      ],
-      female: [
-          1,
-          37,
-          45,
-          46,
-          110,
-          111,
-          112,
-          114,
-          115,
-          116,
-          117,
-          118,
-          122,
-          123,
-          124,
-          125,
-          128,
-          132,
-          133,
-          136,
-          137,
-          143,
-          146,
-          147,
-          148
-      ]
+    isProp: !0,
+    male: [1, 38, 46, 47, 57, 111, 112, 113, 115, 116, 117, 118, 119, 123, 124, 125, 126, 129, 133, 134, 137, 138, 144, 147, 148, 149],
+    female: [1, 37, 45, 46, 110, 111, 112, 114, 115, 116, 117, 118, 122, 123, 124, 125, 128, 132, 133, 136, 137, 143, 146, 147, 148]
   },
-  // Glasses
   1: {
-      isProp: true,
-      male: [26, 27],
-      female: [28, 29]
+    isProp: !0,
+    male: [26, 27],
+    female: [28, 29]
   },
-  // Pants
   4: {
-      male: [30, 38, 39, 56, 77, 84, 85, 95, 106, 108, 109, 110, 111, 112, 113, 114, 115, 120],
-      female: [21, 29, 38, 39, 79, 86, 88, 98, 113, 115, , 117, 118, 119, 120, 121, 122, 126, 131, 132]
+    male: [30, 38, 39, 56, 77, 84, 85, 95, 106, 108, 109, 110, 111, 112, 113, 114, 115, 120],
+    female: [21, 29, 38, 39, 79, 86, 88, 98, 113, 115, , 117, 118, 119, 120, 121, 122, 126, 131, 132]
   },
-  // Shoes
   6: {
-      male: [0, 17, 33, 58, 67, 68, 87, 91],
-      female: [17, 34, 61, 70, 71, 87, 91, 94, 95]
+    male: [0, 17, 33, 58, 67, 68, 87, 91],
+    female: [17, 34, 61, 70, 71, 87, 91, 94, 95]
   },
-  // Accessory
   7: {
-      male: [33, 40, 41, 125, 126, 127, 128, 133],
-      female: [16, 24, 95, 96, 97, 98, 102]
+    male: [33, 40, 41, 125, 126, 127, 128, 133],
+    female: [16, 24, 95, 96, 97, 98, 102]
   },
-  // Undershirt
   8: {
-      male: [
-          19,
-          20,
-          58,
-          97,
-          122,
-          123,
-          124,
-          125,
-          126,
-          127,
-          128,
-          129,
-          130,
-          131,
-          145,
-          151,
-          152,
-          153,
-          154,
-          155,
-          156,
-          164,
-          165
-      ],
-      female: [18, 19, 35, 105, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 186, 187, 189, 190, 191, 192, 201]
+    male: [19, 20, 58, 97, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 145, 151, 152, 153, 154, 155, 156, 164, 165],
+    female: [18, 19, 35, 105, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 186, 187, 189, 190, 191, 192, 201]
   },
-  // Shirt
   11: {
-      male: [
-          2,
-          18,
-          48,
-          51,
-          54,
-          55,
-          65,
-          66,
-          116,
-          178,
-          186,
-          201,
-          228,
-          231,
-          246,
-          274,
-          275,
-          276,
-          277,
-          278,
-          283,
-          284,
-          285,
-          286,
-          287,
-          289,
-          291,
-          314,
-          315,
-          320
-      ],
-      female: [
-          19,
-          41,
-          44,
-          47,
-          48,
-          59,
-          60,
-          108,
-          180,
-          188,
-          238,
-          241,
-          254,
-          288,
-          289,
-          290,
-          296,
-          297,
-          298,
-          299,
-          300,
-          302,
-          304,
-          325,
-          326,
-          327,
-          328,
-          329
-      ]
+    male: [2, 18, 48, 51, 54, 55, 65, 66, 116, 178, 186, 201, 228, 231, 246, 274, 275, 276, 277, 278, 283, 284, 285, 286, 287, 289, 291, 314, 315, 320],
+    female: [19, 41, 44, 47, 48, 59, 60, 108, 180, 188, 238, 241, 254, 288, 289, 290, 296, 297, 298, 299, 300, 302, 304, 325, 326, 327, 328, 329]
   }
 };
 

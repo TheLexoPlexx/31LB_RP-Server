@@ -1,4 +1,4 @@
-const CompIds: {
+export const componentIds: {
   [key: number]: string } = {
   0: "Head",
   1: "Masks",
@@ -14,7 +14,7 @@ const CompIds: {
   11: "Tops",
 };
 
-const propIds: {
+export const propIds: {
   [key: number]: string } = {
   0: "Hats",
   1: "Glasses",

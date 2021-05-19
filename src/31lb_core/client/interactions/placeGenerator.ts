@@ -17,10 +17,11 @@ let menu: NativeUI.Menu;
 // -> add presets, add name to preset-shops as unique identifier, save shop-whitelist to database
 
 export interface PlacePreset {
-  title: string,
-  description?: string,
-  blip_icon: number,
+  title: string
+  description?: string
+  blip_icon: number
   banner?: string
+  shop?: string
 }
 
 export interface colshapeMeta {
@@ -45,16 +46,16 @@ export interface colshapeMeta {
 //https://wiki.altv.mp/wiki/GTA:Blips
 export const PresetList: {
   [key: string]: PlacePreset } = {
-    lsc: { title: "Los Santos Customs", blip_icon: 72, banner: "shopui_title_carmod" }, //carmod2 ist beekers garage
-    ammunation: { title: "Ammunation", blip_icon: 110, banner: "shopui_title_gunclub" },
-    clothing1: { title: "Binco Kleidung", blip_icon: 73, banner: "shopui_title_lowendfashion2" },
-    clothing2: { title: "Sub Urban", blip_icon: 73, banner: "shopui_title_midfashion" },
-    clothing3: { title: "Ponsonbys", blip_icon: 73, banner: "shopui_title_highendfashion" },
-    atm: { title: "ATM", blip_icon: 500 },
-    superm: { title: "Supermarkt", blip_icon: 52, banner: "shopui_title_conveniencestore"},
+    lsc: { title: "Los Santos Customs", blip_icon: 72, shop: "lossantoscustoms", banner: "shopui_title_carmod" }, //carmod2 ist beekers garage
+    ammunation: { title: "Ammunation", blip_icon: 110, shop: "ammunation", banner: "shopui_title_gunclub" },
+    clothing1: { title: "Binco Kleidung", blip_icon: 73, shop: "clothing", banner: "shopui_title_lowendfashion2" },
+    clothing2: { title: "Sub Urban", blip_icon: 73, shop: "clothing", banner: "shopui_title_midfashion" },
+    clothing3: { title: "Ponsonbys", blip_icon: 73, shop: "clothing", banner: "shopui_title_highendfashion" },
+    atm: { title: "ATM", blip_icon: 500},
+    superm: { title: "Supermarkt", blip_icon: 52, shop: "supermarket", banner: "shopui_title_conveniencestore"},
     gas: { title: "Tankstelle", blip_icon: 648, banner: "shopui_title_gasstation" },
-    barber: { title: "Friseur", blip_icon: 71, banner: "shopui_title_barber" }, //Oder 2, 3, 4
-    tattoo: { title: "Tattostudio", blip_icon: 75, banner: "shopui_title_tattoos5" }, //Oder 2, 3, 4, 5
+    barber: { title: "Friseur", blip_icon: 71, shop: "barber", banner: "shopui_title_barber" }, //Oder 2, 3, 4
+    tattoo: { title: "Tattostudio", blip_icon: 75, shop: "tattoo", banner: "shopui_title_tattoos5" }, //Oder 2, 3, 4, 5
 };
 
 export function startPlaceGen(preset: PlacePreset): void {
@@ -84,6 +85,7 @@ export function startPlaceGen(preset: PlacePreset): void {
     if (preset.banner != null) {
       menu.SetSpriteBannerType(new NativeUI.Sprite(preset.banner, preset.banner, new NativeUI.Point(0, 0), new NativeUI.Size()))
       menu.Title = "";
+      new_place.banner = preset.banner;
     }
   }
 
@@ -506,9 +508,6 @@ export function startPlaceGen(preset: PlacePreset): void {
   let interact_carRequired = new NativeUI.UIMenuListItem("Fahrzeug benötigt", "Wird ein Fahrzeug benötigt um diese Interaktion zu aktivieren?", new NativeUI.ItemsCollection(["Egal", "Erforderlich", "Verboten"]));
   menu_interaction.AddItem(interact_carRequired);
 
-  let interact_shopwhitelist = new NativeUI.UIMenuCheckboxItem("Shop Whitelist", false, "Wird diese Interaktion sein mit Whitelist?");
-  menu_interaction.AddItem(interact_shopwhitelist);
-
   let interact_xyz;
   function updateCoordsInteraction() {
     interact_xyz = alt.everyTick(() => {
@@ -556,12 +555,6 @@ export function startPlaceGen(preset: PlacePreset): void {
         updateCoordsInteraction();
         fixCheckpointToPlayerInteract();
       }
-    } else if (selectedItem.Text == interact_shopwhitelist.Text) {
-      if (selectedItem.Checked) {
-        new_place.shop = interact_fn_name;
-      } else {
-        new_place.shop = null;
-      }
     }
   });
 
@@ -606,6 +599,11 @@ export function startPlaceGen(preset: PlacePreset): void {
     } else if (selectedItem.Text == saveNewPlace_item.Text) {
       if (new_place.interact_function == null) {
         new_place.interact_function = randomFunction();
+      }
+      if (preset != null) {
+        if (preset.shop != null) {
+          new_place.shop = preset.shop;
+        }
       }
       alt.emitServer("a_saveNewPlace", new_place);
     }

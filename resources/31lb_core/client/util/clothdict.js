@@ -1,4 +1,4 @@
-const CompIds = {
+export const componentIds = {
     0: "Head",
     1: "Masks",
     2: "Hair Styles",
@@ -12,7 +12,7 @@ const CompIds = {
     10: "Decals",
     11: "Tops",
 };
-const propIds = {
+export const propIds = {
     0: "Hats",
     1: "Glasses",
     2: "Ears",

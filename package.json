@@ -5,12 +5,12 @@
 	"main": "",
 	"scripts": {
 		"build": "npm run clean && tsc && npm run copy",
-		"copy": "copyfiles src/**/* --exclude=**/*.ts --exclude=**/*.less --up 1 ./resources",
+		"copy": "copyfiles src/**/* --exclude=**/*.ts --exclude=**/*.less --exclude=*/data_dumps/* --up 1 ./resources",
 		"clean": "rimraf resources",
 		"update": "altv-pkg d release",
 		"windows": "npm run build && altv-server.exe",
 		"linux": "npm run build && ./start.sh",
-		"sortclothes": "node resources/31lb_core/scripts/clothHandler.js"
+		"sortclothes": "node resources/31lb_core/scripts/clothSort.js"
 	},
 	"author": "TheLexoPlexx",
 	"license": "ISC",

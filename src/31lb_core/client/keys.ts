@@ -25,8 +25,8 @@ export function keyUp(key: number): void {
       alt.emitServer("a_openinventory");
       
     } else if (key == 69) { //e,
-      if (alt.getSyncedMeta("interaction_meta") != (null || undefined )) {
-        let cM: colshapeMeta = alt.getSyncedMeta("interaction_meta");
+      if (alt.getMeta("interaction_meta") != (null || undefined)) {
+        let cM: colshapeMeta = alt.getMeta("interaction_meta");
         if (cM.interact_function.startsWith("shop_")) {
           openShopInteraction(cM);
         } else {
