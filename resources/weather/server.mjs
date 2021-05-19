@@ -1,7 +1,8 @@
 import * as alt from 'alt';
 import Weather from './weather';
 
-let weatherSync = new Weather("fcc3d6ce0fb5093fde973d098c7f85bb", "Cologne", "DE");
+//https://api.openweathermap.org/data/2.5/weather?q=Cologne,DE,&appid=63fe821e3bbfe092b2d68f232317f9c2
+let weatherSync = new Weather("63fe821e3bbfe092b2d68f232317f9c2", "Cologne", "DE");
 
 alt.on('consoleCommand', (msg) => {
     switch(msg){

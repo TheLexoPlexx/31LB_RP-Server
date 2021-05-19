@@ -7,7 +7,6 @@ import { toggleInfoHud } from './interactions/infohud';
 import { toggleInventory } from './interactions/inventory';
 import { colshapeMeta } from './interactions/placeGenerator';
 import { togglePlayerMenu } from './interactions/playerMenu';
-import { openShopInteraction } from './interactions/shopInteraction';
 
 export function keyUp(key: number): void {
   if (alt.Player.local.getSyncedMeta("allowKeyPress") && !alt.isConsoleOpen()) {
@@ -28,7 +27,7 @@ export function keyUp(key: number): void {
       if (alt.getMeta("interaction_meta") != (null || undefined)) {
         let cM: colshapeMeta = alt.getMeta("interaction_meta");
         if (cM.interact_function.startsWith("shop_")) {
-          openShopInteraction(cM);
+          //openShopInteraction(cM);
         } else {
           alt.emit("event_interact_function", alt.getMeta("interaction_meta"));
           alt.emitServer("event_interact_function", alt.getMeta("interaction_meta"));
