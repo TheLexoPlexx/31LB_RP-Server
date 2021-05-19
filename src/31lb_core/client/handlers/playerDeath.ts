@@ -27,6 +27,7 @@ export function revive() {
   }
 }
 
+
 export function playerDamage(attacker: alt.Player, damage: alt.Player, weaponHash: string): void {
   native.setTimecycleModifier("DAMAGE");
   native.setTimecycleModifierStrength(0.6);
