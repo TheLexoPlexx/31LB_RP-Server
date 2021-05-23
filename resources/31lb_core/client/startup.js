@@ -5,7 +5,7 @@ import { consoleCommand } from './commands';
 import { openWeaponShop } from './interactions/weaponShop';
 import { keyUp } from './keys';
 import { createGlobalBlip, enteredColshape, leaveColshape, saveSuccess, startPlaceGen } from './interactions/placeGenerator';
-import { setPlayerInVehicle } from './handlers/playerVehicles';
+import { setPlayerInVehicle } from './handlers/vehicleHandler';
 natives.setPedDefaultComponentVariation(natives.playerPedId());
 alt.onServer('a_death', playerDeath);
 alt.onServer('a_alive', revive);

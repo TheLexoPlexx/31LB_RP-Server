@@ -8,6 +8,7 @@
 		"copy": "copyfiles src/**/* --exclude=**/*.ts --exclude=**/*.less --exclude=*/data_dumps/* --up 1 ./resources",
 		"clean": "rimraf resources",
 		"update": "altv-pkg d release",
+		"update-dev": "altv-pkg d dev",
 		"windows": "npm run build && altv-server.exe",
 		"linux": "npm run build && ./start.sh",
 		"sortclothes": "node resources/31lb_core/scripts/clothSort.js"

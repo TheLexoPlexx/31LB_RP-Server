@@ -5,13 +5,14 @@ import * as entities from './entities/entities.js';
 import { playerConnect } from './eventHandlers/playerConnect';
 import { playerDamage } from './eventHandlers/playerDamage';
 import { playerDeath } from './eventHandlers/playerDeath';
-import { playerDisconnect } from './eventHandlers/playerDisconnect';
+import { playerActualDisconnect, playerRestartDisconnect } from './eventHandlers/playerDisconnect';
 import { keyPressF9, keyPressI, keyPressM, keyPressY } from './eventHandlers/keyHandlers';
-import { login } from './eventHandlers/loginCompleted';
+import { createBlips, login } from './eventHandlers/loginCompleted';
 import { clearColshapes, savePlace, sortMarkers, updatePlacesForPlayer } from './eventHandlers/placeHandler';
 import { openedInventory } from './eventHandlers/inventoryHandler';
 import { teamLogin, teamLogoff } from './eventHandlers/teamLoginHandler';
 import { colshapeMeta } from '../client/interactions/placeGenerator';
+import { loadVehicles, saveVehicles } from './managers/vehicleManager';
 
 export const dbType = 'postgres';
 export const dbHost = 'localhost';
@@ -21,32 +22,80 @@ export const dbPassword = '31lb_rpdb';
 export const dbName = '31lb_rpdb';
 
 export var database = new SQL(dbType, dbHost, dbPort, dbUsername, dbPassword, dbName, [
-  entities.PlayerEntity, entities.WeaponEntity, entities.PlaceEntity
+  entities.PlayerEntity, entities.WeaponEntity, entities.PlaceEntity, entities.VehicleEntity
 ]);
+
+let safeStopped: boolean = false;
+let restarted: boolean = false;
 
 interface InteractFunction<K extends PropertyKey, V> {
   key: K;
   value: V;
 }
 
-alt.on('ConnectionComplete', () => {
-  alt.log("[31LB] Connected to Database");
-});
-
 //TODO: Remove, Debug reasons
-alt.on("resourceStart", (errored) => {
+alt.on("resourceStart", () => {
   alt.Player.all.forEach((player, index, array) => {
     player.setDateTime(11, 3, 2021, 8, 0, 0);
   });
 });
 
+alt.on('ConnectionComplete', () => {
+  alt.log("[31LB] Connected to Database");
+  sortMarkers();
+
+  if (!alt.getSyncedMeta("restarted")) {
+    loadVehicles();
+    alt.setSyncedMeta("restarted", false);
+  } else {
+    alt.setSyncedMeta("restarted", false);
+  }
+
+  alt.setTimeout(() => {
+    alt.Player.all.forEach((p) => {
+      createBlips(p);
+    });
+  }, 1000);
+});
+
 alt.on("playerConnect", playerConnect);
 alt.on('playerDeath', playerDeath);
 alt.on("playerDamage", playerDamage);
-alt.on("playerDisconnect", playerDisconnect);
-alt.on("resourceStop", clearColshapes);
+alt.on("playerDisconnect", playerActualDisconnect);
+alt.on("consoleCommand", (...args: string[]) => {
+  if (args[0] == "rp") {
+    if (args[1] == "restart" || args[1] == "r") {
+      save("a_restart_rp");
+    } else if (args[1] == "stop" || args[1] == "s") {
+      save("a_stop_rp");
+    } else {
+      alt.logError("Falscher Subcommand");
+    }
+  } else {
+    alt.logError("Unknown command");
+  }
+  function save(emitEvent: string) {
+    clearColshapes();
+    alt.Player.all.forEach((p) => {
+      playerRestartDisconnect(p);
+    });
+    safeStopped = true;
 
-alt.on("ConnectionComplete", sortMarkers);
+    saveVehicles().then(() => {
+      alt.emit(emitEvent);
+    });
+    //Save Players
+  }
+});
+
+alt.on("resourceStop",  () => {
+  if (!safeStopped) {
+    alt.logError("======{ Du Pimmock");
+    alt.logWarning("Datenbankverbindung schlägt beim konventionellen Neustarten fehl und nichts wird gespeichert.");
+    alt.logWarning("Verwende stattdessen: 'rp restart' oder 'rp stop'.");
+    alt.logError("======{ Ende der Durchsage");
+  }
+});
 
 alt.onClient("a_keyup_f9", keyPressF9);
 alt.onClient("a_keyup_y", keyPressY);

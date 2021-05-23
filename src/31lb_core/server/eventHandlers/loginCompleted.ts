@@ -51,7 +51,6 @@ export function loginCompleted(player: alt.Player, result_player: any, password:
     playerJSON = result_player;
   }
 
-
   let unlocked_places;
   if (playerJSON.unlockedplaces == "[]" || playerJSON.unlockedplaces == null) {
     unlocked_places = [];
@@ -61,21 +60,7 @@ export function loginCompleted(player: alt.Player, result_player: any, password:
 
   player.setSyncedMeta("unlocked_places", unlocked_places);
 
-  if (unlocked_places.length > 0) {
-    unlocked_places.forEach(element => {
-      unlockableMarkers.forEach(allM => {
-        if (allM.id == element) {
-          alt.emitClient(player, "a_createBlip", allM); //element is only id
-          //maybe remove element?
-        }
-      });
-    });
-  }
-  
-  //Erstellen der Blips auf der Karte
-  globalMarkers.forEach(element => {
-    alt.emitClient(player, "a_createBlip", element);
-  });
+  createBlips(player);
 
   player.setSyncedMeta("money_hand", playerJSON.money_hand);
   if (playerJSON.faction != null) {
@@ -100,4 +85,26 @@ export function login(player: alt.Player, pw) {
       loginCompleted(player, result, null);
     }
   });
+}
+
+export function createBlips(player: alt.Player) {
+  let unlocked_places = player.getSyncedMeta("unlocked_places");
+  if (unlocked_places != undefined) {
+    if (unlocked_places.length > 0) {
+      unlocked_places.forEach(element => {
+        unlockableMarkers.forEach(allM => {
+          if (allM.id == element) {
+            alt.emitClient(player, "a_createBlip", allM);
+            //element is only id
+            //maybe remove element?
+          }
+        });
+      });
+    }
+  
+    //Erstellen der Blips auf der Karte
+    globalMarkers.forEach(element => {
+      alt.emitClient(player, "a_createBlip", element);
+    });
+  }
 }

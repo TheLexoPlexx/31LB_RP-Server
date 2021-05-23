@@ -190,3 +190,49 @@ export const WeaponEntity = new orm.EntitySchema({
     },
   }
 });
+
+export const VehicleEntity = new orm.EntitySchema({
+  name: 'vehicles',
+  columns: {
+    vin: {
+      primary: true,
+      type: 'varchar',
+    },
+    model: {
+      type: 'varchar',
+      nullable: true,
+    },
+    a: {
+      type: 'varchar',
+      nullable: true,
+    },
+    d: {
+      type: 'varchar',
+      nullable: true,
+    },
+    g: {
+      type: 'varchar',
+      nullable: true,
+    },
+    h: {
+      type: 'varchar',
+      nullable: true,
+    },
+    s: {
+      type: 'varchar',
+      nullable: true,
+    },
+    pos: {
+      type: 'varchar',
+      nullable: true,
+    },
+    rot: {
+      type: 'varchar',
+      nullable: true,
+    },
+    spawned: {
+      type: 'boolean',
+      nullable: true,
+    },
+  }
+});

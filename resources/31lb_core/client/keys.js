@@ -8,6 +8,30 @@ export function keyUp(key) {
             alt.emitServer("a_keyup_y");
             toggleInfoHud();
         }
+        else if (key == 120) {
+            alt.emitServer("a_keyup_f9");
+            if (alt.Player.local.seat > 0) {
+                alt.log("fahrzeugposition: " + JSON.stringify({
+                    px: alt.Player.local.vehicle.pos.x,
+                    py: alt.Player.local.vehicle.pos.y,
+                    pz: alt.Player.local.vehicle.pos.z,
+                    rx: alt.Player.local.vehicle.rot.x,
+                    yx: alt.Player.local.vehicle.rot.y,
+                    zx: alt.Player.local.vehicle.rot.z,
+                }));
+                alt.log("VIN: " + alt.Player.local.vehicle.getSyncedMeta("vin"));
+            }
+            else {
+                alt.log("position: " + JSON.stringify({
+                    px: alt.Player.local.pos.x,
+                    py: alt.Player.local.pos.y,
+                    pz: alt.Player.local.pos.z,
+                    rx: alt.Player.local.rot.x,
+                    yx: alt.Player.local.rot.y,
+                    zx: alt.Player.local.rot.z,
+                }));
+            }
+        }
         else if (key == 73) {
             alt.emitServer("a_keyup_i");
             alt.log("Toggle Inventory");

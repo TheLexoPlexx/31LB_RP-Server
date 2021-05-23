@@ -47,19 +47,11 @@ export function loginCompleted(player, result_player, password) {
         unlocked_places = JSON.parse(result_player.unlockedplaces);
     }
     player.setSyncedMeta("unlocked_places", unlocked_places);
-    if (unlocked_places.length > 0) {
-        unlocked_places.forEach(element => {
-            unlockableMarkers.forEach(allM => {
-                if (allM.id == element) {
-                    alt.emitClient(player, "a_createBlip", allM);
-                }
-            });
-        });
-    }
-    globalMarkers.forEach(element => {
-        alt.emitClient(player, "a_createBlip", element);
-    });
+    createBlips(player);
     player.setSyncedMeta("money_hand", playerJSON.money_hand);
+    if (playerJSON.faction != null) {
+        player.setSyncedMeta("faction", playerJSON.faction);
+    }
     player.setSyncedMeta("permissions", playerJSON.permissions);
     player.setSyncedMeta("inventar", playerJSON.inventar);
     player.setSyncedMeta("personalausweis", playerJSON.personalausweis);
@@ -78,4 +70,21 @@ export function login(player, pw) {
             loginCompleted(player, result, null);
         }
     });
+}
+export function createBlips(player) {
+    let unlocked_places = player.getSyncedMeta("unlocked_places");
+    if (unlocked_places != undefined) {
+        if (unlocked_places.length > 0) {
+            unlocked_places.forEach(element => {
+                unlockableMarkers.forEach(allM => {
+                    if (allM.id == element) {
+                        alt.emitClient(player, "a_createBlip", allM);
+                    }
+                });
+            });
+        }
+        globalMarkers.forEach(element => {
+            alt.emitClient(player, "a_createBlip", element);
+        });
+    }
 }

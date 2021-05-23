@@ -1,7 +1,7 @@
 /// <reference types="@altv/types-server" />
 import * as alt from 'alt-server';
 import { database } from './../startup';
-import * as entities from "./../entities/entities";
+import { ItemHolder, Item } from "./../../client/interactions/inventory";
 
 export function getPlayer(player, callback) {
   database.fetchData("sessionid", player.id, "players", (result) => {
@@ -25,6 +25,17 @@ export function setValue(result, callback) {
       callback(r);
     }
   });
+}
+
+export function setCloth(player: alt.Player, comp: number, item: ItemHolder, drawable: number, texture: number, dlcHash: string) {
+  player.setSyncedMeta("inventory_" + comp, item);
+  let palette = 2; //0 oder 1, ka.
+  alt.emitClient(player, "a_setclothes", )
+  player.setClothes(comp, drawable, texture, palette, alt.hash(dlcHash));
+}
+
+export function getInventorySpace(comp: number) {
+  
 }
 
 /* === WEAPONS

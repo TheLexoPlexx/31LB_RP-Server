@@ -7,7 +7,7 @@ import { consoleCommand } from './commands';
 import { openWeaponShop } from './interactions/weaponShop';
 import { keyUp } from './keys';
 import { createGlobalBlip, enteredColshape, leaveColshape, saveSuccess, startPlaceGen } from './interactions/placeGenerator';
-import { setPlayerInVehicle } from './handlers/playerVehicles';
+import { setPlayerInVehicle } from './handlers/vehicleHandler';
 
 //Keine Ahnung wofür das gut ist, ist aus Freeroam-Resource geklaut
 //Ich weiß mittlerweile wofür das gut ist, weiß aber nicht warum es im client steht und traue mich noch nicht es zu entfernen.

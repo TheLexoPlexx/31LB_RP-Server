@@ -2,7 +2,16 @@
 import * as alt from 'alt-server';
 import { database } from '../startup';
 
-export function playerDisconnect(player: alt.Player) {
+export function playerActualDisconnect(player: alt.Player) {
+  playerDisconnect(player, false);
+}
+
+
+export function playerRestartDisconnect(player: alt.Player) {
+  playerDisconnect(player, true);
+}
+
+function playerDisconnect(player: alt.Player, restart: boolean) {
   let pos = player.pos;
   let rot = player.rot;
   let id = player.id;
@@ -21,7 +30,9 @@ export function playerDisconnect(player: alt.Player) {
       result.healthpoints = hp;
       result.armour = armour;
       result.incar = incar;
-      result.sessionid = -1;
+      if (!restart) {
+        result.sessionid = -1;
+      }
       result.unlockedplaces = JSON.stringify(places);
 
       database.upsertData(result, "players", (res_upsert) => {

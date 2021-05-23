@@ -1,3 +1,4 @@
+import * as alt from 'alt-server';
 import { database } from './../startup';
 export function getPlayer(player, callback) {
     database.fetchData("sessionid", player.id, "players", (result) => {
@@ -19,6 +20,14 @@ export function setValue(result, callback) {
             callback(r);
         }
     });
+}
+export function setCloth(player, comp, item, drawable, texture, dlcHash) {
+    player.setSyncedMeta("inventory_" + comp, item);
+    let palette = 2;
+    alt.emitClient(player, "a_setclothes");
+    player.setClothes(comp, drawable, texture, palette, alt.hash(dlcHash));
+}
+export function getInventorySpace(comp) {
 }
 export function addWeapon(player, weaponName, inventory) {
     getPlayer(player, (result) => {

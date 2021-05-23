@@ -1,7 +1,7 @@
-/// <reference types="@altv/types-client" />
 /// <reference types="@altv/types-natives" />
+/// <reference types="@altv/types-client" />
 import * as alt from 'alt-client';
-import * as natives from 'natives';
+import * as native from 'natives';
 
 export function setPlayerInVehicle(player: alt.Player, vehicle: alt.Vehicle, seat: number) {
   let cleared = false;
@@ -9,7 +9,7 @@ export function setPlayerInVehicle(player: alt.Player, vehicle: alt.Vehicle, sea
       const vehicleScriptId = vehicle.scriptID;
       alt.log(vehicleScriptId);
       if (vehicleScriptId) {
-          natives.setPedIntoVehicle(alt.Player.local.scriptID, vehicleScriptId, seat);
+          native.setPedIntoVehicle(alt.Player.local.scriptID, vehicleScriptId, seat);
           alt.clearInterval(interval);
           cleared = true;
       }

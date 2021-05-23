@@ -33,7 +33,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpassault"
             },
             {
                 "cHash": "DLC_MP_BH_F_SPECIAL_9",
@@ -73,7 +73,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL",
                     "CLOSED_COLLAR"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "mpbusiness2"
             },
             {
                 "cHash": "DLC_MP_LTS_F_UPPR_1",
@@ -97,7 +97,7 @@ export var clothing_inventory_f = {
                     "MORPH_SUIT",
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpsum"
             },
             {
                 "cHash": "DLC_MP_LOW_F_TEETH_1",
@@ -115,7 +115,7 @@ export var clothing_inventory_f = {
                     "HIGH_HEELS",
                     "DRAW_7"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_PILOT_F_TORSO_0",
@@ -132,7 +132,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_91",
@@ -146,7 +146,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_TEETH_3",
@@ -166,7 +166,7 @@ export var clothing_inventory_f = {
                     "COWBOY_BOOTS",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_EXEC_F_TEETH_1",
@@ -183,7 +183,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "BIKER_MASK"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_HIPS_F_TEETH1",
@@ -205,7 +205,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_TORSO_1",
@@ -238,7 +238,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_TORSO_3",
@@ -252,7 +252,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IND_F_SPECIAL2_0",
@@ -273,7 +273,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "JUGG_SUIT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_TORSO_9",
@@ -291,7 +291,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "JUGG_SUIT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_SPECIAL2_6",
@@ -307,7 +307,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_TEETH_3",
@@ -321,7 +321,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_TEETH_2",
@@ -335,7 +335,7 @@ export var clothing_inventory_f = {
                     "Hund-mit-Halskrause-Kette"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_UPPR_9",
@@ -358,7 +358,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_9",
@@ -397,7 +397,7 @@ export var clothing_inventory_f = {
                     "MORPH_SUIT",
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_TORSO_9",
@@ -421,7 +421,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "TAT_DECL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_BEACH_F_TEETH1",
@@ -438,7 +438,7 @@ export var clothing_inventory_f = {
                     "Komplett silberne Herzkette"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS2_F_TEETH_1",
@@ -455,7 +455,7 @@ export var clothing_inventory_f = {
                     "Sturmschal"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS_F_LEGS0",
@@ -473,7 +473,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "DRAW_0"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday3ng"
             }
         ],
         [
@@ -489,7 +489,7 @@ export var clothing_inventory_f = {
                     "–"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_BERD_1",
@@ -506,7 +506,7 @@ export var clothing_inventory_f = {
                     "Schwarzes Schwein"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_BERD_2",
@@ -523,7 +523,7 @@ export var clothing_inventory_f = {
                     "Schwarzer Totenkopf"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_BERD_3",
@@ -537,7 +537,7 @@ export var clothing_inventory_f = {
                     "Pogo"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_BERD_4",
@@ -554,7 +554,7 @@ export var clothing_inventory_f = {
                     "Dust Devils Hockeymaske"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_BERD_5",
@@ -571,7 +571,7 @@ export var clothing_inventory_f = {
                     "Pinker Affe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_BERD_6",
@@ -588,7 +588,7 @@ export var clothing_inventory_f = {
                     "Schwarze Karnevalsmaske"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_BERD_7",
@@ -605,7 +605,7 @@ export var clothing_inventory_f = {
                     "Weißes Monster"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "DLC_MP_AR_F_BERD_0",
@@ -630,7 +630,7 @@ export var clothing_inventory_f = {
                     "Br. Digitaltarn-Fliegerkappe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "mpairraces"
             },
             {
                 "cHash": "DLC_MP_BH_F_BERD_0",
@@ -660,7 +660,7 @@ export var clothing_inventory_f = {
                     "Orange Herbst-Hockeymaske"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_HAL_F_BERD_0",
@@ -678,7 +678,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mphalloween"
             },
             {
                 "cHash": "DLC_MP_HAL_F_BERD_1",
@@ -696,7 +696,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mphalloween"
             },
             {
                 "cHash": "DLC_MP_HAL_F_BERD_10",
@@ -714,7 +714,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mphalloween"
             },
             {
                 "cHash": "DLC_MP_HAL_F_BERD_11",
@@ -732,7 +732,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mphalloween"
             },
             {
                 "cHash": "DLC_MP_HAL_F_BERD_12",
@@ -750,7 +750,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mphalloween"
             },
             {
                 "cHash": "DLC_MP_HAL_F_BERD_2",
@@ -768,7 +768,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mphalloween"
             },
             {
                 "cHash": "DLC_MP_HAL_F_BERD_3",
@@ -786,7 +786,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mphalloween"
             },
             {
                 "cHash": "DLC_MP_HAL_F_BERD_4",
@@ -804,7 +804,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mphalloween"
             },
             {
                 "cHash": "DLC_MP_HAL_F_BERD_5",
@@ -822,7 +822,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mphalloween"
             },
             {
                 "cHash": "DLC_MP_HAL_F_BERD_6",
@@ -840,7 +840,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mphalloween"
             },
             {
                 "cHash": "DLC_MP_HAL_F_BERD_7",
@@ -858,7 +858,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mphalloween"
             },
             {
                 "cHash": "DLC_MP_HAL_F_BERD_8",
@@ -876,7 +876,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mphalloween"
             },
             {
                 "cHash": "DLC_MP_HAL_F_BERD_9",
@@ -895,7 +895,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_BERD_0",
@@ -936,7 +936,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SKI_MASK"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_BERD_1",
@@ -962,7 +962,7 @@ export var clothing_inventory_f = {
                     "FORCE_PROP",
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_BERD_2",
@@ -1003,7 +1003,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_BERD_3",
@@ -1031,7 +1031,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "LIGHT_UP"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_BERD_4",
@@ -1064,7 +1064,7 @@ export var clothing_inventory_f = {
                     "pay DurtyFree#3216 for update"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_LTS_F_BERD_0",
@@ -1082,7 +1082,7 @@ export var clothing_inventory_f = {
                     "Waldfarbene Kampfmaske"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mplts"
             },
             {
                 "cHash": "DLC_MP_LTS_F_BERD_1",
@@ -1100,7 +1100,7 @@ export var clothing_inventory_f = {
                     "Grünes Skelett"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mplts"
             },
             {
                 "cHash": "DLC_MP_LTS_F_BERD_2",
@@ -1116,7 +1116,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "mplts"
             },
             {
                 "cHash": "DLC_MP_XMAS3_F_BERD_0",
@@ -1132,7 +1132,7 @@ export var clothing_inventory_f = {
                     "Zorniger Lebkuchenmann"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpxmas_604490"
             },
             {
                 "cHash": "DLC_MP_XMAS3_F_BERD_1",
@@ -1150,7 +1150,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpxmas_604490"
             },
             {
                 "cHash": "DLC_MP_XMAS3_F_BERD_10",
@@ -1166,7 +1166,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpxmas_604490"
             },
             {
                 "cHash": "DLC_MP_XMAS3_F_BERD_11",
@@ -1184,7 +1184,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpxmas_604490"
             },
             {
                 "cHash": "DLC_MP_XMAS3_F_BERD_12",
@@ -1202,7 +1202,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpxmas_604490"
             },
             {
                 "cHash": "DLC_MP_XMAS3_F_BERD_13",
@@ -1220,7 +1220,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpxmas_604490"
             },
             {
                 "cHash": "DLC_MP_XMAS3_F_BERD_14",
@@ -1236,7 +1236,7 @@ export var clothing_inventory_f = {
                     "Latino-Weihnachtsfrau"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpxmas_604490"
             },
             {
                 "cHash": "DLC_MP_XMAS3_F_BERD_2",
@@ -1254,7 +1254,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpxmas_604490"
             },
             {
                 "cHash": "DLC_MP_XMAS3_F_BERD_3",
@@ -1275,7 +1275,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpxmas_604490"
             },
             {
                 "cHash": "DLC_MP_XMAS3_F_BERD_4",
@@ -1292,7 +1292,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpxmas_604490"
             },
             {
                 "cHash": "DLC_MP_XMAS3_F_BERD_5",
@@ -1310,7 +1310,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpxmas_604490"
             },
             {
                 "cHash": "DLC_MP_XMAS3_F_BERD_6",
@@ -1328,7 +1328,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpxmas_604490"
             },
             {
                 "cHash": "DLC_MP_XMAS3_F_BERD_7",
@@ -1346,7 +1346,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpxmas_604490"
             },
             {
                 "cHash": "DLC_MP_XMAS3_F_BERD_8",
@@ -1364,7 +1364,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpxmas_604490"
             },
             {
                 "cHash": "DLC_MP_XMAS3_F_BERD_9",
@@ -1383,7 +1383,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SANTA_SUIT"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "mpxmas_604490"
             },
             {
                 "cHash": "DLC_MP_VAL_F_BERD0",
@@ -1401,7 +1401,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "MASK"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday10ng"
             },
             {
                 "cHash": "DLC_MP_VAL_F_BERD1",
@@ -1419,7 +1419,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "MASK"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday10ng"
             },
             {
                 "cHash": "DLC_MP_VAL_F_BERD2",
@@ -1436,7 +1436,7 @@ export var clothing_inventory_f = {
                     "STOCKINGS",
                     "HIGH_HEELS"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday10ng"
             },
             {
                 "cHash": "DLC_MP_PILOT_F_BERD_0",
@@ -1453,7 +1453,7 @@ export var clothing_inventory_f = {
                     "PILOT_SUIT",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_BERD_0",
@@ -1471,7 +1471,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "REBREATHER"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_BERD_1",
@@ -1485,7 +1485,7 @@ export var clothing_inventory_f = {
                     "Atemgerät"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_BERD_10",
@@ -1502,7 +1502,7 @@ export var clothing_inventory_f = {
                     "HAZ_MASK",
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_BERD_11",
@@ -1518,7 +1518,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_BERD_12",
@@ -1538,7 +1538,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_BERD_13",
@@ -1557,7 +1557,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "BIG_MASK"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_BERD_14",
@@ -1596,7 +1596,7 @@ export var clothing_inventory_f = {
                     "Dunkle Papiertüte"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_BERD_15",
@@ -1622,7 +1622,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "FORCE_PROP"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_BERD_16",
@@ -1648,7 +1648,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_BERD_17",
@@ -1674,7 +1674,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_BERD_18",
@@ -1698,7 +1698,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_BERD_19",
@@ -1725,7 +1725,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "SCRUFFY_BALACLAVA"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_BERD_2",
@@ -1741,7 +1741,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_BERD_20",
@@ -1758,7 +1758,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_BERD_21",
@@ -1783,7 +1783,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_BERD_22",
@@ -1821,7 +1821,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_BERD_23",
@@ -1846,7 +1846,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GAS_MASK"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_BERD_3",
@@ -1860,7 +1860,7 @@ export var clothing_inventory_f = {
                     "Gasmaske"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_BERD_4",
@@ -1875,7 +1875,7 @@ export var clothing_inventory_f = {
                     "Brauner Infizierter"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_BERD_5",
@@ -1890,7 +1890,7 @@ export var clothing_inventory_f = {
                     "Grüne Mumie"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_BERD_6",
@@ -1905,7 +1905,7 @@ export var clothing_inventory_f = {
                     "Blauer Vampir"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_BERD_7",
@@ -1920,7 +1920,7 @@ export var clothing_inventory_f = {
                     "Grauer Frank"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_BERD_8",
@@ -1934,7 +1934,7 @@ export var clothing_inventory_f = {
                     "Ohnmächtiger Zorn"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_BERD_9",
@@ -1948,7 +1948,7 @@ export var clothing_inventory_f = {
                     "Princess Robot Bubblegum"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_BERD_0",
@@ -1966,7 +1966,7 @@ export var clothing_inventory_f = {
                     "APART_CLOTH",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_BERD_0",
@@ -1987,7 +1987,7 @@ export var clothing_inventory_f = {
                     "Hellbraune Lüftungsmaske"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_HIPS_F_BERD_0",
@@ -2002,7 +2002,7 @@ export var clothing_inventory_f = {
                     "Getigerte Katze"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_HIPS_F_BERD_1",
@@ -2017,7 +2017,7 @@ export var clothing_inventory_f = {
                     "Brauner Fuchs"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_HIPS_F_BERD_2",
@@ -2032,7 +2032,7 @@ export var clothing_inventory_f = {
                     "Weiße Eule"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_HIPS_F_BERD_3",
@@ -2049,7 +2049,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_9"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_BERD_0",
@@ -2067,7 +2067,7 @@ export var clothing_inventory_f = {
                     "Waldfarbene Kampfmaske"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_BERD_0",
@@ -2106,7 +2106,7 @@ export var clothing_inventory_f = {
                     "MORPH_SUIT",
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_BERD_1",
@@ -2133,7 +2133,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_BERD_10",
@@ -2147,7 +2147,7 @@ export var clothing_inventory_f = {
                     "Burger Shot"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_BERD_11",
@@ -2164,7 +2164,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_BERD_12",
@@ -2200,7 +2200,7 @@ export var clothing_inventory_f = {
                     "MORPH_SUIT",
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_BERD_13",
@@ -2216,7 +2216,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_BERD_2",
@@ -2247,7 +2247,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_BERD_3",
@@ -2270,7 +2270,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_BERD_4",
@@ -2301,7 +2301,7 @@ export var clothing_inventory_f = {
                     "MORPH_SUIT",
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_BERD_5",
@@ -2332,7 +2332,7 @@ export var clothing_inventory_f = {
                     "MORPH_SUIT",
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_BERD_6",
@@ -2363,7 +2363,7 @@ export var clothing_inventory_f = {
                     "MORPH_SUIT",
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_BERD_7",
@@ -2390,7 +2390,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_BERD_8",
@@ -2415,7 +2415,7 @@ export var clothing_inventory_f = {
                     "Schwarzer Marauder"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_BERD_9",
@@ -2429,7 +2429,7 @@ export var clothing_inventory_f = {
                     "Paco der Taco"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IND_F_BERD_0",
@@ -2444,7 +2444,7 @@ export var clothing_inventory_f = {
                     "Grauer Bär"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IND_F_BERD_1",
@@ -2459,7 +2459,7 @@ export var clothing_inventory_f = {
                     "Goldener Bison"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IND_F_BERD_2",
@@ -2474,7 +2474,7 @@ export var clothing_inventory_f = {
                     "Brauner Stier"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IND_F_BERD_3",
@@ -2489,7 +2489,7 @@ export var clothing_inventory_f = {
                     "Weißer Adler"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IND_F_BERD_4",
@@ -2504,7 +2504,7 @@ export var clothing_inventory_f = {
                     "Schwarzer Geier"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IND_F_BERD_5",
@@ -2522,7 +2522,7 @@ export var clothing_inventory_f = {
                     "DRAW_0",
                     "HIGH_HEELS"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_BERD_0",
@@ -2546,7 +2546,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_BERD_1",
@@ -2567,7 +2567,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SKI_MASK"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_BERD_10",
@@ -2602,7 +2602,7 @@ export var clothing_inventory_f = {
                     "MORPH_SUIT",
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_BERD_11",
@@ -2618,7 +2618,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_BERD_2",
@@ -2637,7 +2637,7 @@ export var clothing_inventory_f = {
                     "Gefahr-Dino"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_BERD_3",
@@ -2656,7 +2656,7 @@ export var clothing_inventory_f = {
                     "Grüner Oni"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_BERD_4",
@@ -2677,7 +2677,7 @@ export var clothing_inventory_f = {
                     "Böser Clown"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_BERD_5",
@@ -2694,7 +2694,7 @@ export var clothing_inventory_f = {
                     "Irrer Albino-Affe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_BERD_6",
@@ -2713,7 +2713,7 @@ export var clothing_inventory_f = {
                     "Zebra"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_BERD_7",
@@ -2729,7 +2729,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_BERD_8",
@@ -2748,7 +2748,7 @@ export var clothing_inventory_f = {
                     "Schwarzer Zierschädel"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_BERD_9",
@@ -2770,7 +2770,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_BERD_0",
@@ -2812,7 +2812,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "FORCE_PROP"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_BERD_1",
@@ -2853,7 +2853,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "HAIR_SHRINK"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_BERD_10",
@@ -2869,7 +2869,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_BERD_2",
@@ -2911,7 +2911,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_BERD_3",
@@ -2951,7 +2951,7 @@ export var clothing_inventory_f = {
                     "SMUG_CLOTH",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_BERD_4",
@@ -2995,7 +2995,7 @@ export var clothing_inventory_f = {
                     "SMUG_CLOTH",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_BERD_5",
@@ -3040,7 +3040,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "FORCE_PROP"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_BERD_6",
@@ -3082,7 +3082,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_BERD_7",
@@ -3118,7 +3118,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_BERD_8",
@@ -3160,7 +3160,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "SCRUFFY_BALACLAVA"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_BERD_9",
@@ -3201,7 +3201,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_BERD_0",
@@ -3218,7 +3218,7 @@ export var clothing_inventory_f = {
                     "CASINO_ITEM",
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_BERD_1",
@@ -3235,7 +3235,7 @@ export var clothing_inventory_f = {
                     "CASINO_ITEM",
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_BERD_10",
@@ -3255,7 +3255,7 @@ export var clothing_inventory_f = {
                     "CASINO_ITEM",
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_BERD_11",
@@ -3275,7 +3275,7 @@ export var clothing_inventory_f = {
                     "CASINO_ITEM",
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_BERD_2",
@@ -3292,7 +3292,7 @@ export var clothing_inventory_f = {
                     "CASINO_ITEM",
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_BERD_3",
@@ -3309,7 +3309,7 @@ export var clothing_inventory_f = {
                     "CASINO_ITEM",
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_BERD_4",
@@ -3326,7 +3326,7 @@ export var clothing_inventory_f = {
                     "CASINO_ITEM",
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_BERD_5",
@@ -3344,7 +3344,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "LIGHT_UP"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_BERD_6",
@@ -3361,7 +3361,7 @@ export var clothing_inventory_f = {
                     "CASINO_ITEM",
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_BERD_7",
@@ -3381,7 +3381,7 @@ export var clothing_inventory_f = {
                     "CASINO_ITEM",
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_BERD_8",
@@ -3401,7 +3401,7 @@ export var clothing_inventory_f = {
                     "CASINO_ITEM",
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_BERD_9",
@@ -3418,7 +3418,7 @@ export var clothing_inventory_f = {
                     "Kreuzdame"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_BERD_0",
@@ -3438,7 +3438,7 @@ export var clothing_inventory_f = {
                     "SCUBA_GEAR",
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_BERD_1",
@@ -3456,7 +3456,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_BERD_10",
@@ -3476,7 +3476,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "NIGHT_VISION"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_BERD_11",
@@ -3521,7 +3521,7 @@ export var clothing_inventory_f = {
                     "MORPH_SUIT",
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_BERD_2",
@@ -3546,7 +3546,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_BERD_3",
@@ -3586,7 +3586,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "NIGHT_VISION"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_BERD_4",
@@ -3627,7 +3627,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_BERD_5",
@@ -3658,7 +3658,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_BERD_6",
@@ -3675,7 +3675,7 @@ export var clothing_inventory_f = {
                     "Heitere Lebkuchenmaske"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_BERD_7",
@@ -3706,7 +3706,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_BERD_8",
@@ -3739,7 +3739,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_BERD_9",
@@ -3774,7 +3774,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_BERD_0",
@@ -3788,7 +3788,7 @@ export var clothing_inventory_f = {
                     "Baby Smile"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_BERD_1",
@@ -3804,7 +3804,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_BERD_10",
@@ -3820,7 +3820,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_BERD_11",
@@ -3836,7 +3836,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_BERD_12",
@@ -3854,7 +3854,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_BERD_13",
@@ -3871,7 +3871,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_BERD_14",
@@ -3911,7 +3911,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GAS_MASK"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_BERD_15",
@@ -3930,7 +3930,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_BERD_16",
@@ -3949,7 +3949,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_BERD_17",
@@ -3968,7 +3968,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_BERD_18",
@@ -4006,7 +4006,7 @@ export var clothing_inventory_f = {
                     "Steingraues Leder m. Nachts."
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_BERD_19",
@@ -4029,7 +4029,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_BERD_2",
@@ -4045,7 +4045,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_BERD_3",
@@ -4059,7 +4059,7 @@ export var clothing_inventory_f = {
                     "Affe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_BERD_4",
@@ -4073,7 +4073,7 @@ export var clothing_inventory_f = {
                     "Grinser"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_BERD_5",
@@ -4090,7 +4090,7 @@ export var clothing_inventory_f = {
                     "GUN_ACCS",
                     "REBREATHER"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_BERD_6",
@@ -4109,7 +4109,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_BERD_7",
@@ -4123,7 +4123,7 @@ export var clothing_inventory_f = {
                     "Scharfschütze"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_BERD_8",
@@ -4141,7 +4141,7 @@ export var clothing_inventory_f = {
                     "FORCE_PROP",
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_BERD_9",
@@ -4180,7 +4180,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_BERD_0",
@@ -4222,7 +4222,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_BERD_1",
@@ -4261,7 +4261,7 @@ export var clothing_inventory_f = {
                     "Taktische Totenkopf-Skimaske"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_BERD_2",
@@ -4300,7 +4300,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_BERD_3",
@@ -4341,7 +4341,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "BIKER_MASK"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_BERD_4",
@@ -4378,7 +4378,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_BERD_5",
@@ -4418,7 +4418,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_BERD_0",
@@ -4446,7 +4446,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_BERD_1",
@@ -4465,7 +4465,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_BERD_2",
@@ -4484,7 +4484,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "LIGHT_UP"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_BERD_3",
@@ -4515,7 +4515,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_BERD_4",
@@ -4532,7 +4532,7 @@ export var clothing_inventory_f = {
                     "Rauchgraue Hyänenmaske"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_XMAS2_F_BERD_0",
@@ -4548,7 +4548,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS2_F_BERD_1",
@@ -4562,7 +4562,7 @@ export var clothing_inventory_f = {
                     "Strumpf"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS2_F_BERD_2",
@@ -4576,7 +4576,7 @@ export var clothing_inventory_f = {
                     "Lebkuchenmann"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS2_F_BERD_3",
@@ -4594,7 +4594,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "PARACHUTE"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS_F_BERD0",
@@ -4610,7 +4610,7 @@ export var clothing_inventory_f = {
                     "Weihnachtsmann 3"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS_F_BERD1",
@@ -4624,7 +4624,7 @@ export var clothing_inventory_f = {
                     "Rentier"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS_F_BERD2",
@@ -4638,7 +4638,7 @@ export var clothing_inventory_f = {
                     "Schneemann"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_BUSI_F_BERD0",
@@ -4667,7 +4667,7 @@ export var clothing_inventory_f = {
                     "Elektroschädel-Hockeymaske"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday4ng"
             },
             {
                 "cHash": "DLC_MP_BUSI_F_BERD1",
@@ -4684,7 +4684,7 @@ export var clothing_inventory_f = {
                     "Rampage Hockeymaske"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday4ng"
             },
             {
                 "cHash": "DLC_MP_BUSI_F_BERD2",
@@ -4708,7 +4708,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "HIGH_HEELS"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday4ng"
             },
             {
                 "cHash": "DLC_MP_REPLAY_F_BERD_0",
@@ -4726,7 +4726,7 @@ export var clothing_inventory_f = {
                     "LONG_SLEEVE",
                     "HTB_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday9ng"
             }
         ],
         [
@@ -4742,7 +4742,7 @@ export var clothing_inventory_f = {
                     "Glattrasiert"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_HAIR_1",
@@ -4761,7 +4761,7 @@ export var clothing_inventory_f = {
                     "Kurz, lila"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_HAIR_10",
@@ -4781,7 +4781,7 @@ export var clothing_inventory_f = {
                     "Langer Bob, helllila"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_HAIR_11",
@@ -4801,7 +4801,7 @@ export var clothing_inventory_f = {
                     "Locker, grün"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_HAIR_12",
@@ -4820,7 +4820,7 @@ export var clothing_inventory_f = {
                     "Pixieschnitt, blau"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_HAIR_13",
@@ -4839,7 +4839,7 @@ export var clothing_inventory_f = {
                     "Rasierter Pony, hellblau"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_HAIR_14",
@@ -4858,7 +4858,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_HAIR_15",
@@ -4878,7 +4878,7 @@ export var clothing_inventory_f = {
                     "Lockiger Bob, hellrot"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_HAIR_2",
@@ -4897,7 +4897,7 @@ export var clothing_inventory_f = {
                     "Stufenbob, grün"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_HAIR_3",
@@ -4915,7 +4915,7 @@ export var clothing_inventory_f = {
                     "Zöpfe, braun"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_HAIR_4",
@@ -4934,7 +4934,7 @@ export var clothing_inventory_f = {
                     "Pferdeschwanz, blau"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_HAIR_5",
@@ -4953,7 +4953,7 @@ export var clothing_inventory_f = {
                     "Iro, geflochten, pink"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_HAIR_6",
@@ -4971,7 +4971,7 @@ export var clothing_inventory_f = {
                     "Flechtzöpfe, braun"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_HAIR_7",
@@ -4990,7 +4990,7 @@ export var clothing_inventory_f = {
                     "Bob, helllila"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_HAIR_8",
@@ -5009,7 +5009,7 @@ export var clothing_inventory_f = {
                     "Iro, modisch, pink"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_HAIR_9",
@@ -5028,7 +5028,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "DLC_MP_VAL_F_HAIR0",
@@ -5049,7 +5049,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRESS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday10ng"
             },
             {
                 "cHash": "DLC_MP_LOW_F_HAIR0",
@@ -5063,7 +5063,7 @@ export var clothing_inventory_f = {
                     "Gedrückte Flechtreihen"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_LOW_F_HAIR1",
@@ -5077,7 +5077,7 @@ export var clothing_inventory_f = {
                     "Blätter-Flechtreihen"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_LOW_F_HAIR2",
@@ -5091,7 +5091,7 @@ export var clothing_inventory_f = {
                     "Zickzack-Flechtreihen"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_LOW_F_HAIR3",
@@ -5109,7 +5109,7 @@ export var clothing_inventory_f = {
                     "DRAW_0",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_HAIR_0",
@@ -5125,7 +5125,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DUFFEL_BAG"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_HAIR_0",
@@ -5139,7 +5139,7 @@ export var clothing_inventory_f = {
                     "Locker zurückgekämmt"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_HAIR_1",
@@ -5153,7 +5153,7 @@ export var clothing_inventory_f = {
                     "Zurückgekämmter Undercut"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_HAIR_2",
@@ -5167,7 +5167,7 @@ export var clothing_inventory_f = {
                     "Zur Seite gekämmter Undercut"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_HAIR_3",
@@ -5181,7 +5181,7 @@ export var clothing_inventory_f = {
                     "Stacheliger Iro"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_HAIR_4",
@@ -5195,7 +5195,7 @@ export var clothing_inventory_f = {
                     "Bandana und Flechtzopf"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_HAIR_5",
@@ -5209,7 +5209,7 @@ export var clothing_inventory_f = {
                     "Skinbyrd"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_HAIR_6",
@@ -5225,7 +5225,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "PARACHUTE"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_HIPS_F_HAIR0",
@@ -5243,7 +5243,7 @@ export var clothing_inventory_f = {
                     "Langer Pony, braun"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_HIPS_F_HAIR1",
@@ -5265,7 +5265,7 @@ export var clothing_inventory_f = {
                     "JACKET",
                     "OPEN_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_LOW2_F_HAIR0",
@@ -5279,7 +5279,7 @@ export var clothing_inventory_f = {
                     "Wellenzöpfe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LOW2_F_HAIR1",
@@ -5293,7 +5293,7 @@ export var clothing_inventory_f = {
                     "Wickelzöpfe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LOW2_F_HAIR2",
@@ -5311,7 +5311,7 @@ export var clothing_inventory_f = {
                     "DRAW_0",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LOW2_F_TEETH_4",
@@ -5328,7 +5328,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "APART_DRAW_0"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_0",
@@ -5342,7 +5342,7 @@ export var clothing_inventory_f = {
                     "Kurz"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_1",
@@ -5356,7 +5356,7 @@ export var clothing_inventory_f = {
                     "Stufenbob"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_10",
@@ -5370,7 +5370,7 @@ export var clothing_inventory_f = {
                     "Locker"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_11",
@@ -5384,7 +5384,7 @@ export var clothing_inventory_f = {
                     "Pixieschnitt"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_12",
@@ -5398,7 +5398,7 @@ export var clothing_inventory_f = {
                     "Rasierter Pony"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_13",
@@ -5412,7 +5412,7 @@ export var clothing_inventory_f = {
                     "Dutt"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_14",
@@ -5426,7 +5426,7 @@ export var clothing_inventory_f = {
                     "Lockiger Bob"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_15",
@@ -5440,7 +5440,7 @@ export var clothing_inventory_f = {
                     "Wilder Dutt, kastanienbraun"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_16",
@@ -5454,7 +5454,7 @@ export var clothing_inventory_f = {
                     "Pin-up-Girl, kastanienbraun"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_17",
@@ -5468,7 +5468,7 @@ export var clothing_inventory_f = {
                     "Kleiner Dutt, schwarz"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_18",
@@ -5482,7 +5482,7 @@ export var clothing_inventory_f = {
                     "Gelockter Bob, kastanienbraun"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_19",
@@ -5496,7 +5496,7 @@ export var clothing_inventory_f = {
                     "Flapper-Bob, kastanienbraun"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_2",
@@ -5510,7 +5510,7 @@ export var clothing_inventory_f = {
                     "Zöpfe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_20",
@@ -5524,7 +5524,7 @@ export var clothing_inventory_f = {
                     "Langer Pony, kastanienbraun"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_21",
@@ -5538,7 +5538,7 @@ export var clothing_inventory_f = {
                     "Flechtdutt, kastanienbraun"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_22",
@@ -5552,7 +5552,7 @@ export var clothing_inventory_f = {
                     "Vokuhila, kastanienbraun"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_23",
@@ -5566,7 +5566,7 @@ export var clothing_inventory_f = {
                     "Gedrückte Flechtreihen"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_24",
@@ -5580,7 +5580,7 @@ export var clothing_inventory_f = {
                     "Blätter-Flechtreihen"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_25",
@@ -5594,7 +5594,7 @@ export var clothing_inventory_f = {
                     "Zickzack-Flechtreihen"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_26",
@@ -5608,7 +5608,7 @@ export var clothing_inventory_f = {
                     "Zöpfe und Pony"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_27",
@@ -5622,7 +5622,7 @@ export var clothing_inventory_f = {
                     "Wellenzöpfe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_28",
@@ -5636,7 +5636,7 @@ export var clothing_inventory_f = {
                     "Wickelzöpfe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_29",
@@ -5650,7 +5650,7 @@ export var clothing_inventory_f = {
                     "Gerollte Haartolle"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_3",
@@ -5664,7 +5664,7 @@ export var clothing_inventory_f = {
                     "Pferdeschwanz"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_30",
@@ -5678,7 +5678,7 @@ export var clothing_inventory_f = {
                     "Locker zurückgekämmt"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_31",
@@ -5692,7 +5692,7 @@ export var clothing_inventory_f = {
                     "Zurückgekämmter Undercut"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_32",
@@ -5706,7 +5706,7 @@ export var clothing_inventory_f = {
                     "Zur Seite gekämmter Undercut"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_33",
@@ -5720,7 +5720,7 @@ export var clothing_inventory_f = {
                     "Stacheliger Iro"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_34",
@@ -5734,7 +5734,7 @@ export var clothing_inventory_f = {
                     "Bandana und Flechtzopf"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_35",
@@ -5748,7 +5748,7 @@ export var clothing_inventory_f = {
                     "Stufenmod"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_36",
@@ -5762,7 +5762,7 @@ export var clothing_inventory_f = {
                     "Skinbyrd"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_37",
@@ -5776,7 +5776,7 @@ export var clothing_inventory_f = {
                     "Strenger Dutt"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_38",
@@ -5790,7 +5790,7 @@ export var clothing_inventory_f = {
                     "Kurzer Bob"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_4",
@@ -5804,7 +5804,7 @@ export var clothing_inventory_f = {
                     "Iro, geflochten"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_5",
@@ -5818,7 +5818,7 @@ export var clothing_inventory_f = {
                     "Flechtzöpfe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_6",
@@ -5832,7 +5832,7 @@ export var clothing_inventory_f = {
                     "Bob"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_7",
@@ -5846,7 +5846,7 @@ export var clothing_inventory_f = {
                     "Iro, modisch"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_8",
@@ -5860,7 +5860,7 @@ export var clothing_inventory_f = {
                     "Bananenfrisur"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_HAIR_9",
@@ -5874,7 +5874,7 @@ export var clothing_inventory_f = {
                     "Langer Bob"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_IND_F_HAIR0",
@@ -5894,7 +5894,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "TAILS_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_HAIR_0",
@@ -5908,7 +5908,7 @@ export var clothing_inventory_f = {
                     "Ohnmächtiger Zorn"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_BUSI_F_HAIR0",
@@ -5926,7 +5926,7 @@ export var clothing_inventory_f = {
                     "Kleiner Dutt, blond"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday4ng"
             },
             {
                 "cHash": "DLC_MP_BUSI_F_HAIR1",
@@ -5948,7 +5948,7 @@ export var clothing_inventory_f = {
                     "JACKET",
                     "CLOSED_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday4ng"
             }
         ],
         [
@@ -5964,7 +5964,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_UPPR_1",
@@ -5978,7 +5978,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_UPPR_10",
@@ -5992,7 +5992,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_UPPR_11",
@@ -6006,7 +6006,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_UPPR_12",
@@ -6020,7 +6020,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_UPPR_13",
@@ -6034,7 +6034,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_UPPR_14",
@@ -6048,7 +6048,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_UPPR_15",
@@ -6062,7 +6062,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_UPPR_2",
@@ -6076,7 +6076,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_UPPR_3",
@@ -6090,7 +6090,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_UPPR_4",
@@ -6104,7 +6104,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_UPPR_5",
@@ -6118,7 +6118,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_UPPR_6",
@@ -6132,7 +6132,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_UPPR_7",
@@ -6146,7 +6146,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_UPPR_8",
@@ -6160,7 +6160,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "DLC_MP_H4_F_TORSO_0",
@@ -6176,7 +6176,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_TORSO_1",
@@ -6194,7 +6194,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_TORSO_10",
@@ -6217,7 +6217,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_TORSO_2",
@@ -6234,7 +6234,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_TORSO_3",
@@ -6251,7 +6251,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_TORSO_4",
@@ -6268,7 +6268,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_TORSO_5",
@@ -6284,7 +6284,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_TORSO_6",
@@ -6300,7 +6300,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_TORSO_7",
@@ -6318,7 +6318,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_TORSO_8",
@@ -6354,7 +6354,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_LTS_F_UPPR_0",
@@ -6375,7 +6375,7 @@ export var clothing_inventory_f = {
                     "COMBAT_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "mplts"
             },
             {
                 "cHash": "DLC_MP_XMAS3_F_TORSO_0",
@@ -6391,7 +6391,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpxmas_604490"
             },
             {
                 "cHash": "DLC_MP_VAL_F_UPPR0",
@@ -6414,7 +6414,7 @@ export var clothing_inventory_f = {
                     "DRAW_1",
                     "TAT_DECL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday12ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_0",
@@ -6432,7 +6432,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_1",
@@ -6450,7 +6450,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_10",
@@ -6468,7 +6468,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_11",
@@ -6486,7 +6486,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_12",
@@ -6504,7 +6504,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_13",
@@ -6522,7 +6522,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_14",
@@ -6540,7 +6540,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_15",
@@ -6558,7 +6558,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_16",
@@ -6576,7 +6576,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_17",
@@ -6594,7 +6594,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_18",
@@ -6612,7 +6612,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_19",
@@ -6630,7 +6630,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_2",
@@ -6648,7 +6648,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_20",
@@ -6666,7 +6666,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_21",
@@ -6684,7 +6684,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_22",
@@ -6702,7 +6702,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_23",
@@ -6720,7 +6720,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_24",
@@ -6738,7 +6738,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_25",
@@ -6756,7 +6756,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_26",
@@ -6774,7 +6774,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_27",
@@ -6792,7 +6792,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_28",
@@ -6810,7 +6810,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_29",
@@ -6828,7 +6828,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_3",
@@ -6846,7 +6846,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_30",
@@ -6864,7 +6864,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_31",
@@ -6882,7 +6882,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_32",
@@ -6900,7 +6900,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_33",
@@ -6918,7 +6918,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_34",
@@ -6936,7 +6936,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_35",
@@ -6954,7 +6954,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_36",
@@ -6972,7 +6972,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_37",
@@ -6990,7 +6990,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_38",
@@ -7008,7 +7008,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_39",
@@ -7026,7 +7026,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_4",
@@ -7044,7 +7044,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_40",
@@ -7062,7 +7062,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_41",
@@ -7080,7 +7080,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_42",
@@ -7098,7 +7098,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_43",
@@ -7116,7 +7116,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_44",
@@ -7134,7 +7134,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_45",
@@ -7152,7 +7152,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_46",
@@ -7170,7 +7170,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_47",
@@ -7188,7 +7188,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_48",
@@ -7206,7 +7206,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_49",
@@ -7224,7 +7224,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_5",
@@ -7242,7 +7242,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_50",
@@ -7260,7 +7260,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_51",
@@ -7278,7 +7278,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_52",
@@ -7295,7 +7295,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_53",
@@ -7312,7 +7312,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_54",
@@ -7329,7 +7329,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_55",
@@ -7346,7 +7346,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_56",
@@ -7363,7 +7363,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_57",
@@ -7380,7 +7380,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_58",
@@ -7397,7 +7397,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_59",
@@ -7414,7 +7414,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_6",
@@ -7432,7 +7432,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_60",
@@ -7449,7 +7449,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_61",
@@ -7466,7 +7466,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_62",
@@ -7483,7 +7483,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_63",
@@ -7500,7 +7500,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_64",
@@ -7517,7 +7517,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_65",
@@ -7534,7 +7534,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_66",
@@ -7551,7 +7551,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_67",
@@ -7568,7 +7568,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_68",
@@ -7585,7 +7585,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_69",
@@ -7602,7 +7602,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_7",
@@ -7620,7 +7620,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_70",
@@ -7637,7 +7637,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_71",
@@ -7654,7 +7654,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_72",
@@ -7671,7 +7671,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_73",
@@ -7688,7 +7688,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_74",
@@ -7705,7 +7705,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_75",
@@ -7722,7 +7722,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_76",
@@ -7739,7 +7739,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_77",
@@ -7756,7 +7756,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_78",
@@ -7774,7 +7774,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_79",
@@ -7792,7 +7792,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_8",
@@ -7810,7 +7810,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_80",
@@ -7828,7 +7828,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_81",
@@ -7846,7 +7846,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_82",
@@ -7864,7 +7864,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_83",
@@ -7882,7 +7882,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_84",
@@ -7900,7 +7900,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_85",
@@ -7918,7 +7918,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_86",
@@ -7936,7 +7936,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_87",
@@ -7954,7 +7954,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_88",
@@ -7972,7 +7972,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_89",
@@ -7990,7 +7990,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_9",
@@ -8008,7 +8008,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_90",
@@ -8027,7 +8027,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_ONLY",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_0",
@@ -8041,7 +8041,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_1",
@@ -8057,7 +8057,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_10",
@@ -8074,7 +8074,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_11",
@@ -8091,7 +8091,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_12",
@@ -8108,7 +8108,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_13",
@@ -8125,7 +8125,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_14",
@@ -8141,7 +8141,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_15",
@@ -8157,7 +8157,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_16",
@@ -8174,7 +8174,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_17",
@@ -8191,7 +8191,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_18",
@@ -8208,7 +8208,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_19",
@@ -8223,7 +8223,7 @@ export var clothing_inventory_f = {
                     "Graue Wollhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_2",
@@ -8239,7 +8239,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_20",
@@ -8256,7 +8256,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_21",
@@ -8272,7 +8272,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_22",
@@ -8288,7 +8288,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_23",
@@ -8305,7 +8305,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_3",
@@ -8322,7 +8322,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_4",
@@ -8339,7 +8339,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_5",
@@ -8356,7 +8356,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_6",
@@ -8373,7 +8373,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_7",
@@ -8389,7 +8389,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_8",
@@ -8405,7 +8405,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_TORSO_0",
@@ -8433,7 +8433,7 @@ export var clothing_inventory_f = {
                     "GLOVES",
                     "MOTOX_GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_TORSO_0",
@@ -8460,7 +8460,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "ARENA_DRAW_1"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_TORSO_1",
@@ -8493,7 +8493,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "ARENA_DRAW_2"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_TORSO_2",
@@ -8520,7 +8520,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "ARENA_DRAW_3"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_TORSO_0",
@@ -8536,7 +8536,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_TORSO_1",
@@ -8553,7 +8553,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_TORSO_10",
@@ -8570,7 +8570,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_TORSO_11",
@@ -8587,7 +8587,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_TORSO_12",
@@ -8604,7 +8604,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_TORSO_13",
@@ -8620,7 +8620,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_TORSO_14",
@@ -8636,7 +8636,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_TORSO_15",
@@ -8653,7 +8653,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_TORSO_2",
@@ -8670,7 +8670,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_TORSO_3",
@@ -8687,7 +8687,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_TORSO_4",
@@ -8704,7 +8704,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_TORSO_5",
@@ -8720,7 +8720,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_TORSO_6",
@@ -8736,7 +8736,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_TORSO_7",
@@ -8751,7 +8751,7 @@ export var clothing_inventory_f = {
                     "Weiße Chirurgenhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_TORSO_8",
@@ -8767,7 +8767,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_UPPR_0",
@@ -8790,7 +8790,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_UPPR_1",
@@ -8813,7 +8813,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_UPPR_10",
@@ -8836,7 +8836,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_UPPR_11",
@@ -8859,7 +8859,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_UPPR_12",
@@ -8882,7 +8882,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_UPPR_2",
@@ -8905,7 +8905,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_UPPR_3",
@@ -8928,7 +8928,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_UPPR_4",
@@ -8951,7 +8951,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_UPPR_5",
@@ -8974,7 +8974,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_UPPR_6",
@@ -8997,7 +8997,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_UPPR_7",
@@ -9020,7 +9020,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_UPPR_8",
@@ -9043,7 +9043,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_0",
@@ -9079,7 +9079,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_1",
@@ -9115,7 +9115,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_10",
@@ -9151,7 +9151,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_11",
@@ -9187,7 +9187,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_12",
@@ -9223,7 +9223,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_13",
@@ -9259,7 +9259,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_14",
@@ -9295,7 +9295,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_15",
@@ -9331,7 +9331,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_16",
@@ -9367,7 +9367,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_17",
@@ -9403,7 +9403,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_18",
@@ -9439,7 +9439,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_19",
@@ -9475,7 +9475,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_2",
@@ -9511,7 +9511,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_20",
@@ -9547,7 +9547,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_21",
@@ -9583,7 +9583,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_22",
@@ -9619,7 +9619,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_23",
@@ -9655,7 +9655,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_24",
@@ -9691,7 +9691,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_25",
@@ -9727,7 +9727,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_26",
@@ -9763,7 +9763,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_27",
@@ -9799,7 +9799,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_28",
@@ -9835,7 +9835,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_29",
@@ -9871,7 +9871,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_3",
@@ -9907,7 +9907,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_30",
@@ -9943,7 +9943,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_31",
@@ -9979,7 +9979,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_32",
@@ -10015,7 +10015,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_33",
@@ -10051,7 +10051,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_34",
@@ -10087,7 +10087,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_35",
@@ -10123,7 +10123,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_4",
@@ -10159,7 +10159,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_5",
@@ -10195,7 +10195,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_6",
@@ -10231,7 +10231,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_7",
@@ -10267,7 +10267,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_8",
@@ -10303,7 +10303,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_TORSO_0",
@@ -10320,7 +10320,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_TORSO_1",
@@ -10344,7 +10344,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_TORSO_10",
@@ -10368,7 +10368,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_TORSO_11",
@@ -10392,7 +10392,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_TORSO_12",
@@ -10416,7 +10416,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_TORSO_13",
@@ -10440,7 +10440,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_TORSO_14",
@@ -10464,7 +10464,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_TORSO_15",
@@ -10488,7 +10488,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_TORSO_16",
@@ -10512,7 +10512,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_TORSO_17",
@@ -10536,7 +10536,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_TORSO_18",
@@ -10560,7 +10560,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_TORSO_2",
@@ -10584,7 +10584,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_TORSO_3",
@@ -10608,7 +10608,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_TORSO_4",
@@ -10632,7 +10632,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_TORSO_5",
@@ -10656,7 +10656,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_TORSO_6",
@@ -10680,7 +10680,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_TORSO_7",
@@ -10704,7 +10704,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_TORSO_8",
@@ -10728,7 +10728,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_REPLAY_F_TORSO_0",
@@ -10744,7 +10744,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "PARACHUTE"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday9ng"
             }
         ],
         [
@@ -10775,7 +10775,7 @@ export var clothing_inventory_f = {
                     "Rote Punk-Röhrenjeans"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_LOWR_1",
@@ -10804,7 +10804,7 @@ export var clothing_inventory_f = {
                     "Lila, normal"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_LOWR_10",
@@ -10833,7 +10833,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_LOWR_11",
@@ -10862,7 +10862,7 @@ export var clothing_inventory_f = {
                     "Weiße Cargohose"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_LOWR_12",
@@ -10891,7 +10891,7 @@ export var clothing_inventory_f = {
                     "Lila Faltenrock"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_LOWR_13",
@@ -10920,7 +10920,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_LOWR_14",
@@ -10949,7 +10949,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_LOWR_15",
@@ -10978,7 +10978,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_LOWR_2",
@@ -11007,7 +11007,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_LOWR_3",
@@ -11036,7 +11036,7 @@ export var clothing_inventory_f = {
                     "Orange Chinohose"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_LOWR_4",
@@ -11065,7 +11065,7 @@ export var clothing_inventory_f = {
                     "Hellbraun, gekürzt"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_LOWR_5",
@@ -11094,7 +11094,7 @@ export var clothing_inventory_f = {
                     "Orange Jeans-Shorts"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_LOWR_6",
@@ -11123,7 +11123,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_LOWR_7",
@@ -11152,7 +11152,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_LOWR_8",
@@ -11181,7 +11181,7 @@ export var clothing_inventory_f = {
                     "Marineblauer zweifarbiger Mini"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_LOWR_9",
@@ -11210,7 +11210,7 @@ export var clothing_inventory_f = {
                     "Gestreifte Pailletten"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "DLC_MP_AR_F_LEGS_0",
@@ -11240,7 +11240,7 @@ export var clothing_inventory_f = {
                     "PILOT_SUIT",
                     "OUTFIT_ONLY"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "mpairraces"
             },
             {
                 "cHash": "DLC_MP_AR_F_LEGS_1",
@@ -11276,7 +11276,7 @@ export var clothing_inventory_f = {
                     "PILOT_SUIT",
                     "OUTFIT_ONLY"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "mpairraces"
             },
             {
                 "cHash": "DLC_MP_AR_F_LEGS_2",
@@ -11294,7 +11294,7 @@ export var clothing_inventory_f = {
                     "AIR_DRAW_0",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "mpairraces"
             },
             {
                 "cHash": "DLC_MP_ASS_F_LEGS_0",
@@ -11314,7 +11314,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_LEGS_0",
@@ -11341,7 +11341,7 @@ export var clothing_inventory_f = {
                     "Gepunktete Fitnesshose"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_LEGS_1",
@@ -11358,7 +11358,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_13"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_LEGS_2",
@@ -11381,7 +11381,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_5"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_LEGS_3",
@@ -11408,7 +11408,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_8"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_LEGS_4",
@@ -11442,7 +11442,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_4",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_H4_F_LEGS_0",
@@ -11458,7 +11458,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_5"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_LEGS_1",
@@ -11482,7 +11482,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_LTS_F_LEGS_0",
@@ -11502,7 +11502,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "ARMOUR"
                 ],
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "mplts"
             },
             {
                 "cHash": "DLC_MP_XMAS3_F_LEGS_0",
@@ -11520,7 +11520,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SILK_PYJAMAS"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "mpxmas_604490"
             },
             {
                 "cHash": "DLC_MP_XMAS3_F_LEGS_1",
@@ -11549,7 +11549,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "mpxmas_604490"
             },
             {
                 "cHash": "DLC_MP_VAL_F_LEGS0",
@@ -11569,7 +11569,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "STOCKINGS"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday10ng"
             },
             {
                 "cHash": "DLC_MP_VAL_F_LEGS1",
@@ -11588,7 +11588,7 @@ export var clothing_inventory_f = {
                     "DRESS",
                     "DRESS_LEGS"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday10ng"
             },
             {
                 "cHash": "DLC_MP_VAL_F_LEGS2",
@@ -11606,7 +11606,7 @@ export var clothing_inventory_f = {
                     "DRESS",
                     "STOCKINGS"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday10ng"
             },
             {
                 "cHash": "DLC_MP_VAL_F_LEGS3",
@@ -11624,7 +11624,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "LONG_NECKLACE"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday10ng"
             },
             {
                 "cHash": "DLC_MP_VAL2_F_LEGS_0",
@@ -11651,7 +11651,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "STOCKINGS"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_VAL2_F_LEGS_1",
@@ -11678,7 +11678,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "UNDER_JACKET"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_LOW_F_LEGS_0",
@@ -11700,7 +11700,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_LEGS_0",
@@ -11722,7 +11722,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_PILOT_F_LEGS_0",
@@ -11738,7 +11738,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "ARMOUR"
                 ],
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_LEGS_0",
@@ -11756,7 +11756,7 @@ export var clothing_inventory_f = {
                     "HEIST_DRAW_1",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_LEGS_1",
@@ -11775,7 +11775,7 @@ export var clothing_inventory_f = {
                     "HEIST_DRAW_10",
                     "OUTFIT_ONLY"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_LEGS_10",
@@ -11793,7 +11793,7 @@ export var clothing_inventory_f = {
                     "HEIST_DRAW_2",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_LEGS_2",
@@ -11811,7 +11811,7 @@ export var clothing_inventory_f = {
                     "HEIST_DRAW_3",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_LEGS_3",
@@ -11828,7 +11828,7 @@ export var clothing_inventory_f = {
                     "SKIRT",
                     "DRAW_7"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_LEGS_4",
@@ -11848,7 +11848,7 @@ export var clothing_inventory_f = {
                     "DRAW_6",
                     "HESIT_DRAW_5"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_LEGS_5",
@@ -11872,7 +11872,7 @@ export var clothing_inventory_f = {
                     "HEIST_DRAW_6",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_LEGS_6",
@@ -11893,7 +11893,7 @@ export var clothing_inventory_f = {
                     "HEIST_DRAW_7",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_LEGS_7",
@@ -11914,7 +11914,7 @@ export var clothing_inventory_f = {
                     "HEIST_DRAW_8",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_LEGS_8",
@@ -11933,7 +11933,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_3"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_LEGS_9",
@@ -11955,7 +11955,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "OVER_JACKET"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_LEGS_0",
@@ -11971,7 +11971,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SILK_PYJAMAS"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_LEGS_1",
@@ -11993,7 +11993,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_15"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_LEGS_10",
@@ -12014,7 +12014,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SILK_ROBE"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_LEGS_11",
@@ -12038,7 +12038,7 @@ export var clothing_inventory_f = {
                     "APART_DRAW_12",
                     "DRAW_1"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_LEGS_12",
@@ -12059,7 +12059,7 @@ export var clothing_inventory_f = {
                     "APART_DRAW_2",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_LEGS_2",
@@ -12078,7 +12078,7 @@ export var clothing_inventory_f = {
                     "APART_DRAW_3",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_LEGS_3",
@@ -12096,7 +12096,7 @@ export var clothing_inventory_f = {
                     "APART_DRAW_4",
                     "DRAW_6"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_LEGS_4",
@@ -12117,7 +12117,7 @@ export var clothing_inventory_f = {
                     "APART_DRAW_5",
                     "DRAW_13"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_LEGS_5",
@@ -12138,7 +12138,7 @@ export var clothing_inventory_f = {
                     "APART_DRAW_6",
                     "DRAW_6"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_LEGS_6",
@@ -12158,7 +12158,7 @@ export var clothing_inventory_f = {
                     "APART_DRAW_7",
                     "DRAW_6"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_LEGS_7",
@@ -12175,7 +12175,7 @@ export var clothing_inventory_f = {
                     "APART_DRAW_8",
                     "DRAW_13"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_LEGS_8",
@@ -12195,7 +12195,7 @@ export var clothing_inventory_f = {
                     "APART_DRAW_9",
                     "DRAW_13"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_LEGS_9",
@@ -12214,7 +12214,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "UNDER_JACKET"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_EXEC_F_LEGS_0",
@@ -12240,7 +12240,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SILK_PYJAMAS"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_EXEC_F_LEGS_1",
@@ -12273,7 +12273,7 @@ export var clothing_inventory_f = {
                     "SWEAT_VEST",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_LEGS_0",
@@ -12294,7 +12294,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_0"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_LEGS_1",
@@ -12315,7 +12315,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_13"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_LEGS_2",
@@ -12333,7 +12333,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_13"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_LEGS_3",
@@ -12351,7 +12351,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_13"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_LEGS_4",
@@ -12369,7 +12369,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_14"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_LEGS_5",
@@ -12391,7 +12391,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "DEADLINE_OUTFIT"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_LEGS_6",
@@ -12420,7 +12420,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_4",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_HIPS_F_LEGS0",
@@ -12448,7 +12448,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_8"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_HIPS_F_LEGS1",
@@ -12464,7 +12464,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_13"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_HIPS_F_LEGS2",
@@ -12495,7 +12495,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_5"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_LEGS_0",
@@ -12522,7 +12522,7 @@ export var clothing_inventory_f = {
                     "STUNT_DRAW_1",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_LEGS_1",
@@ -12551,7 +12551,7 @@ export var clothing_inventory_f = {
                     "STUNT_DRAW_2",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_LEGS_2",
@@ -12578,7 +12578,7 @@ export var clothing_inventory_f = {
                     "STUNT_DRAW_3",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_LEGS_3",
@@ -12613,7 +12613,7 @@ export var clothing_inventory_f = {
                     "STUNT_DRAW_4",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_LEGS_4",
@@ -12634,7 +12634,7 @@ export var clothing_inventory_f = {
                     "STUNT_DRAW_0",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_LEGS_0",
@@ -12654,7 +12654,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LOW2_F_LEGS_0",
@@ -12674,7 +12674,7 @@ export var clothing_inventory_f = {
                     "HIGH_WAIST",
                     "LOW2_DRAW_1"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LOW2_F_LEGS_1",
@@ -12695,7 +12695,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_LEGS_0",
@@ -12728,7 +12728,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_2"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_LEGS_1",
@@ -12764,7 +12764,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "MORPH_SUIT"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_LEGS_10",
@@ -12783,7 +12783,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "MORPH_SUIT"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_LEGS_11",
@@ -12802,7 +12802,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "MORPH_SUIT"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_LEGS_12",
@@ -12831,7 +12831,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "ARENA_DRAW_2"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_LEGS_2",
@@ -12847,7 +12847,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_0"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_LEGS_3",
@@ -12877,7 +12877,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "MORPH_SUIT"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_LEGS_4",
@@ -12912,7 +12912,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "ARENA_DRAW_5"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_LEGS_5",
@@ -12946,7 +12946,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "MORPH_SUIT"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_LEGS_6",
@@ -12976,7 +12976,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "MORPH_SUIT"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_LEGS_7",
@@ -13012,7 +13012,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "MORPH_SUIT"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_LEGS_8",
@@ -13041,7 +13041,7 @@ export var clothing_inventory_f = {
                     "ARENA_DRAW_9",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_LEGS_9",
@@ -13060,7 +13060,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_4",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IND_F_LEGS_0",
@@ -13078,7 +13078,7 @@ export var clothing_inventory_f = {
                     "MULTI_DECAL",
                     "OFF_SHOULDER_ACCS"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_LEGS_0",
@@ -13102,7 +13102,7 @@ export var clothing_inventory_f = {
                     "IE_DRAW_1",
                     "DRAW_13"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_LEGS_1",
@@ -13121,7 +13121,7 @@ export var clothing_inventory_f = {
                     "IE_DRAW_2",
                     "DRAW_13"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_LEGS_2",
@@ -13145,7 +13145,7 @@ export var clothing_inventory_f = {
                     "IE_DRAW_3",
                     "DRAW_13"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_LEGS_3",
@@ -13164,7 +13164,7 @@ export var clothing_inventory_f = {
                     "IE_DRAW_4",
                     "DRAW_13"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_LEGS_4",
@@ -13190,7 +13190,7 @@ export var clothing_inventory_f = {
                     "IE_DRAW_5",
                     "DRAW_13"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_LEGS_5",
@@ -13209,7 +13209,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "JUGG_SUIT"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_LEGS_6",
@@ -13235,7 +13235,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_13"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_LEGS_7",
@@ -13269,7 +13269,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "MORPH_SUIT"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_LEGS_8",
@@ -13287,7 +13287,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "JUGG_SUIT"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_LEGS_0",
@@ -13304,7 +13304,7 @@ export var clothing_inventory_f = {
                     "CASINO_ITEM",
                     "DRAW_5"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_LEGS_1",
@@ -13331,7 +13331,7 @@ export var clothing_inventory_f = {
                     "CASINO_ITEM",
                     "DRAW_3"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_LEGS_2",
@@ -13373,7 +13373,7 @@ export var clothing_inventory_f = {
                     "CASINO_ITEM",
                     "SILK_ROBE"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_LEGS_3",
@@ -13397,7 +13397,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_LEGS_0",
@@ -13441,7 +13441,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "MORPH_SUIT"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_LEGS_1",
@@ -13466,7 +13466,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_LEGS_2",
@@ -13488,7 +13488,7 @@ export var clothing_inventory_f = {
                     "HAS_ALT_VERSION",
                     "ALT_LEGS"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_LEGS_3",
@@ -13533,7 +13533,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "HAS_ALT_VERSION"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_LEGS_4",
@@ -13578,7 +13578,7 @@ export var clothing_inventory_f = {
                     "CAT_SUIT",
                     "DRAW_13"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_LEGS_5",
@@ -13612,7 +13612,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_LEGS_0",
@@ -13631,7 +13631,7 @@ export var clothing_inventory_f = {
                     "H3_DRAW_1",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_LEGS_1",
@@ -13649,7 +13649,7 @@ export var clothing_inventory_f = {
                     "DRAW_1",
                     "HAS_ALT_VERSION"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_LEGS_2",
@@ -13668,7 +13668,7 @@ export var clothing_inventory_f = {
                     "HAS_ALT_VERSION",
                     "ALT_LEGS"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_LEGS_3",
@@ -13686,7 +13686,7 @@ export var clothing_inventory_f = {
                     "HEIST_DRAW_1",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_LEGS_4",
@@ -13723,7 +13723,7 @@ export var clothing_inventory_f = {
                     "H3_DRAW_5",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_LEGS_5",
@@ -13760,7 +13760,7 @@ export var clothing_inventory_f = {
                     "H3_DRAW_0",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_LEGS_0",
@@ -13783,7 +13783,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_LEGS_0",
@@ -13825,7 +13825,7 @@ export var clothing_inventory_f = {
                     "HAS_ALT_VERSION",
                     "ALT_LEGS"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_LEGS_1",
@@ -13864,7 +13864,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_5"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_LEGS_2",
@@ -13906,7 +13906,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "DUNGAREES"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_LEGS_3",
@@ -13950,7 +13950,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "DUNGAREES"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_LEGS_4",
@@ -13977,7 +13977,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_4"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_LEGS_0",
@@ -13993,7 +13993,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_6"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_LEGS_1",
@@ -14033,7 +14033,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_13"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_LEGS_2",
@@ -14076,7 +14076,7 @@ export var clothing_inventory_f = {
                     "DRAW_1",
                     "HAS_ALT_VERSION"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_LEGS_3",
@@ -14102,7 +14102,7 @@ export var clothing_inventory_f = {
                     "HAS_ALT_VERSION",
                     "ALT_LEGS"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_LEGS_4",
@@ -14125,7 +14125,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_5"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_LEGS_5",
@@ -14159,7 +14159,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_4",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_BEACH_F",
@@ -14186,7 +14186,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_4"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS2_F_LEGS_0",
@@ -14205,7 +14205,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SCARF"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_BUSI_F_LEGS0",
@@ -14233,7 +14233,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_7"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday4ng"
             },
             {
                 "cHash": "DLC_MP_BUSI_F_LEGS1",
@@ -14262,7 +14262,7 @@ export var clothing_inventory_f = {
                     "DRAW_8",
                     "SCARF"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday4ng"
             }
         ],
         [
@@ -14278,7 +14278,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_HAND_1",
@@ -14292,7 +14292,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_HAND_2",
@@ -14306,7 +14306,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_HAND_3",
@@ -14320,7 +14320,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_HAND_4",
@@ -14334,7 +14334,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_HAND_5",
@@ -14348,7 +14348,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_HAND_6",
@@ -14362,7 +14362,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_HAND_7",
@@ -14376,7 +14376,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_HAND_8",
@@ -14390,7 +14390,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "DLC_MP_H4_F_HAND_0",
@@ -14430,7 +14430,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DUFFEL_BAG"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_HAND_1",
@@ -14470,7 +14470,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DUFFEL_BAG"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_HAND_2",
@@ -14510,7 +14510,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DUFFEL_BAG"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_HAND_3",
@@ -14559,7 +14559,7 @@ export var clothing_inventory_f = {
                     "HOODED_JACKET",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_LTS_F_HAND_0",
@@ -14573,7 +14573,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "mplts"
             },
             {
                 "cHash": "DLC_MP_LTS_F_HAND_1",
@@ -14612,7 +14612,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "mplts"
             },
             {
                 "cHash": "DLC_MP_LTS_F_HAND_2",
@@ -14651,7 +14651,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "mplts"
             },
             {
                 "cHash": "DLC_MP_LTS_F_HAND_3",
@@ -14690,7 +14690,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "mplts"
             },
             {
                 "cHash": "DLC_MP_LTS_F_HAND_4",
@@ -14729,7 +14729,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "mplts"
             },
             {
                 "cHash": "DLC_MP_LTS_F_HAND_5",
@@ -14768,7 +14768,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "mplts"
             },
             {
                 "cHash": "DLC_MP_LTS_F_HAND_6",
@@ -14807,7 +14807,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "mplts"
             },
             {
                 "cHash": "DLC_MP_LTS_F_HAND_7",
@@ -14846,7 +14846,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "mplts"
             },
             {
                 "cHash": "DLC_MP_LTS_F_HAND_8",
@@ -14885,7 +14885,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "mplts"
             },
             {
                 "cHash": "DLC_MP_LTS_F_HAND_9",
@@ -14928,7 +14928,7 @@ export var clothing_inventory_f = {
                     "COMBAT_TOP",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mplts"
             },
             {
                 "cHash": "DLC_MP_PILOT_F_HAND_0",
@@ -14942,7 +14942,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_PILOT_F_HAND_1",
@@ -14981,7 +14981,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_PILOT_F_HAND_10",
@@ -14995,7 +14995,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_PILOT_F_HAND_2",
@@ -15034,7 +15034,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_PILOT_F_HAND_3",
@@ -15073,7 +15073,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_PILOT_F_HAND_4",
@@ -15112,7 +15112,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_PILOT_F_HAND_5",
@@ -15151,7 +15151,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_PILOT_F_HAND_6",
@@ -15190,7 +15190,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_PILOT_F_HAND_7",
@@ -15229,7 +15229,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_PILOT_F_HAND_8",
@@ -15268,7 +15268,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_PILOT_F_HAND_9",
@@ -15311,7 +15311,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_ONLY",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_HAND_0",
@@ -15327,7 +15327,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DUFFEL_BAG"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_HAND_1",
@@ -15343,7 +15343,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "PARACHUTE"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_HAND_10",
@@ -15384,7 +15384,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "PARACHUTE"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_HAND_11",
@@ -15404,7 +15404,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DUFFEL_BAG"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_HAND_2",
@@ -15420,7 +15420,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DUFFEL_BAG"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_HAND_3",
@@ -15436,7 +15436,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DUFFEL_BAG"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_HAND_4",
@@ -15452,7 +15452,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DUFFEL_BAG"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_HAND_5",
@@ -15468,7 +15468,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DUFFEL_BAG"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_HAND_6",
@@ -15484,7 +15484,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DUFFEL_BAG"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_HAND_7",
@@ -15500,7 +15500,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "PARACHUTE"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_HAND_8",
@@ -15516,7 +15516,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "PARACHUTE"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_HAND_9",
@@ -15560,7 +15560,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_HAND_0",
@@ -15576,7 +15576,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "PARACHUTE"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_HAND_1",
@@ -15592,7 +15592,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "PARACHUTE"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_HAND_2",
@@ -15633,7 +15633,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "PARACHUTE"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_HAND_3",
@@ -15674,7 +15674,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "PARACHUTE"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_HAND_4",
@@ -15694,7 +15694,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "PARACHUTE"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_HAND_5",
@@ -15735,7 +15735,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "PARACHUTE"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_HAND_6",
@@ -15751,7 +15751,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "PARACHUTE"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_HAND_7",
@@ -15780,7 +15780,7 @@ export var clothing_inventory_f = {
                     "BIKER_VEST",
                     "BLOCK_SCARFS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_HAND_0",
@@ -15795,7 +15795,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_HAND_1",
@@ -15810,7 +15810,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_HAND_10",
@@ -15825,7 +15825,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_HAND_2",
@@ -15840,7 +15840,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_HAND_3",
@@ -15855,7 +15855,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_HAND_4",
@@ -15870,7 +15870,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_HAND_5",
@@ -15885,7 +15885,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_HAND_6",
@@ -15900,7 +15900,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_HAND_7",
@@ -15915,7 +15915,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_HAND_8",
@@ -15930,7 +15930,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_HAND_9",
@@ -15950,7 +15950,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_HAND_0",
@@ -15991,7 +15991,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DUFFEL_BAG"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_HAND_1",
@@ -16032,7 +16032,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DUFFEL_BAG"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_HAND_2",
@@ -16073,7 +16073,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DUFFEL_BAG"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_HAND_3",
@@ -16120,7 +16120,7 @@ export var clothing_inventory_f = {
                     "BLOCK_CHAINS",
                     "BLOCK_PARACHUTE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_HAND_0",
@@ -16145,7 +16145,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "PARACHUTE"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_HAND_1",
@@ -16170,7 +16170,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "PARACHUTE"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_HAND_2",
@@ -16195,7 +16195,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "PARACHUTE"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_HAND_3",
@@ -16220,7 +16220,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "PARACHUTE"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_HAND_4",
@@ -16245,7 +16245,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "PARACHUTE"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_HAND_5",
@@ -16270,7 +16270,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "PARACHUTE"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_HAND_6",
@@ -16295,7 +16295,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "PARACHUTE"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_HAND_7",
@@ -16320,7 +16320,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "PARACHUTE"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_HAND_8",
@@ -16345,7 +16345,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "PARACHUTE"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_HAND_9",
@@ -16368,7 +16368,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_XMAS2_F_HAND_0",
@@ -16384,7 +16384,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "PARACHUTE"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS2_F_HAND_1",
@@ -16404,7 +16404,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "PARACHUTE"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS2_F_HAND_2",
@@ -16424,7 +16424,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "PARACHUTE"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS2_F_HAND_3",
@@ -16444,7 +16444,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "PARACHUTE"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS2_F_HAND_4",
@@ -16464,7 +16464,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "PARACHUTE"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS2_F_HAND_5",
@@ -16484,7 +16484,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "PARACHUTE"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS2_F_HAND_6",
@@ -16504,7 +16504,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "PARACHUTE"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS2_F_HAND_7",
@@ -16524,7 +16524,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "PARACHUTE"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS2_F_HAND_8",
@@ -16544,7 +16544,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "PARACHUTE"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS2_F_HAND_9",
@@ -16565,7 +16565,7 @@ export var clothing_inventory_f = {
                     "XMAS2_DRAW_0",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday3ng"
             }
         ],
         [
@@ -16596,7 +16596,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_FEET_1",
@@ -16625,7 +16625,7 @@ export var clothing_inventory_f = {
                     "Fluoreszente Backsides"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_FEET_10",
@@ -16654,7 +16654,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_FEET_11",
@@ -16683,7 +16683,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_FEET_12",
@@ -16712,7 +16712,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_FEET_13",
@@ -16741,7 +16741,7 @@ export var clothing_inventory_f = {
                     "Gelb, abgerundet"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_FEET_14",
@@ -16770,7 +16770,7 @@ export var clothing_inventory_f = {
                     "Rote offene Schuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_FEET_15",
@@ -16799,7 +16799,7 @@ export var clothing_inventory_f = {
                     "Cremefarbene Sandalen"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_FEET_2",
@@ -16828,7 +16828,7 @@ export var clothing_inventory_f = {
                     "Blaue Winterstiefel"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_FEET_3",
@@ -16857,7 +16857,7 @@ export var clothing_inventory_f = {
                     "Pfirsichfarbene Leinenschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_FEET_4",
@@ -16886,7 +16886,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_FEET_5",
@@ -16915,7 +16915,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_FEET_6",
@@ -16944,7 +16944,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_FEET_7",
@@ -16973,7 +16973,7 @@ export var clothing_inventory_f = {
                     "Ockerfarbene Kampfstiefel"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_FEET_8",
@@ -17002,7 +17002,7 @@ export var clothing_inventory_f = {
                     "Blitzblaue Halbstiefel"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_FEET_9",
@@ -17031,7 +17031,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_UPPR_9",
@@ -17048,7 +17048,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpairraces"
             },
             {
                 "cHash": "DLC_MP_AR_F_FEET_0",
@@ -17082,7 +17082,7 @@ export var clothing_inventory_f = {
                     "BLOCK_CHAINS",
                     "BLOCK_SCARFS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpairraces"
             },
             {
                 "cHash": "DLC_MP_BH_F_FEET_0",
@@ -17102,7 +17102,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "HAS_ALT_VERSION"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_FEET_1",
@@ -17147,7 +17147,7 @@ export var clothing_inventory_f = {
                     "HAS_ALT_VERSION",
                     "ALT_FEET"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_FEET_2",
@@ -17191,7 +17191,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_H4_F_FEET_0",
@@ -17211,7 +17211,7 @@ export var clothing_inventory_f = {
                     "HAS_ALT_VERSION",
                     "ALT_FEET"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_FEET_1",
@@ -17227,7 +17227,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DUFFEL_BAG"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_XMAS3_F_FEET_0",
@@ -17244,7 +17244,7 @@ export var clothing_inventory_f = {
                     "SANTA_SUIT",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpxmas_604490"
             },
             {
                 "cHash": "DLC_MP_VAL_F_FEET0",
@@ -17260,7 +17260,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday10ng"
             },
             {
                 "cHash": "DLC_MP_VAL2_F_FEET_0",
@@ -17287,7 +17287,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "HIGH_HEELS"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_VAL2_F_FEET_1",
@@ -17314,7 +17314,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_13"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_LOW_F_FEET_0",
@@ -17334,7 +17334,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_2"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_LOW_F_FEET_1",
@@ -17355,7 +17355,7 @@ export var clothing_inventory_f = {
                     "Br. Leinenschuhe mit Stulpen"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_FEET_0",
@@ -17371,7 +17371,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_11"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_FEET_1",
@@ -17392,7 +17392,7 @@ export var clothing_inventory_f = {
                     "LUXE_COAT",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_9",
@@ -17409,7 +17409,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_PILOT_F_FEET_0",
@@ -17423,7 +17423,7 @@ export var clothing_inventory_f = {
                     "Schwarze Fliegerstiefel"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_FEET_0",
@@ -17441,7 +17441,7 @@ export var clothing_inventory_f = {
                     "HEIST_DRAW_1",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_FEET_1",
@@ -17457,7 +17457,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_1"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_FEET_2",
@@ -17473,7 +17473,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_4"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_FEET_3",
@@ -17487,7 +17487,7 @@ export var clothing_inventory_f = {
                     "Ganz schwarze Sportschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_FEET_4",
@@ -17506,7 +17506,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "NIGHT_VISION"
                 ],
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_FEET_0",
@@ -17522,7 +17522,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "BARE_FEET"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_FEET_1",
@@ -17540,7 +17540,7 @@ export var clothing_inventory_f = {
                     "APART_DRAW_2",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_FEET_2",
@@ -17559,7 +17559,7 @@ export var clothing_inventory_f = {
                     "APART_DRAW_3",
                     "DRAW_3"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_FEET_3",
@@ -17581,7 +17581,7 @@ export var clothing_inventory_f = {
                     "COWBOY_BOOTS",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_FEET_4",
@@ -17605,7 +17605,7 @@ export var clothing_inventory_f = {
                     "ALT_FEET",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_FEET_5",
@@ -17623,7 +17623,7 @@ export var clothing_inventory_f = {
                     "Schwarze Cowboystiefel"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_EXEC_F_FEET_0",
@@ -17653,7 +17653,7 @@ export var clothing_inventory_f = {
                     "ALT_FEET",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_EXEC_F_FEET_1",
@@ -17684,7 +17684,7 @@ export var clothing_inventory_f = {
                     "CLOSED_JACKET",
                     "JACKET_ONLY"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_FEET_0",
@@ -17709,7 +17709,7 @@ export var clothing_inventory_f = {
                     "HAS_ALT_VERSION",
                     "ALT_FEET"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_FEET_1",
@@ -17733,7 +17733,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "HAS_ALT_VERSION"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_FEET_2",
@@ -17753,7 +17753,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "HAS_ALT_VERSION"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_FEET_3",
@@ -17778,7 +17778,7 @@ export var clothing_inventory_f = {
                     "HAS_ALT_VERSION",
                     "ALT_FEET"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_FEET_4",
@@ -17802,7 +17802,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "HAS_ALT_VERSION"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_FEET_5",
@@ -17824,7 +17824,7 @@ export var clothing_inventory_f = {
                     "HAS_ALT_VERSION",
                     "ALT_FEET"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_FEET_6",
@@ -17845,7 +17845,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "DEADLINE_OUTFIT"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_FEET_7",
@@ -17875,7 +17875,7 @@ export var clothing_inventory_f = {
                     "HAS_ALT_VERSION",
                     "ALT_FEET"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_FEET_8",
@@ -17890,7 +17890,7 @@ export var clothing_inventory_f = {
                     "Schwarze Gurtstiefel"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_HIPS_F_FEET0",
@@ -17916,7 +17916,7 @@ export var clothing_inventory_f = {
                     "DRAW_12",
                     "HIGH_HEELS"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_HIPS_F_FEET1",
@@ -17945,7 +17945,7 @@ export var clothing_inventory_f = {
                     "Goldnieten-Stulpenstiefel"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_FEET_0",
@@ -17972,7 +17972,7 @@ export var clothing_inventory_f = {
                     "STUNT_DRAW_1",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_FEET_1",
@@ -18001,7 +18001,7 @@ export var clothing_inventory_f = {
                     "STUNT_DRAW_2",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_FEET_2",
@@ -18020,7 +18020,7 @@ export var clothing_inventory_f = {
                     "STUNT_DRAW_3",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_FEET_3",
@@ -18040,7 +18040,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_LOW2_F_FEET_0",
@@ -18064,7 +18064,7 @@ export var clothing_inventory_f = {
                     "HIGH_HEELS",
                     "DRAW_8"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LOW2_F_FEET_1",
@@ -18085,7 +18085,7 @@ export var clothing_inventory_f = {
                     "Braune Turnschuh-Stiefel"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_FEET_0",
@@ -18129,7 +18129,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "MORPH_SUIT"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_FEET_1",
@@ -18161,7 +18161,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "MORPH_SUIT"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_FEET_10",
@@ -18197,7 +18197,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "MORPH_SUIT"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_FEET_11",
@@ -18226,7 +18226,7 @@ export var clothing_inventory_f = {
                     "ARENA_DRAW_12",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_FEET_12",
@@ -18245,7 +18245,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "MORPH_SUIT"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_FEET_13",
@@ -18264,7 +18264,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "HAS_ALT_VERSION"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_FEET_2",
@@ -18285,7 +18285,7 @@ export var clothing_inventory_f = {
                     "HAS_ALT_VERSION",
                     "ALT_FEET"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_FEET_3",
@@ -18305,7 +18305,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "HAS_ALT_VERSION"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_FEET_4",
@@ -18327,7 +18327,7 @@ export var clothing_inventory_f = {
                     "HAS_ALT_VERSION",
                     "ALT_FEET"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_FEET_5",
@@ -18348,7 +18348,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "MORPH_SUIT"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_FEET_6",
@@ -18383,7 +18383,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "ARENA_DRAW_7"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_FEET_7",
@@ -18409,7 +18409,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "HAS_ALT_VERSION"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_FEET_8",
@@ -18444,7 +18444,7 @@ export var clothing_inventory_f = {
                     "HAS_ALT_VERSION",
                     "ALT_FEET"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_FEET_9",
@@ -18473,7 +18473,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IND_F_FEET_0",
@@ -18489,7 +18489,7 @@ export var clothing_inventory_f = {
                     "Weiße Glitzerschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_FEET_0",
@@ -18519,7 +18519,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "MORPH_SUIT"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_FEET_1",
@@ -18537,7 +18537,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "JUGG_SUIT"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_FEET_0",
@@ -18563,7 +18563,7 @@ export var clothing_inventory_f = {
                     "HAS_ALT_VERSION",
                     "ALT_FEET"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_FEET_1",
@@ -18592,7 +18592,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_FEET_0",
@@ -18612,7 +18612,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "HAS_ALT_VERSION"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_FEET_1",
@@ -18647,7 +18647,7 @@ export var clothing_inventory_f = {
                     "HAS_ALT_VERSION",
                     "ALT_FEET"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_FEET_2",
@@ -18680,7 +18680,7 @@ export var clothing_inventory_f = {
                     "APART_DRAW_3",
                     "DRAW_3"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_FEET_3",
@@ -18701,7 +18701,7 @@ export var clothing_inventory_f = {
                     "Gelbe FB-Slipper"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_TORSO_0",
@@ -18715,7 +18715,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_FEET_0",
@@ -18759,7 +18759,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "MORPH_SUIT"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_FEET_1",
@@ -18790,7 +18790,7 @@ export var clothing_inventory_f = {
                     "X17_DRAW_2",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_FEET_2",
@@ -18834,7 +18834,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "HAS_ALT_VERSION"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_FEET_3",
@@ -18879,7 +18879,7 @@ export var clothing_inventory_f = {
                     "HAS_ALT_VERSION",
                     "ALT_FEET"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_FEET_4",
@@ -18924,7 +18924,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "HAS_ALT_VERSION"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_FEET_5",
@@ -18970,7 +18970,7 @@ export var clothing_inventory_f = {
                     "HAS_ALT_VERSION",
                     "ALT_FEET"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_FEET_6",
@@ -19014,7 +19014,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "HIGH_HEELS"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_FEET_7",
@@ -19036,7 +19036,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_FEET_0",
@@ -19052,7 +19052,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DUFFEL_BAG"
                 ],
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_FEET_0",
@@ -19096,7 +19096,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "HAS_ALT_VERSION"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_FEET_1",
@@ -19123,7 +19123,7 @@ export var clothing_inventory_f = {
                     "HAS_ALT_VERSION",
                     "ALT_FEET"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_FEET_2",
@@ -19149,7 +19149,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "HAS_ALT_VERSION"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_FEET_3",
@@ -19176,7 +19176,7 @@ export var clothing_inventory_f = {
                     "HAS_ALT_VERSION",
                     "ALT_FEET"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_FEET_4",
@@ -19207,7 +19207,7 @@ export var clothing_inventory_f = {
                     "FITTED_HOOD",
                     "HOOD_DOWN"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_BEACH_F",
@@ -19235,7 +19235,7 @@ export var clothing_inventory_f = {
                     "DRAW_4",
                     "TAT_DECL"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS_F_FEET0",
@@ -19251,7 +19251,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_0"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_BUSI_F_FEET0",
@@ -19278,7 +19278,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "HIGH_HEELS"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday4ng"
             },
             {
                 "cHash": "DLC_MP_BUSI_F_FEET1",
@@ -19303,7 +19303,7 @@ export var clothing_inventory_f = {
                     "Zebra-Lackschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAIR"
+                "dlcHash": "patchday4ng"
             },
             {
                 "cHash": "DLC_MP_BUSI_F_TEETH0",
@@ -19325,7 +19325,7 @@ export var clothing_inventory_f = {
                     "REPLAY_DRAW_0",
                     "HTB_MASK"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday8ng"
             }
         ],
         [
@@ -19341,7 +19341,7 @@ export var clothing_inventory_f = {
                     "Keine"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_TEEF_1",
@@ -19360,7 +19360,7 @@ export var clothing_inventory_f = {
                     "Blaue gestreifte Deko-Ohrringe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_TEEF_2",
@@ -19379,7 +19379,7 @@ export var clothing_inventory_f = {
                     "Weiße Creole"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_TEEF_3",
@@ -19398,7 +19398,7 @@ export var clothing_inventory_f = {
                     "Squeezers Schweißband"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_TEEF_4",
@@ -19417,7 +19417,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_TEEF_5",
@@ -19436,7 +19436,7 @@ export var clothing_inventory_f = {
                     "Regenbogen-Lederriemen"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_TEEF_6",
@@ -19455,7 +19455,7 @@ export var clothing_inventory_f = {
                     "Amethysthalskette"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_TEEF_7",
@@ -19474,7 +19474,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_TEEF_8",
@@ -19493,7 +19493,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_TEEF_9",
@@ -19512,7 +19512,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "DLC_MP_H4_F_TEETH_0",
@@ -19531,7 +19531,7 @@ export var clothing_inventory_f = {
                     "CHAIN",
                     "ALT_CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_TEETH_1",
@@ -19549,7 +19549,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "REMOVE_WITH_SPECIAL"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_TEETH_10",
@@ -19581,7 +19581,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "REMOVE_WITH_SPECIAL"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_TEETH_11",
@@ -19613,7 +19613,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "REMOVE_WITH_SPECIAL"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_TEETH_12",
@@ -19647,7 +19647,7 @@ export var clothing_inventory_f = {
                     "LIGHT_UP",
                     "HOOP_NECKLACE"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_TEETH_13",
@@ -19681,7 +19681,7 @@ export var clothing_inventory_f = {
                     "LIGHT_UP",
                     "HOOP_NECKLACE"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_TEETH_14",
@@ -19712,7 +19712,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_TEETH_2",
@@ -19731,7 +19731,7 @@ export var clothing_inventory_f = {
                     "CHAIN",
                     "ALT_CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_TEETH_3",
@@ -19749,7 +19749,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_TEETH_4",
@@ -19768,7 +19768,7 @@ export var clothing_inventory_f = {
                     "CHAIN",
                     "ALT_CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_TEETH_5",
@@ -19786,7 +19786,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_TEETH_6",
@@ -19805,7 +19805,7 @@ export var clothing_inventory_f = {
                     "CHAIN",
                     "ALT_CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_TEETH_7",
@@ -19823,7 +19823,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_TEETH_8",
@@ -19842,7 +19842,7 @@ export var clothing_inventory_f = {
                     "CHAIN",
                     "ALT_CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_TEETH_9",
@@ -19858,7 +19858,7 @@ export var clothing_inventory_f = {
                     "pay DurtyFree#3216 for update"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_TORSO_9",
@@ -19894,7 +19894,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_VAL_F_TEETH0",
@@ -19912,7 +19912,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday10ng"
             },
             {
                 "cHash": "DLC_MP_LOW_F_TEETH_0",
@@ -19930,7 +19930,7 @@ export var clothing_inventory_f = {
                     "CHAIN",
                     "ALT_CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_0",
@@ -19947,7 +19947,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_1",
@@ -19965,7 +19965,7 @@ export var clothing_inventory_f = {
                     "CHAIN",
                     "ALT_CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_10",
@@ -19983,7 +19983,7 @@ export var clothing_inventory_f = {
                     "CHAIN",
                     "ALT_CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_11",
@@ -20001,7 +20001,7 @@ export var clothing_inventory_f = {
                     "CHAIN",
                     "ALT_CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_12",
@@ -20019,7 +20019,7 @@ export var clothing_inventory_f = {
                     "CHAIN",
                     "ALT_CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_13",
@@ -20034,7 +20034,7 @@ export var clothing_inventory_f = {
                     "Le Chien-Platinkette"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_14",
@@ -20048,7 +20048,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_15",
@@ -20062,7 +20062,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_16",
@@ -20076,7 +20076,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_17",
@@ -20092,7 +20092,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_18",
@@ -20108,7 +20108,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_19",
@@ -20126,7 +20126,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_2",
@@ -20140,7 +20140,7 @@ export var clothing_inventory_f = {
                     "Sturmhauben-Platinkette"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_20",
@@ -20156,7 +20156,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_21",
@@ -20172,7 +20172,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_22",
@@ -20188,7 +20188,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_23",
@@ -20206,7 +20206,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_3",
@@ -20223,7 +20223,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_4",
@@ -20240,7 +20240,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_5",
@@ -20257,7 +20257,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_6",
@@ -20275,7 +20275,7 @@ export var clothing_inventory_f = {
                     "CHAIN",
                     "ALT_CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_7",
@@ -20293,7 +20293,7 @@ export var clothing_inventory_f = {
                     "CHAIN",
                     "ALT_CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_8",
@@ -20311,7 +20311,7 @@ export var clothing_inventory_f = {
                     "CHAIN",
                     "ALT_CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_PILOT_F_TEETH_0",
@@ -20328,7 +20328,7 @@ export var clothing_inventory_f = {
                     "PILOT_SUIT",
                     "OUTFIT_ONLY"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TEETH_0",
@@ -20345,7 +20345,7 @@ export var clothing_inventory_f = {
                     "TIE",
                     "LOOSE_TIE"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TEETH_1",
@@ -20376,7 +20376,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "TIE"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TEETH_2",
@@ -20394,7 +20394,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "TIE"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TEETH_3",
@@ -20425,7 +20425,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "BOWTIE"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TEETH_4",
@@ -20444,7 +20444,7 @@ export var clothing_inventory_f = {
                     "PILOT_SUIT",
                     "OUTFIT_ONLY"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TEETH_5",
@@ -20458,7 +20458,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TEETH_6",
@@ -20476,7 +20476,7 @@ export var clothing_inventory_f = {
                     "ALT_TIE",
                     "LOOSE_TIE"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TEETH_7",
@@ -20508,7 +20508,7 @@ export var clothing_inventory_f = {
                     "TIE",
                     "ALT_TIE"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TEETH_8",
@@ -20527,7 +20527,7 @@ export var clothing_inventory_f = {
                     "TIE",
                     "ALT_TIE"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TEETH_9",
@@ -20559,7 +20559,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_TEETH_0",
@@ -20577,7 +20577,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "BEAD_NECKLACE"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_TEETH_1",
@@ -20591,7 +20591,7 @@ export var clothing_inventory_f = {
                     "Schwarze Perlenkette"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_TEETH_2",
@@ -20605,7 +20605,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_EXEC_F_TEETH_0",
@@ -20620,7 +20620,7 @@ export var clothing_inventory_f = {
                     "Perlenkette"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_9",
@@ -20635,7 +20635,7 @@ export var clothing_inventory_f = {
                     "Weiße Chirurgenhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_HIPS_F_TEETH0",
@@ -20655,7 +20655,7 @@ export var clothing_inventory_f = {
                     "DRAW_9",
                     "SCARF"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_0",
@@ -20672,7 +20672,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_1",
@@ -20692,7 +20692,7 @@ export var clothing_inventory_f = {
                     "LUXE_CLOTH",
                     "LUXE_SCARF"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_10",
@@ -20714,7 +20714,7 @@ export var clothing_inventory_f = {
                     "CHAIN",
                     "ALT_CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_11",
@@ -20732,7 +20732,7 @@ export var clothing_inventory_f = {
                     "CHAIN",
                     "ALT_CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_12",
@@ -20750,7 +20750,7 @@ export var clothing_inventory_f = {
                     "CHAIN",
                     "ALT_CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_13",
@@ -20768,7 +20768,7 @@ export var clothing_inventory_f = {
                     "CHAIN",
                     "ALT_CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_14",
@@ -20786,7 +20786,7 @@ export var clothing_inventory_f = {
                     "CHAIN",
                     "ALT_CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_15",
@@ -20804,7 +20804,7 @@ export var clothing_inventory_f = {
                     "CHAIN",
                     "ALT_CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_16",
@@ -20822,7 +20822,7 @@ export var clothing_inventory_f = {
                     "CHAIN",
                     "ALT_CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_17",
@@ -20840,7 +20840,7 @@ export var clothing_inventory_f = {
                     "CHAIN",
                     "ALT_CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_18",
@@ -20858,7 +20858,7 @@ export var clothing_inventory_f = {
                     "CHAIN",
                     "ALT_CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_19",
@@ -20875,7 +20875,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_2",
@@ -20893,7 +20893,7 @@ export var clothing_inventory_f = {
                     "CHAIN",
                     "ALT_CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_20",
@@ -20908,7 +20908,7 @@ export var clothing_inventory_f = {
                     "Platin-Kordelkette"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_21",
@@ -20922,7 +20922,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_22",
@@ -20936,7 +20936,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_23",
@@ -20950,7 +20950,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_24",
@@ -20964,7 +20964,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_25",
@@ -20978,7 +20978,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_26",
@@ -20992,7 +20992,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_27",
@@ -21008,7 +21008,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_3",
@@ -21025,7 +21025,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_4",
@@ -21042,7 +21042,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_5",
@@ -21059,7 +21059,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_6",
@@ -21076,7 +21076,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_7",
@@ -21093,7 +21093,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_8",
@@ -21110,7 +21110,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_9",
@@ -21128,7 +21128,7 @@ export var clothing_inventory_f = {
                     "LOW2_DRAW_6",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LOW2_F_TEETH_0",
@@ -21146,7 +21146,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LOW2_F_TEETH_1",
@@ -21164,7 +21164,7 @@ export var clothing_inventory_f = {
                     "CHAIN",
                     "ALT_CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LOW2_F_TEETH_2",
@@ -21181,7 +21181,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LOW2_F_TEETH_3",
@@ -21199,7 +21199,7 @@ export var clothing_inventory_f = {
                     "CHAIN",
                     "ALT_CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_TEETH_0",
@@ -21216,7 +21216,7 @@ export var clothing_inventory_f = {
                     "CHAIN",
                     "EPSILON_CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_TEETH_1",
@@ -21234,7 +21234,7 @@ export var clothing_inventory_f = {
                     "ALT_CHAIN",
                     "EPSILON_CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_TEETH_2",
@@ -21250,7 +21250,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "ARENA_DRAW_0"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_TEETH_0",
@@ -21264,7 +21264,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_TEETH_1",
@@ -21278,7 +21278,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_TEETH_2",
@@ -21292,7 +21292,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_TEETH_0",
@@ -21319,7 +21319,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_TEETH_1",
@@ -21336,7 +21336,7 @@ export var clothing_inventory_f = {
                     "CHAIN",
                     "ALT_CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_TEETH_0",
@@ -21359,7 +21359,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_BEACH_F_TEETH0",
@@ -21379,7 +21379,7 @@ export var clothing_inventory_f = {
                     "DRAW_7",
                     "CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS2_F_TEETH_0",
@@ -21399,7 +21399,7 @@ export var clothing_inventory_f = {
                     "SCARF",
                     "JACKET_SCARF"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday3ng"
             }
         ],
         [
@@ -21430,7 +21430,7 @@ export var clothing_inventory_f = {
                     "Zweifarbig gestreiftes T-Shirt"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_ACCS_1",
@@ -21459,7 +21459,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_ACCS_10",
@@ -21473,7 +21473,7 @@ export var clothing_inventory_f = {
                     "Gestreifte Trainingsjacke"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_ACCS_11",
@@ -21502,7 +21502,7 @@ export var clothing_inventory_f = {
                     "LC Penetrators Racerback"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_ACCS_12",
@@ -21531,7 +21531,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_ACCS_13",
@@ -21560,7 +21560,7 @@ export var clothing_inventory_f = {
                     "Leoparden-Bustier"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_ACCS_14",
@@ -21574,7 +21574,7 @@ export var clothing_inventory_f = {
                     "Graues Polohemd"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_ACCS_15",
@@ -21603,7 +21603,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_ACCS_2",
@@ -21617,7 +21617,7 @@ export var clothing_inventory_f = {
                     "Eris-Oberteil"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_ACCS_3",
@@ -21631,7 +21631,7 @@ export var clothing_inventory_f = {
                     "Weißer Kapuzenpullover"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_ACCS_4",
@@ -21660,7 +21660,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_ACCS_5",
@@ -21689,7 +21689,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_ACCS_6",
@@ -21703,7 +21703,7 @@ export var clothing_inventory_f = {
                     "Schwarzes Sakko"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_ACCS_7",
@@ -21717,7 +21717,7 @@ export var clothing_inventory_f = {
                     "Schiefergrauer Blazer"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_ACCS_8",
@@ -21731,7 +21731,7 @@ export var clothing_inventory_f = {
                     "Graue gekürzte Bikerweste"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_ACCS_9",
@@ -21745,7 +21745,7 @@ export var clothing_inventory_f = {
                     "Anthrazitgraues Hemd"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "DLC_MP_BH_F_SPECIAL_0",
@@ -21784,7 +21784,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_5",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_SPECIAL_1",
@@ -21823,7 +21823,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_SPECIAL_10",
@@ -21861,7 +21861,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_SPECIAL_11",
@@ -21895,7 +21895,7 @@ export var clothing_inventory_f = {
                     "Blau gestreiftes SC-T-Shirt"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_SPECIAL_12",
@@ -21913,7 +21913,7 @@ export var clothing_inventory_f = {
                     "DRAW_5",
                     "UNDER_JACKET"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_SPECIAL_13",
@@ -21941,7 +21941,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "DRAW_12"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_SPECIAL_14",
@@ -21968,7 +21968,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "UNDER_JACKET"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_SPECIAL_15",
@@ -21994,7 +21994,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_6",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_SPECIAL_2",
@@ -22033,7 +22033,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_2",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_SPECIAL_3",
@@ -22071,7 +22071,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_SPECIAL_4",
@@ -22110,7 +22110,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_SPECIAL_5",
@@ -22149,7 +22149,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_4",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_SPECIAL_6",
@@ -22188,7 +22188,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_5",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_SPECIAL_7",
@@ -22227,7 +22227,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_6",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_SPECIAL_8",
@@ -22266,7 +22266,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_2",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_H4_F_SPECIAL_0",
@@ -22306,7 +22306,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_SPECIAL_1",
@@ -22342,7 +22342,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_SPECIAL_2",
@@ -22379,7 +22379,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_4"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_SPECIAL_3",
@@ -22402,7 +22402,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_5"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_SPECIAL_4",
@@ -22425,7 +22425,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_6"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_SPECIAL_5",
@@ -22448,7 +22448,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_2"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_SPECIAL_6",
@@ -22470,7 +22470,7 @@ export var clothing_inventory_f = {
                     "LUXE_DRAW_1",
                     "UNDER_JACKET"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_SPECIAL_7",
@@ -22493,7 +22493,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_SPECIAL_8",
@@ -22514,7 +22514,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_VAL_F_ACCS0",
@@ -22534,7 +22534,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday10ng"
             },
             {
                 "cHash": "DLC_MP_VAL_F_ACCS1",
@@ -22552,7 +22552,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "UNDER_JACKET"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday10ng"
             },
             {
                 "cHash": "DLC_MP_VAL_F_ACCS2",
@@ -22572,7 +22572,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "MASK"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday10ng"
             },
             {
                 "cHash": "DLC_MP_VAL2_F_SPECIAL_0",
@@ -22599,7 +22599,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_10"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_LOW_F_SPECIAL_0",
@@ -22619,7 +22619,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_LOW_F_SPECIAL_1",
@@ -22640,7 +22640,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_2",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_LOW_F_SPECIAL_2",
@@ -22659,7 +22659,7 @@ export var clothing_inventory_f = {
                     "LOW_DRAW_3",
                     "UNDER_JACKET"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_LOW_F_SPECIAL_3",
@@ -22679,7 +22679,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_LOW_F_SPECIAL_4",
@@ -22699,7 +22699,7 @@ export var clothing_inventory_f = {
                     "LOW_DRAW_5",
                     "UNDER_JACKET"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_LOW_F_SPECIAL_5",
@@ -22720,7 +22720,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_2"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_LOW_F_SPECIAL_6",
@@ -22739,7 +22739,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_SPECIAL_0",
@@ -22775,7 +22775,7 @@ export var clothing_inventory_f = {
                     "LUXE_DRAW_1",
                     "UNDER_JACKET"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_SPECIAL_1",
@@ -22814,7 +22814,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_2",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_SPECIAL_10",
@@ -22840,7 +22840,7 @@ export var clothing_inventory_f = {
                     "OFF_SHOULDER_ACCS",
                     "ALT_SPECIAL_2"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_SPECIAL_11",
@@ -22860,7 +22860,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_3",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_SPECIAL_2",
@@ -22886,7 +22886,7 @@ export var clothing_inventory_f = {
                     "OFF_SHOULDER_ACCS",
                     "ALT_SPECIAL_3"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_SPECIAL_3",
@@ -22904,7 +22904,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "OFF_SHOULDER_ACCS"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_SPECIAL_4",
@@ -22922,7 +22922,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_2"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_SPECIAL_5",
@@ -22960,7 +22960,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_SPECIAL_6",
@@ -22980,7 +22980,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_2",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_SPECIAL_7",
@@ -23001,7 +23001,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_SPECIAL_8",
@@ -23027,7 +23027,7 @@ export var clothing_inventory_f = {
                     "OFF_SHOULDER_ACCS",
                     "ALT_SPECIAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_SPECIAL_9",
@@ -23041,7 +23041,7 @@ export var clothing_inventory_f = {
                     "Goldenes glänzendes Oberteil"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_SPECIAL_0",
@@ -23060,7 +23060,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "OVER_JACKET"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_SPECIAL_1",
@@ -23081,7 +23081,7 @@ export var clothing_inventory_f = {
                     "HOOD_DOWN",
                     "HAZ_HOOD"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_SPECIAL_10",
@@ -23104,7 +23104,7 @@ export var clothing_inventory_f = {
                     "HOOD_UP",
                     "HAZ_HOOD"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_SPECIAL_11",
@@ -23124,7 +23124,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_SPECIAL_12",
@@ -23143,7 +23143,7 @@ export var clothing_inventory_f = {
                     "HEIST_DRAW_2",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_SPECIAL_2",
@@ -23161,7 +23161,7 @@ export var clothing_inventory_f = {
                     "HEIST_DRAW_3",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_SPECIAL_3",
@@ -23179,7 +23179,7 @@ export var clothing_inventory_f = {
                     "HEIST_DRAW_4",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_SPECIAL_4",
@@ -23198,7 +23198,7 @@ export var clothing_inventory_f = {
                     "HEIST_DRAW_5",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_SPECIAL_5",
@@ -23219,7 +23219,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL",
                     "CLOSED_COLLAR"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_SPECIAL_6",
@@ -23254,7 +23254,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "OPEN_COLLAR"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_SPECIAL_7",
@@ -23289,7 +23289,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "OPEN_COLLAR"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_SPECIAL_8",
@@ -23319,7 +23319,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL",
                     "CLOSED_COLLAR"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_SPECIAL_9",
@@ -23344,7 +23344,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "ARMOUR"
                 ],
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_SPECIAL_0",
@@ -23368,7 +23368,7 @@ export var clothing_inventory_f = {
                     "SWEAT_VEST",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_SPECIAL_1",
@@ -23385,7 +23385,7 @@ export var clothing_inventory_f = {
                     "APART_DRAW_2",
                     "UNDER_JACKET"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_SPECIAL_2",
@@ -23408,7 +23408,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_SPECIAL_3",
@@ -23427,7 +23427,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_EXEC_F_SPECIAL_0",
@@ -23446,7 +23446,7 @@ export var clothing_inventory_f = {
                     "APART_DRAW_2",
                     "UNDER_JACKET"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_EXEC_F_SPECIAL_1",
@@ -23471,7 +23471,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_EXEC_F_SPECIAL_2",
@@ -23497,7 +23497,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_EXEC_F_SPECIAL_3",
@@ -23520,7 +23520,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_EXEC_F_SPECIAL_4",
@@ -23544,7 +23544,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_2",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_EXEC_F_SPECIAL_5",
@@ -23565,7 +23565,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "BEAD_NECKLACE"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_SPECIAL_0",
@@ -23608,7 +23608,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_4"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_SPECIAL_1",
@@ -23633,7 +23633,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_5",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_SPECIAL_10",
@@ -23654,7 +23654,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_6",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_SPECIAL_11",
@@ -23675,7 +23675,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_4",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_SPECIAL_12",
@@ -23696,7 +23696,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_5",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_SPECIAL_13",
@@ -23717,7 +23717,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_6",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_SPECIAL_14",
@@ -23740,7 +23740,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL",
                     "CLOSED_COLLAR"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_SPECIAL_15",
@@ -23761,7 +23761,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "OVERCOAT_ACCS"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_SPECIAL_16",
@@ -23804,7 +23804,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "OVERCOAT_ACCS"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_SPECIAL_17",
@@ -23841,7 +23841,7 @@ export var clothing_inventory_f = {
                     "Weiß mit rotem Rolli"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_SPECIAL_18",
@@ -23877,7 +23877,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_5",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_SPECIAL_2",
@@ -23920,7 +23920,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_5"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_SPECIAL_3",
@@ -23945,7 +23945,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_6",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_SPECIAL_4",
@@ -23988,7 +23988,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_6"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_SPECIAL_5",
@@ -24013,7 +24013,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_4",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_SPECIAL_6",
@@ -24034,7 +24034,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_5",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_SPECIAL_7",
@@ -24055,7 +24055,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_6",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_SPECIAL_8",
@@ -24076,7 +24076,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_4",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_SPECIAL_9",
@@ -24092,7 +24092,7 @@ export var clothing_inventory_f = {
                     "Graues gekrempeltes T-Shirt"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_HIPS_F_ACCS0",
@@ -24111,7 +24111,7 @@ export var clothing_inventory_f = {
                     "DRAW_5",
                     "UNDER_JACKET"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_HIPS_F_ACCS1",
@@ -24136,7 +24136,7 @@ export var clothing_inventory_f = {
                     "DRAW_11",
                     "UNDER_JACKET"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_HIPS_F_ACCS2",
@@ -24157,7 +24157,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_HIPS_F_ACCS3",
@@ -24174,7 +24174,7 @@ export var clothing_inventory_f = {
                     "Graues T-Shirt"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_SPECIAL_0",
@@ -24198,7 +24198,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "UNDER_JACKET"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_SPECIAL_1",
@@ -24233,7 +24233,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_2"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_SPECIAL_2",
@@ -24268,7 +24268,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_3"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_SPECIAL_3",
@@ -24303,7 +24303,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_SPECIAL_4",
@@ -24335,7 +24335,7 @@ export var clothing_inventory_f = {
                     "GLOVES",
                     "RACE_GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_LOW2_F_SPECIAL_0",
@@ -24355,7 +24355,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LOW2_F_SPECIAL_1",
@@ -24376,7 +24376,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_2",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LOW2_F_SPECIAL_2",
@@ -24397,7 +24397,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LOW2_F_SPECIAL_3",
@@ -24417,7 +24417,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LOW2_F_SPECIAL_4",
@@ -24438,7 +24438,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_2",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LOW2_F_SPECIAL_5",
@@ -24456,7 +24456,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "BRACES"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_SPECIAL_0",
@@ -24496,7 +24496,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_5",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_SPECIAL_1",
@@ -24536,7 +24536,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_6",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_SPECIAL_2",
@@ -24576,7 +24576,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_2",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_SPECIAL_3",
@@ -24615,7 +24615,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_SPECIAL_4",
@@ -24655,7 +24655,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_SPECIAL_5",
@@ -24694,7 +24694,7 @@ export var clothing_inventory_f = {
                     "ARENA_DRAW_5",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_SPECIAL_6",
@@ -24713,7 +24713,7 @@ export var clothing_inventory_f = {
                     "EPSILON_CHAIN",
                     "EPSILON_CHAIN_ALT"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IND_F_SPECIAL_0",
@@ -24730,7 +24730,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "ARMOUR"
                 ],
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_SPECIAL_0",
@@ -24758,7 +24758,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_SPECIAL_1",
@@ -24792,7 +24792,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_5"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_SPECIAL_10",
@@ -24826,7 +24826,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_6"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_SPECIAL_11",
@@ -24860,7 +24860,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_4"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_SPECIAL_12",
@@ -24893,7 +24893,7 @@ export var clothing_inventory_f = {
                     "LOW2_DRAW_1",
                     "UNDER_JACKET"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_SPECIAL_2",
@@ -24927,7 +24927,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_2"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_SPECIAL_3",
@@ -24961,7 +24961,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_5"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_SPECIAL_4",
@@ -24995,7 +24995,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_6"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_SPECIAL_5",
@@ -25029,7 +25029,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_4"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_SPECIAL_6",
@@ -25063,7 +25063,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_SPECIAL_7",
@@ -25096,7 +25096,7 @@ export var clothing_inventory_f = {
                     "LOW2_DRAW_1",
                     "UNDER_JACKET"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_SPECIAL_8",
@@ -25130,7 +25130,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_2"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_SPECIAL_9",
@@ -25160,7 +25160,7 @@ export var clothing_inventory_f = {
                     "Sand-Castle-Krempel-T-Shirt"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_SPECIAL_0",
@@ -25188,7 +25188,7 @@ export var clothing_inventory_f = {
                     "SMUG_DRAW_1",
                     "UNDER_JACKET"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_SPECIAL_1",
@@ -25218,7 +25218,7 @@ export var clothing_inventory_f = {
                     "MULTI_DECAL",
                     "SMUG_DRAW_2"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_SPECIAL_2",
@@ -25257,7 +25257,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_SPECIAL_0",
@@ -25274,7 +25274,7 @@ export var clothing_inventory_f = {
                     "VWD_CLOTH",
                     "VWD_DRAW_1"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_SPECIAL_1",
@@ -25288,7 +25288,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_BUS2_F_ACCS0",
@@ -25307,7 +25307,7 @@ export var clothing_inventory_f = {
                     "DRAW_2",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday23ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_SPECIAL_0",
@@ -25326,7 +25326,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "SCUBA_GEAR"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_SPECIAL_1",
@@ -25372,7 +25372,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_SPECIAL_2",
@@ -25397,7 +25397,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_SPECIAL_3",
@@ -25422,7 +25422,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_SPECIAL_4",
@@ -25447,7 +25447,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_SPECIAL_5",
@@ -25472,7 +25472,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_SPECIAL_6",
@@ -25490,7 +25490,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_SPECIAL_7",
@@ -25504,7 +25504,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_SPECIAL_8",
@@ -25525,7 +25525,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_SPECIAL_9",
@@ -25558,7 +25558,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_SPECIAL_0",
@@ -25580,7 +25580,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_SPECIAL_1",
@@ -25611,7 +25611,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "OPEN_COLLAR"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_SPECIAL_10",
@@ -25651,7 +25651,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL",
                     "CLOSED_COLLAR"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_SPECIAL_11",
@@ -25689,7 +25689,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "OVER_JACKET"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_SPECIAL_12",
@@ -25710,7 +25710,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_SPECIAL_13",
@@ -25730,7 +25730,7 @@ export var clothing_inventory_f = {
                     "REMOVE_WITH_JBIB",
                     "REMOVE_WITH_LEGS"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_SPECIAL_2",
@@ -25750,7 +25750,7 @@ export var clothing_inventory_f = {
                     "REMOVE_WITH_JBIB",
                     "REMOVE_WITH_LEGS"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_SPECIAL_3",
@@ -25770,7 +25770,7 @@ export var clothing_inventory_f = {
                     "REMOVE_WITH_JBIB",
                     "REMOVE_WITH_LEGS"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_SPECIAL_4",
@@ -25788,7 +25788,7 @@ export var clothing_inventory_f = {
                     "H3_DRAW_5",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_SPECIAL_5",
@@ -25813,7 +25813,7 @@ export var clothing_inventory_f = {
                     "BLOCK_CHAINS",
                     "OPEN_COLLAR"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_SPECIAL_6",
@@ -25834,7 +25834,7 @@ export var clothing_inventory_f = {
                     "BLOCK_CHAINS",
                     "CLOSED_COLLAR"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_SPECIAL_7",
@@ -25854,7 +25854,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "OPEN_COLLAR"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_SPECIAL_8",
@@ -25894,7 +25894,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL",
                     "CLOSED_COLLAR"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_SPECIAL_9",
@@ -25930,7 +25930,7 @@ export var clothing_inventory_f = {
                     "REMOVE_WITH_JBIB",
                     "REMOVE_WITH_SPECIAL"
                 ],
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_SPECIAL_0",
@@ -25971,7 +25971,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_5"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_SPECIAL_1",
@@ -26012,7 +26012,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_SPECIAL_10",
@@ -26052,7 +26052,7 @@ export var clothing_inventory_f = {
                     "LOW_DRAW_1",
                     "UNDER_JACKET"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_SPECIAL_11",
@@ -26093,7 +26093,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_SPECIAL_12",
@@ -26133,7 +26133,7 @@ export var clothing_inventory_f = {
                     "LOW2_DRAW_1",
                     "UNDER_JACKET"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_SPECIAL_13",
@@ -26174,7 +26174,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_2"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_SPECIAL_14",
@@ -26215,7 +26215,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_5"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_SPECIAL_15",
@@ -26256,7 +26256,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_6"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_SPECIAL_16",
@@ -26297,7 +26297,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_4"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_SPECIAL_17",
@@ -26338,7 +26338,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_SPECIAL_18",
@@ -26378,7 +26378,7 @@ export var clothing_inventory_f = {
                     "LOW2_DRAW_1",
                     "UNDER_JACKET"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_SPECIAL_19",
@@ -26419,7 +26419,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_6"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_SPECIAL_2",
@@ -26460,7 +26460,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_2"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_SPECIAL_20",
@@ -26501,7 +26501,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_5"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_SPECIAL_21",
@@ -26542,7 +26542,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_6"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_SPECIAL_22",
@@ -26583,7 +26583,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_4"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_SPECIAL_23",
@@ -26624,7 +26624,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_4"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_SPECIAL_24",
@@ -26642,7 +26642,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_5"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_SPECIAL_25",
@@ -26660,7 +26660,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_6"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_SPECIAL_26",
@@ -26678,7 +26678,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_2"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_SPECIAL_27",
@@ -26695,7 +26695,7 @@ export var clothing_inventory_f = {
                     "LUXE_DRAW_1",
                     "UNDER_JACKET"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_SPECIAL_28",
@@ -26713,7 +26713,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_SPECIAL_29",
@@ -26731,7 +26731,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_2"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_SPECIAL_3",
@@ -26771,7 +26771,7 @@ export var clothing_inventory_f = {
                     "LUXE_DRAW_1",
                     "UNDER_JACKET"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_SPECIAL_4",
@@ -26812,7 +26812,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_SPECIAL_5",
@@ -26853,7 +26853,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_4"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_SPECIAL_6",
@@ -26894,7 +26894,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_5"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_SPECIAL_7",
@@ -26935,7 +26935,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_6"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_SPECIAL_8",
@@ -26976,7 +26976,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL_2"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_SPECIAL_9",
@@ -27016,7 +27016,7 @@ export var clothing_inventory_f = {
                     "HEIST_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_SPECIAL_0",
@@ -27059,7 +27059,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_5",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_SPECIAL_1",
@@ -27102,7 +27102,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_6",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_SPECIAL_2",
@@ -27145,7 +27145,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL_2",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_SPECIAL_3",
@@ -27187,7 +27187,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_SPECIAL_4",
@@ -27230,7 +27230,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_SPECIAL_5",
@@ -27270,7 +27270,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "ARENA_DRAW_0"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_BEACH_F_ACCS0",
@@ -27292,7 +27292,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "UNDER_JACKET"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_BEACH_F_ACCS2",
@@ -27317,7 +27317,7 @@ export var clothing_inventory_f = {
                     "Orange gestreifter Bikini"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS_F_ACCS0",
@@ -27337,7 +27337,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS_F_ACCS2",
@@ -27354,7 +27354,7 @@ export var clothing_inventory_f = {
                     "Rentier-T-Shirt"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_BUSI_F_ACCS0",
@@ -27383,7 +27383,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "VEST_SHIRT"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday4ng"
             },
             {
                 "cHash": "DLC_MP_BUSI_F_ACCS1",
@@ -27405,7 +27405,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "ALT_SPECIAL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday4ng"
             },
             {
                 "cHash": "DLC_MP_BUSI_F_ACCS2",
@@ -27434,7 +27434,7 @@ export var clothing_inventory_f = {
                     "Pinkes Camisole"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday4ng"
             }
         ],
         [
@@ -27450,7 +27450,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_TASK_1",
@@ -27468,7 +27468,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_TASK_2",
@@ -27486,7 +27486,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_TASK_3",
@@ -27504,7 +27504,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_TASK_4",
@@ -27522,7 +27522,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_TASK_5",
@@ -27540,7 +27540,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_TASK_6",
@@ -27558,7 +27558,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_TASK_7",
@@ -27576,7 +27576,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "DLC_MP_LTS_F_TASK_0",
@@ -27597,7 +27597,7 @@ export var clothing_inventory_f = {
                     "COMBAT_GEAR",
                     "GLOVES"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "mplts"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_SPECIAL2_0",
@@ -27611,7 +27611,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_SPECIAL2_1",
@@ -27627,7 +27627,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "CHAIN"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_PILOT_F_SPECIAL2_0",
@@ -27648,7 +27648,7 @@ export var clothing_inventory_f = {
                     "PILOT_SUIT",
                     "OUTFIT_ONLY"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_SPECIAL2_0",
@@ -27668,7 +27668,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "ARMOUR"
                 ],
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_SPECIAL2_1",
@@ -27688,7 +27688,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "ARMOUR"
                 ],
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_SPECIAL2_2",
@@ -27709,7 +27709,7 @@ export var clothing_inventory_f = {
                     "BOWTIE",
                     "LOOSE_BOWTIE"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_SPECIAL2_0",
@@ -27723,7 +27723,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_SPECIAL2_1",
@@ -27739,7 +27739,7 @@ export var clothing_inventory_f = {
                     "Schwarze Einsatzweste"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_SPECIAL2_2",
@@ -27758,7 +27758,7 @@ export var clothing_inventory_f = {
                     "DRAW_9",
                     "SCARF"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_SPECIAL2_0",
@@ -27776,7 +27776,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_SPECIAL2_0",
@@ -27790,7 +27790,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_SPECIAL2_1",
@@ -27804,7 +27804,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_SPECIAL2_2",
@@ -27818,7 +27818,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_SPECIAL2_3",
@@ -27832,7 +27832,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_SPECIAL2_4",
@@ -27846,7 +27846,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_SPECIAL2_5",
@@ -27860,7 +27860,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_SPECIAL2_0",
@@ -27874,7 +27874,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_SPECIAL2_1",
@@ -27888,7 +27888,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_SPECIAL2_10",
@@ -27902,7 +27902,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_SPECIAL2_11",
@@ -27916,7 +27916,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_SPECIAL2_12",
@@ -27930,7 +27930,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_SPECIAL2_2",
@@ -27944,7 +27944,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_SPECIAL2_3",
@@ -27958,7 +27958,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_SPECIAL2_4",
@@ -27972,7 +27972,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_SPECIAL2_5",
@@ -27986,7 +27986,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_SPECIAL2_6",
@@ -28000,7 +28000,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_SPECIAL2_7",
@@ -28014,7 +28014,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_SPECIAL2_8",
@@ -28028,7 +28028,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_SPECIAL2_9",
@@ -28045,7 +28045,7 @@ export var clothing_inventory_f = {
                     "VWD_CLOTH",
                     "VWD_DRAW_0"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_SPECIAL2_0",
@@ -28062,7 +28062,7 @@ export var clothing_inventory_f = {
                     "REMOVE_WITH_JBIB",
                     "REMOVE_WITH_SPECIAL"
                 ],
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_SPECIAL2_1",
@@ -28079,7 +28079,7 @@ export var clothing_inventory_f = {
                     "REMOVE_WITH_JBIB",
                     "REMOVE_WITH_SPECIAL"
                 ],
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_SPECIAL2_2",
@@ -28096,7 +28096,7 @@ export var clothing_inventory_f = {
                     "REMOVE_WITH_JBIB",
                     "REMOVE_WITH_LEGS"
                 ],
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_SPECIAL2_0",
@@ -28119,7 +28119,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_SPECIAL2_1",
@@ -28142,7 +28142,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_SPECIAL2_10",
@@ -28165,7 +28165,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_SPECIAL2_11",
@@ -28188,7 +28188,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_SPECIAL2_12",
@@ -28211,7 +28211,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_SPECIAL2_2",
@@ -28234,7 +28234,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_SPECIAL2_3",
@@ -28257,7 +28257,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_SPECIAL2_4",
@@ -28280,7 +28280,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_SPECIAL2_5",
@@ -28303,7 +28303,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_SPECIAL2_6",
@@ -28326,7 +28326,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_SPECIAL2_7",
@@ -28349,7 +28349,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_SPECIAL2_8",
@@ -28372,7 +28372,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TASK"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_SPECIAL2_9",
@@ -28395,7 +28395,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_TEEF"
+                "dlcHash": "patchday24ng"
             }
         ],
         [
@@ -28411,7 +28411,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_DECL_1",
@@ -28425,7 +28425,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_DECL_2",
@@ -28439,7 +28439,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_DECL_3",
@@ -28453,7 +28453,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_DECL_4",
@@ -28467,7 +28467,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_DECL_5",
@@ -28481,7 +28481,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "DLC_MP_AR_F_DECL_0",
@@ -28511,7 +28511,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "mpairraces"
             },
             {
                 "cHash": "DLC_MP_AR_F_DECL_1",
@@ -28529,7 +28529,7 @@ export var clothing_inventory_f = {
                     "AIR_DRAW_0",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "mpairraces"
             },
             {
                 "cHash": "DLC_MP_H4_F_DECL_0",
@@ -28548,7 +28548,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "HAS_ALT_VERSION"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_LTS_F_DECL_0",
@@ -28562,7 +28562,7 @@ export var clothing_inventory_f = {
                     "Großes Crew-Emblem"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_HAND"
+                "dlcHash": "mplts"
             },
             {
                 "cHash": "DLC_MP_LOW_F_DECL_0",
@@ -28578,7 +28578,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_10"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_DECL_0",
@@ -28595,7 +28595,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_DECL_1",
@@ -28613,7 +28613,7 @@ export var clothing_inventory_f = {
                     "HEIST_DRAW_0",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_DECL_0",
@@ -28638,7 +28638,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_DECL_1",
@@ -28655,7 +28655,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_DECL_10",
@@ -28672,7 +28672,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_DECL_11",
@@ -28689,7 +28689,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_DECL_12",
@@ -28706,7 +28706,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_DECL_13",
@@ -28723,7 +28723,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_DECL_14",
@@ -28740,7 +28740,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_DECL_15",
@@ -28757,7 +28757,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_DECL_16",
@@ -28774,7 +28774,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_DECL_17",
@@ -28791,7 +28791,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_DECL_18",
@@ -28807,7 +28807,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_DECL_19",
@@ -28824,7 +28824,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_DECL_2",
@@ -28841,7 +28841,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_DECL_20",
@@ -28858,7 +28858,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_DECL_21",
@@ -28875,7 +28875,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_DECL_22",
@@ -28891,7 +28891,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_DECL_23",
@@ -28908,7 +28908,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_DECL_24",
@@ -28925,7 +28925,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_DECL_25",
@@ -28942,7 +28942,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_DECL_26",
@@ -28958,7 +28958,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_DECL_27",
@@ -28975,7 +28975,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_DECL_28",
@@ -28992,7 +28992,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_DECL_29",
@@ -29009,7 +29009,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_DECL_3",
@@ -29026,7 +29026,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_DECL_4",
@@ -29043,7 +29043,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_DECL_5",
@@ -29060,7 +29060,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_DECL_6",
@@ -29077,7 +29077,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_DECL_7",
@@ -29094,7 +29094,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_DECL_8",
@@ -29111,7 +29111,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_DECL_9",
@@ -29130,7 +29130,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "HAS_ALT_VERSION"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_DECL_0",
@@ -29149,7 +29149,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_DECL_1",
@@ -29170,7 +29170,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_DECL_2",
@@ -29184,7 +29184,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_DECL_3",
@@ -29202,7 +29202,7 @@ export var clothing_inventory_f = {
                     "STUNT_DRAW_0",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_DECL_0",
@@ -29219,7 +29219,7 @@ export var clothing_inventory_f = {
                     "DRAW_1",
                     "LIGHT_UP"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_DECL_0",
@@ -29236,7 +29236,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_DECL_1",
@@ -29253,7 +29253,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_DECL_2",
@@ -29269,7 +29269,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_11"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_DECL_0",
@@ -29286,7 +29286,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_DECL_1",
@@ -29305,7 +29305,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "HAS_ALT_VERSION"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_DECL_0",
@@ -29319,7 +29319,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_DECL_1",
@@ -29356,7 +29356,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "MORPH_SUIT"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_DECL_0",
@@ -29374,7 +29374,7 @@ export var clothing_inventory_f = {
                     "BACK_CREW_LOGO",
                     "ACCS_DECL"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_DECL_1",
@@ -29391,7 +29391,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_DECL_10",
@@ -29408,7 +29408,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_DECL_11",
@@ -29425,7 +29425,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_DECL_12",
@@ -29443,7 +29443,7 @@ export var clothing_inventory_f = {
                     "BACK_CREW_LOGO",
                     "ACCS_DECL"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_DECL_2",
@@ -29461,7 +29461,7 @@ export var clothing_inventory_f = {
                     "BACK_CREW_LOGO",
                     "ACCS_DECL"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_DECL_3",
@@ -29479,7 +29479,7 @@ export var clothing_inventory_f = {
                     "BACK_CREW_LOGO",
                     "ACCS_DECL"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_DECL_4",
@@ -29497,7 +29497,7 @@ export var clothing_inventory_f = {
                     "BACK_CREW_LOGO",
                     "ACCS_DECL"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_DECL_5",
@@ -29514,7 +29514,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_DECL_6",
@@ -29531,7 +29531,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_DECL_7",
@@ -29545,7 +29545,7 @@ export var clothing_inventory_f = {
                     "Crew-Emblem, Rücken"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_DECL_8",
@@ -29559,7 +29559,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_DECL_9",
@@ -29580,7 +29580,7 @@ export var clothing_inventory_f = {
                     "SCUBA_GEAR",
                     "SCUBA_FLIPPERS"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_DECL_0",
@@ -29597,7 +29597,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_DECL_1",
@@ -29611,7 +29611,7 @@ export var clothing_inventory_f = {
                     "Crew-Emblem, Rücken"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_DECL_10",
@@ -29625,7 +29625,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_DECL_11",
@@ -29639,7 +29639,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_DECL_12",
@@ -29653,7 +29653,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_DECL_13",
@@ -29667,7 +29667,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_DECL_2",
@@ -29687,7 +29687,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_DECL_3",
@@ -29710,7 +29710,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_DECL_4",
@@ -29727,7 +29727,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_DECL_5",
@@ -29741,7 +29741,7 @@ export var clothing_inventory_f = {
                     "Crew-Emblem, Rücken"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_DECL_6",
@@ -29756,7 +29756,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_DECL_7",
@@ -29770,7 +29770,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_DECL_8",
@@ -29784,7 +29784,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_DECL_9",
@@ -29802,7 +29802,7 @@ export var clothing_inventory_f = {
                     "APART_DRAW_3",
                     "DRAW_3"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_DECL_0",
@@ -29819,7 +29819,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_DECL_1",
@@ -29836,7 +29836,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_DECL_2",
@@ -29853,7 +29853,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_DECL_3",
@@ -29870,7 +29870,7 @@ export var clothing_inventory_f = {
                     "CREW_LOGO",
                     "BACK_CREW_LOGO"
                 ],
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_DECL_4",
@@ -29884,7 +29884,7 @@ export var clothing_inventory_f = {
                     "Crew-Emblem, Rücken"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_DECL"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_DECL_5",
@@ -29910,7 +29910,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_10"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_DECL_0",
@@ -29928,7 +29928,7 @@ export var clothing_inventory_f = {
                     "DRAW_3",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             }
         ],
         [
@@ -29959,7 +29959,7 @@ export var clothing_inventory_f = {
                     "Zweifarbig gestreiftes T-Shirt"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_JBIB_1",
@@ -29988,7 +29988,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_JBIB_10",
@@ -30017,7 +30017,7 @@ export var clothing_inventory_f = {
                     "Peachy Chics Trainingsjacke"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_JBIB_11",
@@ -30046,7 +30046,7 @@ export var clothing_inventory_f = {
                     "LC Penetrators Racerback"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_JBIB_12",
@@ -30075,7 +30075,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_JBIB_13",
@@ -30104,7 +30104,7 @@ export var clothing_inventory_f = {
                     "Leoparden-Bustier"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_JBIB_14",
@@ -30133,7 +30133,7 @@ export var clothing_inventory_f = {
                     "Rauten-Polohemd"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_JBIB_15",
@@ -30162,7 +30162,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_JBIB_2",
@@ -30191,7 +30191,7 @@ export var clothing_inventory_f = {
                     "Indianisches Oberteil"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_JBIB_3",
@@ -30220,7 +30220,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_JBIB_4",
@@ -30249,7 +30249,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_JBIB_5",
@@ -30278,7 +30278,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_JBIB_6",
@@ -30307,7 +30307,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_JBIB_7",
@@ -30336,7 +30336,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_JBIB_8",
@@ -30365,7 +30365,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "SP_F_JBIB_9",
@@ -30394,7 +30394,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "basegame"
             },
             {
                 "cHash": "DLC_MP_AR_F_JBIB_0",
@@ -30425,7 +30425,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_ONLY",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpairraces"
             },
             {
                 "cHash": "DLC_MP_AR_F_JBIB_1",
@@ -30466,7 +30466,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpairraces"
             },
             {
                 "cHash": "DLC_MP_AR_F_JBIB_2",
@@ -30498,7 +30498,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "AIR_DRAW_3"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpairraces"
             },
             {
                 "cHash": "DLC_MP_AR_F_JBIB_3",
@@ -30527,7 +30527,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_ONLY",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpairraces"
             },
             {
                 "cHash": "DLC_MP_AR_F_JBIB_4",
@@ -30545,7 +30545,7 @@ export var clothing_inventory_f = {
                     "AIR_DRAW_0",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "mpairraces"
             },
             {
                 "cHash": "DLC_MP_ASS_F_JBIB_0",
@@ -30569,7 +30569,7 @@ export var clothing_inventory_f = {
                     "ASSAULT_DRAW_0",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "mpassault"
             },
             {
                 "cHash": "DLC_MP_BH_F_JBIB_0",
@@ -30616,7 +30616,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_JBIB_1",
@@ -30653,7 +30653,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_JBIB_10",
@@ -30691,7 +30691,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "AIR_DRAW_3"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_JBIB_11",
@@ -30731,7 +30731,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_JBIB_12",
@@ -30756,7 +30756,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "SMUG_DRAW_1"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_JBIB_13",
@@ -30781,7 +30781,7 @@ export var clothing_inventory_f = {
                     "LONG_SLEEVE",
                     "BLOCK_SCARFS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_JBIB_14",
@@ -30812,7 +30812,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_15"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_JBIB_15",
@@ -30837,7 +30837,7 @@ export var clothing_inventory_f = {
                     "DRAW_0",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_JBIB_16",
@@ -30875,7 +30875,7 @@ export var clothing_inventory_f = {
                     "DRAW_0",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_JBIB_17",
@@ -30909,7 +30909,7 @@ export var clothing_inventory_f = {
                     "Blau gestreiftes SC-T-Shirt"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_JBIB_18",
@@ -30926,7 +30926,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_12"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_JBIB_19",
@@ -30957,7 +30957,7 @@ export var clothing_inventory_f = {
                     "CLOSED_JACKET",
                     "JACKET_ONLY"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_JBIB_2",
@@ -30997,7 +30997,7 @@ export var clothing_inventory_f = {
                     "LOW_DRAW_1",
                     "DRAW_5"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_JBIB_20",
@@ -31025,7 +31025,7 @@ export var clothing_inventory_f = {
                     "LUXE2_DRAW_2",
                     "LUXE_SWEAT"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_JBIB_3",
@@ -31056,7 +31056,7 @@ export var clothing_inventory_f = {
                     "LUXE2_DRAW_2",
                     "LUXE_SWEAT"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_JBIB_4",
@@ -31102,7 +31102,7 @@ export var clothing_inventory_f = {
                     "CLOSED_JACKET",
                     "JACKET_ONLY"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_JBIB_5",
@@ -31148,7 +31148,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "AIR_DRAW_3"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_JBIB_6",
@@ -31186,7 +31186,7 @@ export var clothing_inventory_f = {
                     "FITTED_HOOD",
                     "HOOD_DOWN"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_JBIB_7",
@@ -31224,7 +31224,7 @@ export var clothing_inventory_f = {
                     "FITTED_HOOD",
                     "HOOD_UP"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_JBIB_8",
@@ -31260,7 +31260,7 @@ export var clothing_inventory_f = {
                     "LUXE_COAT",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_BH_F_JBIB_9",
@@ -31293,7 +31293,7 @@ export var clothing_inventory_f = {
                     "STUNT_DRAW_3",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "mpbattle"
             },
             {
                 "cHash": "DLC_MP_H4_F_JBIB_0",
@@ -31319,7 +31319,7 @@ export var clothing_inventory_f = {
                     "HOOD_UP",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_JBIB_1",
@@ -31343,7 +31343,7 @@ export var clothing_inventory_f = {
                     "JACKET",
                     "JACKET_ONLY"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_JBIB_10",
@@ -31364,7 +31364,7 @@ export var clothing_inventory_f = {
                     "CLOSED_JACKET",
                     "JACKET_ONLY"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_JBIB_2",
@@ -31409,7 +31409,7 @@ export var clothing_inventory_f = {
                     "JACKET",
                     "OPEN_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_JBIB_3",
@@ -31451,7 +31451,7 @@ export var clothing_inventory_f = {
                     "LOW_DRAW_2",
                     "DRAW_0"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_JBIB_4",
@@ -31468,7 +31468,7 @@ export var clothing_inventory_f = {
                     "LOW2_DRAW_1",
                     "DRAW_0"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_JBIB_5",
@@ -31487,7 +31487,7 @@ export var clothing_inventory_f = {
                     "LUXE2_DRAW_2",
                     "LUXE_SWEAT"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_JBIB_6",
@@ -31513,7 +31513,7 @@ export var clothing_inventory_f = {
                     "LUXE_DRAW_4",
                     "DRAW_0"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_JBIB_7",
@@ -31540,7 +31540,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_JBIB_8",
@@ -31561,7 +31561,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "AIR_DRAW_3"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_JBIB_9",
@@ -31577,7 +31577,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_13"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_LTS_F_JBIB_0",
@@ -31599,7 +31599,7 @@ export var clothing_inventory_f = {
                     "COMBAT_SWEAT",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mplts"
             },
             {
                 "cHash": "DLC_MP_LTS_F_JBIB_1",
@@ -31619,7 +31619,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "COMBAT_GEAR"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "mplts"
             },
             {
                 "cHash": "DLC_MP_XMAS3_F_JBIB_0",
@@ -31638,7 +31638,7 @@ export var clothing_inventory_f = {
                     "SILK_PYJAMAS",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpxmas_604490"
             },
             {
                 "cHash": "DLC_MP_XMAS3_F_JBIB_1",
@@ -31669,7 +31669,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SANTA_SUIT"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "mpxmas_604490"
             },
             {
                 "cHash": "DLC_MP_VAL_F_JBIB0",
@@ -31690,7 +31690,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_13"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday10ng"
             },
             {
                 "cHash": "DLC_MP_VAL_F_JBIB1",
@@ -31711,7 +31711,7 @@ export var clothing_inventory_f = {
                     "DRAW_0",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday10ng"
             },
             {
                 "cHash": "DLC_MP_VAL_F_JBIB2",
@@ -31727,7 +31727,7 @@ export var clothing_inventory_f = {
                     "Rotes Love-T-Shirt"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday10ng"
             },
             {
                 "cHash": "DLC_MP_VAL2_F_JBIB_0",
@@ -31754,7 +31754,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRESS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_VAL2_F_JBIB_1",
@@ -31772,7 +31772,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRESS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_VAL2_F_JBIB_2",
@@ -31790,7 +31790,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRESS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_VAL2_F_JBIB_3",
@@ -31808,7 +31808,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRESS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_VAL2_F_JBIB_4",
@@ -31826,7 +31826,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRESS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_VAL2_F_JBIB_5",
@@ -31842,7 +31842,7 @@ export var clothing_inventory_f = {
                     "Rotes perlenbesetztes Kleid"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_LOW_F_JBIB_0",
@@ -31861,7 +31861,7 @@ export var clothing_inventory_f = {
                     "LOW_DRAW_1",
                     "DRAW_5"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_LOW_F_JBIB_1",
@@ -31880,7 +31880,7 @@ export var clothing_inventory_f = {
                     "LOW_DRAW_2",
                     "DRAW_0"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_LOW_F_JBIB_2",
@@ -31899,7 +31899,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "LOW_DRAW_3"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_LOW_F_JBIB_3",
@@ -31923,7 +31923,7 @@ export var clothing_inventory_f = {
                     "CLOSED_JACKET",
                     "JACKET_ONLY"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_LOW_F_JBIB_4",
@@ -31940,7 +31940,7 @@ export var clothing_inventory_f = {
                     "LOW_DRAW_5",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_LOW_F_JBIB_5",
@@ -31965,7 +31965,7 @@ export var clothing_inventory_f = {
                     "LOW_SWEAT",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_LOW_F_JBIB_6",
@@ -31992,7 +31992,7 @@ export var clothing_inventory_f = {
                     "CLOSED_JACKET",
                     "JACKET_ONLY"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_LOW_F_JBIB_7",
@@ -32012,7 +32012,7 @@ export var clothing_inventory_f = {
                     "JACKET",
                     "JACKET_ONLY"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_LOW_F_JBIB_8",
@@ -32040,7 +32040,7 @@ export var clothing_inventory_f = {
                     "LOW_DRAW_0",
                     "DRAW_1"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday13ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_JBIB_0",
@@ -32065,7 +32065,7 @@ export var clothing_inventory_f = {
                     "LUXE_COAT",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_JBIB_1",
@@ -32097,7 +32097,7 @@ export var clothing_inventory_f = {
                     "LUXE_COAT",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_JBIB_2",
@@ -32117,7 +32117,7 @@ export var clothing_inventory_f = {
                     "LUXE_DRAW_3",
                     "DRAW_2"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_JBIB_3",
@@ -32134,7 +32134,7 @@ export var clothing_inventory_f = {
                     "LUXE_DRAW_4",
                     "DRAW_0"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_JBIB_4",
@@ -32169,7 +32169,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_13"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_PILOT_F_JBIB_0",
@@ -32186,7 +32186,7 @@ export var clothing_inventory_f = {
                     "PILOT_SUIT",
                     "OUTFIT_ONLY"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_JBIB_0",
@@ -32209,7 +32209,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_ONLY",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_JBIB_1",
@@ -32227,7 +32227,7 @@ export var clothing_inventory_f = {
                     "HEIST_DRAW_10",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_JBIB_10",
@@ -32248,7 +32248,7 @@ export var clothing_inventory_f = {
                     "JACKET",
                     "OPEN_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_JBIB_11",
@@ -32277,7 +32277,7 @@ export var clothing_inventory_f = {
                     "JACKET",
                     "CLOSED_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_JBIB_12",
@@ -32304,7 +32304,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_JBIB_13",
@@ -32326,7 +32326,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_JBIB_14",
@@ -32348,7 +32348,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_JBIB_15",
@@ -32372,7 +32372,7 @@ export var clothing_inventory_f = {
                     "HOOD_UP",
                     "HOODED_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_JBIB_16",
@@ -32398,7 +32398,7 @@ export var clothing_inventory_f = {
                     "HOOD_DOWN",
                     "HOODED_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_JBIB_17",
@@ -32421,7 +32421,7 @@ export var clothing_inventory_f = {
                     "HEIST_DRAW_2",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_JBIB_2",
@@ -32439,7 +32439,7 @@ export var clothing_inventory_f = {
                     "DRAW_0",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_JBIB_3",
@@ -32459,7 +32459,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_JBIB_4",
@@ -32480,7 +32480,7 @@ export var clothing_inventory_f = {
                     "JACKET",
                     "OPEN_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_JBIB_5",
@@ -32501,7 +32501,7 @@ export var clothing_inventory_f = {
                     "JACKET",
                     "OPEN_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_JBIB_6",
@@ -32524,7 +32524,7 @@ export var clothing_inventory_f = {
                     "JACKET",
                     "CLOSED_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_JBIB_7",
@@ -32546,7 +32546,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_JBIB_8",
@@ -32568,7 +32568,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_JBIB_9",
@@ -32586,7 +32586,7 @@ export var clothing_inventory_f = {
                     "HEIST_DRAW_0",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_JBIB_0",
@@ -32604,7 +32604,7 @@ export var clothing_inventory_f = {
                     "SILK_PYJAMAS",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_JBIB_1",
@@ -32631,7 +32631,7 @@ export var clothing_inventory_f = {
                     "JACKET",
                     "OPEN_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_JBIB_10",
@@ -32655,7 +32655,7 @@ export var clothing_inventory_f = {
                     "JACKET",
                     "CLOSED_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_JBIB_11",
@@ -32679,7 +32679,7 @@ export var clothing_inventory_f = {
                     "JACKET",
                     "OPEN_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_JBIB_12",
@@ -32700,7 +32700,7 @@ export var clothing_inventory_f = {
                     "JACKET",
                     "CLOSED_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_JBIB_13",
@@ -32718,7 +32718,7 @@ export var clothing_inventory_f = {
                     "DRAW_9",
                     "NO_CREW_EMBLEM"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_JBIB_14",
@@ -32738,7 +32738,7 @@ export var clothing_inventory_f = {
                     "OPEN_JACKET",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_JBIB_15",
@@ -32758,7 +32758,7 @@ export var clothing_inventory_f = {
                     "CLOSED_JACKET",
                     "JACKET_ONLY"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_JBIB_16",
@@ -32782,7 +32782,7 @@ export var clothing_inventory_f = {
                     "CLOSED_JACKET",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_JBIB_17",
@@ -32810,7 +32810,7 @@ export var clothing_inventory_f = {
                     "VEST",
                     "SWEAT_VEST"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_JBIB_18",
@@ -32827,7 +32827,7 @@ export var clothing_inventory_f = {
                     "APART_DRAW_19",
                     "DRAW_15"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_JBIB_19",
@@ -32849,7 +32849,7 @@ export var clothing_inventory_f = {
                     "APART_DRAW_2",
                     "DRAW_14"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_JBIB_2",
@@ -32871,7 +32871,7 @@ export var clothing_inventory_f = {
                     "CLOSED_JACKET",
                     "JACKET_ONLY"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_JBIB_20",
@@ -32890,7 +32890,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_JBIB_21",
@@ -32915,7 +32915,7 @@ export var clothing_inventory_f = {
                     "CLOSED_JACKET",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_JBIB_22",
@@ -32932,7 +32932,7 @@ export var clothing_inventory_f = {
                     "APART_DRAW_23",
                     "SILK_ROBE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_JBIB_23",
@@ -32959,7 +32959,7 @@ export var clothing_inventory_f = {
                     "CLOSED_JACKET",
                     "JACKET_ONLY"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_JBIB_24",
@@ -32982,7 +32982,7 @@ export var clothing_inventory_f = {
                     "OPEN_JACKET",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_JBIB_25",
@@ -32999,7 +32999,7 @@ export var clothing_inventory_f = {
                     "APART_DRAW_3",
                     "DRAW_14"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_JBIB_3",
@@ -33019,7 +33019,7 @@ export var clothing_inventory_f = {
                     "DRAW_9",
                     "NO_CREW_EMBLEM"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_JBIB_4",
@@ -33040,7 +33040,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_JBIB_5",
@@ -33057,7 +33057,7 @@ export var clothing_inventory_f = {
                     "APART_DRAW_6",
                     "DRAW_0"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_JBIB_6",
@@ -33077,7 +33077,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_JBIB_7",
@@ -33099,7 +33099,7 @@ export var clothing_inventory_f = {
                     "JACKET",
                     "OPEN_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_JBIB_8",
@@ -33124,7 +33124,7 @@ export var clothing_inventory_f = {
                     "JACKET",
                     "CLOSED_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_JBIB_9",
@@ -33142,7 +33142,7 @@ export var clothing_inventory_f = {
                     "Gelbe klassische Jacke"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_EXEC_F_JBIB_0",
@@ -33159,7 +33159,7 @@ export var clothing_inventory_f = {
                     "APART_DRAW_2",
                     "DRAW_14"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_EXEC_F_JBIB_1",
@@ -33179,7 +33179,7 @@ export var clothing_inventory_f = {
                     "CLOSED_JACKET",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_EXEC_F_JBIB_10",
@@ -33213,7 +33213,7 @@ export var clothing_inventory_f = {
                     "CLOSED_JACKET",
                     "JACKET_ONLY"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_EXEC_F_JBIB_11",
@@ -33243,7 +33243,7 @@ export var clothing_inventory_f = {
                     "OPEN_JACKET",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_EXEC_F_JBIB_12",
@@ -33261,7 +33261,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "TAT_DECL_NO_SAVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_EXEC_F_JBIB_13",
@@ -33288,7 +33288,7 @@ export var clothing_inventory_f = {
                     "DRAW_0",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_EXEC_F_JBIB_14",
@@ -33311,7 +33311,7 @@ export var clothing_inventory_f = {
                     "SILK_PYJAMAS",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_EXEC_F_JBIB_15",
@@ -33343,7 +33343,7 @@ export var clothing_inventory_f = {
                     "CLOSED_JACKET",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_EXEC_F_JBIB_16",
@@ -33373,7 +33373,7 @@ export var clothing_inventory_f = {
                     "APART_DRAW_3",
                     "DRAW_14"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_EXEC_F_JBIB_2",
@@ -33391,7 +33391,7 @@ export var clothing_inventory_f = {
                     "DRAW_9",
                     "NO_CREW_EMBLEM"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_EXEC_F_JBIB_3",
@@ -33410,7 +33410,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_EXEC_F_JBIB_4",
@@ -33430,7 +33430,7 @@ export var clothing_inventory_f = {
                     "DRAW_9",
                     "NO_CREW_EMBLEM"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_EXEC_F_JBIB_5",
@@ -33456,7 +33456,7 @@ export var clothing_inventory_f = {
                     "OPEN_JACKET",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_EXEC_F_JBIB_6",
@@ -33480,7 +33480,7 @@ export var clothing_inventory_f = {
                     "VEST",
                     "SWEAT_VEST"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_EXEC_F_JBIB_7",
@@ -33502,7 +33502,7 @@ export var clothing_inventory_f = {
                     "CLOSED_JACKET",
                     "JACKET_ONLY"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_EXEC_F_JBIB_8",
@@ -33523,7 +33523,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_EXEC_F_JBIB_9",
@@ -33547,7 +33547,7 @@ export var clothing_inventory_f = {
                     "APART_DRAW_12",
                     "DRAW_1"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_0",
@@ -33570,7 +33570,7 @@ export var clothing_inventory_f = {
                     "BIKER_VEST",
                     "BLOCK_SCARFS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_1",
@@ -33593,7 +33593,7 @@ export var clothing_inventory_f = {
                     "LONG_SLEEVE",
                     "BLOCK_SCARFS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_10",
@@ -33630,7 +33630,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_11",
@@ -33653,7 +33653,7 @@ export var clothing_inventory_f = {
                     "LONG_SLEEVE",
                     "BLOCK_SCARFS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_12",
@@ -33676,7 +33676,7 @@ export var clothing_inventory_f = {
                     "BIKER_VEST",
                     "BLOCK_SCARFS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_13",
@@ -33697,7 +33697,7 @@ export var clothing_inventory_f = {
                     "DRAW_5",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_14",
@@ -33720,7 +33720,7 @@ export var clothing_inventory_f = {
                     "DRAW_5",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_15",
@@ -33743,7 +33743,7 @@ export var clothing_inventory_f = {
                     "DRAW_5",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_16",
@@ -33766,7 +33766,7 @@ export var clothing_inventory_f = {
                     "DRAW_9",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_17",
@@ -33793,7 +33793,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_18",
@@ -33815,7 +33815,7 @@ export var clothing_inventory_f = {
                     "JACKET_ONLY",
                     "BLOCK_SCARFS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_19",
@@ -33835,7 +33835,7 @@ export var clothing_inventory_f = {
                     "BIKER_VEST",
                     "BLOCK_SCARFS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_2",
@@ -33857,7 +33857,7 @@ export var clothing_inventory_f = {
                     "LONG_SLEEVE",
                     "BLOCK_SCARFS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_20",
@@ -33880,7 +33880,7 @@ export var clothing_inventory_f = {
                     "BIKER_VEST",
                     "BLOCK_SCARFS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_21",
@@ -33903,7 +33903,7 @@ export var clothing_inventory_f = {
                     "LONG_SLEEVE",
                     "BLOCK_SCARFS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_22",
@@ -33926,7 +33926,7 @@ export var clothing_inventory_f = {
                     "CLOSED_JACKET",
                     "BLOCK_SCARFS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_23",
@@ -33949,7 +33949,7 @@ export var clothing_inventory_f = {
                     "BIKER_VEST",
                     "BLOCK_SCARFS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_24",
@@ -33970,7 +33970,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_25",
@@ -33996,7 +33996,7 @@ export var clothing_inventory_f = {
                     "LONG_SLEEVE",
                     "DEADLINE_OUTFIT"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_26",
@@ -34026,7 +34026,7 @@ export var clothing_inventory_f = {
                     "BIKER_VEST",
                     "BLOCK_SCARFS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_27",
@@ -34049,7 +34049,7 @@ export var clothing_inventory_f = {
                     "BIKER_VEST",
                     "BLOCK_SCARFS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_28",
@@ -34072,7 +34072,7 @@ export var clothing_inventory_f = {
                     "LONG_SLEEVE",
                     "BLOCK_SCARFS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_29",
@@ -34097,7 +34097,7 @@ export var clothing_inventory_f = {
                     "BIKER_VEST",
                     "BLOCK_SCARFS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_3",
@@ -34122,7 +34122,7 @@ export var clothing_inventory_f = {
                     "HOOD_DOWN",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_30",
@@ -34144,7 +34144,7 @@ export var clothing_inventory_f = {
                     "JACKET",
                     "CLOSED_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_31",
@@ -34174,7 +34174,7 @@ export var clothing_inventory_f = {
                     "HOOD_DOWN",
                     "HOODED_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_32",
@@ -34202,7 +34202,7 @@ export var clothing_inventory_f = {
                     "HOOD_DOWN",
                     "HOODED_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_33",
@@ -34225,7 +34225,7 @@ export var clothing_inventory_f = {
                     "LONG_SLEEVE",
                     "BLOCK_SCARFS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_4",
@@ -34248,7 +34248,7 @@ export var clothing_inventory_f = {
                     "CLOSED_JACKET",
                     "BLOCK_SCARFS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_5",
@@ -34272,7 +34272,7 @@ export var clothing_inventory_f = {
                     "LONG_SLEEVE",
                     "BLOCK_SCARFS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_6",
@@ -34289,7 +34289,7 @@ export var clothing_inventory_f = {
                     "LOW_DRAW_3",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_7",
@@ -34313,7 +34313,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_8",
@@ -34340,7 +34340,7 @@ export var clothing_inventory_f = {
                     "LONG_SLEEVE",
                     "BLOCK_SCARFS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_JBIB_9",
@@ -34361,7 +34361,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_0"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_HIPS_F_JBIB0",
@@ -34383,7 +34383,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_4"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_HIPS_F_JBIB1",
@@ -34401,7 +34401,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_5"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_HIPS_F_JBIB2",
@@ -34428,7 +34428,7 @@ export var clothing_inventory_f = {
                     "OPEN_JACKET",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_HIPS_F_JBIB3",
@@ -34446,7 +34446,7 @@ export var clothing_inventory_f = {
                     "JACKET",
                     "OPEN_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_HIPS_F_JBIB4",
@@ -34473,7 +34473,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_11"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_HIPS_F_JBIB5",
@@ -34494,7 +34494,7 @@ export var clothing_inventory_f = {
                     "DRESS",
                     "HIPSTER_DRESS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_HIPS_F_JBIB6",
@@ -34516,7 +34516,7 @@ export var clothing_inventory_f = {
                     "DRAW_2",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_HIPS_F_JBIB7",
@@ -34535,7 +34535,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_5"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_JBIB_0",
@@ -34563,7 +34563,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_JBIB_1",
@@ -34593,7 +34593,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_JBIB_2",
@@ -34623,7 +34623,7 @@ export var clothing_inventory_f = {
                     "CLOSED_JACKET",
                     "JACKET_ONLY"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_JBIB_3",
@@ -34654,7 +34654,7 @@ export var clothing_inventory_f = {
                     "OPEN_JACKET",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_JBIB_4",
@@ -34678,7 +34678,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_JBIB_5",
@@ -34714,7 +34714,7 @@ export var clothing_inventory_f = {
                     "CLOSED_JACKET",
                     "JACKET_ONLY"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_JBIB_6",
@@ -34759,7 +34759,7 @@ export var clothing_inventory_f = {
                     "CLOSED_JACKET",
                     "JACKET_ONLY"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_JBIB_7",
@@ -34785,7 +34785,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_JBIB_8",
@@ -34808,7 +34808,7 @@ export var clothing_inventory_f = {
                     "OPEN_JACKET",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_JBIB_9",
@@ -34831,7 +34831,7 @@ export var clothing_inventory_f = {
                     "STUNT_DRAW_0",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_JBIB_0",
@@ -34852,7 +34852,7 @@ export var clothing_inventory_f = {
                     "LUXE_COAT",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_JBIB_1",
@@ -34873,7 +34873,7 @@ export var clothing_inventory_f = {
                     "LUXE2_DRAW_2",
                     "LUXE_SWEAT"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_JBIB_2",
@@ -34904,7 +34904,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_13"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LOW_2_F_JBIB_6",
@@ -34932,7 +34932,7 @@ export var clothing_inventory_f = {
                     "HIGH_HEELS",
                     "DRAW_8"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LOW2_F_JBIB_0",
@@ -34952,7 +34952,7 @@ export var clothing_inventory_f = {
                     "DRAW_0",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LOW2_F_JBIB_1",
@@ -34971,7 +34971,7 @@ export var clothing_inventory_f = {
                     "LOW2_DRAW_2",
                     "DRAW_14"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LOW2_F_JBIB_2",
@@ -34993,7 +34993,7 @@ export var clothing_inventory_f = {
                     "JACKET",
                     "OPEN_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LOW2_F_JBIB_3",
@@ -35026,7 +35026,7 @@ export var clothing_inventory_f = {
                     "LOW2_DRAW_4",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LOW2_F_JBIB_4",
@@ -35062,7 +35062,7 @@ export var clothing_inventory_f = {
                     "CLOSED_JACKET",
                     "JACKET_ONLY"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LOW2_F_JBIB_5",
@@ -35078,7 +35078,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "LOW2_DRAW_7"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LOW2_F_JBIB_7",
@@ -35096,7 +35096,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "LOW2_DRAW_8"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LOW2_F_JBIB_8",
@@ -35123,7 +35123,7 @@ export var clothing_inventory_f = {
                     "DRAW_14",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LOW2_F_JBIB_9",
@@ -35142,7 +35142,7 @@ export var clothing_inventory_f = {
                     "DRAW_0",
                     "LOW2_DRAW_0"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_JBIB_0",
@@ -35160,7 +35160,7 @@ export var clothing_inventory_f = {
                     "DRAW_0",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_JBIB_1",
@@ -35198,7 +35198,7 @@ export var clothing_inventory_f = {
                     "LOW2_DRAW_9",
                     "DRAW_14"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_JBIB_10",
@@ -35235,7 +35235,7 @@ export var clothing_inventory_f = {
                     "BLOCK_CHAINS",
                     "BLOCK_PARACHUTE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_JBIB_11",
@@ -35267,7 +35267,7 @@ export var clothing_inventory_f = {
                     "BLOCK_CHAINS",
                     "BLOCK_SCARFS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_JBIB_12",
@@ -35288,7 +35288,7 @@ export var clothing_inventory_f = {
                     "LONG_SLEEVE",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_JBIB_13",
@@ -35310,7 +35310,7 @@ export var clothing_inventory_f = {
                     "BLOCK_CHAINS",
                     "ARENA_DRAW_14"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_JBIB_14",
@@ -35332,7 +35332,7 @@ export var clothing_inventory_f = {
                     "BLOCK_CHAINS",
                     "BLOCK_PARACHUTE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_JBIB_15",
@@ -35363,7 +35363,7 @@ export var clothing_inventory_f = {
                     "LUXE_SWEAT",
                     "LIGHT_UP"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_JBIB_16",
@@ -35394,7 +35394,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_JBIB_17",
@@ -35430,7 +35430,7 @@ export var clothing_inventory_f = {
                     "LONG_SLEEVE",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_JBIB_2",
@@ -35471,7 +35471,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_JBIB_3",
@@ -35508,7 +35508,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_JBIB_4",
@@ -35540,7 +35540,7 @@ export var clothing_inventory_f = {
                     "LONG_SLEEVE",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_JBIB_5",
@@ -35573,7 +35573,7 @@ export var clothing_inventory_f = {
                     "BLOCK_CHAINS",
                     "BLOCK_PARACHUTE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_JBIB_6",
@@ -35613,7 +35613,7 @@ export var clothing_inventory_f = {
                     "HOOD_DOWN",
                     "HOODED_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_JBIB_7",
@@ -35653,7 +35653,7 @@ export var clothing_inventory_f = {
                     "FITTED_HOOD",
                     "HOOD_UP"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_JBIB_8",
@@ -35687,7 +35687,7 @@ export var clothing_inventory_f = {
                     "LUXE2_DRAW_2",
                     "LUXE_SWEAT"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_JBIB_9",
@@ -35726,7 +35726,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_1"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IND_F_JBIB_0",
@@ -35742,7 +35742,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IND_F_JBIB_1",
@@ -35760,7 +35760,7 @@ export var clothing_inventory_f = {
                     "DRAW_8",
                     "SKIRT"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_JBIB_0",
@@ -35795,7 +35795,7 @@ export var clothing_inventory_f = {
                     "FITTED_HOOD",
                     "HOOD_DOWN"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_JBIB_1",
@@ -35825,7 +35825,7 @@ export var clothing_inventory_f = {
                     "LUXE_SWEAT",
                     "LIGHT_UP"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_JBIB_10",
@@ -35857,7 +35857,7 @@ export var clothing_inventory_f = {
                     "LUXE2_DRAW_2",
                     "LUXE_SWEAT"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_JBIB_11",
@@ -35890,7 +35890,7 @@ export var clothing_inventory_f = {
                     "LUXE_SWEAT",
                     "LIGHT_UP"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_JBIB_12",
@@ -35914,7 +35914,7 @@ export var clothing_inventory_f = {
                     "LUXE2_DRAW_2",
                     "LUXE_SWEAT"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_JBIB_13",
@@ -35944,7 +35944,7 @@ export var clothing_inventory_f = {
                     "FITTED_HOOD",
                     "HOOD_DOWN"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_JBIB_14",
@@ -35990,7 +35990,7 @@ export var clothing_inventory_f = {
                     "LONG_SLEEVE",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_JBIB_15",
@@ -36016,7 +36016,7 @@ export var clothing_inventory_f = {
                     "FITTED_HOOD",
                     "HOOD_UP"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_JBIB_16",
@@ -36043,7 +36043,7 @@ export var clothing_inventory_f = {
                     "FITTED_HOOD",
                     "HOOD_UP"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_JBIB_17",
@@ -36093,7 +36093,7 @@ export var clothing_inventory_f = {
                     "FITTED_HOOD",
                     "HOOD_UP"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_JBIB_18",
@@ -36129,7 +36129,7 @@ export var clothing_inventory_f = {
                     "FITTED_HOOD",
                     "HOOD_DOWN"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_JBIB_19",
@@ -36158,7 +36158,7 @@ export var clothing_inventory_f = {
                     "HOOD_DOWN",
                     "HOODED_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_JBIB_2",
@@ -36185,7 +36185,7 @@ export var clothing_inventory_f = {
                     "LOW2_DRAW_0",
                     "DRAW_0"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_JBIB_20",
@@ -36218,7 +36218,7 @@ export var clothing_inventory_f = {
                     "LOW2_DRAW_1",
                     "DRAW_0"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_JBIB_21",
@@ -36259,7 +36259,7 @@ export var clothing_inventory_f = {
                     "HOOD_DOWN",
                     "HOODED_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_JBIB_3",
@@ -36286,7 +36286,7 @@ export var clothing_inventory_f = {
                     "LUXE2_DRAW_2",
                     "LUXE_SWEAT"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_JBIB_4",
@@ -36332,7 +36332,7 @@ export var clothing_inventory_f = {
                     "LONG_SLEEVE",
                     "BLOCK_SCARFS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_JBIB_5",
@@ -36377,7 +36377,7 @@ export var clothing_inventory_f = {
                     "OPEN_JACKET",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_JBIB_6",
@@ -36406,7 +36406,7 @@ export var clothing_inventory_f = {
                     "DRAW_5",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_JBIB_7",
@@ -36449,7 +36449,7 @@ export var clothing_inventory_f = {
                     "LONG_SLEEVE",
                     "LIGHT_UP"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_JBIB_8",
@@ -36468,7 +36468,7 @@ export var clothing_inventory_f = {
                     "XMAS2_DRAW_0",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_JBIB_9",
@@ -36487,7 +36487,7 @@ export var clothing_inventory_f = {
                     "IE_DRAW_0",
                     "DRAW_13"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_JBIB_0",
@@ -36517,7 +36517,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "SMUG_DRAW_1"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_JBIB_1",
@@ -36547,7 +36547,7 @@ export var clothing_inventory_f = {
                     "CLOSED_JACKET",
                     "JACKET_ONLY"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_JBIB_2",
@@ -36590,7 +36590,7 @@ export var clothing_inventory_f = {
                     "DRAW_14",
                     "NO_CREW_EMBLEM"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_JBIB_3",
@@ -36619,7 +36619,7 @@ export var clothing_inventory_f = {
                     "DRAW_14",
                     "NO_CREW_EMBLEM"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_JBIB_4",
@@ -36649,7 +36649,7 @@ export var clothing_inventory_f = {
                     "MULTI_DECAL",
                     "NO_CREW_EMBLEM"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_JBIB_5",
@@ -36695,7 +36695,7 @@ export var clothing_inventory_f = {
                     "LUXE_COAT",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_JBIB_6",
@@ -36717,7 +36717,7 @@ export var clothing_inventory_f = {
                     "SMUG_DRAW_0",
                     "UNDER_JACKET"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_JBIB_0",
@@ -36739,7 +36739,7 @@ export var clothing_inventory_f = {
                     "LONG_SLEEVE",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_JBIB_1",
@@ -36765,7 +36765,7 @@ export var clothing_inventory_f = {
                     "HOOD_UP",
                     "HOODED_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_JBIB_10",
@@ -36816,7 +36816,7 @@ export var clothing_inventory_f = {
                     "HOOD_DOWN",
                     "HOODED_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_JBIB_11",
@@ -36863,7 +36863,7 @@ export var clothing_inventory_f = {
                     "LUXE_COAT",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_JBIB_12",
@@ -36896,7 +36896,7 @@ export var clothing_inventory_f = {
                     "HOOD_DOWN",
                     "HOODED_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_JBIB_13",
@@ -36945,7 +36945,7 @@ export var clothing_inventory_f = {
                     "FITTED_HOOD",
                     "HOOD_UP"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_JBIB_14",
@@ -36988,7 +36988,7 @@ export var clothing_inventory_f = {
                     "LUXE2_DRAW_2",
                     "LUXE_SWEAT"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_JBIB_15",
@@ -37031,7 +37031,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_JBIB_16",
@@ -37064,7 +37064,7 @@ export var clothing_inventory_f = {
                     "LONG_SLEEVE",
                     "BLOCK_SCARFS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_JBIB_17",
@@ -37095,7 +37095,7 @@ export var clothing_inventory_f = {
                     "APART_DRAW_23",
                     "SILK_ROBE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_JBIB_18",
@@ -37123,7 +37123,7 @@ export var clothing_inventory_f = {
                     "DRESS",
                     "HIPSTER_DRESS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_JBIB_19",
@@ -37170,7 +37170,7 @@ export var clothing_inventory_f = {
                     "JACKET",
                     "OPEN_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_JBIB_2",
@@ -37197,7 +37197,7 @@ export var clothing_inventory_f = {
                     "DRESS",
                     "HIPSTER_DRESS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_JBIB_20",
@@ -37239,7 +37239,7 @@ export var clothing_inventory_f = {
                     "LUXE_DRAW_4",
                     "DRAW_0"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_JBIB_21",
@@ -37281,7 +37281,7 @@ export var clothing_inventory_f = {
                     "JACKET",
                     "CLOSED_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_JBIB_3",
@@ -37314,7 +37314,7 @@ export var clothing_inventory_f = {
                     "HOOD_DOWN",
                     "HOODED_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_JBIB_4",
@@ -37363,7 +37363,7 @@ export var clothing_inventory_f = {
                     "FITTED_HOOD",
                     "HOOD_UP"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_JBIB_5",
@@ -37410,7 +37410,7 @@ export var clothing_inventory_f = {
                     "CLOSED_JACKET",
                     "JACKET_ONLY"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_JBIB_6",
@@ -37453,7 +37453,7 @@ export var clothing_inventory_f = {
                     "DRAW_9",
                     "NO_CREW_EMBLEM"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_JBIB_7",
@@ -37504,7 +37504,7 @@ export var clothing_inventory_f = {
                     "HOOD_TUCKED",
                     "HOODED_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_JBIB_8",
@@ -37555,7 +37555,7 @@ export var clothing_inventory_f = {
                     "HOOD_DOWN",
                     "HOODED_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_JBIB_9",
@@ -37599,7 +37599,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "MORPH_SUIT"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_BUS2_F_JBIB0",
@@ -37617,7 +37617,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "BIKER_MASK"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday23ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_JBIB_0",
@@ -37636,7 +37636,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_JBIB_1",
@@ -37665,7 +37665,7 @@ export var clothing_inventory_f = {
                     "HOODED_JACKET",
                     "GORKA_SUIT"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_JBIB_10",
@@ -37704,7 +37704,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_JBIB_11",
@@ -37728,7 +37728,7 @@ export var clothing_inventory_f = {
                     "HOOD_UP",
                     "GORKA_SUIT"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_JBIB_12",
@@ -37775,7 +37775,7 @@ export var clothing_inventory_f = {
                     "BLOCK_CHAINS",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_JBIB_13",
@@ -37817,7 +37817,7 @@ export var clothing_inventory_f = {
                     "BLOCK_CHAINS",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_JBIB_2",
@@ -37863,7 +37863,7 @@ export var clothing_inventory_f = {
                     "LUXE_COAT",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_JBIB_3",
@@ -37905,7 +37905,7 @@ export var clothing_inventory_f = {
                     "LUXE2_DRAW_2",
                     "LUXE_SWEAT"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_JBIB_4",
@@ -37935,7 +37935,7 @@ export var clothing_inventory_f = {
                     "LONG_SLEEVE",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_JBIB_5",
@@ -37967,7 +37967,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_JBIB_6",
@@ -38014,7 +38014,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_JBIB_7",
@@ -38053,7 +38053,7 @@ export var clothing_inventory_f = {
                     "Braun-blauer takt. Halbmantel"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_JBIB_8",
@@ -38068,7 +38068,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_JBIB_9",
@@ -38088,7 +38088,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "SCUBA_GEAR"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_JBIB_0",
@@ -38111,7 +38111,7 @@ export var clothing_inventory_f = {
                     "BLOCK_CHAINS",
                     "BLOCK_PARACHUTE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_JBIB_1",
@@ -38129,7 +38129,7 @@ export var clothing_inventory_f = {
                     "LUXE_DRAW_4",
                     "DRAW_0"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_JBIB_10",
@@ -38173,7 +38173,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_JBIB_11",
@@ -38209,7 +38209,7 @@ export var clothing_inventory_f = {
                     "LUXE_DRAW_4",
                     "DRAW_0"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_JBIB_12",
@@ -38244,7 +38244,7 @@ export var clothing_inventory_f = {
                     "DRAW_0",
                     "MULTI_DECAL"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_JBIB_13",
@@ -38280,7 +38280,7 @@ export var clothing_inventory_f = {
                     "JACKET",
                     "OPEN_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_JBIB_14",
@@ -38308,7 +38308,7 @@ export var clothing_inventory_f = {
                     "JACKET",
                     "CLOSED_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_JBIB_15",
@@ -38332,7 +38332,7 @@ export var clothing_inventory_f = {
                     "LUXE2_DRAW_2",
                     "LUXE_SWEAT"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_JBIB_16",
@@ -38352,7 +38352,7 @@ export var clothing_inventory_f = {
                     "BIKER_VEST",
                     "BLOCK_SCARFS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_JBIB_17",
@@ -38371,7 +38371,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_JBIB_18",
@@ -38392,7 +38392,7 @@ export var clothing_inventory_f = {
                     "CLOSED_JACKET",
                     "JACKET_ONLY"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_JBIB_19",
@@ -38412,7 +38412,7 @@ export var clothing_inventory_f = {
                     "LONG_SLEEVE",
                     "TUCKED"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_JBIB_2",
@@ -38443,7 +38443,7 @@ export var clothing_inventory_f = {
                     "HOOD_DOWN",
                     "HOODED_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_JBIB_20",
@@ -38466,7 +38466,7 @@ export var clothing_inventory_f = {
                     "FITTED_HOOD",
                     "HOOD_UP"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_JBIB_21",
@@ -38486,7 +38486,7 @@ export var clothing_inventory_f = {
                     "LONG_SLEEVE",
                     "TUCKED"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_JBIB_3",
@@ -38513,7 +38513,7 @@ export var clothing_inventory_f = {
                     "NO_CREW_EMBLEM",
                     "TUCKED"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_JBIB_4",
@@ -38540,7 +38540,7 @@ export var clothing_inventory_f = {
                     "NO_CREW_EMBLEM",
                     "TUCKED"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_JBIB_5",
@@ -38570,7 +38570,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_PARACHUTE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_JBIB_6",
@@ -38589,7 +38589,7 @@ export var clothing_inventory_f = {
                     "NO_CREW_EMBLEM",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_JBIB_7",
@@ -38608,7 +38608,7 @@ export var clothing_inventory_f = {
                     "NO_CREW_EMBLEM",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_JBIB_8",
@@ -38626,7 +38626,7 @@ export var clothing_inventory_f = {
                     "VEST",
                     "BASIC_VEST"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_JBIB_9",
@@ -38669,7 +38669,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "MORPH_SUIT"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_JBIB_0",
@@ -38692,7 +38692,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_JBIB_0",
@@ -38739,7 +38739,7 @@ export var clothing_inventory_f = {
                     "FITTED_HOOD",
                     "HOOD_UP"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_JBIB_1",
@@ -38782,7 +38782,7 @@ export var clothing_inventory_f = {
                     "BIKER_VEST",
                     "BLOCK_SCARFS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_JBIB_10",
@@ -38823,7 +38823,7 @@ export var clothing_inventory_f = {
                     "DRAW_5",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_JBIB_11",
@@ -38864,7 +38864,7 @@ export var clothing_inventory_f = {
                     "DRAW_5",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_JBIB_12",
@@ -38905,7 +38905,7 @@ export var clothing_inventory_f = {
                     "DRAW_5",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_JBIB_13",
@@ -38945,7 +38945,7 @@ export var clothing_inventory_f = {
                     "LOW_DRAW_0",
                     "DRAW_0"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_JBIB_14",
@@ -38985,7 +38985,7 @@ export var clothing_inventory_f = {
                     "LOW2_DRAW_1",
                     "DRAW_0"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_JBIB_15",
@@ -39025,7 +39025,7 @@ export var clothing_inventory_f = {
                     "LOW2_DRAW_0",
                     "DRAW_0"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_JBIB_16",
@@ -39073,7 +39073,7 @@ export var clothing_inventory_f = {
                     "HOOD_TUCKED",
                     "HOODED_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_JBIB_17",
@@ -39112,7 +39112,7 @@ export var clothing_inventory_f = {
                     "HOOD_UP",
                     "HOODED_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_JBIB_18",
@@ -39144,7 +39144,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_JBIB_19",
@@ -39186,7 +39186,7 @@ export var clothing_inventory_f = {
                     "LUXE_DRAW_4",
                     "DRAW_0"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_JBIB_2",
@@ -39228,7 +39228,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_JBIB_20",
@@ -39272,7 +39272,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_JBIB_21",
@@ -39315,7 +39315,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_JBIB_22",
@@ -39362,7 +39362,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_JBIB_23",
@@ -39399,7 +39399,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_JBIB_24",
@@ -39431,7 +39431,7 @@ export var clothing_inventory_f = {
                     "LOW_DRAW_2",
                     "DRAW_0"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_JBIB_25",
@@ -39449,7 +39449,7 @@ export var clothing_inventory_f = {
                     "LUXE_DRAW_4",
                     "DRAW_0"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_JBIB_26",
@@ -39474,7 +39474,7 @@ export var clothing_inventory_f = {
                     "HOOD_TUCKED",
                     "HOODED_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_JBIB_3",
@@ -39522,7 +39522,7 @@ export var clothing_inventory_f = {
                     "HOOD_DOWN",
                     "HOODED_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_JBIB_4",
@@ -39570,7 +39570,7 @@ export var clothing_inventory_f = {
                     "HOOD_UP",
                     "HOODED_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_JBIB_5",
@@ -39618,7 +39618,7 @@ export var clothing_inventory_f = {
                     "HOOD_DOWN",
                     "HOODED_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_JBIB_6",
@@ -39661,7 +39661,7 @@ export var clothing_inventory_f = {
                     "BIKER_VEST",
                     "BLOCK_SCARFS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_JBIB_7",
@@ -39706,7 +39706,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_JBIB_8",
@@ -39750,7 +39750,7 @@ export var clothing_inventory_f = {
                     "LONG_SLEEVE",
                     "BLOCK_SCARFS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_JBIB_9",
@@ -39791,7 +39791,7 @@ export var clothing_inventory_f = {
                     "DRAW_1",
                     "HAS_ALT_VERSION"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_JBIB_0",
@@ -39837,7 +39837,7 @@ export var clothing_inventory_f = {
                     "LONG_SLEEVE",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_JBIB_1",
@@ -39856,7 +39856,7 @@ export var clothing_inventory_f = {
                     "NO_CREW_EMBLEM",
                     "TUCKED"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_JBIB_10",
@@ -39878,7 +39878,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "VEST_SHIRT"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_JBIB_11",
@@ -39902,7 +39902,7 @@ export var clothing_inventory_f = {
                     "DRAW_9",
                     "NO_CREW_EMBLEM"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_JBIB_12",
@@ -39924,7 +39924,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "VEST_SHIRT"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_JBIB_13",
@@ -39950,7 +39950,7 @@ export var clothing_inventory_f = {
                     "JACKET",
                     "JACKET_ONLY"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_JBIB_14",
@@ -39978,7 +39978,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_JBIB_15",
@@ -40005,7 +40005,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "AIR_DRAW_3"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_JBIB_16",
@@ -40031,7 +40031,7 @@ export var clothing_inventory_f = {
                     "JACKET",
                     "OPEN_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_JBIB_17",
@@ -40076,7 +40076,7 @@ export var clothing_inventory_f = {
                     "JACKET",
                     "OPEN_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_JBIB_18",
@@ -40121,7 +40121,7 @@ export var clothing_inventory_f = {
                     "LONG_SLEEVE",
                     "TUCKED"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_JBIB_19",
@@ -40157,7 +40157,7 @@ export var clothing_inventory_f = {
                     "LOW2_DRAW_9",
                     "DRAW_14"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_JBIB_2",
@@ -40191,7 +40191,7 @@ export var clothing_inventory_f = {
                     "LONG_SLEEVE",
                     "TUCKED"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_JBIB_20",
@@ -40227,7 +40227,7 @@ export var clothing_inventory_f = {
                     "LOW2_DRAW_2",
                     "DRAW_14"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_JBIB_21",
@@ -40253,7 +40253,7 @@ export var clothing_inventory_f = {
                     "LUXE_DRAW_4",
                     "DRAW_0"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_JBIB_22",
@@ -40274,7 +40274,7 @@ export var clothing_inventory_f = {
                     "LOW_DRAW_2",
                     "DRAW_0"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_JBIB_3",
@@ -40299,7 +40299,7 @@ export var clothing_inventory_f = {
                     "LONG_SLEEVE",
                     "TUCKED"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_JBIB_4",
@@ -40326,7 +40326,7 @@ export var clothing_inventory_f = {
                     "BLOCK_CHAINS",
                     "TUCKED"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_JBIB_5",
@@ -40354,7 +40354,7 @@ export var clothing_inventory_f = {
                     "OPEN_JACKET",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_JBIB_6",
@@ -40379,7 +40379,7 @@ export var clothing_inventory_f = {
                     "JACKET",
                     "OPEN_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_JBIB_7",
@@ -40423,7 +40423,7 @@ export var clothing_inventory_f = {
                     "JACKET",
                     "OPEN_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_JBIB_8",
@@ -40447,7 +40447,7 @@ export var clothing_inventory_f = {
                     "LOW2_DRAW_4",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_JBIB_9",
@@ -40473,7 +40473,7 @@ export var clothing_inventory_f = {
                     "OUTFIT_CHECKS",
                     "MORPH_SUIT"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_BEACH_F_JBIB0",
@@ -40495,7 +40495,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_9"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_BEACH_F_JBIB1",
@@ -40511,7 +40511,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_15"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_BEACH_F_JBIB2",
@@ -40536,7 +40536,7 @@ export var clothing_inventory_f = {
                     "Orange gestreifter Bikini"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS2_F_JBIB_0",
@@ -40555,7 +40555,7 @@ export var clothing_inventory_f = {
                     "XMAS2_DRAW_1",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS2_F_JBIB_1",
@@ -40574,7 +40574,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_13"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS_F_JBIB0",
@@ -40595,7 +40595,7 @@ export var clothing_inventory_f = {
                     "JACKET",
                     "CLOSED_JACKET"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS_F_JBIB1",
@@ -40612,7 +40612,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SKIRT"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_BUSI_F_JBIB0",
@@ -40642,7 +40642,7 @@ export var clothing_inventory_f = {
                     "OPEN_JACKET",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday4ng"
             },
             {
                 "cHash": "DLC_MP_BUSI_F_JBIB1",
@@ -40668,7 +40668,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_12"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday4ng"
             },
             {
                 "cHash": "DLC_MP_BUSI_F_JBIB2",
@@ -40696,7 +40696,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "VEST_SHIRT"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday4ng"
             },
             {
                 "cHash": "DLC_MP_BUSI_F_JBIB3",
@@ -40717,7 +40717,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "VEST"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday4ng"
             },
             {
                 "cHash": "DLC_MP_BUSI_F_JBIB4",
@@ -40749,7 +40749,7 @@ export var clothing_inventory_f = {
                     "ARMOUR_SHIRT",
                     "DRAW_9"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday4ng"
             },
             {
                 "cHash": "DLC_MP_BUSI_F_JBIB5",
@@ -40780,7 +40780,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "DRAW_6"
                 ],
-                "componentType": "PV_COMP_LOWR"
+                "dlcHash": "patchday4ng"
             },
             {
                 "cHash": "DLC_MP_REPLAY_F_JBIB_0",
@@ -40797,7 +40797,7 @@ export var clothing_inventory_f = {
                     "REPLAY_DRAW_0",
                     "HTB_HANDS"
                 ],
-                "componentType": "PV_COMP_UPPR"
+                "dlcHash": "patchday9ng"
             }
         ]
     ],
@@ -40841,7 +40841,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL",
                     "CLOSED_COLLAR"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "mpbusiness2"
             },
             {
                 "cHash": "DLC_MP_H4_F_TORSO_9",
@@ -40877,7 +40877,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_TORSO_9",
@@ -40913,7 +40913,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_TORSO_9",
@@ -40949,7 +40949,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_LOW_F_TEETH_1",
@@ -40967,7 +40967,7 @@ export var clothing_inventory_f = {
                     "HIGH_HEELS",
                     "DRAW_7"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_91",
@@ -40981,7 +40981,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_91",
@@ -40995,7 +40995,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_91",
@@ -41009,7 +41009,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_91",
@@ -41023,7 +41023,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_91",
@@ -41037,7 +41037,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_91",
@@ -41051,7 +41051,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_91",
@@ -41065,7 +41065,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_91",
@@ -41079,7 +41079,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_TEETH_3",
@@ -41099,7 +41099,7 @@ export var clothing_inventory_f = {
                     "COWBOY_BOOTS",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_EXEC_F_TEETH_1",
@@ -41116,7 +41116,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "BIKER_MASK"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_9",
@@ -41131,7 +41131,7 @@ export var clothing_inventory_f = {
                     "Weiße Chirurgenhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_9",
@@ -41146,7 +41146,7 @@ export var clothing_inventory_f = {
                     "Weiße Chirurgenhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_9",
@@ -41161,7 +41161,7 @@ export var clothing_inventory_f = {
                     "Weiße Chirurgenhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_9",
@@ -41176,7 +41176,7 @@ export var clothing_inventory_f = {
                     "Weiße Chirurgenhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_9",
@@ -41191,7 +41191,7 @@ export var clothing_inventory_f = {
                     "Weiße Chirurgenhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_9",
@@ -41206,7 +41206,7 @@ export var clothing_inventory_f = {
                     "Weiße Chirurgenhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_9",
@@ -41221,7 +41221,7 @@ export var clothing_inventory_f = {
                     "Weiße Chirurgenhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_9",
@@ -41236,7 +41236,7 @@ export var clothing_inventory_f = {
                     "Weiße Chirurgenhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_9",
@@ -41251,7 +41251,7 @@ export var clothing_inventory_f = {
                     "Weiße Chirurgenhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_9",
@@ -41266,7 +41266,7 @@ export var clothing_inventory_f = {
                     "Weiße Chirurgenhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_9",
@@ -41281,7 +41281,7 @@ export var clothing_inventory_f = {
                     "Weiße Chirurgenhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_9",
@@ -41296,7 +41296,7 @@ export var clothing_inventory_f = {
                     "Weiße Chirurgenhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_9",
@@ -41311,7 +41311,7 @@ export var clothing_inventory_f = {
                     "Weiße Chirurgenhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_HIPS_F_TEETH1",
@@ -41333,7 +41333,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_TORSO_1",
@@ -41366,7 +41366,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_TORSO_1",
@@ -41399,7 +41399,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_TORSO_1",
@@ -41432,7 +41432,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_TORSO_1",
@@ -41465,7 +41465,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_TORSO_1",
@@ -41498,7 +41498,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_TORSO_1",
@@ -41531,7 +41531,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_TORSO_1",
@@ -41564,7 +41564,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_TORSO_1",
@@ -41597,7 +41597,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_TORSO_1",
@@ -41630,7 +41630,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_TORSO_1",
@@ -41663,7 +41663,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_TORSO_1",
@@ -41696,7 +41696,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_TORSO_1",
@@ -41729,7 +41729,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_TORSO_1",
@@ -41762,7 +41762,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_TORSO_1",
@@ -41795,7 +41795,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_TORSO_1",
@@ -41828,7 +41828,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_9",
@@ -41846,7 +41846,7 @@ export var clothing_inventory_f = {
                     "LOW2_DRAW_6",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_TORSO_3",
@@ -41860,7 +41860,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_TORSO_3",
@@ -41874,7 +41874,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_TORSO_3",
@@ -41888,7 +41888,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_TORSO_3",
@@ -41902,7 +41902,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_TORSO_3",
@@ -41916,7 +41916,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IND_F_SPECIAL2_0",
@@ -41937,7 +41937,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "JUGG_SUIT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IND_F_SPECIAL2_0",
@@ -41958,7 +41958,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "JUGG_SUIT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IND_F_SPECIAL2_0",
@@ -41979,7 +41979,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "JUGG_SUIT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IND_F_SPECIAL2_0",
@@ -42000,7 +42000,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "JUGG_SUIT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IND_F_SPECIAL2_0",
@@ -42021,7 +42021,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "JUGG_SUIT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IND_F_SPECIAL2_0",
@@ -42042,7 +42042,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "JUGG_SUIT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_TORSO_9",
@@ -42060,7 +42060,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "JUGG_SUIT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_TORSO_9",
@@ -42078,7 +42078,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "JUGG_SUIT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_TORSO_9",
@@ -42096,7 +42096,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "JUGG_SUIT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_TORSO_9",
@@ -42114,7 +42114,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "JUGG_SUIT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_TORSO_9",
@@ -42132,7 +42132,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "JUGG_SUIT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_TORSO_9",
@@ -42150,7 +42150,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "JUGG_SUIT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_SPECIAL2_6",
@@ -42166,7 +42166,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_SPECIAL2_6",
@@ -42182,7 +42182,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_SPECIAL2_6",
@@ -42198,7 +42198,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_SPECIAL2_6",
@@ -42214,7 +42214,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_SPECIAL2_6",
@@ -42230,7 +42230,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_SPECIAL2_6",
@@ -42246,7 +42246,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_SPECIAL2_6",
@@ -42262,7 +42262,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_SPECIAL2_6",
@@ -42278,7 +42278,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_TORSO_0",
@@ -42292,7 +42292,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_TORSO_0",
@@ -42306,7 +42306,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_TEETH_3",
@@ -42320,7 +42320,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_TEETH_3",
@@ -42334,7 +42334,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_TEETH_3",
@@ -42348,7 +42348,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_TEETH_3",
@@ -42362,7 +42362,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_TEETH_3",
@@ -42376,7 +42376,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_TEETH_2",
@@ -42390,7 +42390,7 @@ export var clothing_inventory_f = {
                     "Hund-mit-Halskrause-Kette"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_TEETH_2",
@@ -42404,7 +42404,7 @@ export var clothing_inventory_f = {
                     "Hund-mit-Halskrause-Kette"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_TEETH_2",
@@ -42418,7 +42418,7 @@ export var clothing_inventory_f = {
                     "Hund-mit-Halskrause-Kette"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_TEETH_2",
@@ -42432,7 +42432,7 @@ export var clothing_inventory_f = {
                     "Hund-mit-Halskrause-Kette"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_TEETH_2",
@@ -42446,7 +42446,7 @@ export var clothing_inventory_f = {
                     "Hund-mit-Halskrause-Kette"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_TEETH_2",
@@ -42460,7 +42460,7 @@ export var clothing_inventory_f = {
                     "Hund-mit-Halskrause-Kette"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_TEETH_2",
@@ -42474,7 +42474,7 @@ export var clothing_inventory_f = {
                     "Hund-mit-Halskrause-Kette"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_TEETH_2",
@@ -42488,7 +42488,7 @@ export var clothing_inventory_f = {
                     "Hund-mit-Halskrause-Kette"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_TEETH_2",
@@ -42502,7 +42502,7 @@ export var clothing_inventory_f = {
                     "Hund-mit-Halskrause-Kette"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_TEETH_2",
@@ -42516,7 +42516,7 @@ export var clothing_inventory_f = {
                     "Hund-mit-Halskrause-Kette"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_TEETH_2",
@@ -42530,7 +42530,7 @@ export var clothing_inventory_f = {
                     "Hund-mit-Halskrause-Kette"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_UPPR_9",
@@ -42553,7 +42553,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_UPPR_9",
@@ -42576,7 +42576,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_UPPR_9",
@@ -42599,7 +42599,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_UPPR_9",
@@ -42622,7 +42622,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_9",
@@ -42661,7 +42661,7 @@ export var clothing_inventory_f = {
                     "MORPH_SUIT",
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_9",
@@ -42700,7 +42700,7 @@ export var clothing_inventory_f = {
                     "MORPH_SUIT",
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_9",
@@ -42739,7 +42739,7 @@ export var clothing_inventory_f = {
                     "MORPH_SUIT",
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_9",
@@ -42778,7 +42778,7 @@ export var clothing_inventory_f = {
                     "MORPH_SUIT",
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_9",
@@ -42817,7 +42817,7 @@ export var clothing_inventory_f = {
                     "MORPH_SUIT",
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_9",
@@ -42856,7 +42856,7 @@ export var clothing_inventory_f = {
                     "MORPH_SUIT",
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_9",
@@ -42895,7 +42895,7 @@ export var clothing_inventory_f = {
                     "MORPH_SUIT",
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_BEACH_F_TEETH1",
@@ -42912,7 +42912,7 @@ export var clothing_inventory_f = {
                     "Komplett silberne Herzkette"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_BEACH_F_TEETH1",
@@ -42929,7 +42929,7 @@ export var clothing_inventory_f = {
                     "Komplett silberne Herzkette"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS2_F_TEETH_1",
@@ -42946,7 +42946,7 @@ export var clothing_inventory_f = {
                     "Sturmschal"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS2_F_TEETH_1",
@@ -42963,7 +42963,7 @@ export var clothing_inventory_f = {
                     "Sturmschal"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS2_F_TEETH_1",
@@ -42980,7 +42980,7 @@ export var clothing_inventory_f = {
                     "Sturmschal"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS2_F_TEETH_1",
@@ -42997,7 +42997,7 @@ export var clothing_inventory_f = {
                     "Sturmschal"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS2_F_TEETH_1",
@@ -43014,7 +43014,7 @@ export var clothing_inventory_f = {
                     "Sturmschal"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS_F_LEGS0",
@@ -43032,7 +43032,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "DRAW_0"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS_F_LEGS0",
@@ -43050,7 +43050,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "DRAW_0"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_BUSI_F_TEETH0",
@@ -43072,7 +43072,7 @@ export var clothing_inventory_f = {
                     "REPLAY_DRAW_0",
                     "HTB_MASK"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday8ng"
             },
             {
                 "cHash": "DLC_MP_BUSI_F_TEETH0",
@@ -43094,7 +43094,7 @@ export var clothing_inventory_f = {
                     "REPLAY_DRAW_0",
                     "HTB_MASK"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday8ng"
             }
         ],
         [
@@ -43113,7 +43113,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpairraces"
             },
             {
                 "cHash": "SP_F_UPPR_9",
@@ -43130,7 +43130,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpairraces"
             },
             {
                 "cHash": "SP_F_UPPR_9",
@@ -43147,7 +43147,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpairraces"
             },
             {
                 "cHash": "SP_F_UPPR_9",
@@ -43164,7 +43164,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpairraces"
             },
             {
                 "cHash": "SP_F_UPPR_9",
@@ -43181,7 +43181,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpairraces"
             },
             {
                 "cHash": "SP_F_UPPR_9",
@@ -43198,7 +43198,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpairraces"
             },
             {
                 "cHash": "SP_F_UPPR_9",
@@ -43215,7 +43215,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpairraces"
             },
             {
                 "cHash": "SP_F_UPPR_9",
@@ -43232,7 +43232,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpairraces"
             },
             {
                 "cHash": "SP_F_UPPR_9",
@@ -43249,7 +43249,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpairraces"
             },
             {
                 "cHash": "SP_F_UPPR_9",
@@ -43266,7 +43266,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpairraces"
             },
             {
                 "cHash": "SP_F_UPPR_9",
@@ -43283,7 +43283,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpairraces"
             },
             {
                 "cHash": "SP_F_UPPR_9",
@@ -43300,7 +43300,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpairraces"
             },
             {
                 "cHash": "SP_F_UPPR_9",
@@ -43317,7 +43317,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpairraces"
             },
             {
                 "cHash": "SP_F_UPPR_9",
@@ -43334,7 +43334,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpairraces"
             },
             {
                 "cHash": "SP_F_UPPR_9",
@@ -43351,7 +43351,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpairraces"
             },
             {
                 "cHash": "SP_F_UPPR_9",
@@ -43368,7 +43368,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpairraces"
             },
             {
                 "cHash": "DLC_MP_H4_F_TORSO_9",
@@ -43404,7 +43404,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_TORSO_9",
@@ -43440,7 +43440,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_TORSO_9",
@@ -43476,7 +43476,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_H4_F_TORSO_9",
@@ -43512,7 +43512,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_91",
@@ -43526,7 +43526,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_9",
@@ -43541,7 +43541,7 @@ export var clothing_inventory_f = {
                     "Weiße Chirurgenhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_9",
@@ -43556,7 +43556,7 @@ export var clothing_inventory_f = {
                     "Weiße Chirurgenhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_HIPS_F_TEETH1",
@@ -43578,7 +43578,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_HIPS_F_TEETH1",
@@ -43600,7 +43600,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_TORSO_3",
@@ -43614,7 +43614,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IND_F_SPECIAL2_0",
@@ -43635,7 +43635,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "JUGG_SUIT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IND_F_SPECIAL2_0",
@@ -43656,7 +43656,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "JUGG_SUIT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_TORSO_0",
@@ -43670,7 +43670,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_TORSO_0",
@@ -43684,7 +43684,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_TEETH_3",
@@ -43698,7 +43698,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_UPPR_9",
@@ -43721,7 +43721,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_BEACH_F_TEETH1",
@@ -43738,7 +43738,7 @@ export var clothing_inventory_f = {
                     "Komplett silberne Herzkette"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_BEACH_F_TEETH1",
@@ -43755,7 +43755,7 @@ export var clothing_inventory_f = {
                     "Komplett silberne Herzkette"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_BUSI_F_TEETH0",
@@ -43777,7 +43777,7 @@ export var clothing_inventory_f = {
                     "REPLAY_DRAW_0",
                     "HTB_MASK"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday8ng"
             },
             {
                 "cHash": "DLC_MP_BUSI_F_TEETH0",
@@ -43799,7 +43799,7 @@ export var clothing_inventory_f = {
                     "REPLAY_DRAW_0",
                     "HTB_MASK"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday8ng"
             }
         ],
         [
@@ -43819,7 +43819,7 @@ export var clothing_inventory_f = {
                     "HIGH_HEELS",
                     "DRAW_7"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LOW_F_TEETH_1",
@@ -43837,7 +43837,7 @@ export var clothing_inventory_f = {
                     "HIGH_HEELS",
                     "DRAW_7"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LOW_F_TEETH_1",
@@ -43855,7 +43855,7 @@ export var clothing_inventory_f = {
                     "HIGH_HEELS",
                     "DRAW_7"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_9",
@@ -43872,7 +43872,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_9",
@@ -43889,7 +43889,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_9",
@@ -43906,7 +43906,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_9",
@@ -43923,7 +43923,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_9",
@@ -43940,7 +43940,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_9",
@@ -43957,7 +43957,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_9",
@@ -43974,7 +43974,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_9",
@@ -43991,7 +43991,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_9",
@@ -44008,7 +44008,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_9",
@@ -44025,7 +44025,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_91",
@@ -44039,7 +44039,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_91",
@@ -44053,7 +44053,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_91",
@@ -44067,7 +44067,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_LOW2_F_TEETH_4",
@@ -44084,7 +44084,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "APART_DRAW_0"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_TORSO_0",
@@ -44098,7 +44098,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_TORSO_0",
@@ -44112,7 +44112,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_TORSO_0",
@@ -44126,7 +44126,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_TORSO_0",
@@ -44140,7 +44140,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             }
         ],
         [
@@ -44159,7 +44159,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpairraces"
             },
             {
                 "cHash": "DLC_MP_H4_F_TORSO_9",
@@ -44195,7 +44195,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_LTS_F_UPPR_1",
@@ -44219,7 +44219,7 @@ export var clothing_inventory_f = {
                     "MORPH_SUIT",
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpsum"
             },
             {
                 "cHash": "DLC_MP_PILOT_F_TORSO_0",
@@ -44236,7 +44236,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_HEIST_F_TORSO_91",
@@ -44250,7 +44250,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_9",
@@ -44265,7 +44265,7 @@ export var clothing_inventory_f = {
                     "Weiße Chirurgenhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_STUNT_F_TORSO_1",
@@ -44298,7 +44298,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_ARENA_F_TORSO_3",
@@ -44312,7 +44312,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_IE_F_TORSO_9",
@@ -44330,7 +44330,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "JUGG_SUIT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_TORSO_0",
@@ -44344,7 +44344,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_JAN_F_UPPR_9",
@@ -44367,7 +44367,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_GR_F_TORSO_9",
@@ -44406,7 +44406,7 @@ export var clothing_inventory_f = {
                     "MORPH_SUIT",
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_SUM_F_TORSO_9",
@@ -44430,7 +44430,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "TAT_DECL"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday3ng"
             }
         ],
         [
@@ -44450,7 +44450,7 @@ export var clothing_inventory_f = {
                     "UNDER_JACKET",
                     "DRAW_0"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "patchday3ng"
             }
         ],
         null,
@@ -44470,7 +44470,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpairraces"
             },
             {
                 "cHash": "DLC_MP_H4_F_TORSO_9",
@@ -44506,7 +44506,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "mpheist4"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_9",
@@ -44523,7 +44523,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_9",
@@ -44540,7 +44540,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_9",
@@ -44557,7 +44557,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_9",
@@ -44572,7 +44572,7 @@ export var clothing_inventory_f = {
                     "Weiße Chirurgenhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_9",
@@ -44587,7 +44587,7 @@ export var clothing_inventory_f = {
                     "Weiße Chirurgenhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_9",
@@ -44602,7 +44602,7 @@ export var clothing_inventory_f = {
                     "Weiße Chirurgenhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_9",
@@ -44617,7 +44617,7 @@ export var clothing_inventory_f = {
                     "Weiße Chirurgenhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_9",
@@ -44632,7 +44632,7 @@ export var clothing_inventory_f = {
                     "Weiße Chirurgenhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_9",
@@ -44647,7 +44647,7 @@ export var clothing_inventory_f = {
                     "Weiße Chirurgenhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_9",
@@ -44662,7 +44662,7 @@ export var clothing_inventory_f = {
                     "Weiße Chirurgenhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_9",
@@ -44677,7 +44677,7 @@ export var clothing_inventory_f = {
                     "Weiße Chirurgenhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_9",
@@ -44695,7 +44695,7 @@ export var clothing_inventory_f = {
                     "LOW2_DRAW_6",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_9",
@@ -44713,7 +44713,7 @@ export var clothing_inventory_f = {
                     "LOW2_DRAW_6",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_9",
@@ -44731,7 +44731,7 @@ export var clothing_inventory_f = {
                     "LOW2_DRAW_6",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_9",
@@ -44749,7 +44749,7 @@ export var clothing_inventory_f = {
                     "LOW2_DRAW_6",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_TORSO_0",
@@ -44763,7 +44763,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_TORSO_0",
@@ -44777,7 +44777,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_TORSO_0",
@@ -44791,7 +44791,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_TORSO_0",
@@ -44805,7 +44805,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_TORSO_0",
@@ -44819,7 +44819,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_TORSO_0",
@@ -44833,7 +44833,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_TORSO_0",
@@ -44847,7 +44847,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_TORSO_0",
@@ -44861,7 +44861,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_VWD_F_TORSO_0",
@@ -44875,7 +44875,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             }
         ],
         [
@@ -44895,7 +44895,7 @@ export var clothing_inventory_f = {
                     "HIGH_HEELS",
                     "DRAW_7"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday15ng"
             },
             {
                 "cHash": "DLC_MP_LUXE_F_TEETH_9",
@@ -44912,7 +44912,7 @@ export var clothing_inventory_f = {
                     "HAT",
                     "FORCE_BALD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday16ng"
             },
             {
                 "cHash": "DLC_MP_APA_F_TEETH_3",
@@ -44932,7 +44932,7 @@ export var clothing_inventory_f = {
                     "COWBOY_BOOTS",
                     "OUTFIT_CHECKS"
                 ],
-                "componentType": "PV_COMP_FEET"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_EXEC_F_TEETH_1",
@@ -44949,7 +44949,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "BIKER_MASK"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_9",
@@ -44964,7 +44964,7 @@ export var clothing_inventory_f = {
                     "Weiße Chirurgenhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_9",
@@ -44979,7 +44979,7 @@ export var clothing_inventory_f = {
                     "Weiße Chirurgenhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_9",
@@ -44994,7 +44994,7 @@ export var clothing_inventory_f = {
                     "Weiße Chirurgenhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_9",
@@ -45009,7 +45009,7 @@ export var clothing_inventory_f = {
                     "Weiße Chirurgenhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_9",
@@ -45024,7 +45024,7 @@ export var clothing_inventory_f = {
                     "Weiße Chirurgenhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_9",
@@ -45039,7 +45039,7 @@ export var clothing_inventory_f = {
                     "Weiße Chirurgenhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_BIKER_F_TORSO_9",
@@ -45054,7 +45054,7 @@ export var clothing_inventory_f = {
                     "Weiße Chirurgenhandschuhe"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday17ng"
             },
             {
                 "cHash": "DLC_MP_HIPS_F_TEETH1",
@@ -45076,7 +45076,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "HOOD_COMPAT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday19ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_9",
@@ -45094,7 +45094,7 @@ export var clothing_inventory_f = {
                     "LOW2_DRAW_6",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_9",
@@ -45112,7 +45112,7 @@ export var clothing_inventory_f = {
                     "LOW2_DRAW_6",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_9",
@@ -45130,7 +45130,7 @@ export var clothing_inventory_f = {
                     "LOW2_DRAW_6",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_9",
@@ -45148,7 +45148,7 @@ export var clothing_inventory_f = {
                     "LOW2_DRAW_6",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_9",
@@ -45166,7 +45166,7 @@ export var clothing_inventory_f = {
                     "LOW2_DRAW_6",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_9",
@@ -45184,7 +45184,7 @@ export var clothing_inventory_f = {
                     "LOW2_DRAW_6",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LUXE2_F_TEETH_9",
@@ -45202,7 +45202,7 @@ export var clothing_inventory_f = {
                     "LOW2_DRAW_6",
                     "LONG_SLEEVE"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_LOW2_F_TEETH_4",
@@ -45219,7 +45219,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "APART_DRAW_0"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday20ng"
             },
             {
                 "cHash": "DLC_MP_X17_F_TEETH_3",
@@ -45233,7 +45233,7 @@ export var clothing_inventory_f = {
                     null
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_H3_F_TEETH_2",
@@ -45247,7 +45247,7 @@ export var clothing_inventory_f = {
                     "Hund-mit-Halskrause-Kette"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday24ng"
             },
             {
                 "cHash": "DLC_MP_BEACH_F_TEETH1",
@@ -45264,7 +45264,7 @@ export var clothing_inventory_f = {
                     "Komplett silberne Herzkette"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_XMAS2_F_TEETH_1",
@@ -45281,7 +45281,7 @@ export var clothing_inventory_f = {
                     "Sturmschal"
                 ],
                 "restrictionTags": null,
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday3ng"
             },
             {
                 "cHash": "DLC_MP_BUSI_F_TEETH0",
@@ -45303,7 +45303,7 @@ export var clothing_inventory_f = {
                     "REPLAY_DRAW_0",
                     "HTB_MASK"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday8ng"
             }
         ],
         [
@@ -45339,7 +45339,7 @@ export var clothing_inventory_f = {
                     "BLOCK_SCARFS",
                     "BLOCK_CHAINS"
                 ],
-                "componentType": "PV_COMP_JBIB"
+                "dlcHash": "mpassault"
             },
             {
                 "cHash": "DLC_MP_BH_F_SPECIAL_9",
@@ -45379,7 +45379,7 @@ export var clothing_inventory_f = {
                     "ALT_SPECIAL",
                     "CLOSED_COLLAR"
                 ],
-                "componentType": "PV_COMP_ACCS"
+                "dlcHash": "mpbusiness2"
             }
         ],
         [
@@ -45402,7 +45402,7 @@ export var clothing_inventory_f = {
                     "SHRINK_HEAD",
                     "JUGG_SUIT"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             },
             {
                 "cHash": "DLC_MP_SMUG_F_SPECIAL2_6",
@@ -45418,7 +45418,7 @@ export var clothing_inventory_f = {
                 "restrictionTags": [
                     "SHRINK_HEAD"
                 ],
-                "componentType": "PV_COMP_BERD"
+                "dlcHash": "patchday22ng"
             }
         ]
     ]

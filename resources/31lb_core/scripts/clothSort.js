@@ -23,7 +23,7 @@ export function sortClothes() {
         },
         texture: [],
         restrictionTags: null,
-        componentType: null
+        dlcHash: null
     };
     let tempProp = {
         cHash: null,
@@ -31,7 +31,7 @@ export function sortClothes() {
         drawable: -1,
         texture: [],
         restrictionTags: null,
-        componentType: null
+        dlcHash: null
     };
     let tempCompId;
     clothFile.forEach(dlc => {
@@ -50,7 +50,7 @@ export function sortClothes() {
             else {
                 tempCloth.drawable = comp.DrawableId;
                 tempCloth.restrictionTags = comp.RestrictionTags;
-                tempCloth.componentType = comp.ComponentType;
+                tempCloth.dlcHash = dlc.DlcName;
                 var skip = false;
                 if (cloth_blacklist[tempCompId] != null) {
                     if (!cloth_blacklist[tempCompId].isProp) {
@@ -86,7 +86,7 @@ export function sortClothes() {
                     },
                     texture: [],
                     restrictionTags: null,
-                    componentType: null
+                    dlcHash: null
                 };
                 tempCloth.texture[comp.TextureId] = (comp.TranslatedLabel == (undefined || null)) ? null : JSON.parse(JSON.stringify(comp.TranslatedLabel)).German;
             }
@@ -137,7 +137,7 @@ export function sortClothes() {
                     drawable: -1,
                     texture: [],
                     restrictionTags: null,
-                    componentType: null
+                    dlcHash: null
                 };
                 tempProp.texture[prop.TextureId] = (prop.TranslatedLabel == (undefined || null)) ? "no_translation" : JSON.parse(JSON.stringify(prop.TranslatedLabel)).German;
             }
