@@ -5,7 +5,7 @@
 	"main": "",
 	"scripts": {
 		"build": "npm run clean && tsc && npm run copy",
-		"copy": "copyfiles src/**/* --exclude=**/*.ts --exclude=**/*.less --exclude=*/data_dumps/* --up 1 ./resources",
+		"copy": "copyfiles src/**/* --exclude=**/*.ts --exclude=**/*.less --exclude=src/31lb_core/data_dumps/* --up 1 ./resources",
 		"clean": "rimraf resources",
 		"update": "altv-pkg d release",
 		"update-dev": "altv-pkg d dev",

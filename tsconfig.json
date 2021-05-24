@@ -17,7 +17,7 @@
         "allowSyntheticDefaultImports": true,
     },
     "include": ["./src/**/*.ts"],
-    "exclude": ["node_modules", "**/*.spec.ts", "resources", "**/*.json"],
+    "exclude": ["node_modules", "**/*.spec.ts", "resources", "**/*.json", "src/31lb_core/data_dumps"],
     "watchOptions": {
         "watchFile": "useFsEvents",
         "watchDirectory": "useFsEvents",

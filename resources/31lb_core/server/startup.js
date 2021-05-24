@@ -21,7 +21,6 @@ export var database = new SQL(dbType, dbHost, dbPort, dbUsername, dbPassword, db
     entities.PlayerEntity, entities.WeaponEntity, entities.PlaceEntity, entities.VehicleEntity
 ]);
 let safeStopped = false;
-let restarted = false;
 alt.on("resourceStart", () => {
     alt.Player.all.forEach((player, index, array) => {
         player.setDateTime(11, 3, 2021, 8, 0, 0);

@@ -45,3 +45,6 @@ export function addWeapon(player, weaponName, inventory) {
         setValue(result, null);
     });
 }
+const spawnpositions = [
+    { "px": -21.05666160583496, "py": -638.7738647460938, "pz": 35.28913497924805, "rx": 0.001075899344868958, "yx": 0.00048563486780039966, "zx": -1.9382637739181519 },
+];

@@ -26,7 +26,6 @@ export var database = new SQL(dbType, dbHost, dbPort, dbUsername, dbPassword, db
 ]);
 
 let safeStopped: boolean = false;
-let restarted: boolean = false;
 
 interface InteractFunction<K extends PropertyKey, V> {
   key: K;

@@ -491,7 +491,10 @@ export function startPlaceGen(preset: PlacePreset): void {
   let interact_save = new NativeUI.UIMenuCheckboxItem("Interaktionsposition festsetzen", false, "");
   menu_interaction.AddItem(interact_save);
 
-  let interact_fn_name = "shop_" + preset.title.toLowerCase().replaceAll(" ", "") + "_" + native.getStreetNameFromHashKey(native.getStreetNameAtCoord(alt.Player.local.pos.x, alt.Player.local.pos.y, alt.Player.local.pos.z)[1]).toLowerCase().replaceAll(" ", "");
+  let interact_fn_name;
+  if (preset != null) {
+    interact_fn_name = "shop_" + preset.title.toLowerCase().replaceAll(" ", "") + "_" + native.getStreetNameFromHashKey(native.getStreetNameAtCoord(alt.Player.local.pos.x, alt.Player.local.pos.y, alt.Player.local.pos.z)[1]).toLowerCase().replaceAll(" ", "");
+  }
 
   let interact_fn = new NativeUI.UIMenuItem("Funktion", "Funktion benennen, die gespeichert werden soll. Kann leer bleiben, dann wird ein zufälliger Name vergeben.");
   interact_fn.SetRightBadge(NativeUI.BadgeStyle.ArrowRight);
