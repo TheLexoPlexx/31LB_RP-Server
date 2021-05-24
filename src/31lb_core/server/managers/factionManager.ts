@@ -26,7 +26,7 @@ export const Factions: {
   sapd: {
     name: "San Andreas Police Department",
     shortname: "SAPD",
-    color: { r: 255, g: 255, b: 255 },
+    color: { r: 24, g: 116, b: 205 },
     type: FactionType.state,
   },
   lsmc: {
