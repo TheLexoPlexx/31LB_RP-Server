@@ -1,11 +1,15 @@
 /// <reference types="@altv/types-server" />
 import * as alt from 'alt-server';
 import { ItemHolder } from '../../client/interactions/inventory';
+import { clothing_inventory_f } from '../../client/shops/inventories/clothing_f';
+import { clothing_inventory_m } from '../../client/shops/inventories/clothing_m';
 import { setCloth } from '../managers/playerManager';
 import { saveVehicles } from '../managers/vehicleManager';
 
 export function keyPressF9(player: alt.Player) {
   //placeholder
+
+  /*
   let t: ItemHolder = {
     displayname: "Weiß, lose",
     sizeHeight: 6,
@@ -13,6 +17,7 @@ export function keyPressF9(player: alt.Player) {
     items: null,
   };
   setCloth(player, 8, t, 64, 0, "patchday20ng")
+  */
 }
 
 export function keyPressY(player: alt.Player) {

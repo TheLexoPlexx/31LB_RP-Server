@@ -8,6 +8,7 @@ import { componentIds } from '../util/clothdict';
 import { clothing_inventory_m } from "./../shops/inventories/clothing_m";
 import { clothing_inventory_f } from "./../shops/inventories/clothing_f";
 
+/*
 interface ClothData {
   cHash: string;
   price: number;
@@ -22,12 +23,41 @@ interface InventorySpace {
   x: number;
   y: number;
 }
+*/
 
 let mainmenu: NativeUI.Menu;
 let categmenu: NativeUI.Menu;
 let categitem: NativeUI.UIMenuItem;
 
-/* //TODO: Wichtig, funktioniert kein bisschen und überhaupt nicht, bin aber jetzt knatschig.
+/*
+alt.logWarning("Started...");
+clothing_inventory_f.clothes.forEach((element) => {
+  element.forEach((component) => {
+    clothing_inventory_m.clothes.forEach((element2) => {
+      element2.forEach(component2 => {
+        let split1 = component.cHash.split("_");
+        let split2 = component2.cHash.split("_");
+
+        for (var i = 0; i <= split1.length; i++) {
+          if (split1[i] == "F") {
+            split1[i] = "X";
+          }
+        }
+        for (var i = 0; i <= split1.length; i++) {
+          if (split2[i] == "M") {
+            split2[i] = "X";
+          }
+        }
+        if (split1.join("_") == split2.join("_")) {
+          alt.log(split1.join("_"));
+        }
+      });
+    });
+  });
+});
+alt.logWarning("Ended!");
+*/
+
 export function openShopInteraction(cm: colshapeMeta) {
   mainmenu = new NativeUI.Menu("", cm.description == null ? "" : cm.description, new NativeUI.Point(50, 50));
   mainmenu.SetSpriteBannerType(new NativeUI.Sprite(cm.banner, cm.banner, new NativeUI.Point(0, 0), new NativeUI.Size(0, 0)));
@@ -93,4 +123,3 @@ function addPieces(category, index) {
     }
   });
 }
-*/

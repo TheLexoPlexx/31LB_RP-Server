@@ -25,7 +25,6 @@ export function setCloth(player, comp, item, drawable, texture, dlcHash) {
     player.setSyncedMeta("inventory_" + comp, item);
     let palette = 2;
     alt.emitClient(player, "a_setclothes");
-    player.setClothes(comp, drawable, texture, palette, alt.hash(dlcHash));
 }
 export function getInventorySpace(comp) {
 }
