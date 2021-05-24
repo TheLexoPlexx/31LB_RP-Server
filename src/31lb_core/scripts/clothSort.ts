@@ -105,15 +105,12 @@ export function sortClothes() {
         tempCloth.cHash = tempHash;
         tempCompId = comp.ComponentId;
         tempCloth.texture[comp.TextureId] = (comp.TranslatedLabel == (undefined || null)) ? null : JSON.parse(JSON.stringify(comp.TranslatedLabel)).German;
+        tempCloth.drawable = comp.DrawableId;
       }
 
       if (tempCloth.cHash == tempHash) {
         tempCloth.texture[comp.TextureId] = (comp.TranslatedLabel == (undefined || null)) ? null : JSON.parse(JSON.stringify(comp.TranslatedLabel)).German;
       } else {
-        tempCloth.drawable = comp.DrawableId;
-        tempCloth.restrictionTags = comp.RestrictionTags;
-        tempCloth.dlcHash = dlc.DlcName;
-
         var skip = false;
         if (cloth_blacklist[tempCompId] != null) {
           if (!cloth_blacklist[tempCompId].isProp) {
@@ -153,6 +150,10 @@ export function sortClothes() {
           dlcHash: null
         };
         tempCloth.texture[comp.TextureId] = (comp.TranslatedLabel == (undefined || null)) ? null : JSON.parse(JSON.stringify(comp.TranslatedLabel)).German;
+
+        tempCloth.restrictionTags = comp.RestrictionTags;
+        tempCloth.dlcHash = dlc.DlcName;
+        tempCloth.drawable = comp.DrawableId;
       }
     });
     dlc.Props.forEach(prop => {
@@ -164,14 +165,12 @@ export function sortClothes() {
         tempProp.cHash = tempHash;
         tempCompId = prop.ComponentId;
         tempProp.texture[prop.TextureId] = (prop.TranslatedLabel == (undefined || null)) ? "no_translation" : JSON.parse(JSON.stringify(prop.TranslatedLabel)).German;
+        tempProp.drawable = prop.DrawableId;
       }
 
       if (tempProp.cHash == tempHash) {
         tempProp.texture[prop.TextureId] = (prop.TranslatedLabel == (undefined || null)) ? "no_translation" : JSON.parse(JSON.stringify(prop.TranslatedLabel)).German;
       } else {
-        tempProp.drawable = prop.DrawableId;
-        tempProp.restrictionTags = prop.RestrictionTags;
-
         var skip = false;
         if (cloth_blacklist[tempCompId] != null) {
           if (cloth_blacklist[tempCompId].isProp) {
@@ -207,6 +206,9 @@ export function sortClothes() {
           dlcHash: null
         };
         tempProp.texture[prop.TextureId] = (prop.TranslatedLabel == (undefined || null)) ? "no_translation" : JSON.parse(JSON.stringify(prop.TranslatedLabel)).German;
+        
+        tempProp.drawable = prop.DrawableId;
+        tempProp.restrictionTags = prop.RestrictionTags;
       }
     });
   });
