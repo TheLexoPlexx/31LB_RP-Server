@@ -2,6 +2,7 @@ import * as alt from 'alt-client';
 import { toggleInfoHud } from './interactions/infohud';
 import { toggleInventory } from './interactions/inventory';
 import { togglePlayerMenu } from './interactions/playerMenu';
+import { openShopInteraction } from './interactions/shopInteraction';
 export function keyUp(key) {
     if (alt.Player.local.getSyncedMeta("allowKeyPress") && !alt.isConsoleOpen()) {
         if (key == 89) {
@@ -42,6 +43,7 @@ export function keyUp(key) {
             if (alt.getMeta("interaction_meta") != (null || undefined)) {
                 let cM = alt.getMeta("interaction_meta");
                 if (cM.interact_function.startsWith("shop_")) {
+                    openShopInteraction(cM);
                 }
                 else {
                     alt.emit("event_interact_function", alt.getMeta("interaction_meta"));

@@ -27,20 +27,23 @@ export function openShopInteraction(cm) {
     }
     mainmenu.Open();
 }
-function clothingShopMenu(cm, inventory_file, onduty) {
+async function clothingShopMenu(cm, inventory_file, onduty) {
     inventory_file.clothes.forEach((categoryC, index) => {
-        addPieces(categoryC, index);
-    });
-    inventory_file.props.forEach((categoryP, index) => {
-        addPieces(categoryP, index);
+        if (categoryC != null) {
+            addPieces(categoryC, index);
+        }
     });
 }
-function addPieces(category, index) {
+async function addPieces(category, index) {
     categitem = new NativeUI.UIMenuItem(componentIds[index]);
     mainmenu.AddItem(categitem);
     categmenu = new NativeUI.Menu(componentIds[index], "", new NativeUI.Point(50, 50));
+    categmenu.SetRectangleBannerType(new NativeUI.ResRectangle(new NativeUI.Point(0, 0), null, new NativeUI.Color(0, 0, 0)));
+    if (componentIds[index].length >= 16) {
+        categmenu.GetTitle().Scale = 0.9;
+    }
     mainmenu.AddSubMenu(categmenu, categitem);
-    Object.values(category).forEach((clothPiece) => {
+    category.forEach((clothPiece) => {
         if (clothPiece != null) {
             let title;
             if (clothPiece.texture[0] == null) {
@@ -52,7 +55,7 @@ function addPieces(category, index) {
             let pieceitem = new NativeUI.UIMenuItem(title);
             categmenu.AddItem(pieceitem);
             let texturemenu = new NativeUI.Menu(title, "", new NativeUI.Point(50, 50));
-            categmenu.AddSubMenu(texturemenu, categitem);
+            categmenu.AddSubMenu(texturemenu, pieceitem);
             clothPiece.texture.forEach(xt => {
                 let pieceitem = new NativeUI.UIMenuItem(xt);
                 texturemenu.AddItem(pieceitem);

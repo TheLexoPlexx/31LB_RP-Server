@@ -721,7 +721,7 @@ let subtitleenabled: boolean = false;
 export function enteredColshape(colshapeMeta: colshapeMeta) {
   if (colshapeMeta != null) {
     if (colshapeMeta.type == "interaction") {
-      if (alt.Player.local.getSyncedMeta("unlocked_places").includes(colshapeMeta.id)) {
+      if (alt.Player.local.getSyncedMeta("unlocked_places").includes(colshapeMeta.id) || colshapeMeta.unlock_pos == null) {
         if ((alt.Player.local.seat >= 0 && colshapeMeta.carstatus != 2) || (alt.Player.local.seat <= 0 && colshapeMeta.carstatus != 1)) {
           native.beginTextCommandPrint('STRING');
           native.addTextComponentSubstringPlayerName("Drücke ~y~E ~w~zum Interagieren");
