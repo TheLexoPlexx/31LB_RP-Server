@@ -101,4 +101,9 @@ async function addPieces(category: ClothData[], index: number) {
       });
     }
   });
+
+  categmenu.IndexChange.on(() => {
+    
+    native.setPedComponentVariation(alt.Player.local.scriptID, componentId, drawableId, textureId, 2);
+  });
 }
