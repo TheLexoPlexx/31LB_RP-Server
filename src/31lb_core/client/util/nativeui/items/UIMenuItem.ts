@@ -23,6 +23,7 @@ export default class UIMenuItem {
 
     protected _rectangle: ResRectangle;
     protected _text: ResText;
+    protected _meta: Map<string, any>;
     protected _description: string;
     protected _selectedSprite: Sprite;
     protected _badgeLeft: Sprite;
@@ -48,6 +49,13 @@ export default class UIMenuItem {
     }
     public set Text(text) {
         this._text.Caption = text;
+    }
+
+    public getMeta(key: string) {
+        return this._meta.get(key);
+    }
+    public setMeta(key: string, value: any) {
+        this._meta.set(key, value);
     }
 
     public get Description() {
@@ -77,6 +85,8 @@ export default class UIMenuItem {
         this._badgeRight = new Sprite("commonmenu", "", new Point(0, 0), new Size(40, 40));
 
         this._labelText = new ResText("", new Point(0, 0), 0.35, Color.White, 0, Alignment.Right);
+
+        this._meta = new Map;
     }
 
     public SetVerticalPosition(y: number) {
