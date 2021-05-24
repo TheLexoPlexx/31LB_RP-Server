@@ -3,6 +3,7 @@
 ## Bedienungsanleitung
 
 **Voraussetzungen**
+> [node.js](https://nodejs.org/en/)
 > [npm](https://www.npmjs.com/)
 
 
@@ -19,4 +20,15 @@ npm run update
 Build
 ```sh
 npm run build
+```
+
+**Server Befehle**
+Roleplay-Plugin neustarten
+```sh
+rp restart | rp r
+```
+
+Roleplay-Plugin stoppen
+```sh
+rp stop | rp s
 ```
