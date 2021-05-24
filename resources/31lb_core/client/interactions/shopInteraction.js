@@ -62,4 +62,7 @@ async function addPieces(category, index) {
             });
         }
     });
+    categmenu.IndexChange.on(() => {
+        native.setPedComponentVariation(alt.Player.local.scriptID, componentId, drawableId, textureId, 2);
+    });
 }

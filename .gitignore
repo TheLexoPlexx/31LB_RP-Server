@@ -1,6 +1,4 @@
 cache/
 crashdumps/
-data/
 node_modules/
-resources/_vehicles
 server.log
