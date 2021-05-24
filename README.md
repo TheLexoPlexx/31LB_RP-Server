@@ -3,33 +3,34 @@
 ## Bedienungsanleitung
 
 **Voraussetzungen**
-> [node.js](https://nodejs.org/en/)
 
-> [npm](https://www.npmjs.com/)
+[node.js](https://nodejs.org/en/)
 
+[npm](https://www.npmjs.com/)
+
+<br>
 
 **Installieren**
 ```sh
 npm install
 ```
 
-Server updaten
+**Server updaten**
 ```sh
 npm run update
 ```
 
-Build
+**Build**
 ```sh
 npm run build
 ```
 
-**Server Befehle**
-Roleplay-Plugin neustarten
+**Roleplay-Plugin neustarten**
 ```sh
 rp restart | rp r
 ```
 
-Roleplay-Plugin stoppen
+**Roleplay-Plugin stoppen**
 ```sh
 rp stop | rp s
 ```
