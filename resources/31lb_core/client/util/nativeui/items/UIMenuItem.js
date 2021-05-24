@@ -28,12 +28,19 @@ export default class UIMenuItem {
         this._badgeLeft = new Sprite("commonmenu", "", new Point(0, 0), new Size(40, 40));
         this._badgeRight = new Sprite("commonmenu", "", new Point(0, 0), new Size(40, 40));
         this._labelText = new ResText("", new Point(0, 0), 0.35, Color.White, 0, Alignment.Right);
+        this._meta = new Map;
     }
     get Text() {
         return this._text.Caption;
     }
     set Text(text) {
         this._text.Caption = text;
+    }
+    getMeta(key) {
+        return this._meta.get(key);
+    }
+    setMeta(key, value) {
+        this._meta.set(key, value);
     }
     get Description() {
         return this._description;
