@@ -17,7 +17,7 @@ alt.onServer("a_newPlaceSaveSuccess", saveSuccess);
 alt.onServer("a_enteredColshape", enteredColshape);
 alt.onServer("a_leaveColshape", leaveColshape);
 alt.onServer("a_createBlip", createGlobalBlip);
-alt.onServer("a_setplayerinvehicle", setPlayerInVehicle);
+alt.onServer("a_forceEnterVehicle", setPlayerInVehicle);
 alt.on("consoleCommand", consoleCommand);
 alt.on("keyup", keyUp);
 alt.on("character:Done", () => {

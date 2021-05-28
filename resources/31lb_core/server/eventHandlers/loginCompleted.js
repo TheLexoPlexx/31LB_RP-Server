@@ -33,6 +33,10 @@ export function loginCompleted(player, result_player, password) {
         player.rot = rot;
         player.health = result_player.healthpoints;
         player.armour = result_player.armour;
+        if (result_player.lastvehicle != null) {
+            alt.emitClient(player, "a_forceEnterVehicle", result_player.lastvehicle, result_player.lastseat);
+            alt.log("vehicle " + result_player.lastvehicle);
+        }
         result_player.sessionid = player.id;
         pm.setValue(result_player, (res) => {
             alt.log("Player " + res.name + " logged in with SessionID " + res.sessionid);

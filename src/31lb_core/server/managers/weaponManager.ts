@@ -1,11 +1,12 @@
 /// <reference types="@altv/types-server" />
 import * as alt from 'alt-server';
 import { database } from '../startup';
+import tables from '../util/tables';
 import * as pm from "./playerManager";
 
 
 export function getWeapon(serial: string, callback: CallableFunction): void {
-  database.fetchData("serial", serial, "weapons", (result) => {
+  database.fetchData("serial", serial, tables.weapons, (result) => {
     if (callback != null) {
       callback(result);
     }
@@ -13,7 +14,7 @@ export function getWeapon(serial: string, callback: CallableFunction): void {
 }
 
 export function setValue(result: JSON, callback: CallableFunction): void {
-  database.upsertData(result, "weapons", (r) => {
+  database.upsertData(result, tables.weapons, (r) => {
     if (callback != null) {
       callback(r);
     }
@@ -28,7 +29,7 @@ export function setValue(result: JSON, callback: CallableFunction): void {
 export function newWeapon(weapon: string, ownerId: number): void {
   var serialNumber = generateSerial();
 
-  database.fetchData("serial", serialNumber, "weapons", (result) => {
+  database.fetchData("serial", serialNumber, tables.weapons, (result) => {
     if (result == null) {
       pm.getPlayerBySerialId(ownerId, (r) => {
         if (r == null) {
@@ -36,7 +37,7 @@ export function newWeapon(weapon: string, ownerId: number): void {
         }
       });
 
-      database.upsertData({ serial: serialNumber, weaponname: weapon, owner: ownerId }, "weapons", null);    
+      database.upsertData({ serial: serialNumber, weaponname: weapon, owner: ownerId }, tables.weapons, null);    
     } else {
       newWeapon(weapon, ownerId);
     }
@@ -49,7 +50,7 @@ export function newWeapon(weapon: string, ownerId: number): void {
  * @param {int} newOwnerId Die Id des neuen Besitzers
  */
 export function changeWeaponOwner(serial: string, newOwnerId: number): void {
-  database.fetchData("serial", serial, "weapons", (result: any) => {
+  database.fetchData("serial", serial, tables.weapons, (result: any) => {
     if (result == null) {
       alt.logError("Wrong serial: " + serial);
     } else {
@@ -59,7 +60,7 @@ export function changeWeaponOwner(serial: string, newOwnerId: number): void {
         }
       });
       result.owner = newOwnerId;
-      database.upsertData(result, "weapons", null);
+      database.upsertData(result, tables.weapons, null);
     }
   });
 }

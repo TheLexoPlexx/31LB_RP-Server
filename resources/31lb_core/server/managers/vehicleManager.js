@@ -24,8 +24,15 @@ function saveV(index) {
             rot: JSON.stringify(vehicle.rot),
             spawned: true,
         }, "vehicles", (result) => {
-            saveV(index++);
-            resolve(result);
+            alt.log(index);
+            if (alt.Vehicle.all[index + 1] != null) {
+                saveV(index + 1).then(() => {
+                    resolve(result);
+                });
+            }
+            else {
+                resolve(result);
+            }
         });
     });
 }
@@ -49,6 +56,11 @@ export function loadVehicles() {
         else {
             alt.logWarning("No vehicles found!");
         }
+    });
+}
+export function getVehicleByVin(vin, callback) {
+    database.fetchData("vin", vin, "vehicles", (result) => {
+        callback(result);
     });
 }
 function generateVIN() {

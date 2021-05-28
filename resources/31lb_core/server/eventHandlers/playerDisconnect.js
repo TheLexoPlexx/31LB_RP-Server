@@ -12,9 +12,15 @@ function playerDisconnect(player, restart) {
     let id = player.id;
     let hp = player.health;
     let armour = player.armour;
-    let incar;
+    let lastvehicle;
+    let lastseat;
     if (player.vehicle != null) {
-        incar = player.vehicle.id;
+        lastvehicle = player.vehicle.getSyncedMeta("vin");
+        lastseat = player.seat;
+    }
+    else {
+        lastvehicle = null;
+        lastseat = null;
     }
     let places = player.getSyncedMeta("unlocked_places");
     database.fetchData("sessionid", id, "players", (result) => {
@@ -23,7 +29,8 @@ function playerDisconnect(player, restart) {
             result.rot = JSON.stringify(rot);
             result.healthpoints = hp;
             result.armour = armour;
-            result.incar = incar;
+            result.lastvehicle = lastvehicle;
+            result.lastseat = lastseat;
             if (!restart) {
                 result.sessionid = -1;
             }

@@ -1,19 +1,27 @@
 import * as alt from 'alt-client';
 import * as native from 'natives';
-export function setPlayerInVehicle(player, vehicle, seat) {
+export function setPlayerInVehicle(vin, seat) {
+    let v;
+    alt.Vehicle.all.forEach(vehicle => {
+        if (vehicle.getSyncedMeta("vin") == vin) {
+            v = vehicle;
+            alt.log("vin found: " + vin);
+        }
+    });
     let cleared = false;
-    const interval = alt.setInterval(() => {
-        const vehicleScriptId = vehicle.scriptID;
-        alt.log(vehicleScriptId);
-        if (vehicleScriptId) {
-            native.setPedIntoVehicle(alt.Player.local.scriptID, vehicleScriptId, seat);
+    const interval = alt.everyTick(() => {
+        alt.log(seat);
+        native.setPedIntoVehicle(alt.Player.local.scriptID, v.scriptID, seat - 2);
+        if (alt.Player.local.vehicle != null) {
             alt.clearInterval(interval);
             cleared = true;
+            alt.log("Set Ped into Vehicle");
         }
-    }, 10);
+    });
     alt.setTimeout(() => {
         if (!cleared) {
             alt.clearInterval(interval);
+            alt.log("Timed out");
         }
     }, 5000);
 }

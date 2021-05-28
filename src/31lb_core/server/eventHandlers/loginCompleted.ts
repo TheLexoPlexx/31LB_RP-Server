@@ -3,6 +3,7 @@ import * as alt from 'alt-server';
 import * as pm from "./../managers/playerManager";
 import { database } from '../startup';
 import { globalMarkers, unlockableMarkers } from './placeHandler';
+import tables from '../util/tables';
 
 //TODO: Change result_player to PlayerEntity
 //FIXME: Neue Spieler bekommen keine globalen blips und können keine aufdecken
@@ -42,7 +43,11 @@ export function loginCompleted(player: alt.Player, result_player: any, password:
     player.health = result_player.healthpoints;
     player.armour = result_player.armour;
 
-    //TODO: Set Players into cars if they logged off there
+    if (result_player.lastvehicle != null) {
+      //TODO: Check if player actually owns vehicle
+      alt.emitClient(player, "a_forceEnterVehicle", result_player.lastvehicle, result_player.lastseat)
+      alt.log("vehicle " + result_player.lastvehicle);
+    }
 
     result_player.sessionid = player.id;
     pm.setValue(result_player, (res) => {
@@ -75,7 +80,7 @@ export function loginCompleted(player: alt.Player, result_player: any, password:
 
 export function login(player: alt.Player, pw) {
   //TODO: Mit Forum/Discord koppeln und sinnvoll machen
-  database.fetchData("password", pw, "players", (result) => {
+  database.fetchData("password", pw, tables.players, (result) => {
     if (result == undefined) {
       loginCompleted(player, null, pw);
     } else {

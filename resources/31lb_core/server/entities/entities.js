@@ -48,7 +48,11 @@ export const PlayerEntity = new orm.EntitySchema({
             type: "int",
             nullable: true
         },
-        incar: {
+        lastvehicle: {
+            type: "varchar",
+            nullable: true
+        },
+        lastseat: {
             type: "varchar",
             nullable: true
         },

@@ -1,6 +1,7 @@
 /// <reference types="@altv/types-server" />
 import * as alt from 'alt-server';
 import { database } from '../startup';
+import tables from '../util/tables';
 
 //im Moment noch unbenutzt
 interface SaveableVehicle {
@@ -74,15 +75,21 @@ function saveV(index: number) {
       pos: JSON.stringify(vehicle.pos),
       rot: JSON.stringify(vehicle.rot),
       spawned: true,
-    }, "vehicles", (result) => {
-      saveV(index++);
-      resolve(result);
+    }, tables.vehicles, (result) => {
+      alt.log(index);
+      if (alt.Vehicle.all[index + 1] != null) {
+        saveV(index + 1).then(() => {
+          resolve(result);
+        });
+      } else {
+        resolve(result);
+      }
     });
   });
 }
 
 export function loadVehicles() {
-  database.fetchAllData("vehicles", vehicles => {
+  database.fetchAllData(tables.vehicles, vehicles => {
     if (vehicles != undefined) {
       vehicles.forEach(veh => {
         if (veh.spawned) {
@@ -104,9 +111,16 @@ export function loadVehicles() {
   });
 }
 
-
-//TODO: Spieler und Fahrzeuge bei Serverneustart speichern
-
+/**
+ * Return Vehicle by VIN
+ * @param vin String
+ * @param callback result
+ */
+export function getVehicleByVin(vin: string, callback: CallableFunction) {
+  database.fetchData("vin", vin, tables.vehicles, (result) => {
+    callback(result);
+  })
+}
 
 
 function generateVIN(): string {
