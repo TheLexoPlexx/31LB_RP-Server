@@ -13,31 +13,25 @@ import { openedInventory } from './eventHandlers/inventoryHandler';
 import { teamLogin, teamLogoff } from './eventHandlers/teamLoginHandler';
 import { colshapeMeta } from '../client/interactions/placeGenerator';
 import { loadVehicles, saveVehicles } from './managers/vehicleManager';
+import { initWeather } from './eventHandlers/weather';
 
-export const dbType = 'postgres';
+//--------------------------------------------------------------------------------------//
+//                                 Connect to Database                                  //
+//--------------------------------------------------------------------------------------//
 export const dbHost = 'localhost';
 export const dbPort = '5433';
 export const dbUsername = '31lb_rpdb';
 export const dbPassword = '31lb_rpdb';
 export const dbName = '31lb_rpdb';
 
-export var database = new SQL(dbType, dbHost, dbPort, dbUsername, dbPassword, dbName, [
+export var database = new SQL('postgres', dbHost, dbPort, dbUsername, dbPassword, dbName, [
   entities.PlayerEntity, entities.WeaponEntity, entities.PlaceEntity, entities.VehicleEntity
 ]);
 
+//--------------------------------------------------------------------------------------//
+//                                  Resource Restarter                                  //
+//--------------------------------------------------------------------------------------//
 let safeStopped: boolean = false;
-
-interface InteractFunction<K extends PropertyKey, V> {
-  key: K;
-  value: V;
-}
-
-//TODO: Remove, Debug reasons
-alt.on("resourceStart", () => {
-  alt.Player.all.forEach((player, index, array) => {
-    player.setDateTime(11, 3, 2021, 8, 0, 0);
-  });
-});
 
 alt.on('ConnectionComplete', () => {
   alt.log("[31LB] Connected to Database");
@@ -57,6 +51,18 @@ alt.on('ConnectionComplete', () => {
   }, 1000);
 });
 
+alt.on("resourceStop",  () => {
+  if (!safeStopped) {
+    alt.logError("======{ Du Pimmock");
+    alt.logWarning("Datenbankverbindung schlägt beim konventionellen Neustarten fehl und nichts wird gespeichert.");
+    alt.logWarning("Verwende stattdessen: 'rp restart' oder 'rp stop'.");
+    alt.logError("======{ Ende der Durchsage");
+  }
+});
+
+//--------------------------------------------------------------------------------------//
+//                                   Register Events                                    //
+//--------------------------------------------------------------------------------------//
 alt.on("playerConnect", playerConnect);
 alt.on('playerDeath', playerDeath);
 alt.on("playerDamage", playerDamage);
@@ -73,6 +79,7 @@ alt.on("consoleCommand", (...args: string[]) => {
   } else {
     alt.logError("Unknown command");
   }
+
   function save(emitEvent: string) {
     clearColshapes();
     alt.Player.all.forEach((p) => {
@@ -80,20 +87,16 @@ alt.on("consoleCommand", (...args: string[]) => {
     });
     safeStopped = true;
 
-    saveVehicles().then(() => {
-      alt.emit(emitEvent);
-    });
+    if (alt.Vehicle.all.length > 0) {
+      saveVehicles().then(() => {
+        alt.emit(emitEvent);
+      });
+    } else {
+      alt.log("[31LB] No vehicles found to save");
+    }
     //Save Players
   }
-});
 
-alt.on("resourceStop",  () => {
-  if (!safeStopped) {
-    alt.logError("======{ Du Pimmock");
-    alt.logWarning("Datenbankverbindung schlägt beim konventionellen Neustarten fehl und nichts wird gespeichert.");
-    alt.logWarning("Verwende stattdessen: 'rp restart' oder 'rp stop'.");
-    alt.logError("======{ Ende der Durchsage");
-  }
 });
 
 alt.onClient("a_keyup_f9", keyPressF9);
@@ -107,6 +110,14 @@ alt.onClient("a_updatePlacesForPlayer", updatePlacesForPlayer);
 alt.onClient("a_openinventory", openedInventory);
 alt.onClient("a_teamlogin", teamLogin);
 alt.onClient("a_teamlogoff", teamLogoff);
+
+//--------------------------------------------------------------------------------------//
+//                             Register Interact Functions                              //
+//--------------------------------------------------------------------------------------//
+interface InteractFunction<K extends PropertyKey, V> {
+  key: K;
+  value: V;
+}
 
 let if_list: InteractFunction<string, CallableFunction>[] = [
   //Beispiel: Key als String aus der Datenbank und vlaue ist eine Funktion
@@ -126,6 +137,12 @@ alt.onClient("event_interact_function", (player: alt.Player, colShapeMeta: colsh
     alt.logWarning("Unregistered function: " + colShapeMeta.interact_function);
   }
 });
+
+//--------------------------------------------------------------------------------------//
+//                                     Init Weather                                     //
+//--------------------------------------------------------------------------------------//
+const apiKey = "63fe821e3bbfe092b2d68f232317f9c2";
+initWeather(apiKey);
 
 /* Character Stuff
 player.spawn(-763.245, 328.597, 198.486);

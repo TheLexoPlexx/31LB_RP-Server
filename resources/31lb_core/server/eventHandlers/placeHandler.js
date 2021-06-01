@@ -1,12 +1,13 @@
 import * as alt from 'alt-server';
 import { database } from '../startup';
+import tables from '../util/tables';
 export let unlockableMarkers = [];
 export let globalMarkers = [];
 export let unlockableColshapes = [];
 export let interactionColshapes = [];
 export function sortMarkers() {
     alt.log("[31LB] Sorting Markers...");
-    database.fetchAllData("places", (result) => {
+    database.fetchAllData(tables.places, (result) => {
         if (result == null) {
             result = [];
         }
@@ -58,7 +59,7 @@ export function leaveColshape(colshape, player) {
 }
 export function savePlace(p, new_place) {
     if (p.getSyncedMeta("permissions") >= 100) {
-        database.insertData(new_place, "places", r => {
+        database.insertData(new_place, tables.places, r => {
             alt.log("Neuer Ort gespeichert: " + JSON.stringify(r));
             alt.emitClient(p, "a_newPlaceSaveSuccess", r);
         });

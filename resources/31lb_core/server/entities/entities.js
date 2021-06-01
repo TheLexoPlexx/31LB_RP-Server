@@ -1,6 +1,7 @@
 import orm from "typeorm";
+import tables from "../util/tables";
 export const PlayerEntity = new orm.EntitySchema({
-    name: 'players',
+    name: tables.players,
     columns: {
         id: {
             primary: true,
@@ -92,7 +93,7 @@ export const PlayerEntity = new orm.EntitySchema({
     }
 });
 export const PlaceEntity = new orm.EntitySchema({
-    name: 'places',
+    name: tables.places,
     columns: {
         id: {
             primary: true,
@@ -158,7 +159,7 @@ export const PlaceEntity = new orm.EntitySchema({
     }
 });
 export const WeaponEntity = new orm.EntitySchema({
-    name: 'weapons',
+    name: tables.weapons,
     columns: {
         serial: {
             primary: true,
@@ -174,7 +175,7 @@ export const WeaponEntity = new orm.EntitySchema({
     }
 });
 export const VehicleEntity = new orm.EntitySchema({
-    name: 'vehicles',
+    name: tables.vehicles,
     columns: {
         vin: {
             primary: true,

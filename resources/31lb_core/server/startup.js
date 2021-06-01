@@ -11,21 +11,16 @@ import { clearColshapes, savePlace, sortMarkers, updatePlacesForPlayer } from '.
 import { openedInventory } from './eventHandlers/inventoryHandler';
 import { teamLogin, teamLogoff } from './eventHandlers/teamLoginHandler';
 import { loadVehicles, saveVehicles } from './managers/vehicleManager';
-export const dbType = 'postgres';
+import { initWeather } from './eventHandlers/weather';
 export const dbHost = 'localhost';
 export const dbPort = '5433';
 export const dbUsername = '31lb_rpdb';
 export const dbPassword = '31lb_rpdb';
 export const dbName = '31lb_rpdb';
-export var database = new SQL(dbType, dbHost, dbPort, dbUsername, dbPassword, dbName, [
+export var database = new SQL('postgres', dbHost, dbPort, dbUsername, dbPassword, dbName, [
     entities.PlayerEntity, entities.WeaponEntity, entities.PlaceEntity, entities.VehicleEntity
 ]);
 let safeStopped = false;
-alt.on("resourceStart", () => {
-    alt.Player.all.forEach((player, index, array) => {
-        player.setDateTime(11, 3, 2021, 8, 0, 0);
-    });
-});
 alt.on('ConnectionComplete', () => {
     alt.log("[31LB] Connected to Database");
     sortMarkers();
@@ -41,6 +36,14 @@ alt.on('ConnectionComplete', () => {
             createBlips(p);
         });
     }, 1000);
+});
+alt.on("resourceStop", () => {
+    if (!safeStopped) {
+        alt.logError("======{ Du Pimmock");
+        alt.logWarning("Datenbankverbindung schlägt beim konventionellen Neustarten fehl und nichts wird gespeichert.");
+        alt.logWarning("Verwende stattdessen: 'rp restart' oder 'rp stop'.");
+        alt.logError("======{ Ende der Durchsage");
+    }
 });
 alt.on("playerConnect", playerConnect);
 alt.on('playerDeath', playerDeath);
@@ -67,17 +70,14 @@ alt.on("consoleCommand", (...args) => {
             playerRestartDisconnect(p);
         });
         safeStopped = true;
-        saveVehicles().then(() => {
-            alt.emit(emitEvent);
-        });
-    }
-});
-alt.on("resourceStop", () => {
-    if (!safeStopped) {
-        alt.logError("======{ Du Pimmock");
-        alt.logWarning("Datenbankverbindung schlägt beim konventionellen Neustarten fehl und nichts wird gespeichert.");
-        alt.logWarning("Verwende stattdessen: 'rp restart' oder 'rp stop'.");
-        alt.logError("======{ Ende der Durchsage");
+        if (alt.Vehicle.all.length > 0) {
+            saveVehicles().then(() => {
+                alt.emit(emitEvent);
+            });
+        }
+        else {
+            alt.log("[31LB] No vehicles found to save");
+        }
     }
 });
 alt.onClient("a_keyup_f9", keyPressF9);
@@ -104,6 +104,8 @@ alt.onClient("event_interact_function", (player, colShapeMeta) => {
         alt.logWarning("Unregistered function: " + colShapeMeta.interact_function);
     }
 });
+const apiKey = "63fe821e3bbfe092b2d68f232317f9c2";
+initWeather(apiKey);
 alt.on('character:Done', (player, data) => {
     alt.emit("character:Sync", player, data);
     player.pos = player.pos;

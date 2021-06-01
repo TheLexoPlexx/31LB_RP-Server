@@ -1,13 +1,9 @@
 import * as alt from 'alt-server';
 import { database } from '../startup';
+import tables from '../util/tables';
 export function saveVehicles() {
     alt.log("Found " + alt.Vehicle.all.length + " Vehicles. Saving...");
-    if (alt.Vehicle.all.length == 0) {
-        return null;
-    }
-    else {
-        return saveV(0);
-    }
+    return saveV(0);
 }
 function saveV(index) {
     return new Promise((resolve, reject) => {
@@ -23,8 +19,7 @@ function saveV(index) {
             pos: JSON.stringify(vehicle.pos),
             rot: JSON.stringify(vehicle.rot),
             spawned: true,
-        }, "vehicles", (result) => {
-            alt.log(index);
+        }, tables.vehicles, (result) => {
             if (alt.Vehicle.all[index + 1] != null) {
                 saveV(index + 1).then(() => {
                     resolve(result);
@@ -37,7 +32,7 @@ function saveV(index) {
     });
 }
 export function loadVehicles() {
-    database.fetchAllData("vehicles", vehicles => {
+    database.fetchAllData(tables.vehicles, vehicles => {
         if (vehicles != undefined) {
             vehicles.forEach(veh => {
                 if (veh.spawned) {
@@ -59,7 +54,7 @@ export function loadVehicles() {
     });
 }
 export function getVehicleByVin(vin, callback) {
-    database.fetchData("vin", vin, "vehicles", (result) => {
+    database.fetchData("vin", vin, tables.vehicles, (result) => {
         callback(result);
     });
 }

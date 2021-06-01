@@ -1,5 +1,6 @@
 import * as alt from 'alt-server';
 import { database } from '../startup';
+import tables from '../util/tables';
 export function playerActualDisconnect(player) {
     playerDisconnect(player, false);
 }
@@ -23,7 +24,7 @@ function playerDisconnect(player, restart) {
         lastseat = null;
     }
     let places = player.getSyncedMeta("unlocked_places");
-    database.fetchData("sessionid", id, "players", (result) => {
+    database.fetchData("sessionid", id, tables.players, (result) => {
         if (result != null) {
             result.pos = JSON.stringify(pos);
             result.rot = JSON.stringify(rot);
@@ -35,7 +36,7 @@ function playerDisconnect(player, restart) {
                 result.sessionid = -1;
             }
             result.unlockedplaces = JSON.stringify(places);
-            database.upsertData(result, "players", (res_upsert) => {
+            database.upsertData(result, tables.players, (res_upsert) => {
                 alt.log("Player " + res_upsert.name + " left");
             });
         }

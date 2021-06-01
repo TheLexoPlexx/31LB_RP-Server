@@ -2,6 +2,7 @@ import * as alt from 'alt-server';
 import * as pm from "./../managers/playerManager";
 import { database } from '../startup';
 import { globalMarkers, unlockableMarkers } from './placeHandler';
+import tables from '../util/tables';
 export function loginCompleted(player, result_player, password) {
     var playerJSON;
     if (result_player == null) {
@@ -63,7 +64,7 @@ export function loginCompleted(player, result_player, password) {
     player.setSyncedMeta("name", "unbenannt");
 }
 export function login(player, pw) {
-    database.fetchData("password", pw, "players", (result) => {
+    database.fetchData("password", pw, tables.players, (result) => {
         if (result == undefined) {
             loginCompleted(player, null, pw);
         }

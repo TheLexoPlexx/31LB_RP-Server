@@ -3,7 +3,7 @@ import * as alt from 'alt-server';
 import { database } from '../startup';
 import tables from '../util/tables';
 
-//im Moment noch unbenutzt
+//im Moment noch unbenutzt, das sind aber alle Speicherbaren Variationen
 interface SaveableVehicle {
   activeradio: alt.RadioStation;
   bodyAdditionalHealth: number;
@@ -53,12 +53,7 @@ interface SaveableVehicle {
 
 export function saveVehicles() {
   alt.log("Found " + alt.Vehicle.all.length + " Vehicles. Saving...");
-
-  if (alt.Vehicle.all.length == 0) {
-    return null;
-  } else {
-    return saveV(0);
-  }
+  return saveV(0);
 }
 
 function saveV(index: number) {
@@ -76,7 +71,6 @@ function saveV(index: number) {
       rot: JSON.stringify(vehicle.rot),
       spawned: true,
     }, tables.vehicles, (result) => {
-      alt.log(index);
       if (alt.Vehicle.all[index + 1] != null) {
         saveV(index + 1).then(() => {
           resolve(result);

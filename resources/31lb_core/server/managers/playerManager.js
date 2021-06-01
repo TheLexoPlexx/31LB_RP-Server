@@ -1,21 +1,22 @@
 import * as alt from 'alt-server';
 import { database } from './../startup';
+import tables from '../util/tables';
 export function getPlayer(player, callback) {
-    database.fetchData("sessionid", player.id, "players", (result) => {
+    database.fetchData("sessionid", player.id, tables.players, (result) => {
         if (callback != null) {
             callback(result);
         }
     });
 }
 export function getPlayerBySerialId(playerId, callback) {
-    database.fetchData("id", playerId, "players", (result) => {
+    database.fetchData("id", playerId, tables.players, (result) => {
         if (callback != null) {
             callback(result);
         }
     });
 }
 export function setValue(result, callback) {
-    database.upsertData(result, "players", (r) => {
+    database.upsertData(result, tables.players, (r) => {
         if (callback != null) {
             callback(r);
         }
