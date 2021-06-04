@@ -3,6 +3,15 @@ import { toggleInfoHud } from './interactions/infohud';
 import { toggleInventory } from './interactions/inventory';
 import { togglePlayerMenu } from './interactions/playerMenu';
 import { openShopInteraction } from './interactions/shopInteraction';
+let ctrlPressed = false;
+export function keyDown(key) {
+    if (alt.Player.local.getSyncedMeta("allowKeyPress") && !alt.isConsoleOpen()) {
+        if (key == 17) {
+            alt.log("Ctrl");
+            ctrlPressed = true;
+        }
+    }
+}
 export function keyUp(key) {
     if (alt.Player.local.getSyncedMeta("allowKeyPress") && !alt.isConsoleOpen()) {
         if (key == 89) {
@@ -54,6 +63,14 @@ export function keyUp(key) {
         else if (key == 115) {
             alt.emitServer("a_keyup_f4");
             togglePlayerMenu();
+        }
+        else if (key == 70) {
+            if (ctrlPressed) {
+                alt.logWarning("Suche.");
+            }
+        }
+        else if (key == 17) {
+            ctrlPressed = false;
         }
     }
 }

@@ -3,7 +3,7 @@ import * as natives from 'natives';
 import { playerDamage, playerDeath, revive } from "./handlers/playerDeath";
 import { consoleCommand } from './commands';
 import { openWeaponShop } from './interactions/weaponShop';
-import { keyUp } from './keys';
+import { keyDown, keyUp } from './keys';
 import { createGlobalBlip, enteredColshape, leaveColshape, saveSuccess, startPlaceGen } from './interactions/placeGenerator';
 import { setPlayerInVehicle } from './handlers/vehicleHandler';
 natives.setPedDefaultComponentVariation(natives.playerPedId());
@@ -19,6 +19,7 @@ alt.onServer("a_leaveColshape", leaveColshape);
 alt.onServer("a_createBlip", createGlobalBlip);
 alt.onServer("a_forceEnterVehicle", setPlayerInVehicle);
 alt.on("consoleCommand", consoleCommand);
+alt.on("keydown", keyDown);
 alt.on("keyup", keyUp);
 alt.on("character:Done", () => {
     natives.requestIpl("apa_v_mp_h_01_b");

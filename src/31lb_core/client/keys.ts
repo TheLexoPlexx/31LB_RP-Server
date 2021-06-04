@@ -11,6 +11,17 @@ import { openShopInteraction } from './interactions/shopInteraction';
 
 //Strg+F?
 
+let ctrlPressed = false;
+
+export function keyDown(key: number): void {
+  if (alt.Player.local.getSyncedMeta("allowKeyPress") && !alt.isConsoleOpen()) {
+    if (key == 17) {
+      alt.log("Ctrl");
+      ctrlPressed = true;
+    }
+  }
+}
+
 export function keyUp(key: number): void {
   if (alt.Player.local.getSyncedMeta("allowKeyPress") && !alt.isConsoleOpen()) {
     if (key == 89) { //y
@@ -64,7 +75,14 @@ export function keyUp(key: number): void {
       alt.emitServer("a_keyup_f4");
 
       togglePlayerMenu();
-      
+
+    } else if (key == 70) { //F
+      if (ctrlPressed) {
+        alt.logWarning("Suche.");
+      }
+
+    } else if (key == 17) { //Ctrl
+      ctrlPressed = false;
     }
   }
 }

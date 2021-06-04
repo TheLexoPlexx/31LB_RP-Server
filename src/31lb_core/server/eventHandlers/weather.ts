@@ -58,6 +58,9 @@ export function initWeather(apiKey: String) {
             //alt.log("Nighttime: " + (((nighttime.getHours() -1) * 60) + nighttime.getMinutes()));
             //alt.log("Total: " + (24*60));
 
+            //Does not do the thing... at all
+
+            /*
             let gtaDaytime = gtaSunset - gtaSunrise;
 
             let dayMod = (gtaDaytime * 60) / ((daytime.getHours() * 60) + daytime.getMinutes());
@@ -111,6 +114,7 @@ export function initWeather(apiKey: String) {
                 return null;
               }
             }
+              */
           } else {
             alt.log("Weather data couldn't be updated");
           }
