@@ -100,7 +100,7 @@ export function loadVehicles() {
         }
       });
     } else {
-      alt.logWarning("No vehicles found!");
+      alt.log("No vehicles in database!");
     }
   });
 }

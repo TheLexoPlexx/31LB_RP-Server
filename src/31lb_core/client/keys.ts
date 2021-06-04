@@ -9,6 +9,8 @@ import { colshapeMeta } from './interactions/placeGenerator';
 import { togglePlayerMenu } from './interactions/playerMenu';
 import { openShopInteraction } from './interactions/shopInteraction';
 
+//Strg+F?
+
 export function keyUp(key: number): void {
   if (alt.Player.local.getSyncedMeta("allowKeyPress") && !alt.isConsoleOpen()) {
     if (key == 89) { //y

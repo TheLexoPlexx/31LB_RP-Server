@@ -13,9 +13,15 @@ export let second: alt.DateTimeSecond;
 let gtaSunrise = 6;
 let gtaSunset = 20;
 
+let interval;
+let intervalTimer;
+
 //TODO: Entweder um 0 Uhr den Server neustarten oder ein Intervall einfügen, was das Datum aktualisiert sobald 0 Uhr ist. (Idee: Intervall je nach Ergebnis kürzer machen bis auf eine Minute runter)
-export function initWeather(apiKey: String) {  
+export function initWeather(apiKey: String) {
   alt.log("[31LB] Weather init...");
+
+  alt.clearInterval(intervalTimer);
+
   let date = new Date();
   day = date.getDay() as alt.DateTimeDay;
   month = date.getMonth() as alt.DateTimeMonth;
@@ -39,17 +45,72 @@ export function initWeather(apiKey: String) {
             alt.log("[31LB] Retrieved Weather");
 
             //Bin kein Mathegenie aber hoffe mal das tut was es soll:
-            let daytime = new Date((json.sys.sunset - json.sys.sunrise) * 1000);
+            let sunrise = json.sys.sunrise * 1000;
+            let sunset = json.sys.sunset * 1000;
+            let daytime = new Date(sunset - sunrise);
+            daytime.setHours(daytime.getHours() - 1);
 
-            alt.log("Daytime: " + (((daytime.getHours() -1) * 60) + daytime.getMinutes()));
-
-            //TODO: Doesn't do the thing, fix
             let nighttime = new Date(daytime);
-            nighttime.setHours(daytime.getHours() - 24, daytime.getMinutes() - 60);
+            nighttime.setHours(23 - daytime.getHours(), 60 - daytime.getMinutes());
 
-            alt.log(nighttime.getHours());
-            alt.log("Nighttime: " + (((nighttime.getHours() -1) * 60) + nighttime.getMinutes()));
+            //Daytime + Nighttime sind 20 weniger als 1440 Minuten, ka warum
+            //alt.log("Daytime: " + ((daytime.getHours() * 60) + daytime.getMinutes()));
+            //alt.log("Nighttime: " + (((nighttime.getHours() -1) * 60) + nighttime.getMinutes()));
+            //alt.log("Total: " + (24*60));
 
+            let gtaDaytime = gtaSunset - gtaSunrise;
+
+            let dayMod = (gtaDaytime * 60) / ((daytime.getHours() * 60) + daytime.getMinutes());
+            let nightMod = ((24-gtaDaytime) * 60) / (((nighttime.getHours() -1) * 60) + nighttime.getMinutes());
+
+            alt.log("[31LB] Day-Modifier: " + dayMod);
+            alt.log("[31LB] Night-Modifier: " + nightMod);
+
+            let nowts = Date.now();
+            let today = new Date(nowts);
+            day = today.getDay() as alt.DateTimeDay;
+            month = today.getMonth() + 1 as alt.DateTimeMonth;
+            hour = today.getHours() as alt.DateTimeHour;
+            minute = today.getMinutes() as alt.DateTimeMinute;
+            year = today.getFullYear();
+
+            //TODO: Testen
+            interval = (1000 * 60) * (isDay(nowts) ? dayMod : nightMod);
+            alt.log("Interval is: " + interval / 1000);
+            intervalTimer = alt.setInterval(() => {
+              minute = minute + interval / 1000 as alt.DateTimeMinute;
+              if (minute >= 60) {
+                minute -= 60;
+                hour += 1;
+              }
+
+              alt.log("Time on Server: ")
+              alt.log(hour);
+              alt.log(minute);
+              alt.Player.all.forEach(p => {
+                p.setDateTime(day, month, year, hour, minute, second);
+              });
+
+            }, interval);
+
+            function isDay(nowts: number): boolean {
+              if (nowts <= sunrise) {
+                alt.log("== Before Sunrise");
+                return false;
+              } else if (nowts >= sunrise && nowts <= sunset) {
+                alt.log("== Day");
+                return true;
+              } else if (nowts >= sunset) {
+                alt.log("== After Sunset");
+                return false;
+              } else {
+                alt.logWarning("== Time Error:");
+                alt.logWarning("= Sunrise: " + sunrise);
+                alt.logWarning("= Sunset: " + sunset);
+                alt.logWarning("= Now: " + nowts);
+                return null;
+              }
+            }
           } else {
             alt.log("Weather data couldn't be updated");
           }

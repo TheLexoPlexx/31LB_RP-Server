@@ -39,10 +39,8 @@ alt.on('ConnectionComplete', () => {
 
   if (!alt.getSyncedMeta("restarted")) {
     loadVehicles();
-    alt.setSyncedMeta("restarted", false);
-  } else {
-    alt.setSyncedMeta("restarted", false);
   }
+  alt.setSyncedMeta("restarted", false);
 
   alt.setTimeout(() => {
     alt.Player.all.forEach((p) => {
@@ -55,7 +53,7 @@ alt.on("resourceStop",  () => {
   if (!safeStopped) {
     alt.logError("======{ Du Pimmock");
     alt.logWarning("Datenbankverbindung schlägt beim konventionellen Neustarten fehl und nichts wird gespeichert.");
-    alt.logWarning("Verwende stattdessen: 'rp restart' oder 'rp stop'.");
+    alt.logWarning("Verwende stattdessen: 'rp [r]estart' oder 'rp [s]top'.");
     alt.logError("======{ Ende der Durchsage");
   }
 });
@@ -93,8 +91,9 @@ alt.on("consoleCommand", (...args: string[]) => {
       });
     } else {
       alt.log("[31LB] No vehicles found to save");
+      alt.emit(emitEvent);
     }
-    //Save Players
+    //TODO: Save Players
   }
 
 });

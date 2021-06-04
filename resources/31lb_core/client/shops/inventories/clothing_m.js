@@ -38018,6 +38018,8 @@ export var clothing_inventory_m = {
                 "dlcHash": "patchday9ng"
             }
         ],
+        null,
+        null,
         [
             {
                 "cHash": "SP_M_UPPR_9",
