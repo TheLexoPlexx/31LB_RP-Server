@@ -1,7 +1,6 @@
 /// <reference types="@altv/types-server" />
 import * as alt from 'alt-server';
-import { database } from '../startup';
-import tables from '../util/tables';
+import { getPlayerByUUID, setValueForPlayer } from '../managers/playerManager';
 
 export function playerActualDisconnect(player: alt.Player) {
   playerDisconnect(player, false);
@@ -17,6 +16,7 @@ function playerDisconnect(player: alt.Player, restart: boolean) {
   let id = player.id;
   let hp = player.health;
   let armour = player.armour;
+  let uuid = player.getSyncedMeta("uuid");
   let lastvehicle;
   let lastseat;
   if (player.vehicle != null) {
@@ -28,7 +28,7 @@ function playerDisconnect(player: alt.Player, restart: boolean) {
   }
   let places = player.getSyncedMeta("unlocked_places");
 
-  database.fetchData("sessionid", id, tables.players, (result) => {
+  getPlayerByUUID(uuid, (result) => {
     if (result != null) {
       result.pos = JSON.stringify(pos);
       result.rot = JSON.stringify(rot);
@@ -36,12 +36,9 @@ function playerDisconnect(player: alt.Player, restart: boolean) {
       result.armour = armour;
       result.lastvehicle = lastvehicle;
       result.lastseat = lastseat;
-      if (!restart) {
-        result.sessionid = -1;
-      }
       result.unlockedplaces = JSON.stringify(places);
 
-      database.upsertData(result, tables.players, (res_upsert) => {
+      setValueForPlayer(result, (res_upsert) => {
         alt.log("Player " + res_upsert.name + " left");
         //alt.log("upsert: " + JSON.stringify(res_upsert));
       });

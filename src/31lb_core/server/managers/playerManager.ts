@@ -9,23 +9,19 @@ import {
 } from "./../../client/interactions/inventory";
 import tables from '../util/tables';
 
-export function getPlayer(player, callback) {
-  database.fetchData("sessionid", player.id, tables.players, (result) => {
+export function getPlayer(player: alt.Player, callback) {
+  getPlayerByUUID(player.getSyncedMeta("uuid"), callback);
+}
+
+export function getPlayerByUUID(playerId, callback) {
+  database.fetchData("uuid", playerId, tables.players, (result) => {
     if (callback != null) {
       callback(result);
     }
   });
 }
 
-export function getPlayerBySerialId(playerId, callback) {
-  database.fetchData("id", playerId, tables.players, (result) => {
-    if (callback != null) {
-      callback(result);
-    }
-  });
-}
-
-export function setValue(result, callback) {
+export function setValueForPlayer(result, callback) {
   database.upsertData(result, tables.players, (r) => {
     if (callback != null) {
       callback(r);
@@ -36,13 +32,17 @@ export function setValue(result, callback) {
 export function setCloth(player: alt.Player, comp: number, item: ItemHolder, drawable: number, texture: number, dlcHash: string) {
   player.setSyncedMeta("inventory_" + comp, item);
   let palette = 2; //0 oder 1, ka.
-  alt.emitClient(player, "a_setclothes", )
+  alt.emitClient(player, "a_setclothes", palette)
   //Noch nicht im release, nur dev: player.setClothes(comp, drawable, texture, palette, alt.hash(dlcHash));
 }
 
-export function getInventorySpace(comp: number) {
+/*
 
-}
+addXpForSkill (x, y)
+getLevelForSkill (x)
+getXpForSkill (x)
+
+ */
 
 /* === WEAPONS
  */
@@ -74,7 +74,7 @@ export function addWeapon(player, weaponName, inventory) {
     }
 
     result.weapons = JSON.stringify(weapons);
-    setValue(result, null);
+    setValueForPlayer(result, null);
   });
 }
 

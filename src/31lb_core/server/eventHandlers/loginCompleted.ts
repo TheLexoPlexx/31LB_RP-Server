@@ -4,6 +4,7 @@ import * as pm from "./../managers/playerManager";
 import { database } from '../startup';
 import { globalMarkers, unlockableMarkers } from './placeHandler';
 import tables from '../util/tables';
+import * as uuid from "uuid";
 
 //TODO: Change result_player to PlayerEntity
 //FIXME: Neue Spieler bekommen keine globalen blips und können keine aufdecken
@@ -20,12 +21,12 @@ export function loginCompleted(player: alt.Player, result_player: any, password:
       armour: player.maxArmour,
       firstjoin: date,
       permissions: 1,
-      sessionid: player.id,
+      uuid: uuid.v5,
       activeWeapons: JSON.stringify({ a:null, b:null, h:null }),
       unlockedplaces: "[]",
     }
 
-    pm.setValue(new_player, (res) => {
+    pm.setValueForPlayer(new_player, (res) => {
       alt.log("Neuer Spieler: " + JSON.stringify(res));
       player.spawn(-69.551, -855.909, 40.571, 0);
     });
@@ -49,9 +50,8 @@ export function loginCompleted(player: alt.Player, result_player: any, password:
       alt.log("vehicle " + result_player.lastvehicle);
     }
 
-    result_player.sessionid = player.id;
-    pm.setValue(result_player, (res) => {
-      alt.log("Player " + res.name + " logged in with SessionID " + res.sessionid);
+    pm.setValueForPlayer(result_player, (res) => {
+      alt.log("Player " + res.name + " logged in");
     });
     playerJSON = result_player;
   }
@@ -76,6 +76,7 @@ export function loginCompleted(player: alt.Player, result_player: any, password:
   player.setSyncedMeta("personalausweis", playerJSON.personalausweis);
   player.setSyncedMeta("allowKeyPress", true);
   player.setSyncedMeta("name", "unbenannt"); //TODO: Fill with Name
+  player.setSyncedMeta("uuid", uuid.parse(playerJSON.uuid));
 }
 
 export function login(player: alt.Player, pw) {
@@ -84,9 +85,6 @@ export function login(player: alt.Player, pw) {
     if (result == undefined) {
       loginCompleted(player, null, pw);
     } else {
-      if (result.sessionid >= 0) {
-        alt.logWarning("Player replaced sessionid " + result.sessionid);
-      }
       loginCompleted(player, result, null);
     }
   });
