@@ -77,6 +77,9 @@
 </body>
 <script type="text/javascript">
   var li = document.getElementById("resultlist").children;
+
+  document.getElementById("inputbox").addEventListener("input", input);
+
   window.addEventListener("keydown", (e) => {
     if (e.which === 40) {
       var action = false;
@@ -127,14 +130,40 @@
     }
   });
 
+  function input(e) {
+    let input = e.target.value.trim().toLowerCase().replaceAll(" ", "");
+    for (var i = 0; i < li.length; i++) {
+      if (input == "" || input == null || input == undefined) {
+        li[i].style.display = "block";
+      } else {
+        let liCont = li[i].innerText.toLowerCase().replaceAll(" ", "");
+        if (!liCont.includes(input)) {
+          li[i].style.display = "none";
+        } else {
+          li[i].style.display = "block";
+        }
+      }
+    }
+  }
+
+  function change() {
+    let visibleArray = [];
+    for (var i = 0; i < li.length; i++) {
+      if (li[i].style.display == "block") {
+        visibleArray.push(li[i]);
+        //alt.emit("a_input_return", document.getElementById("inputbox").value);
+        break;
+      }
+    }
+
+
+  }
   if ('alt' in window) {
     alt.on("a_input_settitle", (arg) => {
       document.getElementById("inputbox").placeholder = arg;
     });
 
-    function change() {
-      alt.emit("a_input_return", document.getElementById("inputbox").value);
-    }
+
   }
 </script>
 

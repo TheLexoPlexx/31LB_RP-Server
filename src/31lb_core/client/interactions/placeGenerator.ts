@@ -7,7 +7,6 @@ import * as msg from "../util/messenger";
 
 //TODO: Refactor, removeCheckpoint... etc. sind alle doppelt, auch updateCoords
 //TODO: Neu erstellte Orte werden nicht zur Karte hinzugefügt und auch nicht freigeschaltet
-//FIXME: Plugin reload lässt alle Marker verschwinden
 
 let menu: NativeUI.Menu;
 

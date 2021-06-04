@@ -9,7 +9,6 @@ var timer = undefined;
 var timeToDisplay = 3500;
 
 export function toggleInfoHud(): void {
-  //TODO: Add Money and other Stats
   if (opened) {
     opened = false;
     alt.clearTimeout(timeout);

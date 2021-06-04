@@ -41,11 +41,17 @@ let open: boolean = false,
 
 let transitiontime: number = 500;
 
-export function toggleInventory() {
-  if (!open) {
-    openInventory();
+export function toggleInventory(forceClose?: boolean) {
+  if (forceClose) {
+    if (open) {
+      closeInventory();
+    }
   } else {
-    closeInventory();
+    if (!open) {
+      openInventory();
+    } else {
+      closeInventory();
+    }
   }
 }
 

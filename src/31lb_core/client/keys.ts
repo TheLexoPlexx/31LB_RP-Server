@@ -7,9 +7,8 @@ import { toggleInfoHud } from './interactions/infohud';
 import { toggleInventory } from './interactions/inventory';
 import { colshapeMeta } from './interactions/placeGenerator';
 import { togglePlayerMenu } from './interactions/playerMenu';
+import { toggleQuickGPS } from './interactions/quickgps';
 import { openShopInteraction } from './interactions/shopInteraction';
-
-//Strg+F?
 
 let ctrlPressed = false;
 
@@ -78,7 +77,9 @@ export function keyUp(key: number): void {
 
     } else if (key == 70) { //F
       if (ctrlPressed) {
-        alt.logWarning("Suche.");
+        toggleQuickGPS();
+      } else {
+        alt.log("Paid respect.");
       }
 
     } else if (key == 17) { //Ctrl
