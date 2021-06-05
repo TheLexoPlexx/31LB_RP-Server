@@ -8,6 +8,7 @@ import * as uuid from "uuid";
 
 //TODO: Change result_player to PlayerEntity
 //FIXME: Neue Spieler bekommen keine globalen blips und können keine aufdecken
+//TODO: FIX: UUID is null in Table
 export function loginCompleted(player: alt.Player, result_player: any, password: String) {
   var playerJSON;
   if (result_player == null) {
@@ -21,7 +22,7 @@ export function loginCompleted(player: alt.Player, result_player: any, password:
       armour: player.maxArmour,
       firstjoin: date,
       permissions: 1,
-      uuid: uuid.v5,
+      uuid: uuid.v5.toString(),
       activeWeapons: JSON.stringify({ a:null, b:null, h:null }),
       unlockedplaces: "[]",
       telefonnummer: Math.round(Math.random() * 100000000)
@@ -47,13 +48,14 @@ export function loginCompleted(player: alt.Player, result_player: any, password:
 
     if (result_player.lastvehicle != null) {
       //TODO: Check if player actually owns vehicle
-      alt.emitClient(player, "a_forceEnterVehicle", result_player.lastvehicle, result_player.lastseat)
+      alt.emitClient(player, "a_forceEnterVehicle", result_player.lastvehicle, result_player.lastseat);
       alt.log("vehicle " + result_player.lastvehicle);
     }
 
     pm.setValueForPlayer(result_player, (res) => {
       alt.log("Player " + res.name + " logged in");
     });
+
     playerJSON = result_player;
   }
 
@@ -77,7 +79,7 @@ export function loginCompleted(player: alt.Player, result_player: any, password:
   player.setSyncedMeta("personalausweis", playerJSON.personalausweis);
   player.setSyncedMeta("allowKeyPress", true);
   player.setSyncedMeta("name", "unbenannt"); //TODO: Fill with Name
-  player.setSyncedMeta("uuid", uuid.parse(playerJSON.uuid));
+  player.setSyncedMeta("uuid", playerJSON.uuid);
 }
 
 export function login(player: alt.Player, pw) {

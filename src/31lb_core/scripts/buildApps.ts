@@ -59,6 +59,7 @@ function makeMd5(value: string): string {
   
   md5folders.forEach((el, index, array) => {
     dmd += md5Dir.sync(path + "/" + value + "/" + el);
+    //TODO: Add check if node_modules exists and run npm install automatically
   });
   return md5(dmd);
 }

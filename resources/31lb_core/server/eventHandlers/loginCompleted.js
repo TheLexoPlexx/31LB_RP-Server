@@ -17,7 +17,7 @@ export function loginCompleted(player, result_player, password) {
             armour: player.maxArmour,
             firstjoin: date,
             permissions: 1,
-            uuid: uuid.v5,
+            uuid: uuid.v5.toString(),
             activeWeapons: JSON.stringify({ a: null, b: null, h: null }),
             unlockedplaces: "[]",
             telefonnummer: Math.round(Math.random() * 100000000)
@@ -63,7 +63,7 @@ export function loginCompleted(player, result_player, password) {
     player.setSyncedMeta("personalausweis", playerJSON.personalausweis);
     player.setSyncedMeta("allowKeyPress", true);
     player.setSyncedMeta("name", "unbenannt");
-    player.setSyncedMeta("uuid", uuid.parse(playerJSON.uuid));
+    player.setSyncedMeta("uuid", playerJSON.uuid);
 }
 export function login(player, pw) {
     database.fetchData("password", pw, tables.players, (result) => {

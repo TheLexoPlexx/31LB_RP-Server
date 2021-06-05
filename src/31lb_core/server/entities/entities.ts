@@ -6,7 +6,7 @@ export const PlayerEntity = new orm.EntitySchema({
   columns: {
     uuid: {
       primary: true,
-      type: 'uuid',
+      type: 'varchar',
     },
     /* //TODO: Für Später
     mail: {
