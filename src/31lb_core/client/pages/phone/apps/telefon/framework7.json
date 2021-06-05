@@ -1,0 +1,26 @@
+{
+  "cwd": "C:\\altV\\server\\src\\31lb_core\\client\\pages\\phone\\apps\\telefon",
+  "type": [
+    "web"
+  ],
+  "name": "Telefon",
+  "framework": "core",
+  "template": "single-view",
+  "bundler": "webpack",
+  "cssPreProcessor": "less",
+  "theming": {
+    "customColor": false,
+    "color": "#007aff",
+    "darkTheme": false,
+    "iconFonts": true,
+    "fillBars": false
+  },
+  "customBuild": false,
+  "webpack": {
+    "developmentSourceMap": true,
+    "productionSourceMap": true,
+    "hashAssets": false,
+    "preserveAssetsPaths": false,
+    "inlineAssets": true
+  }
+}

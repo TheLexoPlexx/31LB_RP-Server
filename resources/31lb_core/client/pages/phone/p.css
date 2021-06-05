@@ -1,0 +1,33 @@
+* {
+  margin: 0px;
+}
+body {
+  display: grid;
+  grid-template-columns: 1fr 20% 10%;
+  grid-template-rows: 1.3fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: ". . ." ". main .";
+}
+body .main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px 1fr 80px 160px;
+  gap: 0px 0px;
+  grid-template-areas: "statusbar" "apparea" "bottomspacer" "bottomapps";
+}
+body .main .statusbar {
+  grid-area: statusbar;
+}
+body .main .bottomspacer {
+  grid-area: bottomspacer;
+}
+body .main .bottomapps {
+  grid-area: bottomapps;
+}
+body .main .apparea {
+  grid-area: apparea;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}

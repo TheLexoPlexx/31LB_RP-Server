@@ -103,6 +103,10 @@ export const PlayerEntity = new orm.EntitySchema({
       type: 'varchar',
       nullable: true,
       default: "[]"
+    },
+    telefonnummer: {
+      type: 'int',
+      nullable: true,
     }
   }
 });

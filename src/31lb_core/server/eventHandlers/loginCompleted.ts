@@ -24,6 +24,7 @@ export function loginCompleted(player: alt.Player, result_player: any, password:
       uuid: uuid.v5,
       activeWeapons: JSON.stringify({ a:null, b:null, h:null }),
       unlockedplaces: "[]",
+      telefonnummer: Math.round(Math.random() * 100000000)
     }
 
     pm.setValueForPlayer(new_player, (res) => {

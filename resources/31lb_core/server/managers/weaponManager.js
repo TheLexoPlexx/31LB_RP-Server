@@ -20,7 +20,7 @@ export function newWeapon(weapon, ownerId) {
     var serialNumber = generateSerial();
     database.fetchData("serial", serialNumber, tables.weapons, (result) => {
         if (result == null) {
-            pm.getPlayerBySerialId(ownerId, (r) => {
+            pm.getPlayerByUUID(ownerId, (r) => {
                 if (r == null) {
                     alt.logError("New Weapon " + serialNumber + " does not have an existing owner!");
                 }
@@ -38,7 +38,7 @@ export function changeWeaponOwner(serial, newOwnerId) {
             alt.logError("Wrong serial: " + serial);
         }
         else {
-            pm.getPlayerBySerialId(newOwnerId, (r) => {
+            pm.getPlayerByUUID(newOwnerId, (r) => {
                 if (r == null) {
                     alt.logError("Weapon " + serial + " does not have an existing owner!");
                 }

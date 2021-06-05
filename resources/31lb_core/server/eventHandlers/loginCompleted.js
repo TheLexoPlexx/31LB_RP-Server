@@ -3,6 +3,7 @@ import * as pm from "./../managers/playerManager";
 import { database } from '../startup';
 import { globalMarkers, unlockableMarkers } from './placeHandler';
 import tables from '../util/tables';
+import * as uuid from "uuid";
 export function loginCompleted(player, result_player, password) {
     var playerJSON;
     if (result_player == null) {
@@ -16,11 +17,12 @@ export function loginCompleted(player, result_player, password) {
             armour: player.maxArmour,
             firstjoin: date,
             permissions: 1,
-            sessionid: player.id,
+            uuid: uuid.v5,
             activeWeapons: JSON.stringify({ a: null, b: null, h: null }),
             unlockedplaces: "[]",
+            telefonnummer: Math.round(Math.random() * 100000000)
         };
-        pm.setValue(new_player, (res) => {
+        pm.setValueForPlayer(new_player, (res) => {
             alt.log("Neuer Spieler: " + JSON.stringify(res));
             player.spawn(-69.551, -855.909, 40.571, 0);
         });
@@ -38,9 +40,8 @@ export function loginCompleted(player, result_player, password) {
             alt.emitClient(player, "a_forceEnterVehicle", result_player.lastvehicle, result_player.lastseat);
             alt.log("vehicle " + result_player.lastvehicle);
         }
-        result_player.sessionid = player.id;
-        pm.setValue(result_player, (res) => {
-            alt.log("Player " + res.name + " logged in with SessionID " + res.sessionid);
+        pm.setValueForPlayer(result_player, (res) => {
+            alt.log("Player " + res.name + " logged in");
         });
         playerJSON = result_player;
     }
@@ -62,6 +63,7 @@ export function loginCompleted(player, result_player, password) {
     player.setSyncedMeta("personalausweis", playerJSON.personalausweis);
     player.setSyncedMeta("allowKeyPress", true);
     player.setSyncedMeta("name", "unbenannt");
+    player.setSyncedMeta("uuid", uuid.parse(playerJSON.uuid));
 }
 export function login(player, pw) {
     database.fetchData("password", pw, tables.players, (result) => {
@@ -69,9 +71,6 @@ export function login(player, pw) {
             loginCompleted(player, null, pw);
         }
         else {
-            if (result.sessionid >= 0) {
-                alt.logWarning("Player replaced sessionid " + result.sessionid);
-            }
             loginCompleted(player, result, null);
         }
     });

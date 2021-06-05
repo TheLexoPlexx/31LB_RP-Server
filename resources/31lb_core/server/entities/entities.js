@@ -3,10 +3,9 @@ import tables from "../util/tables";
 export const PlayerEntity = new orm.EntitySchema({
     name: tables.players,
     columns: {
-        id: {
+        uuid: {
             primary: true,
-            type: 'int',
-            generated: true
+            type: 'uuid',
         },
         password: {
             type: 'varchar'
@@ -43,10 +42,6 @@ export const PlayerEntity = new orm.EntitySchema({
         },
         character: {
             type: "varchar",
-            nullable: true
-        },
-        sessionid: {
-            type: "int",
             nullable: true
         },
         lastvehicle: {
@@ -89,6 +84,10 @@ export const PlayerEntity = new orm.EntitySchema({
             type: 'varchar',
             nullable: true,
             default: "[]"
+        },
+        telefonnummer: {
+            type: 'int',
+            nullable: true,
         }
     }
 });

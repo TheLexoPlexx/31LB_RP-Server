@@ -2,20 +2,16 @@ import * as alt from 'alt-server';
 import { database } from './../startup';
 import tables from '../util/tables';
 export function getPlayer(player, callback) {
-    database.fetchData("sessionid", player.id, tables.players, (result) => {
+    getPlayerByUUID(player.getSyncedMeta("uuid"), callback);
+}
+export function getPlayerByUUID(playerId, callback) {
+    database.fetchData("uuid", playerId, tables.players, (result) => {
         if (callback != null) {
             callback(result);
         }
     });
 }
-export function getPlayerBySerialId(playerId, callback) {
-    database.fetchData("id", playerId, tables.players, (result) => {
-        if (callback != null) {
-            callback(result);
-        }
-    });
-}
-export function setValue(result, callback) {
+export function setValueForPlayer(result, callback) {
     database.upsertData(result, tables.players, (r) => {
         if (callback != null) {
             callback(r);
@@ -25,9 +21,7 @@ export function setValue(result, callback) {
 export function setCloth(player, comp, item, drawable, texture, dlcHash) {
     player.setSyncedMeta("inventory_" + comp, item);
     let palette = 2;
-    alt.emitClient(player, "a_setclothes");
-}
-export function getInventorySpace(comp) {
+    alt.emitClient(player, "a_setclothes", palette);
 }
 export function addWeapon(player, weaponName, inventory) {
     getPlayer(player, (result) => {
@@ -48,7 +42,7 @@ export function addWeapon(player, weaponName, inventory) {
             });
         }
         result.weapons = JSON.stringify(weapons);
-        setValue(result, null);
+        setValueForPlayer(result, null);
     });
 }
 const spawnpositions = [{

@@ -10,12 +10,19 @@ let invData = {
 };
 let open = false, viewmode, cam, disableControlLoop, inventoryview;
 let transitiontime = 500;
-export function toggleInventory() {
-    if (!open) {
-        openInventory();
+export function toggleInventory(forceClose) {
+    if (forceClose) {
+        if (open) {
+            closeInventory();
+        }
     }
     else {
-        closeInventory();
+        if (!open) {
+            openInventory();
+        }
+        else {
+            closeInventory();
+        }
     }
 }
 function openInventory() {

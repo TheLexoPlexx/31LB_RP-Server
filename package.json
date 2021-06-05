@@ -4,13 +4,14 @@
 	"description": "Package für den 31LB-Server",
 	"main": "",
 	"scripts": {
-		"build": "npm run clean && tsc && npm run copy",
-		"copy": "copyfiles src/**/* --exclude=**/*.ts --exclude=**/*.less --exclude=src/31lb_core/data_dumps/* --up 1 ./resources",
+		"build": "npm run clean && tsc && npm run copy && npm run buildapps",
+		"copy": "copyfiles src/**/* --exclude=**/*.ts --exclude=**/*.less --exclude=src/31lb_core/data_dumps/* --exclude=src/31lb_core/client/pages/phone/apps/** --up 1 ./resources",
 		"clean": "rimraf resources",
 		"update": "altv-pkg d release",
 		"update-dev": "altv-pkg d dev",
 		"windows": "npm run build && altv-server.exe",
 		"linux": "npm run build && ./start.sh",
+		"buildapps": "node resources/31lb_core/scripts/buildApps.js",
 		"sortclothes": "node resources/31lb_core/scripts/clothSort.js"
 	},
 	"author": "TheLexoPlexx",
@@ -34,6 +35,9 @@
 	"dependencies": {
 		"@types/sortablejs": "^1.10.6",
 		"@types/uuid": "^8.3.0",
+		"async": "^3.2.0",
+		"md5": "^2.3.0",
+		"md5-dir": "^0.2.0",
 		"mysql": "^2.18.1",
 		"node-fetch": "^2.6.1",
 		"pg": "^8.6.0",

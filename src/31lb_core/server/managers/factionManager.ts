@@ -1,6 +1,6 @@
 /// <reference types="@altv/types-server" />
 import * as alt from 'alt-server';
-import { getPlayer, setValue } from './playerManager';
+import { getPlayer, setValueForPlayer } from './playerManager';
 
 interface FactionColor {
   r: number;
@@ -115,6 +115,6 @@ export const Factions: {
 export function setPlayerToFaction(player: alt.Player, argFaction: Faction) {
   getPlayer(player, (playerres) => {
     playerres.faction = argFaction.constructor.name;
-    setValue(playerres, () => {});
+    setValueForPlayer(playerres, () => {});
   })
 }
