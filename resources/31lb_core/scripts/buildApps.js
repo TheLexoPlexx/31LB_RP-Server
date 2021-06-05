@@ -34,6 +34,8 @@ appsDir.forEach((value, index, list) => {
             build(value);
             cache.push({ key: value, value: makeMd5(value) });
         }
+        console.log("Copying... " + value);
+        console.log(cp.execSync("copyfiles " + path + "/" + value + "/www/**/* --up 1 ./resources", { encoding: "utf-8" }));
     }
 });
 fs.writeFileSync(cachePath, JSON.stringify(cache, null, 2));
@@ -52,6 +54,4 @@ function makeMd5(value) {
 function build(value) {
     console.log("Building... " + value);
     console.log(cp.execSync("npm run build", { cwd: path + "/" + value, encoding: "utf-8" }));
-    console.log("Copying... " + value);
-    console.log(cp.execSync("copyfiles " + path + value + "/www/**/* --up 1 ./resources", { encoding: "utf-8" }));
 }
