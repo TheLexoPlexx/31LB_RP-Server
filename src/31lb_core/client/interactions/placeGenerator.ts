@@ -492,7 +492,7 @@ export function startPlaceGen(preset: PlacePreset): void {
 
   let interact_fn_name;
   if (preset != null) {
-    interact_fn_name = "shop_" + preset.title.toLowerCase().replaceAll(" ", "") + "_" + native.getStreetNameFromHashKey(native.getStreetNameAtCoord(alt.Player.local.pos.x, alt.Player.local.pos.y, alt.Player.local.pos.z)[1]).toLowerCase().replaceAll(" ", "");
+    interact_fn_name = "shop_" + preset.title.toLowerCase().replace("/ /g", "") + "_" + native.getStreetNameFromHashKey(native.getStreetNameAtCoord(alt.Player.local.pos.x, alt.Player.local.pos.y, alt.Player.local.pos.z)[1]).toLowerCase().replace("/ /g", "");
   }
 
   let interact_fn = new NativeUI.UIMenuItem("Funktion", "Funktion benennen, die gespeichert werden soll. Kann leer bleiben, dann wird ein zufälliger Name vergeben.");

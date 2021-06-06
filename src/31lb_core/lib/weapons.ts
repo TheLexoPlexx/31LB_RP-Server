@@ -4619,7 +4619,7 @@ export function getWeaponByName(name: string): Weapon | null {
 }
 
 export function getWeaponName(weapon: Weapon): String {
-  return weapon.name.replaceAll(" ", "").toLowerCase().replaceAll("II", "2");
+  return weapon.name.replace("/ /g", "").toLowerCase().replace("/II/g", "2");
 }
 
 export function getWeaponComponentByName(weapon: Weapon, name: string): Object | null {

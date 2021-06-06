@@ -1,7 +1,7 @@
 import * as fs from "fs";
 import * as cp from 'child_process';
 import md5 from 'md5';
-import * as md5Dir from 'md5-dir';
+import md5Dir from 'md5-dir';
 
 interface BuildCache<K extends PropertyKey, V> {
   key: K;
@@ -48,7 +48,8 @@ appsDir.forEach((value, index, list) => {
     }
 
     console.log("Copying... " + value);
-    console.log(cp.execSync("copyfiles " + cwdVal + "/www/**/* --up 1 ./resources", { encoding: "utf-8" }));  
+    console.log(cp.execSync("copyfiles " + cwdVal + "/www/**/* --up 1 ./resources", { encoding: "utf-8" }));
+    console.log("===========");
   }
 });
 
@@ -63,7 +64,7 @@ function makeMd5(value: string): string {
   ]
   
   md5folders.forEach((el, index, array) => {
-    dmd += md5Dir(path + "/" + value + "/" + el);
+    dmd += md5Dir.sync(path + "/" + value + "/" + el);
   });
   return md5(dmd);
 }
