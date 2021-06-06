@@ -15,7 +15,6 @@ let ctrlPressed = false;
 export function keyDown(key: number): void {
   if (alt.Player.local.getSyncedMeta("allowKeyPress") && !alt.isConsoleOpen()) {
     if (key == 17) {
-      alt.log("Ctrl");
       ctrlPressed = true;
     }
   }
@@ -84,6 +83,7 @@ export function keyUp(key: number): void {
 
     } else if (key == 17) { //Ctrl
       ctrlPressed = false;
+      
     }
   }
 }

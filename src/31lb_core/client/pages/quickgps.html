@@ -69,13 +69,11 @@
 <body>
   <input type="text" id="inputbox" placeholder="" onchange="change()" autofocus>
   <ul id="resultlist">
-    <li>Apartment<span>Alta St.</span></li>
-    <li>Garage<span>Harmony</span></li>
-    <li>Garage<span>Pillbox</span></li>
-    <li>Test Item<span>Test Span</span></li>
+    <!-- //TODO: Add QPS-Targets-->
   </ul>
 </body>
 <script type="text/javascript">
+//TODO: Allow close through Esc
   var li = document.getElementById("resultlist").children;
 
   document.getElementById("inputbox").addEventListener("input", input);
@@ -155,13 +153,6 @@
         break;
       }
     }
-
-
-  }
-  if ('alt' in window) {
-    alt.on("a_input_settitle", (arg) => {
-      document.getElementById("inputbox").placeholder = arg;
-    });
 
 
   }
