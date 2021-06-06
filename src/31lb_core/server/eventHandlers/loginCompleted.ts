@@ -3,8 +3,7 @@ import * as alt from 'alt-server';
 import * as pm from "./../managers/playerManager";
 import { database } from '../startup';
 import { globalMarkers, unlockableMarkers } from './placeHandler';
-import tables from '../util/tables';
-import * as uuid from "uuid";
+import tables from '../database/tables';
 
 //TODO: Change result_player to PlayerEntity
 //FIXME: Neue Spieler bekommen keine globalen blips und können keine aufdecken
@@ -15,6 +14,7 @@ export function loginCompleted(player: alt.Player, result_player: any, password:
     var d = new Date();
     var date = d.getDate().toString() + "." + (d.getMonth() + 1).toString() + "." + d.getFullYear().toString();
     var new_player = {
+      uuid: 3,
       password: password,
       money_hand: 400,
       money_bank: 0,
@@ -22,7 +22,6 @@ export function loginCompleted(player: alt.Player, result_player: any, password:
       armour: player.maxArmour,
       firstjoin: date,
       permissions: 1,
-      uuid: uuid.v5.toString(),
       activeWeapons: JSON.stringify({ a:null, b:null, h:null }),
       unlockedplaces: "[]",
       telefonnummer: Math.round(Math.random() * 100000000)

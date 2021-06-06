@@ -1,7 +1,7 @@
 /// <reference types="@altv/types-server" />
 import * as alt from 'alt-server';
 import { database } from '../startup';
-import tables from '../util/tables';
+import tables from '../database/tables';
 import * as playerManager from "./../managers/playerManager";
 
 export let unlockableMarkers = [];

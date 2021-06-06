@@ -1,5 +1,5 @@
 import orm from "typeorm";
-import tables from "../util/tables";
+import tables from "./tables";
 
 export const PlayerEntity = new orm.EntitySchema({
   name: tables.players,

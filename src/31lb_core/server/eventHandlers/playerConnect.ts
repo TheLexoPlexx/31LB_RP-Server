@@ -7,4 +7,6 @@ export function playerConnect(player: alt.Player) {
 
   player.setWeather(weatherType);
   player.setDateTime(day, month, year, hour, minute, second);
+  
+  alt.emit('discord:BeginAuth', player);
 }

@@ -7,7 +7,7 @@ import {
   ItemHolder,
   Item
 } from "./../../client/interactions/inventory";
-import tables from '../util/tables';
+import tables from '../database/tables';
 
 export function getPlayer(player: alt.Player, callback) {
   getPlayerByUUID(player.getSyncedMeta("uuid"), callback);

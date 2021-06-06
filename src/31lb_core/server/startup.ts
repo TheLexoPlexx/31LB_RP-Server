@@ -1,7 +1,7 @@
 /// <reference types="@altv/types-server" />
 import * as alt from 'alt-server';
-import SQL from './util/database';
-import * as entities from './entities/entities.js';
+import SQL from './database/database';
+import * as entities from './database/entities.js';
 import { playerConnect } from './eventHandlers/playerConnect';
 import { playerDamage } from './eventHandlers/playerDamage';
 import { playerDeath } from './eventHandlers/playerDeath';
@@ -18,13 +18,15 @@ import { initWeather } from './eventHandlers/weather';
 //--------------------------------------------------------------------------------------//
 //                                 Connect to Database                                  //
 //--------------------------------------------------------------------------------------//
-export const dbHost = 'localhost';
-export const dbPort = '5433';
-export const dbUsername = '31lb_rpdb';
-export const dbPassword = '31lb_rpdb';
-export const dbName = '31lb_rpdb';
+const db = {
+  host: "localhost",
+  port: "5433",
+  username: "31lb_rpdb",
+  password: "31lb_rpdb",
+  name: "31lb_rpdb"
+}
 
-export var database = new SQL('postgres', dbHost, dbPort, dbUsername, dbPassword, dbName, [
+export var database = new SQL("postgres", db.host, db.port, db.username, db.password, db.name, [
   entities.PlayerEntity, entities.WeaponEntity, entities.PlaceEntity, entities.VehicleEntity
 ]);
 
@@ -51,10 +53,10 @@ alt.on('ConnectionComplete', () => {
 
 alt.on("resourceStop",  () => {
   if (!safeStopped) {
-    alt.logError("======{ Du Pimmock");
-    alt.logWarning("Datenbankverbindung schlägt beim konventionellen Neustarten fehl und nichts wird gespeichert.");
-    alt.logWarning("Verwende stattdessen: 'rp [r]estart' oder 'rp [s]top'.");
-    alt.logError("======{ Ende der Durchsage");
+    alt.log("~r~======{ Du Pimmock");
+    alt.log("~y~Datenbankverbindung schlägt beim konventionellen Neustarten fehl und nichts wird gespeichert.");
+    alt.log("~y~Verwende stattdessen: 'rp [r]estart' oder 'rp [s]top'.");
+    alt.log("~r~======{ Ende der Durchsage");
   }
 });
 
@@ -109,6 +111,10 @@ alt.onClient("a_updatePlacesForPlayer", updatePlacesForPlayer);
 alt.onClient("a_openinventory", openedInventory);
 alt.onClient("a_teamlogin", teamLogin);
 alt.onClient("a_teamlogoff", teamLogoff);
+
+alt.on('discord:AuthDone', (player, discordInfo)=> {
+  alt.log("Connected: " +  JSON.stringify(discordInfo));
+});
 
 //--------------------------------------------------------------------------------------//
 //                             Register Interact Functions                              //
