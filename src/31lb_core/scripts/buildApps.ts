@@ -18,9 +18,14 @@ if (fs.existsSync(cachePath)) {
 }
 
 appsDir.forEach((value, index, list) => {
-  if (fs.readdirSync(path + "/" + value).length == 0) {
+  let cwdVal = path + "/" + value;
+  if (fs.readdirSync(cwdVal).length == 0) {
     console.log(value + " is empty, skipping...");
   } else {
+    if (!fs.existsSync(cwdVal + "/node_modules")) {
+      console.log("node_modules missing, installing... " + value);
+      console.log(cp.execSync("npm install", { encoding: "utf-8", cwd: cwdVal }));  
+    }
     let md = makeMd5(value);
     console.log("md5 of " + value +  " is: " + md);
     if (cache.length > 0) {
@@ -43,7 +48,7 @@ appsDir.forEach((value, index, list) => {
     }
 
     console.log("Copying... " + value);
-    console.log(cp.execSync("copyfiles " + path + "/" + value + "/www/**/* --up 1 ./resources", { encoding: "utf-8" }));  
+    console.log(cp.execSync("copyfiles " + cwdVal + "/www/**/* --up 1 ./resources", { encoding: "utf-8" }));  
   }
 });
 
@@ -58,8 +63,7 @@ function makeMd5(value: string): string {
   ]
   
   md5folders.forEach((el, index, array) => {
-    dmd += md5Dir.sync(path + "/" + value + "/" + el);
-    //TODO: Add check if node_modules exists and run npm install automatically
+    dmd += md5Dir(path + "/" + value + "/" + el);
   });
   return md5(dmd);
 }
