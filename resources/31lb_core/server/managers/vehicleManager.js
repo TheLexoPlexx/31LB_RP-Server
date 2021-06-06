@@ -1,6 +1,6 @@
 import * as alt from 'alt-server';
 import { database } from '../startup';
-import tables from '../util/tables';
+import tables from '../database/tables';
 export function saveVehicles() {
     alt.log("Found " + alt.Vehicle.all.length + " Vehicles. Saving...");
     return saveV(0);

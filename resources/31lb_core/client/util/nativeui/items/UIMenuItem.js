@@ -9,8 +9,9 @@ import Color from "../utils/Color";
 import Point from "../utils/Point";
 import Size from "../utils/Size";
 import UUIDV4 from "../utils/UUIDV4";
-export default class UIMenuItem {
+export default class UIMenuItem extends alt.BaseObject {
     constructor(text, description = "", data = null) {
+        super();
         this.Id = UUIDV4();
         this.BackColor = UIMenuItem.DefaultBackColor;
         this.HighlightedBackColor = UIMenuItem.DefaultHighlightedBackColor;
@@ -28,19 +29,12 @@ export default class UIMenuItem {
         this._badgeLeft = new Sprite("commonmenu", "", new Point(0, 0), new Size(40, 40));
         this._badgeRight = new Sprite("commonmenu", "", new Point(0, 0), new Size(40, 40));
         this._labelText = new ResText("", new Point(0, 0), 0.35, Color.White, 0, Alignment.Right);
-        this._meta = new Map;
     }
     get Text() {
         return this._text.Caption;
     }
     set Text(text) {
         this._text.Caption = text;
-    }
-    getMeta(key) {
-        return this._meta.get(key);
-    }
-    setMeta(key, value) {
-        this._meta.set(key, value);
     }
     get Description() {
         return this._description;

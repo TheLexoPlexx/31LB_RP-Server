@@ -26,9 +26,6 @@ export const PlayerEntity = new orm.EntitySchema({
       nullable: true
     },
     */
-    password: { //TODO: Encryption
-      type: 'varchar'
-    },
     money_hand: {
       type: "numeric",
       precision: 12,

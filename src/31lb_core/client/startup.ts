@@ -8,6 +8,7 @@ import { openWeaponShop } from './interactions/weaponShop';
 import { keyDown, keyUp } from './keys';
 import { createGlobalBlip, enteredColshape, leaveColshape, saveSuccess, startPlaceGen } from './interactions/placeGenerator';
 import { setPlayerInVehicle } from './handlers/vehicleHandler';
+import { handleAuthExit, handleDiscordAuth } from './interactions/discordAuth';
 
 //Keine Ahnung wofür das gut ist, ist aus Freeroam-Resource geklaut
 //Ich weiß mittlerweile wofür das gut ist, weiß aber nicht warum es im client steht und traue mich noch nicht es zu entfernen.
@@ -26,6 +27,9 @@ alt.onServer("a_enteredColshape", enteredColshape);
 alt.onServer("a_leaveColshape", leaveColshape);
 alt.onServer("a_createBlip", createGlobalBlip);
 alt.onServer("a_forceEnterVehicle", setPlayerInVehicle);
+
+alt.onServer('discord:Auth', handleDiscordAuth);
+alt.onServer('discord:AuthExit', handleAuthExit);
 
 alt.on("consoleCommand", consoleCommand)
 alt.on("keydown", keyDown);

@@ -1,25 +1,41 @@
 import * as alt from 'alt-server';
-import SQL from './util/database';
-import * as entities from './entities/entities.js';
+import SQL from './database/database';
+import * as entities from './database/entities.js';
 import { playerConnect } from './eventHandlers/playerConnect';
 import { playerDamage } from './eventHandlers/playerDamage';
 import { playerDeath } from './eventHandlers/playerDeath';
 import { playerActualDisconnect, playerRestartDisconnect } from './eventHandlers/playerDisconnect';
 import { keyPressF9, keyPressI, keyPressM, keyPressY } from './eventHandlers/keyHandlers';
-import { createBlips, login } from './eventHandlers/loginCompleted';
+import { createBlips, loginCompleted } from './eventHandlers/loginCompleted';
 import { clearColshapes, savePlace, sortMarkers, updatePlacesForPlayer } from './eventHandlers/placeHandler';
 import { openedInventory } from './eventHandlers/inventoryHandler';
 import { teamLogin, teamLogoff } from './eventHandlers/teamLoginHandler';
 import { loadVehicles, saveVehicles } from './managers/vehicleManager';
 import { initWeather } from './eventHandlers/weather';
-export const dbHost = 'localhost';
-export const dbPort = '5433';
-export const dbUsername = '31lb_rpdb';
-export const dbPassword = '31lb_rpdb';
-export const dbName = '31lb_rpdb';
-export var database = new SQL('postgres', dbHost, dbPort, dbUsername, dbPassword, dbName, [
+const db = {
+    host: "localhost",
+    port: "5433",
+    username: "31lb_rpdb",
+    password: "31lb_rpdb",
+    name: "31lb_rpdb"
+};
+export var database = new SQL("postgres", db.host, db.port, db.username, db.password, db.name, [
     entities.PlayerEntity, entities.WeaponEntity, entities.PlaceEntity, entities.VehicleEntity
 ]);
+export const discord = {
+    client_id: "467682657887846411",
+    client_secret: "Q-lCGXEAJx5WHgveCpK-lA3rFyK0y9Yt",
+    bot_token: "NDY3NjgyNjU3ODg3ODQ2NDEx.W0n5ag.yFUH8pvN-y1ZPDDntrl8Sm-TFec",
+    server_id: "467406309755715595",
+    whitelist_id: "467406702006894592",
+    redirect_url: "http://127.0.0.1:7790/authenticate"
+};
+alt.on('discord:AuthDone', (player, discordInfo) => {
+    loginCompleted(player, discordInfo);
+});
+import('./discord/bot');
+import('./discord/verify');
+import('./discord/express');
 let safeStopped = false;
 alt.on('ConnectionComplete', () => {
     alt.log("[31LB] Connected to Database");
@@ -36,10 +52,10 @@ alt.on('ConnectionComplete', () => {
 });
 alt.on("resourceStop", () => {
     if (!safeStopped) {
-        alt.logError("======{ Du Pimmock");
-        alt.logWarning("Datenbankverbindung schlägt beim konventionellen Neustarten fehl und nichts wird gespeichert.");
-        alt.logWarning("Verwende stattdessen: 'rp [r]estart' oder 'rp [s]top'.");
-        alt.logError("======{ Ende der Durchsage");
+        alt.log("~r~======{ Du Pimmock");
+        alt.log("~y~Datenbankverbindung schlägt beim konventionellen Neustarten fehl und nichts wird gespeichert.");
+        alt.log("~y~Verwende stattdessen: 'rp [r]estart' oder 'rp [s]top'.");
+        alt.log("~r~======{ Ende der Durchsage");
     }
 });
 alt.on("playerConnect", playerConnect);
@@ -82,7 +98,6 @@ alt.onClient("a_keyup_f9", keyPressF9);
 alt.onClient("a_keyup_y", keyPressY);
 alt.onClient("a_keyup_i", keyPressI);
 alt.onClient("a_keyup_m", keyPressM);
-alt.onClient("a_login", login);
 alt.onClient("a_saveNewPlace", savePlace);
 alt.onClient("a_updatePlacesForPlayer", updatePlacesForPlayer);
 alt.onClient("a_openinventory", openedInventory);

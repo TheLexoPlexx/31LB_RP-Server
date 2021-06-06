@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF8">
+  <style>
+    * {
+      margin: 0px;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column nowrap;
+      min-height: 100vh;
+      background: url("2ff84b840561cd54b8eae116159c922b.jpg") center center;
+      background-size: cover;
+    }
+
+    #loginb {
+      padding: 30px 80px;
+      background: white;
+      outline: none;
+      border: 2px solid #222;
+      font-size: 28px;
+      color: #222;
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+      box-shadow: 5px 5px 10px 3px black;
+    }
+    #loginb:hover {
+      background: #222;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <button id="loginb">Login</button>
+</body>
+<script type="text/javascript">
+  let loginUrl = JSON.parse(decodeURIComponent(window.location.search.split("=")[1]));
+  console.log(loginUrl);
+
+  document.getElementById("loginb").addEventListener("click", () => {
+    window.open(loginUrl);
+  });
+</script>
+
+</html>

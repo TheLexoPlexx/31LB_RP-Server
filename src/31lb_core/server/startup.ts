@@ -7,7 +7,7 @@ import { playerDamage } from './eventHandlers/playerDamage';
 import { playerDeath } from './eventHandlers/playerDeath';
 import { playerActualDisconnect, playerRestartDisconnect } from './eventHandlers/playerDisconnect';
 import { keyPressF9, keyPressI, keyPressM, keyPressY } from './eventHandlers/keyHandlers';
-import { createBlips, login } from './eventHandlers/loginCompleted';
+import { createBlips, loginCompleted } from './eventHandlers/loginCompleted';
 import { clearColshapes, savePlace, sortMarkers, updatePlacesForPlayer } from './eventHandlers/placeHandler';
 import { openedInventory } from './eventHandlers/inventoryHandler';
 import { teamLogin, teamLogoff } from './eventHandlers/teamLoginHandler';
@@ -29,6 +29,26 @@ const db = {
 export var database = new SQL("postgres", db.host, db.port, db.username, db.password, db.name, [
   entities.PlayerEntity, entities.WeaponEntity, entities.PlaceEntity, entities.VehicleEntity
 ]);
+
+//--------------------------------------------------------------------------------------//
+//                              Discord Authenticator Init                              //
+//--------------------------------------------------------------------------------------//
+export const discord = {
+  client_id: "467682657887846411",
+  client_secret: "Q-lCGXEAJx5WHgveCpK-lA3rFyK0y9Yt",
+  bot_token: "NDY3NjgyNjU3ODg3ODQ2NDEx.W0n5ag.yFUH8pvN-y1ZPDDntrl8Sm-TFec",
+  server_id: "467406309755715595",
+  whitelist_id: "467406702006894592",
+  redirect_url: "http://127.0.0.1:7790/authenticate" //TODO: Make Window close after login
+};
+
+alt.on('discord:AuthDone', (player, discordInfo)=> {
+  loginCompleted(player, discordInfo);
+});
+
+import('./discord/bot');
+import('./discord/verify');
+import('./discord/express');
 
 //--------------------------------------------------------------------------------------//
 //                                  Resource Restarter                                  //
@@ -105,16 +125,11 @@ alt.onClient("a_keyup_y", keyPressY);
 alt.onClient("a_keyup_i", keyPressI);
 alt.onClient("a_keyup_m", keyPressM);
 
-alt.onClient("a_login", login);
 alt.onClient("a_saveNewPlace", savePlace);
 alt.onClient("a_updatePlacesForPlayer", updatePlacesForPlayer);
 alt.onClient("a_openinventory", openedInventory);
 alt.onClient("a_teamlogin", teamLogin);
 alt.onClient("a_teamlogoff", teamLogoff);
-
-alt.on('discord:AuthDone', (player, discordInfo)=> {
-  alt.log("Connected: " +  JSON.stringify(discordInfo));
-});
 
 //--------------------------------------------------------------------------------------//
 //                             Register Interact Functions                              //
