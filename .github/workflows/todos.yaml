@@ -12,7 +12,7 @@ jobs:
         REPO: ${{ github.repository }}
         SHA: ${{ github.sha }}
         REF: ${{ github.ref }}
-        LABEL: "todo comment"
+        LABEL: "comment"
         MIN_WORDS: 3
         MIN_CHARACTERS: 40
         ADD_LIMIT: 20
