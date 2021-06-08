@@ -51,6 +51,10 @@ interface SaveableVehicle {
   windowTint: number;
 }
 
+/**
+ * Speichert alle Fahrzeuge rekursiv
+ * @returns einen Promise nachdem abgeschlossen werden kann
+ */
 export function saveAllVehicles() {
   alt.log("Found " + alt.Vehicle.all.length + " Vehicles. Saving...");
   return saveV(0);
@@ -82,6 +86,9 @@ function saveV(index: number) {
   });
 }
 
+/**
+ * Lädt alle Fahrzeuge auf dem Server und spawnt diese.
+ */
 export function loadVehicles() {
   database.fetchAllData(tables.vehicles, vehicles => {
     if (vehicles != undefined) {
@@ -105,6 +112,17 @@ export function loadVehicles() {
   });
 }
 
+/**
+ * Spawnt ein neues Fahrzeug mit VIN
+ * @param model Das Modell
+ * @param px Position-X
+ * @param py Position-Y
+ * @param pz Position-Z
+ * @param rx Rotation-X
+ * @param ry Rotation-Y
+ * @param rz Rotation-Z
+ * @returns Das Fahrzeug
+ */
 export function spawnNewVehicle(model, px, py, pz, rx, ry, rz): alt.Vehicle {
   let v = new alt.Vehicle(model, px, py, pz, rx, ry, rz);
   let vin = generateVIN();
@@ -114,6 +132,10 @@ export function spawnNewVehicle(model, px, py, pz, rx, ry, rz): alt.Vehicle {
   return v;
 }
 
+/**
+ * Speichert ein einzelnes Fahrzeug in der Datenbank
+ * @param vehicle Das Fahrzeug, das gespeichert werden soll.
+ */
 export function saveSingleVehilce(vehicle: alt.Vehicle) {
   database.upsertData({
     vin: vehicle.getSyncedMeta("vin"),
@@ -130,9 +152,9 @@ export function saveSingleVehilce(vehicle: alt.Vehicle) {
 }
 
 /**
- * Return Vehicle JSON by VIN
- * @param vin String
- * @param callback result
+ * Gibt die Reihe zurück für eine Fahrgestellnummer
+ * @param vin Die Fahrgestellnummer als string
+ * @param callback result aus der Datenbank
  */
 export function getVehicleByVin(vin: string, callback: CallableFunction) {
   database.fetchData("vin", vin, tables.vehicles, (result) => {
@@ -140,6 +162,10 @@ export function getVehicleByVin(vin: string, callback: CallableFunction) {
   })
 }
 
+/**
+ * Speichert Datena aus getVehicleByVin wieder in der Datenbank
+ * @param vehicleJSONData Die Daten
+ */
 export function updateVehicle(vehicleJSONData) {
   database.upsertData(vehicleJSONData, tables.vehicles, (result) => {});
 }
