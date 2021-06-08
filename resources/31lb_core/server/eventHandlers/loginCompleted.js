@@ -3,6 +3,7 @@ import * as pm from "./../managers/playerManager";
 import { database } from '../startup';
 import { globalMarkers, unlockableMarkers } from './placeHandler';
 import tables from '../database/tables';
+import { spawnNewVehicle } from '../managers/vehicleManager';
 export function loginCompleted(player, discordInfo) {
     database.fetchData("uuid", discordInfo.id, tables.players, (result_player) => {
         var playerJSON;
@@ -19,11 +20,23 @@ export function loginCompleted(player, discordInfo) {
                 permissions: 1,
                 activeWeapons: JSON.stringify({ a: null, b: null, h: null }),
                 unlockedplaces: "[]",
+                fahrzeuge: "[]",
                 telefonnummer: Math.round(Math.random() * 100000000)
             };
+            let spawnPoint = pm.randomFirstSpawnPosition();
+            let spawnVehicle = spawnNewVehicle(firstCar[Math.floor(Math.random() * firstCar.length)], spawnPoint.px, spawnPoint.py, spawnPoint.pz, spawnPoint.rx, spawnPoint.ry, spawnPoint.rz);
+            spawnVehicle.petrolTankHealth = 0;
+            spawnVehicle.manualEngineControl = true;
+            alt.emitClient(player, "a_disableEngineStart");
+            let fahrzeuge = JSON.parse(default_player.fahrzeuge);
+            fahrzeuge.push(spawnVehicle.getSyncedMeta("vin"));
+            default_player.fahrzeuge = JSON.stringify(default_player.fahrzeuge);
+            player.spawn(spawnVehicle.pos.x, spawnVehicle.pos.y, spawnVehicle.pos.z, 0);
+            alt.emitClient(player, "a_forceEnterVehicle", spawnVehicle.getSyncedMeta("vin"), 0);
+            let leaveCircle = new alt.ColshapeCircle(spawnPoint.px, spawnPoint.py, 50);
+            leaveCircle.setMeta("despawnVehicle", spawnVehicle.getSyncedMeta("vin"));
             pm.setValueForPlayer(default_player, (res) => {
                 alt.log("Neuer Spieler: " + JSON.stringify(res));
-                player.spawn(-69.551, -855.909, 40.571, 0);
             });
             playerJSON = default_player;
         }
@@ -35,7 +48,7 @@ export function loginCompleted(player, discordInfo) {
             player.health = result_player.healthpoints;
             player.armour = result_player.armour;
             if (result_player.lastvehicle != null) {
-                alt.emitClient(player, "a_forceEnterVehicle", result_player.lastvehicle, result_player.lastseat);
+                alt.emitClient(player, "a_forceEnterVehicle", result_player.lastvehicle, result_player.lastseat - 2);
                 alt.log("vehicle " + result_player.lastvehicle);
             }
             pm.setValueForPlayer(result_player, (res) => {
@@ -81,3 +94,7 @@ export function createBlips(player) {
         });
     }
 }
+const firstCar = [
+    "tornado3",
+    "tornado4",
+];

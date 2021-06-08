@@ -9,7 +9,6 @@ export function playerRestartDisconnect(player) {
 function playerDisconnect(player, restart) {
     let pos = player.pos;
     let rot = player.rot;
-    let id = player.id;
     let hp = player.health;
     let armour = player.armour;
     let uuid = player.getSyncedMeta("uuid");

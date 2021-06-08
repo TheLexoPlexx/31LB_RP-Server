@@ -55,14 +55,14 @@ export const PlayerEntity = new orm.EntitySchema({
         },
         fahrzeuge: {
             type: "varchar",
-            nullable: true
+            nullable: true,
         },
         lizenzen: {
             type: "varchar",
             nullable: true
         },
         personalausweis: {
-            type: "varchar",
+            type: "boolean",
             nullable: true
         },
         weapons: {

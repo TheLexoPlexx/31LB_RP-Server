@@ -1,7 +1,7 @@
 import * as alt from 'alt-server';
 import { database } from '../startup';
 import tables from '../database/tables';
-export function saveVehicles() {
+export function saveAllVehicles() {
     alt.log("Found " + alt.Vehicle.all.length + " Vehicles. Saving...");
     return saveV(0);
 }
@@ -53,10 +53,35 @@ export function loadVehicles() {
         }
     });
 }
+export function spawnNewVehicle(model, px, py, pz, rx, ry, rz) {
+    let v = new alt.Vehicle(model, px, py, pz, rx, ry, rz);
+    let vin = generateVIN();
+    v.setSyncedMeta("vin", vin);
+    saveSingleVehilce(v);
+    alt.log("Spawned new Vehicle with VIN: " + vin);
+    return v;
+}
+export function saveSingleVehilce(vehicle) {
+    database.upsertData({
+        vin: vehicle.getSyncedMeta("vin"),
+        model: vehicle.model,
+        a: vehicle.getAppearanceDataBase64(),
+        d: vehicle.getDamageStatusBase64(),
+        g: vehicle.getGamestateDataBase64(),
+        h: vehicle.getHealthDataBase64(),
+        s: vehicle.getScriptDataBase64(),
+        pos: JSON.stringify(vehicle.pos),
+        rot: JSON.stringify(vehicle.rot),
+        spawned: true,
+    }, tables.vehicles, (result) => { });
+}
 export function getVehicleByVin(vin, callback) {
     database.fetchData("vin", vin, tables.vehicles, (result) => {
         callback(result);
     });
+}
+export function updateVehicle(vehicleJSONData) {
+    database.upsertData(vehicleJSONData, tables.vehicles, (result) => { });
 }
 function generateVIN() {
     var numbers = '1234567890', alphabet = 'ABCDEFGHJKLMNPRSTUVWXYZ', serialLengthAlphabet = 6, serialLengthNumbers = 2, serialLengthAlphabet2 = 3, serialLengthNumbers2 = 6, randomSerialAlphabet = "", randomSerialNumbers = "", randomSerialAlphabet2 = "", randomSerialNumbers2 = "", i, j, randomNumber;

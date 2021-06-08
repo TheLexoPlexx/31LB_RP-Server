@@ -44,7 +44,6 @@ export function keyUp(key) {
         }
         else if (key == 73) {
             alt.emitServer("a_keyup_i");
-            alt.log("Toggle Inventory");
             toggleInventory();
             alt.emitServer("a_openinventory");
         }

@@ -3,30 +3,10 @@
 /// <reference types="@types/sortablejs" />
 import * as alt from 'alt-client';
 import * as native from 'natives';
-import Sortable from "sortablejs";
+import { ItemHolder } from '../../lib/items/items';
 
 //https://github.com/SortableJS/Sortable/releases/tag/1.13.0
 //TODO: block movement of clothes
-
-export class Item {
-  displayname: string;
-  sizeHeight: number;
-  sizeWidth: number;
-  maxStacksize: number;
-}
-
-export class ItemHolder {
-  displayname: string;
-  sizeHeight: number;
-  sizeWidth: number;
-  items : [
-    {
-      posx: string;
-      posy: string;
-      item: Item;
-    }
-  ];
-}
 
 let invData = {
   int: null,
@@ -82,6 +62,8 @@ function openInventory() {
   
     cam = native.createCamWithParams("DEFAULT_SCRIPTED_CAMERA", cam_x, cam_y, pt.z+0, 0, 0, rot_neu, 50, true, 2);
     native.setCamAffectsAiming(cam, false);
+    native.clearPedAlternateWalkAnim(alt.Player.local.scriptID, 0);
+    native.freezeEntityPosition(alt.Player.local.scriptID, true);
     native.renderScriptCams(true, true, transitiontime, true, true, cam);
   }
 
@@ -107,6 +89,7 @@ function closeInventory() {
   alt.clearEveryTick(disableControlLoop);
   native.destroyCam(cam, true);
   native.renderScriptCams(false, true, transitiontime, true, true, 0);
+  native.freezeEntityPosition(alt.Player.local.scriptID, false);
   native.setFollowPedCamViewMode(viewmode);
 
   inventoryview.destroy();

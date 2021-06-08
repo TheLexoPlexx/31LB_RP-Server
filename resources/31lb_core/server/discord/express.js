@@ -3,7 +3,7 @@ import axios from 'axios';
 import express from 'express';
 import cors from 'cors';
 import path from 'path';
-import { isWhitelistOn, isWhitelisted } from './bot';
+import { isWhitelisted } from './bot';
 import { discord } from '../startup';
 const htmlPath = path.join(alt.getResourcePath(alt.resourceName), 'server/html');
 const stylesPath = path.join(alt.getResourcePath(alt.resourceName), 'server/html/styles');
@@ -51,12 +51,10 @@ async function handleMainRedirect(req, res) {
         res.sendFile(path.join(htmlPath, '/error.html'), err => { });
         return;
     }
-    if (isWhitelistOn()) {
-        const isAuthorized = isWhitelisted(request.data.id);
-        if (!isAuthorized) {
-            res.sendFile(path.join(htmlPath, '/whitelist.html'), err => { });
-            return;
-        }
+    const isAuthorized = isWhitelisted(request.data.id);
+    if (!isAuthorized) {
+        res.sendFile(path.join(htmlPath, '/whitelist.html'), err => { });
+        return;
     }
     alt.emitClient(player, 'discord:AuthExit');
     alt.emit('discord:AuthDone', player, request.data);

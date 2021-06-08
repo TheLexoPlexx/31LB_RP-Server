@@ -15,7 +15,7 @@ discordClient.on('rateLimit', handleRateLimit);
 discordClient.on('guildMemberUpdate', handleUserUpdate);
 
 function handleReady() {
-    console.log("[31LB] Discord Bot has Authenticated.");
+    alt.log("[31LB] Discord Bot has Authenticated.");
 
     refreshWhitelist();
     interval = alt.setInterval(refreshWhitelist, 60000 * 3);
@@ -26,8 +26,8 @@ function handleError(err) {
 }
 
 function handleRateLimit(err) {
-    console.error("[31LB] Discord Bot has been Rate Limited. Google 'Rate Limits for Discord'");
-    console.log(err);
+    alt.logError("[31LB] Discord Bot has been Rate Limited. Google 'Rate Limits for Discord'");
+    alt.logError(err);
 }
 
 /**
@@ -114,14 +114,4 @@ export function isWhitelisted(id) {
     return false;
 }
 
-export function isWhitelistOn() {
-    if (!process.env['ENABLE_WHITELIST'] || process.env['ENABLE_WHITELIST'] === 'false') {
-        return false;
-    }
-
-    return true;
-}
-
-if (isWhitelistOn) {
-    discordClient.login(discord.bot_token);
-}
+discordClient.login(discord.bot_token);

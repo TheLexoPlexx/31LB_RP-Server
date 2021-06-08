@@ -51,7 +51,7 @@ interface SaveableVehicle {
   windowTint: number;
 }
 
-export function saveVehicles() {
+export function saveAllVehicles() {
   alt.log("Found " + alt.Vehicle.all.length + " Vehicles. Saving...");
   return saveV(0);
 }
@@ -105,8 +105,32 @@ export function loadVehicles() {
   });
 }
 
+export function spawnNewVehicle(model, px, py, pz, rx, ry, rz): alt.Vehicle {
+  let v = new alt.Vehicle(model, px, py, pz, rx, ry, rz);
+  let vin = generateVIN();
+  v.setSyncedMeta("vin", vin);
+  saveSingleVehilce(v);
+  alt.log("Spawned new Vehicle with VIN: " + vin);
+  return v;
+}
+
+export function saveSingleVehilce(vehicle: alt.Vehicle) {
+  database.upsertData({
+    vin: vehicle.getSyncedMeta("vin"),
+    model: vehicle.model,
+    a: vehicle.getAppearanceDataBase64(),
+    d: vehicle.getDamageStatusBase64(),
+    g: vehicle.getGamestateDataBase64(),
+    h: vehicle.getHealthDataBase64(),
+    s: vehicle.getScriptDataBase64(),
+    pos: JSON.stringify(vehicle.pos),
+    rot: JSON.stringify(vehicle.rot),
+    spawned: true,
+  }, tables.vehicles, (result) => {});
+}
+
 /**
- * Return Vehicle by VIN
+ * Return Vehicle JSON by VIN
  * @param vin String
  * @param callback result
  */
@@ -114,6 +138,10 @@ export function getVehicleByVin(vin: string, callback: CallableFunction) {
   database.fetchData("vin", vin, tables.vehicles, (result) => {
     callback(result);
   })
+}
+
+export function updateVehicle(vehicleJSONData) {
+  database.upsertData(vehicleJSONData, tables.vehicles, (result) => {});
 }
 
 

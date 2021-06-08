@@ -4,7 +4,7 @@ import axios from 'axios';
 import express from 'express';
 import cors from 'cors';
 import path from 'path';
-import { isWhitelistOn, isWhitelisted } from './bot';
+import { isWhitelisted } from './bot';
 import { discord } from '../startup';
 
 //TODO: Cleanup und Kram entfernen, der nicht gebraucht wird.
@@ -67,12 +67,10 @@ async function handleMainRedirect(req, res) {
         return;
     }
 
-    if (isWhitelistOn()) {
-        const isAuthorized = isWhitelisted(request.data.id);
-        if (!isAuthorized) {
-            res.sendFile(path.join(htmlPath, '/whitelist.html'), err => {});
-            return;
-        }
+    const isAuthorized = isWhitelisted(request.data.id);
+    if (!isAuthorized) {
+        res.sendFile(path.join(htmlPath, '/whitelist.html'), err => {});
+        return;
     }
 
     alt.emitClient(player, 'discord:AuthExit');

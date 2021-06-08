@@ -13,7 +13,6 @@ export function playerRestartDisconnect(player: alt.Player) {
 function playerDisconnect(player: alt.Player, restart: boolean) {
   let pos = player.pos;
   let rot = player.rot;
-  let id = player.id;
   let hp = player.health;
   let armour = player.armour;
   let uuid = player.getSyncedMeta("uuid");

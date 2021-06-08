@@ -1,6 +1,7 @@
 import * as alt from 'alt-server';
 import { database } from '../startup';
 import tables from '../database/tables';
+import { getVehicleByVin, updateVehicle } from '../managers/vehicleManager';
 export let unlockableMarkers = [];
 export let globalMarkers = [];
 export let unlockableColshapes = [];
@@ -37,10 +38,6 @@ export function sortMarkers() {
             interactionColshapes.push(cc);
         });
     });
-    alt.setTimeout(() => {
-        alt.on("entityEnterColshape", enteredColshape);
-        alt.on("entityLeaveColshape", leaveColshape);
-    }, 2000);
     alt.log("[31LB] ColShapes created.");
 }
 export function clearColshapes() {
@@ -51,11 +48,25 @@ export function clearColshapes() {
         element.destroy();
     });
 }
-export function enteredColshape(colshape, player) {
-    alt.emitClient(player, "a_enteredColshape", colshape.getMeta("a_placeMeta"));
+export function enteredColshape(colshape, ent) {
+    if (ent instanceof alt.Player) {
+        alt.emitClient(ent, "a_enteredColshape", colshape.getMeta("a_placeMeta"));
+    }
 }
-export function leaveColshape(colshape, player) {
-    alt.emitClient(player, "a_leaveColshape", colshape.getMeta("a_placeMeta"));
+export function leaveColshape(colshape, ent) {
+    if (ent instanceof alt.Player) {
+        alt.emitClient(ent, "a_leaveColshape", colshape.getMeta("a_placeMeta"));
+        if (colshape.getMeta("despawnVehicle") != null) {
+            let dv = alt.Vehicle.all.filter(vehicle => vehicle.getSyncedMeta("vin") == colshape.getMeta("despawnVehicle"))[0];
+            getVehicleByVin(colshape.getMeta("despawnVehicle"), (result) => {
+                result.spawned = false;
+                updateVehicle(result);
+                dv.destroy();
+                alt.emitClient(ent, "a_enableEngineStart");
+            });
+            colshape.destroy();
+        }
+    }
 }
 export function savePlace(p, new_place) {
     if (p.getSyncedMeta("permissions") >= 100) {

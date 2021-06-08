@@ -8,11 +8,11 @@ import { playerDeath } from './eventHandlers/playerDeath';
 import { playerActualDisconnect, playerRestartDisconnect } from './eventHandlers/playerDisconnect';
 import { keyPressF9, keyPressI, keyPressM, keyPressY } from './eventHandlers/keyHandlers';
 import { createBlips, loginCompleted } from './eventHandlers/loginCompleted';
-import { clearColshapes, savePlace, sortMarkers, updatePlacesForPlayer } from './eventHandlers/placeHandler';
+import { clearColshapes, enteredColshape, leaveColshape, savePlace, sortMarkers, updatePlacesForPlayer } from './eventHandlers/placeHandler';
 import { openedInventory } from './eventHandlers/inventoryHandler';
 import { teamLogin, teamLogoff } from './eventHandlers/teamLoginHandler';
 import { colshapeMeta } from '../client/interactions/placeGenerator';
-import { loadVehicles, saveVehicles } from './managers/vehicleManager';
+import { loadVehicles, saveAllVehicles } from './managers/vehicleManager';
 import { initWeather } from './eventHandlers/weather';
 
 //--------------------------------------------------------------------------------------//
@@ -87,6 +87,8 @@ alt.on("playerConnect", playerConnect);
 alt.on('playerDeath', playerDeath);
 alt.on("playerDamage", playerDamage);
 alt.on("playerDisconnect", playerActualDisconnect);
+alt.on("entityEnterColshape", enteredColshape);
+alt.on("entityLeaveColshape", leaveColshape);
 alt.on("consoleCommand", (...args: string[]) => {
   if (args[0] == "rp") {
     if (args[1] == "restart" || args[1] == "r") {
@@ -108,7 +110,7 @@ alt.on("consoleCommand", (...args: string[]) => {
     safeStopped = true;
 
     if (alt.Vehicle.all.length > 0) {
-      saveVehicles().then(() => {
+      saveAllVehicles().then(() => {
         alt.emit(emitEvent);
       });
     } else {

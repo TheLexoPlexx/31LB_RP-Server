@@ -7,7 +7,7 @@ import { consoleCommand } from './commands';
 import { openWeaponShop } from './interactions/weaponShop';
 import { keyDown, keyUp } from './keys';
 import { createGlobalBlip, enteredColshape, leaveColshape, saveSuccess, startPlaceGen } from './interactions/placeGenerator';
-import { setPlayerInVehicle } from './handlers/vehicleHandler';
+import { disableEngineStart, enableEngineStart, setPlayerInVehicle } from './handlers/vehicleHandler';
 import { handleAuthExit, handleDiscordAuth } from './interactions/discordAuth';
 
 //Keine Ahnung wofür das gut ist, ist aus Freeroam-Resource geklaut
@@ -27,6 +27,8 @@ alt.onServer("a_enteredColshape", enteredColshape);
 alt.onServer("a_leaveColshape", leaveColshape);
 alt.onServer("a_createBlip", createGlobalBlip);
 alt.onServer("a_forceEnterVehicle", setPlayerInVehicle);
+alt.onServer("a_disableEngineStart", disableEngineStart);
+alt.onServer("a_enableEngineStart", enableEngineStart);
 
 alt.onServer('discord:Auth', handleDiscordAuth);
 alt.onServer('discord:AuthExit', handleAuthExit);

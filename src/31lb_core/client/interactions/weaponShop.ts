@@ -5,6 +5,8 @@ import * as native from 'natives';
 import { WeaponList, getWeaponByName } from '../../lib/weapons';
 import * as NativeUI from "../util/nativeui/NativeUi";
 
+//TODO: Waffenshop fertig stellen mit Interaktionen etc.
+
 export function openWeaponShop() {
 }
 

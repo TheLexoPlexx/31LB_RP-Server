@@ -1,9 +1,5 @@
 import * as alt from 'alt-client';
 import * as native from 'natives';
-export class Item {
-}
-export class ItemHolder {
-}
 let invData = {
     int: null,
     ext: null,
@@ -44,6 +40,8 @@ function openInventory() {
         var cam_y = pt.y + b * Math.cos(rtz + Math.PI * 0.5) + c * Math.sin(rtz + Math.PI * 0.5);
         cam = native.createCamWithParams("DEFAULT_SCRIPTED_CAMERA", cam_x, cam_y, pt.z + 0, 0, 0, rot_neu, 50, true, 2);
         native.setCamAffectsAiming(cam, false);
+        native.clearPedAlternateWalkAnim(alt.Player.local.scriptID, 0);
+        native.freezeEntityPosition(alt.Player.local.scriptID, true);
         native.renderScriptCams(true, true, transitiontime, true, true, cam);
     }
     alt.showCursor(true);
@@ -59,6 +57,7 @@ function closeInventory() {
     alt.clearEveryTick(disableControlLoop);
     native.destroyCam(cam, true);
     native.renderScriptCams(false, true, transitiontime, true, true, 0);
+    native.freezeEntityPosition(alt.Player.local.scriptID, false);
     native.setFollowPedCamViewMode(viewmode);
     inventoryview.destroy();
     alt.showCursor(false);
