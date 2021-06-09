@@ -73,13 +73,6 @@ export function keyUp(key: number): void {
 
       togglePlayerMenu();
 
-    } else if (key == 70) { //F
-      if (ctrlPressed) {
-        toggleQuickGPS();
-      } else {
-        alt.log("Paid respect.");
-      }
-
     } else if (key == 17) { //Ctrl
       ctrlPressed = false;
       
