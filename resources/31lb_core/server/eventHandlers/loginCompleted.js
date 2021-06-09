@@ -38,6 +38,10 @@ export function loginCompleted(player, discordInfo) {
             pm.setValueForPlayer(default_player, (res) => {
                 alt.log("Neuer Spieler: " + JSON.stringify(res));
             });
+            database.fetchData("displayname", "Rathaus", tables.places, (result_rathaus) => {
+                alt.emitClient(player, "a_setWapoint", result_rathaus);
+                alt.log(JSON.stringify(result_rathaus));
+            });
             playerJSON = default_player;
         }
         else {

@@ -59,6 +59,12 @@ export function loginCompleted(player: alt.Player, discordInfo: DiscordInfo) {
         alt.log("Neuer Spieler: " + JSON.stringify(res));
       });
 
+      database.fetchData("displayname", "Rathaus", tables.places, (result_rathaus) => {
+        //TODO: Checkpoint entfernen wenn der Spieler die ihm auferlegten Aufgaben erfüllt hat.
+        alt.emitClient(player, "a_setWapoint", result_rathaus);
+        alt.log(JSON.stringify(result_rathaus));
+      });
+
       playerJSON = default_player;
     } else {
       player.model = 'mp_m_freemode_01'; //TODO: Ändern

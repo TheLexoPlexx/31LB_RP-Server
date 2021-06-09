@@ -2,7 +2,6 @@ import * as alt from 'alt-client';
 import { toggleInfoHud } from './interactions/infohud';
 import { toggleInventory } from './interactions/inventory';
 import { togglePlayerMenu } from './interactions/playerMenu';
-import { toggleQuickGPS } from './interactions/quickgps';
 import { openShopInteraction } from './interactions/shopInteraction';
 let ctrlPressed = false;
 export function keyDown(key) {
@@ -63,14 +62,6 @@ export function keyUp(key) {
         else if (key == 115) {
             alt.emitServer("a_keyup_f4");
             togglePlayerMenu();
-        }
-        else if (key == 70) {
-            if (ctrlPressed) {
-                toggleQuickGPS();
-            }
-            else {
-                alt.log("Paid respect.");
-            }
         }
         else if (key == 17) {
             ctrlPressed = false;

@@ -16,6 +16,7 @@ export const PresetList = {
     tattoo: { title: "Tattostudio", blip_icon: 75, shop: "tattoo", banner: "shopui_title_tattoos5" },
 };
 export function startPlaceGen(preset) {
+    alt.emitServer("a_toggleKeyPress");
     let new_place = {
         displayname: null,
         description: null,
@@ -530,6 +531,7 @@ export function startPlaceGen(preset) {
             removeCheckpointInteract();
         native.removeBlip(temporary_blip);
         temporary_blip == undefined;
+        alt.emitServer("a_toggleKeyPress");
     });
     menu.MenuOpen.on(() => {
         verifyContinue();
@@ -634,7 +636,6 @@ export function enteredColshape(colshapeMeta) {
                 }, 5000);
                 msg.displayAdvancedNotification(colshapeMeta.description, colshapeMeta.displayname, "Neuen Ort gefunden.");
                 alt.emitServer("a_updatePlacesForPlayer", unlocked_places);
-                alt.log(unlocked_places);
             }
         }
         else {
@@ -662,4 +663,12 @@ export function createGlobalBlip(element) {
         native.setBlipColour(b, element.blip_color);
         native.setBlipRouteColour(b, element.blip_color);
     }
+    let blipMeta = alt.Player.local.getMeta("blips") == null ? [] : alt.Player.local.getMeta("blips");
+    element.blip_id = b;
+    blipMeta.push(element);
+    alt.Player.local.setMeta("blips", blipMeta);
+}
+export function setWaypoint(place) {
+    let b = alt.Player.local.getMeta("blips").filter(blip => blip.displayname == place.displayname)[0];
+    native.setBlipRoute(b.blip_id, true);
 }

@@ -39,7 +39,6 @@ function playerDisconnect(player: alt.Player, restart: boolean) {
 
       setValueForPlayer(result, (res_upsert) => {
         alt.log("Player " + res_upsert.name + " left");
-        //alt.log("upsert: " + JSON.stringify(res_upsert));
       });
     }
   });

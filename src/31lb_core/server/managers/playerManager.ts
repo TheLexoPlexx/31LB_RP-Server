@@ -83,6 +83,13 @@ export function addWeapon(player, weaponName, inventory) {
   });
 }
 
+export function toggleKeypress(player: alt.Player) {
+  if (player.getSyncedMeta("allowKeyPress")) {
+    player.setSyncedMeta("allowKeyPress", false);
+  } else {
+    player.setSyncedMeta("allowKeyPress", true);
+  }
+}
 
 //--------------------------------------------------------------------------------------//
 //                                    Misceallonous                                     //

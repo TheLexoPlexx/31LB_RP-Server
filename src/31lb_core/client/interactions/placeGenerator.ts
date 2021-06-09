@@ -55,6 +55,8 @@ export const PresetList: {
 };
 
 export function startPlaceGen(preset: PlacePreset): void {
+  alt.emitServer("a_toggleKeyPress");
+
   let new_place = {
     displayname: null,
     description: null,
@@ -621,6 +623,8 @@ export function startPlaceGen(preset: PlacePreset): void {
     //Stehen lassen wenn gespeichert
     native.removeBlip(temporary_blip);
     temporary_blip == undefined;
+    
+    alt.emitServer("a_toggleKeyPress");
   });
   menu.MenuOpen.on(() => {
     verifyContinue();
@@ -630,13 +634,6 @@ export function startPlaceGen(preset: PlacePreset): void {
   });
 
   menu.Open();
-
-/*
-  if (menu.Visible) {
-    menu.Close();
-  } else {
-  }
-  */
 }
 
 function callInput(title: string, callbackReturn: CallableFunction): void {
@@ -677,17 +674,6 @@ function openWebView(url: string, event: string, callback: CallableFunction): vo
     }, 250);
   });
 }
-
-
-/*
-
-command
--> colshapecircle mit checkpoint für entsperrung (grün)
--> colshapecircle mit checkpoint für interaktionen (blau)
-
--> speichern
-
-*/
 
 function round(arg0: number) {
   let j = JSON.stringify(arg0);
@@ -765,7 +751,6 @@ export function enteredColshape(colshapeMeta: colshapeMeta) {
         msg.displayAdvancedNotification(colshapeMeta.description, colshapeMeta.displayname, "Neuen Ort gefunden."); //FIXME: Nicht advanced
   
         alt.emitServer("a_updatePlacesForPlayer", unlocked_places);
-        alt.log(unlocked_places);
       }
     } else {
       alt.logError("[31LB] Type not found");
@@ -794,4 +779,13 @@ export function createGlobalBlip(element) {
     native.setBlipColour(b, element.blip_color);
     native.setBlipRouteColour(b, element.blip_color);
   }
+  let blipMeta = alt.Player.local.getMeta("blips") == null ? [] : alt.Player.local.getMeta("blips");
+  element.blip_id = b;
+  blipMeta.push(element);
+  alt.Player.local.setMeta("blips", blipMeta);
+}
+
+export function setWaypoint(place: colshapeMeta) {
+  let b = alt.Player.local.getMeta("blips").filter(blip => blip.displayname == place.displayname)[0];
+  native.setBlipRoute(b.blip_id, true);
 }

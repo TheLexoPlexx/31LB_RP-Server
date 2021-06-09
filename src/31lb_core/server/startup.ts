@@ -15,6 +15,7 @@ import { colshapeMeta } from '../client/interactions/placeGenerator';
 import { loadVehicles, saveAllVehicles } from './managers/vehicleManager';
 import { initWeather } from './eventHandlers/weather';
 import { List } from './util/util';
+import { toggleKeypress } from './managers/playerManager';
 
 //--------------------------------------------------------------------------------------//
 //                                 Connect to Database                                  //
@@ -133,6 +134,7 @@ alt.onClient("a_updatePlacesForPlayer", updatePlacesForPlayer);
 alt.onClient("a_openinventory", openedInventory);
 alt.onClient("a_teamlogin", teamLogin);
 alt.onClient("a_teamlogoff", teamLogoff);
+alt.onClient("a_toggleKeyPress", toggleKeypress);
 
 //--------------------------------------------------------------------------------------//
 //                             Register Interact Functions                              //

@@ -53,6 +53,14 @@ export function addWeapon(player, weaponName, inventory) {
         setValueForPlayer(result, null);
     });
 }
+export function toggleKeypress(player) {
+    if (player.getSyncedMeta("allowKeyPress")) {
+        player.setSyncedMeta("allowKeyPress", false);
+    }
+    else {
+        player.setSyncedMeta("allowKeyPress", true);
+    }
+}
 export function randomFirstSpawnPosition() {
     let spawnPoint = spawnpositions[Math.floor(Math.random() * spawnpositions.length)];
     let csCyl = new alt.ColshapeCylinder(spawnPoint.px, spawnPoint.py, spawnPoint.pz, 10, 10);

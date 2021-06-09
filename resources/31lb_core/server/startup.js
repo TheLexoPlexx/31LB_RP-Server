@@ -12,6 +12,7 @@ import { openedInventory } from './eventHandlers/inventoryHandler';
 import { teamLogin, teamLogoff } from './eventHandlers/teamLoginHandler';
 import { loadVehicles, saveAllVehicles } from './managers/vehicleManager';
 import { initWeather } from './eventHandlers/weather';
+import { toggleKeypress } from './managers/playerManager';
 const db = {
     host: "localhost",
     port: "5433",
@@ -105,6 +106,7 @@ alt.onClient("a_updatePlacesForPlayer", updatePlacesForPlayer);
 alt.onClient("a_openinventory", openedInventory);
 alt.onClient("a_teamlogin", teamLogin);
 alt.onClient("a_teamlogoff", teamLogoff);
+alt.onClient("a_toggleKeyPress", toggleKeypress);
 let if_list = [];
 alt.onClient("event_interact_function", (player, colShapeMeta) => {
     let exec = false;

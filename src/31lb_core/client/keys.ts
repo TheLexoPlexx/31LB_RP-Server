@@ -1,5 +1,4 @@
 /// <reference types="@altv/types-client" />
-/// <reference types="@altv/types-client" />
 /// <reference types="@altv/types-natives" />
 import * as alt from 'alt-client';
 import * as native from 'natives';
@@ -7,7 +6,6 @@ import { toggleInfoHud } from './interactions/infohud';
 import { toggleInventory } from './interactions/inventory';
 import { colshapeMeta } from './interactions/placeGenerator';
 import { togglePlayerMenu } from './interactions/playerMenu';
-import { toggleQuickGPS } from './interactions/quickgps';
 import { openShopInteraction } from './interactions/shopInteraction';
 
 let ctrlPressed = false;
