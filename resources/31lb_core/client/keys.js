@@ -28,6 +28,7 @@ export function keyUp(key) {
                     rx: alt.Player.local.vehicle.rot.x,
                     yx: alt.Player.local.vehicle.rot.y,
                     zx: alt.Player.local.vehicle.rot.z,
+                    model: alt.Player.local.vehicle.model
                 }));
                 alt.log("VIN: " + alt.Player.local.vehicle.getSyncedMeta("vin"));
             }

@@ -14,6 +14,7 @@ import { teamLogin, teamLogoff } from './eventHandlers/teamLoginHandler';
 import { colshapeMeta } from '../client/interactions/placeGenerator';
 import { loadVehicles, saveAllVehicles } from './managers/vehicleManager';
 import { initWeather } from './eventHandlers/weather';
+import { List } from './util/util';
 
 //--------------------------------------------------------------------------------------//
 //                                 Connect to Database                                  //
@@ -136,12 +137,7 @@ alt.onClient("a_teamlogoff", teamLogoff);
 //--------------------------------------------------------------------------------------//
 //                             Register Interact Functions                              //
 //--------------------------------------------------------------------------------------//
-interface InteractFunction<K extends PropertyKey, V> {
-  key: K;
-  value: V;
-}
-
-let if_list: InteractFunction<string, CallableFunction>[] = [
+let if_list: List<string, CallableFunction>[] = [
   //Beispiel: Key als String aus der Datenbank und vlaue ist eine Funktion
   //{ key: "globalAutobahnFn", value: globalAutobahnFn },
 ];

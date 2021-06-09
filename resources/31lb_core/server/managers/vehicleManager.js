@@ -1,6 +1,7 @@
 import * as alt from 'alt-server';
 import { database } from '../startup';
 import tables from '../database/tables';
+import { vehicleList } from '../util/vehicles';
 export function saveAllVehicles() {
     alt.log("Found " + alt.Vehicle.all.length + " Vehicles. Saving...");
     return saveV(0);
@@ -9,7 +10,7 @@ function saveV(index) {
     return new Promise((resolve, reject) => {
         let vehicle = alt.Vehicle.all[index];
         database.upsertData({
-            vin: vehicle.getSyncedMeta("vin") == null ? generateVIN() : vehicle.getSyncedMeta("vin"),
+            vin: vehicle.getSyncedMeta("vin") == null ? generateVIN(getManufacturerNameByVehicle(vehicle)) : vehicle.getSyncedMeta("vin"),
             model: vehicle.model,
             a: vehicle.getAppearanceDataBase64(),
             d: vehicle.getDamageStatusBase64(),
@@ -55,8 +56,10 @@ export function loadVehicles() {
 }
 export function spawnNewVehicle(model, px, py, pz, rx, ry, rz) {
     let v = new alt.Vehicle(model, px, py, pz, rx, ry, rz);
-    let vin = generateVIN();
+    let vin = generateVIN(getManufacturerNameByVehicle(v));
     v.setSyncedMeta("vin", vin);
+    v.numberPlateIndex = 0;
+    v.numberPlateText = generateRandomLicensePlate();
     saveSingleVehilce(v);
     alt.log("Spawned new Vehicle with VIN: " + vin);
     return v;
@@ -83,23 +86,105 @@ export function getVehicleByVin(vin, callback) {
 export function updateVehicle(vehicleJSONData) {
     database.upsertData(vehicleJSONData, tables.vehicles, (result) => { });
 }
-function generateVIN() {
-    var numbers = '1234567890', alphabet = 'ABCDEFGHJKLMNPRSTUVWXYZ', serialLengthAlphabet = 6, serialLengthNumbers = 2, serialLengthAlphabet2 = 3, serialLengthNumbers2 = 6, randomSerialAlphabet = "", randomSerialNumbers = "", randomSerialAlphabet2 = "", randomSerialNumbers2 = "", i, j, randomNumber;
+function generateVIN(manufacturer) {
+    let shortCode = vinManufacturerDictionary.filter(pair => pair.key == manufacturer)[0].value;
+    var symbols = '1234567890ABCDEFGHJKLMNPRSTUVWXYZ', serialLengthAlphabet = 14, randomSerialAlphabet = "", i, randomNumber;
     for (i = 0; i < serialLengthAlphabet; i++) {
-        randomNumber = Math.floor(Math.random() * alphabet.length);
-        randomSerialAlphabet += alphabet.substring(randomNumber, randomNumber + 1);
+        randomNumber = Math.floor(Math.random() * symbols.length);
+        randomSerialAlphabet += symbols.substring(randomNumber, randomNumber + 1);
     }
-    for (j = 0; j < serialLengthNumbers; j++) {
-        randomNumber = Math.floor(Math.random() * numbers.length);
-        randomSerialNumbers += numbers.substring(randomNumber, randomNumber + 1);
-    }
-    for (i = 0; i < serialLengthAlphabet2; i++) {
-        randomNumber = Math.floor(Math.random() * alphabet.length);
-        randomSerialAlphabet2 += alphabet.substring(randomNumber, randomNumber + 1);
-    }
-    for (j = 0; j < serialLengthNumbers2; j++) {
-        randomNumber = Math.floor(Math.random() * numbers.length);
-        randomSerialNumbers2 += numbers.substring(randomNumber, randomNumber + 1);
-    }
-    return randomSerialAlphabet + randomSerialNumbers + randomSerialAlphabet2 + randomSerialNumbers2;
+    return shortCode + randomSerialAlphabet;
 }
+function generateRandomLicensePlate() {
+    var symbols = '1234567890ABCDEFGHJKLMNPRSTUVWXYZ', serialLengthAlphabet = Math.floor(Math.random() * (8 - 5 + 1)) + 5, randomSerialAlphabet = "", i, randomNumber;
+    for (i = 0; i < serialLengthAlphabet; i++) {
+        randomNumber = Math.floor(Math.random() * symbols.length);
+        randomSerialAlphabet += symbols.substring(randomNumber, randomNumber + 1);
+    }
+    return randomSerialAlphabet;
+}
+export function findVehicles(key, value) {
+    return vehicleList.filter(vehicle => vehicle[key] == value);
+}
+export function findFirstVehicle(key, value) {
+    let list = findVehicles(key, value);
+    if (list.length == 0) {
+        return null;
+    }
+    else if (list.length == 1) {
+        return list[0];
+    }
+    else {
+        alt.logWarning("More than one Car found for request with key " + key + " and value " + value);
+        return list[0];
+    }
+}
+export function getManufacturerNameByVehicle(vehicle) {
+    return vehicleList.filter(element => element.Hash == vehicle.model)[0].Manufacturer;
+}
+export function getManufacturerNameByHash(hash) {
+    return vehicleList.filter(element => element.Hash == hash)[0].Manufacturer;
+}
+let vinManufacturerDictionary = [
+    { key: "TRUFFADE", value: "TRU" },
+    { key: "", value: "ZZZ" },
+    { key: "DINKA", value: "DNK" },
+    { key: "ALBANY", value: "LBN" },
+    { key: "BUCKING", value: "BUC" },
+    { key: "HVY", value: "HVY" },
+    { key: "OCELOT", value: "CLT" },
+    { key: "MAXWELL", value: "MXW" },
+    { key: "DECLASSE", value: "DCL" },
+    { key: "KARIN", value: "KRN" },
+    { key: "OVERFLOD", value: "OVR" },
+    { key: "LCC", value: "LCC" },
+    { key: "MAMMOTH", value: "MMM" },
+    { key: "KRAKEN", value: "KRK" },
+    { key: "WESTERN", value: "WST" },
+    { key: "GALLIVAN", value: "GLV" },
+    { key: "BRAVADO", value: "BRV" },
+    { key: "PEGASSI", value: "PGS" },
+    { key: "VAPID", value: "VPD" },
+    { key: "GROTTI", value: "GTI" },
+    { key: "NAGASAKI", value: "NGK" },
+    { key: "BF", value: "BFZ" },
+    { key: "CANIS", value: "CNS" },
+    { key: "BRUTE", value: "BRT" },
+    { key: "COIL", value: "CIL" },
+    { key: "MTL", value: "MTL" },
+    { key: "BENEFAC", value: "BFC" },
+    { key: "LAMPADA", value: "LMP" },
+    { key: "RUNE", value: "RUN" },
+    { key: "ENUS", value: "ENS" },
+    { key: "PFISTER", value: "PFS" },
+    { key: "INVERTO", value: "INV" },
+    { key: "SHITZU", value: "SHT" },
+    { key: "IMPONTE", value: "IMP" },
+    { key: "PRINCIPL", value: "PRC" },
+    { key: "SCHYSTER", value: "SYT" },
+    { key: "OBEY", value: "OBY" },
+    { key: "WEENY", value: "WNY" },
+    { key: "ANNIS", value: "AIS" },
+    { key: "PROGEN", value: "PRO" },
+    { key: "DEWBAUCH", value: "DWB" },
+    { key: "WILLARD", value: "WLD" },
+    { key: "VULCAR", value: "VLC" },
+    { key: "FATHOM", value: "FAT" },
+    { key: "CHEVAL", value: "CVL" },
+    { key: "EMPEROR", value: "EMP" },
+    { key: "JOBUILT", value: "JBT" },
+    { key: "ZIRCONIU", value: "ZRC" },
+    { key: "HIJAK", value: "HIJ" },
+    { key: "LAMPADATI", value: "LPT" },
+    { key: "BENEFACTOR", value: "BFC" },
+    { key: "DUNDREAR", value: "DNR" },
+    { key: "MAIBATSU", value: "MAI" },
+    { key: "VYSSER", value: "VYS" },
+    { key: "UBERMACH", value: "UBR" },
+    { key: "BOLLOKAN", value: "BLK" },
+    { key: "UBERMACHT", value: "UBR" },
+    { key: "CHARIOT", value: "CHA" },
+    { key: "SPEEDOPH", value: "SPO" },
+    { key: "STANLEY", value: "STY" },
+    { key: "VOMFEUER", value: "VFR" }
+];

@@ -69,13 +69,11 @@
 <body>
   <input type="text" id="inputbox" placeholder="" onchange="change()" autofocus>
   <ul id="resultlist">
-    <li>Apartment<span>Alta St.</span></li>
-    <li>Garage<span>Harmony</span></li>
-    <li>Garage<span>Pillbox</span></li>
-    <li>Test Item<span>Test Span</span></li>
+    <!-- //TODO: Add QPS-Targets-->
   </ul>
 </body>
 <script type="text/javascript">
+//TODO: Allow close through Esc
   var li = document.getElementById("resultlist").children;
 
   document.getElementById("inputbox").addEventListener("input", input);
@@ -131,12 +129,12 @@
   });
 
   function input(e) {
-    let input = e.target.value.trim().toLowerCase().replaceAll(" ", "");
+    let input = e.target.value.trim().toLowerCase().replace("/ /g", "");
     for (var i = 0; i < li.length; i++) {
       if (input == "" || input == null || input == undefined) {
         li[i].style.display = "block";
       } else {
-        let liCont = li[i].innerText.toLowerCase().replaceAll(" ", "");
+        let liCont = li[i].innerText.toLowerCase().replace("/ /g", "");
         if (!liCont.includes(input)) {
           li[i].style.display = "none";
         } else {
@@ -155,13 +153,6 @@
         break;
       }
     }
-
-
-  }
-  if ('alt' in window) {
-    alt.on("a_input_settitle", (arg) => {
-      document.getElementById("inputbox").placeholder = arg;
-    });
 
 
   }
