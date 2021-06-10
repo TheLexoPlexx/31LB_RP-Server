@@ -10,9 +10,7 @@ export function setPlayerInVehicle(vin, seat) {
         }
     });
     if (v != null && v != undefined) {
-        alt.log("Spawned: " + JSON.stringify(v.valid));
-        alt.log("VIN: " + JSON.stringify(v.getSyncedMeta("vin")));
-        alt.log("script: " + JSON.stringify(v.scriptID));
+        alt.log("Spawned: " + JSON.stringify(v.valid) + " / VIN: " + JSON.stringify(v.getSyncedMeta("vin") + " / script: " + JSON.stringify(v.scriptID)));
         let cleared = false;
         const interval = alt.everyTick(() => {
             native.setPedIntoVehicle(alt.Player.local.scriptID, v.scriptID, seat - 2);
@@ -31,7 +29,6 @@ export function setPlayerInVehicle(vin, seat) {
     }
     else {
         alt.logError("No vehicle found for VIN: " + vin);
-        alt.logError("VIN: " + JSON.stringify(vin));
     }
 }
 export function disableEngineStart() {

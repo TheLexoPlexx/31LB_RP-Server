@@ -63,6 +63,8 @@ export function keyUp(key) {
             alt.emitServer("a_keyup_f4");
             togglePlayerMenu();
         }
+        else if (key == 27) {
+        }
         else if (key == 17) {
             ctrlPressed = false;
         }
