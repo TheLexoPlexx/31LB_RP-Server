@@ -1,13 +1,15 @@
 /// <reference types="@altv/types-natives" />
 /// <reference types="@altv/types-client" />
 import * as alt from 'alt-client';
-import { PlacePreset, PresetList, startPlaceGen } from './interactions/placeGenerator';
+import { PresetList, startPlaceGen } from './interactions/placeGenerator';
 
 interface Command {
   main: string,
   reqpermissions?: number,
   continue: CallableFunction;
-}
+} 
+
+let tooManyArgs = "Too many arguments";
 
 let commandList = [
   { main: "place", reqpermissions: 100, continue: placeCommand },
@@ -36,7 +38,7 @@ export function consoleCommand(name: string, ...args: string[]): void {
 
 function placeCommand(args: string[]) {
   if (args.length >= 2) {
-    alt.logError("Too many Args");
+    alt.logError(tooManyArgs);
   } else if (args.length == 1) {
     if (args[0] == "help") {
       alt.log("==={ Bekannte Presets:");
@@ -58,7 +60,7 @@ function placeCommand(args: string[]) {
 
 function clothCommand(args: string[]) {
   if (args.length > 1) {
-    alt.logError("Too many Args");
+    alt.logError(tooManyArgs);
   } else {
     alt.emitServer("a_clothselect");
   }

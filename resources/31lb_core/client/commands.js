@@ -1,5 +1,6 @@
 import * as alt from 'alt-client';
 import { PresetList, startPlaceGen } from './interactions/placeGenerator';
+let tooManyArgs = "Too many arguments";
 let commandList = [
     { main: "place", reqpermissions: 100, continue: placeCommand },
     { main: "cloth", continue: clothCommand },
@@ -29,7 +30,7 @@ export function consoleCommand(name, ...args) {
 }
 function placeCommand(args) {
     if (args.length >= 2) {
-        alt.logError("Too many Args");
+        alt.logError(tooManyArgs);
     }
     else if (args.length == 1) {
         if (args[0] == "help") {
@@ -54,7 +55,7 @@ function placeCommand(args) {
 }
 function clothCommand(args) {
     if (args.length > 1) {
-        alt.logError("Too many Args");
+        alt.logError(tooManyArgs);
     }
     else {
         alt.emitServer("a_clothselect");
