@@ -15,7 +15,6 @@ export function isObjectEmpty(object: Record<string, unknown>): boolean {
 
 /*
 
-//TODO: Rework clothSelector for new Cloth-System
 export function clothSelector(pedComponentVariations: any[]) {
 
   let menu = new NativeUI.Menu("Kleidung", model.toString(), new NativeUI.Point(50, 50));
@@ -106,7 +105,6 @@ export function clothSelector(pedComponentVariations: any[]) {
         subMenu.IndexChange.on((index) => { indexed(index); });
 
         function indexed(index: number) {
-          //TODO: Store all important Information in "Text" and retrieve here
           let id = parseInt(subMenu.Title.split("/")[0].replaceAll("[", ""));
           let category = subMenu.Title.split("/")[1].substr(0, 1);
           if (category == "P") {
