@@ -105,8 +105,6 @@ function refreshWhitelist() {
 }
 
 export function isWhitelisted(id) {
-    console.log(id);
-
     if (whitelist.includes(id)) {
         return true;
     }

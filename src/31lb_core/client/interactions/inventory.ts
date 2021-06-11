@@ -4,6 +4,7 @@
 import * as alt from 'alt-client';
 import * as native from 'natives';
 import { ItemHolder } from '../../lib/items/items';
+import { newWebview } from '../util/webviewHelper';
 
 //https://github.com/SortableJS/Sortable/releases/tag/1.13.0
 //TODO: block movement of clothes
@@ -69,7 +70,7 @@ function openInventory() {
 
   alt.showCursor(true);
   //Inventar anzeigen
-  inventoryview = new alt.WebView("http://resource/client/pages/inventory/inv.html?inv=" + encodeURIComponent(JSON.stringify(invData)), true);
+  inventoryview = newWebview("http://resource/client/pages/inventory/inv.html?inv=" + encodeURIComponent(JSON.stringify(invData)), true);
 
   //TODO: Get Clothes and pass to player / use syncedmeta-version
   //1. Set und get clothes-Feature mit Klamotten und syncedmeta

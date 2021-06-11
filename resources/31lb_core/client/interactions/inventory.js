@@ -1,5 +1,6 @@
 import * as alt from 'alt-client';
 import * as native from 'natives';
+import { newWebview } from '../util/webviewHelper';
 let invData = {
     int: null,
     ext: null,
@@ -45,7 +46,7 @@ function openInventory() {
         native.renderScriptCams(true, true, transitiontime, true, true, cam);
     }
     alt.showCursor(true);
-    inventoryview = new alt.WebView("http://resource/client/pages/inventory/inv.html?inv=" + encodeURIComponent(JSON.stringify(invData)), true);
+    inventoryview = newWebview("http://resource/client/pages/inventory/inv.html?inv=" + encodeURIComponent(JSON.stringify(invData)), true);
     inventoryview.on("load", () => {
         inventoryview.emit("makeVisible");
         inventoryview.emit("inventorydata", invData);

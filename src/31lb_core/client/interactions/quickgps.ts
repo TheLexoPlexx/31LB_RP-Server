@@ -2,6 +2,7 @@
 /// <reference types="@altv/types-natives" />
 import * as alt from 'alt-client';
 import * as native from 'natives';
+import { newWebview } from '../util/webviewHelper';
 
 let open: boolean = false,
   disableControlLoop: number,
@@ -31,7 +32,7 @@ function openQuickGPS() {
 
   alt.showCursor(true);
   //Inventar anzeigen
-  gpsview = new alt.WebView("http://resource/client/pages/quickgps.html", true);
+  gpsview = newWebview("http://resource/client/pages/quickgps.html", true);
 }
 
 function closeQuickGPS() {

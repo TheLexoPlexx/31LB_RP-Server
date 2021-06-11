@@ -2,6 +2,8 @@
 import * as alt from 'alt-server';
 import { getPlayerByUUID, setValueForPlayer } from '../managers/playerManager';
 
+//FIXME: Playerdata is not properly saved on first disconnect.
+
 export function playerActualDisconnect(player: alt.Player) {
   playerDisconnect(player, false);
 }

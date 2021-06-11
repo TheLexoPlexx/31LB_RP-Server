@@ -4,6 +4,7 @@ import * as alt from 'alt-client';
 import * as native from 'natives';
 import * as NativeUI from "../util/nativeui/NativeUi"
 import * as msg from "../util/messenger";
+import { newWebview } from '../util/webviewHelper';
 
 //TODO: Refactor, removeCheckpoint... etc. sind alle doppelt, auch updateCoords
 //TODO: Neu erstellte Orte werden nicht zur Karte hinzugefügt und auch nicht freigeschaltet
@@ -637,7 +638,7 @@ export function startPlaceGen(preset: PlacePreset): void {
 }
 
 function callInput(title: string, callbackReturn: CallableFunction): void {
-  let v = new alt.WebView("http://resource/client/pages/input.html", true);
+  let v = newWebview("http://resource/client/pages/input.html", true);
   alt.toggleGameControls(false);
   v.focus();
   v.on("load", () => {
@@ -661,7 +662,7 @@ function callBlipColorSelect(callback: CallableFunction): void {
 }
 
 function openWebView(url: string, event: string, callback: CallableFunction): void {
-  let v = new alt.WebView("http://resource/client/pages/" + url, true);
+  let v = newWebview("http://resource/client/pages/" + url, true);
   alt.toggleGameControls(false);
   alt.showCursor(true);
   v.focus();

@@ -7,6 +7,7 @@ import { toggleInventory } from './interactions/inventory';
 import { colshapeMeta } from './interactions/placeGenerator';
 import { togglePlayerMenu } from './interactions/playerMenu';
 import { openShopInteraction } from './interactions/shopInteraction';
+import { getCurrentWebView } from './util/webviewHelper';
 
 let ctrlPressed = false;
 
@@ -72,7 +73,7 @@ export function keyUp(key: number): void {
       togglePlayerMenu();
 
     } else if (key == 27) { //Escape
-      
+      getCurrentWebView().destroy();
 
     } else if (key == 17) { //Ctrl
       ctrlPressed = false;

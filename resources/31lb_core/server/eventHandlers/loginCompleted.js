@@ -6,6 +6,7 @@ import tables from '../database/tables';
 import { spawnNewVehicle } from '../managers/vehicleManager';
 export function loginCompleted(player, discordInfo) {
     database.fetchData("uuid", discordInfo.id, tables.players, (result_player) => {
+        alt.log(result_player);
         var playerJSON;
         if (result_player == undefined) {
             var d = new Date();
@@ -40,7 +41,6 @@ export function loginCompleted(player, discordInfo) {
             });
             database.fetchData("displayname", "Rathaus", tables.places, (result_rathaus) => {
                 alt.emitClient(player, "a_setWapoint", result_rathaus);
-                alt.log(JSON.stringify(result_rathaus));
             });
             playerJSON = default_player;
         }
@@ -77,8 +77,9 @@ export function loginCompleted(player, discordInfo) {
         player.setSyncedMeta("inventar", playerJSON.inventar);
         player.setSyncedMeta("personalausweis", playerJSON.personalausweis);
         player.setSyncedMeta("allowKeyPress", true);
-        player.setSyncedMeta("name", "unbenannt");
+        player.setSyncedMeta("name", discordInfo.username + "#" + discordInfo.discriminator);
         player.setSyncedMeta("uuid", discordInfo.id);
+        alt.log(discordInfo.id);
     });
 }
 export function createBlips(player) {

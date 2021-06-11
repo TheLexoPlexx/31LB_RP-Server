@@ -70,7 +70,6 @@ function refreshWhitelist() {
     alt.log(`Refreshed Whitelist. Whitelisted Members: ${members.length}`);
 }
 export function isWhitelisted(id) {
-    console.log(id);
     if (whitelist.includes(id)) {
         return true;
     }

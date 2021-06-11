@@ -3,6 +3,7 @@ import { toggleInfoHud } from './interactions/infohud';
 import { toggleInventory } from './interactions/inventory';
 import { togglePlayerMenu } from './interactions/playerMenu';
 import { openShopInteraction } from './interactions/shopInteraction';
+import { getCurrentWebView } from './util/webviewHelper';
 let ctrlPressed = false;
 export function keyDown(key) {
     if (alt.Player.local.getSyncedMeta("allowKeyPress") && !alt.isConsoleOpen()) {
@@ -64,6 +65,7 @@ export function keyUp(key) {
             togglePlayerMenu();
         }
         else if (key == 27) {
+            getCurrentWebView().destroy();
         }
         else if (key == 17) {
             ctrlPressed = false;

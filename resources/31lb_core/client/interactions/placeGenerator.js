@@ -2,6 +2,7 @@ import * as alt from 'alt-client';
 import * as native from 'natives';
 import * as NativeUI from "../util/nativeui/NativeUi";
 import * as msg from "../util/messenger";
+import { newWebview } from '../util/webviewHelper';
 let menu;
 export const PresetList = {
     lsc: { title: "Los Santos Customs", blip_icon: 72, shop: "lossantoscustoms", banner: "shopui_title_carmod" },
@@ -542,7 +543,7 @@ export function startPlaceGen(preset) {
     menu.Open();
 }
 function callInput(title, callbackReturn) {
-    let v = new alt.WebView("http://resource/client/pages/input.html", true);
+    let v = newWebview("http://resource/client/pages/input.html", true);
     alt.toggleGameControls(false);
     v.focus();
     v.on("load", () => {
@@ -563,7 +564,7 @@ function callBlipColorSelect(callback) {
     openWebView("blipselector/colorselect.html", "a_selectedcolor", callback);
 }
 function openWebView(url, event, callback) {
-    let v = new alt.WebView("http://resource/client/pages/" + url, true);
+    let v = newWebview("http://resource/client/pages/" + url, true);
     alt.toggleGameControls(false);
     alt.showCursor(true);
     v.focus();

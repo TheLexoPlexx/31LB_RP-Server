@@ -18,8 +18,10 @@ interface DiscordInfo {
 }
 
 //FIXME: Neue Spieler bekommen keine globalen blips und können keine aufdecken
+//TODO: Cleanup
 export function loginCompleted(player: alt.Player, discordInfo: DiscordInfo) {
   database.fetchData("uuid", discordInfo.id, tables.players, (result_player) => {
+    alt.log(result_player);
     var playerJSON;
     if (result_player == undefined) {
       var d = new Date();
@@ -61,8 +63,8 @@ export function loginCompleted(player: alt.Player, discordInfo: DiscordInfo) {
 
       database.fetchData("displayname", "Rathaus", tables.places, (result_rathaus) => {
         //TODO: Checkpoint entfernen wenn der Spieler die ihm auferlegten Aufgaben erfüllt hat.
+        //FIXME: Route wird nicht neu gesetzt wenn der Spieler das Spiel vorzeitig verlässt.
         alt.emitClient(player, "a_setWapoint", result_rathaus);
-        alt.log(JSON.stringify(result_rathaus));
       });
 
       playerJSON = default_player;
@@ -107,8 +109,9 @@ export function loginCompleted(player: alt.Player, discordInfo: DiscordInfo) {
     player.setSyncedMeta("inventar", playerJSON.inventar);
     player.setSyncedMeta("personalausweis", playerJSON.personalausweis);
     player.setSyncedMeta("allowKeyPress", true);
-    player.setSyncedMeta("name", "unbenannt"); //TODO: Fill with Name
+    player.setSyncedMeta("name", discordInfo.username + "#" + discordInfo.discriminator); //TODO: Fill with Name
     player.setSyncedMeta("uuid", discordInfo.id);
+    alt.log(discordInfo.id);
   });
 }
 

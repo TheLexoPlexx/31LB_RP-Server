@@ -2,6 +2,7 @@
 /// <reference types="@altv/types-client" />
 import * as alt from 'alt-client';
 import * as native from 'natives';
+import { newWebview } from '../util/webviewHelper';
 
 let dead = false;
 let wasted;
@@ -13,7 +14,7 @@ export function playerDeath(): void {
     if (gettingdamage != null) {
       alt.clearTimeout(gettingdamage);
     }
-    wasted = new alt.WebView(url);
+    wasted = newWebview(url);
     native.setTimecycleModifier("MP_DEATH_GRADE_BLEND01");
     dead = true;
     wasted.focus();

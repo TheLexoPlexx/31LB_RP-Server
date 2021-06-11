@@ -71,6 +71,7 @@ export function randomFirstSpawnPosition() {
         }
     });
     if (rerun) {
+        alt.log("Spawnpoint occupied at " + JSON.stringify(csCyl.pos));
         return randomFirstSpawnPosition();
     }
     else {
