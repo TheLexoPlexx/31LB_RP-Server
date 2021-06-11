@@ -4,6 +4,7 @@
 	"description": "Package für den 31LB-Server",
 	"main": "",
 	"scripts": {
+		"startup": "npm build && tsc watch",
 		"build": "npm run clean && tsc && npm run copy && npm run buildapps",
 		"copy": "copyfiles src/**/* --exclude=**/*.ts --exclude=**/*.less --exclude=src/31lb_core/data_dumps/* --exclude=src/31lb_core/client/pages/phone/apps/** --up 1 ./resources",
 		"clean": "rimraf resources",
