@@ -74,6 +74,7 @@ export function discordAuthDone(player: alt.Player, discord: DiscordInfo) {
     
     player.setSyncedMeta("fahrzeuge", playerResult.fahrzeuge);
     if (playerResult.fahrzeuge.length == 0) {
+      //TODO: Add Drunk timecycle
       let p = playerResult.pos;
       let pr = playerResult.rot;
       let spawnVehicle = spawnNewVehicle(firstCar[Math.floor(Math.random() * firstCar.length)], p.x, p.y, p.z, pr.x, pr.y, pr.z);
