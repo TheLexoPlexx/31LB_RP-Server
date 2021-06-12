@@ -41,5 +41,3 @@ alt.on("keyup", keyUp);
 alt.on("character:Done", () => {
   natives.requestIpl("apa_v_mp_h_01_b");
 });
-
-//TODO native switchOutPlayer on successfull connect
