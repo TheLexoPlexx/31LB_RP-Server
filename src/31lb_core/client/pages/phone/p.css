@@ -2,32 +2,18 @@
   margin: 0px;
 }
 body {
-  display: grid;
-  grid-template-columns: 1fr 20% 10%;
-  grid-template-rows: 1.3fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas: ". . ." ". main .";
+  margin-left: 70%;
 }
-body .main {
-  grid-area: main;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 60px 1fr 80px 160px;
-  gap: 0px 0px;
-  grid-template-areas: "statusbar" "apparea" "bottomspacer" "bottomapps";
+body main {
+  width: 350px;
+  height: 650px;
 }
-body .main .statusbar {
-  grid-area: statusbar;
+body main #phoneframe {
+  pointer-events: none;
 }
-body .main .bottomspacer {
-  grid-area: bottomspacer;
-}
-body .main .bottomapps {
-  grid-area: bottomapps;
-}
-body .main .apparea {
-  grid-area: apparea;
-  display: flex;
-  justify-content: space-around;
-  flex-flow: row wrap;
+body main #phonecontent {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
 }
