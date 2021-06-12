@@ -1,6 +1,6 @@
 /// <reference types="@altv/types-server" />
 import * as alt from 'alt-server';
-import { getPlayerByUUID, setValueForPlayer } from '../managers/playerManager';
+import { getPlayerByUUID, updatePlayer } from '../managers/playerManager';
 
 //FIXME: Playerdata is not properly saved on first disconnect.
 
@@ -39,7 +39,7 @@ function playerDisconnect(player: alt.Player, restart: boolean) {
       result.lastseat = lastseat;
       result.unlockedplaces = JSON.stringify(places);
 
-      setValueForPlayer(result, (res_upsert) => {
+      updatePlayer(result, (res_upsert) => {
         alt.log("Player " + res_upsert.name + " left");
       });
     }

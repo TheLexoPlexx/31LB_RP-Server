@@ -1,8 +1,29 @@
 import * as alt from 'alt-server';
 import { database } from './../startup';
 import tables from '../database/tables';
+function getDefaults(player) {
+    return {
+        uuid: player.getSyncedMeta("uuid"),
+        money_hand: 0,
+        money_bank: 400,
+        healthpoints: player.maxHealth,
+        armour: player.maxArmour,
+        pos: { x: null, y: null, z: null },
+        rot: { x: null, y: null, z: null },
+        firstjoin: new Date(),
+        permissions: 1,
+        fahrzeuge: [],
+        lizenzen: [],
+        personalausweis: false,
+        weapons: { a: null, b: null, h: null },
+        unlockedplaces: [],
+        telefonnummer: Math.round(Math.random() * 100000000)
+    };
+}
+;
 export function getPlayer(player, callback) {
-    getPlayerByUUID(player.getSyncedMeta("uuid"), callback);
+    getPlayerByUUID(player.getSyncedMeta("uuid"), (result) => {
+    });
 }
 export function getPlayerByUUID(playerId, callback) {
     database.fetchData("uuid", playerId, tables.players, (result) => {

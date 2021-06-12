@@ -1,6 +1,8 @@
+//TODO: Mit Rank.value oder ähnlichem den numerischen Wert zurückgeben lassen oder sogar comparable machen 
+
 export interface Rank {
   name: string;
-  color ? : RankColor;
+  color? : RankColor;
 }
 
 export interface RankColor {

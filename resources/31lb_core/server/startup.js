@@ -1,6 +1,6 @@
 import * as alt from 'alt-server';
 import SQL from './database/database';
-import * as entities from './database/entities.js';
+import * as entities from './database/entities';
 import { playerConnect } from './eventHandlers/playerConnect';
 import { playerDamage } from './eventHandlers/playerDamage';
 import { playerDeath } from './eventHandlers/playerDeath';

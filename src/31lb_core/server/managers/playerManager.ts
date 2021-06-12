@@ -4,22 +4,135 @@ import { database } from './../startup';
 import tables from '../database/tables';
 import { ItemHolder } from '../../lib/items/items';
 
+export interface PlayerType {
+  uuid: string,
+  money_hand: number,
+  money_bank: number,
+  healthpoints: number,
+  armour: number,
+  pos: {
+    x: number,
+    y: number,
+    z: number,
+  },
+  rot: {
+    x: number,
+    y: number,
+    z: number,
+  },
+  firstjoin: Date,
+  permissions: number, //Später, Rank zurückgeben
+  character?: string, //Später, Charakter-Objekt oder ähnliches
+  lastvehicle?: string //Vin um die Datenbankabfragen zu reduzieren
+  lastseat?: number,
+  inventar?: string //Später, Inventar-Objekt daraus machen,
+  fahrzeuge: string[]
+  lizenzen: [],
+  personalausweis: boolean,
+  weapons: { //Auch hier, später eine Lesbare Liste.
+    a: string,
+    b: string,
+    h: string,
+  },
+  job?: string, //Später, Direkt Job zurückgeben
+  faction?: string, //Später, direkt Fraktion zurückgeben
+  unlockedplaces: number[],
+  telefonnummer: number,
+  checkpoints?: number[]
+}
+
+function getDefaults(player: alt.Player, callback: CallableFunction) {
+  randomFirstSpawnPosition((spawn: FirstSpawn) => {
+    callback({
+      uuid: player.getSyncedMeta("uuid"),
+      money_hand: 0,
+      money_bank: 400,
+      healthpoints: player.maxHealth,
+      armour: player.maxArmour,
+      pos: { x: spawn.px, y: spawn.py, z: spawn.pz },
+      rot: { x: spawn.rx, y: spawn.ry, z: spawn.rz },
+      firstjoin: new Date(),
+      permissions: 1,
+      fahrzeuge: [],
+      lizenzen: [],
+      personalausweis: false,
+      weapons: { a: null, b: null, h: null },
+      unlockedplaces: [],
+      telefonnummer: Math.round(Math.random() * 100000000)
+    })
+  });
+};
+
 export function getPlayer(player: alt.Player, callback) {
-  getPlayerByUUID(player.getSyncedMeta("uuid"), callback);
+  getPlayerByUUID(player.getSyncedMeta("uuid"), (r) => {
+    if (r == null) {
+      getDefaults(player, callback);
+    } else {
+      //Parse DB Information into correct format
+      let cr: PlayerType;
+      cr.uuid = r.uuid;
+      cr.money_hand = r.money_hand;
+      cr.money_bank = r.money_bank;
+      cr.healthpoints = r.healthpoints;
+      cr.armour = r.armour;
+      cr.pos = JSON.parse(r.pos);
+      cr.rot = JSON.parse(r.rot);
+      cr.firstjoin = new Date(r.firstjoin);
+      cr.permissions = r.permissions;
+      cr.lastvehicle = r.lastvehicle;
+      cr.lastseat = r.lastseat;
+      cr.inventar = JSON.parse(r.inventar);
+      cr.fahrzeuge = JSON.parse(r.fahrzeuge);
+      cr.lizenzen = JSON.parse(r.lizenzen);
+      cr.personalausweis = r.personalausweis;
+      cr.weapons = JSON.parse(r.weapons);
+      cr.job = r.job;
+      cr.faction = r.faction;
+      cr.unlockedplaces = JSON.parse(r.unlockedplaces);
+      cr.telefonnummer = r.telefonnummer;
+      cr.checkpoints = JSON.parse(r.checkpoints);
+
+      callback(cr);
+    }
+  });
+}
+
+export function updatePlayer(playerInfo: PlayerType, callback) {
+  //Sitze in der UK Aachen und bin mir fast sicher, dass das nicht funtkionieren wird.
+  let upload;
+  upload.uuid = playerInfo.uuid;
+  upload.money_hand = playerInfo.money_hand;
+  upload.money_bank = playerInfo.money_bank;
+  upload.healthpoints = playerInfo.healthpoints;
+  upload.armour = playerInfo.armour;
+  upload.pos = JSON.stringify(playerInfo.pos);
+  upload.rot = JSON.stringify(playerInfo.rot);
+  upload.firstjoin = new Date(playerInfo.firstjoin);
+  upload.permissions = playerInfo.permissions;
+  upload.lastvehicle = playerInfo.lastvehicle;
+  upload.lastseat = playerInfo.lastseat;
+  upload.inventar = JSON.stringify(playerInfo.inventar);
+  upload.fahrzeuge = JSON.stringify(playerInfo.fahrzeuge);
+  upload.lizenzen = JSON.stringify(playerInfo.lizenzen);
+  upload.personalausweis = playerInfo.personalausweis;
+  upload.weapons = JSON.stringify(playerInfo.weapons);
+  upload.job = playerInfo.job;
+  upload.faction = playerInfo.faction;
+  upload.unlockedplaces = JSON.stringify(playerInfo.unlockedplaces);
+  upload.telefonnummer = playerInfo.telefonnummer;
+  upload.checkpoints = JSON.stringify(playerInfo.checkpoints);
+
+  database.upsertData(upload, tables.players, (r) => {
+    if (callback != null) {
+      callback(r);
+    }
+  });
 }
 
 export function getPlayerByUUID(playerId, callback) {
   database.fetchData("uuid", playerId, tables.players, (result) => {
     if (callback != null) {
       callback(result);
-    }
-  });
-}
-
-export function setValueForPlayer(result, callback) {
-  database.upsertData(result, tables.players, (r) => {
-    if (callback != null) {
-      callback(r);
     }
   });
 }
@@ -79,7 +192,7 @@ export function addWeapon(player, weaponName, inventory) {
     }
 
     result.weapons = JSON.stringify(weapons);
-    setValueForPlayer(result, null);
+    updatePlayer(result, null);
   });
 }
 
@@ -94,25 +207,46 @@ export function toggleKeypress(player: alt.Player) {
 //--------------------------------------------------------------------------------------//
 //                                    Misceallonous                                     //
 //--------------------------------------------------------------------------------------//
-export function randomFirstSpawnPosition() {
-  let spawnPoint = spawnpositions[Math.floor(Math.random() * spawnpositions.length)];
-  let csCyl = new alt.ColshapeCylinder(spawnPoint.px, spawnPoint.py, spawnPoint.pz, 10, 10);
-  let rerun = false;
-  alt.Entity.all.forEach(element => {
-    if (csCyl.isEntityIn(element)) {
-      rerun = true;
+function randomFirstSpawnPosition(callback: CallableFunction) {
+  let occupiedList = [];
+  let rerun = true;
+  while (rerun) {
+    let spawnPointList = spawnpositions.filter(el => !(occupiedList.includes(el)));
+    if (spawnPointList.length == 0) {
+      alt.logError("[31LB] Alle Spawnpunkte sind belegt.");
+       /**
+       * TODO: Elegante Lösung falls kein Spawnpunkt frei ist 
+       * 
+       * Prüfen ob einer oder mehrere der Entities im Kreis ein Fahrzeug ist 
+       * und despawnen wenn der Besitzer nicht online ist und respawnen wenn der
+       * neue Spieler den Spawnkreis verlassen hat.
+       */
+    } else {
+      let spawnPoint = spawnPointList[Math.floor(Math.random() * spawnPointList.length)];
+
+      let csCyl = new alt.ColshapeCylinder(spawnPoint.px, spawnPoint.py, spawnPoint.pz, 10, 10);
+      if (alt.Entity.all.filter(ent => csCyl.isEntityIn(ent)).length < 1) {
+        callback(spawnPoint);
+        csCyl.destroy();
+        break;
+      } else {
+        //rerunning
+        occupiedList.push(spawnPoint);
+      }
     }
-  });
-  if (rerun) {
-    alt.log("Spawnpoint occupied at " + JSON.stringify(csCyl.pos));
-    return randomFirstSpawnPosition();
-  } else {
-    csCyl.destroy();
-    return spawnPoint;
   }
 }
 
-const spawnpositions = [{
+interface FirstSpawn {
+  px: number,
+  py: number,
+  pz: number,
+  rx: number,
+  ry: number,
+  rz: number,
+}
+
+const spawnpositions: FirstSpawn[] = [{
   px: -21.05666160583496,
   py: -638.7738647460938,
   pz: 35.28913497924805,

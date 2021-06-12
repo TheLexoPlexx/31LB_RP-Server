@@ -6,6 +6,7 @@ import cors from 'cors';
 import path from 'path';
 import { isWhitelisted } from './bot';
 import { discord } from '../startup';
+import { discordAuthDone } from '../eventHandlers/playerConnect';
 
 //TODO: Cleanup und Kram entfernen, der nicht gebraucht wird.
 
@@ -73,9 +74,10 @@ async function handleMainRedirect(req, res) {
         return;
     }
 
-    alt.emitClient(player, 'discord:AuthExit');
-    alt.emit('discord:AuthDone', player, request.data);
+    alt.emitClient(player, 'a_discordAuthExit');
     res.sendFile(path.join(htmlPath, '/index.html'), err => {});
+
+    discordAuthDone(player, request.data);
 }
 
 app.listen(7790);

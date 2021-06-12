@@ -2,13 +2,15 @@
 import * as alt from 'alt-server';
 import * as https from "https";
 
+export let currentDate: {
+  day: alt.DateTimeDay,
+  month: alt.DateTimeMonth,
+  year: number,
+  hour: alt.DateTimeHour,
+  minute: alt.DateTimeMinute,
+  second: alt.DateTimeSecond;
+};
 export let weatherType: alt.WeatherType;
-export let day: alt.DateTimeDay;
-export let month: alt.DateTimeMonth;
-export let year: number;
-export let hour: alt.DateTimeHour;
-export let minute: alt.DateTimeMinute;
-export let second: alt.DateTimeSecond;
 
 let gtaSunrise = 6;
 let gtaSunset = 20;
@@ -23,9 +25,9 @@ export function initWeather(apiKey: String) {
   alt.clearInterval(intervalTimer);
 
   let date = new Date();
-  day = date.getDay() as alt.DateTimeDay;
-  month = date.getMonth() as alt.DateTimeMonth;
-  year = date.getFullYear();
+  currentDate.day = date.getDay() as alt.DateTimeDay;
+  currentDate.month = date.getMonth() as alt.DateTimeMonth;
+  currentDate.year = date.getFullYear();
 
   let url = 'https://api.openweathermap.org/data/2.5/weather?q=Manheim,DE&appid='+apiKey;
   try {

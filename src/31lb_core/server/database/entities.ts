@@ -65,7 +65,7 @@ export const PlayerEntity = new orm.EntitySchema({
       nullable: true
     },
     lastseat: { //player.seat
-      type: "varchar",
+      type: "int",
       nullable: true
     },
     inventar: {
@@ -104,6 +104,11 @@ export const PlayerEntity = new orm.EntitySchema({
     telefonnummer: {
       type: 'int',
       nullable: true,
+    },
+    checkpoints: {
+      type: "varchar",
+      nullable: true,
+      default: "[]"
     }
   }
 });

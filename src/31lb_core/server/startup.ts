@@ -1,13 +1,12 @@
 /// <reference types="@altv/types-server" />
 import * as alt from 'alt-server';
 import SQL from './database/database';
-import * as entities from './database/entities.js';
-import { playerConnect } from './eventHandlers/playerConnect';
+import * as entities from './database/entities';
+import { createBlips, playerConnect } from './eventHandlers/playerConnect';
 import { playerDamage } from './eventHandlers/playerDamage';
 import { playerDeath } from './eventHandlers/playerDeath';
 import { playerActualDisconnect, playerRestartDisconnect } from './eventHandlers/playerDisconnect';
 import { keyPressF9, keyPressI, keyPressM, keyPressY } from './eventHandlers/keyHandlers';
-import { createBlips, loginCompleted } from './eventHandlers/loginCompleted';
 import { clearColshapes, enteredColshape, leaveColshape, savePlace, sortMarkers, updatePlacesForPlayer } from './eventHandlers/placeHandler';
 import { openedInventory } from './eventHandlers/inventoryHandler';
 import { teamLogin, teamLogoff } from './eventHandlers/teamLoginHandler';
@@ -44,12 +43,7 @@ export const discord = {
   redirect_url: "http://127.0.0.1:7790/authenticate" //TODO: Make Window close after login
 };
 
-alt.on('discord:AuthDone', (player, discordInfo)=> {
-  loginCompleted(player, discordInfo);
-});
-
 import('./discord/bot');
-import('./discord/verify');
 import('./discord/express');
 
 //--------------------------------------------------------------------------------------//
