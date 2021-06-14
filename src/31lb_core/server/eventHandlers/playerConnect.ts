@@ -1,6 +1,6 @@
 /// <reference types="@altv/types-server" />
 import * as alt from 'alt-server';
-import * as sjcl from "sjcl";
+import sjcl from 'sjcl';
 import { database, discord } from '../startup';
 import { currentDate, weatherType } from './weather';
 import { globalMarkers, unlockableMarkers } from './placeHandler';
@@ -9,13 +9,10 @@ import { spawnNewVehicle } from '../managers/vehicleManager';
 import { checkpointMetaPath, checkpoints, hasCheckpoint } from '../util/checkpoints';
 import tables from '../database/tables';
 
-const ip = encodeURI(`${discord.redirect_url}`);
-const url = `https://discord.com/api/oauth2/authorize?client_id=${discord.client_id}&redirect_uri=${ip}&prompt=none&response_type=code&scope=identify`;
-
 interface DiscordInfo {
   id: string,
   username: string,
-  flags: number,
+  flags: number, 
   public_flags: number,
   avatar: string,
   discriminator: number,
@@ -24,13 +21,14 @@ interface DiscordInfo {
 }
 
 export function playerConnect(player: alt.Player) {
-  /*
+  const ip = encodeURI(`${discord.redirect_url}`);
+  const url = `https://discord.com/api/oauth2/authorize?client_id=${discord.client_id}&redirect_uri=${ip}&prompt=none&response_type=code&scope=identify`;
+
   let hashBytes = sjcl.hash.sha256.hash(JSON.stringify(player.ip) + (Math.random() * (900000000 - 0)));
   const playerToken = sjcl.codec.hex.fromBits(hashBytes);
 
   player.setSyncedMeta("discord_token", playerToken);
   alt.emitClient(player, "a_discordAuth", `${url}&state=${playerToken}`);
-  */
 
   player.setWeather(weatherType);
   player.setDateTime(currentDate.day, currentDate.month, currentDate.year, currentDate.hour, currentDate.minute, currentDate.second);
@@ -48,6 +46,8 @@ export function discordAuthDone(player: alt.Player, discord: DiscordInfo) {
   player.setSyncedMeta("name", discord.username + "#" + discord.discriminator); //TODO: Fill with Name
   player.setSyncedMeta("uuid", discord.id);
   player.setSyncedMeta("allowKeyPress", true);
+
+  alt.log("UUID: " + player.getSyncedMeta("uuid"))
 
   getPlayer(player, (playerResult: PlayerType) => {
 

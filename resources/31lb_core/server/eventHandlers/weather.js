@@ -10,9 +10,14 @@ export function initWeather(apiKey) {
     alt.log("[31LB] Weather init...");
     alt.clearInterval(intervalTimer);
     let date = new Date();
-    currentDate.day = date.getDay();
-    currentDate.month = date.getMonth();
-    currentDate.year = date.getFullYear();
+    currentDate = {
+        day: date.getDay(),
+        month: date.getMonth(),
+        year: date.getFullYear(),
+        hour: null,
+        minute: null,
+        second: null,
+    };
     let url = 'https://api.openweathermap.org/data/2.5/weather?q=Manheim,DE&appid=' + apiKey;
     try {
         https.get(url, (res) => {
