@@ -23,7 +23,7 @@ alt.onServer("a_disableEngineStart", disableEngineStart);
 alt.onServer("a_enableEngineStart", enableEngineStart);
 alt.onServer("a_setWapoint", setWaypoint);
 alt.onServer("a_discordAuth", handleDiscordAuth);
-alt.onServer('discord:AuthExit', handleAuthExit);
+alt.onServer('a_discordAuthExit', handleAuthExit);
 alt.on("consoleCommand", consoleCommand);
 alt.on("keydown", keyDown);
 alt.on("keyup", keyUp);

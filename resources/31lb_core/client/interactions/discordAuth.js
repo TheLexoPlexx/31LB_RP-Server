@@ -8,8 +8,8 @@ export function handleDiscordAuth(url) {
     }
     discordURL = url;
     view = newWebview("http://resource/client/pages/login/l.html?url=" + encodeURIComponent(JSON.stringify(url)), true);
-    view.on('discord:BearerToken', handleBearerToken);
-    view.on('discord:Ready', handleReady);
+    view.on('a_discordBearerToken', handleBearerToken);
+    view.on('a_discordReady', handleReady);
     view.focus();
     alt.showCursor(true);
     alt.toggleGameControls(false);
@@ -22,11 +22,11 @@ export function handleAuthExit() {
     alt.toggleGameControls(true);
 }
 export function handleBearerToken(token) {
-    alt.emitServer('discord:BearerToken', token);
+    alt.emitServer('a_discordBearerToken', token);
 }
 export function handleReady() {
     if (!view) {
         return;
     }
-    view.emit('discord:Ready', discordURL);
+    view.emit('a_discordReady', discordURL);
 }

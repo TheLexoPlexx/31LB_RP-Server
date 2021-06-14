@@ -8,5 +8,5 @@ function handleBeginAuth(player) {
     let hashBytes = sjcl.hash.sha256.hash(JSON.stringify(player.ip) + (Math.random() * (900000000 - 0)));
     const playerToken = sjcl.codec.hex.fromBits(hashBytes);
     player.setSyncedMeta("discord_token", playerToken);
-    alt.emitClient(player, "a_discordAuth", `${url}&state=${playerToken}`);
+    alt.emitClient(player, 'discord:Auth', `${url}&state=${playerToken}`);
 }

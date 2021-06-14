@@ -1,12 +1,11 @@
 import * as alt from 'alt-server';
 import SQL from './database/database';
 import * as entities from './database/entities';
-import { playerConnect } from './eventHandlers/playerConnect';
+import { createBlips, playerConnect } from './eventHandlers/playerConnect';
 import { playerDamage } from './eventHandlers/playerDamage';
 import { playerDeath } from './eventHandlers/playerDeath';
 import { playerActualDisconnect, playerRestartDisconnect } from './eventHandlers/playerDisconnect';
 import { keyPressF9, keyPressI, keyPressM, keyPressY } from './eventHandlers/keyHandlers';
-import { createBlips, loginCompleted } from './eventHandlers/loginCompleted';
 import { clearColshapes, enteredColshape, leaveColshape, savePlace, sortMarkers, updatePlacesForPlayer } from './eventHandlers/placeHandler';
 import { openedInventory } from './eventHandlers/inventoryHandler';
 import { teamLogin, teamLogoff } from './eventHandlers/teamLoginHandler';
@@ -31,11 +30,7 @@ export const discord = {
     whitelist_id: "467406702006894592",
     redirect_url: "http://127.0.0.1:7790/authenticate"
 };
-alt.on('discord:AuthDone', (player, discordInfo) => {
-    loginCompleted(player, discordInfo);
-});
 import('./discord/bot');
-import('./discord/verify');
 import('./discord/express');
 let safeStopped = false;
 alt.on('ConnectionComplete', () => {

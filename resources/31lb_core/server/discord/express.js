@@ -5,6 +5,7 @@ import cors from 'cors';
 import path from 'path';
 import { isWhitelisted } from './bot';
 import { discord } from '../startup';
+import { discordAuthDone } from '../eventHandlers/playerConnect';
 const htmlPath = path.join(alt.getResourcePath(alt.resourceName), 'discord');
 const stylesPath = path.join(alt.getResourcePath(alt.resourceName), 'discord');
 const jsPaths = path.join(alt.getResourcePath(alt.resourceName), 'discord');
@@ -56,8 +57,8 @@ async function handleMainRedirect(req, res) {
         res.sendFile(path.join(htmlPath, '/whitelist.html'), err => { });
         return;
     }
-    alt.emitClient(player, 'discord:AuthExit');
-    alt.emit('discord:AuthDone', player, request.data);
+    alt.emitClient(player, 'a_discordAuthExit');
     res.sendFile(path.join(htmlPath, '/index.html'), err => { });
+    discordAuthDone(player, request.data);
 }
 app.listen(7790);

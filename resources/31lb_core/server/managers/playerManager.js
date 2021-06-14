@@ -1,41 +1,93 @@
 import * as alt from 'alt-server';
 import { database } from './../startup';
 import tables from '../database/tables';
-function getDefaults(player) {
-    return {
-        uuid: player.getSyncedMeta("uuid"),
-        money_hand: 0,
-        money_bank: 400,
-        healthpoints: player.maxHealth,
-        armour: player.maxArmour,
-        pos: { x: null, y: null, z: null },
-        rot: { x: null, y: null, z: null },
-        firstjoin: new Date(),
-        permissions: 1,
-        fahrzeuge: [],
-        lizenzen: [],
-        personalausweis: false,
-        weapons: { a: null, b: null, h: null },
-        unlockedplaces: [],
-        telefonnummer: Math.round(Math.random() * 100000000)
-    };
+function getDefaults(player, callback) {
+    randomFirstSpawnPosition((spawn) => {
+        callback({
+            uuid: player.getSyncedMeta("uuid"),
+            money_hand: 0,
+            money_bank: 400,
+            healthpoints: player.maxHealth,
+            armour: player.maxArmour,
+            pos: { x: spawn.px, y: spawn.py, z: spawn.pz },
+            rot: { x: spawn.rx, y: spawn.ry, z: spawn.rz },
+            firstjoin: new Date(),
+            permissions: 1,
+            fahrzeuge: [],
+            lizenzen: [],
+            personalausweis: false,
+            weapons: { a: null, b: null, h: null },
+            unlockedplaces: [],
+            telefonnummer: Math.round(Math.random() * 100000000)
+        });
+    });
 }
 ;
 export function getPlayer(player, callback) {
-    getPlayerByUUID(player.getSyncedMeta("uuid"), (result) => {
+    getPlayerByUUID(player.getSyncedMeta("uuid"), (r) => {
+        if (r == null) {
+            getDefaults(player, callback);
+        }
+        else {
+            let cr;
+            cr.uuid = r.uuid;
+            cr.money_hand = r.money_hand;
+            cr.money_bank = r.money_bank;
+            cr.healthpoints = r.healthpoints;
+            cr.armour = r.armour;
+            cr.pos = JSON.parse(r.pos);
+            cr.rot = JSON.parse(r.rot);
+            cr.firstjoin = new Date(r.firstjoin);
+            cr.permissions = r.permissions;
+            cr.lastvehicle = r.lastvehicle;
+            cr.lastseat = r.lastseat;
+            cr.inventar = JSON.parse(r.inventar);
+            cr.fahrzeuge = JSON.parse(r.fahrzeuge);
+            cr.lizenzen = JSON.parse(r.lizenzen);
+            cr.personalausweis = r.personalausweis;
+            cr.weapons = JSON.parse(r.weapons);
+            cr.job = r.job;
+            cr.faction = r.faction;
+            cr.unlockedplaces = JSON.parse(r.unlockedplaces);
+            cr.telefonnummer = r.telefonnummer;
+            cr.checkpoints = JSON.parse(r.checkpoints);
+            callback(cr);
+        }
+    });
+}
+export function updatePlayer(playerInfo, callback) {
+    let upload;
+    upload.uuid = playerInfo.uuid;
+    upload.money_hand = playerInfo.money_hand;
+    upload.money_bank = playerInfo.money_bank;
+    upload.healthpoints = playerInfo.healthpoints;
+    upload.armour = playerInfo.armour;
+    upload.pos = JSON.stringify(playerInfo.pos);
+    upload.rot = JSON.stringify(playerInfo.rot);
+    upload.firstjoin = new Date(playerInfo.firstjoin);
+    upload.permissions = playerInfo.permissions;
+    upload.lastvehicle = playerInfo.lastvehicle;
+    upload.lastseat = playerInfo.lastseat;
+    upload.inventar = JSON.stringify(playerInfo.inventar);
+    upload.fahrzeuge = JSON.stringify(playerInfo.fahrzeuge);
+    upload.lizenzen = JSON.stringify(playerInfo.lizenzen);
+    upload.personalausweis = playerInfo.personalausweis;
+    upload.weapons = JSON.stringify(playerInfo.weapons);
+    upload.job = playerInfo.job;
+    upload.faction = playerInfo.faction;
+    upload.unlockedplaces = JSON.stringify(playerInfo.unlockedplaces);
+    upload.telefonnummer = playerInfo.telefonnummer;
+    upload.checkpoints = JSON.stringify(playerInfo.checkpoints);
+    database.upsertData(upload, tables.players, (r) => {
+        if (callback != null) {
+            callback(r);
+        }
     });
 }
 export function getPlayerByUUID(playerId, callback) {
     database.fetchData("uuid", playerId, tables.players, (result) => {
         if (callback != null) {
             callback(result);
-        }
-    });
-}
-export function setValueForPlayer(result, callback) {
-    database.upsertData(result, tables.players, (r) => {
-        if (callback != null) {
-            callback(r);
         }
     });
 }
@@ -71,7 +123,7 @@ export function addWeapon(player, weaponName, inventory) {
             });
         }
         result.weapons = JSON.stringify(weapons);
-        setValueForPlayer(result, null);
+        updatePlayer(result, null);
     });
 }
 export function toggleKeypress(player) {
@@ -82,22 +134,26 @@ export function toggleKeypress(player) {
         player.setSyncedMeta("allowKeyPress", true);
     }
 }
-export function randomFirstSpawnPosition() {
-    let spawnPoint = spawnpositions[Math.floor(Math.random() * spawnpositions.length)];
-    let csCyl = new alt.ColshapeCylinder(spawnPoint.px, spawnPoint.py, spawnPoint.pz, 10, 10);
-    let rerun = false;
-    alt.Entity.all.forEach(element => {
-        if (csCyl.isEntityIn(element)) {
-            rerun = true;
+function randomFirstSpawnPosition(callback) {
+    let occupiedList = [];
+    let rerun = true;
+    while (rerun) {
+        let spawnPointList = spawnpositions.filter(el => !(occupiedList.includes(el)));
+        if (spawnPointList.length == 0) {
+            alt.logError("[31LB] Alle Spawnpunkte sind belegt.");
         }
-    });
-    if (rerun) {
-        alt.log("Spawnpoint occupied at " + JSON.stringify(csCyl.pos));
-        return randomFirstSpawnPosition();
-    }
-    else {
-        csCyl.destroy();
-        return spawnPoint;
+        else {
+            let spawnPoint = spawnPointList[Math.floor(Math.random() * spawnPointList.length)];
+            let csCyl = new alt.ColshapeCylinder(spawnPoint.px, spawnPoint.py, spawnPoint.pz, 10, 10);
+            if (alt.Entity.all.filter(ent => csCyl.isEntityIn(ent)).length < 1) {
+                callback(spawnPoint);
+                csCyl.destroy();
+                break;
+            }
+            else {
+                occupiedList.push(spawnPoint);
+            }
+        }
     }
 }
 const spawnpositions = [{

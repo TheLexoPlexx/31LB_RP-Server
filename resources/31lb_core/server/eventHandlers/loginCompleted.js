@@ -11,6 +11,19 @@ export function loginCompleted(player, discordInfo) {
         if (result_player == undefined) {
             var d = new Date();
             var date = d.getDate().toString() + "." + (d.getMonth() + 1).toString() + "." + d.getFullYear().toString();
+            let default_player = {
+                uuid: discordInfo.id,
+                money_hand: 0,
+                money_bank: 400,
+                healthpoints: player.maxHealth,
+                armour: player.maxArmour,
+                firstjoin: date,
+                permissions: 1,
+                activeWeapons: JSON.stringify({ a: null, b: null, h: null }),
+                unlockedplaces: "[]",
+                fahrzeuge: "[]",
+                telefonnummer: Math.round(Math.random() * 100000000)
+            };
             let spawnPoint = pm.randomFirstSpawnPosition();
             let spawnVehicle = spawnNewVehicle(firstCar[Math.floor(Math.random() * firstCar.length)], spawnPoint.px, spawnPoint.py, spawnPoint.pz, spawnPoint.rx, spawnPoint.ry, spawnPoint.rz);
             spawnVehicle.petrolTankHealth = 0;
