@@ -4,12 +4,17 @@ import tables from '../database/tables';
 import { database } from '../startup';
 import { Faction } from './factionManager';
 
-export function getPlayer(player: alt.Player): LB_Player {
-  return new LB_Player(player.getSyncedMeta("uuid"), player);
+export function getPlayer(player: alt.Player, callback: PlayerCallback) {
+  new LB_Player(player.getSyncedMeta("uuid"), player, callback);
 }
 
-export function getOfflinePlayer(uuid: string): LB_Player {
-  return new LB_Player(uuid, null);
+export function getOfflinePlayer(uuid: string, callback: PlayerCallback) {
+  alt.logWarning("GetOfflinePlayer");
+  new LB_Player(uuid, null, callback);
+}
+
+interface PlayerCallback {
+  (arg0: LB_Player): void;
 }
 
 interface WeaponList {
@@ -46,7 +51,7 @@ class LB_Player {
   private _telefonnummer: number;
   private _checkpoints: number[];
 
-  constructor(uuid: String, player: alt.Player) {
+  constructor(uuid: String, player: alt.Player, callback: PlayerCallback) {
     if (player != null) {
       this.isOnline = true;
       this.onlinePlayer = player;
@@ -63,58 +68,61 @@ class LB_Player {
         this.lastseat = null;
       }
     }
-    database.fetchData("uuid", uuid, tables.players, playerResult => {
-      if (playerResult == undefined) {
-        alt.logWarning("debug:playerResult_Undefined");
-        randomFirstSpawnPosition((spawn: FirstSpawn) => {
-          this.uuid = player.getSyncedMeta("uuid");
-          this.money_hand = 0,
-          this.money_bank = 400,
-          this.healthpoints = player.maxHealth,
-          this.armour = player.maxArmour,
-          this.pos = new alt.Vector3(spawn.px, spawn.py, spawn.pz);
-          this.rot = new alt.Vector3(spawn.rx, spawn.ry, spawn.rz);
-          this.firstjoin = new Date();
-          this.permissions = 1;
-          this.fahrzeuge = [];
-          this.lizenzen = [];
-          this.personalausweis = false;
-          this.weapons = { a: null, b: null, h: null },
-          this.unlockedplaces = [],
-          this.telefonnummer = Math.round(Math.random() * 100000000),
-          this.checkpoints = []
-        });
-      } else {
-        this.uuid = playerResult.uuid;
-        this.money_hand = playerResult.money_hand;
-        this.money_bank = playerResult.money_bank;
-        if (!this.isOnline) {
-          this.healthpoints = playerResult.healthpoints;
-          this.armour = playerResult.armour;
+    let playerPromise = database.fetchDataAsync("uuid", uuid, tables.players);
+    
+    playerPromise.then(playerResult => {
+    if (playerResult == undefined) {
+      randomFirstSpawnPosition((spawn: FirstSpawn) => {
+        this.uuid = player.getSyncedMeta("uuid");
+        this.money_hand = 0,
+        this.money_bank = 400,
+        this.healthpoints = player.maxHealth,
+        this.armour = player.maxArmour,
+        this.pos = new alt.Vector3(spawn.px, spawn.py, spawn.pz);
+        this.rot = new alt.Vector3(spawn.rx, spawn.ry, spawn.rz);
+        this.firstjoin = new Date();
+        this.permissions = 1;
+        this.fahrzeuge = [];
+        this.lizenzen = [];
+        this.personalausweis = false;
+        this.weapons = { a: null, b: null, h: null },
+        this.unlockedplaces = [],
+        this.telefonnummer = Math.round(Math.random() * 100000000),
+        this.checkpoints = [];
+        callback(this);
+      });
+    } else {
+      this.uuid = playerResult.uuid;
+      this.money_hand = playerResult.money_hand;
+      this.money_bank = playerResult.money_bank;
+      if (!this.isOnline) {
+        this.healthpoints = playerResult.healthpoints;
+        this.armour = playerResult.armour;
+        
+        let tempPos = JSON.parse(playerResult.pos);
+        this.pos = new alt.Vector3(tempPos.x, tempPos.y, tempPos.z);
+        let tempRot = JSON.parse(playerResult.rot);
+        this.rot = new alt.Vector3(tempRot.x, tempRot.y, tempRot.z);
           
-          let tempPos = JSON.parse(playerResult.pos);
-          this.pos = new alt.Vector3(tempPos.x, tempPos.y, tempPos.z);
-          let tempRot = JSON.parse(playerResult.rot);
-          this.rot = new alt.Vector3(tempRot.x, tempRot.y, tempRot.z);
-            
-          this.lastvehicle = playerResult.lastvehicle;
-          this.lastseat = playerResult.lastseat;
-        }
-  
-        this.firstjoin = new Date(playerResult.firstjoin);
-        this.permissions = playerResult.permissions;
-        this.character = JSON.parse(playerResult.character);
-        this.inventar = JSON.parse(playerResult.inventar);
-        this.fahrzeuge = JSON.parse(playerResult.fahrzeuge);
-        this.lizenzen = JSON.parse(playerResult.lizenzen);
-        this.personalausweis = playerResult.personalausweis;
-        this.weapons = JSON.parse(playerResult.weapons);
-        this.job = playerResult.job;
-        this.faction = playerResult.faction;
-        this.unlockedplaces = JSON.parse(playerResult.unlockedplaces);
-        this.telefonnummer = playerResult.telefonnummer;
-        this.checkpoints = JSON.parse(playerResult.checkpoints);
+        this.lastvehicle = playerResult.lastvehicle;
+        this.lastseat = playerResult.lastseat;
       }
+
+      this.firstjoin = new Date(playerResult.firstjoin);
+      this.permissions = playerResult.permissions;
+      this.character = JSON.parse(playerResult.character);
+      this.inventar = JSON.parse(playerResult.inventar);
+      this.fahrzeuge = JSON.parse(playerResult.fahrzeuge);
+      this.lizenzen = JSON.parse(playerResult.lizenzen);
+      this.personalausweis = playerResult.personalausweis;
+      this.weapons = JSON.parse(playerResult.weapons);
+      this.job = playerResult.job;
+      this.faction = playerResult.faction;
+      this.unlockedplaces = JSON.parse(playerResult.unlockedplaces);
+      this.telefonnummer = playerResult.telefonnummer;
+      this.checkpoints = JSON.parse(playerResult.checkpoints);
+      callback(this);
+    }
     });
   }
 
@@ -153,9 +161,6 @@ class LB_Player {
   }
 
   public set uuid(uuid: string) {
-    if (this.isOnline) {
-      this.onlinePlayer.setSyncedMeta("uuid", uuid);
-    }
     this._uuid = uuid;
   }
 
@@ -208,9 +213,6 @@ class LB_Player {
   }
 
   public set pos(pos: alt.Vector3) {
-    if (this.isOnline) {
-      this.onlinePlayer.spawn(pos.x, pos.y, pos.z, 0);
-    }
     this._pos = pos;
   }
 
@@ -219,7 +221,6 @@ class LB_Player {
   }
 
   public set rot(rot: alt.Vector3) {
-    //Currently not possible to set rot server-side
     this._rot = rot;
   }
 

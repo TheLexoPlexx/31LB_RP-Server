@@ -1,15 +1,16 @@
 import * as alt from 'alt-server';
 import tables from '../database/tables';
 import { database } from '../startup';
-export function getPlayer(player) {
-    return new LB_Player(player.getSyncedMeta("uuid"), player);
+export function getPlayer(player, callback) {
+    new LB_Player(player.getSyncedMeta("uuid"), player, callback);
 }
-export function getOfflinePlayer(uuid) {
-    return new LB_Player(uuid, null);
+export function getOfflinePlayer(uuid, callback) {
+    alt.logWarning("GetOfflinePlayer");
+    new LB_Player(uuid, null, callback);
 }
 ;
 class LB_Player {
-    constructor(uuid, player) {
+    constructor(uuid, player, callback) {
         if (player != null) {
             this.isOnline = true;
             this.onlinePlayer = player;
@@ -26,9 +27,9 @@ class LB_Player {
                 this.lastseat = null;
             }
         }
-        database.fetchData("uuid", uuid, tables.players, playerResult => {
+        let playerPromise = database.fetchDataAsync("uuid", uuid, tables.players);
+        playerPromise.then(playerResult => {
             if (playerResult == undefined) {
-                alt.logWarning("debug:playerResult_Undefined");
                 randomFirstSpawnPosition((spawn) => {
                     this.uuid = player.getSyncedMeta("uuid");
                     this.money_hand = 0,
@@ -46,6 +47,7 @@ class LB_Player {
                         this.unlockedplaces = [],
                         this.telefonnummer = Math.round(Math.random() * 100000000),
                         this.checkpoints = [];
+                    callback(this);
                 });
             }
             else {
@@ -75,6 +77,7 @@ class LB_Player {
                 this.unlockedplaces = JSON.parse(playerResult.unlockedplaces);
                 this.telefonnummer = playerResult.telefonnummer;
                 this.checkpoints = JSON.parse(playerResult.checkpoints);
+                callback(this);
             }
         });
     }
@@ -111,9 +114,6 @@ class LB_Player {
         return this._uuid;
     }
     set uuid(uuid) {
-        if (this.isOnline) {
-            this.onlinePlayer.setSyncedMeta("uuid", uuid);
-        }
         this._uuid = uuid;
     }
     get money_hand() {
@@ -156,9 +156,6 @@ class LB_Player {
         return this._pos;
     }
     set pos(pos) {
-        if (this.isOnline) {
-            this.onlinePlayer.spawn(pos.x, pos.y, pos.z, 0);
-        }
         this._pos = pos;
     }
     get rot() {

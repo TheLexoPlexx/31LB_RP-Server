@@ -1,6 +1,6 @@
 /// <reference types="@altv/types-server" />
 import * as alt from 'alt-server';
-import { getPlayer } from '../managers/playerManager';
+import { getOfflinePlayer, getPlayer } from '../managers/playerManager';
 
 //FIXME: Playerdata is not properly saved on first disconnect.
 
@@ -13,32 +13,21 @@ export function playerRestartDisconnect(player: alt.Player) {
 }
 
 function playerDisconnect(player: alt.Player, restart: boolean) {
-  getPlayer(player).save();
-
-  /*
+  //FIXME: bei disconnect wird nichts gespeichert.
   let pR = {
     uuid: player.getSyncedMeta("uuid"),
-    money_hand: player.getSyncedMeta("money_hand"),
-    money_bank: player.getSyncedMeta("money_bank"),
     healthpoints: player.health,
     armour: player.armour,
-    pos: JSON.stringify(player.pos),
-    rot: JSON.stringify(player.rot),
-    permissions: player.getSyncedMeta("permissions"),
-    //Character
-    lastvehicle: player.vehicle.getSyncedMeta("vin"),
-    lastseat: player.seat,
-    //Inventar
-    firstjoin: player.getSyncedMeta("firstjoin"),
-    fahrzeuge: player.getSyncedMeta("fahrzeuge"),
-    lizenzen: player.getSyncedMeta("lizenzen"),
-    personalausweis: player.vehicle.getSyncedMeta("personalausweis"),
-    weapons: player.getSyncedMeta("weapons"),
-    job: player.getSyncedMeta("job"),
-    faction: player.getSyncedMeta("faction"),
-    unlockedplaces: player.getSyncedMeta("unlocked_places"),
-    telefonnummer: player.getSyncedMeta("telefonnummer"),
-    checkpoints: player.getSyncedMeta(checkpointMetaPath),
+    pos: player.pos,
+    rot: player.rot,
   };
-  */
+
+  getOfflinePlayer(pR.uuid, (pl) => {
+    alt.log("pl: " + JSON.stringify(pl));
+    pl.healthpoints = pR.healthpoints;
+    pl.armour = pR.armour;
+    pl.pos = pR.pos;
+    pl.rot = pR.rot;
+    pl.save();
+  });
 }

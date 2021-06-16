@@ -113,7 +113,8 @@ export const Factions: {
 };
 
 export function setPlayerToFaction(player: alt.Player, argFaction: Faction) {
-  let p = getPlayer(player);
-  p.faction = argFaction
-  p.save();
+  getPlayer(player, p => {
+    p.faction = argFaction;
+    p.save();
+  });
 }

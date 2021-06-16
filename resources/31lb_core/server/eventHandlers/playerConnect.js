@@ -11,19 +11,24 @@ export function playerConnect(player) {
     const playerToken = sjcl.codec.hex.fromBits(hashBytes);
     player.setSyncedMeta("discord_token", playerToken);
     alt.emitClient(player, "a_discordAuth", `${url}&state=${playerToken}`);
+    player.spawn(402.5164, -1002.847, -99.2587, 0);
     player.setWeather(weatherType);
     player.setDateTime(currentDate.day, currentDate.month, currentDate.year, currentDate.hour, currentDate.minute, currentDate.second);
-    player.spawn(402.5164, -1002.847, -99.2587, 0);
 }
 export function discordAuthDone(player, discord) {
     player.setSyncedMeta("name", discord.username + "#" + discord.discriminator);
     player.setSyncedMeta("uuid", discord.id);
     player.setSyncedMeta("allowKeyPress", true);
-    alt.log("UUID: " + player.getSyncedMeta("uuid"));
-    let dbP = getPlayer(player);
-    alt.log("DKPUUID: " + dbP.uuid);
-    player.model = 'mp_m_freemode_01';
-    dbP.save();
+    getPlayer(player, (dbP) => {
+        alt.logWarning("Got Player");
+        player.model = 'mp_m_freemode_01';
+        player.spawn(dbP.pos.x, dbP.pos.y, dbP.pos.z, 0);
+        if (dbP.lastvehicle != null) {
+            alt.emitClient(player, "a_forceEnterVehicle", dbP.lastvehicle, dbP.lastseat - 2);
+            alt.log("vehicle " + dbP.lastvehicle);
+        }
+        dbP.save();
+    });
 }
 export function createBlips(player) {
     let unlocked_places = player.getSyncedMeta("unlocked_places");
