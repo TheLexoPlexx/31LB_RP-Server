@@ -1,4 +1,4 @@
-import { getPlayer, updatePlayer } from './playerManager';
+import { getPlayer } from './playerManager';
 const FactionType = {
     state: "Staatsfraktion",
     neutral: "Neutrale Fraktion",
@@ -94,8 +94,7 @@ export const Factions = {
     },
 };
 export function setPlayerToFaction(player, argFaction) {
-    getPlayer(player, (playerres) => {
-        playerres.faction = argFaction.constructor.name;
-        updatePlayer(playerres, () => { });
-    });
+    let p = getPlayer(player);
+    p.faction = argFaction;
+    p.save();
 }

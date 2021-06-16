@@ -9,32 +9,3 @@ import * as alt from 'alt-server';
 export let checkpoints = {
   went_to_townhall: 0,
 };
-
-
-export let checkpointMetaPath = "checkpoints";
-
-export function getCheckpoints(player: alt.Player): number[] {
-  return player.getSyncedMeta(checkpointMetaPath);
-}
-
-function setCheckpoints(player: alt.Player, checkpoints: number[]) {
-  player.setSyncedMeta(checkpointMetaPath, checkpoints);
-}
-
-export function addCheckpoint(player: alt.Player, checkpoint: number) {
-  let l = getCheckpoints(player);
-  l.push(checkpoint);
-  setCheckpoints(player, l);
-}
-
-export function removeCheckpoint(player: alt.Player, checkpoint: number) {
-  let l = getCheckpoints(player);
-  if (l.includes(checkpoint)) {
-    l.splice(l.indexOf(checkpoint), 1);
-  }
-  setCheckpoints(player, l);
-}
-
-export function hasCheckpoint(player: alt.Player, checkpoint: number): boolean {
-  return getCheckpoints(player).includes(checkpoint);
-}

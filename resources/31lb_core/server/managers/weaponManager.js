@@ -1,7 +1,5 @@
-import * as alt from 'alt-server';
 import { database } from '../startup';
 import tables from '../database/tables';
-import * as pm from "./playerManager";
 export function getWeapon(serial, callback) {
     database.fetchData("serial", serial, tables.weapons, (result) => {
         if (callback != null) {
@@ -16,35 +14,14 @@ export function setValue(result, callback) {
         }
     });
 }
-export function newWeapon(weapon, ownerId) {
+export function newWeapon(weapon) {
     var serialNumber = generateSerial();
     database.fetchData("serial", serialNumber, tables.weapons, (result) => {
         if (result == null) {
-            pm.getPlayerByUUID(ownerId, (r) => {
-                if (r == null) {
-                    alt.logError("New Weapon " + serialNumber + " does not have an existing owner!");
-                }
-            });
-            database.upsertData({ serial: serialNumber, weaponname: weapon, owner: ownerId }, tables.weapons, null);
+            database.upsertData({ serial: serialNumber, weaponname: weapon }, tables.weapons, null);
         }
         else {
-            newWeapon(weapon, ownerId);
-        }
-    });
-}
-export function changeWeaponOwner(serial, newOwnerId) {
-    database.fetchData("serial", serial, tables.weapons, (result) => {
-        if (result == null) {
-            alt.logError("Wrong serial: " + serial);
-        }
-        else {
-            pm.getPlayerByUUID(newOwnerId, (r) => {
-                if (r == null) {
-                    alt.logError("Weapon " + serial + " does not have an existing owner!");
-                }
-            });
-            result.owner = newOwnerId;
-            database.upsertData(result, tables.weapons, null);
+            newWeapon(weapon);
         }
     });
 }

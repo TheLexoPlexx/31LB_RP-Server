@@ -190,10 +190,6 @@ export const WeaponEntity = new orm.EntitySchema({
     weaponname: {
       type: 'varchar'
     },
-    owner: {
-      type: 'varchar',
-      nullable: true //Sollte er aber nicht
-    },
   }
 });
 

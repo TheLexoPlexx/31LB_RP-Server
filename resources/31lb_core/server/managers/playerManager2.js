@@ -28,7 +28,6 @@ class LB_Player {
         }
         database.fetchData("uuid", uuid, tables.players, playerResult => {
             if (playerResult == undefined) {
-                alt.logWarning("debug:playerResult_Undefined");
                 randomFirstSpawnPosition((spawn) => {
                     this.uuid = player.getSyncedMeta("uuid");
                     this.money_hand = 0,
@@ -195,10 +194,10 @@ class LB_Player {
         this._character = character;
     }
     get lastvehicle() {
-        return this._lastvehicle;
+        return alt.Vehicle.all.filter(v => v.getSyncedMeta("vin") == this.lastvehicle)[0];
     }
     set lastvehicle(lastvehicle) {
-        this._lastvehicle = lastvehicle;
+        this._lastvehicle = lastvehicle.getSyncedMeta("vin");
     }
     get lastseat() {
         return this._lastseat;
@@ -295,17 +294,6 @@ class LB_Player {
             this.onlinePlayer.setSyncedMeta("checkpoints", checkpoints);
         }
         this._checkpoints = checkpoints;
-    }
-    addCheckpoint(checkpoint) {
-        this._checkpoints.push(checkpoint);
-    }
-    removeCheckpoint(checkpoint) {
-        if (this._checkpoints.includes(checkpoint)) {
-            this._checkpoints.splice(this._checkpoints.indexOf(checkpoint), 1);
-        }
-    }
-    hasCheckpoint(checkpoint) {
-        return this._checkpoints.includes(checkpoint);
     }
 }
 export function fixPlayer(player) {

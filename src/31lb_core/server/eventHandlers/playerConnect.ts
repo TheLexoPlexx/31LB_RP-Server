@@ -4,9 +4,9 @@ import sjcl from 'sjcl';
 import { database, discord } from '../startup';
 import { currentDate, weatherType } from './weather';
 import { globalMarkers, unlockableMarkers } from './placeHandler';
-import { getPlayer, PlayerType, updatePlayer } from '../managers/playerManager';
+import { getPlayer } from '../managers/playerManager';
 import { spawnNewVehicle } from '../managers/vehicleManager';
-import { checkpointMetaPath, checkpoints, hasCheckpoint } from '../util/checkpoints';
+import { checkpoints } from '../util/checkpoints';
 import tables from '../database/tables';
 
 interface DiscordInfo {
@@ -49,76 +49,47 @@ export function discordAuthDone(player: alt.Player, discord: DiscordInfo) {
 
   alt.log("UUID: " + player.getSyncedMeta("uuid"))
 
-  getPlayer(player, (playerResult: PlayerType) => {
+  let dbP = getPlayer(player);
 
-    player.setSyncedMeta("money_hand", playerResult.money_hand);
-    player.setSyncedMeta("money_bank", playerResult.money_bank);
+  alt.log("DKPUUID: " + dbP.uuid);
+  
+  player.model = 'mp_m_freemode_01'; //TODO: Auslesen und ändern
 
-    player.health = playerResult.healthpoints;
-    player.armour = playerResult.armour;
-
-    player.spawn(playerResult.pos.x, playerResult.pos.y, playerResult.pos.z, 0);
-    player.rot = new alt.Vector3(playerResult.rot.x, playerResult.rot.z, playerResult.rot.z);
-
-    player.setSyncedMeta("permissions", playerResult.permissions);
-
-    player.model = 'mp_m_freemode_01'; //TODO: Auslesen und ändern
-
-    if (playerResult.lastvehicle != null) {
-      //TODO: Check if player actually has keys to vehicle
-      alt.emitClient(player, "a_forceEnterVehicle", playerResult.lastvehicle, playerResult.lastseat-2);
-      alt.log("vehicle " + playerResult.lastvehicle);
-    }
-
-    //TODO: Set Inventory
+  /*
+  if (dbP.lastvehicle != null) {
+    //TODO: Check if player actually has keys to vehicle
+    alt.emitClient(player, "a_forceEnterVehicle", dbP.lastvehicle, dbP.lastseat-2);
+    alt.log("vehicle " + dbP.lastvehicle);
+  }
+  
+  //TODO: Set Inventory
     
-    player.setSyncedMeta("fahrzeuge", playerResult.fahrzeuge);
-    if (playerResult.fahrzeuge.length == 0) {
-      let p = playerResult.pos;
-      let pr = playerResult.rot;
-      let spawnVehicle = spawnNewVehicle(firstCar[Math.floor(Math.random() * firstCar.length)], p.x, p.y, p.z, pr.x, pr.y, pr.z);
-      spawnVehicle.petrolTankHealth = 0;
-      spawnVehicle.manualEngineControl = true;
-      alt.emitClient(player, "a_disableEngineStart");
-    
-      playerResult.fahrzeuge.push(spawnVehicle.getSyncedMeta("vin"));
-    
-      player.spawn(spawnVehicle.pos.x, spawnVehicle.pos.y, spawnVehicle.pos.z, 0);
-      alt.emitClient(player, "a_forceEnterVehicle", spawnVehicle.getSyncedMeta("vin"), 0);
-    
-      let leaveCircle = new alt.ColshapeCircle(p.x, p.y, 50);
-      leaveCircle.setMeta("despawnVehicle", spawnVehicle.getSyncedMeta("vin"));
-    }
+  if (dbP.fahrzeuge == undefined) {
+    let spawnVehicle = spawnNewVehicle(firstCar[Math.floor(Math.random() * firstCar.length)], dbP.pos.x, dbP.pos.y, dbP.pos.z, dbP.rot.x, dbP.rot.y, dbP.rot.z);
+    spawnVehicle.petrolTankHealth = 0;
+    spawnVehicle.manualEngineControl = true;
+    alt.emitClient(player, "a_disableEngineStart");
+  
+    dbP.fahrzeuge = [];
+    dbP.fahrzeuge.push(spawnVehicle.getSyncedMeta("vin"));
+  
+    player.spawn(spawnVehicle.pos.x, spawnVehicle.pos.y, spawnVehicle.pos.z, 0);
+    alt.emitClient(player, "a_forceEnterVehicle", spawnVehicle.getSyncedMeta("vin"), 0);
+  
+    let leaveCircle = new alt.ColshapeCircle(dbP.pos.x, dbP.pos.y, 50);
+    leaveCircle.setMeta("despawnVehicle", spawnVehicle.getSyncedMeta("vin"));
+  }
 
-    player.setSyncedMeta("lizenzen", playerResult.lizenzen);
-    player.setSyncedMeta("personalausweis", playerResult.personalausweis);
-    player.setSyncedMeta("weapons", playerResult.weapons);
-    player.setSyncedMeta("job", playerResult.job);
-    player.setSyncedMeta("faction", playerResult.faction);
+  createBlips(player);
 
-    player.setSyncedMeta("unlocked_places", playerResult.unlockedplaces);
-    createBlips(player);
-
-    player.setSyncedMeta("telefonnummer", playerResult.telefonnummer);
-    player.setSyncedMeta(checkpointMetaPath, playerResult.checkpoints);
-
-    if (hasCheckpoint(player, checkpoints.went_to_townhall)) {
-      database.fetchData("displayname", "Rathaus", tables.places, (result_rathaus) => {
-        //TODO: Checkpoint entfernen wenn der Spieler die ihm auferlegten Aufgaben erfüllt hat.
-        alt.emitClient(player, "a_setWapoint", result_rathaus);
-      });
-    }
-
-    updatePlayer(playerResult, (res) => {
-      alt.log("Player " + discord.username + "#" + discord.discriminator + " logged in [" + discord.id + "]");
-
-      //For Development
-      if (alt.debug) {
-        alt.log("playerResult: " + JSON.stringify(playerResult));
-        alt.log("discordInfo: " + JSON.stringify(discord));
-      }
-    })
-  });
+  if (dbP.hasCheckpoint(checkpoints.went_to_townhall)) {
+    database.fetchData("displayname", "Rathaus", tables.places, (result_rathaus) => {
+      //TODO: Checkpoint entfernen wenn der Spieler die ihm auferlegten Aufgaben erfüllt hat.
+      alt.emitClient(player, "a_setWapoint", result_rathaus);
+    });
+  }
+  */
+  dbP.save();
 }
 
 export function createBlips(player: alt.Player) {

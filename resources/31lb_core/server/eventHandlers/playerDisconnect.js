@@ -1,5 +1,4 @@
-import * as alt from 'alt-server';
-import { getPlayerByUUID, updatePlayer } from '../managers/playerManager';
+import { getPlayer } from '../managers/playerManager';
 export function playerActualDisconnect(player) {
     playerDisconnect(player, false);
 }
@@ -7,34 +6,5 @@ export function playerRestartDisconnect(player) {
     playerDisconnect(player, true);
 }
 function playerDisconnect(player, restart) {
-    let pos = player.pos;
-    let rot = player.rot;
-    let hp = player.health;
-    let armour = player.armour;
-    let uuid = player.getSyncedMeta("uuid");
-    let lastvehicle;
-    let lastseat;
-    if (player.vehicle != null) {
-        lastvehicle = player.vehicle.getSyncedMeta("vin");
-        lastseat = player.seat;
-    }
-    else {
-        lastvehicle = null;
-        lastseat = null;
-    }
-    let places = player.getSyncedMeta("unlocked_places");
-    getPlayerByUUID(uuid, (result) => {
-        if (result != null) {
-            result.pos = JSON.stringify(pos);
-            result.rot = JSON.stringify(rot);
-            result.healthpoints = hp;
-            result.armour = armour;
-            result.lastvehicle = lastvehicle;
-            result.lastseat = lastseat;
-            result.unlockedplaces = JSON.stringify(places);
-            updatePlayer(result, (res_upsert) => {
-                alt.log("Player " + res_upsert.name + " left");
-            });
-        }
-    });
+    getPlayer(player).save();
 }
