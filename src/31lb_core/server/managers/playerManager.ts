@@ -9,7 +9,6 @@ export function getPlayer(player: alt.Player, callback: PlayerCallback) {
 }
 
 export function getOfflinePlayer(uuid: string, callback: PlayerCallback) {
-  alt.logWarning("GetOfflinePlayer");
   new LB_Player(uuid, null, callback);
 }
 
@@ -69,15 +68,14 @@ class LB_Player {
       }
     }
     let playerPromise = database.fetchDataAsync("uuid", uuid, tables.players);
-    
     playerPromise.then(playerResult => {
     if (playerResult == undefined) {
       randomFirstSpawnPosition((spawn: FirstSpawn) => {
         this.uuid = player.getSyncedMeta("uuid");
-        this.money_hand = 0,
-        this.money_bank = 400,
-        this.healthpoints = player.maxHealth,
-        this.armour = player.maxArmour,
+        this.money_hand = 0;
+        this.money_bank = 400;
+        this.healthpoints = player.maxHealth;
+        this.armour = player.maxArmour;
         this.pos = new alt.Vector3(spawn.px, spawn.py, spawn.pz);
         this.rot = new alt.Vector3(spawn.rx, spawn.ry, spawn.rz);
         this.firstjoin = new Date();
@@ -85,9 +83,9 @@ class LB_Player {
         this.fahrzeuge = [];
         this.lizenzen = [];
         this.personalausweis = false;
-        this.weapons = { a: null, b: null, h: null },
-        this.unlockedplaces = [],
-        this.telefonnummer = Math.round(Math.random() * 100000000),
+        this.weapons = { a: null, b: null, h: null };
+        this.unlockedplaces = [];
+        this.telefonnummer = Math.round(Math.random() * 100000000);
         this.checkpoints = [];
         callback(this);
       });
@@ -95,6 +93,7 @@ class LB_Player {
       this.uuid = playerResult.uuid;
       this.money_hand = playerResult.money_hand;
       this.money_bank = playerResult.money_bank;
+      
       if (!this.isOnline) {
         this.healthpoints = playerResult.healthpoints;
         this.armour = playerResult.armour;
@@ -108,9 +107,10 @@ class LB_Player {
         this.lastseat = playerResult.lastseat;
       }
 
+      
       this.firstjoin = new Date(playerResult.firstjoin);
       this.permissions = playerResult.permissions;
-      this.character = JSON.parse(playerResult.character);
+      this.character = playerResult.character;
       this.inventar = JSON.parse(playerResult.inventar);
       this.fahrzeuge = JSON.parse(playerResult.fahrzeuge);
       this.lizenzen = JSON.parse(playerResult.lizenzen);
@@ -121,6 +121,7 @@ class LB_Player {
       this.unlockedplaces = JSON.parse(playerResult.unlockedplaces);
       this.telefonnummer = playerResult.telefonnummer;
       this.checkpoints = JSON.parse(playerResult.checkpoints);
+      
       callback(this);
     }
     });
@@ -251,9 +252,6 @@ class LB_Player {
   }
 
   public set character(character: string) {
-    if (this.isOnline) {
-      this.onlinePlayer.setSyncedMeta("character", character);
-    }
     //TODO: Set Character Traits
     this._character = character;
   }
@@ -448,8 +446,8 @@ function randomFirstSpawnPosition(callback: CallableFunction) {
 
       if (entList.length <= 2) {
         alt.log("Spawning...");
-        callback(spawnPoint);
         alt.clearInterval(findInterv);
+        callback(spawnPoint);
       } else {
         //rerunning
         occupiedList.push(spawnPoint);

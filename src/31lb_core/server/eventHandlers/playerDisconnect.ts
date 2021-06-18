@@ -23,11 +23,11 @@ function playerDisconnect(player: alt.Player, restart: boolean) {
   };
 
   getOfflinePlayer(pR.uuid, (pl) => {
-    alt.log("pl: " + JSON.stringify(pl));
     pl.healthpoints = pR.healthpoints;
     pl.armour = pR.armour;
     pl.pos = pR.pos;
     pl.rot = pR.rot;
     pl.save();
+    alt.log("Player " + pl.uuid + " left");
   });
 }

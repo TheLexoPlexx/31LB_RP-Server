@@ -5,12 +5,8 @@ import tables from '../database/tables';
 import * as pm from "./playerManager";
 
 
-export function getWeapon(serial: string, callback: CallableFunction): void {
-  database.fetchData("serial", serial, tables.weapons, (result) => {
-    if (callback != null) {
-      callback(result);
-    }
-  });
+export function getWeapon(serial: string): Promise<any> {
+  return database.fetchDataAsync("serial", serial, tables.weapons);
 }
 
 export function setValue(result: JSON, callback: CallableFunction): void {
@@ -28,7 +24,9 @@ export function setValue(result: JSON, callback: CallableFunction): void {
 export function newWeapon(weapon: string): void {
   var serialNumber = generateSerial();
 
-  database.fetchData("serial", serialNumber, tables.weapons, (result) => {
+  let res = database.fetchDataAsync("serial", serialNumber, tables.weapons);
+  
+  res.then(result => {
     if (result == null) {
       database.upsertData({ serial: serialNumber, weaponname: weapon }, tables.weapons, null);    
     } else {

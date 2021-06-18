@@ -30,7 +30,8 @@ export function playerConnect(player: alt.Player) {
   player.setSyncedMeta("discord_token", playerToken);
   alt.emitClient(player, "a_discordAuth", `${url}&state=${playerToken}`);
 
-  player.spawn(402.5164, -1002.847, -99.2587, 0); //Character Creator
+  //player.spawn(402.5164, -1002.847, -99.2587, 0); //Character Creator
+  player.spawn(-138.793, -593.407, 211.775, 0); //Character Creator
 
   player.setWeather(weatherType);
   player.setDateTime(currentDate.day, currentDate.month, currentDate.year, currentDate.hour, currentDate.minute, currentDate.second);
@@ -47,7 +48,6 @@ export function discordAuthDone(player: alt.Player, discord: DiscordInfo) {
   player.setSyncedMeta("allowKeyPress", true);
 
   getPlayer(player, (dbP) => {
-    alt.logWarning("Got Player");
     player.model = 'mp_m_freemode_01'; //TODO: Auslesen und ändern
 
     player.spawn(dbP.pos.x, dbP.pos.y, dbP.pos.z, 0);
@@ -60,9 +60,6 @@ export function discordAuthDone(player: alt.Player, discord: DiscordInfo) {
     
     //TODO: Set Inventory
       
-    /*
-    //FIXME: Der Reconnect-Fehler ist irgendwo hier
-
     if (dbP.fahrzeuge.length == 0) {
       let spawnVehicle = spawnNewVehicle(firstCar[Math.floor(Math.random() * firstCar.length)], dbP.pos.x, dbP.pos.y, dbP.pos.z, dbP.rot.x, dbP.rot.y, dbP.rot.z);
       spawnVehicle.petrolTankHealth = 0;
@@ -75,19 +72,23 @@ export function discordAuthDone(player: alt.Player, discord: DiscordInfo) {
       player.spawn(spawnVehicle.pos.x, spawnVehicle.pos.y, spawnVehicle.pos.z, 0);
       alt.emitClient(player, "a_forceEnterVehicle", spawnVehicle.getSyncedMeta("vin"), 0);
     
+      /*
       let leaveCircle = new alt.ColshapeCircle(dbP.pos.x, dbP.pos.y, 50);
       leaveCircle.setMeta("despawnVehicle", spawnVehicle.getSyncedMeta("vin"));
+      */
     }
-  
+
     createBlips(player);
-  
+
     if (dbP.hasCheckpoint(checkpoints.went_to_townhall)) {
-      database.fetchData("displayname", "Rathaus", tables.places, (result_rathaus) => {
-        //TODO: Checkpoint entfernen wenn der Spieler die ihm auferlegten Aufgaben erfüllt hat.
-        alt.emitClient(player, "a_setWapoint", result_rathaus);
-      });
+      let result_rathaus = database.fetchDataAsync("displayname", "Rathaus", tables.places);
+      if (result_rathaus != undefined) {
+        result_rathaus.then(res => {
+          //TODO: Checkpoint entfernen wenn der Spieler die ihm auferlegten Aufgaben erfüllt hat.
+          alt.emitClient(player, "a_setWapoint", res);
+        });
+      }
     }
-    */
 
     dbP.save();
   });
