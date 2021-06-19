@@ -7,14 +7,15 @@ import { playerDamage } from './eventHandlers/playerDamage';
 import { playerDeath } from './eventHandlers/playerDeath';
 import { playerActualDisconnect, playerRestartDisconnect } from './eventHandlers/playerDisconnect';
 import { keyPressF9, keyPressI, keyPressM, keyPressY } from './eventHandlers/keyHandlers';
-import { clearColshapes, enteredColshape, leaveColshape, savePlace, sortMarkers, updatePlacesForPlayer } from './eventHandlers/placeHandler';
+import { enteredColshape, leaveColshape, savePlace, sortMarkers, updatePlacesForPlayer } from './eventHandlers/placeHandler';
 import { openedInventory } from './eventHandlers/inventoryHandler';
 import { teamLogin, teamLogoff } from './eventHandlers/teamLoginHandler';
 import { colshapeMeta } from '../client/interactions/placeGenerator';
-import { loadVehicles, saveAllVehicles } from './managers/vehicleManager';
+import { loadVehicles } from './managers/vehicleManager';
 import { initWeather } from './eventHandlers/weather';
 import { List } from './util/util';
 import { toggleKeypress } from './managers/playerManager';
+import { consoleCommand, safeStopped } from './serverCommands';
 
 //--------------------------------------------------------------------------------------//
 //                                 Connect to Database                                  //
@@ -49,8 +50,6 @@ import('./discord/express');
 //--------------------------------------------------------------------------------------//
 //                                  Resource Restarter                                  //
 //--------------------------------------------------------------------------------------//
-let safeStopped: boolean = false;
-
 alt.on('ConnectionComplete', () => {
   alt.log("[31LB] Connected to Database");
   sortMarkers();
@@ -85,39 +84,7 @@ alt.on("playerDamage", playerDamage);
 alt.on("playerDisconnect", playerActualDisconnect);
 alt.on("entityEnterColshape", enteredColshape);
 alt.on("entityLeaveColshape", leaveColshape);
-
-alt.on("consoleCommand", (...args: string[]) => {
-  if (args[0] == "rp") {
-    if (args[1] == "restart" || args[1] == "r") {
-      save("a_restart_rp");
-    } else if (args[1] == "stop" || args[1] == "s") {
-      save("a_stop_rp");
-    } else {
-      alt.logError("Falscher Subcommand");
-    }
-  } else {
-    alt.logError("Unknown command");
-  }
-
-  function save(emitEvent: string) {
-    clearColshapes();
-    alt.Player.all.forEach((p) => {
-      playerRestartDisconnect(p);
-    });
-    safeStopped = true;
-
-    if (alt.Vehicle.all.length > 0) {
-      saveAllVehicles().then(() => {
-        alt.emit(emitEvent);
-      });
-    } else {
-      alt.log("[31LB] No vehicles found to save");
-      alt.emit(emitEvent);
-    }
-    //TODO: Save Players
-  }
-
-});
+alt.on("consoleCommand", consoleCommand);
 
 alt.onClient("a_keyup_f9", keyPressF9);
 alt.onClient("a_keyup_y", keyPressY);
