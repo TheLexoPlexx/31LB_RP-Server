@@ -14,8 +14,21 @@
       align-items: center;
       flex-flow: column nowrap;
       min-height: 100vh;
-      background: url("2ff84b840561cd54b8eae116159c922b.jpg") center center;
-      background-size: cover;
+    }
+
+    .wrapper {
+      width: 600px;
+      height: 300px;
+      background: rgba(0, 0, 0, 0.4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column nowrap;
+    }
+
+    .logintitle {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin-bottom: 15px;
     }
 
     #loginb {
@@ -37,7 +50,10 @@
 </head>
 
 <body>
-  <button id="loginb">Login</button>
+  <div class="wrapper">
+    <h3 class="logintitle">31. Lötkolbenbataillon - Roleplay</h3>
+    <button id="loginb">Login</button>
+  </div>
 </body>
 <script type="text/javascript">
   let loginUrl = JSON.parse(decodeURIComponent(window.location.search.split("=")[1]));

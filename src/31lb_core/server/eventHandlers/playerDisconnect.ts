@@ -13,7 +13,11 @@ export function playerRestartDisconnect(player: alt.Player) {
 }
 
 function playerDisconnect(player: alt.Player, restart: boolean) {
-  //FIXME: bei disconnect wird nichts gespeichert.
+  if (player.getSyncedMeta("uuid") == null) {
+    player.kick("You where not logged in while the Server restarted");
+    return;
+  }
+
   let pR = {
     uuid: player.getSyncedMeta("uuid"),
     healthpoints: player.health,

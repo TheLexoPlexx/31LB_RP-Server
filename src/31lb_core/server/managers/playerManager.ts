@@ -57,8 +57,6 @@ class LB_Player {
 
       this.healthpoints = player.health;
       this.armour = player.armour;
-      this.pos = player.pos;
-      this.rot = player.rot;
       if (player.vehicle != null) {
         this.lastvehicle = player.vehicle.getSyncedMeta("vin");
         this.lastseat = player.seat;
@@ -97,17 +95,13 @@ class LB_Player {
       if (!this.isOnline) {
         this.healthpoints = playerResult.healthpoints;
         this.armour = playerResult.armour;
-        
-        let tempPos = JSON.parse(playerResult.pos);
-        this.pos = new alt.Vector3(tempPos.x, tempPos.y, tempPos.z);
-        let tempRot = JSON.parse(playerResult.rot);
-        this.rot = new alt.Vector3(tempRot.x, tempRot.y, tempRot.z);
-          
+                 
         this.lastvehicle = playerResult.lastvehicle;
         this.lastseat = playerResult.lastseat;
       }
-
       
+      this.pos = JSON.parse(playerResult.pos);
+      this.rot = JSON.parse(playerResult.rot);
       this.firstjoin = new Date(playerResult.firstjoin);
       this.permissions = playerResult.permissions;
       this.character = playerResult.character;
@@ -138,7 +132,7 @@ class LB_Player {
       rot: JSON.stringify(this._rot),
       firstjoin: this._firstjoin,
       permissions: this._permissions,
-      character: JSON.stringify(this._character),
+      character: this._character,
       lastvehicle: this._lastvehicle,
       lastseat: this._lastseat,
       inventar: JSON.stringify(this._inventar),

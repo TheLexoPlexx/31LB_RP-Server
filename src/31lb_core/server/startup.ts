@@ -41,7 +41,8 @@ export const discord = {
   bot_token: "NDY3NjgyNjU3ODg3ODQ2NDEx.W0n5ag.yFUH8pvN-y1ZPDDntrl8Sm-TFec",
   server_id: "467406309755715595",
   whitelist_id: "467406702006894592",
-  redirect_url: "http://127.0.0.1:7790/authenticate" //TODO: Make Window close after login
+  redirect_url: "http://127.0.0.1:7790/authenticate",
+  updateInterval: 30
 };
 
 import('./discord/bot');
@@ -136,3 +137,6 @@ alt.on('character:Done', (player, data) => {
   player.pos = player.pos;
   console.log(data);
 });
+
+
+  //player.spawn(402.5164, -1002.847, -99.2587, 0); //Character Creator
