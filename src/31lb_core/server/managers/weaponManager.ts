@@ -5,12 +5,8 @@ import tables from '../database/tables';
 import * as pm from "./playerManager";
 
 
-export function getWeapon(serial: string, callback: CallableFunction): void {
-  database.fetchData("serial", serial, tables.weapons, (result) => {
-    if (callback != null) {
-      callback(result);
-    }
-  });
+export function getWeapon(serial: string): Promise<any> {
+  return database.fetchDataAsync("serial", serial, tables.weapons);
 }
 
 export function setValue(result: JSON, callback: CallableFunction): void {
@@ -24,43 +20,17 @@ export function setValue(result: JSON, callback: CallableFunction): void {
 /**
  * Erstellt eine neue Waffe in der Datenbank, ohne Quelle
  * @param {String} weapon Name aus WeaponList
- * @param {*} ownerId Besitzer-Id
  */
-export function newWeapon(weapon: string, ownerId: number): void {
+export function newWeapon(weapon: string): void {
   var serialNumber = generateSerial();
 
-  database.fetchData("serial", serialNumber, tables.weapons, (result) => {
+  let res = database.fetchDataAsync("serial", serialNumber, tables.weapons);
+  
+  res.then(result => {
     if (result == null) {
-      pm.getPlayerByUUID(ownerId, (r) => {
-        if (r == null) {
-          alt.logError("New Weapon " + serialNumber + " does not have an existing owner!");
-        }
-      });
-
-      database.upsertData({ serial: serialNumber, weaponname: weapon, owner: ownerId }, tables.weapons, null);    
+      database.upsertData({ serial: serialNumber, weaponname: weapon }, tables.weapons, null);    
     } else {
-      newWeapon(weapon, ownerId);
-    }
-  });
-}
-
-/**
- * Ändert den Besitzer einer Waffe in der Datenbank
- * @param {String} serial Die Seriennummer der Waffe
- * @param {int} newOwnerId Die Id des neuen Besitzers
- */
-export function changeWeaponOwner(serial: string, newOwnerId: number): void {
-  database.fetchData("serial", serial, tables.weapons, (result: any) => {
-    if (result == null) {
-      alt.logError("Wrong serial: " + serial);
-    } else {
-      pm.getPlayerByUUID(newOwnerId, (r) => {
-        if (r == null) {
-          alt.logError("Weapon " + serial + " does not have an existing owner!");
-        }
-      });
-      result.owner = newOwnerId;
-      database.upsertData(result, tables.weapons, null);
+      newWeapon(weapon);
     }
   });
 }

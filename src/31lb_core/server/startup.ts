@@ -85,6 +85,7 @@ alt.on("playerDamage", playerDamage);
 alt.on("playerDisconnect", playerActualDisconnect);
 alt.on("entityEnterColshape", enteredColshape);
 alt.on("entityLeaveColshape", leaveColshape);
+
 alt.on("consoleCommand", (...args: string[]) => {
   if (args[0] == "rp") {
     if (args[1] == "restart" || args[1] == "r") {

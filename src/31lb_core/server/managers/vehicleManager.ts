@@ -161,9 +161,10 @@ export function saveSingleVehilce(vehicle: alt.Vehicle) {
  * @param callback result aus der Datenbank
  */
 export function getVehicleByVin(vin: string, callback: CallableFunction) {
-  database.fetchData("vin", vin, tables.vehicles, (result) => {
+  let vinRes = database.fetchDataAsync("vin", vin, tables.vehicles);
+  vinRes.then(result => {
     callback(result);
-  })
+  });
 }
 
 /**

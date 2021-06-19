@@ -1,24 +1,24 @@
 /// <reference types="@altv/types-server" />
 import * as alt from 'alt-server';
-import { getPlayer, updatePlayer } from './playerManager';
+import { getPlayer } from './playerManager';
 
-interface FactionColor {
+export interface FactionColor {
   r: number;
   g: number;
   b: number;
+}
+
+export interface Faction {
+  name: string;
+  shortname?: string;
+  color: FactionColor;
+  type: string;
 }
 
 const FactionType = {
   state: "Staatsfraktion",
   neutral: "Neutrale Fraktion",
   gang: "Gang",
-}
-
-interface Faction {
-  name: string;
-  shortname?: string;
-  color: FactionColor;
-  type: string;
 }
 
 export const Factions: {
@@ -113,8 +113,8 @@ export const Factions: {
 };
 
 export function setPlayerToFaction(player: alt.Player, argFaction: Faction) {
-  getPlayer(player, (playerres) => {
-    playerres.faction = argFaction.constructor.name;
-    updatePlayer(playerres, () => {});
-  })
+  getPlayer(player, p => {
+    p.faction = argFaction;
+    p.save();
+  });
 }

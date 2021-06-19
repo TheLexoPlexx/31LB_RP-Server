@@ -1,149 +1,406 @@
 /// <reference types="@altv/types-server" />
 import * as alt from 'alt-server';
-import { database } from './../startup';
 import tables from '../database/tables';
-import { ItemHolder } from '../../lib/items/items';
+import { database } from '../startup';
+import { Faction } from './factionManager';
 
-export interface PlayerType {
-  uuid: string,
-  money_hand: number,
-  money_bank: number,
-  healthpoints: number,
-  armour: number,
-  pos: {
-    x: number,
-    y: number,
-    z: number,
-  },
-  rot: {
-    x: number,
-    y: number,
-    z: number,
-  },
-  firstjoin: Date,
-  permissions: number, //Später, Rank zurückgeben
-  character?: string, //Später, Charakter-Objekt oder ähnliches
-  lastvehicle?: string //Vin um die Datenbankabfragen zu reduzieren
-  lastseat?: number,
-  inventar?: string //Später, Inventar-Objekt daraus machen,
-  fahrzeuge: string[]
-  lizenzen: [],
-  personalausweis: boolean,
-  weapons: { //Auch hier, später eine Lesbare Liste.
-    a: string,
-    b: string,
-    h: string,
-  },
-  job?: string, //Später, Direkt Job zurückgeben
-  faction?: string, //Später, direkt Fraktion zurückgeben
-  unlockedplaces: number[],
-  telefonnummer: number,
-  checkpoints?: number[]
+export function getPlayer(player: alt.Player, callback: PlayerCallback) {
+  new LB_Player(player.getSyncedMeta("uuid"), player, callback);
 }
 
-function getDefaults(player: alt.Player, callback: CallableFunction) {
-  randomFirstSpawnPosition((spawn: FirstSpawn) => {
-    callback({
-      uuid: player.getSyncedMeta("uuid"),
-      money_hand: 0,
-      money_bank: 400,
-      healthpoints: player.maxHealth,
-      armour: player.maxArmour,
-      pos: { x: spawn.px, y: spawn.py, z: spawn.pz },
-      rot: { x: spawn.rx, y: spawn.ry, z: spawn.rz },
-      firstjoin: new Date(),
-      permissions: 1,
-      fahrzeuge: [],
-      lizenzen: [],
-      personalausweis: false,
-      weapons: { a: null, b: null, h: null },
-      unlockedplaces: [],
-      telefonnummer: Math.round(Math.random() * 100000000)
-    })
-  });
+export function getOfflinePlayer(uuid: string, callback: PlayerCallback) {
+  new LB_Player(uuid, null, callback);
+}
+
+interface PlayerCallback {
+  (arg0: LB_Player): void;
+}
+
+interface WeaponList {
+  a: string,
+  b: string,
+  h: string,
 };
 
-export function getPlayer(player: alt.Player, callback) {
-  getPlayerByUUID(player.getSyncedMeta("uuid"), (r) => {
-    if (r == null) {
-      getDefaults(player, callback);
+class LB_Player {
+
+  private isOnline: boolean;
+  private onlinePlayer: alt.Player;
+  
+  private _uuid: string;
+  private _money_hand: number;
+  private _money_bank: number;
+  private _healthpoints: number;
+  private _armour: number;
+  private _pos: alt.Vector3;
+  private _rot: alt.Vector3;
+  private _firstjoin: Date;
+  private _permissions: number;
+  private _character: string;
+  private _lastvehicle: string;
+  private _lastseat: number;
+  private _inventar: string[];
+  private _fahrzeuge: string[];
+  private _lizenzen: [];
+  private _personalausweis: boolean;
+  private _weapons: WeaponList;
+  private _job: string;
+  private _faction: Faction;
+  private _unlockedplaces: number[];
+  private _telefonnummer: number;
+  private _checkpoints: number[];
+
+  constructor(uuid: String, player: alt.Player, callback: PlayerCallback) {
+    if (player != null) {
+      this.isOnline = true;
+      this.onlinePlayer = player;
+
+      this.healthpoints = player.health;
+      this.armour = player.armour;
+      this.pos = player.pos;
+      this.rot = player.rot;
+      if (player.vehicle != null) {
+        this.lastvehicle = player.vehicle.getSyncedMeta("vin");
+        this.lastseat = player.seat;
+      } else {
+        this.lastvehicle = null;
+        this.lastseat = null;
+      }
+    }
+    let playerPromise = database.fetchDataAsync("uuid", uuid, tables.players);
+    playerPromise.then(playerResult => {
+    if (playerResult == undefined) {
+      randomFirstSpawnPosition((spawn: FirstSpawn) => {
+        this.uuid = player.getSyncedMeta("uuid");
+        this.money_hand = 0;
+        this.money_bank = 400;
+        this.healthpoints = player.maxHealth;
+        this.armour = player.maxArmour;
+        this.pos = new alt.Vector3(spawn.px, spawn.py, spawn.pz);
+        this.rot = new alt.Vector3(spawn.rx, spawn.ry, spawn.rz);
+        this.firstjoin = new Date();
+        this.permissions = 1;
+        this.fahrzeuge = [];
+        this.lizenzen = [];
+        this.personalausweis = false;
+        this.weapons = { a: null, b: null, h: null };
+        this.unlockedplaces = [];
+        this.telefonnummer = Math.round(Math.random() * 100000000);
+        this.checkpoints = [];
+        callback(this);
+      });
     } else {
-      //Parse DB Information into correct format
-      let cr: PlayerType;
-      cr.uuid = r.uuid;
-      cr.money_hand = r.money_hand;
-      cr.money_bank = r.money_bank;
-      cr.healthpoints = r.healthpoints;
-      cr.armour = r.armour;
-      cr.pos = JSON.parse(r.pos);
-      cr.rot = JSON.parse(r.rot);
-      cr.firstjoin = new Date(r.firstjoin);
-      cr.permissions = r.permissions;
-      cr.lastvehicle = r.lastvehicle;
-      cr.lastseat = r.lastseat;
-      cr.inventar = JSON.parse(r.inventar);
-      cr.fahrzeuge = JSON.parse(r.fahrzeuge);
-      cr.lizenzen = JSON.parse(r.lizenzen);
-      cr.personalausweis = r.personalausweis;
-      cr.weapons = JSON.parse(r.weapons);
-      cr.job = r.job;
-      cr.faction = r.faction;
-      cr.unlockedplaces = JSON.parse(r.unlockedplaces);
-      cr.telefonnummer = r.telefonnummer;
-      cr.checkpoints = JSON.parse(r.checkpoints);
+      this.uuid = playerResult.uuid;
+      this.money_hand = playerResult.money_hand;
+      this.money_bank = playerResult.money_bank;
+      
+      if (!this.isOnline) {
+        this.healthpoints = playerResult.healthpoints;
+        this.armour = playerResult.armour;
+        
+        let tempPos = JSON.parse(playerResult.pos);
+        this.pos = new alt.Vector3(tempPos.x, tempPos.y, tempPos.z);
+        let tempRot = JSON.parse(playerResult.rot);
+        this.rot = new alt.Vector3(tempRot.x, tempRot.y, tempRot.z);
+          
+        this.lastvehicle = playerResult.lastvehicle;
+        this.lastseat = playerResult.lastseat;
+      }
 
-      callback(cr);
+      
+      this.firstjoin = new Date(playerResult.firstjoin);
+      this.permissions = playerResult.permissions;
+      this.character = playerResult.character;
+      this.inventar = JSON.parse(playerResult.inventar);
+      this.fahrzeuge = JSON.parse(playerResult.fahrzeuge);
+      this.lizenzen = JSON.parse(playerResult.lizenzen);
+      this.personalausweis = playerResult.personalausweis;
+      this.weapons = JSON.parse(playerResult.weapons);
+      this.job = playerResult.job;
+      this.faction = playerResult.faction;
+      this.unlockedplaces = JSON.parse(playerResult.unlockedplaces);
+      this.telefonnummer = playerResult.telefonnummer;
+      this.checkpoints = JSON.parse(playerResult.checkpoints);
+      
+      callback(this);
     }
-  });
-}
+    });
+  }
 
-export function updatePlayer(playerInfo: PlayerType, callback) {
-  //Sitze in der UK Aachen und bin mir fast sicher, dass das nicht funtkionieren wird.
-  let upload;
-  upload.uuid = playerInfo.uuid;
-  upload.money_hand = playerInfo.money_hand;
-  upload.money_bank = playerInfo.money_bank;
-  upload.healthpoints = playerInfo.healthpoints;
-  upload.armour = playerInfo.armour;
-  upload.pos = JSON.stringify(playerInfo.pos);
-  upload.rot = JSON.stringify(playerInfo.rot);
-  upload.firstjoin = new Date(playerInfo.firstjoin);
-  upload.permissions = playerInfo.permissions;
-  upload.lastvehicle = playerInfo.lastvehicle;
-  upload.lastseat = playerInfo.lastseat;
-  upload.inventar = JSON.stringify(playerInfo.inventar);
-  upload.fahrzeuge = JSON.stringify(playerInfo.fahrzeuge);
-  upload.lizenzen = JSON.stringify(playerInfo.lizenzen);
-  upload.personalausweis = playerInfo.personalausweis;
-  upload.weapons = JSON.stringify(playerInfo.weapons);
-  upload.job = playerInfo.job;
-  upload.faction = playerInfo.faction;
-  upload.unlockedplaces = JSON.stringify(playerInfo.unlockedplaces);
-  upload.telefonnummer = playerInfo.telefonnummer;
-  upload.checkpoints = JSON.stringify(playerInfo.checkpoints);
+  public save() {
+    let uploadObject = {
+      uuid: this._uuid,
+      money_hand: this._money_hand,
+      money_bank: this._money_bank,
+      healthpoints: this._healthpoints,
+      armour: this._armour,
+      pos: JSON.stringify(this._pos),
+      rot: JSON.stringify(this._rot),
+      firstjoin: this._firstjoin,
+      permissions: this._permissions,
+      character: JSON.stringify(this._character),
+      lastvehicle: this._lastvehicle,
+      lastseat: this._lastseat,
+      inventar: JSON.stringify(this._inventar),
+      fahrzeuge: JSON.stringify(this._fahrzeuge),
+      lizenzen: JSON.stringify(this._lizenzen),
+      personalausweis: this._personalausweis,
+      weapons: JSON.stringify(this._weapons),
+      job: this._job,
+      faction: this._faction,
+      unlockedplaces: JSON.stringify(this._unlockedplaces),
+      telefonnummer: this._telefonnummer,
+      checkpoints: JSON.stringify(this._checkpoints),
+    };
+    database.upsertData(uploadObject, tables.players, (result) => {
+      alt.log("Player saved: " + JSON.stringify(result));
+    });
+  }
 
-  database.upsertData(upload, tables.players, (r) => {
-    if (callback != null) {
-      callback(r);
+  public get uuid(): string {
+    return this._uuid;
+  }
+
+  public set uuid(uuid: string) {
+    this._uuid = uuid;
+  }
+
+  public get money_hand(): number {
+    return this._money_hand;
+  }
+
+  public set money_hand(money_hand: number) {
+    if (this.isOnline) {
+      this.onlinePlayer.setSyncedMeta("money_hand", money_hand);
     }
-  });
-}
+    this._money_hand = money_hand;
+  }
 
-export function getPlayerByUUID(playerId, callback) {
-  database.fetchData("uuid", playerId, tables.players, (result) => {
-    if (callback != null) {
-      callback(result);
+  public get money_bank(): number {
+    return this._money_bank;
+  }
+
+  public set money_bank(money_bank: number) {
+    if (this.isOnline) {
+      this.onlinePlayer.setSyncedMeta("money_bank", money_bank);
     }
-  });
+    this._money_bank = money_bank;
+  }
+
+  public get healthpoints(): number {
+    return this._healthpoints;
+  }
+
+  public set healthpoints(healthpoints: number) {
+    if (this.isOnline) {
+      this.onlinePlayer.health = healthpoints;
+    }
+    this._healthpoints = healthpoints;
+  }
+
+  public get armour(): number {
+    return this._armour;
+  }
+
+  public set armour(armour: number) {
+    if (this.isOnline) {
+      this.onlinePlayer.armour = armour;
+    }
+    this._armour = armour;
+  }
+
+  public get pos(): alt.Vector3 {
+    return this._pos;
+  }
+
+  public set pos(pos: alt.Vector3) {
+    this._pos = pos;
+  }
+
+  public get rot(): alt.Vector3 {
+    return this._rot;
+  }
+
+  public set rot(rot: alt.Vector3) {
+    this._rot = rot;
+  }
+
+  public get firstjoin(): Date {
+    return this._firstjoin;
+  }
+
+  public set firstjoin(firstjoin: Date) {
+    if (this.isOnline) {
+      this.onlinePlayer.setSyncedMeta("firstjoin", firstjoin);
+    }
+    this._firstjoin = firstjoin;
+  }
+
+  public get permissions(): number {
+    return this._permissions;
+  }
+
+  public set permissions(permissions: number) {
+    if (this.isOnline) {
+      this.onlinePlayer.setSyncedMeta("permissions", permissions);
+    }
+    this._permissions = permissions;
+  }
+
+  public get character(): string {
+    return this._character;
+  }
+
+  public set character(character: string) {
+    //TODO: Set Character Traits
+    this._character = character;
+  }
+
+  public get lastvehicle(): string {
+    return this._lastvehicle;
+  }
+
+  public set lastvehicle(lastvehicle: string) {
+    this._lastvehicle = lastvehicle;
+  }
+
+  public get lastseat(): number {
+    return this._lastseat;
+  }
+
+  public set lastseat(lastseat: number) {
+    this._lastseat = lastseat;
+  }
+
+  public get inventar(): string[] {
+    return this._inventar;
+  }
+
+  public set inventar(inventar: string[]) {
+    if (this.isOnline) {
+      this.onlinePlayer.setSyncedMeta("inventar", inventar);
+    }
+    //TODO: Inventar hinzufügen
+    this._inventar = inventar;
+  }
+
+  public get fahrzeuge(): string[] {
+    return this._fahrzeuge;
+  }
+
+  public set fahrzeuge(fahrzeuge: string[]) {
+    if (this.isOnline) {
+      this.onlinePlayer.setSyncedMeta("fahrzeuge", fahrzeuge);
+    }
+    this._fahrzeuge = fahrzeuge;
+  }
+
+  public get lizenzen(): [] {
+    return this._lizenzen;
+  }
+
+  public set lizenzen(lizenzen: []) {
+    if (this.isOnline) {
+      this.onlinePlayer.setSyncedMeta("lizenzen", lizenzen);
+    }
+    this._lizenzen = lizenzen;
+  }
+
+  public get personalausweis(): boolean {
+    return this._personalausweis;
+  }
+
+  public set personalausweis(personalausweis: boolean) {
+    if (this.isOnline) {
+      this.onlinePlayer.setSyncedMeta("personalausweis", personalausweis);
+    }
+    this._personalausweis = personalausweis;
+  }
+
+  public get weapons(): WeaponList {
+    return this._weapons;
+  }
+
+  public set weapons(weapons: WeaponList) {
+    if (this.isOnline) {
+      this.onlinePlayer.setSyncedMeta("weapons", weapons);
+    }
+    this._weapons = weapons;
+  }
+
+  public get job(): string {
+    return this._job;
+  }
+
+  public set job(job: string) {
+    if (this.isOnline) {
+      this.onlinePlayer.setSyncedMeta("job", job);
+    }
+    this._job = job;
+  }
+
+  public get faction(): Faction {
+    return this._faction;
+  }
+
+  public set faction(faction: Faction) {
+    if (this.isOnline) {
+      this.onlinePlayer.setSyncedMeta("faction", faction);
+    }
+    this._faction = faction;
+  }
+
+  public get unlockedplaces(): number[] {
+    return this._unlockedplaces;
+  }
+
+  public set unlockedplaces(unlockedplaces: number[]) {
+    if (this.isOnline) {
+      this.onlinePlayer.setSyncedMeta("unlockedplaces", unlockedplaces);
+    }
+    this._unlockedplaces = unlockedplaces;
+  }
+
+  public get telefonnummer(): number {
+    return this._telefonnummer;
+  }
+
+  public set telefonnummer(telefonnummer: number) {
+    if (this.isOnline) {
+      this.onlinePlayer.setSyncedMeta("telefonnummer", telefonnummer);
+    }
+    this._telefonnummer = telefonnummer;
+  }
+
+  public get checkpoints(): number[] {
+    return this._checkpoints;
+  }
+
+  public set checkpoints(checkpoints: number[]) {
+    if (this.isOnline) {
+      this.onlinePlayer.setSyncedMeta("checkpoints", checkpoints);
+    }
+    this._checkpoints = checkpoints;
+  }
+
+  public addCheckpoint(checkpoint: number) {
+    this._checkpoints.push(checkpoint);
+  }
+
+  public removeCheckpoint(checkpoint: number) {
+    if (this._checkpoints.includes(checkpoint)) {
+      this._checkpoints.splice(this._checkpoints.indexOf(checkpoint), 1);
+    }
+  }
+
+  public hasCheckpoint(checkpoint: number): boolean {
+    return this._checkpoints.includes(checkpoint);
+  }
 }
 
-export function setCloth(player: alt.Player, comp: number, item: ItemHolder, drawable: number, texture: number, dlcHash: string) {
-  player.setSyncedMeta("inventory_" + comp, item);
-  let palette = 2; //0 oder 1, ka.
-  alt.emitClient(player, "a_setclothes", palette)
-  //Noch nicht im release, nur dev: player.setClothes(comp, drawable, texture, palette, alt.hash(dlcHash));
-}
-
+//--------------------------------------------------------------------------------------//
+//                                    Misceallonous                                     //
+//--------------------------------------------------------------------------------------//
 export function fixPlayer(player: alt.Player) {
   if (player.seat == undefined) {
     let pos = player.pos;
@@ -154,48 +411,6 @@ export function fixPlayer(player: alt.Player) {
   }
 }
 
-/*
-
-addXpForSkill (x, y)
-getLevelForSkill (x)
-getXpForSkill (x)
-
- */
-
-/* === WEAPONS
- */
-
-/**
- * 
- * @param {String} weaponName 
- * @param {Player} player 
- * @param {boolean} inventory 
- */
-export function addWeapon(player, weaponName, inventory) {
-  getPlayer(player, (result) => {
-    var weapons = JSON.parse(result.weapons);
-
-    var found = false;
-    weapons.forEach(element => {
-      if (element.w == weaponName) {
-        element.a += 1;
-        found = true;
-      }
-    });
-    if (!found) {
-      weapons.push({
-        w: weaponName,
-        i: inventory,
-        c: [],
-        a: 0
-      });
-    }
-
-    result.weapons = JSON.stringify(weapons);
-    updatePlayer(result, null);
-  });
-}
-
 export function toggleKeypress(player: alt.Player) {
   if (player.getSyncedMeta("allowKeyPress")) {
     player.setSyncedMeta("allowKeyPress", false);
@@ -204,13 +419,10 @@ export function toggleKeypress(player: alt.Player) {
   }
 }
 
-//--------------------------------------------------------------------------------------//
-//                                    Misceallonous                                     //
-//--------------------------------------------------------------------------------------//
 function randomFirstSpawnPosition(callback: CallableFunction) {
   let occupiedList = [];
-  let rerun = true;
-  while (rerun) {
+  let occupiedCounter = 0;
+  let findInterv = alt.setInterval(() => {
     let spawnPointList = spawnpositions.filter(el => !(occupiedList.includes(el)));
     if (spawnPointList.length == 0) {
       alt.logError("[31LB] Alle Spawnpunkte sind belegt.");
@@ -221,20 +433,28 @@ function randomFirstSpawnPosition(callback: CallableFunction) {
        * und despawnen wenn der Besitzer nicht online ist und respawnen wenn der
        * neue Spieler den Spawnkreis verlassen hat.
        */
+      occupiedCounter++;
+      if (occupiedCounter == 20) {
+        occupiedList = []; //Empty occupiedList and run again
+        occupiedCounter = 0;
+      }
+      //Will go on forever if no spawn point can be found
     } else {
-      let spawnPoint = spawnPointList[Math.floor(Math.random() * spawnPointList.length)];
-
+      let spawnPoint: FirstSpawn = spawnPointList[Math.floor(Math.random() * spawnPointList.length)];
       let csCyl = new alt.ColshapeCylinder(spawnPoint.px, spawnPoint.py, spawnPoint.pz, 10, 10);
-      if (alt.Entity.all.filter(ent => csCyl.isEntityIn(ent)).length < 1) {
+      let entList = JSON.stringify(alt.Entity.all.filter(ent => csCyl.isEntityIn(ent)));
+
+      if (entList.length <= 2) {
+        alt.log("Spawning...");
+        alt.clearInterval(findInterv);
         callback(spawnPoint);
-        csCyl.destroy();
-        break;
       } else {
         //rerunning
         occupiedList.push(spawnPoint);
       }
+      csCyl.destroy();
     }
-  }
+  }, 250);
 }
 
 interface FirstSpawn {

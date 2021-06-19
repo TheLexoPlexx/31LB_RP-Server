@@ -16,17 +16,7 @@
 
 **Installieren**
 ```sh
-npm install
-```
-
-**Server updaten**
-```sh
-npm run update
-```
-
-**Build**
-```sh
-npm run build
+erststart.bat
 ```
 
 **Roleplay-Plugin neustarten**

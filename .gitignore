@@ -1,4 +1,5 @@
 cache/
 crashdumps/
+resources/
 node_modules/
 server.log
