@@ -5,22 +5,18 @@ import * as native from 'natives';
 import * as NativeUI from '../util/nativeui/NativeUi';
 import { colshapeMeta, PresetList } from './placeGenerator';
 import { componentIds, propIds } from '../util/clothdict';
-import { clothing_inventory_m } from "./../shops/inventories/clothing_m";
-import { clothing_inventory_f } from "./../shops/inventories/clothing_f";
 
 interface ClothData {
   cHash: string;
   price: number;
   drawable: number;
-  inventory: InventorySpace;
+  inventory: {
+    x: number,
+    y: number,
+  };
   texture: string[];
   restrictionTags: string[];
   componentType: string;
-}
-
-interface InventorySpace {
-  x: number;
-  y: number;
 }
 
 let mainmenu: NativeUI.Menu;
@@ -35,14 +31,7 @@ export function openShopInteraction(cm: colshapeMeta) {
   let onduty: boolean = alt.Player.local.getSyncedMeta("team_onduty");
 
   if (cm.shop == PresetList["clothing1"].shop) {
-    let source;
-    if (native.getEntityModel(alt.Player.local.scriptID) == 1885233650) {
-      clothingShopMenu(cm, clothing_inventory_m, onduty);
-    } else if (native.getEntityModel(alt.Player.local.scriptID) == 2627665880) {
-      clothingShopMenu(cm, clothing_inventory_f, onduty);
-    } else {
-      alt.logError("Wrong Model");
-    }
+    clothingShopMenu(cm, alt.Player.local.getMeta("clothingInventory"), onduty);
   }
 
   //Inventar

@@ -4,16 +4,18 @@ import * as alt from 'alt-client';
 import * as native from 'natives';
 import * as NativeUI from "../util/nativeui/NativeUi"
 
+/**
+ * Deprecated, TODO: Remove
+ * 
+ */
 
-
+/*
 export function isObjectEmpty(object: Record<string, unknown>): boolean {
   for (const property in object) {
     return false;
   }
   return true;
 }
-
-/*
 
 export function clothSelector(pedComponentVariations: any[]) {
 
