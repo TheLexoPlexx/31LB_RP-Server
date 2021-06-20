@@ -21,6 +21,12 @@ interface DiscordInfo {
 }
 
 export function playerConnect(player: alt.Player) {
+  player.spawn(-138.793, -593.407, 211.775, 0); //Aussichtsplattform
+  /**
+   * TODO: neue Cam über die Stadt schauen lassen vllt. bewegen? (später, Chriss) 
+   * mit aktuellem Wetter und Zeit, Login-Knopf hintergrund entfernen, bei authentication dann native.switchOutPlayer
+  */
+
   const ip = encodeURI(`${discord.redirect_url}`);
   const url = `https://discord.com/api/oauth2/authorize?client_id=${discord.client_id}&redirect_uri=${ip}&prompt=none&response_type=code&scope=identify`;
 
@@ -30,16 +36,8 @@ export function playerConnect(player: alt.Player) {
   player.setSyncedMeta("discord_token", playerToken);
   alt.emitClient(player, "a_discordAuth", `${url}&state=${playerToken}`);
 
-  //player.spawn(402.5164, -1002.847, -99.2587, 0); //Character Creator
-  player.spawn(-138.793, -593.407, 211.775, 0); //Character Creator
-
   player.setWeather(weatherType);
   player.setDateTime(currentDate.day, currentDate.month, currentDate.year, currentDate.hour, currentDate.minute, currentDate.second);
-
-  /**
-   * TODO: neue Cam über die Stadt schauen lassen vllt. bewegen? (später, Chriss) 
-   * mit aktuellem Wetter und Zeit, Login-Knopf hintergrund entfernen, bei authentication dann native.switchOutPlayer
-   */
 }
 
 export function discordAuthDone(player: alt.Player, discord: DiscordInfo) {
@@ -50,7 +48,10 @@ export function discordAuthDone(player: alt.Player, discord: DiscordInfo) {
   getPlayer(player, (dbP) => {
     player.model = 'mp_m_freemode_01'; //TODO: Auslesen und ändern
 
+    alt.logWarning("Player connected...");
+    alt.logWarning("Saved Pos: " + JSON.stringify(dbP.pos));
     player.spawn(dbP.pos.x, dbP.pos.y, dbP.pos.z, 0);
+    alt.logWarning("Player Pos: x: " + player.pos.x + " y: " + player.pos.y + " z: " + player.pos.z);
 
     if (dbP.lastvehicle != null) {
       //TODO: Check if player actually has keys to vehicle
@@ -68,11 +69,13 @@ export function discordAuthDone(player: alt.Player, discord: DiscordInfo) {
     
       dbP.fahrzeuge = [];
       dbP.fahrzeuge.push(spawnVehicle.getSyncedMeta("vin"));
+      dbP.save();
     
       player.spawn(spawnVehicle.pos.x, spawnVehicle.pos.y, spawnVehicle.pos.z, 0);
       alt.emitClient(player, "a_forceEnterVehicle", spawnVehicle.getSyncedMeta("vin"), 0);
     
       /*
+      //TODO: Despawn Spawn-Vehicle on disconnect
       let leaveCircle = new alt.ColshapeCircle(dbP.pos.x, dbP.pos.y, 50);
       leaveCircle.setMeta("despawnVehicle", spawnVehicle.getSyncedMeta("vin"));
       */
@@ -89,8 +92,6 @@ export function discordAuthDone(player: alt.Player, discord: DiscordInfo) {
         });
       }
     }
-
-    dbP.save();
   });
 }
 

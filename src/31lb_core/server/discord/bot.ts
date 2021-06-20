@@ -18,7 +18,7 @@ function handleReady() {
     alt.log("[31LB] Discord Bot has Authenticated.");
 
     refreshWhitelist();
-    interval = alt.setInterval(refreshWhitelist, 60000 * 3);
+    interval = alt.setInterval(refreshWhitelist, discord.updateInterval * 1000);
 }
 
 function handleError(err) {
@@ -73,9 +73,16 @@ async function handleUserUpdate(oldUser, user) {
  * @returns {void}
  */
 function refreshWhitelist() {
+    /**
+     * FIXME: Whitelist bleibt leer
+     * 
+     * Scheinbar landen bestimmte Benutzer unter Umständen nicht in der Whitelist,
+     * außer die betreten kurz einen Voice Channel
+     */
     whitelist = [];
 
-    const server = discordClient.guilds.cache.get(`${discord.server_id}`);
+    const server = discordClient.guilds.cache.get(discord.server_id);
+
     if (!server) {
         console.error(`Did you forget to invite the bot to your server?`);
         return;

@@ -11,7 +11,7 @@ interface Command {
 
 let tooManyArgs = "Too many arguments";
 
-let commandList = [
+let commandList: Command[] = [
   { main: "place", reqpermissions: 100, continue: placeCommand },
   { main: "cloth", continue: clothCommand },
 ];
