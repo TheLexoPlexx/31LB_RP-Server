@@ -49,9 +49,7 @@ export function discordAuthDone(player: alt.Player, discord: DiscordInfo) {
     player.model = 'mp_m_freemode_01'; //TODO: Auslesen und ändern
 
     alt.logWarning("Player connected...");
-    alt.logWarning("Saved Pos: " + JSON.stringify(dbP.pos));
     player.spawn(dbP.pos.x, dbP.pos.y, dbP.pos.z, 0);
-    alt.logWarning("Player Pos: x: " + player.pos.x + " y: " + player.pos.y + " z: " + player.pos.z);
 
     if (dbP.lastvehicle != null) {
       //TODO: Check if player actually has keys to vehicle

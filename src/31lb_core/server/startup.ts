@@ -40,9 +40,8 @@ export const discord = {
   client_secret: "Q-lCGXEAJx5WHgveCpK-lA3rFyK0y9Yt",
   bot_token: "NDY3NjgyNjU3ODg3ODQ2NDEx.W0n5ag.yFUH8pvN-y1ZPDDntrl8Sm-TFec",
   server_id: "467406309755715595",
-  whitelist_id: "467406702006894592",
-  redirect_url: "http://127.0.0.1:7790/authenticate",
-  updateInterval: 30
+  whitelist_id: "467416534831333378", //ECD: "467406702006894592"
+  redirect_url: "http://127.0.0.1:7790/authenticate"
 };
 
 import('./discord/bot');
