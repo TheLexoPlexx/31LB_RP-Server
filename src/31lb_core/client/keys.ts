@@ -34,8 +34,8 @@ export function keyUp(key: number): void {
           py: alt.Player.local.vehicle.pos.y,
           pz: alt.Player.local.vehicle.pos.z,
           rx: alt.Player.local.vehicle.rot.x,
-          yx: alt.Player.local.vehicle.rot.y,
-          zx: alt.Player.local.vehicle.rot.z,
+          ry: alt.Player.local.vehicle.rot.y,
+          rz: alt.Player.local.vehicle.rot.z,
           model: alt.Player.local.vehicle.model
         }));
         alt.log("VIN: " + alt.Player.local.vehicle.getSyncedMeta("vin"));
@@ -45,8 +45,8 @@ export function keyUp(key: number): void {
           py: alt.Player.local.pos.y,
           pz: alt.Player.local.pos.z,
           rx: alt.Player.local.rot.x,
-          yx: alt.Player.local.rot.y,
-          zx: alt.Player.local.rot.z,
+          ry: alt.Player.local.rot.y,
+          rz: alt.Player.local.rot.z,
         }));
       }
   

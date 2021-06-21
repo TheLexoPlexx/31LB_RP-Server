@@ -21,11 +21,9 @@ interface DiscordInfo {
 }
 
 export function playerConnect(player: alt.Player) {
-  player.spawn(-138.793, -593.407, 211.775, 0); //Aussichtsplattform
-  /**
-   * TODO: neue Cam über die Stadt schauen lassen vllt. bewegen? (später, Chriss) 
-   * mit aktuellem Wetter und Zeit, Login-Knopf hintergrund entfernen, bei authentication dann native.switchOutPlayer
-  */
+  alt.emitClient(player, "a_playerConnect");
+
+  //player.spawn(-138.793, -593.407, 211.775, 0); //Aussichtsplattform
 
   const ip = encodeURI(`${discord.redirect_url}`);
   const url = `https://discord.com/api/oauth2/authorize?client_id=${discord.client_id}&redirect_uri=${ip}&prompt=none&response_type=code&scope=identify`;

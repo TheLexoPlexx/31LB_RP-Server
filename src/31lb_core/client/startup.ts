@@ -8,8 +8,7 @@ import { openWeaponShop } from './interactions/weaponShop';
 import { keyDown, keyUp } from './keys';
 import { createGlobalBlip, enteredColshape, leaveColshape, saveSuccess, setWaypoint, startPlaceGen } from './interactions/placeGenerator';
 import { disableEngineStart, enableEngineStart, setPlayerInVehicle } from './handlers/vehicleHandler';
-import { handleAuthExit, handleDiscordAuth } from './interactions/discordAuth';
-
+import { handleDiscordAuth, playerAuthenticated, playerConnect } from './handlers/playerConnect';
 import { clothing_inventory_m } from "./shops/inventories/clothing_m";
 import { clothing_inventory_f } from "./shops/inventories/clothing_f";
 
@@ -33,9 +32,10 @@ alt.onServer("a_forceEnterVehicle", setPlayerInVehicle);
 alt.onServer("a_disableEngineStart", disableEngineStart);
 alt.onServer("a_enableEngineStart", enableEngineStart);
 alt.onServer("a_setWapoint", setWaypoint);
+alt.onServer("a_playerConnect", playerConnect);
+alt.onServer('a_discordAuthExit', playerAuthenticated);
 
 alt.onServer("a_discordAuth", handleDiscordAuth);
-alt.onServer('a_discordAuthExit', handleAuthExit);
 
 alt.on("consoleCommand", consoleCommand)
 alt.on("keydown", keyDown);
