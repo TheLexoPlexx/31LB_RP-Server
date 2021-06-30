@@ -4,6 +4,8 @@ import { database } from '../startup';
 import tables from '../database/tables';
 import { VehicleFromDump, vehicleList } from '../util/vehicles';
 import { List } from '../util/util';
+import { getPlayer } from './playerManager';
+import { checkpoints } from '../util/checkpoints';
 
 //im Moment noch unbenutzt, das sind aber alle Speicherbaren Variationen
 interface SaveableVehicle {
@@ -297,3 +299,12 @@ let vinManufacturerDictionary: List<string, string>[] = [
   { key: "STANLEY", value: "STY" },
   { key: "VOMFEUER", value: "VFR" }
 ];
+
+export function despawnVehicle(player: alt.Player, vehicle: alt.Vehicle) {
+  vehicle.destroy();
+
+  getPlayer(player, p => {
+    p.addCheckpoint(checkpoints.despawned_first_vehicle);
+    p.save();
+  });
+}

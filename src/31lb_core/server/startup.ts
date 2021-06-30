@@ -11,11 +11,18 @@ import { enteredColshape, leaveColshape, savePlace, sortMarkers, updatePlacesFor
 import { openedInventory } from './eventHandlers/inventoryHandler';
 import { teamLogin, teamLogoff } from './eventHandlers/teamLoginHandler';
 import { colshapeMeta } from '../client/interactions/placeGenerator';
-import { loadVehicles } from './managers/vehicleManager';
+import { despawnVehicle, loadVehicles } from './managers/vehicleManager';
 import { initWeather } from './eventHandlers/weather';
 import { List } from './util/util';
 import { toggleKeypress } from './managers/playerManager';
 import { consoleCommand, safeStopped } from './serverCommands';
+import tables from './database/tables';
+
+//--------------------------------------------------------------------------------------//
+//                                    Global Stuff                                      //
+//--------------------------------------------------------------------------------------//
+export let debug = true;
+export let rathausWaypoint;
 
 //--------------------------------------------------------------------------------------//
 //                                 Connect to Database                                  //
@@ -64,6 +71,12 @@ alt.on('ConnectionComplete', () => {
       createBlips(p);
     });
   }, 1000);
+
+  //Rathaus Wegpunkt
+  rathausWaypoint = database.fetchDataAsync("displayname", "Rathaus", tables.places);
+  if (rathausWaypoint == undefined) {
+    alt.logError("Rathaus-Checkpoint nicht gesetzt.");
+  }
 });
 
 alt.on("resourceStop",  () => {
@@ -98,6 +111,8 @@ alt.onClient("a_teamlogin", teamLogin);
 alt.onClient("a_teamlogoff", teamLogoff);
 alt.onClient("a_toggleKeyPress", toggleKeypress);
 
+alt.onClient("a_despawnFirstVehicle", despawnVehicle);
+
 //--------------------------------------------------------------------------------------//
 //                             Register Interact Functions                              //
 //--------------------------------------------------------------------------------------//
@@ -126,6 +141,7 @@ alt.onClient("event_interact_function", (player: alt.Player, colShapeMeta: colsh
 const apiKey = "63fe821e3bbfe092b2d68f232317f9c2";
 initWeather(apiKey);
 
+
 /* Character Stuff
 player.spawn(-763.245, 328.597, 198.486);
 player.rot = new alt.Vector3(0, 0, Math.PI);
@@ -138,4 +154,4 @@ alt.on('character:Done', (player, data) => {
 });
 
 
-  //player.spawn(402.5164, -1002.847, -99.2587, 0); //Character Creator
+//player.spawn(402.5164, -1002.847, -99.2587, 0); //Character Creator

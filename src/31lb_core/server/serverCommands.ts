@@ -6,7 +6,7 @@ import { saveAllVehicles } from './managers/vehicleManager';
 
 interface ServerCommand {
   main: string,
-  alias?: string[]
+  alias: string[]
   continue: CallableFunction;
 }
 
@@ -17,6 +17,7 @@ let tooManyArgs = "Too many arguments";
 let commandList: ServerCommand[] = [
   { main: "restart", alias: ["r"], continue: restartCommand },
   { main: "stop", alias: ["s"], continue: stopCommand },
+  { main: "test", alias: [], continue: testCommand }
 ];
 
 export function consoleCommand(name: string, ...args: string[]): void {
@@ -63,5 +64,10 @@ function save(emitEvent: string) {
     alt.log("[31LB] No vehicles found to save");
     alt.emit(emitEvent);
   }
-  //TODO: Save Players
+}
+
+export function testCommand(args: string[]) {
+  alt.Player.all.forEach((player) => {
+    player.spawn(-1005.84, -478.92, 50.02733, 10);
+  });
 }

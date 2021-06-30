@@ -2,6 +2,7 @@
 /// <reference types="@altv/types-client" />
 import * as alt from 'alt-client';
 import * as native from 'natives';
+import { distanceToVehiclePromise } from '../util/numUtils';
 import { newWebview } from '../util/webviewHelper';
 
 let view;
@@ -38,6 +39,12 @@ export function playerAuthenticated() {
 
   alt.showCursor(false);
   alt.toggleGameControls(true);
+}
+
+export function checkDistanceToVehicle(vehicle: alt.Vehicle) {
+  distanceToVehiclePromise(vehicle, 50).then(() => {
+    alt.emitServer("a_despawnFirstVehicle", vehicle);
+  })
 }
 
 export function handleDiscordAuth(url) {

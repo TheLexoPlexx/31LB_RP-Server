@@ -1,7 +1,7 @@
 /// <reference types="@altv/types-server" />
 import * as alt from 'alt-server';
 import tables from '../database/tables';
-import { database } from '../startup';
+import { database, debug } from '../startup';
 import { Faction } from './factionManager';
 
 export function getPlayer(player: alt.Player, callback: PlayerCallback) {
@@ -147,7 +147,11 @@ class LB_Player {
       checkpoints: JSON.stringify(this._checkpoints),
     };
     database.upsertData(uploadObject, tables.players, (result) => {
-      alt.log("Player saved: " + JSON.stringify(result));
+      if (debug) {
+        alt.log("Player saved: " + JSON.stringify(result));
+      } else {
+        alt.log("Player saved: " + result.uuid);
+      }
     });
   }
 

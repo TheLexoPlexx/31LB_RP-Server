@@ -8,4 +8,5 @@ import * as alt from 'alt-server';
  */
 export let checkpoints = {
   went_to_townhall: 0,
+  despawned_first_vehicle: 1,
 };

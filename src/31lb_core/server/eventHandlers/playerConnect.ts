@@ -1,7 +1,7 @@
 /// <reference types="@altv/types-server" />
 import * as alt from 'alt-server';
 import sjcl from 'sjcl';
-import { database, discord } from '../startup';
+import { database, discord, rathausWaypoint } from '../startup';
 import { currentDate, weatherType } from './weather';
 import { globalMarkers, unlockableMarkers } from './placeHandler';
 import { getPlayer } from '../managers/playerManager';
@@ -23,7 +23,7 @@ interface DiscordInfo {
 export function playerConnect(player: alt.Player) {
   alt.emitClient(player, "a_playerConnect");
 
-  //player.spawn(-138.793, -593.407, 211.775, 0); //Aussichtsplattform
+  player.spawn(-1005.84, -478.92, 50.02733, 10);
 
   const ip = encodeURI(`${discord.redirect_url}`);
   const url = `https://discord.com/api/oauth2/authorize?client_id=${discord.client_id}&redirect_uri=${ip}&prompt=none&response_type=code&scope=identify`;
@@ -47,7 +47,7 @@ export function discordAuthDone(player: alt.Player, discord: DiscordInfo) {
     player.model = 'mp_m_freemode_01'; //TODO: Auslesen und ändern
 
     alt.logWarning("Player connected...");
-    player.spawn(dbP.pos.x, dbP.pos.y, dbP.pos.z, 0);
+    player.spawn(dbP.pos.x, dbP.pos.y, dbP.pos.z, 1000);
 
     if (dbP.lastvehicle != null) {
       //TODO: Check if player actually has keys to vehicle
@@ -69,23 +69,17 @@ export function discordAuthDone(player: alt.Player, discord: DiscordInfo) {
     
       player.spawn(spawnVehicle.pos.x, spawnVehicle.pos.y, spawnVehicle.pos.z, 0);
       alt.emitClient(player, "a_forceEnterVehicle", spawnVehicle.getSyncedMeta("vin"), 0);
-    
-      /*
-      //TODO: Despawn Spawn-Vehicle on disconnect
-      let leaveCircle = new alt.ColshapeCircle(dbP.pos.x, dbP.pos.y, 50);
-      leaveCircle.setMeta("despawnVehicle", spawnVehicle.getSyncedMeta("vin"));
-      */
+      
+      alt.emitClient(player, "a_distanceToVehiclePromise", spawnVehicle);
+
+      player.setSyncedMeta("despawnVehicleOnDisconnect", spawnVehicle.getSyncedMeta("vin"));
     }
 
     createBlips(player);
 
-    if (dbP.hasCheckpoint(checkpoints.went_to_townhall)) {
-      let result_rathaus = database.fetchDataAsync("displayname", "Rathaus", tables.places);
-      if (result_rathaus != undefined) {
-        result_rathaus.then(res => {
-          //TODO: Checkpoint entfernen wenn der Spieler die ihm auferlegten Aufgaben erfüllt hat.
-          alt.emitClient(player, "a_setWapoint", res);
-        });
+    if (!dbP.hasCheckpoint(checkpoints.went_to_townhall)) {
+      if (rathausWaypoint) {
+        alt.emitClient(player, "a_setWapoint", rathausWaypoint);
       }
     }
   });

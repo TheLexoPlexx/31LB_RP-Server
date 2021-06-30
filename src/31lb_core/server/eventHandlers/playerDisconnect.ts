@@ -18,12 +18,19 @@ function playerDisconnect(player: alt.Player, restart: boolean) {
     return;
   }
 
+  if (player.getSyncedMeta("despawnVehicleOnDisconnect") != null) {
+    let v = alt.Vehicle.all.filter(veh => veh.getSyncedMeta("vin") == player.getSyncedMeta("despawnVehicleOnDisconnect"))[0];
+    if (v != null) {
+      v.destroy();
+    }
+  }
+
   let pR = {
     uuid: player.getSyncedMeta("uuid"),
     healthpoints: player.health,
     armour: player.armour,
     pos: player.pos,
-    rot: player.rot,
+    rot: player.rot
   };
 
   getOfflinePlayer(pR.uuid, (pl) => {
